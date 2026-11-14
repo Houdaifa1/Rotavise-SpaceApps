@@ -26,6 +26,7 @@
     "verify": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm test:unit && pnpm test:integration && pnpm test:recovery && pnpm test:weather && pnpm test:catalog && pnpm test:plans && pnpm test:engine && pnpm test:climate && pnpm test:backend && pnpm test:operations && pnpm test:api-docs && pnpm test:e2e && pnpm build && pnpm test:container && pnpm test:clean",
     "test:clean": "node tooling/verification/clean-check.mjs",
     "env:setup": "node tooling/development/setup-env.mjs",
+    "env:team": "node tooling/development/setup-team-env.mjs",
     "demo": "node tooling/development/fixture-demo.mjs",
     "test:weather": "pnpm build:server && node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects weather-unit weather-integration --runInBand",
     "weather:evidence": "node tooling/weather/evidence.mjs",

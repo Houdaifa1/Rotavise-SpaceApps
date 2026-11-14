@@ -1,5 +1,10 @@
 name: Rotavise verified backend
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["docs/tasks/**"]
+  pull_request:
+    paths-ignore: ["docs/tasks/**"]
 permissions:
   contents: read
 jobs:
