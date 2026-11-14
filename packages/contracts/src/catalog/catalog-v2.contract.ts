@@ -32,14 +32,18 @@ const localNameSchema = z
     recall: modelRecallSchema.optional(),
     citations: z.array(nameCitationSchema).min(1).max(12).optional(),
     confidence: z.enum(["low", "medium", "high"]).optional(),
+    // A verbatim English display label copied from this crop/cultivar's primary
+    // name, not a new source attestation or model-recalled translation.
+    origin: z.literal("primary_name").optional(),
+    // Display selection, independent of evidence quality (sourced before recall).
     // Optional, with no default: older releases retain their canonical hashes.
     preferred: z.boolean().optional(),
   })
   .refine(
     (n) =>
       (!n.citations || (n.confidence !== undefined && !n.recall)) &&
-      (!n.preferred || n.citations !== undefined),
-    "Sourced names need confidence, cannot claim recall, and alone may be preferred",
+      (!n.origin || (n.language === "en" && !n.citations && !n.recall)),
+    "Sourced names need confidence and cannot claim recall; primary names must be English copies without invented evidence",
   );
 export type LocalName = z.infer<typeof localNameSchema>;
 const localNamesSchema = z

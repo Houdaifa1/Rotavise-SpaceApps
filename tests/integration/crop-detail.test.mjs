@@ -22,7 +22,7 @@ beforeAll(async () => {
   store = new CatalogStore(db.pool);
   release = await loadCatalogRelease("data/catalog/releases/0.13.0");
   imported = await store.import(release);
-  for (const version of ["0.1.0", "0.12.0", "0.14.0", "0.15.0"])
+  for (const version of ["0.1.0", "0.12.0", "0.14.0", "0.15.0", "0.16.0"])
     await store.import(
       await loadCatalogRelease(`data/catalog/releases/${version}`),
     );
@@ -255,3 +255,81 @@ test.each(["0.14.0", "0.15.0"])(
     );
   },
 );
+
+test("0.16.0 PostgreSQL import is idempotent and details retain copied English, recalled Darija and preferred sourced cultivar names", async () => {
+  const catalog = await loadCatalogRelease("data/catalog/releases/0.16.0");
+  const stored = await store.get(catalog.id, catalog.version);
+  expect((await store.import(catalog)).outcome).toBe("unchanged");
+  expect(stored.sha256).toBe(prepareCatalogV2(catalog).sha256);
+  for (const id of ["blueberry", "wild-thyme", "olive", "sulla"]) {
+    const response = await call(base("0.16.0", id));
+    expect(response.statusCode).toBe(200);
+    const detail = cropDetailSchema.parse(response.json());
+    const profile = catalog.profiles.find((p) => p.id === id);
+    expect(detail.catalogSha256).toBe(stored.sha256);
+    expect(detail.identity.names).toContainEqual(
+      expect.objectContaining({
+        language: "en",
+        name: profile.identity.name,
+        origin: "primary_name",
+        preferred: true,
+        evidence: null,
+        recall: null,
+        citations: [],
+      }),
+    );
+    expect(
+      detail.identity.names.some((n) => n.language === "ary" && n.preferred),
+    ).toBe(true);
+    expect(
+      detail.gaps.some((g) =>
+        ["identity.names.en", "identity.names.ary"].includes(g.path),
+      ),
+    ).toBe(false);
+    if (id === "wild-thyme")
+      expect(detail.identity.names).toContainEqual(
+        expect.objectContaining({
+          language: "ary",
+          confidence: "low",
+          preferred: true,
+          evidence: "model_recall",
+          recall: expect.objectContaining({
+            recordedOn: "2026-11-12",
+            valueKind: "model_recall_unverified",
+          }),
+          citations: [],
+        }),
+      );
+    if (id === "olive") {
+      const names = detail.cultivars.find((c) => c.id === "haouzia").names;
+      expect(names).toContainEqual(
+        expect.objectContaining({
+          language: "ary",
+          preferred: true,
+          evidence: "sourced",
+          citations: [
+            expect.objectContaining({
+              sourceId: "b8-onssa-olive-names",
+              quote: "الحوزية",
+            }),
+          ],
+        }),
+      );
+      expect(names).toContainEqual(
+        expect.objectContaining({
+          language: "ary",
+          preferred: null,
+          evidence: "model_recall",
+          recall: expect.objectContaining({ recordedOn: "2026-11-12" }),
+        }),
+      );
+    }
+  }
+  const historical = await call(base("0.15.0", "blueberry"));
+  expect(historical.statusCode).toBe(200);
+  expect(
+    historical
+      .json()
+      .identity.names.some((n) => n.language === "en" || n.language === "ary"),
+  ).toBe(false);
+});

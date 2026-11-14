@@ -329,3 +329,39 @@ test("extending a ready tile with a near-term window fetches only the new years 
     "skipped",
   );
 });
+
+test("partial reads verify and return only stored units; legacy reads still require all units", async () => {
+  const store = new ScenarioStore(db.pool, provider(), true);
+  const units = tileUnits(policy, tile);
+  await store.fetchUnit(units[0], new AbortController().signal);
+  const needs = { cell: { latitude: 32.125, longitude: -6.875 }, units };
+  expect(await store.series(needs)).toBeNull();
+  const partial = await store.series(needs, true);
+  expect(partial).toHaveLength(1);
+  expect(partial[0]).toMatchObject({
+    model: units[0].model,
+    year: units[0].year,
+    variable: units[0].variable,
+    synthetic: true,
+  });
+  expect(await store.series({ ...needs, units: units.slice(1) }, true)).toEqual(
+    [],
+  );
+  // Corrupt raw bytes under controlled test conditions; partial does not mean unverified.
+  await db.pool.query(
+    `INSERT INTO climate_scenario_units(id,unit_key,model,experiment,variable,year,tile_latitude,tile_longitude,raw,raw_sha256,normalized_sha256,retrieved_at)
+    VALUES(gen_random_uuid(),$1,$2,$3,$4,$5,32,-7,$6,$7,$7,now())`,
+    [
+      unitKey(units[1]),
+      units[1].model.id,
+      units[1].experiment,
+      units[1].variable,
+      units[1].year,
+      Buffer.from("corrupt fixture"),
+      "0".repeat(64),
+    ],
+  );
+  await expect(store.series(needs, true)).rejects.toMatchObject({
+    code: "SCENARIO_STORAGE_UNAVAILABLE",
+  });
+});

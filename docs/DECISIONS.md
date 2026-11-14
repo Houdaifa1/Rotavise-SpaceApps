@@ -841,3 +841,46 @@ Use [OpenFreeMap](https://openfreemap.org/) for key-less vector orientation only
 Service liveness controls initial shell health; national-data readiness is available on demand in the compact status popover and cannot block the map. Capabilities gate optional account reads to avoid auth-disabled 404s. Feature-specific errors remain within their feature. Preserve the actual readiness 503 in evidence rather than inventing complete national datasets in the test harness.
 
 Details, live evidence, verification and remaining acceptance gaps: [FM notes](steps/15/fm-notes.md). No milestone approval or backend change is recorded.
+
+## Explicit crop names and display preference, opt-in catalog 0.16.0 (B8, 2026-11-13)
+
+The scoped B8 task adds English entries copied verbatim from primary crop and
+cultivar display names (`origin: primary_name`), and explicitly qualified
+model-recalled Darija names for the 68 remaining crop gaps and 136 selected
+Moroccan cultivar names. These records use the requested provenance date
+2026-11-12. Rare introduced crop loan forms are review candidates; language
+coverage does not prove actual farmer usage or species-safe local naming.
+
+Preference is a display selection independent of evidence quality. Existing
+preferred sourced names remain preferred; otherwise sources outrank recall,
+and existing order breaks ties. Earlier entries are preserved unchanged and
+preferred copies are appended where necessary. Copied English labels do not
+invent citations or recall; runtime validation requires an exact match to the
+owning crop/cultivar's primary name. Optional metadata has no parse defaults,
+preserving historical catalog and detail hashes.
+
+Four new name citations are checked against explicitly labelled visual PDF
+transcriptions with original and render hashes. Their sources are Moroccan
+Arabic-language documents; Darija use of the proper names/loan is a model
+interpretation, not a claim that the documents are written in Darija. Native
+and botanical review remains open. No default catalog setting or frontend
+was changed. See [B8 notes](steps/15/b8-notes.md) and
+[native review](evidence/catalog/2026-11-12/names-for-native-review.md).
+
+## Regional comparison policy (B7, merged 2026-11-14)
+
+New format-2 requests pin `comparison: regional-comparison-1`: 60 finalists per
+scoring view and one per first crop, consistent missing-component handling in
+search and final ranking, memoized pure calendar lookups, and per-candidate
+future-climate comparisons, so one candidate without climate no longer removes
+the comparison for all others. Old pins, results and golden hashes are
+unchanged; no migration. Every feasible first crop keeps its best rotation and
+real rank. Measured on six regions (Tadla, Souss-Massa, Gharb, Oriental, Saïss,
+Haouz): engine time fell from 7.6–9.0 s to 4.1–5.9 s.
+
+Known limit, accepted for now: in suggest mode the top-ranked rotations often
+use minor crops whose rules are model recall (amaranth, rocket, berseem, chard),
+while sourced staples rank lower (durum wheat 46–178). This reflects uneven
+evidence, not agronomic merit. The demo uses consider mode; task B06 addresses
+suggest mode. Details: [B7 notes](steps/15/b7-notes.md),
+[regional comparison](architecture/regional-comparison.md).

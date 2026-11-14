@@ -6737,6 +6737,10 @@
                       },
                       "preferred": {
                         "type": "boolean"
+                      },
+                      "origin": {
+                        "type": "string",
+                        "const": "primary_name"
                       }
                     },
                     "required": [
@@ -6792,6 +6796,10 @@
                             },
                             "preferred": {
                               "type": "boolean"
+                            },
+                            "origin": {
+                              "type": "string",
+                              "const": "primary_name"
                             }
                           },
                           "required": [
@@ -14170,6 +14178,10 @@
               "null"
             ]
           },
+          "origin": {
+            "type": "string",
+            "const": "primary_name"
+          },
           "evidence": {
             "anyOf": [
               {
@@ -15902,6 +15914,10 @@
                           "high"
                         ]
                       },
+                      "origin": {
+                        "type": "string",
+                        "const": "primary_name"
+                      },
                       "preferred": {
                         "type": "boolean"
                       }
@@ -16141,6 +16157,10 @@
                               "medium",
                               "high"
                             ]
+                          },
+                          "origin": {
+                            "type": "string",
+                            "const": "primary_name"
                           },
                           "preferred": {
                             "type": "boolean"
@@ -16390,6 +16410,10 @@
                                 "medium",
                                 "high"
                               ]
+                            },
+                            "origin": {
+                              "type": "string",
+                              "const": "primary_name"
                             },
                             "preferred": {
                               "type": "boolean"
@@ -20124,6 +20148,10 @@
       "RotationCandidate": {
         "type": "object",
         "properties": {
+          "cropConditions": {
+            "type": "string",
+            "const": "assessment_crops"
+          },
           "id": {
             "type": "string",
             "minLength": 1,
@@ -20369,6 +20397,15 @@
                           }
                         ]
                       },
+                      "verificationStatus": {
+                        "type": "string",
+                        "enum": [
+                          "extracted",
+                          "double_checked",
+                          "expert_reviewed",
+                          "model_recall"
+                        ]
+                      },
                       "basis": {
                         "type": "string",
                         "minLength": 1,
@@ -20605,6 +20642,68 @@
               {
                 "type": "object",
                 "properties": {
+                  "comparisons": {
+                    "maxItems": 80,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "period": {
+                          "type": "string",
+                          "enum": [
+                            "mid_century",
+                            "near_term"
+                          ]
+                        },
+                        "model": {
+                          "type": "string",
+                          "maxLength": 40
+                        },
+                        "experiment": {
+                          "type": "string",
+                          "enum": [
+                            "historical",
+                            "ssp245",
+                            "ssp585"
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "compared",
+                            "not_compared"
+                          ]
+                        },
+                        "reason": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "enum": [
+                                "CLIMATE_NOT_COMPARED",
+                                "SCENARIO_TILE_NOT_PREPARED",
+                                "SCENARIO_DATA_INCOMPLETE",
+                                "FUTURE_ANALOGS_INSUFFICIENT",
+                                "NEAR_TERM_TILE_NOT_PREPARED",
+                                "NEAR_TERM_DATA_INCOMPLETE",
+                                "NEAR_TERM_ANALOGS_INSUFFICIENT"
+                              ]
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "period",
+                        "model",
+                        "experiment",
+                        "status",
+                        "reason"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "scenarios": {
                     "maxItems": 4,
                     "type": "array",
@@ -21013,6 +21112,10 @@
       "RotationCandidateV5": {
         "type": "object",
         "properties": {
+          "cropConditions": {
+            "type": "string",
+            "const": "assessment_crops"
+          },
           "id": {
             "type": "string",
             "minLength": 1,
@@ -21256,6 +21359,15 @@
                           {
                             "type": "null"
                           }
+                        ]
+                      },
+                      "verificationStatus": {
+                        "type": "string",
+                        "enum": [
+                          "extracted",
+                          "double_checked",
+                          "expert_reviewed",
+                          "model_recall"
                         ]
                       },
                       "basis": {
@@ -22010,6 +22122,68 @@
               {
                 "type": "object",
                 "properties": {
+                  "comparisons": {
+                    "maxItems": 80,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "period": {
+                          "type": "string",
+                          "enum": [
+                            "mid_century",
+                            "near_term"
+                          ]
+                        },
+                        "model": {
+                          "type": "string",
+                          "maxLength": 40
+                        },
+                        "experiment": {
+                          "type": "string",
+                          "enum": [
+                            "historical",
+                            "ssp245",
+                            "ssp585"
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "compared",
+                            "not_compared"
+                          ]
+                        },
+                        "reason": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "enum": [
+                                "CLIMATE_NOT_COMPARED",
+                                "SCENARIO_TILE_NOT_PREPARED",
+                                "SCENARIO_DATA_INCOMPLETE",
+                                "FUTURE_ANALOGS_INSUFFICIENT",
+                                "NEAR_TERM_TILE_NOT_PREPARED",
+                                "NEAR_TERM_DATA_INCOMPLETE",
+                                "NEAR_TERM_ANALOGS_INSUFFICIENT"
+                              ]
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "period",
+                        "model",
+                        "experiment",
+                        "status",
+                        "reason"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
                   "scenarios": {
                     "maxItems": 4,
                     "type": "array",
@@ -23359,6 +23533,10 @@
               "evidence": {
                 "type": "object",
                 "properties": {
+                  "ruleDetails": {
+                    "type": "string",
+                    "const": "pinned_catalog"
+                  },
                   "weatherSnapshotIds": {
                     "maxItems": 128,
                     "type": "array",
@@ -23901,6 +24079,10 @@
                 "items": {
                   "type": "object",
                   "properties": {
+                    "cropConditions": {
+                      "type": "string",
+                      "const": "assessment_crops"
+                    },
                     "id": {
                       "type": "string",
                       "minLength": 1,
@@ -24144,6 +24326,15 @@
                                     {
                                       "type": "null"
                                     }
+                                  ]
+                                },
+                                "verificationStatus": {
+                                  "type": "string",
+                                  "enum": [
+                                    "extracted",
+                                    "double_checked",
+                                    "expert_reviewed",
+                                    "model_recall"
                                   ]
                                 },
                                 "basis": {
@@ -24466,6 +24657,10 @@
               "evidence": {
                 "type": "object",
                 "properties": {
+                  "ruleDetails": {
+                    "type": "string",
+                    "const": "pinned_catalog"
+                  },
                   "weatherSnapshotIds": {
                     "maxItems": 128,
                     "type": "array",
@@ -25195,6 +25390,10 @@
                       "income-benefits-1",
                       "benefits-2"
                     ]
+                  },
+                  "comparison": {
+                    "type": "string",
+                    "const": "regional-comparison-1"
                   }
                 },
                 "required": [
@@ -25310,6 +25509,48 @@
                             "type": "string",
                             "maxLength": 2000
                           }
+                        },
+                        "appliedWeights": {
+                          "type": "object",
+                          "properties": {
+                            "climate": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "water": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "soil_health": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "crop_health": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            }
+                          },
+                          "required": [
+                            "climate",
+                            "water",
+                            "soil_health",
+                            "crop_health"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "comparedCandidateCount": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "notComparedCandidateCount": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
                         }
                       },
                       "required": [
@@ -25440,6 +25681,48 @@
                                 "type": "string",
                                 "maxLength": 2000
                               }
+                            },
+                            "appliedWeights": {
+                              "type": "object",
+                              "properties": {
+                                "climate": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "water": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "soil_health": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "crop_health": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              },
+                              "required": [
+                                "climate",
+                                "water",
+                                "soil_health",
+                                "crop_health"
+                              ],
+                              "additionalProperties": false
+                            },
+                            "comparedCandidateCount": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "notComparedCandidateCount": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
                             }
                           },
                           "required": [
@@ -25555,6 +25838,10 @@
               "evidence": {
                 "type": "object",
                 "properties": {
+                  "ruleDetails": {
+                    "type": "string",
+                    "const": "pinned_catalog"
+                  },
                   "weatherSnapshotIds": {
                     "maxItems": 128,
                     "type": "array",
@@ -26287,6 +26574,10 @@
                       "income-benefits-1",
                       "benefits-2"
                     ]
+                  },
+                  "comparison": {
+                    "type": "string",
+                    "const": "regional-comparison-1"
                   }
                 },
                 "required": [
@@ -26947,6 +27238,48 @@
                             "type": "string",
                             "maxLength": 2000
                           }
+                        },
+                        "appliedWeights": {
+                          "type": "object",
+                          "properties": {
+                            "climate": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "water": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "soil_health": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "crop_health": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            }
+                          },
+                          "required": [
+                            "climate",
+                            "water",
+                            "soil_health",
+                            "crop_health"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "comparedCandidateCount": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "notComparedCandidateCount": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
                         }
                       },
                       "required": [
@@ -27077,6 +27410,48 @@
                                 "type": "string",
                                 "maxLength": 2000
                               }
+                            },
+                            "appliedWeights": {
+                              "type": "object",
+                              "properties": {
+                                "climate": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "water": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "soil_health": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "crop_health": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              },
+                              "required": [
+                                "climate",
+                                "water",
+                                "soil_health",
+                                "crop_health"
+                              ],
+                              "additionalProperties": false
+                            },
+                            "comparedCandidateCount": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "notComparedCandidateCount": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
                             }
                           },
                           "required": [
@@ -28987,6 +29362,10 @@
                     "type": "string",
                     "const": "benefits-2"
                   },
+                  "evidenceLocation": {
+                    "type": "string",
+                    "const": "pinned_catalog"
+                  },
                   "crops": {
                     "maxItems": 300,
                     "type": "array",
@@ -30201,6 +30580,10 @@
               "evidence": {
                 "type": "object",
                 "properties": {
+                  "ruleDetails": {
+                    "type": "string",
+                    "const": "pinned_catalog"
+                  },
                   "weatherSnapshotIds": {
                     "maxItems": 128,
                     "type": "array",
@@ -30930,6 +31313,10 @@
                       "income-benefits-1",
                       "benefits-2"
                     ]
+                  },
+                  "comparison": {
+                    "type": "string",
+                    "const": "regional-comparison-1"
                   }
                 },
                 "required": [
@@ -31590,6 +31977,48 @@
                             "type": "string",
                             "maxLength": 2000
                           }
+                        },
+                        "appliedWeights": {
+                          "type": "object",
+                          "properties": {
+                            "climate": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "water": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "soil_health": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "crop_health": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            }
+                          },
+                          "required": [
+                            "climate",
+                            "water",
+                            "soil_health",
+                            "crop_health"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "comparedCandidateCount": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "notComparedCandidateCount": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
                         }
                       },
                       "required": [
@@ -31720,6 +32149,48 @@
                                 "type": "string",
                                 "maxLength": 2000
                               }
+                            },
+                            "appliedWeights": {
+                              "type": "object",
+                              "properties": {
+                                "climate": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "water": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "soil_health": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                },
+                                "crop_health": {
+                                  "type": "number",
+                                  "minimum": 0,
+                                  "maximum": 1
+                                }
+                              },
+                              "required": [
+                                "climate",
+                                "water",
+                                "soil_health",
+                                "crop_health"
+                              ],
+                              "additionalProperties": false
+                            },
+                            "comparedCandidateCount": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "notComparedCandidateCount": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
                             }
                           },
                           "required": [
@@ -34099,6 +34570,10 @@
                   "benefitVersion": {
                     "type": "string",
                     "const": "benefits-2"
+                  },
+                  "evidenceLocation": {
+                    "type": "string",
+                    "const": "pinned_catalog"
                   },
                   "crops": {
                     "maxItems": 300,
@@ -39524,6 +39999,10 @@
                           "income-benefits-1",
                           "benefits-2"
                         ]
+                      },
+                      "comparison": {
+                        "type": "string",
+                        "const": "regional-comparison-1"
                       }
                     },
                     "required": [
@@ -39863,6 +40342,10 @@
                           "income-benefits-1",
                           "benefits-2"
                         ]
+                      },
+                      "comparison": {
+                        "type": "string",
+                        "const": "regional-comparison-1"
                       }
                     },
                     "required": [
@@ -40202,6 +40685,10 @@
                           "income-benefits-1",
                           "benefits-2"
                         ]
+                      },
+                      "comparison": {
+                        "type": "string",
+                        "const": "regional-comparison-1"
                       }
                     },
                     "required": [
@@ -41639,6 +42126,10 @@
                           "income-benefits-1",
                           "benefits-2"
                         ]
+                      },
+                      "comparison": {
+                        "type": "string",
+                        "const": "regional-comparison-1"
                       }
                     },
                     "required": [

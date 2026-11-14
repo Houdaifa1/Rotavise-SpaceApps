@@ -249,10 +249,13 @@ export class ScenarioStore {
   }
   // The field cell's series for every needed unit, re-verified from the raw
   // bytes, or null when any unit is not stored yet.
-  async series(needs: {
-    cell: { latitude: number; longitude: number };
-    units: ScenarioUnitIdentity[];
-  }): Promise<ScenarioSeries[] | null> {
+  async series(
+    needs: {
+      cell: { latitude: number; longitude: number };
+      units: ScenarioUnitIdentity[];
+    },
+    allowIncomplete = false,
+  ): Promise<ScenarioSeries[] | null> {
     const keys = needs.units.map(unitKey);
     const rows = (
       await this.pool.query<Row>(
@@ -260,44 +263,46 @@ export class ScenarioStore {
         [keys],
       )
     ).rows;
-    if (rows.length !== new Set(keys).size) return null;
+    if (!allowIncomplete && rows.length !== new Set(keys).size) return null;
     const byKey = new Map(rows.map((r) => [r.unit_key, r]));
-    return needs.units.map((identity) => {
-      const row = byKey.get(unitKey(identity))!;
-      let checked;
-      try {
-        checked = normalizeScenario(
-          new Uint8Array(row.raw),
-          identity,
-          row.retrieved_at.toISOString(),
-          this.allowSynthetic,
+    return needs.units
+      .filter((identity) => byKey.has(unitKey(identity)))
+      .map((identity) => {
+        const row = byKey.get(unitKey(identity))!;
+        let checked;
+        try {
+          checked = normalizeScenario(
+            new Uint8Array(row.raw),
+            identity,
+            row.retrieved_at.toISOString(),
+            this.allowSynthetic,
+          );
+        } catch {
+          throw new ScenarioError("SCENARIO_STORAGE_UNAVAILABLE");
+        }
+        const { unit, synthetic } = checked;
+        if (
+          sha256(row.raw) !== row.raw_sha256 ||
+          sha256(stableJson(unit)) !== row.normalized_sha256
+        )
+          throw new ScenarioError("SCENARIO_STORAGE_UNAVAILABLE");
+        const at = unit.cells.findIndex(
+          (c) =>
+            c.latitude === needs.cell.latitude &&
+            c.longitude === needs.cell.longitude,
         );
-      } catch {
-        throw new ScenarioError("SCENARIO_STORAGE_UNAVAILABLE");
-      }
-      const { unit, synthetic } = checked;
-      if (
-        sha256(row.raw) !== row.raw_sha256 ||
-        sha256(stableJson(unit)) !== row.normalized_sha256
-      )
-        throw new ScenarioError("SCENARIO_STORAGE_UNAVAILABLE");
-      const at = unit.cells.findIndex(
-        (c) =>
-          c.latitude === needs.cell.latitude &&
-          c.longitude === needs.cell.longitude,
-      );
-      if (at < 0) throw new ScenarioError("SCENARIO_STORAGE_UNAVAILABLE");
-      return {
-        unitId: row.id,
-        normalizedSha256: row.normalized_sha256,
-        synthetic,
-        model: identity.model,
-        experiment: identity.experiment,
-        variable: identity.variable,
-        year: identity.year,
-        cell: needs.cell,
-        values: unit.values[at]!,
-      };
-    });
+        if (at < 0) throw new ScenarioError("SCENARIO_STORAGE_UNAVAILABLE");
+        return {
+          unitId: row.id,
+          normalizedSha256: row.normalized_sha256,
+          synthetic,
+          model: identity.model,
+          experiment: identity.experiment,
+          variable: identity.variable,
+          year: identity.year,
+          cell: needs.cell,
+          values: unit.values[at]!,
+        };
+      });
   }
 }

@@ -102,6 +102,7 @@ export const catalogNameSchema = z.strictObject({
   name: catalogTextSchema.max(120),
   confidence: z.enum(["low", "medium", "high"]).optional(),
   preferred: z.boolean().optional(),
+  origin: z.literal("primary_name").optional(),
 });
 export const catalogOptionsSchema = z.strictObject({
   catalogId: catalogIdSchema,

@@ -1,0 +1,1508 @@
+{
+  "id": "peach",
+  "version": "0.16.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Peach and nectarine",
+    "localNames": [
+      { "language": "fr", "name": "Pêcher-Nectarinier" },
+      {
+        "language": "ar",
+        "name": "الخوخ",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.peach.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الخوخ",
+        "recall": {
+          "confidence": "high",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.peach.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "خوخ",
+        "citations": [
+          {
+            "sourceId": "darija-wikt-020",
+            "locator": "Moroccan Arabic → Noun",
+            "interpretation": "direct",
+            "note": "Explicit Moroccan Arabic section of Wiktionary. Wiktionary supplies the Moroccan Arabic word and English crop gloss; scientific identity is supplied by a separate saved botanical source. Botanical pairing: WD-SPARQL-OTHER, see research record. Research record: peach.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "خوخ"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      },
+      {
+        "language": "ary",
+        "name": "الخوخ",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-pecher-nom-du-fruit-peche",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: peach.ary.1. Native-speaker review pending.",
+            "page": null,
+            "quote": "الخوخ"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "language": "en",
+        "name": "Peach and nectarine",
+        "origin": "primary_name",
+        "preferred": true
+      },
+      { "language": "fr", "name": "Pêcher-Nectarinier", "preferred": true },
+      {
+        "language": "ar",
+        "name": "الخوخ",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.peach.ar"
+        },
+        "preferred": true
+      }
+    ],
+    "scientificName": "Prunus persica (L.) Stokes",
+    "family": "Rosaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-peach",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF.",
+        "page": null,
+        "quote": "\"scientificName\":\"Prunus persica (L.) Stokes\""
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter.",
+        "page": null,
+        "quote": "Pêcher-Nectarinier"
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "spring-crest",
+      "name": "Spring Crest",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section VI Le pêcher et la nectarine",
+          "interpretation": "normalized",
+          "note": "2003 student report citing IAV Hassan II; confirms Springcrest in use then, not today.",
+          "page": null,
+          "quote": "spring crest, starcrest, spring gold, mayrose, maycrest"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Spring Crest",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "maycrest",
+      "name": "Maycrest",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section VI",
+          "interpretation": "normalized",
+          "note": "2003 report.",
+          "page": null,
+          "quote": "spring crest, starcrest, spring gold, mayrose, maycrest"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Maycrest",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "florida-very-early-group",
+      "name": "Florida very-early group",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section VI",
+          "interpretation": "normalized",
+          "note": "Report names no Florida cultivar; Flordastar and Flordaprince are NOT confirmed by name.",
+          "page": null,
+          "quote": "Des variétés floridiennes très précoces (maturité en avril) sont actuellement en production"
+        }
+      ],
+      "notes": "type_group",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Florida very-early group",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "nectarines-mayred-red-june-early-sungrand-summergrand-nectard-6-fantasia",
+      "name": "Nectarines (Mayred, Red June, Early Sungrand, Summergrand, Nectard 6, Fantasia)",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section VI",
+          "interpretation": "normalized",
+          "note": "2003 report.",
+          "page": null,
+          "quote": "mayred, red june, early sungrand, summergrand, nectard 6, fantasia"
+        }
+      ],
+      "notes": "cultivar_list",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Nectarines (Mayred, Red June, Early Sungrand, Summergrand, Nectard 6, Fantasia)",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "flordastar",
+      "name": "Flordastar",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.peach.flordastar"
+      },
+      "notes": "cultivar; USA, low-chill",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Flordastar",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "flordaprince",
+      "name": "Flordaprince",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.peach.flordaprince"
+      },
+      "notes": "cultivar; USA, low-chill",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Flordaprince",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "springcrest",
+      "name": "Springcrest",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.peach.springcrest"
+      },
+      "notes": "cultivar; USA",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Springcrest",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "nectarine-types",
+      "name": "Nectarine types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.peach.nectarine-types"
+      },
+      "notes": "type group",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Nectarine types",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "elberta",
+      "name": "Elberta",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.elberta"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Elberta",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "redhaven",
+      "name": "Redhaven",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.redhaven"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Redhaven",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "flavorcrest",
+      "name": "Flavorcrest",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.flavorcrest"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Flavorcrest",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "suncrest",
+      "name": "Suncrest",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.suncrest"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Suncrest",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "o-henry",
+      "name": "O'Henry",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.o-henry"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "O'Henry",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "rich-lady",
+      "name": "Rich Lady",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.rich-lady"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Rich Lady",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "baby-gold",
+      "name": "Baby Gold",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.baby-gold"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Baby Gold",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "armking",
+      "name": "Armking",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.armking"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Armking",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "big-top",
+      "name": "Big Top",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.peach.big-top"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Big Top",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only.",
+          "page": null,
+          "quote": "Pêcher-Nectarinier"
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.peach.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-beni-mellal-khenifra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.peach.BMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.peach.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.peach.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "c11-peach-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.peach"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7.5
+    },
+    {
+      "id": "c11-peach-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.peach"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.7
+    },
+    {
+      "id": "c11-peach-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.peach"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoid waterlogged soil.",
+      "metric": "soil_drainage",
+      "value": "avoid_waterlogging"
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "references": [
+    {
+      "id": "c11-peach-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.peach"
+      }
+    },
+    {
+      "id": "c11-peach-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.peach"
+      }
+    },
+    {
+      "id": "c11-peach-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.peach"
+      }
+    },
+    {
+      "id": "c11-peach-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.peach"
+      }
+    },
+    {
+      "id": "c11-peach-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.peach"
+      }
+    }
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "peach-faostat-pp-2019",
+          "kind": "prices",
+          "value": 3873,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2019,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2019",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5530\",\"Producer Price (LCU/tonne)\",\"2019\",\"2019\",\"7021\",\"Annual value\",\"LCU\",\"3873.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":765218,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2019.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2019.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-pp-2020",
+          "kind": "prices",
+          "value": 3900,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2020",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5530\",\"Producer Price (LCU/tonne)\",\"2020\",\"2020\",\"7021\",\"Annual value\",\"LCU\",\"3900.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":765219,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2020.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2020.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-pp-2021",
+          "kind": "prices",
+          "value": 3353,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2021",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5530\",\"Producer Price (LCU/tonne)\",\"2021\",\"2021\",\"7021\",\"Annual value\",\"LCU\",\"3353.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":765220,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2021.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2021.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-pp-2022",
+          "kind": "prices",
+          "value": 4245,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2022",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5530\",\"Producer Price (LCU/tonne)\",\"2022\",\"2022\",\"7021\",\"Annual value\",\"LCU\",\"4245.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":765221,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2022.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2022.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-pp-2023",
+          "kind": "prices",
+          "value": 5017,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2023",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5530\",\"Producer Price (LCU/tonne)\",\"2023\",\"2023\",\"7021\",\"Annual value\",\"LCU\",\"5017.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":765222,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2023.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:peach.prices.peach-faostat-pp-2023.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 11111,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"11111.000000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1910120,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:peach.yields.peach-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 11583.9,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"11583.900000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1910121,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:peach.yields.peach-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 15911.8,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"15911.800000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1910122,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:peach.yields.peach-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 12738.8,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"12738.800000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1910123,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:peach.yields.peach-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "peach-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 17905.8,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Peaches and nectarines",
+          "scenarioId": "peach-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"534\",\"'01345\",\"Peaches and nectarines\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"17905.800000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1910124,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:peach.yields.peach-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        }
+      ],
+      "options": [],
+      "gaps": [
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ],
+      "version": "benefits-2",
+      "records": [
+        {
+          "id": "b4.peach.biological_nitrogen_fixation.recall",
+          "category": "biological_nitrogen_fixation",
+          "status": "not_found",
+          "effect": "Not applicable: no conventional symbiotic crop N-fixation trait; associated free-living microbes are not a crop nitrogen credit.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "not_applicable",
+            "value": "not applicable",
+            "unit": "kg N/ha per crop period"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "high",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for biological nitrogen fixation; Crop does not have the conventional legume root-nodule fixation system.. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.biological_nitrogen_fixation.recall"
+          },
+          "applicability": "not_applicable",
+          "reason": "Crop does not have the conventional legume root-nodule fixation system."
+        },
+        {
+          "id": "b4.peach.residual_nitrogen_credit.recall",
+          "category": "residual_nitrogen_credit",
+          "status": "model_recall",
+          "effect": "Residues may recycle N already taken from soil; no new fixed-N credit. High-carbon residues may temporarily immobilize N. Quantity to the next crop is not quantified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "recycling only; net credit unquantified",
+            "unit": "kg N/ha to following crop"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for residual nitrogen credit; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.residual_nitrogen_credit.recall"
+          }
+        },
+        {
+          "id": "b4.peach.forage_residue_feed.recall",
+          "category": "forage_residue_feed",
+          "status": "model_recall",
+          "effect": "Selected leaves, pods or processing residues may have feed uses; woody prunings are not routine forage and species-specific safety and ration checks are essential.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional roughage or residue",
+            "unit": "qualitative feed value"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for forage residue feed; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.forage_residue_feed.recall"
+          }
+        },
+        {
+          "id": "b4.peach.disease_break.recall",
+          "category": "disease_break",
+          "status": "model_recall",
+          "effect": "A standing perennial is not an annual rotation break; assess a separately managed orchard-floor crop and its hosts. Repeating Rosaceae can maintain family-associated disease inoculum. Crop family alone does not prove a disease-free interval.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional family break",
+            "unit": "qualitative next-crop disease effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for disease break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.disease_break.recall"
+          }
+        },
+        {
+          "id": "b4.peach.pest_break.recall",
+          "category": "pest_break",
+          "status": "model_recall",
+          "effect": "A standing perennial is not an annual rotation break; assess a separately managed orchard-floor crop and its hosts. Host weeds, volunteers and broad-host-range pests can bridge the interval; verify the named pest and next crop.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional host interruption",
+            "unit": "qualitative next-crop pest effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for pest break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.pest_break.recall"
+          }
+        },
+        {
+          "id": "b4.peach.weed_break.recall",
+          "category": "weed_break",
+          "status": "model_recall",
+          "effect": "Changing sowing season and cultivation may change weed pressure. Volunteers or seed return can offset suppression; no herbicidal effect or numerical reduction is assumed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "management-dependent weed pressure",
+            "unit": "qualitative weed effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for weed break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.weed_break.recall"
+          }
+        },
+        {
+          "id": "b4.peach.rooting_soil_structure_infiltration.recall",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "model_recall",
+          "effect": "Established perennial roots occupy soil over multiple years; rooting and orchard-floor infiltration depend on soil and management. Potential improvement is not a measured infiltration rate.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "root channels; depth not quantified",
+            "unit": "qualitative rooting/infiltration effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for rooting soil structure infiltration; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.rooting_soil_structure_infiltration.recall"
+          }
+        },
+        {
+          "id": "b4.peach.erosion_cover_residue.recall",
+          "category": "erosion_cover_residue",
+          "status": "model_recall",
+          "effect": "Litter and maintained orchard-floor vegetation can protect soil; tree canopy with bare interrows can still permit erosion. No crop-specific management C factor is recalled; tillage, cover fraction and season must be specified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "protective cover potential; C unquantified",
+            "unit": "dimensionless RUSLE C (unquantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for erosion cover residue; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.erosion_cover_residue.recall"
+          }
+        },
+        {
+          "id": "b4.peach.bare_soil_period_shortening.recall",
+          "category": "bare_soil_period_shortening",
+          "status": "model_recall",
+          "effect": "A maintained perennial stand can extend living-root presence; canopy gaps and harvest disturbance may still expose soil. No reduction in days is estimated without a comparison calendar.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "calendar-dependent cover duration",
+            "unit": "day (not quantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for bare soil period shortening; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.bare_soil_period_shortening.recall"
+          }
+        },
+        {
+          "id": "b4.peach.organic_matter_soil_carbon.recall",
+          "category": "organic_matter_soil_carbon",
+          "status": "model_recall",
+          "effect": "Retained litter, safe chipped prunings and orchard-floor cover can return organic material. Decomposition, tillage and water balance determine net soil C; no sequestration rate is claimed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional organic inputs; net C unquantified",
+            "unit": "soil C contribution (qualitative)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for organic matter soil carbon; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.organic_matter_soil_carbon.recall"
+          }
+        },
+        {
+          "id": "b4.peach.drought_tolerance.recall",
+          "category": "drought_tolerance",
+          "status": "model_recall",
+          "effect": "Moderate or variable drought response; establishment and reproductive stages may remain sensitive. Survival under drought does not establish low seasonal water demand.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative drought tolerance"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for drought tolerance; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.drought_tolerance.recall"
+          }
+        },
+        {
+          "id": "b4.peach.water_demand.recall",
+          "category": "water_demand",
+          "status": "model_recall",
+          "effect": "Moderate or management-dependent seasonal demand; climate, cycle length and crop coefficient determine ET. Rainfall and soil storage must be deducted to assess irrigation; drought survival is a separate trait.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative seasonal ET class"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Peach and nectarine (Rosaceae) agronomy for water demand; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.peach.water_demand.recall"
+          }
+        },
+        {
+          "id": "b4.peach.rooting_soil_structure_infiltration.fao-roots",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "sourced",
+          "effect": "FAO-56 maximum effective rooting depth for Apricots, Peaches, Stone Fruit; this is a reference rooting range, not measured infiltration or a guarantee of penetration through compacted soil.",
+          "nonLocal": true,
+          "region": "Global reference; not validated on this Moroccan field",
+          "conditions": [
+            "FAO-56 Table 22 generic conditions; use shallower roots for irrigation scheduling where soil restricts growth.",
+            "Source row: Apricots, Peaches, Stone Fruit; first listed management/season scenario retained. Other scenarios remain in the saved source."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "min": 1,
+            "max": 2,
+            "unit": "m maximum effective rooting depth"
+          },
+          "citations": [
+            {
+              "sourceId": "b4-fao-roots",
+              "quote": "Apricots, Peaches, Stone Fruit |\n1.0-2.0",
+              "locator": "{\"section\":\"FAO-56 Table 22\",\"lineStart\":522,\"textFile\":\".research-sources/2026-11-11/fao-roots.txt\"}",
+              "sourceSha256": "f7eabb739742734c411a8d31527b709fba004a943e373ed406587017b3be0e98",
+              "quoteCheck": "b4:b4.peach.rooting_soil_structure_infiltration.fao-roots"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

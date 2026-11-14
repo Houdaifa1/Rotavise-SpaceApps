@@ -1,0 +1,157 @@
+{
+  "verifiedOn": "2026-11-13",
+  "recallProvenanceDateRequestedByUser": "2026-11-12",
+  "checks": [
+    {
+      "command": "pnpm lint",
+      "exitCode": 0,
+      "verifiedOn": "2026-11-13",
+      "log": ".artifacts/b8/lint-final.log"
+    },
+    {
+      "command": "pnpm format:check",
+      "exitCode": 0,
+      "verifiedOn": "2026-11-13",
+      "log": ".artifacts/b8/format-check.log"
+    },
+    {
+      "command": "pnpm typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-11-13T01:59:03.112555+00:00",
+      "finishedAt": "2026-11-13T01:59:20.525302+00:00",
+      "seconds": 17.41,
+      "log": ".artifacts/b8/typecheck.log"
+    },
+    {
+      "command": "pnpm test:catalog",
+      "exitCode": 0,
+      "startedAt": "2026-11-13T02:07:50.434254+00:00",
+      "finishedAt": "2026-11-13T02:09:54.902417+00:00",
+      "seconds": 124.47,
+      "log": ".artifacts/b8/test-catalog-final.log",
+      "suitesPassed": 7,
+      "testsPassed": 122
+    },
+    {
+      "command": "pnpm test:plans",
+      "exitCode": 0,
+      "startedAt": "2026-11-13T02:01:36.590555+00:00",
+      "finishedAt": "2026-11-13T02:02:22.566095+00:00",
+      "seconds": 45.98,
+      "log": ".artifacts/b8/test-plans.log",
+      "suitesPassed": 3,
+      "testsPassed": 62
+    },
+    {
+      "command": "pnpm test:backend",
+      "exitCode": 0,
+      "startedAt": "2026-11-13T02:02:22.566885+00:00",
+      "finishedAt": "2026-11-13T02:05:03.018055+00:00",
+      "seconds": 160.45,
+      "log": ".artifacts/b8/test-backend.log",
+      "suitesPassed": 8,
+      "testsPassed": 95
+    },
+    {
+      "command": "pnpm test:api-docs",
+      "exitCode": 0,
+      "startedAt": "2026-11-13T02:05:03.019038+00:00",
+      "finishedAt": "2026-11-13T02:05:17.756667+00:00",
+      "seconds": 14.74,
+      "log": ".artifacts/b8/test-api-docs.log",
+      "suitesPassed": 3,
+      "testsPassed": 29
+    },
+    {
+      "command": "pnpm test:unit",
+      "exitCode": 0,
+      "startedAt": "2026-11-13T02:05:17.757754+00:00",
+      "finishedAt": "2026-11-13T02:05:34.190854+00:00",
+      "seconds": 16.43,
+      "log": ".artifacts/b8/test-unit.log",
+      "suitesPassed": 12,
+      "testsPassed": 423
+    },
+    {
+      "command": "pnpm test:container",
+      "exitCode": 0,
+      "startedAt": "2026-11-13T02:05:34.191758+00:00",
+      "finishedAt": "2026-11-13T02:07:13.601837+00:00",
+      "seconds": 99.41,
+      "log": ".artifacts/b8/test-container.log"
+    }
+  ],
+  "catalog": {
+    "version": "0.16.0",
+    "crops": 246,
+    "cultivars": 1226,
+    "cropsWith": {
+      "en": 246,
+      "fr": 246,
+      "ar": 246,
+      "ary": 246
+    },
+    "cultivarsWith": {
+      "en": 1226,
+      "fr": 0,
+      "ar": 123,
+      "ary": 148
+    },
+    "addedCropDarijaRecall": 68,
+    "addedCultivarDarijaRecall": 136,
+    "newSourceCount": 2,
+    "newCitations": 4,
+    "lowConfidenceDarijaAdditions": 74,
+    "canonicalBytes": 10437544,
+    "sha256": "bb5118283c119860e1d331d3aaa79899d24a255a242b66e6583afe7827f3b789"
+  },
+  "apiAssertions": {
+    "optionsVersionedAndUnversioned": "0.16.0 with explicit test-only override",
+    "cropPreferredNameCoverage": {
+      "en": 246,
+      "fr": 246,
+      "ar": 246,
+      "ary": 246
+    },
+    "cultivarEnglishCoverage": 1226,
+    "cultivarDarijaCoverage": 148,
+    "historical015EnglishCoverage": 0,
+    "historical015DarijaCoverage": 178,
+    "detailProvenance": "primary English origin, dated recall and preferred sourced names verified"
+  },
+  "reproducibility": {
+    "command": "node tooling/catalog/build-release-0.16.0.mjs --verify-originals",
+    "exitCode": 0,
+    "checkedAt": "2026-11-13T02:02:58.410012+00:00",
+    "files": 252,
+    "byteIdentical": true
+  },
+  "unchanged": {
+    "existingReleaseFiles": true,
+    "defaultRotationCatalog": "0.15.0",
+    "appsWebFiles": true,
+    "dependencyLock": true
+  },
+  "notPerformed": [
+    "commit",
+    "push",
+    "deployment",
+    "shared application database import",
+    "full pnpm verify",
+    "browser end-to-end tests"
+  ],
+  "failedInitialChecks": [
+    {
+      "command": "pnpm lint",
+      "exitCode": 1,
+      "cause": "Unused destructured quote variable; fixed."
+    },
+    {
+      "command": "pnpm test:catalog",
+      "exitCode": 1,
+      "testsPassed": 120,
+      "testsFailed": 1,
+      "cause": "Superseded source-only preference expectation; retained duplicate-preference rejection and reran successfully."
+    }
+  ]
+}

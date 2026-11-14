@@ -120,6 +120,7 @@ export const cropDetailNameSchema = z
     name: nameShape.name,
     confidence: nameShape.confidence.unwrap().nullable(),
     preferred: z.boolean().nullable(),
+    origin: nameShape.origin.optional(),
     // Older local names can have neither a citation nor recall metadata.
     evidence: z.enum(["sourced", "model_recall"]).nullable(),
     citations: z.array(nameShape.citations.unwrap().element).max(12),
@@ -127,23 +128,22 @@ export const cropDetailNameSchema = z
   })
   .superRefine((name, ctx) => {
     if (name.evidence === null) {
-      if (name.citations.length || name.recall || name.preferred === true)
+      if (name.citations.length || name.recall)
         ctx.addIssue({
           code: "custom",
-          message:
-            "Unrecorded name evidence cannot claim provenance or preference",
+          message: "Unrecorded name evidence cannot claim provenance",
         });
     } else {
       hasProvenance(
         { ...name, evidence: name.evidence, verification: null },
         ctx,
       );
-      if (name.preferred === true && name.evidence !== "sourced")
-        ctx.addIssue({
-          code: "custom",
-          message: "Only sourced names may be preferred",
-        });
     }
+    if (name.origin && (name.language !== "en" || name.evidence !== null))
+      ctx.addIssue({
+        code: "custom",
+        message: "Primary name copies are English labels without new evidence",
+      });
   });
 const names = z.array(cropDetailNameSchema).max(12);
 export const cropDetailRuleSchema = z

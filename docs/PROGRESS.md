@@ -160,3 +160,21 @@ factors are absent. The default catalog and earlier release bytes are preserved;
 B4 adds no income facts/calculations or frontend work. Current checks, migration
 0027, limits and proposed review text are in [B4 notes](steps/15/b4-notes.md).
 Work remains uncommitted and unpushed; this does not approve or advance a milestone.
+
+Scoped B8 names task (explicit user authorization; built 2026-11-13): opt-in
+catalog 0.16.0 adds English and Darija labels for all 246 crops, English
+primary-label copies for all 1,226 cultivars, and Darija coverage for 148
+cultivars. It preserves 0.15.0 as a strict superset, including every old name
+and provenance record. Preferred display entries and primary-copy origin are
+served by catalog options and detail. Four short citations have original PDF,
+visual-transcript and render evidence; recalled local forms remain unverified
+and listed for native review. The default remains 0.15.0. Current check results
+and demo commands are recorded in [B8 notes](steps/15/b8-notes.md). Work remains
+uncommitted and unpushed; this does not approve or advance a milestone.
+
+B02 (2026-11-14): B7 regional ranking and B8 catalog 0.16.0 names were merged
+from their snapshots by three-way merge, keeping the F5 fixes made on `main`
+since. Lint, format, types, the web client check and the unit (455), catalog
+(122), plans (62), integration (10) and web (420) suites passed on 2026-11-14.
+The default catalog stays 0.15.0. Suggest-mode ranking favours minor recalled
+crops (DECISIONS "Regional comparison policy"); see task B06.

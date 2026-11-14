@@ -14,6 +14,7 @@ type StoredName = {
   recall?: { confidence: "low" | "medium" | "high" } | undefined;
   confidence?: "low" | "medium" | "high" | undefined;
   preferred?: boolean | undefined;
+  origin?: "primary_name" | undefined;
 };
 const publicNames = (names: StoredName[]) =>
   names.map((n) => ({
@@ -23,6 +24,7 @@ const publicNames = (names: StoredName[]) =>
       ? { confidence: n.confidence ?? n.recall?.confidence }
       : {}),
     ...(n.preferred !== undefined ? { preferred: n.preferred } : {}),
+    ...(n.origin ? { origin: n.origin } : {}),
   }));
 
 export function registerCatalogRoutes(

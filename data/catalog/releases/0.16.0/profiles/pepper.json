@@ -1,0 +1,1573 @@
+{
+  "id": "pepper",
+  "version": "0.16.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sweet pepper",
+    "localNames": [
+      { "language": "fr", "name": "Poivron" },
+      {
+        "language": "ar",
+        "name": "الفلفل الحلو",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.pepper.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الفلفلة",
+        "recall": {
+          "confidence": "medium",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.pepper.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "فلفلة",
+        "citations": [
+          {
+            "sourceId": "darija-wikt-034",
+            "locator": "Moroccan Arabic → Noun",
+            "interpretation": "direct",
+            "note": "Explicit Moroccan Arabic section of Wiktionary. Wiktionary supplies the Moroccan Arabic word and English crop gloss; scientific identity is supplied by a separate saved botanical source. Botanical pairing: WD-SPARQL-OTHER, see research record. Research record: pepper.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "فلفلة"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      },
+      {
+        "language": "ary",
+        "name": "الفلفلة الحمرا",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-poivron-rouge-piment-rouge",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: pepper.ary.1. Native-speaker review pending.",
+            "page": null,
+            "quote": "الفلفلة الحمرا"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "language": "en",
+        "name": "Sweet pepper",
+        "origin": "primary_name",
+        "preferred": true
+      },
+      { "language": "fr", "name": "Poivron", "preferred": true },
+      {
+        "language": "ar",
+        "name": "الفلفل الحلو",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.pepper.ar"
+        },
+        "preferred": true
+      }
+    ],
+    "scientificName": "Capsicum annuum L.",
+    "family": "Solanaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-pepper",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Capsicum annuum L.\""
+      },
+      {
+        "sourceId": "pntta-solanums",
+        "locator": "PDF page 3",
+        "interpretation": "direct",
+        "note": "French name as written.",
+        "page": 3,
+        "quote": "LE POIVRON-PIMENT"
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "lamuyo-blocky-sweet",
+      "name": "Lamuyo (blocky sweet)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pepper.lamuyo-(blocky-sweet)"
+      },
+      "notes": "type group; Spanish type, grown under greenhouse",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Lamuyo (blocky sweet)",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "almuden-sweet-blocky",
+      "name": "Almuden (sweet, blocky)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pepper.almuden-(sweet,-blocky)"
+      },
+      "notes": "type group",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Almuden (sweet, blocky)",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "california-wonder",
+      "name": "California Wonder",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pepper.california-wonder"
+      },
+      "notes": "cultivar; USA; blocky",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "California Wonder",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "long-sweet-marconi-italian-types",
+      "name": "Long sweet (Marconi/Italian) types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pepper.long-sweet-(marconi-italian)-types"
+      },
+      "notes": "type group",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Long sweet (Marconi/Italian) types",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "paprika-capsicum-annuum-types",
+      "name": "Paprika (Capsicum annuum) types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pepper.paprika-(capsicum-annuum)-types"
+      },
+      "notes": "type group; dried-pepper use",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Paprika (Capsicum annuum) types",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "hot-types-cayenne-jalapeno",
+      "name": "Hot types: cayenne, jalapeno",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pepper.hot-types:-cayenne,-jalapeno"
+      },
+      "notes": "type group",
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Hot types: cayenne, jalapeno",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "doux-long-des-landes",
+      "name": "Doux long des Landes",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.doux-long-des-landes"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Doux long des Landes",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "corno-di-toro",
+      "name": "Corno di Toro",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.corno-di-toro"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Corno di Toro",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "cubanelle",
+      "name": "Cubanelle",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.cubanelle"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Cubanelle",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "bell-boy",
+      "name": "Bell Boy",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.bell-boy"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Bell Boy",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "yolo-wonder",
+      "name": "Yolo Wonder",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.yolo-wonder"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Yolo Wonder",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "piquillo",
+      "name": "Piquillo",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.piquillo"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Piquillo",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "padron",
+      "name": "Padron",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.padron"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Padron",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "hungarian-wax",
+      "name": "Hungarian Wax",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.hungarian-wax"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Hungarian Wax",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "banana-pepper",
+      "name": "Banana pepper",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.banana-pepper"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Banana pepper",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "poblano",
+      "name": "Poblano",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.poblano"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Poblano",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "ancho",
+      "name": "Ancho",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.ancho"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Ancho",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "habanero",
+      "name": "Habanero",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.habanero"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Habanero",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    },
+    {
+      "id": "serrano",
+      "name": "Serrano",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pepper.serrano"
+      },
+      "localNames": [
+        {
+          "language": "en",
+          "name": "Serrano",
+          "origin": "primary_name",
+          "preferred": true
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-solanums",
+          "locator": "PDF page 3",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin.",
+          "page": 3,
+          "quote": "LE POIVRON-PIMENT"
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pepper.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-souss-massa",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pepper.SMA"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pepper.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pepper.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "pepper-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-solanums",
+          "locator": "PDF page 3",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": 3,
+          "quote": "le semis s'échelonne de fin Janvier à fin Mars"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Season crop, mainly inland.",
+      "metric": "planting_window",
+      "start": "01-31",
+      "end": "03-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "pepper-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "125 days.",
+          "page": null,
+          "quote": "Sweet peppers (bell) 25/30 35 40 20 125"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "210 days as the longer row.",
+          "page": null,
+          "quote": "30 40 110 30 210"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO rows.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 125,
+      "maxDays": 210
+    },
+    {
+      "id": "pepper-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values.",
+          "page": null,
+          "quote": "Sweet Peppers (bell) 1.05 2 0.90"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group.",
+          "page": null,
+          "quote": "Solanum Family (Solanaceae) 0.6 1.15 0.80"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "Sweet peppers (bell) 25/30 35 40 20 125"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.6,
+      "kcMid": 1.05,
+      "kcEnd": 0.9,
+      "stageLengths": [25, 35, 40, 20]
+    },
+    {
+      "id": "pepper-heat",
+      "citations": [
+        {
+          "sourceId": "pntta-solanums",
+          "locator": "PDF page 3",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": 3,
+          "quote": "réduisent la fructi"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Above 35 °C fruiting and photosynthesis fall.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "pepper-cold",
+      "citations": [
+        {
+          "sourceId": "pntta-solanums",
+          "locator": "PDF page 3",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": 3,
+          "quote": "Son zéro végétatif se situe à 8˚C"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Growth stops below 8 °C.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 8,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-pepper-pref-fabaceae-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation logic",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.pepper.pref-Fabaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-fill-pepper-pref-poaceae-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation logic",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.pepper.pref-Poaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-fill-pepper-proh-solanaceae-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "high",
+        "basis": "general agronomy recall (no source consulted); same-family disease carry-over",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.pepper.proh-Solanaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Solanaceae"
+    },
+    {
+      "id": "t-fill-pepper-return-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation break",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.pepper.return"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "c11-pepper-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.pepper"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7
+    },
+    {
+      "id": "c11-pepper-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.pepper"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.5
+    },
+    {
+      "id": "c11-pepper-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.pepper"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-pepper-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.pepper"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-pepper-break-ralstonia-solanacearum",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.pepper.ralstonia-solanacearum"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Bacterial wilt.",
+      "metric": "crop_health_break",
+      "issueId": "ralstonia-solanacearum",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-pepper-break-xanthomonas-vesicatoria",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.pepper.xanthomonas-vesicatoria"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Bacterial spot of tomato and pepper.",
+      "metric": "crop_health_break",
+      "issueId": "xanthomonas-vesicatoria",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-pepper-break-pyrenochaeta-lycopersici",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.pepper.pyrenochaeta-lycopersici"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Corky root of tomato.",
+      "metric": "crop_health_break",
+      "issueId": "pyrenochaeta-lycopersici",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-pepper-break-meloidogyne-incognita",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.pepper.meloidogyne-incognita"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Southern root-knot nematode.",
+      "metric": "crop_health_break",
+      "issueId": "meloidogyne-incognita",
+      "minimumBreakDays": 1095
+    }
+  ],
+  "references": [
+    {
+      "id": "k-pepper-background-62",
+      "topic": "background",
+      "summary": "Warm-season fruiting crop; harvest can be green or fully coloured. Chilling impairs growth and frost damages plants. Excessive day or night heat can reduce flower retention and fruit set. Solanaceous crops may share problems, but broad-host pathogens such as Phytophthora require wider consideration. Harvest colour, cultivar and repeated picking change the full cycle; seedling and field phases should be separated.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.pepper"
+      }
+    },
+    {
+      "id": "c11-pepper-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.pepper"
+      }
+    },
+    {
+      "id": "c11-pepper-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.pepper"
+      }
+    },
+    {
+      "id": "c11-pepper-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.pepper"
+      }
+    },
+    {
+      "id": "c11-pepper-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.pepper"
+      }
+    },
+    {
+      "id": "c11-pepper-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.pepper"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [],
+      "options": [],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ],
+      "version": "benefits-2",
+      "records": [
+        {
+          "id": "b4.pepper.biological_nitrogen_fixation.recall",
+          "category": "biological_nitrogen_fixation",
+          "status": "not_found",
+          "effect": "Not applicable: no conventional symbiotic crop N-fixation trait; associated free-living microbes are not a crop nitrogen credit.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "not_applicable",
+            "value": "not applicable",
+            "unit": "kg N/ha per crop period"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "high",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for biological nitrogen fixation; Crop does not have the conventional legume root-nodule fixation system.. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.biological_nitrogen_fixation.recall"
+          },
+          "applicability": "not_applicable",
+          "reason": "Crop does not have the conventional legume root-nodule fixation system."
+        },
+        {
+          "id": "b4.pepper.residual_nitrogen_credit.recall",
+          "category": "residual_nitrogen_credit",
+          "status": "model_recall",
+          "effect": "Residues may recycle N already taken from soil; no new fixed-N credit. High-carbon residues may temporarily immobilize N. Quantity to the next crop is not quantified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "recycling only; net credit unquantified",
+            "unit": "kg N/ha to following crop"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for residual nitrogen credit; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.residual_nitrogen_credit.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.forage_residue_feed.recall",
+          "category": "forage_residue_feed",
+          "status": "model_recall",
+          "effect": "Feed use is conditional on species-specific safety checks: toxins or anti-nutritional compounds may make foliage, stressed growth or untreated residues unsafe. Do not feed unchecked material.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional roughage or residue",
+            "unit": "qualitative feed value"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for forage residue feed; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.forage_residue_feed.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.disease_break.recall",
+          "category": "disease_break",
+          "status": "model_recall",
+          "effect": "A following crop outside Solanaceae may interrupt family-associated specialist cycles; shared and wide-host-range organisms can persist. Repeating Solanaceae can maintain family-associated disease inoculum. Crop family alone does not prove a disease-free interval.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional family break",
+            "unit": "qualitative next-crop disease effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for disease break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.disease_break.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.pest_break.recall",
+          "category": "pest_break",
+          "status": "model_recall",
+          "effect": "A following crop outside Solanaceae may interrupt family-associated specialist cycles; shared and wide-host-range organisms can persist. Host weeds, volunteers and broad-host-range pests can bridge the interval; verify the named pest and next crop.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional host interruption",
+            "unit": "qualitative next-crop pest effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for pest break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.pest_break.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.weed_break.recall",
+          "category": "weed_break",
+          "status": "model_recall",
+          "effect": "Changing sowing season and cultivation may change weed pressure. Volunteers or seed return can offset suppression; no herbicidal effect or numerical reduction is assumed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "management-dependent weed pressure",
+            "unit": "qualitative weed effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for weed break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.weed_break.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.rooting_soil_structure_infiltration.recall",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "model_recall",
+          "effect": "Roots and their decay add pores locally; depth is limited by soil, water table and compaction. Potential improvement is not a measured infiltration rate.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "root channels; depth not quantified",
+            "unit": "qualitative rooting/infiltration effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for rooting soil structure infiltration; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.rooting_soil_structure_infiltration.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.erosion_cover_residue.recall",
+          "category": "erosion_cover_residue",
+          "status": "model_recall",
+          "effect": "Living cover and retained surface residue can cushion rain and reduce exposed soil. No crop-specific management C factor is recalled; tillage, cover fraction and season must be specified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "protective cover potential; C unquantified",
+            "unit": "dimensionless RUSLE C (unquantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for erosion cover residue; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.erosion_cover_residue.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.bare_soil_period_shortening.recall",
+          "category": "bare_soil_period_shortening",
+          "status": "model_recall",
+          "effect": "The crop covers part of its growing season; an intercrop or retained residue is needed for gaps after harvest. No reduction in days is estimated without a comparison calendar.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "calendar-dependent cover duration",
+            "unit": "day (not quantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for bare soil period shortening; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.bare_soil_period_shortening.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.organic_matter_soil_carbon.recall",
+          "category": "organic_matter_soil_carbon",
+          "status": "model_recall",
+          "effect": "Retained roots and healthy residues return organic material; removal or burning reduces the input. Decomposition, tillage and water balance determine net soil C; no sequestration rate is claimed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional organic inputs; net C unquantified",
+            "unit": "soil C contribution (qualitative)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for organic matter soil carbon; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.organic_matter_soil_carbon.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.drought_tolerance.recall",
+          "category": "drought_tolerance",
+          "status": "model_recall",
+          "effect": "Sensitive to water shortage, especially during active growth; establishment and reproductive stages may remain sensitive. Survival under drought does not establish low seasonal water demand.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "sensitive",
+            "unit": "qualitative drought tolerance"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for drought tolerance; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.drought_tolerance.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.water_demand.recall",
+          "category": "water_demand",
+          "status": "model_recall",
+          "effect": "Moderate or management-dependent seasonal demand; climate, cycle length and crop coefficient determine ET. Rainfall and soil storage must be deducted to assess irrigation; drought survival is a separate trait.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative seasonal ET class"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Sweet pepper (Solanaceae) agronomy for water demand; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.pepper.water_demand.recall"
+          }
+        },
+        {
+          "id": "b4.pepper.rooting_soil_structure_infiltration.fao-roots",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "sourced",
+          "effect": "FAO-56 maximum effective rooting depth for Sweet Peppers (bell); this is a reference rooting range, not measured infiltration or a guarantee of penetration through compacted soil.",
+          "nonLocal": true,
+          "region": "Global reference; not validated on this Moroccan field",
+          "conditions": [
+            "FAO-56 Table 22 generic conditions; use shallower roots for irrigation scheduling where soil restricts growth.",
+            "Source row: Sweet Peppers (bell); first listed management/season scenario retained. Other scenarios remain in the saved source."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "min": 0.5,
+            "max": 1,
+            "unit": "m maximum effective rooting depth"
+          },
+          "citations": [
+            {
+              "sourceId": "b4-fao-roots",
+              "quote": "Sweet Peppers (bell) |\n0.5-1.0",
+              "locator": "{\"section\":\"FAO-56 Table 22\",\"lineStart\":120,\"textFile\":\".research-sources/2026-11-11/fao-roots.txt\"}",
+              "sourceSha256": "f7eabb739742734c411a8d31527b709fba004a943e373ed406587017b3be0e98",
+              "quoteCheck": "b4:b4.pepper.rooting_soil_structure_infiltration.fao-roots"
+            }
+          ]
+        },
+        {
+          "id": "b4.pepper.water_demand.fao-water",
+          "category": "water_demand",
+          "status": "sourced",
+          "effect": "Indicative crop water need 600–900 mm per total growing period; retain the range rather than assigning an unsupported low/high threshold.",
+          "nonLocal": true,
+          "region": "Global reference; not validated on this Moroccan field",
+          "conditions": [
+            "Rough FAO reference for the total growing period; duration and climate change the total. This is crop ET, not net irrigation or a Moroccan local measurement.",
+            "Source crop group: Pepper; sensitivity describes water shortage, not seasonal water volume."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "min": 600,
+            "max": 900,
+            "unit": "mm/total growing period"
+          },
+          "citations": [
+            {
+              "sourceId": "b4-fao-water",
+              "quote": "Pepper |\n600-900 |\nmedium-high",
+              "locator": "{\"section\":\"Table 14\",\"lineStart\":2226,\"textFile\":\".research-sources/2026-11-11/fao-water.txt\"}",
+              "sourceSha256": "86cecd0b1707e18116e6d68e986715e2d5f34d9b67c802fff029394b17cebc62",
+              "quoteCheck": "b4:b4.pepper.water_demand.fao-water"
+            }
+          ]
+        },
+        {
+          "id": "b4.pepper.drought_tolerance.fao-water",
+          "category": "drought_tolerance",
+          "status": "sourced",
+          "effect": "FAO drought sensitivity: medium-high. Sensitivity is the inverse of tolerance; establishment and crop stage still matter.",
+          "nonLocal": true,
+          "region": "Global reference; not validated on this Moroccan field",
+          "conditions": [
+            "Rough FAO reference for the total growing period; duration and climate change the total. This is crop ET, not net irrigation or a Moroccan local measurement.",
+            "Source crop group: Pepper; sensitivity describes water shortage, not seasonal water volume."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "value": "medium-high",
+            "unit": "qualitative sensitivity to drought"
+          },
+          "citations": [
+            {
+              "sourceId": "b4-fao-water",
+              "quote": "Pepper |\n600-900 |\nmedium-high",
+              "locator": "{\"section\":\"Table 14\",\"lineStart\":2226,\"textFile\":\".research-sources/2026-11-11/fao-water.txt\"}",
+              "sourceSha256": "86cecd0b1707e18116e6d68e986715e2d5f34d9b67c802fff029394b17cebc62",
+              "quoteCheck": "b4:b4.pepper.drought_tolerance.fao-water"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -35,7 +35,7 @@ import {
 import type { GlossaryEntryText } from "./types.js";
 
 // Bump when a text or an entry changes meaning, so clients can refresh a cache.
-export const GLOSSARY_VERSION = "glossary-6";
+export const GLOSSARY_VERSION = "glossary-7";
 
 export const GLOSSARY: readonly GlossaryEntryText[] = [
   ...cropReasonCodes,

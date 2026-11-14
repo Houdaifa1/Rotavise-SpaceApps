@@ -87,7 +87,8 @@
     "web:client:check": "node tooling/web/generate-client.mjs --check",
     "test:map": "pnpm build && playwright test --config tooling/web/playwright.config.mjs tests/e2e/fm.spec.mjs",
     "map:evidence": "node tooling/web/fm-evidence.mjs after",
-    "map:providers": "node tooling/web/fm-providers.mjs"
+    "map:providers": "node tooling/web/fm-providers.mjs",
+    "test:regional-eval": "pnpm build:server && node --env-file-if-exists=${ROTAVISE_CONFIG_ENV_FILE:-.env} tooling/engine/regional-eval.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",

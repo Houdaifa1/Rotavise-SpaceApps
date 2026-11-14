@@ -57,8 +57,9 @@ export function assessFutures(args: {
   baseTop: string[];
   policy: FutureClimatePolicy;
   settings: ClimateSettings;
-  // Complete evidence for every needed unit, or why there is none. The
-  // near-term worlds, when the policy has them, sit in the same map.
+  // Legacy pins require every needed unit. Per-rotation pins also accept a
+  // verified partial map; missing years/variables stay unavailable. Near-term
+  // worlds, when the policy has them, sit in the same map.
   worlds: Map<string, ClimateSource> | "not_prepared" | "incomplete";
   // Whether the near-term units were all present; ignored without a
   // near-term policy.
@@ -66,6 +67,8 @@ export function assessFutures(args: {
   unitIds: string[];
   cell: { latitude: number; longitude: number } | null;
   climateCompared: boolean;
+  perRotation?: boolean;
+  diagnostics?: ((data: unknown) => void) | undefined;
 }): { block: Block; perCandidate: Map<string, CandidateFuture> } {
   const { candidates, weights, policy, settings, worlds } = args;
   const perCandidate = new Map<string, CandidateFuture>();
@@ -91,22 +94,53 @@ export function assessFutures(args: {
           },
         }
       : {};
-  const empty = (reason: NonNullable<Block["reason"]>): Block => ({
-    status: "unavailable",
-    reason,
-    cell: args.cell,
-    unitIds: args.unitIds,
-    worlds: [],
-    topStableAcrossFutures: null,
-    attribution: SCENARIO_ATTRIBUTION,
-    ...nearBlock(reason),
-  });
-  if (!args.climateCompared || !candidates.length)
+  const recordMissing = (reason: NonNullable<Block["reason"]>) => {
+    if (args.perRotation)
+      for (const c of candidates)
+        perCandidate.set(c.id, {
+          scenarios: [],
+          comparisons: [
+            ...policy.futures.map((w) => ({
+              period: "mid_century" as const,
+              w,
+            })),
+            ...(policy.nearTerm?.windows.map((w) => ({
+              period: "near_term" as const,
+              w,
+            })) ?? []),
+          ].flatMap(({ period, w }) =>
+            policy.models.map((m) => ({
+              period,
+              model: m.id,
+              experiment: w.experiment,
+              status: "not_compared" as const,
+              reason,
+            })),
+          ),
+        });
+  };
+  const empty = (reason: NonNullable<Block["reason"]>): Block => {
+    recordMissing(reason);
+    return {
+      status: "unavailable",
+      reason,
+      cell: args.cell,
+      unitIds: args.unitIds,
+      worlds: [],
+      topStableAcrossFutures: null,
+      attribution: SCENARIO_ATTRIBUTION,
+      ...nearBlock(reason),
+    };
+  };
+  if ((!args.perRotation && !args.climateCompared) || !candidates.length)
     return { block: empty("CLIMATE_NOT_COMPARED"), perCandidate };
   if (worlds === "not_prepared")
     return { block: empty("SCENARIO_TILE_NOT_PREPARED"), perCandidate };
   if (worlds === "incomplete")
     return { block: empty("SCENARIO_DATA_INCOMPLETE"), perCandidate };
+  const coverage = new Map<string, NonNullable<CandidateFuture["comparisons"]>>(
+    candidates.map((c) => [c.id, []]),
+  );
   const run = (
     model: string,
     window: FutureClimatePolicy["baseline"],
@@ -127,16 +161,30 @@ export function assessFutures(args: {
       minimumCompleteAnalogs,
       representativeStepDays: settings.representativeStepDays,
       maxClimateDayVisits: settings.maxClimateDayVisits,
+      ...(args.perRotation
+        ? { comparison: "regional-comparison-1" as const }
+        : {}),
     });
-    const losses = fillUncheckedClimate(
-      candidates.map((c) => climate.rotation(c.timed)),
+    const raw = candidates.map((c) =>
+      args.perRotation && c.timed.some((s) => !s.spec.temperature.length)
+        ? null
+        : climate.rotation(c.timed),
     );
+    const losses = args.perRotation ? raw : fillUncheckedClimate(raw);
     const results = candidates.map((c, i) => ({
       climate: losses[i]!,
       water: climate.rotationWater(c.timed),
       extremes: climate.rotationExtremes(c.timed),
     }));
-    return results.some((r) => r.climate === null) || climate.exhausted
+    args.diagnostics?.({
+      model,
+      experiment: window.experiment,
+      period: period ?? "mid_century",
+      dayVisits: climate.dayVisits,
+      exhausted: climate.exhausted,
+    });
+    return !args.perRotation &&
+      (results.some((r) => r.climate === null) || climate.exhausted)
       ? null
       : results;
   };
@@ -147,6 +195,9 @@ export function assessFutures(args: {
       baselines.set(model, run(model, policy.baseline));
     return baselines.get(model)!;
   };
+  const complete = (
+    r: NonNullable<ReturnType<typeof run>>[number] | undefined,
+  ) => Boolean(r?.climate);
   // Compares each model's windows with that model's own baseline.
   const compareWindows = (
     windows: FutureClimatePolicy["futures"],
@@ -165,22 +216,73 @@ export function assessFutures(args: {
         const future = baseline
           ? run(model.id, window, period, minimumCompleteAnalogs)
           : null;
-        if (!baseline || !future) {
+        if (args.perRotation) {
+          for (let i = 0; i < candidates.length; i++) {
+            const c = candidates[i]!;
+            const usable = complete(baseline?.[i]) && complete(future?.[i]);
+            coverage.get(c.id)!.push({
+              period: period ?? "mid_century",
+              model: model.id,
+              experiment: window.experiment,
+              status: usable ? "compared" : "not_compared",
+              reason: usable
+                ? null
+                : !worlds.has(worldKey(model.id, policy.baseline.experiment)) ||
+                    !worlds.has(worldKey(model.id, window.experiment, period))
+                  ? period
+                    ? "NEAR_TERM_DATA_INCOMPLETE"
+                    : "SCENARIO_DATA_INCOMPLETE"
+                  : c.timed.some((s) => !s.spec.temperature.length)
+                    ? "CLIMATE_NOT_COMPARED"
+                    : period
+                      ? "NEAR_TERM_ANALOGS_INSUFFICIENT"
+                      : "FUTURE_ANALOGS_INSUFFICIENT",
+            });
+          }
+        }
+        const available = candidates
+          .map((c, i) => ({ c, i }))
+          .filter(({ i }) => complete(baseline?.[i]) && complete(future?.[i]));
+        if (!baseline || !future || (args.perRotation && !available.length)) {
           worldList.push({
             model: model.id,
             experiment: window.experiment,
             status: "not_compared",
             topCandidateIds: [],
+            ...(args.perRotation
+              ? {
+                  comparedCandidateCount: 0,
+                  notComparedCandidateCount: candidates.length,
+                }
+              : {}),
           });
           continue;
         }
-        const losses = candidates
-          .map((c, i) => ({
+        // Every compared candidate uses the same world dimensions. A missing
+        // model water balance never falls back to historical POWER water.
+        let worldWeights = weights;
+        if (
+          args.perRotation &&
+          available.some(({ i }) => !baseline[i]!.water || !future[i]!.water)
+        ) {
+          const total =
+            weights.climate + weights.soil_health + weights.crop_health;
+          worldWeights = {
+            climate: total ? weights.climate / total : 0,
+            water: 0,
+            soil_health: total ? weights.soil_health / total : 0,
+            crop_health: total ? weights.crop_health / total : 0,
+          };
+        }
+        const losses = (
+          args.perRotation ? available : candidates.map((c, i) => ({ c, i }))
+        )
+          .map(({ c, i }) => ({
             c,
             i,
             l: loss(
               c,
-              weights,
+              worldWeights,
               future[i]!.climate!.meanLoss,
               future[i]!.water?.meanLoss ?? null,
             ),
@@ -197,6 +299,13 @@ export function assessFutures(args: {
           experiment: window.experiment,
           status: "compared",
           topCandidateIds: tops.slice(0, 500),
+          ...(args.perRotation
+            ? {
+                appliedWeights: worldWeights,
+                comparedCandidateCount: losses.length,
+                notComparedCandidateCount: candidates.length - losses.length,
+              }
+            : {}),
         });
         for (const x of losses) {
           const rank = losses.findIndex((y) => y.l === x.l) + 1;
@@ -276,8 +385,11 @@ export function assessFutures(args: {
     });
   };
   const base = JSON.stringify(args.baseTop);
-  const stable = (tops: string[][]) =>
-    tops.every((t) => JSON.stringify(t) === base);
+  const stable = (tops: string[][], list: Block["worlds"]) =>
+    args.perRotation &&
+    list.some((w) => w.comparedCandidateCount !== candidates.length)
+      ? null
+      : tops.every((t) => JSON.stringify(t) === base);
   const mid = compareWindows(policy.futures);
   // The near-term period is compared only when the policy has one and its
   // own units were all present; otherwise it says why it is missing.
@@ -296,13 +408,24 @@ export function assessFutures(args: {
           policy.nearTerm.minimumCompleteAnalogs,
         )
       : null;
+  if (args.perRotation && policy.nearTerm && nearReason)
+    for (const c of candidates)
+      for (const w of policy.nearTerm.windows)
+        for (const m of policy.models)
+          coverage.get(c.id)!.push({
+            period: "near_term",
+            model: m.id,
+            experiment: w.experiment,
+            status: "not_compared",
+            reason: nearReason,
+          });
   const nearUsable = near !== null && near.futureTops.length > 0;
   const nearPart = !policy.nearTerm
     ? {}
     : nearUsable
       ? nearBlock(null, {
           worlds: near.worldList,
-          topStable: stable(near.futureTops),
+          topStable: stable(near.futureTops, near.worldList),
         })
       : nearBlock(nearReason ?? "NEAR_TERM_ANALOGS_INSUFFICIENT", {
           worlds: near?.worldList ?? [],
@@ -314,11 +437,22 @@ export function assessFutures(args: {
       for (const c of candidates)
         perCandidate.set(c.id, {
           scenarios: [],
+          ...(args.perRotation ? { comparisons: coverage.get(c.id)! } : {}),
           nearTerm: summarize(c, policy.nearTerm!.windows, near),
+        });
+    const unavailableBlock = empty("FUTURE_ANALOGS_INSUFFICIENT");
+    if (args.perRotation)
+      for (const c of candidates)
+        perCandidate.set(c.id, {
+          scenarios: summarize(c, policy.futures, mid),
+          comparisons: coverage.get(c.id)!,
+          ...(nearUsable
+            ? { nearTerm: summarize(c, policy.nearTerm!.windows, near) }
+            : {}),
         });
     return {
       block: {
-        ...empty("FUTURE_ANALOGS_INSUFFICIENT"),
+        ...unavailableBlock,
         worlds: mid.worldList,
         ...nearPart,
       },
@@ -328,6 +462,7 @@ export function assessFutures(args: {
   for (const c of candidates)
     perCandidate.set(c.id, {
       scenarios: summarize(c, policy.futures, mid),
+      ...(args.perRotation ? { comparisons: coverage.get(c.id)! } : {}),
       ...(nearUsable
         ? { nearTerm: summarize(c, policy.nearTerm!.windows, near) }
         : {}),
@@ -339,7 +474,7 @@ export function assessFutures(args: {
       cell: args.cell,
       unitIds: args.unitIds,
       worlds: mid.worldList,
-      topStableAcrossFutures: stable(mid.futureTops),
+      topStableAcrossFutures: stable(mid.futureTops, mid.worldList),
       attribution: SCENARIO_ATTRIBUTION,
       ...nearPart,
     },

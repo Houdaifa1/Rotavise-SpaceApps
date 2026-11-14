@@ -229,7 +229,7 @@ test("legacy catalog fields stay null or empty, with original limitations and ex
     );
 });
 
-test("contracts reject unproven facts/rules, misclassified evidence and fabricated preferred names", () => {
+test("contracts reject unproven facts/rules, misclassified evidence and fabricated name provenance", () => {
   const recalled = faba.benefits[0];
   expect(
     cropDetailFactSchema.safeParse({
@@ -252,7 +252,11 @@ test("contracts reject unproven facts/rules, misclassified evidence and fabricat
   ).toBe(false);
   const name = faba.identity.names.find((n) => n.evidence === null);
   expect(
-    cropDetailNameSchema.safeParse({ ...name, preferred: true }).success,
+    cropDetailNameSchema.safeParse({
+      ...name,
+      preferred: true,
+      evidence: "sourced",
+    }).success,
   ).toBe(false);
   expect(
     cropDetailSchema.safeParse({

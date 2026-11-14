@@ -141,6 +141,7 @@ export const rotationPolicyV2Schema = z
     // No default: absence replays pre-output plans byte-for-byte.
     outputs: z.literal("rotation-outputs-1").optional(),
     research: z.enum(["income-benefits-1", "benefits-2"]).optional(),
+    comparison: z.literal("regional-comparison-1").optional(),
   })
   .refine(anchorsOrdered, "Reversed anchors");
 export const rotationPolicySchema = z.union([
@@ -272,6 +273,9 @@ const dimensionScores = z.strictObject({
   crop_health: loss,
 });
 const candidateFields = {
+  // Candidate conditions can reference the existing per-crop assessment instead
+  // of repeating every crop condition at every slot under the regional policy.
+  cropConditions: z.literal("assessment_crops").optional(),
   id: z.string().min(1).max(2000),
   terrainContext: z
     .strictObject({
@@ -327,6 +331,30 @@ const scenarioChangeSchema = z.strictObject({
   meanWaterChange: change.nullable().optional(),
 });
 const candidateFutureSchema = z.strictObject({
+  // Present only under the pinned regional comparison policy. A compared
+  // block can contain unavailable candidates; each model/period says why.
+  comparisons: z
+    .array(
+      z.strictObject({
+        period: z.enum(["mid_century", "near_term"]),
+        model: z.string().max(40),
+        experiment: scenarioExperimentSchema,
+        status: z.enum(["compared", "not_compared"]),
+        reason: z
+          .enum([
+            "CLIMATE_NOT_COMPARED",
+            "SCENARIO_TILE_NOT_PREPARED",
+            "SCENARIO_DATA_INCOMPLETE",
+            "FUTURE_ANALOGS_INSUFFICIENT",
+            "NEAR_TERM_TILE_NOT_PREPARED",
+            "NEAR_TERM_DATA_INCOMPLETE",
+            "NEAR_TERM_ANALOGS_INSUFFICIENT",
+          ])
+          .nullable(),
+      }),
+    )
+    .max(80)
+    .optional(),
   scenarios: z.array(scenarioChangeSchema).max(4),
   // The same comparison for the near-term period. Present only when the
   // pinned policy has one and it could be compared.
@@ -360,6 +388,9 @@ const assessmentFields = {
   context: rotationContextSchema,
   input: planRequestV2Schema,
   evidence: z.strictObject({
+    // Under regional-comparison-1, ruleIds resolve in this result's immutable
+    // catalog. Repeated inline citations may be omitted; tiers remain explicit.
+    ruleDetails: z.literal("pinned_catalog").optional(),
     weatherSnapshotIds: z.array(z.uuid()).max(128),
     rulesUsed: z.strictObject({
       double_checked: z.number().int().nonnegative(),
@@ -467,6 +498,9 @@ const futureWorldsSchema = z
       experiment: scenarioExperimentSchema,
       status: z.enum(["compared", "not_compared"]),
       topCandidateIds: z.array(z.string().max(2000)).max(500),
+      appliedWeights: weightsSchema.optional(),
+      comparedCandidateCount: z.number().int().nonnegative().optional(),
+      notComparedCandidateCount: z.number().int().nonnegative().optional(),
     }),
   )
   .max(50);
@@ -779,6 +813,75 @@ export const rotationAssessmentSchema = z
     rotationAssessmentV6Schema,
   ])
   .superRefine((result, ctx) => {
+    if (
+      "comparison" in result.policy &&
+      result.policy.comparison &&
+      "futureClimate" in result
+    ) {
+      const fail = () =>
+        ctx.addIssue({
+          code: "custom",
+          message: "Regional climate coverage mismatch",
+        });
+      for (const block of [
+        result.futureClimate,
+        ...(result.futureClimate.nearTerm
+          ? [result.futureClimate.nearTerm]
+          : []),
+      ]) {
+        if (
+          (block.status === "compared") !==
+            block.worlds.some((w) => (w.comparedCandidateCount ?? 0) > 0) ||
+          (block.status === "compared") !== (block.reason === null)
+        )
+          fail();
+        for (const w of block.worlds)
+          if (
+            w.comparedCandidateCount === undefined ||
+            w.notComparedCandidateCount === undefined ||
+            w.comparedCandidateCount + w.notComparedCandidateCount !==
+              result.accounting.compared ||
+            (w.status === "compared") !== w.comparedCandidateCount > 0
+          )
+            fail();
+      }
+      const policy = result.policy.futureClimate;
+      const expected = [
+        ...policy.futures.map((w) => ({ period: "mid_century", w })),
+        ...(policy.nearTerm?.windows.map((w) => ({ period: "near_term", w })) ??
+          []),
+      ]
+        .flatMap(({ period, w }) =>
+          policy.models.map((m) => `${period}|${m.id}|${w.experiment}`),
+        )
+        .sort();
+      for (const c of result.candidates) {
+        if (c.cropConditions !== "assessment_crops" || !c.future?.comparisons) {
+          fail();
+          continue;
+        }
+        const rows = c.future.comparisons;
+        if (
+          JSON.stringify(
+            rows.map((r) => `${r.period}|${r.model}|${r.experiment}`).sort(),
+          ) !== JSON.stringify(expected)
+        )
+          fail();
+        for (const row of rows) {
+          const models =
+            (row.period === "near_term"
+              ? c.future.nearTerm
+              : c.future.scenarios
+            )?.find((s) => s.experiment === row.experiment)?.models ?? [];
+          if (
+            (row.status === "compared") !== (row.reason === null) ||
+            (row.status === "compared") !==
+              models.some((m) => m.model === row.model)
+          )
+            fail();
+        }
+      }
+    }
     const research =
       "research" in result.policy && result.policy.research !== undefined;
     const report =

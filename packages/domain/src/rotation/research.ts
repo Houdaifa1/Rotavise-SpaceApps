@@ -330,6 +330,7 @@ export function researchCoverage(
   profiles: Map<string, CropProfileV2>,
   input: PlanRequestV2,
   benefitsV2 = false,
+  compact = false,
 ) {
   const ids = [
     ...new Set(candidates.flatMap((c) => c.slots.map((s) => s.cropId))),
@@ -337,9 +338,10 @@ export function researchCoverage(
   return {
     version: "income-benefits-1" as const,
     ...(benefitsV2 ? { benefitVersion: "benefits-2" as const } : {}),
+    ...(compact ? { evidenceLocation: "pinned_catalog" as const } : {}),
     crops: ids.map((id) => ({
       cropId: id,
-      ...(profiles.get(id)!.research
+      ...(!compact && profiles.get(id)!.research
         ? { evidence: profiles.get(id)!.research }
         : {}),
     })),
