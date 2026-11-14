@@ -24,14 +24,14 @@ Cut order if time runs out: F11, then F10, then F08.
 
 ## Backend
 
-| ID            | Task                                                         | Status                                                                  | Who      | Needs | Area it owns                           |
-| ------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------- | -------- | ----- | -------------------------------------- |
-| [B01](B01.md) | After the hackathon: restore the GitHub check, engine speed  | todo                                                                    | Houdaifa | —     | `packages/domain/src/rotation`         |
-| [B02](B02.md) | Merge B7 (ranking outside Tadla) and B8 (crop names, 0.16.0) | review ([PR 1](https://github.com/Houdaifa1/Rotavise-SpaceApps/pull/1)) | Houdaifa | —     | server modules, catalog 0.16.0         |
-| [B03](B03.md) | Sharp Google satellite map, NASA/EOX as fallback             | todo                                                                    | Houdaifa | —     | `features/map/` basemap, server config |
-| [B04](B04.md) | Sentinel-2 10 m field greenness (Planetary Computer)         | todo                                                                    |          | B02   | new server module `sentinel`           |
-| [B05](B05.md) | ESA WorldCover cropland check for fields                     | todo                                                                    |          | B02   | new server module `landcover`          |
-| [B06](B06.md) | Suggest mode proposes only crops with strong evidence        | todo                                                                    | Houdaifa | B02   | `packages/domain/src/rotation`         |
+| ID            | Task                                                         | Status | Who      | Needs | Area it owns                           |
+| ------------- | ------------------------------------------------------------ | ------ | -------- | ----- | -------------------------------------- |
+| [B01](B01.md) | After the hackathon: restore the GitHub check, engine speed  | todo   | Houdaifa | —     | `packages/domain/src/rotation`         |
+| [B02](B02.md) | Merge B7 (ranking outside Tadla) and B8 (crop names, 0.16.0) | done   | Houdaifa | —     | server modules, catalog 0.16.0         |
+| [B03](B03.md) | Sharp Google satellite map, NASA/EOX as fallback             | todo   | Houdaifa | —     | `features/map/` basemap, server config |
+| [B04](B04.md) | Sentinel-2 10 m field greenness (Planetary Computer)         | todo   |          | B02   | new server module `sentinel`           |
+| [B05](B05.md) | ESA WorldCover cropland check for fields                     | todo   |          | B02   | new server module `landcover`          |
+| [B06](B06.md) | Suggest mode proposes only crops with strong evidence        | todo   | Houdaifa | B02   | `packages/domain/src/rotation`         |
 
 ## Shared files
 
