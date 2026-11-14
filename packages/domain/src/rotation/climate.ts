@@ -71,6 +71,7 @@ export type ClimateSettings = {
   minimumCompleteAnalogs: number;
   representativeStepDays: number;
   maxClimateDayVisits: number;
+  comparison?: "regional-comparison-1" | undefined;
 };
 export const makeSeries = (length: number): Series => {
   const make = () => new Float64Array(length).fill(Number.NaN);
@@ -270,11 +271,47 @@ export class ClimateModel {
   get dayVisits() {
     return this.visits;
   }
+  private readonly positions = new Map<string, number | null>();
+  private readonly shifts = new Map<string, string | null>();
+  // Calendar lookups are pure for this immutable source. Reuse them across
+  // crops and reporting phases, without changing visit accounting or results.
+  private position(date: string): number | null {
+    if (!this.source) return null;
+    if (!this.policy.comparison) return this.source.position(date);
+    if (this.positions.has(date)) return this.positions.get(date)!;
+    const value = this.source.position(date);
+    this.positions.set(date, value);
+    return value;
+  }
+  private shiftDate(date: string, years: number): string | null {
+    if (!this.source) return null;
+    if (!this.policy.comparison) return this.source.shift(date, years);
+    const key = `${date}|${years}`;
+    if (this.shifts.has(key)) return this.shifts.get(key)!;
+    const value = this.source.shift(date, years);
+    this.shifts.set(key, value);
+    return value;
+  }
+  private consume(days: number) {
+    if (
+      this.policy.comparison &&
+      this.visits + days > this.policy.maxClimateDayVisits
+    ) {
+      this.exhausted = true;
+      return false;
+    }
+    this.visits += days;
+    if (this.visits > this.policy.maxClimateDayVisits) {
+      this.exhausted = true;
+      return false;
+    }
+    return true;
+  }
   exposure(spec: CropSpec, sown: string): number | null {
     if (!this.source || !spec.temperature.length) return null;
-    const key = `${spec.profile.id}|${sown}`;
+    const key = `${spec.profile.id}|${sown}${this.policy.comparison ? "|" + spec.temperature.map((r) => r.id).join(",") : ""}`;
     if (this.memo.has(key)) return this.memo.get(key)!;
-    const origin = this.source.position(sown);
+    const origin = this.position(sown);
     if (origin === null) {
       this.memo.set(key, null);
       return null;
@@ -287,12 +324,7 @@ export class ClimateModel {
         return null;
       }
       const [from, to] = range;
-      this.visits += to - from + 1;
-      if (this.visits > this.policy.maxClimateDayVisits) {
-        // Budget exhaustion disables the climate dimension; it never fails the plan.
-        this.exhausted = true;
-        return null;
-      }
+      if (!this.consume(to - from + 1)) return null;
       const values =
         this.source.series[variables[rule.basis as keyof typeof variables]];
       let outside = 0;
@@ -344,9 +376,8 @@ export class ClimateModel {
           last = -Infinity;
         for (const sown of dates)
           for (const anchor of this.anchors()) {
-            const target = this.source?.shift(sown, anchor - year) ?? null;
-            const origin =
-              target === null ? null : this.source!.position(target);
+            const target = this.shiftDate(sown, anchor - year) ?? null;
+            const origin = target === null ? null : this.position(target);
             const range =
               origin === null ? null : this.stageDays(rule, spec, origin);
             const values =
@@ -358,6 +389,10 @@ export class ClimateModel {
               continue;
             }
             const [from, to] = range;
+            if (this.policy.comparison && !this.consume(to - from + 1)) {
+              missing++;
+              continue;
+            }
             const lo = origin + from,
               hi = origin + to;
             const counts = prefixCounts(
@@ -448,13 +483,13 @@ export class ClimateModel {
           deficit = 0;
         for (const sown of dates)
           for (const anchor of this.anchors()) {
-            const target = this.source!.shift(sown, anchor - year);
-            const origin =
-              target === null ? null : this.source!.position(target);
+            const target = this.shiftDate(sown, anchor - year);
+            const origin = target === null ? null : this.position(target);
             if (
               origin === null ||
               origin < 0 ||
               origin + end > derived.length ||
+              (this.policy.comparison && !this.consume(end - from)) ||
               derived.incomplete[origin + end] !==
                 derived.incomplete[origin + from]
             ) {
@@ -553,7 +588,9 @@ export class ClimateModel {
     for (let d = 0; d <= spec.duration.max; d++) {
       const x = tx[origin + d],
         n = tn[origin + d];
-      this.visits++;
+      if (this.policy.comparison) {
+        if (!this.consume(1)) return null;
+      } else this.visits++;
       if (
         x === undefined ||
         n === undefined ||
@@ -583,7 +620,7 @@ export class ClimateModel {
     }
     const known = seasons.get(sown);
     if (known !== undefined) return known;
-    const origin = this.source!.position(sown);
+    const origin = this.position(sown);
     let result: SeasonWater | null = null;
     if (origin !== null && origin >= 0) {
       const days = Math.round((spec.duration.min + spec.duration.max) / 2);
@@ -595,12 +632,13 @@ export class ClimateModel {
       const complete =
         origin + days <= length &&
         incomplete[origin + days]! === incomplete[origin]!;
+      if (this.policy.comparison && !this.consume(days)) return null;
       if (complete)
         for (let d = 0; d < days; d++) {
           use += et0[origin + d]! * kc[d]!;
           rain += water.rain[origin + d]!;
         }
-      this.visits += days;
+      if (!this.policy.comparison) this.visits += days;
       if (complete && use > 0)
         result = { use, rain, shortfall: Math.max(0, use - rain) };
     }
@@ -622,7 +660,7 @@ export class ClimateModel {
     const year = Number(sown.slice(0, 4));
     const values: number[] = [];
     for (const anchor of this.anchors()) {
-      const target = this.source?.shift(sown, anchor - year) ?? null;
+      const target = this.shiftDate(sown, anchor - year) ?? null;
       const season = target === null ? null : this.season(spec, target);
       if (season) values.push(season.shortfall / season.use);
     }
@@ -634,12 +672,12 @@ export class ClimateModel {
   // kept apart, not summed, so adding them to a rotation's running totals stays
   // the same sequence of additions.
   private slotWaterTerms(slot: ClimateSlot, offset: number, step: number) {
-    const key = `${slot.spec.profile.id}|${slot.sowEarliest}|${slot.sowLatest}|${offset}`;
+    const key = `${slot.spec.profile.id}|${slot.sowEarliest}|${slot.sowLatest}|${offset}${this.policy.comparison ? "|" + slot.spec.temperature.map((r) => r.id).join(",") : ""}`;
     const known = this.slotWaterMemo.get(key);
     if (known !== undefined) return known;
     const dates = sowingDatesFor(slot.sowEarliest, slot.sowLatest, step);
     const seasons = dates.map((d) => {
-      const target = this.source!.shift(d, offset);
+      const target = this.shiftDate(d, offset);
       return target === null ? null : this.season(slot.spec, target);
     });
     const terms = seasons.some((s) => s === null)
@@ -732,16 +770,17 @@ export class ClimateModel {
         complete = true;
       const totals: number[] = [];
       for (const { sown, days } of plan) {
-        const target = source.shift(sown, offset);
-        const origin = target === null ? null : source.position(target);
+        const target = this.shiftDate(sown, offset);
+        const origin = target === null ? null : this.position(target);
         if (origin === null || origin < 0) {
           complete = false;
           break;
         }
+        if (this.policy.comparison && !this.consume(days)) return null;
         // A cycle that runs past the series end is incomplete, as a missing
         // day is. Plain comparisons keep this hot loop optimizable.
         if (origin + days > limit) {
-          this.visits += days;
+          if (!this.policy.comparison) this.visits += days;
           complete = false;
           break;
         }
@@ -762,7 +801,7 @@ export class ClimateModel {
           if (run > longest) longest = run;
           total += r;
         }
-        this.visits += days;
+        if (!this.policy.comparison) this.visits += days;
         if (!complete) break;
         totals.push(total);
       }
@@ -802,8 +841,8 @@ export class ClimateModel {
     if (!water) return null;
     const totals: number[] = [];
     for (const anchor of this.anchors()) {
-      const start = this.source!.position(`${anchor}-01-01`);
-      const end = this.source!.position(`${anchor}-12-31`);
+      const start = this.position(`${anchor}-01-01`);
+      const end = this.position(`${anchor}-12-31`);
       if (start === null || end === null || start < 0) continue;
       let sum = 0,
         complete = true;
@@ -822,7 +861,7 @@ export class ClimateModel {
       : null;
   }
   private shifted(spec: CropSpec, date: string, years: number) {
-    const target = this.source?.shift(date, years) ?? null;
+    const target = this.shiftDate(date, years) ?? null;
     return target === null ? null : this.exposure(spec, target);
   }
   private anchors() {
@@ -856,7 +895,7 @@ export class ClimateModel {
     return values.reduce((a, b) => a + b, 0) / values.length;
   }
   private slotMean(slot: ClimateSlot, offset: number, step: number) {
-    const key = `${slot.spec.profile.id}|${slot.sowEarliest}|${slot.sowLatest}|${offset}`;
+    const key = `${slot.spec.profile.id}|${slot.sowEarliest}|${slot.sowLatest}|${offset}${this.policy.comparison ? "|" + slot.spec.temperature.map((r) => r.id).join(",") : ""}`;
     const known = this.slotMemo.get(key);
     if (known !== undefined) return known;
     const dates = sowingDatesFor(slot.sowEarliest, slot.sowLatest, step);

@@ -1120,7 +1120,7 @@ test("sourced names reject missing sources, missing confidence and invalid prefe
   ).toThrow("CATALOG_INVALID");
   expect(
     corrupt((names) => {
-      names.find((n) => n.recall).preferred = true;
+      names.find((n) => n.recall && n.language === "ary").preferred = true;
     }),
   ).toThrow("CATALOG_INVALID");
   expect(

@@ -70,9 +70,9 @@ export function buildCropDetail(
         );
     return items.map((n, index) => {
       if (
-        (!n.citations && !n.recall) ||
+        (!n.citations && !n.recall && !n.origin) ||
         n.preferred === undefined ||
-        (!n.confidence && !n.recall)
+        (!n.confidence && !n.recall && !n.origin)
       )
         gap(
           "CROP_DETAIL_NAMES_INCOMPLETE",
@@ -84,6 +84,7 @@ export function buildCropDetail(
         name: n.name,
         confidence: n.confidence ?? n.recall?.confidence ?? null,
         preferred: n.preferred ?? null,
+        ...(n.origin ? { origin: n.origin } : {}),
         evidence: n.recall
           ? "model_recall"
           : n.citations?.length

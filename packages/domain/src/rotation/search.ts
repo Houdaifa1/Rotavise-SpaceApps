@@ -48,6 +48,10 @@ export type SearchResult = {
   pruned: number;
   truncated: boolean;
   rejections: Map<RotationReason["code"], number>;
+  firstPlacements: Map<
+    string,
+    { count: number; rejections: Map<RotationReason["code"], number> }
+  >;
 };
 type Views = Record<
   "climate" | "water" | "soil_health" | "crop_health",
@@ -116,6 +120,7 @@ type Ctx = {
   policy: RotationPolicy;
   history: HistoryFacts;
   climate: Climate;
+  compareWater?: boolean;
   reject: (code: RotationReason["code"]) => void;
 };
 const confirmed = (o: { source: string; confirmation: string }) =>
@@ -208,7 +213,20 @@ function place(
           .filter((s) => s.spec.profile.id === cropId)
           .map((s) => s.occurrence.end),
       ];
-      for (const sown of previousSowings) {
+      // For a fixed return interval, the latest known sowing gives the most
+      // restrictive return date. Keep one unknown-date warning as well. Earlier
+      // soft warnings add no constraint and used to multiply per slot.
+      const recent =
+        "comparison" in policy && policy.comparison
+          ? [
+              ...(previousSowings.includes(null) ? [null] : []),
+              ...previousSowings
+                .filter((d): d is string => d !== null)
+                .sort()
+                .slice(-1),
+            ]
+          : previousSowings;
+      for (const sown of recent) {
         if (sown === null) {
           warnings.push(
             rotationReason("HISTORY_DATES_UNKNOWN", "condition", {
@@ -359,9 +377,10 @@ function extend(
   };
   const days = meanDuration(spec);
   const climate = ctx.climate.estimate(spec, slot.sowEarliest);
-  const balance = spec.waterCurve
-    ? ctx.climate.waterEstimate(spec, slot.sowEarliest)
-    : null;
+  const balance =
+    spec.waterCurve && ctx.compareWater !== false
+      ? ctx.climate.waterEstimate(spec, slot.sowEarliest)
+      : null;
   const predecessor = partial
     ? partial.slots.at(-1)!.spec.profile.identity.family
     : ctx.history.predecessorFamily;
@@ -463,6 +482,22 @@ function prune(
   width: number,
 ) {
   const parts = items.map((p) => scoreParts(ctx, p));
+  if (
+    "comparison" in ctx.policy &&
+    ctx.policy.comparison === "regional-comparison-1"
+  ) {
+    // Search uses one set of checks/weights. Missing components take the
+    // frontier mean, matching final neutral imputation, never a free zero.
+    for (const dimension of ["climate", "water", "soil"] as const) {
+      const known = parts.flatMap((p) =>
+        p[dimension] === null ? [] : [p[dimension]!],
+      );
+      const mean = known.length
+        ? known.reduce((a, b) => a + b, 0) / known.length
+        : null;
+      for (const p of parts) p[dimension] ??= mean;
+    }
+  }
   const keep = new Map<string, PartialRotation>();
   for (const view of views) {
     const scores = Float64Array.from(parts, (c) => weigh(c, view));
@@ -498,6 +533,8 @@ export function searchRotations(
   views: Views,
 ): SearchResult {
   const rejections = new Map<RotationReason["code"], number>();
+  const firstPlacements: SearchResult["firstPlacements"] = new Map();
+  let firstCrop: string | null = null;
   const ctx: Ctx = {
     input,
     catalog,
@@ -505,18 +542,36 @@ export function searchRotations(
     policy,
     history,
     climate,
-    reject: (code) => rejections.set(code, (rejections.get(code) ?? 0) + 1),
+    compareWater:
+      !("comparison" in policy && policy.comparison) ||
+      views.some((view) => view.water > 0),
+    reject: (code) => {
+      rejections.set(code, (rejections.get(code) ?? 0) + 1);
+      if (firstCrop) {
+        const r = firstPlacements.get(firstCrop)!.rejections;
+        r.set(code, (r.get(code) ?? 0) + 1);
+      }
+    },
   };
   let expansions = 0,
     pruned = 0,
     truncated = false;
   const completed: PartialRotation[] = [];
   let frontier: PartialRotation[] = [];
-  for (const spec of specs)
+  for (const spec of specs) {
+    firstCrop = spec.profile.id;
+    const first = {
+      count: 0,
+      rejections: new Map<RotationReason["code"], number>(),
+    };
+    firstPlacements.set(firstCrop, first);
     for (const placed of place(ctx, null, spec)) {
+      first.count++;
       expansions++;
       frontier.push(extend(ctx, null, placed));
     }
+  }
+  firstCrop = null;
   ({ kept: frontier, pruned } = prune(ctx, frontier, views, policy.beamWidth));
   for (let depth = 1; frontier.length && !truncated; depth++) {
     if (depth >= policy.maxSlots) {
@@ -554,6 +609,7 @@ export function searchRotations(
     pruned: pruned + finals.pruned,
     truncated,
     rejections,
+    firstPlacements,
   };
 }
 
@@ -575,6 +631,7 @@ export function fixedRotation(
   history: HistoryFacts,
   climate: Climate,
   cropIds: string[],
+  compareWater = true,
 ): FixedRotation {
   let last: RotationReason["code"] | null = null;
   const ctx: Ctx = {
@@ -584,6 +641,7 @@ export function fixedRotation(
     policy,
     history,
     climate,
+    compareWater,
     reject: (code) => {
       last = code;
     },

@@ -1,0 +1,372 @@
+[
+  {
+    "id": "lint",
+    "command": ["pnpm", "lint"],
+    "started": "2026-11-12T20:48:03.600Z",
+    "finished": "2026-11-12T20:48:17.426Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/lint.log"
+  },
+  {
+    "id": "regional-eval",
+    "command": ["pnpm", "test:regional-eval"],
+    "started": "2026-11-12T20:48:29.761Z",
+    "finished": "2026-11-12T20:48:32.220Z",
+    "exitCode": 1,
+    "signal": null,
+    "log": ".artifacts/b7/logs/regional-eval.log",
+    "configFile": "/Users/houdaifadrahm/projects/rotavise_project/.env"
+  },
+  {
+    "id": "openapi",
+    "command": ["pnpm", "openapi:generate"],
+    "started": "2026-11-12T20:48:30.916Z",
+    "finished": "2026-11-12T20:48:40.739Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/openapi.log"
+  },
+  {
+    "id": "regional-eval-full",
+    "command": ["pnpm", "test:regional-eval"],
+    "started": "2026-11-12T20:48:45.910Z",
+    "finished": "2026-11-12T20:52:44.554Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/regional-eval-full.log",
+    "configFile": "/Users/houdaifadrahm/projects/rotavise_project/.env"
+  },
+  {
+    "id": "regional-eval-final",
+    "command": ["pnpm", "test:regional-eval"],
+    "started": "2026-11-12T20:53:21.082Z",
+    "finished": "2026-11-12T20:56:10.968Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/regional-eval-final.log",
+    "configFile": "/Users/houdaifadrahm/projects/rotavise_project/.env"
+  },
+  {
+    "id": "backend",
+    "command": ["pnpm", "test:backend"],
+    "started": "2026-11-12T20:56:16.979Z",
+    "finished": "2026-11-12T20:59:07.160Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/backend.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "plans",
+    "command": ["pnpm", "test:plans"],
+    "started": "2026-11-12T20:59:07.192Z",
+    "finished": "2026-11-12T20:59:52.437Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/plans.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "catalog",
+    "command": ["pnpm", "test:catalog"],
+    "started": "2026-11-12T20:59:52.468Z",
+    "finished": "2026-11-12T21:01:54.143Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/catalog.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "engine",
+    "command": ["pnpm", "test:engine"],
+    "started": "2026-11-12T21:01:54.203Z",
+    "finished": "2026-11-12T21:09:14.043Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/engine.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "api-docs",
+    "command": ["pnpm", "test:api-docs"],
+    "started": "2026-11-12T21:09:14.117Z",
+    "finished": "2026-11-12T21:09:31.564Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/api-docs.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "unit",
+    "command": ["pnpm", "test:unit"],
+    "started": "2026-11-12T21:09:31.636Z",
+    "finished": "2026-11-12T21:09:51.026Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/unit.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "terrain",
+    "command": [
+      "node",
+      "--experimental-vm-modules",
+      "node_modules/jest/bin/jest.js",
+      "--config",
+      "tooling/verification/jest.config.mjs",
+      "--selectProjects",
+      "terrain-integration",
+      "--runInBand"
+    ],
+    "started": "2026-11-12T21:09:51.104Z",
+    "finished": "2026-11-12T21:09:54.436Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/terrain.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "scenarios-initial",
+    "command": [
+      "node",
+      "--experimental-vm-modules",
+      "node_modules/jest/bin/jest.js",
+      "--config",
+      "tooling/verification/jest.config.mjs",
+      "--selectProjects",
+      "scenarios",
+      "scenarios-integration",
+      "--runInBand"
+    ],
+    "exitCode": 1,
+    "log": ".artifacts/b7/logs/scenarios-initial.log",
+    "note": "Observed process exit preserved from tool result; this historical diagnostic entry has no reconstructed timestamp."
+  },
+  {
+    "id": "focused-second",
+    "command": [
+      "node",
+      "--experimental-vm-modules",
+      "node_modules/jest/bin/jest.js",
+      "--config",
+      "tooling/verification/jest.config.mjs",
+      "--selectProjects",
+      "scenarios",
+      "rotation",
+      "rotation-integration",
+      "scenarios-integration",
+      "--runInBand",
+      "--testNamePattern",
+      "regional|partial reads"
+    ],
+    "exitCode": 1,
+    "log": ".artifacts/b7/logs/focused-second.log",
+    "note": "Observed process exit preserved from tool result; this historical diagnostic entry has no reconstructed timestamp."
+  },
+  {
+    "id": "focused-third",
+    "command": [
+      "node",
+      "--experimental-vm-modules",
+      "node_modules/jest/bin/jest.js",
+      "--config",
+      "tooling/verification/jest.config.mjs",
+      "--selectProjects",
+      "scenarios",
+      "rotation",
+      "rotation-integration",
+      "scenarios-integration",
+      "--runInBand",
+      "--testNamePattern",
+      "regional|partial reads"
+    ],
+    "exitCode": 1,
+    "log": ".artifacts/b7/logs/focused-third.log",
+    "note": "Observed process exit preserved from tool result; this historical diagnostic entry has no reconstructed timestamp."
+  },
+  {
+    "id": "focused-resume",
+    "command": [
+      "node",
+      "--experimental-vm-modules",
+      "node_modules/jest/bin/jest.js",
+      "--config",
+      "tooling/verification/jest.config.mjs",
+      "--selectProjects",
+      "scenarios",
+      "rotation",
+      "rotation-integration",
+      "scenarios-integration",
+      "--runInBand",
+      "--testNamePattern",
+      "regional|partial reads"
+    ],
+    "exitCode": 0,
+    "log": ".artifacts/b7/logs/focused-resume.log",
+    "note": "Observed process exit preserved from tool result; this historical diagnostic entry has no reconstructed timestamp."
+  },
+  {
+    "id": "container",
+    "command": ["pnpm", "test:container"],
+    "started": "2026-11-12T21:09:54.510Z",
+    "finished": "2026-11-12T21:12:01.555Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/container.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "typecheck",
+    "command": ["pnpm", "typecheck"],
+    "started": "2026-11-12T21:12:34.566Z",
+    "finished": "2026-11-12T21:12:59.948Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/typecheck.log"
+  },
+  {
+    "id": "backend-final",
+    "command": ["pnpm", "test:backend"],
+    "started": "2026-11-12T21:13:02.517Z",
+    "finished": "2026-11-12T21:15:52.537Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/backend-final.log"
+  },
+  {
+    "id": "regional-eval-release",
+    "command": ["pnpm", "test:regional-eval"],
+    "started": "2026-11-12T21:16:13.998Z",
+    "finished": "2026-11-12T21:20:00.877Z",
+    "exitCode": 1,
+    "signal": null,
+    "log": ".artifacts/b7/logs/regional-eval-release.log",
+    "configFile": "/Users/houdaifadrahm/projects/rotavise_project/.env"
+  },
+  {
+    "id": "build-calendar-cache",
+    "command": ["pnpm", "build:server"],
+    "started": "2026-11-12T21:20:23.324Z",
+    "finished": "2026-11-12T21:20:36.473Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/build-calendar-cache.log"
+  },
+  {
+    "id": "calendar-cache-unit",
+    "command": [
+      "node",
+      "--experimental-vm-modules",
+      "node_modules/jest/bin/jest.js",
+      "--config",
+      "tooling/verification/jest.config.mjs",
+      "--selectProjects",
+      "rotation",
+      "--runInBand",
+      "--testNamePattern",
+      "calendar caches|regional search spends|regional policy retains"
+    ],
+    "started": "2026-11-12T21:20:57.967Z",
+    "finished": "2026-11-12T21:21:17.893Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/calendar-cache-unit.log"
+  },
+  {
+    "id": "regional-eval-cached",
+    "command": ["pnpm", "test:regional-eval"],
+    "started": "2026-11-12T21:21:33.503Z",
+    "finished": "2026-11-12T21:25:00.185Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/regional-eval-cached.log",
+    "configFile": "/Users/houdaifadrahm/projects/rotavise_project/.env"
+  },
+  {
+    "id": "regional-audit",
+    "command": ["node", ".artifacts/b7/audit.mjs"],
+    "started": "2026-11-12T21:25:22.867Z",
+    "finished": "2026-11-12T21:25:24.071Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/regional-audit.log"
+  },
+  {
+    "id": "engine-cached",
+    "command": ["pnpm", "test:engine"],
+    "started": "2026-11-12T21:25:21.745Z",
+    "finished": "2026-11-12T21:31:28.312Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/engine-cached.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "backend-cached",
+    "command": ["pnpm", "test:backend"],
+    "started": "2026-11-12T21:31:28.409Z",
+    "finished": "2026-11-12T21:34:01.152Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/backend-cached.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "container-cached",
+    "command": ["pnpm", "test:container"],
+    "started": "2026-11-12T21:34:01.236Z",
+    "finished": "2026-11-12T21:35:42.491Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/container-cached.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "typecheck-final",
+    "command": ["pnpm", "typecheck"],
+    "started": "2026-11-12T21:35:42.614Z",
+    "finished": "2026-11-12T21:36:04.110Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/typecheck-final.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "lint-final",
+    "command": ["pnpm", "lint"],
+    "started": "2026-11-12T21:36:04.187Z",
+    "finished": "2026-11-12T21:36:15.152Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/lint-final.log",
+    "BUILDX_CONFIG": "/tmp/rotavise-b7-buildx"
+  },
+  {
+    "id": "evidence-audit",
+    "command": ["node", ".artifacts/b7/audit.mjs"],
+    "started": "2026-11-12T21:37:30.426Z",
+    "finished": "2026-11-12T21:37:31.770Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/evidence-audit.log"
+  },
+  {
+    "id": "format-check",
+    "command": ["pnpm", "format:check"],
+    "started": "2026-11-12T21:38:28.318Z",
+    "finished": "2026-11-12T21:38:49.103Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/format-check.log"
+  },
+  {
+    "id": "final-audit",
+    "command": ["node", ".artifacts/b7/audit.mjs", "--final"],
+    "started": "2026-11-12T21:39:39.618Z",
+    "finished": "2026-11-12T21:39:41.082Z",
+    "exitCode": 0,
+    "signal": null,
+    "log": ".artifacts/b7/logs/final-audit.log"
+  }
+]

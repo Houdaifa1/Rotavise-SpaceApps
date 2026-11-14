@@ -57,10 +57,10 @@ export const resultReasonCodes = rows("reason_code", [
       "المناخ الجاي ما تقارنش",
     ],
     [
-      "The rotations were not compared on climate, so the future climate was not compared either.",
-      "Les rotations n'ont pas été comparées sur le climat : le climat futur ne l'a donc pas été non plus.",
-      "لم تُقارَن الدورات الزراعية مناخياً، لذلك لم يُقارَن المناخ المستقبلي أيضاً.",
-      "الدورات الزراعية ما تقارنوش من ناحية المناخ، وداكشي علاش حتى المناخ الجاي ما تقارنش.",
+      "The climate comparison could not be made. Under the regional comparison policy, this applies only to the named rotation and model; complete rotations can still be compared.",
+      "La comparaison climatique est impossible. Avec la politique régionale, ce motif concerne uniquement la rotation et le modèle indiqués ; les rotations complètes peuvent être comparées.",
+      "تعذّرت المقارنة المناخية. في سياسة المقارنة الإقليمية، يخص هذا السبب الدورة والنموذج المحددين فقط؛ وتبقى مقارنة الدورات المكتملة ممكنة.",
+      "المقارنة ديال المناخ ما قدرناش نديروها. فالسياسة الجهوية، هاد السبب كيخص غير الدورة والنموذج المذكورين؛ الدورات اللي بياناتها كاملة يقدرو يتقارنو.",
     ],
   ],
   [
@@ -201,6 +201,51 @@ export const resultReasonCodes = rows("reason_code", [
 ]);
 
 export const resultStatusTerms = rows("status", [
+  [
+    "assessment_crops",
+    [
+      "Shared crop conditions",
+      "Conditions communes par culture",
+      "شروط مشتركة لكل محصول",
+      "شروط مشتركة لكل زراعة",
+    ],
+    [
+      "The rotation inherits each crop's conditions from the crop assessments in this result. Rotation-specific warnings remain on the candidate. This avoids repeating the same conditions at every slot.",
+      "La rotation reprend les conditions de chaque culture dans les évaluations de ce résultat. Les avertissements propres à la rotation restent sur la candidate. Cela évite de répéter les mêmes conditions à chaque cycle.",
+      "ترث الدورة شروط كل محصول من تقييمات المحاصيل في هذه النتيجة. تبقى التحذيرات الخاصة بالدورة مرفقة بها. يجنّب ذلك تكرار الشروط نفسها في كل حلقة.",
+      "الدورة كتورث شروط كل زراعة من تقييمات الزراعات فهاد النتيجة. التحذيرات الخاصة بالدورة كتبقى معاها. بهاد الطريقة ما كنعاودوش نفس الشروط فكل حلقة.",
+    ],
+  ],
+  [
+    "candidate_climate_coverage",
+    [
+      "Climate coverage per rotation",
+      "Couverture climatique par rotation",
+      "التغطية المناخية لكل دورة",
+      "تغطية المناخ لكل دورة",
+    ],
+    [
+      "Compared means at least one rotation has a complete comparison. Each rotation lists the models and scenarios used or missing, separately for the near term and mid-century. Missing rotations receive no estimated climate score.",
+      "Comparé signifie qu’au moins une rotation dispose d’une comparaison complète. Chaque rotation indique les modèles et scénarios utilisés ou manquants, pour les prochaines années et le milieu du siècle. Aucun score climatique n’est estimé pour les rotations incomplètes.",
+      "تعني حالة المقارنة وجود دورة واحدة على الأقل بمقارنة مكتملة. تسرد كل دورة النماذج والسيناريوهات المستخدمة أو الناقصة، للسنوات القريبة ومنتصف القرن بشكل منفصل. لا تُقدّر درجة مناخية للدورات الناقصة.",
+      "حالة المقارنة كتعني كاينة على الأقل دورة وحدة المقارنة ديالها كاملة. كل دورة كتبين النماذج والسيناريوهات المستعملة ولا الناقصة، بوحدهم للسنين القريبة ولوسط القرن. ما كنخمنوش نقطة المناخ للدورات الناقصة.",
+    ],
+  ],
+  [
+    "pinned_catalog",
+    [
+      "Evidence in the saved catalog",
+      "Preuves dans le catalogue figé",
+      "الأدلة في الكتالوج المثبت",
+      "الأدلة فالكاتالوگ المحفوظ",
+    ],
+    [
+      "Rule and research identifiers refer to the immutable catalog version and hash saved in this result. Full citations remain in that catalog; repeated copies are omitted to retain crop diversity within the response size budget.",
+      "Les identifiants des règles et recherches renvoient à la version immuable du catalogue et à son empreinte enregistrées dans ce résultat. Les citations complètes y restent accessibles ; leurs copies répétées sont omises pour préserver la diversité des cultures dans la limite de taille.",
+      "تشير معرّفات القواعد والأبحاث إلى إصدار الكتالوج الثابت وبصمته المحفوظين في النتيجة. تبقى الاستشهادات الكاملة فيه؛ وتُحذف النسخ المتكررة للحفاظ على تنوع المحاصيل ضمن حد حجم الاستجابة.",
+      "معرّفات القواعد والأبحاث كيرجعو لنسخة الكاتالوگ الثابتة والبصمة ديالها المحفوظة فالنتيجة. المراجع كاملة كتبقى تما؛ كنحيدو غير النسخ المكررة باش يبقى تنوع الزراعات داخل حد حجم الجواب.",
+    ],
+  ],
   [
     "ready",
     ["Ready", "Prêt", "جاهز", "واجد"],

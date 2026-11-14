@@ -93,6 +93,16 @@ export const vulnerabilitySeasonSchema = z.strictObject({
         ruleIds: z.array(z.string().max(80)).max(8),
         citations: z.array(citationSchema).max(64),
         verification: ruleVerificationSchema.nullable(),
+        // Full provenance resolves through ruleIds and the pinned catalog;
+        // model recall remains explicitly labelled when inline detail is omitted.
+        verificationStatus: z
+          .enum([
+            "extracted",
+            "double_checked",
+            "expert_reviewed",
+            "model_recall",
+          ])
+          .optional(),
         basis: z.string().min(1).max(200),
         numbers: z.record(z.string().max(60), z.number().finite().nullable()),
       }),

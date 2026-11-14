@@ -55,6 +55,7 @@ try {
       ["0.13.0", "2", "imported"],
       ["0.14.0", "2", "imported"],
       ["0.15.0", "2", "imported"],
+      ["0.16.0", "2", "imported"],
     ],
   );
   assert.ok(repeatedImport.every((r) => r.outcome === "unchanged"));
@@ -210,6 +211,52 @@ try {
     );
     assert.notEqual(docker("exec", name, "id", "-u"), "0");
     if (entry === "api") {
+      const namesResponse = await fetch(
+        origin + "/api/v1/catalog/options/rotavise-pilot/0.16.0",
+      );
+      assert.equal(namesResponse.status, 200);
+      const options = await namesResponse.json();
+      assert.equal(options.crops.length, 246);
+      for (const lang of ["en", "fr", "ar", "ary"])
+        assert.equal(
+          options.crops.filter((c) =>
+            c.localNames.some((n) => n.language === lang && n.preferred),
+          ).length,
+          246,
+        );
+      const cultivars = options.crops.flatMap((c) => c.cultivars);
+      assert.equal(
+        cultivars.filter((c) => c.localNames.some((n) => n.language === "en"))
+          .length,
+        1226,
+      );
+      assert.equal(
+        cultivars.filter((c) => c.localNames.some((n) => n.language === "ary"))
+          .length,
+        148,
+      );
+      const detailResponse = await fetch(
+        origin + "/api/v1/catalog/crops/rotavise-pilot/0.16.0/olive",
+      );
+      assert.equal(detailResponse.status, 200);
+      const detail = await detailResponse.json();
+      assert.ok(
+        detail.identity.names.some(
+          (n) =>
+            n.language === "en" && n.origin === "primary_name" && n.preferred,
+        ),
+      );
+      assert.ok(
+        detail.cultivars
+          .find((c) => c.id === "haouzia")
+          .names.some(
+            (n) =>
+              n.language === "ary" && n.preferred && n.evidence === "sourced",
+          ),
+      );
+      console.log(
+        "PASS production catalog 0.16.0: PostgreSQL import/reimport, GET options en/ary crops 246/246, cultivars 1226/148 and crop-detail provenance",
+      );
       const planApi = { origin };
       const owner = await planSession(planApi),
         other = await planSession(planApi);

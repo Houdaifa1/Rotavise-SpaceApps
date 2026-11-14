@@ -95,6 +95,9 @@ export const rotationResourcesSchema = z.strictObject({
 export const catalogResearchCoverageSchema = z.strictObject({
   version: z.literal("income-benefits-1"),
   benefitVersion: z.literal("benefits-2").optional(),
+  // New comparison policy avoids copying the full immutable catalog research
+  // into each plan. Resolve by the assessment catalog id/version/hash.
+  evidenceLocation: z.literal("pinned_catalog").optional(),
   crops: z
     .array(
       z.strictObject({

@@ -2067,3 +2067,212 @@ test.each([
   },
   90000,
 );
+
+test("regional policy retains feasible mainstream first crops, bounds work and keeps old pins byte-identical after running it", async () => {
+  const { regionalRotationPlanningPolicy } =
+    await import("../../apps/server/dist/modules/plans/application/planning-store.js");
+  const catalog = await loadCatalogRelease("data/catalog/releases/0.15.0");
+  const input = rotationRequest({
+    history: { status: "unknown" },
+    preferences: {
+      mode: "suggest",
+      considered_crop_ids: [],
+      excluded_crop_ids: [],
+      priorities: { climate: 3, water: 2, soil_health: 2, crop_health: 1 },
+    },
+  });
+  let work;
+  const current = assessRotationsCore(
+    {
+      ...input,
+      planning: { ...input.planning, latest_start_date: "2027-05-03" },
+    },
+    catalog,
+    weather,
+    { ...regionalRotationPlanningPolicy, research: "benefits-2" },
+    assessedOn,
+    true,
+    null,
+    null,
+    null,
+    "rotation-engine-7",
+    null,
+    (stage, data) => {
+      if (stage === "work") work = data;
+    },
+  );
+  expect(current.policy.comparison).toBe("regional-comparison-1");
+  expect(current.accounting.truncated).toBe(false);
+  for (const id of [
+    "durum-wheat",
+    "bread-wheat",
+    "barley",
+    "lentil",
+    "chickpea",
+    "faba-bean",
+    "maize",
+    "potato",
+    "tomato",
+  ]) {
+    expect(current.candidates.some((c) => c.slots[0].cropId === id)).toBe(true);
+  }
+  expect(work.dayVisits).toBeLessThanOrEqual(
+    current.policy.maxClimateDayVisits,
+  );
+  expect(Buffer.byteLength(JSON.stringify(current))).toBeLessThan(8388608);
+  expect(current.evidence.ruleDetails).toBe("pinned_catalog");
+  expect(current.catalogResearch.evidenceLocation).toBe("pinned_catalog");
+  expect(
+    current.candidates.every((c) => c.cropConditions === "assessment_crops"),
+  ).toBe(true);
+  const dishonest = structuredClone(current);
+  dishonest.futureClimate.status = "compared";
+  dishonest.futureClimate.reason = null;
+  dishonest.futureClimate.worlds = [];
+  expect(rotationAssessmentSchema.safeParse(dishonest).success).toBe(false);
+  const recalled = current.candidates
+    .flatMap((c) => c.vulnerabilitySeasons.flatMap((s) => s.periods))
+    .filter((p) => p.verificationStatus === "model_recall");
+  expect(recalled.length).toBeGreaterThan(0);
+  for (const p of recalled)
+    for (const id of p.ruleIds)
+      expect(
+        catalog.profiles.some((c) =>
+          c.rules.some(
+            (r) => r.id === id && r.verification.status === "model_recall",
+          ),
+        ),
+      ).toBe(true);
+  const old = assessRotationsCore(
+    input,
+    catalog,
+    weather,
+    { ...rotationPlanningPolicy, research: "benefits-2" },
+    assessedOn,
+    true,
+    null,
+    null,
+    null,
+    "rotation-engine-7",
+  );
+  expect(createHash("sha256").update(JSON.stringify(old)).digest("hex")).toBe(
+    "9bb8becab13d0a4a4b72859aa79a0b7091042fec37fafb47c7ced7d1ac13ce9e",
+  );
+}, 90000);
+
+test("regional search spends no climate work on a water dimension excluded from every search view", async () => {
+  const { searchRotations, historyFacts, fixedRotation } =
+    await import("../../packages/domain/dist/rotation/search.js");
+  const { assessCrop, resolveContext } =
+    await import("../../packages/domain/dist/rotation/evidence.js");
+  const catalog = rotationCatalog({ crops: 2 });
+  // A synthetic water curve is needed to reach the water-estimate branch.
+  const input = rotationRequest({ history: { status: "unknown" } });
+  const context = resolveContext(input, catalog, assessedOn);
+  const specs = catalog.profiles
+    .slice(0, 2)
+    .map((p) => assessCrop(p.id, catalog, input, context).spec)
+    .map((s) => ({ ...s, waterCurve: { id: "synthetic-curve" } }));
+  let calls = 0;
+  const climate = {
+    estimate: () => 0.1,
+    waterEstimate: () => {
+      calls++;
+      return 0.2;
+    },
+  };
+  const policy = {
+    ...rotationPolicy,
+    beamWidth: 3,
+    perFirstCropWidth: 1,
+    maxExpansions: 1000,
+    maxSlots: 3,
+  };
+  const history = historyFacts(input, catalog);
+  const views = [{ climate: 1, water: 0, soil_health: 0, crop_health: 0 }];
+  searchRotations(
+    input,
+    catalog,
+    context,
+    policy,
+    specs,
+    history,
+    climate,
+    views,
+  );
+  expect(calls).toBeGreaterThan(0);
+  calls = 0;
+  const current = { ...policy, comparison: "regional-comparison-1" };
+  searchRotations(
+    input,
+    catalog,
+    context,
+    current,
+    specs,
+    history,
+    climate,
+    views,
+  );
+  fixedRotation(
+    input,
+    catalog,
+    context,
+    current,
+    specs,
+    history,
+    climate,
+    [specs[0].profile.id],
+    false,
+  );
+  expect(calls).toBe(0);
+});
+
+test("regional calendar caches preserve every calculated value while reusing source lookups", async () => {
+  const { ClimateModel, weatherSource } =
+    await import("../../packages/domain/dist/rotation/climate.js");
+  const { indexWeather } =
+    await import("../../packages/domain/dist/climate/weather.js");
+  const { assessCrop, resolveContext } =
+    await import("../../packages/domain/dist/rotation/evidence.js");
+  const catalog = rotationCatalog({ crops: 2 }),
+    input = rotationRequest();
+  const context = resolveContext(input, catalog, assessedOn);
+  const spec = assessCrop("synthetic-crop-01", catalog, input, context).spec;
+  const source = weatherSource(
+    indexWeather(weather, context.location, assessedOn, true),
+    32.3,
+  );
+  const timed = [{ spec, sowEarliest: "2026-10-20", sowLatest: "2026-10-31" }];
+  const run = (cached) => {
+    const calls = { position: 0, shift: 0 };
+    const wrapped = {
+      ...source,
+      position: (d) => {
+        calls.position++;
+        return source.position(d);
+      },
+      shift: (d, n) => {
+        calls.shift++;
+        return source.shift(d, n);
+      },
+    };
+    const model = new ClimateModel(wrapped, {
+      ...rotationPolicy,
+      ...(cached ? { comparison: "regional-comparison-1" } : {}),
+    });
+    let result;
+    for (let n = 0; n < 2; n++)
+      result = {
+        climate: model.rotation(timed),
+        water: model.rotationWater(timed),
+        extremes: model.rotationExtremes(timed),
+        vulnerability: model.vulnerability(timed[0], 1),
+      };
+    return { result, calls };
+  };
+  const uncached = run(false),
+    cached = run(true);
+  expect(cached.result).toEqual(uncached.result);
+  expect(cached.calls.position).toBeLessThan(uncached.calls.position);
+  expect(cached.calls.shift).toBeLessThan(uncached.calls.shift);
+});

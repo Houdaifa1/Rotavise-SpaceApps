@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-12T21:39:41.039Z",
+  "legacyRegionalHashesMatched": 12,
+  "calendarCacheHashesMatched": 24,
+  "timingArchiveIntegrity": true,
+  "regions": ["Tadla", "Souss-Massa", "Gharb", "Oriental", "Saiss", "Haouz"],
+  "newCases": 12,
+  "engineSeconds": {
+    "min": 4.148143207999994,
+    "median": 4.595851645999999,
+    "max": 5.849677541000012
+  },
+  "maxBytes": 7310531,
+  "maxAccountedHistoricalVisits": 80000000,
+  "maxModelVisits": 17317631,
+  "protectedPathsUnchanged": [
+    "apps/web",
+    "data/catalog/releases",
+    "packages/database",
+    "pnpm-lock.yaml",
+    "docs/evidence/live/2026-11-12-b6",
+    "docs/steps/15/b5-notes.md",
+    "docs/steps/15/b6-notes.md",
+    "docs/DECISIONS.md",
+    "docs/PROGRESS.md"
+  ],
+  "openapiGeneratedEquality": true,
+  "requiredChecks": [
+    {
+      "command": "pnpm lint",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:36:15.152Z"
+    },
+    {
+      "command": "pnpm format:check",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:38:49.103Z"
+    },
+    {
+      "command": "pnpm typecheck",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:36:04.110Z"
+    },
+    {
+      "command": "pnpm test:backend",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:34:01.152Z"
+    },
+    {
+      "command": "pnpm test:plans",
+      "exitCode": 0,
+      "finished": "2026-11-12T20:59:52.437Z"
+    },
+    {
+      "command": "pnpm test:catalog",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:01:54.143Z"
+    },
+    {
+      "command": "pnpm test:engine",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:31:28.312Z"
+    },
+    {
+      "command": "pnpm test:api-docs",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:09:31.564Z"
+    },
+    {
+      "command": "pnpm test:unit",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:09:51.026Z"
+    },
+    {
+      "command": "pnpm test:container",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:35:42.491Z"
+    },
+    {
+      "command": "pnpm test:regional-eval",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:25:00.185Z"
+    },
+    {
+      "command": "pnpm openapi:generate",
+      "exitCode": 0,
+      "finished": "2026-11-12T20:48:40.739Z"
+    },
+    {
+      "command": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects terrain-integration --runInBand",
+      "exitCode": 0,
+      "finished": "2026-11-12T21:09:54.436Z"
+    }
+  ],
+  "jestTestExecutions": 1030,
+  "productionContainerChecks": 10
+}

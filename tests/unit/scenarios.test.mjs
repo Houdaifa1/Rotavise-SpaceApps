@@ -793,3 +793,234 @@ test("a failed tile preparation names an unreachable database", () => {
     "CLIMATE_PREPARE_FAILED",
   );
 });
+
+describe("regional-comparison-1 candidate coverage", () => {
+  const setup = async () => {
+    const { assessFutures } =
+      await import("../../packages/domain/dist/rotation/future.js");
+    const { assessCrop, resolveContext } =
+      await import("../../packages/domain/dist/rotation/evidence.js");
+    const catalog = rotationCatalog({ crops: 2 });
+    const request = rotationRequest({ history: { status: "unknown" } });
+    const context = resolveContext(request, catalog, "2026-10-15");
+    const spec = assessCrop(
+      "synthetic-crop-01",
+      catalog,
+      request,
+      context,
+    ).spec;
+    const policy = {
+      ...currentFutureClimatePolicy,
+      models: currentFutureClimatePolicy.models.slice(0, 2),
+    };
+    const p = { ...rotationPolicy, futureClimate: policy };
+    const mid = rotationScenarioNeedsCore(request, catalog, p, "2026-10-15");
+    const near = rotationNearTermNeedsCore(request, catalog, p, "2026-10-15");
+    const raw = syntheticScenarioSeries({
+      ...mid,
+      units: [...mid.units, ...near.units],
+    }).filter((s) => s.variable !== "tasmin");
+    const worlds = scenarioWorlds(raw, policy, mid.cell, true).worlds;
+    const timed = [
+      { spec, sowEarliest: "2026-10-20", sowLatest: "2026-10-20" },
+    ];
+    const missing = {
+      ...spec,
+      temperature: [
+        {
+          ...spec.temperature[0],
+          id: "synthetic-missing-minimum",
+          basis: "daily_minimum",
+        },
+      ],
+    };
+    return {
+      assessFutures,
+      args: {
+        candidates: [
+          { id: "complete", timed, water: null, soil: null, health: 0 },
+          {
+            id: "missing-variable",
+            timed: [{ ...timed[0], spec: missing }],
+            water: null,
+            soil: null,
+            health: 0,
+          },
+          {
+            id: "no-rules",
+            timed: [{ ...timed[0], spec: { ...spec, temperature: [] } }],
+            water: null,
+            soil: null,
+            health: 0,
+          },
+        ],
+        weights: { climate: 1, water: 0, soil_health: 0, crop_health: 0 },
+        baseTop: ["complete"],
+        policy,
+        settings: rotationPolicy,
+        worlds,
+        nearTerm: "available",
+        unitIds: [],
+        cell: mid.cell,
+        climateCompared: false,
+      },
+    };
+  };
+  test("each rotation keeps its complete worlds even when other finalists or historical ranking are incomplete", async () => {
+    const { assessFutures, args } = await setup();
+    const result = assessFutures({ ...args, perRotation: true });
+    expect(result.block.status).toBe("compared");
+    expect(result.block.nearTerm.status).toBe("compared");
+    expect(result.block.topStableAcrossFutures).toBeNull();
+    expect(
+      result.block.worlds.every(
+        (w) =>
+          w.comparedCandidateCount === 1 && w.notComparedCandidateCount === 2,
+      ),
+    ).toBe(true);
+    expect(
+      result.perCandidate
+        .get("complete")
+        .comparisons.every((c) => c.status === "compared" && c.reason === null),
+    ).toBe(true);
+    expect(
+      result.perCandidate
+        .get("missing-variable")
+        .comparisons.filter((c) => c.period === "mid_century")
+        .every((c) => c.reason === "FUTURE_ANALOGS_INSUFFICIENT"),
+    ).toBe(true);
+    expect(
+      result.perCandidate
+        .get("no-rules")
+        .comparisons.every((c) => c.reason === "CLIMATE_NOT_COMPARED"),
+    ).toBe(true);
+    expect(
+      result.perCandidate
+        .get("no-rules")
+        .scenarios.every((s) => s.models.length === 0),
+    ).toBe(true);
+    expect(assessFutures(args).block.reason).toBe("CLIMATE_NOT_COMPARED");
+    expect(assessFutures(args).perCandidate.size).toBe(0);
+  });
+  test("a missing model world leaves other models and both periods usable", async () => {
+    const { assessFutures, args } = await setup();
+    args.worlds.delete(`${args.policy.models[0].id}|ssp245`);
+    const result = assessFutures({ ...args, perRotation: true });
+    const candidate = result.perCandidate.get("complete");
+    expect(
+      candidate.scenarios.find((s) => s.experiment === "ssp245").models,
+    ).toHaveLength(1);
+    expect(
+      candidate.scenarios.find((s) => s.experiment === "ssp585").models,
+    ).toHaveLength(2);
+    expect(candidate.nearTerm.every((s) => s.models.length === 2)).toBe(true);
+    expect(
+      candidate.comparisons.find(
+        (c) =>
+          c.model === args.policy.models[0].id &&
+          c.experiment === "ssp245" &&
+          c.period === "mid_century",
+      ).reason,
+    ).toBe("SCENARIO_DATA_INCOMPLETE");
+    expect(result.block.status).toBe("compared");
+  });
+  test("near-term comparisons survive when every mid-century world is missing", async () => {
+    const { assessFutures, args } = await setup();
+    for (const model of args.policy.models)
+      for (const window of args.policy.futures)
+        args.worlds.delete(`${model.id}|${window.experiment}`);
+    const result = assessFutures({ ...args, perRotation: true });
+    expect(result.block.status).toBe("unavailable");
+    expect(result.block.nearTerm.status).toBe("compared");
+    expect(
+      result.perCandidate
+        .get("complete")
+        .nearTerm.every((s) => s.models.length === 2),
+    ).toBe(true);
+    expect(
+      result.perCandidate
+        .get("complete")
+        .comparisons.filter((c) => c.period === "mid_century")
+        .every((c) => c.reason === "SCENARIO_DATA_INCOMPLETE"),
+    ).toBe(true);
+  });
+  test("no complete rotation never claims compared, and absent tiles have per-candidate reasons", async () => {
+    const { assessFutures, args } = await setup();
+    args.candidates = args.candidates.slice(1);
+    const result = assessFutures({ ...args, perRotation: true });
+    expect(result.block.status).toBe("unavailable");
+    expect(result.block.nearTerm.status).toBe("unavailable");
+    expect(result.perCandidate.size).toBe(2);
+    const absent = assessFutures({
+      ...args,
+      perRotation: true,
+      worlds: "not_prepared",
+    });
+    expect(
+      absent.perCandidate
+        .get("no-rules")
+        .comparisons.every((c) => c.reason === "SCENARIO_TILE_NOT_PREPARED"),
+    ).toBe(true);
+  });
+});
+
+test("regional future ranks never substitute POWER water for a missing model water balance", async () => {
+  const { assessFutures } =
+    await import("../../packages/domain/dist/rotation/future.js");
+  const { assessCrop, resolveContext } =
+    await import("../../packages/domain/dist/rotation/evidence.js");
+  const catalog = rotationCatalog({ crops: 2 });
+  const request = rotationRequest();
+  const spec = assessCrop(
+    "synthetic-crop-01",
+    catalog,
+    request,
+    resolveContext(request, catalog, "2026-10-15"),
+  ).spec;
+  const needs = rotationScenarioNeedsCore(
+    request,
+    catalog,
+    rotationPolicy,
+    "2026-10-15",
+  );
+  const worlds = scenarioWorlds(
+    syntheticScenarioSeries(needs),
+    rotationPolicy.futureClimate,
+    needs.cell,
+    true,
+  ).worlds;
+  const timed = [{ spec, sowEarliest: "2026-10-20", sowLatest: "2026-10-20" }];
+  const result = assessFutures({
+    candidates: [
+      { id: "a", timed, water: 0, soil: null, health: 0 },
+      { id: "b", timed, water: 1, soil: null, health: 0 },
+    ],
+    weights: { water: 1, climate: 0, soil_health: 0, crop_health: 0 },
+    baseTop: [],
+    policy: rotationPolicy.futureClimate,
+    settings: rotationPolicy,
+    worlds,
+    unitIds: [],
+    cell: needs.cell,
+    climateCompared: true,
+    perRotation: true,
+  });
+  expect(result.block.status).toBe("compared");
+  expect(result.block.worlds.every((w) => w.appliedWeights.water === 0)).toBe(
+    true,
+  );
+  expect(
+    result.perCandidate
+      .get("a")
+      .scenarios.every((s) =>
+        s.models.every(
+          (m) => m.weightedRank === 1 && m.futureWaterLoss === null,
+        ),
+      ),
+  ).toBe(true);
+  expect(
+    result.perCandidate
+      .get("b")
+      .scenarios.every((s) => s.models.every((m) => m.weightedRank === 1)),
+  ).toBe(true);
+});

@@ -1,0 +1,197 @@
+{
+  "note": "First complete six-region evaluation, exit 0. Input metadata shared a mutable request object between modes; the final evaluation reruns with independent normalized inputs. These numerical result hashes are preserved to check that the capture-only correction changes no result. These hashes precede the subsequent new-policy-only unused-water-work optimization. The legacy before hashes must still match; final after hashes may differ for that documented correction.",
+  "cases": [
+    {
+      "name": "Tadla",
+      "mode": "suggest",
+      "variant": "before",
+      "seconds": 6.532107334,
+      "resultSha256": "906e4eebaf60fa33dfe5ef6ae4cf28c4476ea6e82e95c59033339fbe1fe52120",
+      "bytes": 4820541
+    },
+    {
+      "name": "Tadla",
+      "mode": "suggest",
+      "variant": "after",
+      "seconds": 4.725967375,
+      "resultSha256": "f4c45d4476982f20550e06293361e4e1c3c1b6205dfb5beb30e4f8e87e273ddb",
+      "bytes": 7045955
+    },
+    {
+      "name": "Tadla",
+      "mode": "consider",
+      "variant": "before",
+      "seconds": 5.448194042000003,
+      "resultSha256": "69ab37be6e66ff8bb9a763e210ad8316d401a70d015e567ffa0096faa641456e",
+      "bytes": 4822409
+    },
+    {
+      "name": "Tadla",
+      "mode": "consider",
+      "variant": "after",
+      "seconds": 4.133498667,
+      "resultSha256": "ab8c6632a34cd262a58ec96983ba673d352c488a9e122b710947ea8e4c84b5b3",
+      "bytes": 7047979
+    },
+    {
+      "name": "Souss-Massa",
+      "mode": "suggest",
+      "variant": "before",
+      "seconds": 5.574762625000003,
+      "resultSha256": "df423c685659cf206a6fed4e3b461dc8d5c5e7a45f86f717f6b082b97ff20d42",
+      "bytes": 4752724
+    },
+    {
+      "name": "Souss-Massa",
+      "mode": "suggest",
+      "variant": "after",
+      "seconds": 3.86867616599999,
+      "resultSha256": "a279f1722ae96973602e98af2ee853f41f4a6f6b9d06c79b51b38dba89bb0400",
+      "bytes": 7229610
+    },
+    {
+      "name": "Souss-Massa",
+      "mode": "consider",
+      "variant": "before",
+      "seconds": 5.449266292,
+      "resultSha256": "1e56db68401e867a20a68d6a39a6c28f4b62f6cac77e2e44f60cbfd9e68378a7",
+      "bytes": 4754698
+    },
+    {
+      "name": "Souss-Massa",
+      "mode": "consider",
+      "variant": "after",
+      "seconds": 3.778222834,
+      "resultSha256": "4305950f847cae8318bdc24c31995b55f405ce2d449e7857c2d33416aab0f568",
+      "bytes": 7231688
+    },
+    {
+      "name": "Gharb",
+      "mode": "suggest",
+      "variant": "before",
+      "seconds": 5.712223750000005,
+      "resultSha256": "d8a639e2326093232c7c5b44f9a944b0ac04ad04e50b548d393ca125bb4c9ca5",
+      "bytes": 4956080
+    },
+    {
+      "name": "Gharb",
+      "mode": "suggest",
+      "variant": "after",
+      "seconds": 3.699574332999997,
+      "resultSha256": "f5d89922ffedf9074039f3564b06edcdc3f17a8141efa593ef63402358f55295",
+      "bytes": 7266344
+    },
+    {
+      "name": "Gharb",
+      "mode": "consider",
+      "variant": "before",
+      "seconds": 5.656183042000004,
+      "resultSha256": "6c7c57a392cc44069c001d4ad141e9cc14616acf898854741244a673927958d1",
+      "bytes": 4958080
+    },
+    {
+      "name": "Gharb",
+      "mode": "consider",
+      "variant": "after",
+      "seconds": 3.530159707999992,
+      "resultSha256": "90b4576f0727f056d3a002bbbe293bf35e69385ed36727bd8772b9f81330428b",
+      "bytes": 7268491
+    },
+    {
+      "name": "Oriental",
+      "mode": "suggest",
+      "variant": "before",
+      "seconds": 5.3903837919999935,
+      "resultSha256": "36a3b3e6b15f331cce556ce2c0c1d8e535ba0b6923d6fd3634f3485f6f192698",
+      "bytes": 4753339
+    },
+    {
+      "name": "Oriental",
+      "mode": "suggest",
+      "variant": "after",
+      "seconds": 3.34057920800001,
+      "resultSha256": "e30a6012c4a5fed466e031dbd2b50097e435315373dec8ce9dd3a3ae73a541e8",
+      "bytes": 6849021
+    },
+    {
+      "name": "Oriental",
+      "mode": "consider",
+      "variant": "before",
+      "seconds": 5.370494917000004,
+      "resultSha256": "ea817549654aa081f07f95557b74309b4370aaae0b05b184a6cdf0a43028e821",
+      "bytes": 4755181
+    },
+    {
+      "name": "Oriental",
+      "mode": "consider",
+      "variant": "after",
+      "seconds": 3.387713666999989,
+      "resultSha256": "1aff1469cfa8aabd3fd37f4e97e4f6025dd2d4f15043027eebce8c2adebca37a",
+      "bytes": 6850934
+    },
+    {
+      "name": "Saiss",
+      "mode": "suggest",
+      "variant": "before",
+      "seconds": 6.10420195799999,
+      "resultSha256": "ab7690db4964ea565590a0db8126f85f030b9ff1f39650c41150e4b0ff8c56b7",
+      "bytes": 4775064
+    },
+    {
+      "name": "Saiss",
+      "mode": "suggest",
+      "variant": "after",
+      "seconds": 4.034969791999989,
+      "resultSha256": "39587928e8bba2e386b99dab01d9fe369c42a4b325f9c1fb64f999f61608ca33",
+      "bytes": 7124913
+    },
+    {
+      "name": "Saiss",
+      "mode": "consider",
+      "variant": "before",
+      "seconds": 5.239073415999999,
+      "resultSha256": "58a2c22c5732c2dd84a067407459684aac736bef641cc0f6ed3616e77de1e4d7",
+      "bytes": 4776924
+    },
+    {
+      "name": "Saiss",
+      "mode": "consider",
+      "variant": "after",
+      "seconds": 3.917528583999985,
+      "resultSha256": "bdffd178ec1e7f267c62fa9eb6a5aaf0acf2f3e56e9ad64577b0c5d82c9bf404",
+      "bytes": 7126996
+    },
+    {
+      "name": "Haouz",
+      "mode": "suggest",
+      "variant": "before",
+      "seconds": 6.877703208000021,
+      "resultSha256": "837293bf28b43b98ecda961ea4d548e426c920042ee313f4f4c668a79d650535",
+      "bytes": 4796985
+    },
+    {
+      "name": "Haouz",
+      "mode": "suggest",
+      "variant": "after",
+      "seconds": 5.049834792000008,
+      "resultSha256": "bc9938e7907996e9401b9d0bb734af908830458fa222970c928588ac1d5d0e2d",
+      "bytes": 7101664
+    },
+    {
+      "name": "Haouz",
+      "mode": "consider",
+      "variant": "before",
+      "seconds": 6.644716916999983,
+      "resultSha256": "cd9903132552ad66b8c8ef3ac41d564c54a1045b2b43ac6086f6a5a6c4c7674f",
+      "bytes": 4798900
+    },
+    {
+      "name": "Haouz",
+      "mode": "consider",
+      "variant": "after",
+      "seconds": 5.164726791000023,
+      "resultSha256": "7100e844b5b2ddf426321642776c848a54d13f4d41e53d34c25d4f88cae1fda9",
+      "bytes": 7103742
+    }
+  ]
+}

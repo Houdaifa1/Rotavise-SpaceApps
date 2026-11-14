@@ -185,6 +185,14 @@ export const rotationPlanningPolicy: RotationPolicyV2 = {
   futureClimate: currentFutureClimatePolicy,
   outputs: "rotation-outputs-1",
 };
+// New requests pin this additive policy; the historical exported policy above
+// remains unchanged for old requests, fixtures and golden replays.
+export const regionalRotationPlanningPolicy: RotationPolicyV2 = {
+  ...rotationPlanningPolicy,
+  comparison: "regional-comparison-1",
+  beamWidth: 60,
+  perFirstCropWidth: 1,
+};
 const climateVariables = [
   "precipitation",
   "temperatureMax",
@@ -405,13 +413,13 @@ export class PlanningStore {
         this.rotationFixture?.policy ??
         (researchCatalog?.research === "income-benefits-1"
           ? {
-              ...rotationPlanningPolicy,
+              ...regionalRotationPlanningPolicy,
               research:
                 researchCatalog.benefits === "benefits-2"
                   ? ("benefits-2" as const)
                   : ("income-benefits-1" as const),
             }
-          : rotationPlanningPolicy);
+          : regionalRotationPlanningPolicy);
       const versions = rotationPlanningVersionsSchema.parse({
         workflowVersion: "planning-workflow-6",
         engineVersion: "rotation-engine-7",
@@ -776,6 +784,7 @@ export class PlanningStore {
     lease: string,
     needs: ScenarioNeeds | null,
     policy: FutureClimatePolicy,
+    perRotation = false,
   ): Promise<ScenarioSeries[] | null> {
     if (!needs) return null;
     await this.stage(id, lease, "retrieving_weather");
@@ -783,13 +792,13 @@ export class PlanningStore {
     try {
       series = this.rotationFixture
         ? this.rotationFixture.scenarios(needs)
-        : await this.scenarios.series(needs);
+        : await this.scenarios.series(needs, perRotation);
     } catch (error) {
       if (error instanceof ScenarioError)
         throw new WorkflowFailure("CATALOG_EVIDENCE_INVALID");
       throw error;
     }
-    if (!series) {
+    if (!series || series.length < needs.units.length) {
       const tile = needs.units[0]!.tile;
       if (this.config.CLIMATE_SCENARIOS_ENABLED === "true") {
         const outcome = await this.scenarios.request(
@@ -799,7 +808,7 @@ export class PlanningStore {
         );
         if (outcome !== "limited") await enqueueTile(this.boss, tile, policy);
       }
-      return null;
+      if (!series || !series.length) return null;
     }
     // Pins are idempotent: units are immutable, so a retry pins the same ids.
     await this.pool.query(
@@ -878,12 +887,13 @@ export class PlanningStore {
           )
         : rotationScenarioNeeds(identity.input, catalog, policy, assessedOn),
       policy.futureClimate,
+      policy.comparison !== undefined,
     );
-    // The near-term units are pinned apart, and only when the mid-century
-    // ones are there. A tile not yet extended asks to be prepared and the plan
-    // still completes, saying the near-term period is missing.
+    // Legacy pins retrieve near-term units only after mid-century is present.
+    // The regional policy retrieves each period independently. Missing tile
+    // units request preparation and retain explicit comparison gaps.
     const nearNeeds =
-      midCentury === null
+      midCentury === null && !policy.comparison
         ? null
         : this.rotationFixture
           ? (this.rotationFixture.nearTermNeeds?.(
@@ -894,10 +904,18 @@ export class PlanningStore {
             ) ?? null)
           : rotationNearTermNeeds(identity.input, catalog, policy, assessedOn);
     const nearTerm = nearNeeds
-      ? await this.pinScenarios(id, lease, nearNeeds, policy.futureClimate)
+      ? await this.pinScenarios(
+          id,
+          lease,
+          nearNeeds,
+          policy.futureClimate,
+          policy.comparison !== undefined,
+        )
       : null;
     const scenarios =
-      midCentury && nearTerm ? [...midCentury, ...nearTerm] : midCentury;
+      midCentury && nearTerm
+        ? [...midCentury, ...nearTerm]
+        : (midCentury ?? (policy.comparison ? nearTerm : null));
     // Modelled soil is only for fields with no soil test, and never blocks a plan.
     const soil =
       this.rotationFixture ||

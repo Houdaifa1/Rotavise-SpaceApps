@@ -26,6 +26,7 @@ import {
   PlanningStore,
   currentFutureClimatePolicy,
   rotationPlanningPolicy,
+  regionalRotationPlanningPolicy,
 } from "../../apps/server/dist/modules/plans/application/planning-store.js";
 import { policyKey } from "../../apps/server/dist/modules/climate-scenarios/application/scenario-store.js";
 import { createPlanningHandler } from "../../apps/server/dist/modules/plans/worker/planning.handler.js";
@@ -261,6 +262,9 @@ beforeAll(async () => {
   await catalogs.import(
     await loadCatalogRelease("data/catalog/releases/0.15.0"),
   );
+  await catalogs.import(
+    await loadCatalogRelease("data/catalog/releases/0.16.0"),
+  );
   config = loadConfig({
     ...db.config,
     PLANS_ENABLED: "true",
@@ -318,7 +322,7 @@ test("HTTP accepts format 2 with the format 2 catalog, policy and acceptance dat
     expect(rows[1].versions).toMatchObject({
       engineVersion: "rotation-engine-7",
       assessedOn: today,
-      policy: { ...rotationPlanningPolicy, research: "benefits-2" },
+      policy: { ...regionalRotationPlanningPolicy, research: "benefits-2" },
       syntheticFixture: null,
     });
     const invalid = await send({
@@ -1591,6 +1595,144 @@ test("unversioned options follows the planning catalog and caches identical veri
     );
     expect(old.status).toBe(200);
     expect((await old.json()).catalogVersion).toBe("0.13.0");
+  } finally {
+    await stop(api.child);
+  }
+});
+
+test("regional pins retain per-model coverage in PostgreSQL and replay the completed result", async () => {
+  const input = request({ history: { status: "unknown" } });
+  const base = nearFixture(true);
+  const policy = {
+    ...base.policy,
+    comparison: "regional-comparison-1",
+    beamWidth: 60,
+    perFirstCropWidth: 1,
+  };
+  const partial = {
+    ...base,
+    policy,
+    scenarios: (needs) => {
+      const rows = base.scenarios(needs);
+      return needs.near
+        ? rows
+        : rows.filter(
+            (s) =>
+              s.model.id !== policy.futureClimate.models[0].id ||
+              s.experiment !== "ssp245",
+          );
+    },
+  };
+  const mid = partial.scenarioNeeds(input, rotationCatalog(), policy, today);
+  const near = partial.nearTermNeeds(input, rotationCatalog(), policy, today);
+  const series = [...partial.scenarios(mid), ...partial.scenarios(near)];
+  await placeholderRows(series);
+  await build(provider(), partial);
+  const accepted = await store.submit(owner, randomUUID(), input);
+  const done = await process(accepted.id);
+  expect(done.status).toBe("completed");
+  expect(done.versions.policy.comparison).toBe("regional-comparison-1");
+  expect(done.scenarioUnitIds).toHaveLength(series.length);
+  expect(done.result.futureClimate.status).toBe("compared");
+  expect(done.result.futureClimate.nearTerm.status).toBe("compared");
+  expect(
+    done.result.candidates.some((c) =>
+      c.future.comparisons.some(
+        (w) =>
+          w.period === "mid_century" &&
+          w.model === policy.futureClimate.models[0].id &&
+          w.experiment === "ssp245" &&
+          w.reason === "SCENARIO_DATA_INCOMPLETE",
+      ),
+    ),
+  ).toBe(true);
+  const bytes = stableJson(done.result);
+  expect(stableJson((await process(accepted.id)).result)).toBe(bytes);
+  expect(stableJson((await store.read(owner, accepted.id)).result)).toBe(bytes);
+});
+
+test("catalog 0.16.0 GET options serves 246 English/Darija crops, 1226 English and 148 Darija cultivars from PostgreSQL", async () => {
+  const api = await startApi(db, {
+    PLANS_ENABLED: "true",
+    PLANNING_ENABLED: "true",
+    ROTATION_CATALOG_VERSION: "0.16.0",
+  });
+  try {
+    for (const path of [
+      "/api/v1/catalog/options",
+      "/api/v1/catalog/options/rotavise-pilot/0.16.0",
+    ]) {
+      const response = await fetch(api.origin + path);
+      expect(response.status).toBe(200);
+      const options = catalogOptionsSchema.parse(await response.json());
+      expect(options.catalogVersion).toBe("0.16.0");
+      expect(options.crops).toHaveLength(246);
+      for (const lang of ["en", "fr", "ar", "ary"])
+        expect(
+          options.crops.filter((c) =>
+            c.localNames.some((n) => n.language === lang && n.preferred),
+          ),
+        ).toHaveLength(246);
+      const cultivars = options.crops.flatMap((c) => c.cultivars);
+      expect(cultivars).toHaveLength(1226);
+      expect(
+        cultivars.filter((c) =>
+          c.localNames.some(
+            (n) =>
+              n.language === "en" && n.origin === "primary_name" && n.preferred,
+          ),
+        ),
+      ).toHaveLength(1226);
+      expect(
+        cultivars.filter((c) =>
+          c.localNames.some((n) => n.language === "ary" && n.preferred),
+        ),
+      ).toHaveLength(148);
+      for (const c of options.crops)
+        for (const n of [
+          ...c.localNames,
+          ...c.cultivars.flatMap((v) => v.localNames),
+        ]) {
+          expect(
+            Object.keys(n).every((k) =>
+              [
+                "language",
+                "name",
+                "confidence",
+                "preferred",
+                "origin",
+              ].includes(k),
+            ),
+          ).toBe(true);
+        }
+      expect(
+        options.crops.find((c) => c.id === "blueberry").localNames,
+      ).toContainEqual({
+        language: "ary",
+        name: "بلوبيري",
+        confidence: "medium",
+        preferred: true,
+      });
+      expect(
+        options.crops
+          .find((c) => c.id === "sulla")
+          .localNames.filter((n) => n.language === "ary"),
+      ).toEqual([
+        { language: "ary", name: "سولا", confidence: "medium" },
+        { language: "ary", name: "سولا", confidence: "low", preferred: true },
+      ]);
+    }
+    const previous = await fetch(
+      api.origin + "/api/v1/catalog/options/rotavise-pilot/0.15.0",
+    );
+    expect(previous.status).toBe(200);
+    const old = catalogOptionsSchema.parse(await previous.json());
+    expect(
+      old.crops.filter((c) => c.localNames.some((n) => n.language === "en")),
+    ).toHaveLength(0);
+    expect(
+      old.crops.filter((c) => c.localNames.some((n) => n.language === "ary")),
+    ).toHaveLength(178);
   } finally {
     await stop(api.child);
   }

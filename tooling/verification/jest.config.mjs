@@ -20,6 +20,7 @@ const suites = {
   "weather-integration": "integration/weather",
   "catalog-unit": [
     "unit/catalog",
+    "unit/catalog-names",
     "unit/crop-detail",
     "unit/catalog-research",
     "unit/catalog-benefits",

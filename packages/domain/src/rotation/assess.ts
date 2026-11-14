@@ -440,6 +440,7 @@ export function assessRotationsCore(
   engineVersion:
     "rotation-engine-6" | "rotation-engine-7" = "rotation-engine-6",
   analysisContext: unknown = null,
+  diagnostics?: (stage: string, data: unknown) => void,
 ): RotationAssessment {
   const soilEstimate =
     soilInput === null ? null : soilEstimateSchema.parse(soilInput);
@@ -451,6 +452,7 @@ export function assessRotationsCore(
     policyInput,
     assessedOn,
   );
+  const regional = policy.comparison === "regional-comparison-1";
   const whatIf = whatIfActive(input.what_if) ? input.what_if : null;
   const synthetic =
     catalog.synthetic ||
@@ -463,6 +465,7 @@ export function assessRotationsCore(
   );
   const crops = new Map(assessments.map((a) => [a.cropId, a]));
   const specs = assessments.flatMap((a) => (a.spec ? [a.spec] : []));
+  diagnostics?.("specs", specs);
   const needsWeather = specs.length > 0;
   const index = needsWeather
     ? indexWeather(weather, context.location, assessedOn, allowSynthetic)
@@ -500,9 +503,13 @@ export function assessRotationsCore(
         temperature: s.temperature.filter((r) => shared.has(checkKind(r))),
       }))
     : specs;
+  const waterEven =
+    specs.every((s) => s.waterCurve !== null) ||
+    (specs.every((s) => s.waterCurve === null && s.waterClass !== null) &&
+      new Set(specs.map((s) => s.waterClass?.method)).size === 1);
   const even: Record<Dimension, boolean> = {
     climate: climateEven,
-    water: true,
+    water: regional ? waterEven : true,
     soil_health: true,
     crop_health: true,
   };
@@ -528,6 +535,10 @@ export function assessRotationsCore(
     climate,
     [base, ...searched.map(single)],
   );
+  diagnostics?.("searchWork", {
+    dayVisits: climate.dayVisits,
+    exhausted: climate.exhausted,
+  });
   // Engine 7: the farmer's current rotation joins the pool, scored by the same
   // estimate as every other rotation, so it can be compared on equal terms.
   const strategic = engineVersion === "rotation-engine-7";
@@ -567,6 +578,7 @@ export function assessRotationsCore(
         history,
         climate,
         cycle.cropIds,
+        !regional || waterEven,
       );
       if (fixed.partial) {
         baseline.status = "scored";
@@ -637,6 +649,7 @@ export function assessRotationsCore(
   const waterCompared =
     finals.length > 0 &&
     !waterMissing &&
+    (!regional || waterEven) &&
     (balanced === finals.length || (balanced === 0 && methods.size === 1));
   const compared: Record<Dimension, boolean> = {
     climate: climateCompared,
@@ -694,7 +707,11 @@ export function assessRotationsCore(
         slots: f.slots,
         status,
         startsWithConsidered: f.considered,
-        reasons: f.reasons.slice(0, 200),
+        ...(regional ? { cropConditions: "assessment_crops" as const } : {}),
+        reasons: (regional
+          ? orderedReasons(f.partial.warnings)
+          : f.reasons
+        ).slice(0, 200),
         scores: {
           climate: f.climate,
           water: f.water,
@@ -706,13 +723,23 @@ export function assessRotationsCore(
         tiedWith: ordered
           .filter((o) => o.loss === loss && o.f !== f)
           .map((o) => o.f.partial.key)
-          .slice(0, 500),
+          .slice(0, regional ? 10 : 500),
         pareto: pareto.has(f.partial.key),
         waterBalance: f.balance,
         extremes: f.extremes,
       };
     },
   );
+  diagnostics?.("ranking", {
+    search,
+    ranked,
+    shared: [...shared],
+    climateAvailable,
+    climateCompared,
+    waterCompared,
+    soilCompared,
+    dayVisits: climate.dayVisits,
+  });
   const researchEnabled =
     policy.research !== undefined && catalog.profiles.some((p) => p.research);
   const benefitsV2 =
@@ -787,13 +814,15 @@ export function assessRotationsCore(
       allowSynthetic,
     );
     unitIds = evidence.unitIds;
-    worlds = needs.units.every((u) =>
-      evidence.present.has(
-        unitKey(u.model.id, u.experiment, u.variable, u.year),
-      ),
-    )
-      ? evidence.worlds
-      : "incomplete";
+    worlds =
+      regional ||
+      needs.units.every((u) =>
+        evidence.present.has(
+          unitKey(u.model.id, u.experiment, u.variable, u.year),
+        ),
+      )
+        ? evidence.worlds
+        : "incomplete";
     // The near-term period has its own units: all there, none there (the tile
     // has not been extended yet), or only some.
     const near = nearTermUnits(
@@ -809,7 +838,7 @@ export function assessRotationsCore(
         ),
       ).length;
       nearTerm =
-        have === near.units.length
+        have === near.units.length || (regional && have > 0)
           ? "available"
           : have === 0
             ? "not_prepared"
@@ -846,6 +875,10 @@ export function assessRotationsCore(
     // Future worlds still run when climate is reported but not ranked; each
     // rotation's change is then compared only with its own baseline.
     climateCompared: climateAvailable,
+    perRotation: regional,
+    diagnostics: diagnostics
+      ? (row) => diagnostics("futureWork", row)
+      : undefined,
   });
   const baseTop = JSON.stringify(views[0]?.topCandidateIds ?? []);
   const topStable = views
@@ -860,12 +893,23 @@ export function assessRotationsCore(
     const best = bestFor(id);
     if (best) shownIds.add(best.id);
   }
+  if (regional)
+    for (const spec of specs) {
+      const best = bestFor(spec.profile.id);
+      if (best) shownIds.add(best.id);
+    }
   for (const c of ranked)
     if (c.pareto && shownIds.size < 500) shownIds.add(c.id);
   const alternativeIds = strategic
     ? pickAlternativeIds(ranked, baseline.candidateId)
     : [];
   const pinnedIds = new Set([
+    ...(regional
+      ? specs.flatMap((s) => {
+          const c = bestFor(s.profile.id);
+          return c ? [c.id] : [];
+        })
+      : []),
     ...(baseline.candidateId ? [baseline.candidateId] : []),
     ...alternativeIds,
   ]);
@@ -1182,6 +1226,30 @@ export function assessRotationsCore(
       (p) => p.id !== "income_weight",
     );
   // The final parse below checks the engine 6 or engine 7 shape.
+  const compactReason = (r: RotationReason) =>
+    regional && r.ruleIds.length ? { ...r, citations: [] } : r;
+  if (regional)
+    shown = shown.map((c) => ({
+      ...c,
+      reasons: c.reasons.map(compactReason),
+      ...(c.vulnerabilitySeasons
+        ? {
+            vulnerabilitySeasons: c.vulnerabilitySeasons.map((season) => ({
+              ...season,
+              periods: season.periods.map((p) =>
+                p.ruleIds.length
+                  ? {
+                      ...p,
+                      citations: [],
+                      verificationStatus: p.verification?.status,
+                      verification: null,
+                    }
+                  : p,
+              ),
+            })),
+          }
+        : {}),
+    }));
   const build = (candidates: RotationCandidate[]) => ({
     kind: "rotation_assessment" as const,
     engineVersion,
@@ -1200,6 +1268,7 @@ export function assessRotationsCore(
     context,
     input: submitted,
     evidence: {
+      ...(regional ? { ruleDetails: "pinned_catalog" as const } : {}),
       weatherSnapshotIds: index
         ? index.evidence.map((e) => e.snapshotId).sort(compare)
         : [],
@@ -1211,7 +1280,7 @@ export function assessRotationsCore(
     crops: assessments.map((a) => ({
       cropId: a.cropId,
       status: a.status,
-      reasons: orderedReasons(a.reasons).slice(0, 200),
+      reasons: orderedReasons(a.reasons).slice(0, 200).map(compactReason),
     })),
     choices,
     dimensions,
@@ -1261,6 +1330,7 @@ export function assessRotationsCore(
             researchProfiles,
             input,
             benefitsV2,
+            regional,
           ),
         }
       : {}),
@@ -1285,7 +1355,7 @@ export function assessRotationsCore(
   // The strategies' rotations always stay.
   while (
     new TextEncoder().encode(JSON.stringify(result)).byteLength >
-      OUTPUT_BYTES &&
+      (regional ? 7 * 1024 * 1024 : OUTPUT_BYTES) &&
     shown.length > Math.max(1, pinnedIds.size)
   ) {
     const rest = shown.filter((c) => !pinnedIds.has(c.id));
@@ -1298,6 +1368,10 @@ export function assessRotationsCore(
     if (pinnedIds.size && shown.length === rest.length + pinnedIds.size) break;
     result = build(shown);
   }
+  diagnostics?.("work", {
+    dayVisits: climate.dayVisits,
+    exhausted: climate.exhausted,
+  });
   return rotationAssessmentSchema.parse(result);
 }
 // Production entry points refuse synthetic catalogs and weather.

@@ -449,7 +449,7 @@ test("a stored release is verified once, then served from memory", async () => {
   expect(options.crops.length).toBeGreaterThan(200);
 });
 
-test.each(["0.14.0", "0.15.0"])(
+test.each(["0.14.0", "0.15.0", "0.16.0"])(
   "%s research survives immutable PostgreSQL import and hash-checked round trip beside 0.13.0",
   async (version) => {
     await migrateApplication(db.pool);

@@ -50,10 +50,18 @@ export function validateCatalogV2Structure(input: unknown): CatalogBundleV2 {
     if (citations.some((c) => !sources.has(c.sourceId))) errors.push(path);
   };
   const names = (
-    values: { citations?: { sourceId: string }[] | undefined }[],
+    values: {
+      name: string;
+      origin?: "primary_name" | undefined;
+      citations?: { sourceId: string }[] | undefined;
+    }[],
     path: string,
+    primary?: string,
   ) => {
-    values.forEach((n, i) => cite(n.citations ?? [], `${path}.${i}`));
+    values.forEach((n, i) => {
+      cite(n.citations ?? [], `${path}.${i}`);
+      if (n.origin && n.name !== primary) errors.push(`${path}.${i}.origin`);
+    });
   };
   let vertices = 0;
   for (const region of catalog.regions) {
@@ -76,7 +84,11 @@ export function validateCatalogV2Structure(input: unknown): CatalogBundleV2 {
   for (const profile of catalog.profiles) {
     const at = `profiles.${profile.id}`;
     cite(profile.identity.citations, `${at}.identity`);
-    names(profile.identity.localNames, `${at}.identity.localNames`);
+    names(
+      profile.identity.localNames,
+      `${at}.identity.localNames`,
+      profile.identity.name,
+    );
     unique(
       (profile.references ?? []).map((r) => r.id),
       `${at}.references`,
@@ -93,6 +105,7 @@ export function validateCatalogV2Structure(input: unknown): CatalogBundleV2 {
       names(
         cultivar.localNames ?? [],
         `${at}.cultivars.${cultivar.id}.localNames`,
+        cultivar.name,
       );
     }
     unique(
