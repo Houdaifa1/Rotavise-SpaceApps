@@ -1,0 +1,203 @@
+{
+  "id": "green-bean",
+  "version": "0.8.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Green bean",
+    "localNames": [{ "language": "fr", "name": "Haricot filet" }],
+    "scientificName": "Phaseolus vulgaris L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-bean",
+        "page": null,
+        "quote": "\"scientificName\":\"Phaseolus vulgaris L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-brassicas",
+        "page": 4,
+        "quote": "LE HARICOT FILET",
+        "locator": "PDF page 4",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 4,
+          "quote": "LE HARICOT FILET",
+          "locator": "PDF page 4",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "green-bean-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 4,
+          "quote": "le semis est effectué de Septembre à Mars pour les primeurs",
+          "locator": "PDF page 4",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Open-field early crop; one source window, split at the year's end.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "12-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "green-bean-sowing-late",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 4,
+          "quote": "le semis est effectué de Septembre à Mars pour les primeurs",
+          "locator": "PDF page 4",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Open-field early crop; one source window, split at the year's end.",
+      "metric": "planting_window",
+      "start": "01-01",
+      "end": "03-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "green-bean-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "20 30 30 10 90 Feb/Mar Calif., Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "90 days."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "15 25 25 10 75 Aug/Sep Calif., Egypt, Lebanon",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "75 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO rows.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 75,
+      "maxDays": 90
+    },
+    {
+      "id": "green-bean-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Beans, green 0.5 1.05 2 0.90",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Legumes (Leguminosae) 0.4 1.15 0.55",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "20 30 30 10 90 Feb/Mar Calif., Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 1.05,
+      "kcEnd": 0.9,
+      "stageLengths": [20, 30, 30, 10]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "ok": true,
+  "backup": "rotavise-20261112T004348Z.dump",
+  "checks": [
+    {
+      "name": "backup file matches its recorded checksum",
+      "ok": true,
+      "detail": "c101d89f9649a9415485c286ca176624fe56d9ca1b3f87eaf317857d6d9e68c2"
+    },
+    {
+      "name": "pg_restore completes without errors",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "name": "row counts match the backup manifest",
+      "ok": true,
+      "detail": "47 tables, 2572842 rows"
+    },
+    {
+      "name": "migrations are current (running them changes nothing)",
+      "ok": true,
+      "detail": {
+        "restored": 31,
+        "afterMigrate": 31,
+        "imageKnows": 31,
+        "manifest": 31
+      }
+    },
+    {
+      "name": "migration 0004/0005 protection triggers exist",
+      "ok": true,
+      "detail": [
+        "plan_request_immutable",
+        "plan_result_immutable",
+        "planning_run_immutable",
+        "planning_weather_immutable"
+      ]
+    },
+    {
+      "name": "restored national reference database passes data completeness",
+      "ok": true,
+      "detail": [
+        {
+          "dataset": "migrations",
+          "ok": true,
+          "detail": "31 migration hashes match"
+        },
+        {
+          "dataset": "catalogs",
+          "ok": true,
+          "detail": "15 releases, exact canonical checksums and crop counts"
+        },
+        {
+          "dataset": "triggers",
+          "ok": true,
+          "detail": "17 enabled protection triggers"
+        },
+        {
+          "dataset": "indexes",
+          "ok": true,
+          "detail": "38 required indexes valid and ready"
+        },
+        {
+          "dataset": "constraints",
+          "ok": true,
+          "detail": "153 required constraints validated"
+        },
+        {
+          "dataset": "autovacuum",
+          "ok": true,
+          "detail": "Reference/plan analyze scale 0.02; automatic vacuum enabled"
+        },
+        {
+          "dataset": "climateMidCentury",
+          "ok": true,
+          "detail": "89/89 positions ready, 1500 units per position"
+        },
+        {
+          "dataset": "climateNearTerm",
+          "ok": true,
+          "detail": "89/89 positions ready, 2100 units per position"
+        },
+        {
+          "dataset": "climateUnits",
+          "ok": true,
+          "detail": "186,900 units: 20 model/variable identities per experiment/year/position; near-term 600 per position"
+        },
+        {
+          "dataset": "grace",
+          "ok": true,
+          "detail": "313344 raw-source-matched rows; complete valid-cell grid in 20\u201337 N, 18 W\u20130 E (source no-data remains unavailable)"
+        },
+        {
+          "dataset": "gedi",
+          "ok": true,
+          "detail": "2072354 raw-source-matched rows; complete valid-cell grid in 20\u201337 N, 18 W\u20130 E (source no-data remains unavailable)"
+        }
+      ]
+    },
+    {
+      "name": "stored plan input hashes recompute exactly",
+      "ok": true,
+      "detail": {
+        "plans": 0,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "catalog content hashes and identities recompute exactly",
+      "ok": true,
+      "detail": {
+        "catalogs": 15,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "planning version hashes recompute exactly",
+      "ok": true,
+      "detail": {
+        "versions": 0,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "stored result hashes recompute exactly",
+      "ok": true,
+      "detail": {
+        "results": 3,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "accepted plan content is still protected from rewriting",
+      "ok": true,
+      "detail": "skipped: the backup holds no plans"
+    }
+  ]
+}

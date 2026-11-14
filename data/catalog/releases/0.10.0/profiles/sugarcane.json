@@ -1,0 +1,332 @@
+{
+  "id": "sugarcane",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sugarcane",
+    "localNames": [
+      { "language": "fr", "name": "Canne à sucre" },
+      { "language": "ar", "name": "قصب السكر" }
+    ],
+    "scientificName": "Saccharum officinarum L.",
+    "family": "Poaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:sugarcane"
+    }
+  },
+  "harvestProduct": "sugar_root",
+  "modelType": "multi_year_stand",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:sugarcane"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-fill-sugarcane-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -2 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sugarcane.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-sugarcane-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical stand length",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sugarcane.duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "stand_lifetime",
+      "minDays": 1095,
+      "maxDays": 1825
+    },
+    {
+      "id": "t-fill-sugarcane-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 42 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sugarcane.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 42
+    },
+    {
+      "id": "t-fill-sugarcane-window0-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical Moroccan Mediterranean sowing/planting season, zone dependent",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sugarcane.window0"
+      },
+      "conditions": "Recalled by the AI model; unverified. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "02-15",
+      "end": "04-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "t-sugarcane-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 4
+    }
+  ],
+  "references": [
+    {
+      "id": "a-sugarcane-temperature-ecocrop-background-113",
+      "topic": "background",
+      "summary": "Temperature facts (unconfirmed_adaptability_limit): sourceFieldTMIN_degC 15; sourceFieldTMAX_degC 41; sourceFieldKTMP_degC 0.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Saccharum officinarum\", fields TMIN, TMAX, KTMP",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA means no value. Not usable as a catalog damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "b-sugarcane-cycle-days-ecocrop-background-114",
+      "topic": "background",
+      "summary": "Cycle 210–365 days.",
+      "value": { "unit": "days", "min": 210, "max": 365 },
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Saccharum officinarum\", fields GMIN, GMAX",
+          "interpretation": "normalized",
+          "note": "Ecocrop growing-cycle length range in days; not Moroccan and not tied to a sowing date. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "f-sugarcane-observed-yield-yield-118",
+      "topic": "yield",
+      "summary": "Yield (system irrigated)",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-cane2-fnh-ma-articles-cosumar-plantes-sucrieres",
+          "locator": "paragraph on the 2025/2026 campaign",
+          "interpretation": "normalized",
+          "note": "Company-reported national average for one flood-affected season; the article mentions the Gharb and Loukkos.",
+          "page": null,
+          "quote": "Les rendements moyens se sont établis à 55 tonnes par hectare pour la betterave à sucre et à 72 tonnes par hectare pour la canne à sucre."
+        }
+      ]
+    },
+    {
+      "id": "t-sugarcane-heat-background-210",
+      "topic": "background",
+      "summary": "Temperature (daily_maximum): Tolerant; growth best 25-35 C, damage above ~40 C",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.heat"
+      }
+    },
+    {
+      "id": "t-sugarcane-cold-background-211",
+      "topic": "background",
+      "summary": "Temperature (daily_minimum): Leaf frost damage near -1 C, stalk damage near -2 to -3 C",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.cold"
+      }
+    },
+    {
+      "id": "t-sugarcane-planting-window-background-212",
+      "topic": "background",
+      "summary": "Planting: Planting in late summer to autumn (a Cosumar 2026 programme is reported to have started 20 August; not verified in the saved page)",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.planting_window"
+      }
+    },
+    {
+      "id": "t-sugarcane-cycle-duration-background-213",
+      "topic": "background",
+      "summary": "Cycle 360–540 days.",
+      "value": { "unit": "days", "min": 360, "max": 540 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.cycle_duration"
+      }
+    },
+    {
+      "id": "t-sugarcane-preferred-predecessor-background-214",
+      "topic": "background",
+      "summary": "preferred predecessor: Legumes or fallow before replanting",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.preferred_predecessor"
+      }
+    },
+    {
+      "id": "t-sugarcane-prohibited-predecessor-background-215",
+      "topic": "background",
+      "summary": "prohibited predecessor: Replanting cane directly after cane",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.prohibited_predecessor"
+      }
+    },
+    {
+      "id": "t-sugarcane-observed-yield-yield-216",
+      "topic": "yield",
+      "summary": "Yield (Cosumar reports 72 t/ha average in 2025/2026 (sourced separately)). AI recall, not a Moroccan statistic.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall; not Moroccan statistics unless stated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.observed_yield"
+      }
+    },
+    {
+      "id": "t-sugarcane-varieties-background-217",
+      "topic": "background",
+      "summary": "Types: Commercial clones supplied through Cosumar; names not recalled.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General recall; names omitted where not confident",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sugarcane.varieties"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on."
+  ]
+}

@@ -1,0 +1,595 @@
+{
+  "id": "chives",
+  "version": "0.14.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Chives",
+    "localNames": [
+      { "language": "fr", "name": "Ciboulette" },
+      { "language": "ar", "name": "الثوم المعمر" }
+    ],
+    "scientificName": "Allium schoenoprasum L.",
+    "family": "Amaryllidaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:chives"
+    }
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "multi_year_stand",
+  "cultivars": [
+    {
+      "id": "local-common-chives-ciboulette-commune-per-pntta-bulletin-96",
+      "name": "local common chives (ciboulette commune), per PNTTA bulletin 96",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.chives.local-common-chives-(ciboulette-commune)"
+      },
+      "notes": "type",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "الثوم المعمر البلدي",
+          "recall": {
+            "confidence": "low",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.local-common-chives-ciboulette-commune-per-pntta-bulletin-96.ar"
+          }
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:chives"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chives.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chives.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chives.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-chives-sowing-and-stand-planting-window",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-garlic",
+          "locator": "PNTTA bulletin 96 (Sept 2002), La ciboulette",
+          "interpretation": "normalized",
+          "note": "Two fragments from the chives sheet; \"Il\" refers to sowing in the nursery/direct sowing sentence.",
+          "page": null,
+          "quote": "La culture reste en place 2-4 ans […] Il a lieu en Mars-Avril"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. sowing in March–April; the crop stays in place 2–4 years. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "03-01",
+      "end": "04-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "t-a-chives-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of chives: approximate cold/frost injury level",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.chives.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -15,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-chives-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of chives: approximate heat level where quality, fruit set or growth declines",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.chives.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_or_yield_loss_approximate) at stage \"vegetative growth\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    },
+    {
+      "id": "t-c-chives-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the family; interval depends on the disease concerned",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.chives.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-c-chives-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.chives.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-chives-preferred-predecessor-preferred-predecessor-family-2",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.chives.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-c-chives-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation practice: avoid following the same botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.chives.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. same-family disease and pest carry-over Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Amaryllidaceae"
+    },
+    {
+      "id": "t-fill-chives-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical stand length",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.chives.duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "stand_lifetime",
+      "minDays": 1095,
+      "maxDays": 1460
+    },
+    {
+      "id": "t-fill-chives-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 38 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.chives.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    {
+      "id": "c11-chives-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.chives"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7
+    },
+    {
+      "id": "c11-chives-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.chives"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.2
+    },
+    {
+      "id": "c11-chives-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.chives"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-chives-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.chives"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    }
+  ],
+  "references": [
+    {
+      "id": "t-f-chives-typical-yield-yield-323",
+      "topic": "yield",
+      "summary": "Yield 7–10 t/ha (system irrigated, fresh; typical commercial range recalled from general sources; not Moroccan statistics). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 7, "max": 10 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of chives",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.chives.typical_yield"
+      }
+    },
+    {
+      "id": "c11-chives-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.chives"
+      }
+    },
+    {
+      "id": "c11-chives-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class shallow (about 0.2 to 0.5 m).",
+      "value": { "unit": "m (class range)", "min": 0.2, "max": 0.5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.chives"
+      }
+    },
+    {
+      "id": "c11-chives-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.chives"
+      }
+    },
+    {
+      "id": "c11-chives-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.chives"
+      }
+    },
+    {
+      "id": "c11-chives-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.chives"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [],
+      "options": [],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ]
+    }
+  }
+}

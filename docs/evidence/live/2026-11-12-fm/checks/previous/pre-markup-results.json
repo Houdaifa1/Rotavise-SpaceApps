@@ -1,0 +1,74 @@
+[
+  {
+    "command": "pnpm lint",
+    "startedAt": "2026-11-12T21:00:27.124121+00:00",
+    "status": "passed",
+    "log": "lint.log",
+    "exitCode": 0,
+    "elapsedSeconds": 9.9,
+    "finishedAt": "2026-11-12T21:00:37.026319+00:00"
+  },
+  {
+    "command": "pnpm format:check",
+    "startedAt": "2026-11-12T21:00:37.026846+00:00",
+    "status": "passed",
+    "log": "format-check.log",
+    "exitCode": 0,
+    "elapsedSeconds": 16.46,
+    "finishedAt": "2026-11-12T21:00:53.489771+00:00"
+  },
+  {
+    "command": "pnpm typecheck",
+    "startedAt": "2026-11-12T21:00:53.490109+00:00",
+    "status": "passed",
+    "log": "typecheck.log",
+    "exitCode": 0,
+    "elapsedSeconds": 18.59,
+    "finishedAt": "2026-11-12T21:01:12.077425+00:00"
+  },
+  {
+    "command": "pnpm build",
+    "startedAt": "2026-11-12T21:01:12.077978+00:00",
+    "status": "passed",
+    "log": "build.log",
+    "exitCode": 0,
+    "elapsedSeconds": 16.49,
+    "finishedAt": "2026-11-12T21:01:28.568757+00:00"
+  },
+  {
+    "command": "pnpm test:unit",
+    "startedAt": "2026-11-12T21:01:28.569360+00:00",
+    "status": "passed",
+    "log": "test-unit.log",
+    "exitCode": 0,
+    "elapsedSeconds": 16.87,
+    "finishedAt": "2026-11-12T21:01:45.443505+00:00"
+  },
+  {
+    "command": "pnpm test:web",
+    "startedAt": "2026-11-12T21:01:45.444215+00:00",
+    "status": "passed",
+    "log": "test-web.log",
+    "exitCode": 0,
+    "elapsedSeconds": 6.95,
+    "finishedAt": "2026-11-12T21:01:52.395379+00:00"
+  },
+  {
+    "command": "pnpm test:map",
+    "startedAt": "2026-11-12T21:01:52.395723+00:00",
+    "status": "passed",
+    "log": "test-map.log",
+    "exitCode": 0,
+    "elapsedSeconds": 55.51,
+    "finishedAt": "2026-11-12T21:02:47.910954+00:00"
+  },
+  {
+    "command": "pnpm test:e2e",
+    "startedAt": "2026-11-12T21:02:47.911879+00:00",
+    "status": "failed",
+    "log": "test-e2e.log",
+    "exitCode": -15,
+    "elapsedSeconds": 101.39,
+    "finishedAt": "2026-11-12T21:04:29.299287+00:00"
+  }
+]

@@ -1,0 +1,215 @@
+{
+  "id": "olive",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Olive",
+    "localNames": [{ "language": "fr", "name": "Olivier" }],
+    "scientificName": "Olea europaea L.",
+    "family": "Oleaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-olive",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF.",
+        "page": null,
+        "quote": "\"scientificName\":\"Olea europaea L.\""
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter.",
+        "page": null,
+        "quote": "Olivier Agrumes Grenadier"
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "picholine-marocaine",
+      "name": "Picholine marocaine",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "high",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.picholine-marocaine"
+      },
+      "notes": "cultivar; dominant Moroccan olive; table and oil"
+    },
+    {
+      "id": "haouzia",
+      "name": "Haouzia",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.haouzia"
+      },
+      "notes": "cultivar; INRA Maroc selection; oil"
+    },
+    {
+      "id": "menara",
+      "name": "Menara",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.menara"
+      },
+      "notes": "cultivar; INRA Maroc selection; oil"
+    },
+    {
+      "id": "dahbia",
+      "name": "Dahbia",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.dahbia"
+      },
+      "notes": "cultivar; Moroccan selection"
+    },
+    {
+      "id": "meslala",
+      "name": "Meslala",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.meslala"
+      },
+      "notes": "cultivar; Moroccan, Marrakech region"
+    },
+    {
+      "id": "picholine-du-languedoc",
+      "name": "Picholine du Languedoc",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.picholine-du-languedoc"
+      },
+      "notes": "cultivar; French"
+    },
+    {
+      "id": "arbequina",
+      "name": "Arbequina",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.arbequina"
+      },
+      "notes": "cultivar; Spanish; used in intensive/high-density plantings"
+    },
+    {
+      "id": "arbosana",
+      "name": "Arbosana",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.arbosana"
+      },
+      "notes": "cultivar; Spanish; used in intensive plantings"
+    },
+    {
+      "id": "koroneiki",
+      "name": "Koroneiki",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.koroneiki"
+      },
+      "notes": "cultivar; Greek; used in intensive plantings"
+    },
+    {
+      "id": "picual",
+      "name": "Picual",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.picual"
+      },
+      "notes": "cultivar; Spanish"
+    },
+    {
+      "id": "manzanilla",
+      "name": "Manzanilla",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.olive.manzanilla"
+      },
+      "notes": "cultivar; Spanish; table olive"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only.",
+          "page": null,
+          "quote": "Olivier Agrumes Grenadier"
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

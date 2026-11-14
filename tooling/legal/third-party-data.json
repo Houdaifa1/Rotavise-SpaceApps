@@ -1,0 +1,149 @@
+{
+  "checkedOn": "2026-11-08",
+  "python": {
+    "note": "Licence strings read from each package's PyPI metadata (pypi.org/pypi/<name>/<version>/json) on the date above, for the versions pinned in apps/science/requirements.lock.txt. Direct dependency: aquacrop. The others are its transitive dependencies.",
+    "packages": [
+      {
+        "name": "aquacrop",
+        "version": "3.1.0",
+        "license": "MIT",
+        "url": "https://github.com/aquacropos/aquacrop"
+      },
+      {
+        "name": "contourpy",
+        "version": "1.4.0",
+        "license": "BSD-3-Clause",
+        "url": "https://github.com/contourpy/contourpy"
+      },
+      {
+        "name": "cycler",
+        "version": "0.12.1",
+        "license": "BSD-3-Clause",
+        "url": "https://pypi.org/project/cycler/"
+      },
+      {
+        "name": "fonttools",
+        "version": "4.68.0",
+        "license": "MIT",
+        "url": "https://github.com/fonttools/fonttools"
+      },
+      {
+        "name": "kiwisolver",
+        "version": "1.5.1",
+        "license": "BSD-3-Clause",
+        "url": "https://pypi.org/project/kiwisolver/"
+      },
+      {
+        "name": "matplotlib",
+        "version": "3.11.2",
+        "license": "PSF-based matplotlib licence (OSI approved)",
+        "url": "https://matplotlib.org"
+      },
+      {
+        "name": "numpy",
+        "version": "2.5.4",
+        "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+        "url": "https://pypi.org/project/numpy/"
+      },
+      {
+        "name": "packaging",
+        "version": "26.3",
+        "license": "Apache-2.0 OR BSD-2-Clause",
+        "url": "https://pypi.org/project/packaging/"
+      },
+      {
+        "name": "pandas",
+        "version": "3.1.0",
+        "license": "BSD-3-Clause",
+        "url": "https://pypi.org/project/pandas/"
+      },
+      {
+        "name": "pillow",
+        "version": "13.0.0",
+        "license": "MIT-CMU",
+        "url": "https://python-pillow.org"
+      },
+      {
+        "name": "pyparsing",
+        "version": "3.3.3",
+        "license": "MIT",
+        "url": "https://github.com/pyparsing/pyparsing/"
+      },
+      {
+        "name": "python-dateutil",
+        "version": "3.0.0",
+        "license": "Apache-2.0 OR BSD-3-Clause (dual)",
+        "url": "https://github.com/dateutil/dateutil"
+      },
+      {
+        "name": "seaborn",
+        "version": "0.13.2",
+        "license": "BSD-3-Clause",
+        "url": "https://pypi.org/project/seaborn/"
+      },
+      {
+        "name": "six",
+        "version": "1.17.0",
+        "license": "MIT",
+        "url": "https://github.com/benjaminp/six"
+      },
+      {
+        "name": "tqdm",
+        "version": "4.70.1",
+        "license": "MPL-2.0 AND MIT",
+        "url": "https://pypi.org/project/tqdm/"
+      },
+      {
+        "name": "tzdata",
+        "version": "2026.6",
+        "license": "Apache-2.0",
+        "url": "https://github.com/python/tzdata"
+      }
+    ]
+  },
+  "docker": {
+    "note": "Base images are pinned by digest in the Dockerfiles and compose files. They are used unmodified as runtime or build layers and are not redistributed by this repository. Each image also contains operating-system packages under their own licences (for Debian-based images, mostly GPL/LGPL/BSD/MIT); consult the image for the full list.",
+    "images": [
+      {
+        "image": "node:24.19.0-bookworm-slim",
+        "use": "server and worker build and runtime",
+        "license": "MIT (Node.js); Debian packages under their own licences"
+      },
+      {
+        "image": "python:3.12-slim",
+        "use": "science service runtime",
+        "license": "PSF-2.0 (CPython); Debian packages under their own licences"
+      },
+      {
+        "image": "nginxinc/nginx-unprivileged:1.28-alpine",
+        "use": "web runtime",
+        "license": "BSD-2-Clause (nginx); Alpine packages under their own licences"
+      },
+      {
+        "image": "postgres:18.4-bookworm",
+        "use": "database",
+        "license": "PostgreSQL License (PostgreSQL); Debian packages under their own licences"
+      },
+      {
+        "image": "axllent/mailpit:v1.31.3",
+        "use": "local test inbox only (development)",
+        "license": "MIT"
+      }
+    ]
+  },
+  "openSourceAllowList": [
+    "MIT",
+    "MIT-0",
+    "ISC",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "0BSD",
+    "Apache-2.0",
+    "Unlicense",
+    "CC0-1.0",
+    "BlueOak-1.0.0",
+    "Python-2.0",
+    "MPL-2.0"
+  ],
+  "weakCopyleft": ["MPL-2.0", "LGPL"]
+}

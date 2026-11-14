@@ -1,0 +1,8 @@
+$ pnpm build:server && node tooling/openapi/generate.mjs
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+Wrote /Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-ops/docs/api/openapi.json

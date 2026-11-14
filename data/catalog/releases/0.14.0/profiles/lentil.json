@@ -1,0 +1,2275 @@
+{
+  "id": "lentil",
+  "version": "0.14.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Lentil",
+    "localNames": [
+      { "language": "fr", "name": "Lentille" },
+      { "language": "ar", "name": "العدس" },
+      {
+        "language": "ary",
+        "name": "العدس",
+        "recall": {
+          "confidence": "high",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.lentil.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "العدس",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-lentille",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: lentil.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "العدس"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      }
+    ],
+    "scientificName": "Lens culinaris Medik.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-lentil",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Lens culinaris Medik.\""
+      },
+      {
+        "sourceId": "onca-legumes-reference",
+        "locator": "PDF page 40, crop name",
+        "interpretation": "direct",
+        "note": "Local name as written in the source.",
+        "page": 40,
+        "quote": "Lentille La date de semis affecte significativement la production de la lentille"
+      },
+      {
+        "sourceId": "inra-arabic-guides",
+        "locator": "Legume guide cover (scanned)",
+        "interpretation": "context_only",
+        "note": "Arabic name read from the scanned page image; not machine-checked."
+      }
+    ]
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "abda",
+      "name": "Abda",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ABDA (L 593153-16) I.N.R.A.MAROC 2004"
+        }
+      ],
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "عبدة",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.abda.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bekria",
+      "name": "Bekria",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "BEKRIA I.N.R.A.MAROC 1989"
+        }
+      ],
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "بكرية",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.bekria.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chakkouf",
+      "name": "Chakkouf",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "CHAKKOUF (ILL6001-81) I.N.R.A.MAROC 2009"
+        }
+      ]
+    },
+    {
+      "id": "zaria",
+      "name": "Zaria",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ZARIA (L8635) I.N.R.A.MAROC 2003"
+        }
+      ]
+    },
+    {
+      "id": "karam",
+      "name": "Karam",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "KARAM I.N.R.A.MAROC 2024"
+        }
+      ],
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "كرم",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.karam.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "extra",
+      "name": "Extra",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "jemaat-shaim",
+      "name": "Jemaat Shaim",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "جماعة اشعيم",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.jemaat-shaim.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bakria",
+      "name": "Bakria",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.lentil.bakria"
+      },
+      "notes": "cultivar; INRA Maroc release",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "بكرية",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.bakria.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zaaria",
+      "name": "Zaaria",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.lentil.zaaria"
+      },
+      "notes": "cultivar; INRA Maroc release"
+    },
+    {
+      "id": "large-seeded-and-small-seeded-types",
+      "name": "Large-seeded and small-seeded types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.lentil.large-seeded-and-small-seeded-types"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "precoz",
+      "name": "Precoz",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.lentil.precoz"
+      }
+    },
+    {
+      "id": "idlib-2",
+      "name": "Idlib 2",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.lentil.idlib-2"
+      }
+    },
+    {
+      "id": "idlib-3",
+      "name": "Idlib 3",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.lentil.idlib-3"
+      }
+    },
+    {
+      "id": "silvina",
+      "name": "Silvina",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.lentil.silvina"
+      }
+    },
+    {
+      "id": "laird",
+      "name": "Laird",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.lentil.laird"
+      }
+    },
+    {
+      "id": "eston",
+      "name": "Eston",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.lentil.eston"
+      }
+    },
+    {
+      "id": "richlea",
+      "name": "Richlea",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.lentil.richlea"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 40",
+          "interpretation": "context_only",
+          "note": "National guidance only."
+        }
+      ],
+      "note": "Not schedulable in this release."
+    },
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 9",
+          "interpretation": "context_only",
+          "note": "Food legumes are grown across Morocco.",
+          "page": 9,
+          "quote": "La culture des légumineuses alimentaires se répartit sur l'ensemble du Maroc"
+        }
+      ],
+      "note": "National guidance. Rainfall is not yet checked against the crop, so a dry or desert location can still be listed; local suitability needs a specialist."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.lentil.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-beni-mellal-khenifra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.lentil.BMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.lentil.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.lentil.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.lentil.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.lentil.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "lentil-sowing-irrigated",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 40",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 40,
+          "quote": "Dans les régions du Bour favorable ou l'irrigué, il est conseillé d'opter pour des semis du 15 octobre à 15 novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National reference; climate is not checked for lentil.",
+      "metric": "planting_window",
+      "start": "10-15",
+      "end": "11-15",
+      "precision": "exact_day"
+    },
+    {
+      "id": "lentil-sowing-semi-arid",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 40",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 40,
+          "quote": "En région semi-aride, le semis est à réaliser de préférence du 15 novembre au 15 décembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["rainfed"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National reference; climate is not checked for lentil.",
+      "metric": "planting_window",
+      "start": "11-15",
+      "end": "12-15",
+      "precision": "exact_day"
+    },
+    {
+      "id": "lentil-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Lentil",
+          "interpretation": "normalized",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "25 35 70 40 170 Oct/Nov Arid Region"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National reference; climate is not checked for lentil.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 170,
+      "maxDays": 170
+    },
+    {
+      "id": "lentil-anthracnose-break",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 75, anthracnose",
+          "interpretation": "normalized",
+          "note": "Five years encoded as 1,825 days.",
+          "page": 75,
+          "quote": "Rotation de 5 ans entre deux légumineuses"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Applies when anthracnose is confirmed.",
+      "metric": "crop_health_break",
+      "issueId": "legume-anthracnose",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "lentil-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values.",
+          "page": null,
+          "quote": "Lentil 1.10 0.30"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the group.",
+          "page": null,
+          "quote": "Legumes (Leguminosae) 0.4 1.15 0.55"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "25 35 70 40 170 Oct/Nov Arid Region"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.4,
+      "kcMid": 1.1,
+      "kcEnd": 0.3,
+      "stageLengths": [25, 35, 70, 40]
+    },
+    {
+      "id": "a-lentil-heat-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-lentil-morocco-heat",
+          "locator": "PDF/printed page 3, Weather Data",
+          "interpretation": "normalized",
+          "note": "The Marchouch experiment imposed heat exposure in the reproductive phase and measured daily maxima. This is an experimental treatment threshold, not a fitted universal onset threshold. No crop-independent stage dates are supplied.",
+          "page": 3,
+          "quote": "threshold level of 35◦ C"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Damage limit (damage) at stage \"whole_cycle\". Quote re-found in the saved source text.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "c-lentil-preferred-predecessor-preferred-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-onca-legumes",
+          "locator": "PDF/printed page 35, §5.3.1, no-till weed-control rotation",
+          "interpretation": "normalized",
+          "note": "A biennial legume/cereal alternation is recommended specifically for managing volunteers in no-till. Poaceae maps the source's cereal group; retain the no-till condition. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 35
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-a-lentil-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture/agronomy knowledge: hardened winter lentil survives roughly -6 C or somewhat lower; seedlings and flowers far less tolerant",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.lentil.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"vegetative_growth\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": -6,
+      "upperDegC": null
+    },
+    {
+      "id": "t-c-lentil-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation guidance for the botanical family Fabaceae",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.lentil.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-c-lentil-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation guidance for the botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.lentil.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-fill-lentil-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -8 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.lentil.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -8,
+      "upperDegC": null
+    },
+    {
+      "id": "c11-lentil-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.lentil"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 8
+    },
+    {
+      "id": "c11-lentil-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.lentil"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.5
+    },
+    {
+      "id": "c11-lentil-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.lentil"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-lentil-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.lentil"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "low",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-lentil-break-pratylenchus-thornei",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lentil.pratylenchus-thornei"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Root lesion nematode.",
+      "metric": "crop_health_break",
+      "issueId": "pratylenchus-thornei",
+      "minimumBreakDays": 1095
+    },
+    {
+      "id": "c11-lentil-break-orobanche-crenata",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lentil.orobanche-crenata"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Broomrape of legumes.",
+      "metric": "crop_health_break",
+      "issueId": "orobanche-crenata",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "c11-lentil-break-orobanche-foetida",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lentil.orobanche-foetida"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Broomrape (foetid) of legumes.",
+      "metric": "crop_health_break",
+      "issueId": "orobanche-foetida",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "c11-lentil-break-aphanomyces-euteiches",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lentil.aphanomyces-euteiches"
+      },
+      "conditions": "Recalled by the AI model; unverified. 6 years without host crops after Pea root rot.",
+      "metric": "crop_health_break",
+      "issueId": "aphanomyces-euteiches",
+      "minimumBreakDays": 2190
+    },
+    {
+      "id": "c11-lentil-break-peronospora-viciae",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lentil.peronospora-viciae"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Downy mildew of pea.",
+      "metric": "crop_health_break",
+      "issueId": "peronospora-viciae",
+      "minimumBreakDays": 1095
+    },
+    {
+      "id": "c11-lentil-break-fusarium-oxysporum-lentis",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lentil.fusarium-oxysporum-lentis"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Fusarium wilt of lentil.",
+      "metric": "crop_health_break",
+      "issueId": "fusarium-oxysporum-lentis",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "c11-lentil-break-stemphylium-botryosum",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lentil.stemphylium-botryosum"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Stemphylium blight of lentil.",
+      "metric": "crop_health_break",
+      "issueId": "stemphylium-botryosum",
+      "minimumBreakDays": 1095
+    }
+  ],
+  "references": [
+    {
+      "id": "f-lentil-observed-yield-yield-27",
+      "topic": "yield",
+      "summary": "Yield 0.31–0.31 t/ha (product dry grain; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 0.31, "max": 0.31 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 66 / printed page 63, Table 36, Lentille row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. Field-legume row; not an experimental yield potential. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 66
+        }
+      ]
+    },
+    {
+      "id": "f-lentil-settat-2014-2015-yield-28",
+      "topic": "yield",
+      "summary": "Yield 1.2–1.2 t/ha (product dry grain; years 2014-2015; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 1.2, "max": 1.2 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 72, Production agricole, Lentilles row, Rendement (T/Ha), rainfed column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 72
+        }
+      ]
+    },
+    {
+      "id": "a-lentil-heat-background-83",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 32 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Lens culinaris\"; field TMAX=32",
+          "interpretation": "normalized",
+          "note": "CONFLICT to record, not resolve: EcoCrop's whole-species absolute maximum (32 °C) is lower than the existing tier-1 Moroccan ICARDA Marchouch reproductive-phase experimental threshold already on file (35 °C). The ICARDA figure is Moroccan field evidence and should be weighted higher by an agronomist, but both are kept on record per the no-silent-pick rule. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "k-lentil-background-56",
+      "topic": "background",
+      "summary": "Cool-season annual harvested for dry seed. Frost sensitivity changes by cultivar and reproductive stage. Heat and drought during flowering and seed filling can reduce pod set and seed weight. Alternate with non-host crops according to the disease; avoid treating all legume-to-legume sequences as breaks. Harvest maturity and shattering risk differ from an early green harvest; no Moroccan cycle length is supplied by these notes.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.lentil"
+      }
+    },
+    {
+      "id": "c11-lentil-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Fixes atmospheric nitrogen through root symbiosis, which can reduce nitrogen needs of the next crop.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.lentil"
+      }
+    },
+    {
+      "id": "c11-lentil-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.lentil"
+      }
+    },
+    {
+      "id": "c11-lentil-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.lentil"
+      }
+    },
+    {
+      "id": "c11-lentil-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.lentil"
+      }
+    },
+    {
+      "id": "c11-lentil-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: medium.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.lentil"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "temperature",
+      "reason": "Only germination temperatures are sourced; no damage limit to compare climate risk."
+    }
+  ],
+  "limitations": [
+    "From national guides and FAO tables, not yet expert-reviewed. No sourced damage temperature, so climate is not checked.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "lentil-faostat-pp-2020",
+          "kind": "prices",
+          "value": 6782.7,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2020",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5530\",\"Producer Price (LCU/tonne)\",\"2020\",\"2020\",\"7021\",\"Annual value\",\"LCU\",\"6782.700000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762773,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2020.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2020.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-pp-2021",
+          "kind": "prices",
+          "value": 8856,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2021",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5530\",\"Producer Price (LCU/tonne)\",\"2021\",\"2021\",\"7021\",\"Annual value\",\"LCU\",\"8856.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762774,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2021.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2021.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-pp-2022",
+          "kind": "prices",
+          "value": 8124,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2022",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5530\",\"Producer Price (LCU/tonne)\",\"2022\",\"2022\",\"7021\",\"Annual value\",\"LCU\",\"8124.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762775,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2022.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2022.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-pp-2023",
+          "kind": "prices",
+          "value": 13550,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2023",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5530\",\"Producer Price (LCU/tonne)\",\"2023\",\"2023\",\"7021\",\"Annual value\",\"LCU\",\"13550.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762776,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2023.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2023.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-pp-2024",
+          "kind": "prices",
+          "value": 15247,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2024",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5530\",\"Producer Price (LCU/tonne)\",\"2024\",\"2024\",\"7021\",\"Annual value\",\"LCU\",\"15247.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762777,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2024.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:lentil.prices.lentil-faostat-pp-2024.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-onca-legumes-rsk-prices-6",
+          "kind": "prices",
+          "value": 795,
+          "unit": "dh/Qx",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: Gharb / plateaus",
+          "commodity": "dry grain",
+          "scenarioId": null,
+          "definition": "published_point",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Le prix de vente des légumineuses varie dans une fourchette de 500dh/Qx pour la fève, 795 dh/Qx pour la lentille et 1 040 dh/Qx pour le pois-chiche.",
+              "locator": "{\"pdfPage\":37}",
+              "quoteCheck": "income:lentil.prices.lentil-onca-legumes-rsk-prices-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "farm sale; exact transaction stage not stated",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "pairingStatus": "Prose prices are not assigned to annex yields; source subzone prices may differ.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 223,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"223.000000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1903947,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:lentil.yields.lentil-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 998,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"998.000000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1903948,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:lentil.yields.lentil-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 262.5,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"262.500000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1903949,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:lentil.yields.lentil-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 183.1,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"183.100000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1903950,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:lentil.yields.lentil-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 335.3,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Lentils, dry",
+          "scenarioId": "lentil-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"201\",\"'01704\",\"Lentils, dry\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"335.300000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1903951,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:lentil.yields.lentil-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-onca-legumes-rsk-yields-6",
+          "kind": "yields",
+          "value": 20,
+          "unit": "Qx (hectare denominator not explicit in this prose)",
+          "currency": null,
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: Gharb",
+          "commodity": null,
+          "scenarioId": "lentil-onca-rsk-Z1",
+          "definition": "production_potential",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "respectivement 22 Qx et 20 Qx pour le pois chiche et la lentille dans la zone Gharb, contre 15 Qx et 12 Qx au niveau de la zone de plateaux.",
+              "locator": "{\"pdfPage\":37}",
+              "quoteCheck": "income:lentil.yields.lentil-onca-legumes-rsk-yields-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "statistic": "production_potential",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "unitLimitation": "Not silently interpreted as Qx/ha; use annex or independent per-hectare evidence.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-onca-legumes-rsk-yields-7",
+          "kind": "yields",
+          "value": 12,
+          "unit": "Qx (hectare denominator not explicit in this prose)",
+          "currency": null,
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: plateaus",
+          "commodity": null,
+          "scenarioId": "lentil-onca-rsk-Z2",
+          "definition": "production_potential",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "respectivement 22 Qx et 20 Qx pour le pois chiche et la lentille dans la zone Gharb, contre 15 Qx et 12 Qx au niveau de la zone de plateaux.",
+              "locator": "{\"pdfPage\":37}",
+              "quoteCheck": "income:lentil.yields.lentil-onca-legumes-rsk-yields-7.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "statistic": "production_potential",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "unitLimitation": "Not silently interpreted as Qx/ha; use annex or independent per-hectare evidence.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-onca-legumes-rsk-costs-1",
+          "kind": "costs",
+          "value": 5101,
+          "unit": "dh/ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: Gharb (Z1)",
+          "commodity": null,
+          "scenarioId": "lentil-onca-rsk-Z1",
+          "definition": "Inputs, hired labour, machinery rental; best-producer interviews, not representative averages.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Z1 1 524 1 991 1 326 1 890 1 540 1 540 1 420 1 570 1540 4834 5101 4406",
+              "locator": "{\"pdfPage\":36}",
+              "quoteCheck": "income:lentil.costs.lentil-onca-legumes-rsk-costs-1.quote"
+            },
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Charges variables (dh/ha/an)",
+              "locator": "{\"pdfPage\":36}",
+              "quoteCheck": "income:lentil.costs.lentil-onca-legumes-rsk-costs-1.quote.context.0"
+            },
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Fève Lentille Pois-chiche",
+              "locator": "{\"pdfPage\":36}",
+              "quoteCheck": "income:lentil.costs.lentil-onca-legumes-rsk-costs-1.quote.context.1"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Table 10, total variable costs, lentil column",
+            "costDefinition": "Inputs, hired labour, machinery rental; best-producer interviews, not representative averages.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-onca-legumes-rsk-costs-2",
+          "kind": "costs",
+          "value": 5025,
+          "unit": "dh/ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: plateaus (Z2)",
+          "commodity": null,
+          "scenarioId": "lentil-onca-rsk-Z2",
+          "definition": "Inputs, hired labour, machinery rental; best-producer interviews, not representative averages.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Z2 1 175 1 300 995 1 360 1 955 1 105 1 020 1 770 1370 3555 5025 3470",
+              "locator": "{\"pdfPage\":36}",
+              "quoteCheck": "income:lentil.costs.lentil-onca-legumes-rsk-costs-2.quote"
+            },
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Charges variables (dh/ha/an)",
+              "locator": "{\"pdfPage\":36}",
+              "quoteCheck": "income:lentil.costs.lentil-onca-legumes-rsk-costs-2.quote.context.0"
+            },
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Fève Lentille Pois-chiche",
+              "locator": "{\"pdfPage\":36}",
+              "quoteCheck": "income:lentil.costs.lentil-onca-legumes-rsk-costs-2.quote.context.1"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Table 10, total variable costs, lentil column",
+            "costDefinition": "Inputs, hired labour, machinery rental; best-producer interviews, not representative averages.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-onca-legumes-rsk-margins-1",
+          "kind": "margins",
+          "value": 11099,
+          "unit": "dh/ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: Gharb (Z1)",
+          "commodity": null,
+          "scenarioId": "lentil-onca-rsk-Z1",
+          "definition": "Published gross margin; variable inputs, labour and machinery costs deducted.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Z1 7 416 11 099 16 494",
+              "locator": "{\"pdfPage\":37}",
+              "quoteCheck": "income:lentil.margins.lentil-onca-legumes-rsk-margins-1.quote"
+            },
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Marge Brute (dh/ha/an)",
+              "locator": "{\"pdfPage\":37}",
+              "quoteCheck": "income:lentil.margins.lentil-onca-legumes-rsk-margins-1.quote.context.0"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Gross-margin table, lentil column",
+            "marginDefinition": "Published gross margin; variable inputs, labour and machinery costs deducted.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "lentil-onca-legumes-rsk-margins-2",
+          "kind": "margins",
+          "value": 4995,
+          "unit": "dh/ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: plateaus (Z2)",
+          "commodity": null,
+          "scenarioId": "lentil-onca-rsk-Z2",
+          "definition": "Published gross margin; variable inputs, labour and machinery costs deducted.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Z2 5 115 4 995 11 230",
+              "locator": "{\"pdfPage\":37}",
+              "quoteCheck": "income:lentil.margins.lentil-onca-legumes-rsk-margins-2.quote"
+            },
+            {
+              "sourceId": "research-income-onca-legumes-rsk",
+              "sourceSha256": "9b51df028961bb3ff9d66aaf6a7573f62f4a413abcc38e6ecbdb24c3981d95a8",
+              "quote": "Marge Brute (dh/ha/an)",
+              "locator": "{\"pdfPage\":37}",
+              "quoteCheck": "income:lentil.margins.lentil-onca-legumes-rsk-margins-2.quote.context.0"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Gross-margin table, lentil column",
+            "marginDefinition": "Published gross margin; variable inputs, labour and machinery costs deducted.",
+            "provenanceType": "source_quote"
+          }
+        }
+      ],
+      "options": [],
+      "gaps": [
+        {
+          "field": "economicObservationYear",
+          "status": "not_found",
+          "scope": "At least one regional/illustrative budget has no explicitly attached observation year; no publication/upload/contract year substituted."
+        },
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [
+        {
+          "id": "lentil.biological_nitrogen_fixation.01",
+          "category": "biological_nitrogen_fixation",
+          "effect": "Observed symbiotic nitrogen fixation range; not a following-crop nitrogen credit",
+          "nonLocal": true,
+          "region": "ICARDA northern Syria; Mediterranean environment",
+          "conditions": [
+            "Three consecutive rainfed seasons beginning 1991-92; lentil-specific range only; not the chickpea range."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "kind": "range",
+            "min": 18,
+            "max": 82,
+            "unit": "kg N/ha",
+            "period": "one crop season",
+            "measure": "biological nitrogen fixation by isotope dilution"
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-uk-syria-bnf",
+              "sourceSha256": "d4b2aabe13bec3ab6400f6b8bdeab876e91908f30b9d3e7013fd5d207b9c5f45",
+              "quote": "estimates ranged from 32 to 82 kg N/ha for chickpea and from 18 to 82 kg N/ha for lentil.",
+              "locator": "{\"pdfPage\":null,\"section\":\"Abstract\"}",
+              "quoteCheck": "benefits:lentil.lentil.biological_nitrogen_fixation.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "lentil",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "SY",
+              "region": "ICARDA northern Syria; Mediterranean environment",
+              "nonLocal": true,
+              "transferToMorocco": "context_only_requires_local_validation"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "lentil.forage_residue_feed.01",
+          "category": "forage_residue_feed",
+          "effect": "Measured crude protein of the named local feed material",
+          "nonLocal": false,
+          "region": "Chaouia Ourdigha, Morocco",
+          "conditions": [
+            "Samples from Chaouia Ourdigha; observational feed-composition study; no price, total per-hectare feed value or universal ration inferred.",
+            "Removal for feed may compete with residue retention; no erosion tradeoff quantified here."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "kind": "point",
+            "value": 7.1,
+            "unit": "% dry matter",
+            "measure": "crude protein of lentil straw",
+            "table": "Table 4",
+            "column": "CP",
+            "isRange": false
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-morocco-feed-2025",
+              "sourceSha256": "844fc99771225d7c9115e8da413c42109fd59a11ddd58ededd2413fbd3a2100c",
+              "quote": "Lentil straw 92c ± 1 c 10.23 ± 2 b 7.1 ± 1.43 c 34.25 ± 2.21 47.6e ± 1.63 36.54b ± 2.61 11b ± 2.14 60.43d ± 1.2",
+              "locator": "{\"pdfPage\":6,\"section\":\"Printed p.60; Table 4, CP column; heading: Chemical composition (%DM) and dry matter digestibility\"}",
+              "quoteCheck": "benefits:lentil.lentil.forage_residue_feed.01.quote"
+            },
+            {
+              "sourceId": "research-benefits-morocco-feed-2025",
+              "sourceSha256": "844fc99771225d7c9115e8da413c42109fd59a11ddd58ededd2413fbd3a2100c",
+              "quote": "Table 4. Chemical composition (%DM) and dry matter digestibility",
+              "locator": "{\"pdfPage\":6}",
+              "quoteCheck": "benefits:lentil.lentil.forage_residue_feed.01.tableHeadingQuote"
+            }
+          ],
+          "research": {
+            "cropId": "lentil",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Chaouia Ourdigha, Morocco",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only",
+            "tableHeadingQuote": {
+              "original": "Table 4. Chemical composition (%DM) and dry matter digestibility",
+              "english": "Table 4. Chemical composition (%DM) and dry matter digestibility",
+              "textFile": ".research-sources/2026-11-10/morocco-feed-2025-p006.txt",
+              "textSha256": "442d141906bdaad75618b7735ccd09097af264c508f120d045aa5017c72f1f8f",
+              "sourceId": "morocco-feed-2025",
+              "locator": { "pdfPage": 6 }
+            }
+          }
+        },
+        {
+          "id": "lentil.forage_residue_feed.02",
+          "category": "forage_residue_feed",
+          "effect": "Named crop material used in local sheep diets",
+          "nonLocal": false,
+          "region": "Chaouia Ourdigha, Morocco",
+          "conditions": [
+            "The paper reports local practices; this does not establish a safe complete diet or value for another crop."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-morocco-feed-2025",
+              "sourceSha256": "844fc99771225d7c9115e8da413c42109fd59a11ddd58ededd2413fbd3a2100c",
+              "quote": "According to field surveys, numerous kinds of unconventional feeds are introduced into the sheep's diet, including olive tree leaves, crude olive cake (COC), pulses straws like lentils and chickpeas, the endemic weed DA, aromatic and medicinal plant straws like cumin, fenugreek, coriander, and nigella and Medicago Arborea (MA) shrub.",
+              "locator": "{\"pdfPage\":1,\"section\":\"Abstract; printed p.55\"}",
+              "quoteCheck": "benefits:lentil.lentil.forage_residue_feed.02.quote"
+            }
+          ],
+          "research": {
+            "cropId": "lentil",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Chaouia Ourdigha, Morocco",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "lentil.forage_residue_feed.03",
+          "category": "forage_residue_feed",
+          "effect": "Straw tested as sheep feed; measured crude protein, specific Portuguese samples",
+          "nonLocal": true,
+          "region": "Lisbon and Elvas, Portugal",
+          "conditions": [
+            "Straws produced in 1992–1995 in Lisbon or Elvas; four observations per straw (two places × two times).",
+            "Study fed straws to adult Merino sheep with mineral and protein-grain supplementation; not a complete diet recommendation.",
+            "Cultivar-specific observations; no values extrapolated to another species."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "kind": "point",
+            "value": 8.6,
+            "unit": "% dry matter",
+            "measure": "straw crude protein mean; not the Ash value",
+            "table": "Table 1",
+            "column": "CP"
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-portugal-straws",
+              "sourceSha256": "5d7be10ce42f7f5af9d32b46ff78b98264585f06675b5da379949f7ca52a9714",
+              "quote": "Lentil 7.0b 8.6de 41.8' 72.7Cd 51 .2d 12.8efg k2.1 11.3 f3.4 110.4 16.2 12.0",
+              "locator": "{\"pdfPage\":5,\"section\":\"Printed p.42; Table 1; CP column is second numeric column after Ash\"}",
+              "quoteCheck": "benefits:lentil.lentil.forage_residue_feed.03.quote"
+            }
+          ],
+          "research": {
+            "cropId": "lentil",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "PT",
+              "region": "Lisbon and Elvas, Portugal",
+              "nonLocal": true,
+              "transferToMorocco": "context_only_requires_local_validation"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only",
+            "tableImage": {
+              "savedFile": ".research-sources/2026-11-10/portugal-straws-p005.png",
+              "sha256": "2c42a8027af0d87d4661d2a4201255b3bbd660fd2180968e97dfdc2cedce50aa",
+              "visuallyChecked": true
+            }
+          }
+        },
+        {
+          "id": "lentil.erosion_cover_residue.01",
+          "category": "erosion_cover_residue",
+          "effect": "Relay system extends cover and protects soil from degradation; no C factor supplied",
+          "nonLocal": false,
+          "region": "Merchouch, Khémisset Province, Morocco",
+          "conditions": [
+            "Qualitative degradation-protection statement, not a measured soil-loss reduction.",
+            "Applies to the paired relay system only."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": "dimensionless RUSLE C",
+            "reason": "No C-factor table for either crop or for this relay system."
+          },
+          "rotationContext": {
+            "relationship": "chickpea relayed into standing lentils",
+            "partners": [
+              { "cropId": "lentil", "family": "Fabaceae" },
+              { "cropId": "chickpea", "family": "Fabaceae" }
+            ]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-icarda-relay",
+              "sourceSha256": "368632f4c6baa8317c90bf6b8f408bcaa22d605573d63d0145138bf4b383b645",
+              "quote": "Additionally, including chickpeas as a relayintercrop extends the cropping season and prolongs the period where the soil is covered, consequently protecting it from degradation.",
+              "locator": "{\"pdfPage\":1,\"section\":\"Description; p.1\"}",
+              "quoteCheck": "benefits:lentil.lentil.erosion_cover_residue.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "lentil",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Merchouch, Khémisset Province, Morocco",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "lentil.bare_soil_period_shortening.01",
+          "category": "bare_soil_period_shortening",
+          "effect": "Relay chickpea prolongs cover beyond the lentil season; bare-soil days not measured",
+          "nonLocal": false,
+          "region": "Merchouch, Khémisset Province, Morocco",
+          "conditions": [
+            "Lentil–chickpea relay system, not either sole crop.",
+            "Single Merchouch site; ICARDA trial 2020–2022; severe drought may require supplementary irrigation."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": "day",
+            "reason": "Qualitative extension of soil cover only; no exact bare-soil days, canopy closure dates or residue-cover observations."
+          },
+          "rotationContext": {
+            "relationship": "chickpea relayed into standing lentils",
+            "partners": [
+              { "cropId": "lentil", "family": "Fabaceae" },
+              { "cropId": "chickpea", "family": "Fabaceae" }
+            ]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-icarda-relay",
+              "sourceSha256": "368632f4c6baa8317c90bf6b8f408bcaa22d605573d63d0145138bf4b383b645",
+              "quote": "Additionally, including chickpeas as a relayintercrop extends the cropping season and prolongs the period where the soil is covered, consequently protecting it from degradation.",
+              "locator": "{\"pdfPage\":1,\"section\":\"Description; p.1\"}",
+              "quoteCheck": "benefits:lentil.lentil.bare_soil_period_shortening.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "lentil",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Merchouch, Khémisset Province, Morocco",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "lentil.bare_soil_period_shortening.02",
+          "category": "bare_soil_period_shortening",
+          "effect": "Reported harvest months support a calendar proxy; no bare-soil duration inferred",
+          "nonLocal": false,
+          "region": "Merchouch, Khémisset Province, Morocco",
+          "conditions": [
+            "Retain month-level precision; do not turn April–June into a fixed number of bare-soil days.",
+            "Harvest date is not equivalent to loss of soil cover when residues remain."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": "day",
+            "reason": "April lentil harvest and June chickpea harvest have month precision; not measured days of avoided bare soil."
+          },
+          "rotationContext": {
+            "relationship": "relay harvest calendar",
+            "partners": [
+              { "cropId": "lentil", "harvestMonth": 4, "family": "Fabaceae" },
+              { "cropId": "chickpea", "harvestMonth": 6, "family": "Fabaceae" }
+            ]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-icarda-relay",
+              "sourceSha256": "368632f4c6baa8317c90bf6b8f408bcaa22d605573d63d0145138bf4b383b645",
+              "quote": "In March, the plots are manually weeded, and in April, the lentils are manually harvested and mechanically threshed. A single spray of insecticide is applied in April-May. Finally, in June, the chickpeas are mechanically harvested",
+              "locator": "{\"pdfPage\":1,\"section\":\"Description; p.1\"}",
+              "quoteCheck": "benefits:lentil.lentil.bare_soil_period_shortening.02.quote"
+            }
+          ],
+          "research": {
+            "cropId": "lentil",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Merchouch, Khémisset Province, Morocco",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only",
+            "calendarEvidence": {
+              "lentilHarvest": { "month": 4, "precision": "month" },
+              "chickpeaHarvest": { "month": 6, "precision": "month" },
+              "avoidedBareSoilDays": "not_found"
+            }
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        }
+      ]
+    }
+  }
+}

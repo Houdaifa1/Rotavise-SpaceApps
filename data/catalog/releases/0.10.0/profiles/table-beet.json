@@ -1,0 +1,423 @@
+{
+  "id": "table-beet",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Table beet",
+    "localNames": [{ "language": "fr", "name": "Betterave potagère" }],
+    "scientificName": "Beta vulgaris L.",
+    "family": "Amaranthaceae",
+    "citations": [
+      {
+        "sourceId": "kew-beet-gbif",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Beta vulgaris L.\""
+      },
+      {
+        "sourceId": "pntta-roots",
+        "locator": "PDF page 2",
+        "interpretation": "direct",
+        "note": "French name as written.",
+        "page": 2,
+        "quote": "LA BETTERAVE POTAGÈRE"
+      }
+    ]
+  },
+  "harvestProduct": "root_tuber",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "detroit",
+      "name": "Detroit",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.table-beet.detroit"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "crapaudine",
+      "name": "Crapaudine",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.table-beet.crapaudine"
+      },
+      "notes": "cultivar; French heirloom; long root"
+    },
+    {
+      "id": "egyptian-flat",
+      "name": "Egyptian (flat)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.table-beet.egyptian-(flat)"
+      },
+      "notes": "cultivar"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "locator": "PDF page 2",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin.",
+          "page": 2,
+          "quote": "LA BETTERAVE POTAGÈRE"
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "table-beet-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": 2,
+          "quote": "Le meilleur moment du semis est Avril-Mai-Juin"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National bulletin; check your local calendar.",
+      "metric": "planting_window",
+      "start": "04-01",
+      "end": "06-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "table-beet-duration",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Four to five months encoded as 120–150 days.",
+          "page": 2,
+          "quote": "La récolte se fait 4-5 mois après la plantation"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "From the bulletin.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 120,
+      "maxDays": 150
+    },
+    {
+      "id": "table-beet-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values.",
+          "page": null,
+          "quote": "Beets, table 1.05 0.95"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group.",
+          "page": null,
+          "quote": "Roots and Tubers 0.5 1.10 0.95"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "25 30 25 10 90 Feb/Mar Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 1.05,
+      "kcEnd": 0.95,
+      "stageLengths": [25, 30, 25, 10]
+    },
+    {
+      "id": "a-table-beet-cold-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Beta vulgaris\"; field KTMP",
+          "interpretation": "normalized",
+          "note": "KTMP is ECOCROP's 'Killing Temperature' field. KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-table-beet-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture/agronomy knowledge: beet roots tolerate light frost; foliage damaged near -2 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.table-beet.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-table-beet-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture/agronomy knowledge: sustained heat above about 30-32 C reduces root quality",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.table-beet.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"vegetative_growth\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 32
+    },
+    {
+      "id": "t-c-table-beet-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family Amaranthaceae",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.table-beet.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-c-table-beet-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.table-beet.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-table-beet-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "high",
+        "basis": "general rotation guidance for the botanical family (beet, chard, spinach)",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.table-beet.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Amaranthaceae"
+    },
+    {
+      "id": "t-fill-table-beet-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 35 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.table-beet.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    }
+  ],
+  "references": [
+    {
+      "id": "a-table-beet-heat-background-80",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 35 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Beta vulgaris\"; field TMAX",
+          "interpretation": "normalized",
+          "note": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "k-table-beet-background-68",
+      "topic": "background",
+      "summary": "Vegetable root crop selected for table use. Cool-season adaptation does not supply an exact daily-minimum injury boundary; cold can affect bolting. High heat and water stress can impair root quality and growth. It can share some Beta-associated problems with sugar beet; a sugar-beet rotation rule needs product and pathogen context. Harvest size and cultivar affect the cycle; fresh-root yield differs from sugar-beet root or sugar yield.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.table-beet"
+      }
+    },
+    {
+      "id": "t-f-table-beet-observed-yield-yield-553",
+      "topic": "yield",
+      "summary": "Yield 25–35 t/ha (system irrigated). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 25, "max": 35 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recalled world and North African production ranges for irrigated commercial fields; not a Moroccan statistic",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.table-beet.observed_yield"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

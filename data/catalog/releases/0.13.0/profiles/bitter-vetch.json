@@ -1,0 +1,576 @@
+{
+  "id": "bitter-vetch",
+  "version": "0.13.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Bitter vetch",
+    "localNames": [
+      { "language": "fr", "name": "Ers" },
+      { "language": "ar", "name": "الكرسنة" },
+      {
+        "language": "ary",
+        "name": "الكرسنة",
+        "recall": {
+          "confidence": "medium",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.bitter-vetch.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "كرسالة",
+        "citations": [
+          {
+            "sourceId": "darija-smaili-2023",
+            "locator": "PDF page 69",
+            "interpretation": "direct",
+            "note": "Moroccan field-study vernacular; methods p. 5 specify Arabic letters for Arabic names and Tifinagh for Amazigh names; Annex 3 is Jerada. The scientific name and Arabic vernacular are printed in the same botanical entry/table row. Research record: bitter-vetch.ary.0. Native-speaker review pending.",
+            "page": 69,
+            "quote": "كرسالة"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      }
+    ],
+    "scientificName": "Vicia ervilia (L.) Willd.",
+    "family": "Fabaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:bitter-vetch"
+    }
+  },
+  "harvestProduct": "forage",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:bitter-vetch"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.bitter-vetch.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.bitter-vetch.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.bitter-vetch.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-bitter-vetch-cycle-days-ecocrop-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Vicia ervilia\", fields GMIN, GMAX",
+          "interpretation": "normalized",
+          "note": "Ecocrop growing-cycle length range in days; not Moroccan and not tied to a sowing date. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Species-level cycle length (FAO Ecocrop), not specific to Moroccan sowing dates. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 150
+    },
+    {
+      "id": "t-bitter-vetch-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-bitter-vetch-planting-window-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.planting_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. November-December. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "11-01",
+      "end": "12-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "t-fill-bitter-vetch-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -10 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.bitter-vetch.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -10,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-bitter-vetch-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical sowing-to-harvest length",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.bitter-vetch.duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 150,
+      "maxDays": 200
+    },
+    {
+      "id": "t-fill-bitter-vetch-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 36 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.bitter-vetch.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 36
+    },
+    {
+      "id": "c11-bitter-vetch-crop-water-coefficient",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO-56 Table 11 and 12 pattern recalled for the crop or its group; not checked against the tables.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop_water_coefficient.bitter-vetch"
+      },
+      "conditions": "Recalled by the AI model; unverified. FAO-56 style crop coefficients and stage lengths in days, recalled for this crop or its crop group.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.4,
+      "kcMid": 1,
+      "kcEnd": 0.35,
+      "stageLengths": [15, 25, 40, 20]
+    },
+    {
+      "id": "c11-bitter-vetch-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.bitter-vetch"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 8
+    },
+    {
+      "id": "c11-bitter-vetch-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.bitter-vetch"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 2
+    },
+    {
+      "id": "c11-bitter-vetch-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.bitter-vetch"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-bitter-vetch-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.bitter-vetch"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "low",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    }
+  ],
+  "references": [
+    {
+      "id": "a-bitter-vetch-temperature-ecocrop-background-104",
+      "topic": "background",
+      "summary": "Temperature facts (unconfirmed_adaptability_limit): sourceFieldTMIN_degC 5; sourceFieldTMAX_degC 28; sourceFieldKTMP_degC -1.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Vicia ervilia\", fields TMIN, TMAX, KTMP",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA means no value. Not usable as a catalog damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-bitter-vetch-heat-background-154",
+      "topic": "background",
+      "summary": "Temperature (daily_maximum): Late-season heat above ~30 C shortens grain fill",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.heat"
+      }
+    },
+    {
+      "id": "t-bitter-vetch-cold-background-155",
+      "topic": "background",
+      "summary": "Temperature (daily_minimum): Moderately hardy; damage near -5 to -8 C",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.cold"
+      }
+    },
+    {
+      "id": "t-bitter-vetch-cycle-duration-background-156",
+      "topic": "background",
+      "summary": "Cycle: ~150 days",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.cycle_duration"
+      }
+    },
+    {
+      "id": "t-bitter-vetch-preferred-predecessor-background-157",
+      "topic": "background",
+      "summary": "preferred predecessor: Cereals",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.preferred_predecessor"
+      }
+    },
+    {
+      "id": "t-bitter-vetch-prohibited-predecessor-background-158",
+      "topic": "background",
+      "summary": "prohibited predecessor: Legumes the previous 3 years",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.prohibited_predecessor"
+      }
+    },
+    {
+      "id": "t-bitter-vetch-observed-yield-yield-159",
+      "topic": "yield",
+      "summary": "Yield (Grain ~0.5-1.2 t/ha (not Moroccan statistics)). AI recall, not a Moroccan statistic.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall; not Moroccan statistics unless stated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.observed_yield"
+      }
+    },
+    {
+      "id": "t-bitter-vetch-varieties-background-160",
+      "topic": "background",
+      "summary": "Types: Traditional landrace pulse/feed crop (Arabic/Darija name 'kersenna' is commonly used for it).",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General recall; names omitted where not confident",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.bitter-vetch.varieties"
+      }
+    },
+    {
+      "id": "c11-bitter-vetch-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Fixes atmospheric nitrogen through root symbiosis, which can reduce nitrogen needs of the next crop.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.bitter-vetch"
+      }
+    },
+    {
+      "id": "c11-bitter-vetch-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.bitter-vetch"
+      }
+    },
+    {
+      "id": "c11-bitter-vetch-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.bitter-vetch"
+      }
+    },
+    {
+      "id": "c11-bitter-vetch-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.bitter-vetch"
+      }
+    },
+    {
+      "id": "c11-bitter-vetch-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: high.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.bitter-vetch"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

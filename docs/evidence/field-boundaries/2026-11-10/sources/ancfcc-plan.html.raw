@@ -1,0 +1,1733 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>ANCFCC</title>
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+<!--[if lte IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+<meta name="author" content="ANCFCC">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="/media/1299/favicon.png" type="image/png" rel="icon">
+<link rel="shortcut icon" href="/media/1297/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/media/1297/favicon.ico" type="image/x-icon" />
+
+	<script type="text/javascript" src="/scripts/js/jquery-3.7.1.min.js"></script> 
+    
+<link href="/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/css/CssJsCloud/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="/css/CssJsCloud/animate.min.css" rel="stylesheet" media="all">
+<script src="/scripts/controlsValidation.js"></script>
+<link href="/css/photoswipe.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/css/Slider.css" />
+<link rel="stylesheet" type="text/css" href="/css/Menu.css" />
+<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+	
+<script src="/scripts/keyboard.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/keyboard.css" />
+    <script src="/scripts/js/moment.js"></script>
+    <script type="text/javascript" src="/css/CssJsCloud/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="/css/CssJsCloud/bootstrap-datetimepicker.css" />
+	    <script type="text/javascript" src="/scripts/js/intlTelInput.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/intlTelInput.css" />
+		    <script type="text/javascript" src="/scripts/js/toastr.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/toastr.css" />
+	<script type="text/javascript" src="/scripts/jquery.validate.js"></script> 
+	
+
+	</head>
+
+<body>
+
+    <div id="global-content">
+
+        <div class="head" style="background-color: white">
+
+    <div class="top-head">
+
+        <div class="container">
+            <div id="row">
+                <div style="display: flex;flex-direction: row;justify-content: flex-end;padding: 5px 0;margin-top: 4px;" id="c2" class="col-md-12">
+
+                    <div class="Search " style="">
+                        <div class="Recherche">
+
+                            <form action="/search/" method="GET">
+
+                                <span class="icon"><i class="fa fa-search"></i></span>
+                                <input type="search" id="search" placeholder="Recherche..."  name=" query">
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="lang "><a href="/ar" style="color: #fff;font-size: 1.0rem;font-weight: bold;">النسخة العربية</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle-head">
+        <div class="container">
+            <div class="row">
+                <a href="/">
+                    <img class="" src="/media/1003/logo02.png" width="403">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-menu">
+        <div class="container">
+
+            <div class="row">
+                <div id="c1" class="col-md-12">
+
+                    <nav id="navigation-box" class="">
+                        <!-- Menu Hamburger pour Mobile -->
+                        <a href="#" id="navigation-toggle">
+                            <span class="menu-icon">
+                                <span class="icon-toggle" role="button" aria-label="Toggle Navigation"><span class="lines"></span></span>
+                            </span>
+                        </a>
+
+                        <!-- Contenu Menu Principal -->
+                        <ul id="navigation" class="naviga">
+                            <li><a href="/" class="first leaf"">Accueil</a></li>
+
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" id="presentationMenu" class="expanded">Présentation</a>
+                                <ul id="dropdown-1" class="dropdown-menu">
+
+                                    <li>
+                                        <a href="/presentation/" class="first leaf" onclick="changeActiveElement('2')">
+                                            Mot
+                                            du
+                                            Directeur Général
+                                        </a>
+                                    </li>
+                                    <li><a href="/missionsAttributions/" class="leaf">Missions et attributions</a></li>
+                                    <li><a href="/conseiladministration/" class="leaf">Conseil d'administration</a></li>
+                                    <li><a href="/organigramme/" class="leaf">Organigramme</a></li>
+                                    <li><a href="/chiffrecles/" class="last leaf">Chiffres clés</a></li>
+                                    <li><a href="/CapitalHumain/" class="last leaf">Capital humain</a></li>
+                                    <li><a href="/ServicesExterieurs/" class="leaf">Réseau des Blocs Fonciers </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" class="expanded">Métiers</a>
+                                <ul id="dropdown-2" class="dropdown-menu">
+                                    <li>
+                                        <a href="/nos-métiers/conservateur-général/" class="first leaf">
+                                            Conservateur
+                                            général
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/nos-métiers/conservation-foncière-cadastre/" class="leaf">
+                                            Conservation
+                                            Foncière-Cadastre
+                                        </a>
+                                    </li>
+                                    <li><a href="/nos-métiers/cartographie/" class="leaf">Cartographie</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" class="expanded">
+                                    Produits et
+                                    formalités
+                                </a>
+                                <ul id="dropdown-2" class="dropdown-menu">
+                                    <li><a href="/produits-et-formalités/produits/" class="first leaf">Produits </a></li>
+                                    <li><a href="/produits-et-formalités/formalités/" class="leaf">Formalités </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" class="expanded">Espace media</a>
+                                <ul id="dropdown-3" class="dropdown-menu">
+                                    <li><a href="/publications/" class="first leaf">Publications</a></li>
+                                    <li><a href="/PhotoTheque/" class="leaf">Médiathèque</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" class="expanded">
+                                    Espace
+                                    professionnel
+                                </a>
+                                <ul id="dropdown-3" class="dropdown-menu">
+                                    <li>
+                                        <a href="https://espaceigt.ancfcc.gov.ma" class="first leaf">
+                                            Espace Cadastre &amp;
+                                            Cartographie
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://espacenotaire.ancfcc.gov.ma/" class="leaf">
+                                            Espace conservation
+                                            foncière
+                                            /
+                                            Notaires
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://espaceadoul.ancfcc.gov.ma/" class="leaf">
+                                            Espace conservation
+                                            foncière
+                                            /
+                                            Adouls
+                                        </a>
+                                    </li>
+									      <li>
+										  <a href="https://contentieux.ancfcc.gov.ma" class="leaf">
+											  Espace contentieux /avocats ANCFCC
+										  </a>
+									  </li>
+                                </ul>
+                            </li>
+                            <div class="lang"><a href="/ar" style="color: white; font-family: 'Cairo';">النسخة العربية</a></div>
+                        </ul>
+                    </nav>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+        
+
+<div class="container-fluid">
+    <div class="container">
+        <form action="/Plancadastralpage" enctype="multipart/form-data" id="FormCertificats" method="post">    <style>
+
+       
+
+
+           
+
+           
+
+            #divTerms {
+                height: 100px
+            }
+
+            body input, p, a, div, label, select, h1, h2, h3, h4 {
+                font-family: cairo !important;
+            }
+
+
+
+            #keyboardInputMaster tbody tr td div#keyboardInputLayout table tbody tr td {
+                vertical-align: middle;
+                padding: 0px 5px 0px 5px;
+                white-space: pre;
+                font: normal 13px 'Lucida Console',monospace;
+                border-top: 1px solid #e5e5e5;
+                border-right: 1px solid #5d5d5d;
+                border-bottom: 1px solid #5d5d5d;
+                border-left: 1px solid #e5e5e5;
+                background-color: #eeeeee;
+                cursor: default;
+            }
+
+            input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+
+            .intl-tel-input {
+                display: block;
+            }
+
+            .SuccessClassTel {
+                border: 1px green red !important;
+            }
+
+            .errorTestClass {
+                border: 1px solid red !important;
+            }
+
+            .Page {
+                padding: 2% 2% 1% 4% !important;
+            }
+
+            .Spinner {
+                position: fixed;
+                z-index: 1000;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba( 255, 255, 255, .8 ) url('/Content/img/throbber_12.gif') 50% 50% no-repeat;
+            }
+
+
+            body.loading .Spinner {
+                display: block;
+            }
+
+            input[type=button] {
+                width: auto;
+            }
+
+            input[type=submit] {
+                width: auto;
+            }
+
+            /***********************************/
+            #divPaiementChoice p {
+                margin-top: 40px;
+                font-weight: bold;
+            }
+
+            #divPaiementChoice fieldset {
+                margin: 15px auto;
+                padding: 20px;
+                border: 1px solid #1d93c4;
+                border-radius: 5px;
+            }
+
+            #divPaiementChoice legend {
+                width: auto;
+                padding: 0 10px;
+            }
+
+            #divPaiementChoice .mepaie {
+                height: 24px;
+            }
+            /***********************************/
+
+            select:disabled {
+                background-color: beige;
+            }
+    </style>
+    <style>
+        .container2 {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+            /* Hide the browser's default radio button */
+            .container2 input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container2:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .container2 input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .container2 input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .container2 .checkmark:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+    </style>
+    <div class="Page" id="Usage">
+ 
+        <div class="sitemap">
+            Accueil / service en ligne / <span>plan cadastral</span>
+        </div>
+        <div id="DivFirstPage">
+            <h1>Service de demande de plan cadastral en ligne</h1>
+
+
+
+            <label class="container2">
+                <label>Particulier</label>  
+                <input id="typeDemandeur" name="typeDemandeur" type="radio" value="persPhysique" />
+                <span class="checkmark"></span>
+            </label>
+            <label class="container2">
+                <label>Professionnel</label>
+                <input id="typeDemandeur" name="typeDemandeur" type="radio" value="persMorale" />
+                <span class="checkmark"></span>
+            </label>
+
+            <div id="certificatForm" style="display:none">
+                <h2>Informations personnelles :</h2>
+                <input data-val="true" data-val-required="The TypeDemande field is required." id="TypeDemande" name="TypeDemande" type="hidden" value="DemandePlanCadastral" />
+                <div class="forlain">
+                    <div class="pdr0 col-md-6 col-sm-6">
+                        <div class="pdr0 col-md-3 col-sm-12 " style="padding-left: 0px">
+                            <label>Nom (*):</label>
+                        </div>
+                        <div class="col-md-9 col-sm-12">
+                            <input Id="TextBoxNom" class="form-control" id="Nom" name="Nom" placeholder="Nom" required="required" type="text" value="" />
+                        </div>
+                    </div>
+                    <div class="pdr0 col-md-6 col-sm-6 no-padding">
+                        <div class="pdr0 col-md-3 col-sm-12 text-right" style="float:right">
+                            <label>:(*) الإسم العائلي</label>
+                        </div>
+                        <div class="col-md-9 col-sm-12">
+                            <input Id="TextBoxNomAr" class="form-control keyboardInput" id="NomAr" name="NomAr" placeholder="الإسم العائلي" required="required" style="direction:rtl" type="text" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="forlain">
+                    <div class="pdr0 col-md-6 col-sm-6 no-padding">
+                        <div class="pdr0 col-md-3 col-sm-12" style="padding-left: 0px">
+                            <label>Prénom (*) :</label>
+                        </div>
+                        <div class="col-md-9 col-sm-12">
+                            <input Id="TextBoxPrenom" class="form-control" id="Prenom" name="Prenom" placeholder="Prénom" required="required" type="text" value="" />
+                        </div>
+                    </div>
+                    <div class="pdr0 col-md-6 col-sm-6 no-padding">
+                        <div class="pdr0 col-md-3 col-sm-12 text-right" style="float:right">
+                            <label>:(*) الإسم الشخصي</label>
+                        </div>
+                        <div class="col-md-9 col-sm-12">
+                            <input Id="TextBoxPrenomAr" class="form-control keyboardInput" id="PrenomAr" name="PrenomAr" placeholder="الإسم الشخصي" required="required" style="direction:rtl" type="text" value="" />
+                        </div>
+                    </div>
+                </div>
+               
+                
+                <div class="forlain">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                        <label>Type identité (*):</label>
+
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <select class="ar form-control keyboardInput" data-val="true" data-val-number="The field Type Identité must be a number." id="DropDownTypeIdentite" name="TypeIdentiteId" onchange="DropListChangeTypeIdentite(this.value)" required="required" style="direction:rtl"><option value="">--Choix--</option>
+<option value="1">CIN</option>
+<option value="2">Passeport</option>
+<option value="3">Carte de s&#233;jour</option>
+</select>
+
+
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+
+                        <input Id="TextBoxIdentifiant" class="form-control" id="Identifiant" name="Identifiant" placeholder="Identifiant" required="required" type="text" value="" />
+                    </div>
+                    <div class="pdr0 col-md-3 col-sm-12 text-right" style="float:right">
+                        <label>: (*) نوع الهوية</label>
+                    </div>
+                </div>
+
+                <div class="forlain" id="iceArea" style="display:none">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                        <label>ICE (*):</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input Id="TextBoxICE" class="form-control" id="TextBoxICE" name="TextBoxICE" placeholder="ICE" required="required" type="text" value="" />
+                    </div>
+                </div>
+
+                <div class="forlain" id="idfiscalarea" style="display:none">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                        <label>Identifiant fiscal (*):</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input Id="IdentifiantFiscal" class="form-control" id="IdentifiantFiscal" name="IdentifiantFiscal" placeholder="Identifiant Fiscal" required="required" type="text" value="" />
+                    </div>
+                </div>
+
+                <div class="forlain">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                        <label>Adresse (*) :</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input Id="TextBoxAdresse" class="form-control" id="Adresse" name="Adresse" placeholder="Adresse" required="required" type="text" value="" />
+                    </div>
+                    <div class="pdr0 col-md-3 col-sm-12 text-right" style="float:right">
+                        <label>:(*) العنوان</label>
+                    </div>
+                </div>
+
+                <div class="forlain">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                        <label>Courrier éléctronique :</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input Id="TextBoxEmail" class="form-control" id="Email" name="Email" type="email" value="" />
+                    </div>
+                    <div class="pdr0 col-md-3 col-sm-12 text-right" style="float:right">
+                        <label>: البريد الالكتروني</label>
+                    </div>
+                </div>
+
+
+                <div class="separ"></div>
+                <h2>Informations sur les titres fonciers (*) :</h2>
+                <div id="DivListTitres">
+                    <div class="forlain">
+                            <div class="pd0 col-md-3 col-sm-6">
+                                <div class="col-md-4 col-sm-6">
+                                    <label>Cadastre :</label>
+                                </div>
+                                <div class="col-md-8 col-sm-6">
+                                    <select data-val="true" data-val-number="The field Conservation Fonciere must be a number." data-val-required="The Conservation Fonciere field is required." id="DropDownConservation" name="ListTitreFoncier[0].SelectedConservationFonciereId" onchange="DropListConservationChangefunc(this.value,true)"><option value="">--Choix--</option>
+<option value="9">AGADIR</option>
+<option value="65">AL HAOUZ</option>
+<option value="24">AL HOCEIMA</option>
+<option value="55">AZILAL</option>
+<option value="72">BEN GUERIR</option>
+<option value="10">BENI MELLAL</option>
+<option value="25">BENSLIMANE</option>
+<option value="40">BERKANE</option>
+<option value="53">BERRECHID</option>
+<option value="47">CASA AIN CHOCK</option>
+<option value="45">CASA AIN SBAA</option>
+<option value="1">CASA ANFA FIDA MAARIF</option>
+<option value="64">CASA HAY HASSANI</option>
+<option value="63">CASA NOUACER - DAR BOUAZZA</option>
+<option value="49">CASA SIDI EL BERNOUSSI- ZNATA</option>
+<option value="12">CASA SIDI OTHMANE</option>
+<option value="66">CHICHAOUA</option>
+<option value="80">CHTOUKA AIT BAHA</option>
+<option value="62">DAKHLA</option>
+<option value="67">EL HAJEB</option>
+<option value="8">EL JADIDA - AZEMMOUR</option>
+<option value="22">EL KELAA DES SRAGHNA</option>
+<option value="14">ERRACHIDIA</option>
+<option value="35">ESSAOUIRA</option>
+<option value="7">FES</option>
+<option value="69">ZOUAGHA MY YACOUB</option>
+<option value="68">FQUIH BEN SALEH</option>
+<option value="56">GUELMIME</option>
+<option value="79">GUERCIF</option>
+<option value="86">HAD SOUALEM</option>
+<option value="78">HARHOURA-SKHIRAT</option>
+<option value="57">IFRANE</option>
+<option value="60">INEZGANE AIT MELLOUL</option>
+<option value="54">KARIAT BA MOHAMED</option>
+<option value="13">KENITRA - SOUK LARBAA</option>
+<option value="16">KHEMISSET</option>
+<option value="27">KHENIFRA</option>
+<option value="18">KHOURIBGA</option>
+<option value="17">LAAYOUNE</option>
+<option value="36">LARACHE</option>
+<option value="83">MARRAKECH GUELIZ</option>
+<option value="4">MARRAKECH MENARA SYBA</option>
+<option value="76">M&#39;DIQ FNIDEQ</option>
+<option value="59">MEKNES ISMAILIA</option>
+<option value="5">MEKNES</option>
+<option value="42">MIDELT</option>
+<option value="26">MOHAMMADIA</option>
+<option value="11">NADOR</option>
+<option value="28">OUARZAZATE</option>
+<option value="2">OUJDA - OUJDA ANGAD</option>
+<option value="3">RABAT HASSAN- RYAD</option>
+<option value="29">ROMMANI</option>
+<option value="23">SAFI</option>
+<option value="20">SALE</option>
+<option value="58">SAL&#201; EL JADIDA</option>
+<option value="41">SEFROU - BOULMANE MISSOUR</option>
+<option value="15">SETTAT</option>
+<option value="44">SIDI BENNOUR</option>
+<option value="30">SIDI KACEM</option>
+<option value="70">SIDI SLIMANE</option>
+<option value="75">SIDI SMAIL ZEMAMRA</option>
+<option value="82">SOUK SEBT OULED NEMMA</option>
+<option value="88">TAMESNA</option>
+<option value="61">TANGER BENI MAKADA</option>
+<option value="6">TANGER</option>
+<option value="37">TAOUNATE</option>
+<option value="51">TAOURIRT</option>
+<option value="39">TAROUDANT</option>
+<option value="21">TAZA</option>
+<option value="38">TEMARA</option>
+<option value="19">TETOUAN</option>
+<option value="81">TIFELT</option>
+<option value="31">TIZNIT</option>
+</select>                                </div>
+
+                            </div>
+                            <div class="pd0 col-md-2 col-sm-6">
+                                <div class="col-md-5 col-sm-6">
+                                    <label>Type :</label>
+                                </div>
+                                <div class="col-md-7 col-sm-6">
+                                    <select data-val="true" data-val-number="The field CatgorieTitre must be a number." id="DropDownCategorie" name="ListTitreFoncier[0].CatgorieTitre"><option value="1">Titre</option>
+<option value="2">Requisition</option>
+</select>
+                                </div>
+
+                            </div>
+                            <div class="pd0 col-md-3 col-sm-6">
+                                <div class="col-md-6 col-sm-6">
+                                    <label>N° du titre :</label>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input Value="" data-val="true" data-val-number="The field Reference must be a number." data-val-required="The Reference field is required." id="TextBoxReference" name="ListTitreFoncier[0].Reference" placeholder="Numero" type="number" value="0" />
+                                </div>
+                            </div>
+                            <div class="pd0 col-md-2 col-sm-6">
+                                <div class="pdr0 col-md-6 col-sm-6">
+                                    <label>Indice :</label>
+                                </div>
+                                <div class="col-md-6 col-sm-6" style="padding-left: 0px">
+                                    <select data-val="true" data-val-number="The field Indice must be a number." id="DLLIndice" name="ListTitreFoncier[0].SelectedIndiceId"></select>
+
+                                </div>
+                            </div>
+                            <div class="pd0 col-md-2 col-sm-6">
+                                <div class="pdr0 col-md-8 col-sm-8">
+                                    <label>Indice spécial :</label>
+                                </div>
+                                <div class="col-md-4 col-sm-4" style="padding-left: 0px">
+                                    <select data-val="true" data-val-number="The field Indice Special must be a number." id="DLLIndiceSpecial" name="ListTitreFoncier[0].SelectedIndiceSpecialId"></select>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="pd0 col-md-4 col-sm-4" id="DivNombreCopies">
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Nombre de copies :</label>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input Value="1" data-val="true" data-val-number="The field Nombre must be a number." id="TextBoxNombre" name="ListTitreFoncier[0].Nombre" placeholder="Nombre" type="number" value="" />
+                                </div>
+                            </div>
+                            <div class="pd0 col-md-4 col-sm-4" style="display:none">
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Format des documents :</label>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <select data-val="true" data-val-number="The field Format document must be a number." data-val-required="The Format document field is required." id="DLLFormat" name="ListTitreFoncier[0].FormatId" onchange="DLLFormatChangefunc(this.value)"><option value="1">Num&#233;rique</option>
+<option value="2">Papier</option>
+</select>
+                                </div>
+                            </div>
+                        <div class="col-sm-12 Plus">
+                            <a onclick="addDocument()" style="cursor: pointer;"><i class="fa fa-2x fa-plus-circle" style="color: orange"></i> Enregistrer et ajouter un titre foncier </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="table-responsive">
+                        <table class="text-center table table-bordered" id="documentTable">
+                            <thead>
+                                <tr style="background-color: #d58512;color: white;">
+                                    <th class="text-center">Numéro de titre</th>
+                                    <th class="text-center">Cadastre</th>
+                                    <th class="text-center" style="width:10%">Supprimer</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bodyDocumentTable"></tbody>
+                        </table>
+                    </div>
+                    <div id="hiddenInputs">
+                    </div>
+                </div>
+
+                <div class="separ"></div>
+                <h2>Confirmation (*):</h2>
+                <div class="forlain">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                        <label>Veuillez saisir le code visible sur l’image:</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="col-md-5 col-sm-5">
+                            <input Id="TextBoxCapchaCode" class="form-control" id="CapchaCode" name="CapchaCode" required="required" type="text" value="" />
+
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <img src="/adminlogin/Surface/CalculeAndMapSurface/Display" id="CapchaImg" alt="no image" style="Width: 100px" />&nbsp;
+                            <a onclick="ReloadCapcha()" style="cursor: pointer;color : black "><i class="fa fa-3x fa-refresh"></i> </a>
+                        </div>
+                    </div>
+                    <div class="pdr0 col-md-3 col-sm-3 text-right" style="float:right">
+                        <label>: (*) الرجاء إدخال الرمز المبين في الصورة</label>
+                    </div>
+                </div>
+
+                <div class="forlain">
+                    <div class="col-sm-12">
+                        <p>
+                            Conformément à la loi 09-08, vous disposez d’un droit d’accès, de rectification et d’opposition au traitement de vos données à caractère personnel. Ce traitement a été autorisé par la CNDP sous le n° <strong>A-PO-505/2018</strong>.
+                        </p>
+                        <p style="color:red;direction:rtl;font-size:17px;font-weight:bold">
+
+                            <img src="/media/1166/circle.png" width="20" />   يجب تضمين جميع البيانات كاملة وصحيحة تحت طائلة رفض الطلب
+                        </p>
+                    </div>
+                    <div class="col-sm-12" id="divTerms">
+                        <label for="chkTerms" style="font-size: 16px">
+
+                            <input type="checkbox" id="chkTerms" />
+
+                            J’ai lu et j’accepte <a class="alink" target="_blank" href="/MentionsLegales/">les mentions légales  </a> .
+                            
+                        </label>
+                        <div id="dvTerms" style="display: none ;color:Red;text-align:center;padding:5px;"></div>
+                        <br />
+                    </div>
+                </div>
+
+           
+                <div class="col-sm-12 text-center" style="padding: 0px; margin: 2rem">
+                    <input type="button" id="SWitchToNext" value="Suivant" style="width:30%" onclick="CheckTitresFonciers()" class="btn btn-primary" />
+                </div>
+            </div>
+      
+    </div>  <!-- end infor perso-->
+
+        <div id="DivNext" style="display : none">
+            <div class="brl col-md-12 col-sm-12">
+                <div class="h2">Confirmation :</div>
+                <div class="separ"></div>
+                <div class="Informations" id="ValidatedListTitres">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr style="background-color: #d58512;color: white;">
+                                    <th class='text-center'>Cadastre</th>
+                                    <th class='text-center'>Numéro du titre</th>
+                                    <th class='text-center'>Statut</th>
+                                    <th class='text-center'>Prix</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyTitreFoncierInfo"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="separ"></div>
+
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:10px" id="DivPaiement">
+                <div id="divPaiementChoice" class="clear">
+                    <div class="mepaie">
+                        <input Id="RadioTypePaiement2" checked="checked" data-val="true" data-val-number="The field TypePaiement must be a number." data-val-required="The TypePaiement field is required." id="TypePaiement" name="TypePaiement" required="required" type="radio" value="2" />
+                        Carte bancaire
+                        <span class="cards"><img src="/Content/ImagesPaiement/cards.png" width="120" /></span>
+                    </div>
+
+                </div>
+                <div class="forlain">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                        <label>Numéro de téléphone  (*) :</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input Id="phone" class="form-control" id="Telephone" name="Telephone" placeholder="+212650123456" required="required" type="tel" value="" />
+                        <input Id="PhoneValid" id="Telephone" name="Telephone" required="required" type="hidden" value="" />
+                    </div>
+                    <div class="pdr0 col-md-3 col-sm-12 text-right" style="float:right">
+                        <label>: (*) رقم الهاتف</label>
+                    </div>
+                </div>
+
+                <div class="forlain">
+                    <div class="pdr0 col-md-3 col-sm-3"></div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <input type="text" value="" id="codeCaptchaSMS" placeholder="Code Captcha" />
+                    </div>
+                    <div class="col-md-2 col-sm-2" id="DivCapchaImgSMS">
+                        <img src="/adminlogin/Surface/CalculeAndMapSurface/DisplaySMS" id="CapchaImgSMS" alt="no image" style="Width: 100px" />&nbsp;&nbsp;
+                        <a onclick="ReloadCapchaSMS()" style="cursor: pointer;color : black" title="Changer le code"><i class="fa fa-3x fa-refresh" style="font-size:20px"></i> </a>
+                    </div>
+                    <div class="pdr0 col-md-3 col-sm-3"></div>
+                </div>
+
+                <div class="forlain">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div id="erreurCodeSMS" style="display: none; color: red; padding: 8px;"></div>
+                        <input type="button" id="SendVerification" value="Vérifier mon numero par code SMS" onclick="SendValidation()" Class="btn btn-primary btn-sm" />
+                        <input Id="HiddenPhoneValid" id="CodeVertificationHidden" name="CodeVertificationHidden" required="required" type="hidden" value="" />
+                        <input id="HiddenValidNext" name="HiddenValidNext" type="hidden" value="" />
+                        <input id="HiddenPhoneChecked" name="HiddenPhoneChecked" type="hidden" value="" />
+                        <br />
+
+                    </div>
+                </div>
+                <div class="forlain" id="DivValidationSMS" style="display : none">
+                    <div class="pdr0 col-md-3 col-sm-3">
+                        <label>Code Vérification SMS (*) :</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input Id="TextBoxCodeVertification" class="form-control" id="CodeVertification" name="CodeVertification" required="required" style="width : 40%" type="number" value="" /><br />
+                        <input type="button" id="ValidateCodeSMS" value="Valider le code reçu par SMS" Class="btn btn-primary btn-sm" onclick="CheckSMSValide()" />
+
+
+                        <br />
+
+
+                    </div>
+                    <div class="pdr0 col-md-3 col-sm-12 text-right" style="float:right">
+                        <label>: (*) رقم التحقق</label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center col-sm-12 col-xs-12">
+
+                <div class="col-sm-4">
+                    <input type="button" value="<< Retour" style="width:100%;color:black" onclick="ReturnToFirstPage()" class="btn btn-default btn-sm" />
+                </div>
+
+                <div class="col-sm-4"></div>
+
+                <div class="pd0 col-sm-4">
+                    <input type="submit" id="BtnGeneratePDF" value="Passer la commande >> " style="width:100%" class="btn btn-warning btn-sm" />
+                </div>
+
+            </div>
+            <br />
+            <div class="pd0 col-sm-12 col-xs-12" style="text-align:center">
+                <div class="separ"></div>
+                <label>Pour plus d'informations merci de nous contacter sur : </label>
+                &nbsp;<span style="vertical-align:initial;color:#337ab7"> 0530141414 | Mohafadati@ancfcc.gov.ma</span>&nbsp;
+                <label style="direction:rtl">للمزيد من المعلومات يرجى الاتصال بنا على : </label>
+            </div>
+
+            </div>
+
+    </div>
+    <div id="SpinnerLoading" class="Spinner">
+
+    </div>
+<input name='ufprt' type='hidden' value='B366A723BAFB720AB669F4D8EF3E13C4B1BA72C12AB23E1B4D2D0C2F643B43C3475025A18D880971A8699BE8CFF57CFBAFFB0714F486B0C3031B4A5C871BCF68358CB3C64470608EAD66BB9E6F30E33A762BC73D2CD1A4422A68C534FEB336D920DD7C2C605EDCADE63311E296F6F44DE60A2B8FFC4331215E5E882BDF9CE8F513316A25F75BC201BA04418FC97B789D41EB611988A1865650310010397190D1DC9CC38967DA600D637110F85069D876' /></form><script>
+    $('#BtnGeneratePDF').prop('disabled', true);
+    $('input[type=radio][name=typeDemandeur]').change(function () {
+        $("#certificatForm").show();
+        if (this.value == "persMorale") {
+
+            $("#iceArea").show();
+            $("#idfiscalarea").show();
+            $("#certificatForm").css("height", "auto"); 
+        }
+        else {
+            $("#iceArea").hide();
+            $("#idfiscalarea").hide();
+            $("#certificatForm").css("height", "auto"); 
+        }
+
+        //$("#DivFirstPage").hide();
+       // $("#DivNext").show();
+
+
+    });
+
+
+
+    $('#DivNombreCopies').hide();
+    function DLLFormatChangefunc(id) {
+        if (id == "2") $('#DivNombreCopies').show();
+        else {
+            $('#DivNombreCopies').hide();
+            $('#TextBoxNombre').val('1');
+
+        }
+
+    }
+
+    function HideEditButton() {
+
+        if ($("#DivFirstPage").is(":visible")) {
+
+            $("#BtnGeneratePDF").show();
+            $("#DivPaiement").show();
+        }
+        else {
+            $('#SpinnerLoading').show(0).delay(8000).hide(0);
+            $("#BtnGeneratePDF").hide();
+            $("#DivPaiement").show();
+        }
+    }
+
+    //new m.b
+    $('#TextBoxAdresse').keyup(function () {
+        $(this).val($(this).val().toUpperCase());
+    }); 
+
+
+    $('#FormSuiviTitres').on('keyup keypress', function (e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    $('#TermesAndConditions').click(function () {
+        console.log("termes");
+        var redirectWindow = window.open('../Conditions/conditions-generales-utilisation-Fr.html', '_blank');
+        redirectWindow.location;
+    });
+    $('#MentionsLegales').click(function () {
+        console.log("termes");
+        var redirectWindow = window.open('https://www.ancfcc.gov.ma/MentionsLegales/', '_blank');
+        redirectWindow.location;
+    });
+    $("#SpinnerLoading").hide();
+
+    $(document)
+        .ajaxStart(function () {
+            $("#SpinnerLoading").show();
+        })
+        .ajaxStop(function () {
+            $("#SpinnerLoading").hide();
+        });
+    var NotifToaster = {
+        SucessType: "success",
+        InfoType: "info",
+        WarningType: "warning",
+        ErrorType: "error",
+        Bottom_Right: "toast-bottom-right",
+        Top_Full_Width: "toast-top-full-width",
+
+        CodeSMSFalse: "Le code SMS saisi est invalide !",
+        CodeCaptchaFalse: "Le code de confirmation saisi est invalide !",
+        ErreurWebServices: "Erreur au niveau de vérification des titres fonciers !",
+        ErreurCheckConnectivity: "Erreur au niveau de vérification des titres fonciers ,Merci de réessayer plus tard",
+        NumTelephoneInvalide: "Le numéro de téléphone saisi est invalide !",
+        CodeTelephoneNotValidated: "Merci de valider le code de vérification reçu par téléphone !",
+        CodeEmailNotValidated: "Merci de valider le code de vérification reçu par email !",
+        CheckCondition: "Veuillez lire et accepter et les mentions légales et les conditions générales d&rsquo;utilisation",
+        EmailInvalide: "l&rsquo;adresse mail saisie est invalide !",
+        NumTelephonevalide: "Numéro téléphone valide",
+        SMSEnoyer: "Le code de validation a été envoyé à votre téléphone",
+        EmailEnoyer: "Le code de validation a été envoyé à votre boite mail",
+        SendSMSService: "Une erreur s&rsquo;est produite lors de l&rsquo;envoie du SMS,merci de réessayer plus tard",
+        SendEmailService: "Une erreur s&rsquo;est produite lors de l&rsquo;envoie du mail,merci de réessayer plus tard",
+        ICE: "Merci de renseigner ICE",
+        TitreFoncierInfo: "Merci de saisir les informations de votre titre foncier",
+        TitreFoncierMissing: "Merci de saisir au moins un titre foncier",
+        TitreFoncierExisteDeja: "Ce titre foncier existe dèjà dans la liste",
+
+    }
+
+    function ReloadCapchaSMS() {
+        $("#CapchaImgSMS").removeAttr("src").attr("src", "/AdminLogin/Surface/CalculeAndMapSurface/DisplaySMS/?d=" + new Date().getTime());
+    }
+
+    function ReloadCapcha() {
+        $("#CapchaImg").removeAttr("src").attr("src", "/AdminLogin/Surface/CalculeAndMapSurface/Display/?d=" + new Date().getTime());
+    }
+
+    $.validator.addMethod("CINValidation", function (value, element) {
+        return this.optional(element) || /^[a-zA-Z]{1,2}[0-9]{1,8}[A-Za-z0-9]{0,3}[A-Za-z0-9]{0,3}$/.test(value);
+    }, "رقم بطاقة الهوية غير صحيح");
+
+    $.validator.addMethod("Alpha", function (value, element) {
+        return this.optional(element) || /^[\s]|[a-zA-Z]+/.test(value);
+    }, "Only Alpha");
+
+    $.validator.addMethod("AlphaNumbers", function (value, element) {
+        return this.optional(element) || /^([\s]|[\sa-zA-Z0-9]|[,.°/_-])*$/.test(value);
+    }, "Alpha Numbers");
+
+    $.validator.addMethod("Arabic", function (value, element) {
+        return this.optional(element) || /^([\s]|[\u0600-\u06ff]|[\u0750-\u077f]|[\ufb50-\ufbc1]|[\ufbd3-\ufd3f]|[\ufd50-\ufd8f]|[\ufd92-\ufdc7]|[\ufe70-\ufefc]|[\ufdf0-\ufdfd])*$/g.test(value);
+    }, "Only Arabic");
+
+    $.validator.addMethod("ArabicNumbers", function (value, element) {
+        return this.optional(element) || /^([\s]|[0-9]|[,.°/_-]|[\u0600-\u06ff]|[\u0750-\u077f]|[\ufb50-\ufbc1]|[\ufbd3-\ufd3f]|[\ufd50-\ufd8f]|[\ufd92-\ufdc7]|[\ufe70-\ufefc]|[\ufdf0-\ufdfd])*$/g.test(value);
+    }, "Only Arabic Num");
+    $.validator.addMethod("French", function (value, element) {
+        return this.optional(element) || /^([\s]|[a-zA-Z]|[àâçéèêëîïôûùüÿñ])+$/.test(value);
+    }, "Only Latin Num");
+
+    $.validator.addMethod("FrenchNumbers", function (value, element) {
+        return this.optional(element) || /^([\s]|[\sa-zA-Z0-9]|[àâçéèêëîïôûùüÿñ]|[:,.°/_-]|[;/])*$/.test(value);
+    }, "Only Latin Num");
+
+    $.validator.addMethod("TelephoneValidation", function (value, element) {
+        return value.match(/^\+(?:[0-9] ?){6,14}[0-9]$/);
+    }, 'Enter Valid  phone number');
+
+    $("#FormCertificats").validate({
+        rules: {
+            "Nom": {
+                required: true,
+                French: true,
+            },
+            "NomAr": {
+                required: true,
+                Arabic: true
+            },
+            "Prenom": {
+                required: true,
+                French: true
+            },
+            "PrenomAr": {
+                required: true,
+                Arabic: true
+            },
+            "Surnom": {
+                required: false,
+                Arabic: true
+            },
+            "Adresse": {
+                required: true,
+                FrenchNumbers: true
+            },
+            "Identifiant": {
+                required: true,
+                CINValidation: true
+            },
+            "Telephone": {
+                required: true,
+                TelephoneValidation: true
+            }
+        },
+        errorPlacement: function () { },
+        errorClass: "errorTestClass",
+
+    });
+
+
+    function CheckSMSValide() {
+        var CodeSMS = $("#TextBoxCodeVertification").val();
+        var lResult = {};
+        $.ajax({
+            url: '/AdminLogin/surface/CalculeAndMapSurface/ValidateCodeSMS/',
+            type: 'POST',
+            dataType: 'json',
+            async: true,
+            data: '{ "CodeSMS": ' + CodeSMS + ' }',
+            contentType: 'application/json; charset=utf-8',
+            success: function (Result) {
+                lResult = Result;
+                console.log(lResult);
+                if (lResult == false)
+                    ShowNotification(NotifToaster.CodeCaptchaFalse, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+                else {
+                    $("#TextBoxCodeVertification").prop("disabled", true);
+                    $("#TextBoxCodeVertification").addClass('SuccessClassTel');
+                    $("#phone").val($("#PhoneValid").val());
+                    $("#phone").prop("disabled", true);
+                    $("#phone").addClass('SuccessClassTel');
+                    $("#SendVerification").hide();
+                    $("#ValidateCodeSMS").hide();
+
+                    $("#codeCaptchaSMS").hide();
+                    $("#DivCapchaImgSMS").hide();
+
+                    $('#BtnGeneratePDF').prop('disabled', false);
+                    $("#HiddenPhoneChecked").val('1');
+
+                    $("#HiddenPhoneValid").val(CodeSMS);
+
+
+                }
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(xhr.status);
+                alert(thrownError);
+            }
+
+        });
+
+
+    }
+
+    function ReturnToFirstPage() {
+        $("#DivNext").hide();
+        $("#DivNextRegularise").hide();
+        $("#DivFirstPage").show();
+    }
+    $("#SWitchToNext").prop("disabled", false);
+    var countDocument = 0;
+    if ($('#pTitreFoncierModal[0].Reference').val() != "")
+        $("#documentTable").hide();
+    else $("#documentTable").show();
+     
+
+
+
+    function SendValidation() {
+
+        //codeCaptchaSMS
+        $("#erreurCodeSMS").html("");
+        $("#erreurCodeSMS").hide();
+
+        if ($("#codeCaptchaSMS").val().trim() == "") {
+
+            $("#erreurCodeSMS").html("Veuillez saisir le code captcha !");
+            $("#erreurCodeSMS").show();
+            return;
+        }
+        if ($("#phone").valid() == false) {
+            $("#erreurCodeSMS").html(NotifToaster.NumTelephoneInvalide);
+            $("#erreurCodeSMS").show();
+            return;
+        }
+
+        ValidateSms($("#phone").val(), $("#codeCaptchaSMS").val());
+
+    }
+
+
+
+    function CheckTitresFonciers() {
+
+        $('#dvTerms').html('');
+        $('#dvTerms').hide();
+
+        var typeDem = $('input[name=typeDemandeur]:checked').val();
+
+
+        var iceValid = true;
+
+        if (typeDem && typeDem == "persMorale") {
+            var lICE = $("#TextBoxICE").val();
+
+            if (!lICE) {
+                iceValid = false;
+                ShowNotification(NotifToaster.ICE, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+            }
+
+            var IdentifiantFiscal = $("#IdentifiantFiscal").val();
+            if (!IdentifiantFiscal) {
+                iceValid = false;
+                ShowNotification(NotifToaster.IDFiscal, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+            }
+
+            if (lICE && IdentifiantFiscal) { iceValid = true; }
+        }
+
+        if (iceValid) {
+       
+            if (!$("#FormCertificats").valid()) {
+                $('form').find('input[type="submit"]').click();
+                return false;
+            }
+
+            var lEmail = "";
+            if ($("#TextBoxEmail").val()) {
+                lEmail = $("#TextBoxEmail").val();
+            }
+
+
+            var TermsChecked = $('#chkTerms').is(":checked");
+            if (TermsChecked != true) {
+                var lib = "Veuillez accepter les mentions légales et les conditions générales d’utilisation";
+                lib += "<br/>";
+                lib += "المرجو قبول الشروط العامة للاستخدام";
+                $('#dvTerms').html(lib);
+                $('#dvTerms').show();
+                return;
+            }
+
+
+
+            if (arrayTitreFoncier.length > 0) {
+                var hdnVal = $("#TypeDemande").val();
+                var Type;
+                console.log(hdnVal);
+                if (hdnVal == "DemandeCalculeContenance")
+                    Type = 12;
+                else Type = 13;
+                var ListeTitresValidated = new Array();
+                var DemandeSuiviTitre = {
+                    Nom: $("#TextBoxNom").val(),
+                    NomAr: $("#TextBoxNomAr").val(),
+                    Prenom: $("#TextBoxPrenom").val(),
+                    PrenomAr: $("#TextBoxPrenomAr").val(),
+                    Surnom: $("#TextBoxSurnom").val(),
+                    Identifiant: $("#TextBoxIdentifiant").val(),
+                    JourNaissance: $("#JourNaissance").val(),
+                    MoisNaissance: $("#MoisNaissance").val(),
+                    AnneeNaissance: $("#TextBoxAnneeNaissance").val(),
+                    CodeVertification: $("#TextBoxCodeVertification").val(),
+                    CodeVertificationEmail: $("#TextBoxCodeVertificationEmail").val(),
+                    CodeVertificationHidden: $("#HiddenPhoneValid").val(),
+                    CapchaCode: $("#TextBoxCapchaCode").val(),
+                    Email: lEmail,
+                    TypeDemande: Type,
+                }
+
+                console.log(DemandeSuiviTitre);
+                var lResult = {};
+                $.ajax({
+                    url: '/AdminLogin/surface/CalculeAndMapSurface/CheckFormulaire',
+                    type: 'POST',
+                    dataType: 'json',
+                    async: true,
+                    data: JSON.stringify({ 'arrayTitreFoncier': arrayTitreFoncier, 'DemandeSuiviTitre': DemandeSuiviTitre }),
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (Result) {
+                        lResult = Result;
+                        console.log(lResult);
+                        if (lResult.Statut > 0) {
+
+                            console.log(lResult.Value);
+                            var string = "";
+                            var Somme = 0;
+                            var StatutTrue = false;
+                            for (var i = 0; i < lResult.Value.length; i++) {
+                                var LibelleSpecial = "";
+                                var Categorie = "";
+                                if (lResult.Value[i].CatgorieTitre == '2')
+                                    Categorie = "R";
+                                else Categorie = "T";
+                                if (lResult.Value[i].SelectedIndiceSpecialLibelle != null)
+                                    LibelleSpecial = lResult.Value[i].SelectedIndiceSpecialLibelle;
+                                string += '<tr>';
+                                string += '<td class="text-center">' + lResult.Value[i].SelectedConservationFonciereLibelle + '</td>';
+                                string += '<td class="text-center">' + Categorie + lResult.Value[i].Reference + '/' + lResult.Value[i].SelectedIndiceLibelle + '/' + LibelleSpecial + '</td>';
+
+                                string += '<td class="text-center">';
+                                if (lResult.Value[i].Statut == '1') {
+                                    StatutTrue = true,
+                                        string += '<span class="label label-success">' + lResult.Value[i].Message + '</span>';
+                                }
+                                else if (lResult.Value[i].Statut == '0')
+                                    string += '<span class="label label-danger">' + lResult.Value[i].Message + '</span>';
+                                else string += '<span class="label label-warning">' + lResult.Value[i].Message + '</span>';
+                                string += '</td>';
+                                string += '<td class="text-center">' + lResult.Value[i].Montant + ' DH</td>';
+                                Somme += lResult.Value[i].Montant;
+                                string += '</tr>';
+
+                            }
+                            string += '<tr>';
+                            string += '<td></td><td></td><td class="text-center" style="font-weight : bold">Montant Total :</td><td class="text-center" style="font-weight : bold">' + Somme + ' DH</td>';
+                            string += '</tr>';
+                            $("#tbodyTitreFoncierInfo").empty();
+                            $("#tbodyTitreFoncierInfo").append(string);
+                            $("#DivNext").show();
+                            $("#DivNextRegularise").hide();
+                            $("#DivFirstPage").hide();
+                            if (StatutTrue) {
+                                $("#BtnGeneratePDF").show();
+                                $("#DivPaiement").show();
+                            }
+                            else {
+                                $("#BtnGeneratePDF").hide();
+                                $("#DivPaiement").hide();
+                            }
+
+                        } else if (lResult.Statut == '-1') ShowNotification(NotifToaster.CodeCaptchaFalse, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+                        else if (lResult.Statut == '-2') ShowNotification(NotifToaster.ErreurWebServices, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+                        else if (lResult.Statut == '-3') window.location.reload();
+                        else if (lResult.Statut == '-4') ShowNotification(NotifToaster.ErreurCheckConnectivity, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+                        else if (lResult.Statut == '-5') ShowNotification('Pour votre commande, veuillez choisir la même Conservation Foncière.', NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert(xhr.status);
+                        alert(thrownError);
+                    }
+
+                });
+
+
+            } else ShowNotification(NotifToaster.TitreFoncierMissing, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+
+
+        }
+    }
+
+
+
+    function DeleteTitre(idValue) {
+        for (var i = 0; i < arrayTitreFoncier.length; i++)
+            if (arrayTitreFoncier[i].id == idValue) {
+                arrayTitreFoncier.splice(i, 1);
+                break;
+            }
+        $("#TROW" + idValue).remove();
+        if (arrayTitreFoncier.length == 0)
+            $('#DropDownConservation').prop('disabled', false);
+        console.log(arrayTitreFoncier);
+
+    }
+
+
+    //M.B
+    $("#TextBoxIdentifiant").blur(function () {
+        $("#TextBoxIdentifiant").val($("#TextBoxIdentifiant").val().replace(/\s/g, ''));
+      //  document.getElementById("TextBoxIdentifiant").focus();
+      //  $('#TextBoxIdentifiant').blur();
+
+    });
+
+  
+    //M.B
+    $("#TextBoxReference").blur(function () {
+        $("#TextBoxReference").val($("#TextBoxReference").val().replace(/\./g, ''));
+    });
+
+
+
+    function ValidateSms(NumTelephone, CodeCaptcha) {
+        var lResult = {};
+        $.ajax({
+            url: '/AdminLogin/surface/CalculeAndMapSurface/SendSMSValidation/',
+            type: 'POST',
+            dataType: 'json',
+            traditional: true,
+            data: { "NumeroTelephone": NumTelephone, "CodeCaptcha": CodeCaptcha },
+            success: function (Result) {
+                lResult = Result;
+
+                if (lResult.Statut == "1") {
+
+                    $("#HiddenPhoneValid").val(lResult.Code);
+                    $("#PhoneValid").val(NumTelephone);
+                    $("#DivValidationSMS").show();
+                    $("#SendVerification").prop('value', 'Réenvoyer le Code SMS');
+                    ShowNotification(NotifToaster.SMSEnoyer, NotifToaster.SucessType, NotifToaster.Top_Full_Width);
+                } else {
+
+                    $("#HiddenPhoneValid").val('');
+                    $("#erreurCodeSMS").html(lResult.Message);
+                    $("#erreurCodeSMS").show();
+                    ReloadCapchaSMS();
+                    ShowNotification(lResult.Message, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+                }
+
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                $("#HiddenPhoneValid").val('');
+                $("#erreurCodeSMS").html(NotifToaster.SendSMSService);
+                $("#erreurCodeSMS").show();
+                ReloadCapchaSMS();
+                ShowNotification(NotifToaster.SendSMSService, NotifToaster.ErrorType, NotifToaster.Top_Full_Width);
+            }
+
+        });
+    }
+
+
+
+
+    function DropListChangeTypeIdentite(choixID) {
+        if (choixID == 2) {
+            console.log("")
+            $("#TextBoxIdentifiant").rules("remove", "CINValidation");
+        } else $("#TextBoxIdentifiant").rules("add", "CINValidation");
+    }
+
+
+    function DropListConservationChangefunc(choixID, isCAD = false) {
+        if (Math.floor(choixID) == choixID && $.isNumeric(choixID)) {
+            var lResult = {};
+            $.ajax({
+                url: '/AdminLogin/surface/DemandeCertificatsSurface/ListIndices/',
+                type: 'POST',
+                dataType: 'json',
+                async: true,
+                data: '{ "ConservationId": ' + choixID + ' }',
+                contentType: 'application/json; charset=utf-8',
+                success: function (Result) {
+                    lResult = Result;
+                    for (var i = 0; i < lResult.ListIndices.length; i++) {
+
+                        $("#DLLIndice").append("<option value='" + lResult.ListIndices[i].Id + "' >" + lResult.ListIndices[i].Libelle + "</option>");
+                    }
+
+                    for (var i = 0; i < lResult.ListIndicesSpecial.length; i++) {
+
+                        $("#DLLIndiceSpecial").append("<option value='" + lResult.ListIndicesSpecial[i].Id + "' >" + lResult.ListIndicesSpecial[i].Libelle + "</option>");
+                    }
+                    if (isCAD) {
+                        fetch('/AdminLogin/surface/DemandeCertificatsSurface/GetIndiceFusionCAD/', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ choixID: choixID })
+                        }).then(response => response.json())
+                            .then(data => {
+                                for (var i = 0; i < data.lListIndice.length; i++) {
+                                    if (!Array.from(document.getElementById("DLLIndice").options).some(option => option.text === data.lListIndice[i].Libelle)) {
+                                        $("#DLLIndice").append("<option value='" + data.lListIndice[i].Id + "' >" + data.lListIndice[i].Libelle + "</option>");
+                                    }
+                                }
+                                for (var i = 0; i < data.lListIndiceSpecial.length; i++) {
+                                    if (!Array.from(document.getElementById("DLLIndiceSpecial").options).some(option => option.text === data.lListIndiceSpecial[i].Libelle)) {
+                                        $("#DLLIndiceSpecial").append("<option value='" + data.lListIndiceSpecial[i].Id + "' >" + data.lListIndiceSpecial[i].Libelle + "</option>");
+                                    }
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error:', error); // Handle any errors
+                            });
+                    }
+
+
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+
+            });
+
+            $("#DLLIndice").empty();
+            $("#DLLIndice").append("<option value='' >----</option>");
+
+            $("#DLLIndiceSpecial").empty();
+            $("#DLLIndiceSpecial").append("<option value='' >----</option>");
+
+
+        }
+    }
+
+
+    var CountTitres = 0;
+    var arrayTitreFoncier = new Array();
+
+    function sanitize(input) {
+        return $('<div/>').text(input).html(); // escapes HTML characters
+    }
+
+    function addDocument() {
+        var TitreFoncierDemandeSuiviModal = {
+            id: 0,
+            SelectedConservationFonciereLibelle: "",
+            SelectedConservationFonciereId: 0,
+            SelectedIndiceId: 0,
+            SelectedIndiceLibelle: "",
+            SelectedIndiceSpecialLibelle: "",
+            SelectedIndiceSpecialId: 0,
+            Reference: "",
+            Nombre: 1,
+            FormatId: 0,
+            FormatLibelle: "",
+            CatgorieTitre: 1
+        }
+        console.log("Enter Function");
+        var DropDownConservationValue = sanitize($("#DropDownConservation option:selected").text());
+        var DropDownConservation = $("#DropDownConservation").val();
+
+        var DropDownFormatValue = sanitize($("#DLLFormat option:selected").text());
+        var DropDownFormat = $("#DLLFormat").val();
+
+
+        var DLLIndiceValue = sanitize($("#DLLIndice option:selected").text().trim());
+        var DLLIndice = $("#DLLIndice").val();
+
+        var DLLCategoie = $("#DropDownCategorie").val();
+
+        var DLLIndiceSpecialValue = ($("#DLLIndiceSpecial").val() !== "") ?
+            sanitize($("#DLLIndiceSpecial option:selected").text().trim()) : "";
+
+        var DLLIndiceSpecial = $("#DLLIndiceSpecial").val();
+
+        var TextBoxReference = $("#TextBoxReference").val();
+        var TextBoxNombreCopies = $("#TextBoxNombre").val();
+
+        CountTitres++;
+        var Existe = false;
+        for (var i = 0; i < arrayTitreFoncier.length; i++)
+            if (arrayTitreFoncier[i].SelectedConservationFonciereId == DropDownConservation &&
+                arrayTitreFoncier[i].SelectedIndiceId == DLLIndice &&
+                arrayTitreFoncier[i].Reference == TextBoxReference &&
+                arrayTitreFoncier[i].CatgorieTitre == DLLCategoie) {
+                Existe = true;
+                break;
+            }
+        if (DropDownConservation && DLLIndice && TextBoxReference) {
+            if (Existe == false) {
+                $("#documentTable").show();
+                $("#certificatForm").css("height", "auto"); 
+                $("#bodyDocumentTable").append("<tr  id='TROW" + CountTitres + "'>\
+                                                <td>" + ((DLLCategoie == "2") ? "R" : "T") + TextBoxReference + "/" + DLLIndiceValue + " " + DLLIndiceSpecialValue + "</td>\
+                                                <td>" + DropDownConservationValue + "</td>\
+           <td><a onclick='DeleteTitre(" + CountTitres + ")' style='cursor: pointer;color:red'><i class='fa fa-2x fa-times'></i></a></tr>");
+                TitreFoncierDemandeSuiviModal.id = CountTitres;
+                TitreFoncierDemandeSuiviModal.SelectedConservationFonciereLibelle = DropDownConservationValue;
+                TitreFoncierDemandeSuiviModal.SelectedConservationFonciereId = DropDownConservation;
+                TitreFoncierDemandeSuiviModal.SelectedIndiceId = DLLIndice;
+                TitreFoncierDemandeSuiviModal.SelectedIndiceLibelle = DLLIndiceValue;
+                TitreFoncierDemandeSuiviModal.SelectedIndiceSpecialLibelle = DLLIndiceSpecialValue;
+                TitreFoncierDemandeSuiviModal.SelectedIndiceSpecialId = DLLIndiceSpecial;
+                TitreFoncierDemandeSuiviModal.Reference = TextBoxReference;
+                TitreFoncierDemandeSuiviModal.Nombre = TextBoxNombreCopies;
+                TitreFoncierDemandeSuiviModal.FormatId = DropDownFormat;
+                TitreFoncierDemandeSuiviModal.FormatLibelle = DropDownFormatValue;
+                TitreFoncierDemandeSuiviModal.CatgorieTitre = DLLCategoie;
+                console.log(TitreFoncierDemandeSuiviModal);
+                arrayTitreFoncier.push(TitreFoncierDemandeSuiviModal);
+                console.log(arrayTitreFoncier);
+
+                $("#hiddenInputs").append("<input type='hidden' name='pTitreFoncierModal[" + countDocument + "].SelectedConservationFonciereLibelle'>")
+                $("[name='pTitreFoncierModal[" + countDocument + "].SelectedConservationFonciereLibelle']").val(DropDownConservationValue);
+                $("#hiddenInputs").append("<input type='hidden' name='pTitreFoncierModal[" + countDocument + "].SelectedConservationFonciereId' value=" + DropDownConservation + ">")
+                $("#hiddenInputs").append("<input type='hidden' name='pTitreFoncierModal[" + countDocument + "].SelectedIndiceId' value=" + DLLIndice + ">")
+                $("#hiddenInputs").append("<input type='hidden' name='pTitreFoncierModal[" + countDocument + "].SelectedIndiceLibelle' value=" + DLLIndiceValue + ">")
+                $("#hiddenInputs").append("<input type='hidden' name='pTitreFoncierModal[" + countDocument + "].SelectedIndiceSpecialLibelle' value=" + DLLIndiceSpecialValue + ">")
+                $("#hiddenInputs").append("<input type='hidden' name='pTitreFoncierModal[" + countDocument + "].SelectedIndiceSpecialId' value=" + DLLIndiceSpecial + ">")
+                $("#hiddenInputs").append("<input type='hidden' name='pTitreFoncierModal[" + countDocument + "].Reference' value=" + TextBoxReference + ">")
+                $("#hiddenInputs").append("<input type='hidden' name='pTitreFoncierModal[" + countDocument + "].CatgorieTitre' value=" + DLLCategoie + ">")
+                countDocument++;
+                $('#DropDownConservation').prop('disabled', true);
+            } else ShowNotification(NotifToaster.TitreFoncierExisteDeja, NotifToaster.WarningType, NotifToaster.Top_Full_Width);
+
+        } else ShowNotification(NotifToaster.TitreFoncierInfo, NotifToaster.WarningType, NotifToaster.Top_Full_Width);
+    }
+
+    $(".phone").intlTelInput({
+        nationalMode: false,
+        excludeCountries: ['eh', 'il', 'tw'],
+        preferredCountries: ['ma'],
+        customPlaceholder: function (selectedCountryPlaceholder, selectedCountryData) {
+            if (selectedCountryData.dialCode == "212")
+                selectedCountryPlaceholder = "650123456";
+
+            return selectedCountryPlaceholder;
+
+        },
+        utilsScript: "/Scripts/js/utils.js"
+    });
+
+    // on blur: validate
+    $("#phone").blur(function () {
+
+        if ($("#phone").val().substring(0, 2) == '00')
+            $("#phone").val('+' + $("#phone").val().substring(2, $("#phone").val().length))
+
+    });
+
+
+</script>
+
+
+    </div>
+</div>
+
+
+        <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                        <p>
+                            <strong>Adresse:</strong><a href="/contact/" style="color:white;font-size:14px"> Avenue Abderrahim Bouabid, Hay Riad, Rabat</a><br>
+                          <!--  <strong>Téléphone:</strong>
+                        <p>+212 6 60 10 27 01 / 02 / 03 / 04 / 05 / 06 </p>
+                        <br>
+                        <strong>Fax:</strong> +212 5 37 70 58 85<br><br />
+                        </p> -->
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>MENU</h4>
+                    <ul>
+                        <li> <img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/Home/">Accueil</a></li>
+                        <li><img src="/media/1135/Fleche.png" width="10"> <a href="/présentation/missions-et-attributions/">Missions et attributions</a></li>
+                        <li><img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/produits-et-formalités/produits/">Produits</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>NOS MÉTIERS</h4>
+                    <ul>
+                        <li><img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/nos-métiers/conservation-foncière-cadastre/">Conservation foncière</a></li>
+                        <li><img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/nos-métiers/conservation-foncière-cadastre/">Cadastre</a></li>
+                        <li><img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/nos-métiers/cartographie/">Cartographie</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>SERVICE RECLAMATION</h4>
+                    <p style="line-height: 24px;">
+                        Pour toute réclamation, veuillez adresser votre demande à <strong style="color: #d58512;">
+                            <a href="https://chikaya.ancfcc.gov.ma/index.php?page=citoyen.AccueilCitoyen" style="color: #d58512;font-size:15px">Chikaya</a>
+                        </strong>
+						<hr/>
+					   <strong> Pour toute réclamation, suggestion ou information <br/> E-Services, contactez-nous sur :</strong><strong style="color: #d58512">  +212 53 014 1414 / +212 80 000 2929 / +212 80 000 2016</strong> <br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong style="color: #d58512;"><span>ANCFCC</span></strong> Agence Nationale de la Conservation Foncière, du Cadastre et de la Cartographie
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    var d = new Date();
+    d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = "Language=fr-fr;" + expires + ";path=/";
+</script>
+
+
+<script type="text/javascript" charset="utf-8" src="/scripts/js/cookie.js"></script>
+
+    </div>
+
+    <script type="text/javascript" src="/scripts/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/js/slider.js"></script>
+    <script type="text/javascript" src="/scripts/js/Menu.js"></script>
+    <script type="text/javascript" src="/scripts/js/top.js"></script>
+    <script type="text/javascript" src="/scripts/js/wow_animation.js"></script>
+    <script type="text/javascript" src="/scripts/js/jquery.elevatezoom.js"></script>
+
+    <script>
+        $('#zoom_01').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        fetch('/AdminLogin/Surface/CertificatsSurface/GetAppInsightsKey')
+            .then(response => response.json())
+            .then(config => {
+                var appInsights = window.appInsights || function (config) {
+                    function r(config) {
+                        t[config] = function () {
+                            var i = arguments;
+                            t.queue.push(function () { t[config].apply(t, i); });
+                        };
+                    }
+                    var t = { config: config }, u = document, e = window, o = 'script', s = u.createElement(o);
+                    s.src = config.url || '//az416426.vo.msecnd.net/scripts/a/ai.0.js';
+                    u.getElementsByTagName(o)[0].parentNode.appendChild(s);
+                    t.queue = [];
+                    for (var i = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Ajax']; i.length;) r('track' + i.pop());
+                    return t;
+                }({
+                    instrumentationKey: config.instrumentationKey
+                });
+
+                window.appInsights = appInsights;
+                appInsights.trackPageView();
+            })
+            .catch(error => console.error('Could not load App Insights key', error));
+    </script>
+
+
+
+
+    <script type="text/javascript">
+
+        function ShowNotification(NotificationMessage, NotificationType, NotificationPosition) {
+            NotificationMessage = NotificationMessage.replace("'", "&rsquo");
+            if (NotificationType == "")
+                NotificationType = "error";
+
+            if (NotificationPosition == "")
+                NotificationPosition = "toast-top-full-width";
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "positionClass": NotificationPosition,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "2000",
+                "timeOut": "7000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+            Command: toastr[NotificationType](NotificationMessage);
+
+        }
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+
+            init_Home();
+        });
+    </script>
+
+    <script type="text/javascript" src="/scripts/js/klass.min.js"></script>
+    <script type="text/javascript" src="/scripts/js/code.photoswipe-3.0.5.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        (function (window, PhotoSwipe) {
+
+            document.addEventListener('DOMContentLoaded', function () {
+
+                var
+                    options = {},
+                    instance = PhotoSwipe.attach(window.document.querySelectorAll('#Gallery a'), options);
+
+            }, false);
+
+
+        }(window, window.Code.PhotoSwipe));
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+{
+  "id": "eggplant",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Eggplant",
+    "localNames": [{ "language": "fr", "name": "Aubergine" }],
+    "scientificName": "Solanum melongena L.",
+    "family": "Solanaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-eggplant",
+        "page": null,
+        "quote": "\"scientificName\":\"Solanum melongena L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-solanums",
+        "page": 2,
+        "quote": "L'AUBERGINE",
+        "locator": "PDF page 2",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-solanums",
+          "page": 2,
+          "quote": "L'AUBERGINE",
+          "locator": "PDF page 2",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; irrigated; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "eggplant-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-solanums",
+          "page": 3,
+          "quote": "Culture de saison (plein champ): semis en Mars-Mai",
+          "locator": "PDF page 3",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Open-field season crop.",
+      "metric": "planting_window",
+      "start": "03-01",
+      "end": "05-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "eggplant-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 40 20 130",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "FAO row of 130 days; the table's Mediterranean row prints an unusable total."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO arid-region row.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 130,
+      "maxDays": 130
+    },
+    {
+      "id": "eggplant-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Egg Plant 1.05 0.90",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Solanum Family (Solanaceae) 0.6 1.15 0.80",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 40 20 130",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.6,
+      "kcMid": 1.05,
+      "kcEnd": 0.9,
+      "stageLengths": [30, 40, 40, 20]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed."
+  ]
+}

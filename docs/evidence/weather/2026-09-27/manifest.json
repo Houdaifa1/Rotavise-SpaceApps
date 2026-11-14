@@ -1,0 +1,42 @@
+[
+  {
+    "name": "expanded",
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MIN%2CT2M_MAX%2CT2M%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN&community=AG&longitude=-6.3498&latitude=32.3373&start=20240227&end=20240302&format=JSON&time-standard=UTC",
+    "status": 200,
+    "retrievedAt": "2026-09-27T15:35:47.077Z",
+    "elapsedMs": 1129,
+    "bytes": 1569,
+    "sha256": "0e6c817decf5144d7226cff5bed539b1b5b28f918804c09c66cabc861284f38c",
+    "file": "nasa-power-expanded.json"
+  },
+  {
+    "name": "meteorology-start",
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=RH2M%2CWS2M&community=AG&longitude=-6.3498&latitude=32.3373&start=19810101&end=19810102&format=JSON&time-standard=UTC",
+    "status": 200,
+    "retrievedAt": "2026-09-27T15:35:47.706Z",
+    "elapsedMs": 623,
+    "bytes": 613,
+    "sha256": "294dd354e9a986fc21418aaedf967786c9f0a21c754c7692a4102da28f388fe3",
+    "file": "nasa-power-meteorology-start.json"
+  },
+  {
+    "name": "solar-start",
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN&community=AG&longitude=-6.3498&latitude=32.3373&start=20010101&end=20010102&format=JSON&time-standard=UTC",
+    "status": 200,
+    "retrievedAt": "2026-09-27T15:35:48.116Z",
+    "elapsedMs": 410,
+    "bytes": 556,
+    "sha256": "f44d43dd08ab1c887dfa300627bae357e5ae19528ea489cdc209ce4aceb285f6",
+    "file": "nasa-power-solar-start.json"
+  },
+  {
+    "name": "solar-only",
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN&community=AG&longitude=-6.3498&latitude=32.3373&start=20240227&end=20240302&format=JSON&time-standard=UTC",
+    "status": 200,
+    "retrievedAt": "2026-09-27T15:35:48.394Z",
+    "elapsedMs": 278,
+    "bytes": 608,
+    "sha256": "be14f109d81bd6b9e22cd9a5082d513ee16530d71355870cc7dca3c6e35c4682",
+    "file": "nasa-power-solar-only.json"
+  }
+]

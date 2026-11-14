@@ -1,0 +1,25 @@
+.backend-availability {
+  background: white;
+  color: #193a31;
+  border: 1px solid #b9cfc4;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+.backend-availability button {
+  background: #173c31;
+  color: white;
+  font: inherit;
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+.backend-availability button:focus-visible {
+  outline: 3px solid #c08722;
+  outline-offset: 3px;
+}
+.backend-availability [data-state="unavailable"],
+.backend-availability [data-state="stale"] {
+  color: #91331c;
+}

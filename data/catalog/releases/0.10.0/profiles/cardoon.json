@@ -1,0 +1,324 @@
+{
+  "id": "cardoon",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Cardoon",
+    "localNames": [
+      { "language": "fr", "name": "Cardon" },
+      { "language": "ar", "name": "الخرشوف البري" }
+    ],
+    "scientificName": "Cynara cardunculus L.",
+    "family": "Asteraceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:cardoon"
+    }
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "multi_year_stand",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:cardoon"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-cardoon-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of cardoon: approximate cold/frost injury level",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cardoon.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -5,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-cardoon-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of cardoon: approximate heat level where quality, fruit set or growth declines",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cardoon.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_or_yield_loss_approximate) at stage \"vegetative growth\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-b-cardoon-sowing-window-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of cardoon: typical Mediterranean sowing/planting months; not Moroccan-specific",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.cardoon.sowing_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. direct sowing or crowns. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "03-01",
+      "end": "05-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "t-c-cardoon-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the family; interval depends on the disease concerned",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cardoon.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-c-cardoon-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cardoon.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-cardoon-preferred-predecessor-preferred-predecessor-family-2",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cardoon.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-c-cardoon-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation practice: avoid following the same botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cardoon.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. same-family disease and pest carry-over Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Asteraceae"
+    },
+    {
+      "id": "t-fill-cardoon-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical stand length",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.cardoon.duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "stand_lifetime",
+      "minDays": 1095,
+      "maxDays": 1825
+    },
+    {
+      "id": "t-fill-cardoon-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 40 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.cardoon.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    }
+  ],
+  "references": [
+    {
+      "id": "a-cardoon-germination-and-optimum-background-269",
+      "topic": "background",
+      "summary": "Temperature (germination_minimum_not_damage; not a damage limit) from 10 °C at germination.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-pntta-btta-102",
+          "locator": "PNTTA bulletin 102 (Mar 2003), Le cardon, Préférences",
+          "interpretation": "normalized",
+          "note": "Germination minimum and growth optimum.",
+          "page": null,
+          "quote": "pas au dessous de 10˚C (optimum de la […] pour la croissance est de 20-22˚C. Les"
+        }
+      ]
+    },
+    {
+      "id": "f-cardoon-national-mean-yield-270",
+      "topic": "yield",
+      "summary": "Yield 20–25 t/ha",
+      "value": { "unit": "t/ha", "min": 20, "max": 25 },
+      "citations": [
+        {
+          "sourceId": "rs-pntta-btta-102",
+          "locator": "PNTTA bulletin 102 (Mar 2003), Le cardon, Récolte",
+          "interpretation": "normalized",
+          "note": "No reference year.",
+          "page": null,
+          "quote": "Le rendement moyen national est de 20-25 T/ha."
+        }
+      ]
+    },
+    {
+      "id": "a-cardoon-ecocrop-temperature-cynara-cardunculus-background-294",
+      "topic": "background",
+      "summary": "FAO Ecocrop species-level temperature bounds (not daily damage limits): TOPMN 14, TOPMX 28, TMIN 7, TMAX 38, KTMP_killing_temperature -2 °C.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Cynara cardunculus\"; fields TOPMN,TOPMX,TMIN,TMAX,KTMPR,KTMP",
+          "interpretation": "normalized",
+          "note": "Same caveat as claude-supplement-A.json: ECOCROP defines TMIN/TMAX as absolute growing-range bounds and KTMP as a killing temperature without a stage, duration or daily-extreme basis (see .research-sources/2026-11-06/ecocrop-tutorial.pdf). The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-b-cardoon-cycle-background-316",
+      "topic": "background",
+      "summary": "Cycle 150–240 days.",
+      "value": { "unit": "days", "min": 150, "max": 240 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of cardoon",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.cardoon.cycle"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on."
+  ]
+}

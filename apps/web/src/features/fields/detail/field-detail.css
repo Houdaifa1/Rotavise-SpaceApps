@@ -1,0 +1,190 @@
+.f4-detail .f2-panel-body {
+  padding-inline: 16px;
+}
+.f4-detail .rv-tabs [role="tablist"] {
+  gap: 2px;
+}
+.f4-detail .rv-tabs [role="tab"] {
+  padding-inline: 7px;
+}
+.f4-detail .rv-tabs [role="tabpanel"] {
+  padding-top: 16px;
+}
+.f4-detail .f2-panel-heading {
+  gap: 4px;
+}
+.f4-header-actions {
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+.f4-menu,
+.f4-stack {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.f4-menu .rv-button {
+  justify-content: start;
+}
+.f4-stack > :is(p, h3, ul, dl),
+.f4-stack section > :is(p, h3),
+.f4-nasa-row p {
+  margin: 0;
+}
+.f4-stack h3,
+.f4-catalog-detail h3 {
+  font-size: var(--text-title);
+  font-weight: var(--weight-medium);
+}
+.f4-stack > section + section,
+.f4-status > section + section {
+  margin-top: 12px;
+}
+.f4-status-intro {
+  background: var(--app-bg);
+  border-radius: var(--radius-control);
+  padding: 12px;
+}
+.f4-status-intro > .rv-button {
+  justify-self: start;
+}
+.f4-status-intro ul {
+  padding-inline-start: 20px;
+}
+.f4-inline-link {
+  color: var(--action-hover);
+  border: 0;
+  background: transparent;
+  text-decoration: underline;
+  padding: 4px 0;
+  text-align: start;
+  justify-self: start;
+}
+.f4-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.f4-section-heading > div {
+  min-width: 0;
+}
+.f4-section-heading .rv-button {
+  flex-shrink: 0;
+}
+.f4-nasa-jobs,
+.f4-short-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+}
+.f4-nasa-row,
+.f4-short-list > li {
+  border-bottom: 1px solid var(--line);
+  padding: 8px 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.f4-nasa-row > p,
+.f4-source,
+.f4-history-row small {
+  font-size: var(--text-caption);
+}
+.f4-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.f4-history-row {
+  width: 100%;
+  text-align: start;
+  justify-content: start;
+  white-space: normal;
+}
+.f4-history-row small {
+  display: block;
+  color: var(--ink-soft);
+}
+.f4-detail .rv-crop-strip {
+  overflow-x: auto;
+}
+.f4-detail .rv-crop-strip > :is(button, span) {
+  flex-basis: 0;
+  min-width: 30px;
+}
+.f4-detail .rv-crop-strip .rv-strip-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.f4-form > fieldset {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.f4-form .f4-crop-results {
+  max-height: 172px !important;
+}
+.f4-two-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.f4-radios {
+  display: grid;
+  gap: 6px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.f4-radios label,
+.f4-check {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: var(--height-control);
+}
+.f4-evidence {
+  margin-top: 4px;
+}
+.f4-evidence p {
+  margin-block: 6px;
+}
+.f4-catalog-detail .f4-short-list {
+  padding-inline-start: 0;
+}
+@media (max-width: 767px) {
+  .f4-detail .rv-tabs [role="tab"] {
+    min-height: var(--target-touch);
+  }
+  .f4-detail .rv-tabs [role="tablist"] {
+    overflow: auto;
+  }
+  .f4-detail .rv-crop-strip button,
+  .f4-radios label,
+  .f4-check,
+  .f4-inline-link {
+    min-height: var(--target-touch);
+  }
+  .f4-detail .f2-panel-heading {
+    padding-top: 10px;
+  }
+}
+.f4-rename {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+.f4-rename .rv-field {
+  flex: 1;
+  min-width: 130px;
+}
+.f4-rename .f2-data-error {
+  flex-basis: 100%;
+}

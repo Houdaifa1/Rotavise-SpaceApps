@@ -1,0 +1,816 @@
+{
+  "id": "cumin",
+  "version": "0.14.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Cumin",
+    "localNames": [
+      { "language": "fr", "name": "Cumin" },
+      { "language": "ar", "name": "الكمون" },
+      {
+        "language": "ary",
+        "name": "الكمون",
+        "recall": {
+          "confidence": "high",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.cumin.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الكمون",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-cumin",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: cumin.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "الكمون"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      }
+    ],
+    "scientificName": "Cuminum cyminum L.",
+    "family": "Apiaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:cumin"
+    }
+  },
+  "harvestProduct": "other",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "local-beldi-populations",
+      "name": "Local Beldi populations",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.cumin.local-beldi-populations"
+      },
+      "notes": "landrace group; Oasis and mountain landraces; no registered cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "الكمون البلدي",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.local-beldi-populations.ar"
+          }
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:cumin"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.cumin.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "a-cumin-cold-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-al-awamia-cumin-2024",
+          "locator": "PDF page(s) [6] (journal page(s) [202]);",
+          "interpretation": "normalized",
+          "note": "The source states damage to flowers and seeds below 2 degrees C. It does not say whether this is a daily minimum, for how long, or which cultivar. Recorded as the cold damage limit for the flowering/seed stage, basis unspecified.",
+          "page": null,
+          "quote": "Cumin is sensitive to frost, as both its flowers and seeds could be damaged at temperatures below 2°C."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Damage limit (damage) at stage \"flowering_and_seed\". Quote re-found in the saved source text.",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": 2,
+      "upperDegC": null
+    },
+    {
+      "id": "b-cumin-cycle-duration-arid-oases-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-al-awamia-cumin-2024",
+          "locator": "PDF page(s) [7] (journal page(s) [203]);",
+          "interpretation": "normalized",
+          "note": "Farmer-reported growing period by zone. Grains are harvested green between late March and May. This record holds the arid-oasis range; the other zones are in the two records below.",
+          "page": null,
+          "quote": "the growing period for cumin production is longer in arid and hyper-arid zones (Tinghir, Errachidia, and Zagora) extending over 140–180 days, compared to only 115–140 days in mountainous areas and 103±14.2 days in the semi-arid climate and higher latitudes of the Marrakech-Safi region"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 140,
+      "maxDays": 180
+    },
+    {
+      "id": "b-cumin-cycle-duration-mountain-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-al-awamia-cumin-2024",
+          "locator": "PDF page(s) [7] (journal page(s) [203]);",
+          "interpretation": "normalized",
+          "note": "Mountain-zone range from the same sentence; provinces not named in the source.",
+          "page": null,
+          "quote": "the growing period for cumin production is longer in arid and hyper-arid zones (Tinghir, Errachidia, and Zagora) extending over 140–180 days, compared to only 115–140 days in mountainous areas and 103±14.2 days in the semi-arid climate and higher latitudes of the Marrakech-Safi region"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 115,
+      "maxDays": 140
+    },
+    {
+      "id": "b-cumin-planting-window-planting-window",
+      "citations": [
+        {
+          "sourceId": "rs-al-awamia-cumin-2024",
+          "locator": "PDF page(s) [6] (journal page(s) [202]);",
+          "interpretation": "normalized",
+          "note": "National farmer-survey window with regional sub-windows. Day numbers for \"last week\" and \"early\" are approximations and are flagged as such.",
+          "page": null,
+          "quote": "According to our survey, sowing begins in the last week of October and lasts through early February. [...] In colder regions like Errachidia, Tinghir, and Boudnib, sowing takes place in late January to February to protect seedlings from frost damage. [...] Most farmers in the Marrakech-Safi region plant in January, avoiding December to shorten the crop lifecycle as a disease management measure against cumin wilt and blight"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "10-25",
+      "end": "02-07",
+      "precision": "approximate"
+    },
+    {
+      "id": "c-cumin-minimum-return-interval-minimum-return-interval",
+      "citations": [
+        {
+          "sourceId": "rs-al-awamia-cumin-2024",
+          "locator": "PDF page(s) [10] (journal page(s) [206]);",
+          "interpretation": "normalized",
+          "note": "The three-year figure is the authors' citation of Lal et al. (2014) (Indian extension/research literature), not a Moroccan measurement; it applies to wilt-affected fields.",
+          "page": null,
+          "quote": "Continuous cumin cropping in the same field is not recommended. [...] To minimize wilt disease in affected fields, Lal et al. (2014) recommend at least a three years rotation with other crops."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "r-a-cumin-seedling-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "young cumin seedlings are frost-sensitive; threshold approximate",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.A.cumin.seedling_cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"emergence\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "emergence",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-cumin-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: seed set suffers in hot dry spells above about 35 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cumin.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-c-cumin-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: cereals or legumes before a fusarium-prone crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cumin.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-cumin-preferred-predecessor-preferred-predecessor-family-2",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: cereals or legumes before a fusarium-prone crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cumin.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-fill-cumin-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -3 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.cumin.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -3,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-cumin-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 36 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.cumin.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 36
+    },
+    {
+      "id": "c11-cumin-crop-water-coefficient",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO-56 Table 11 and 12 pattern recalled for the crop or its group; not checked against the tables.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop_water_coefficient.cumin"
+      },
+      "conditions": "Recalled by the AI model; unverified. FAO-56 style crop coefficients and stage lengths in days, recalled for this crop or its crop group.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.35,
+      "kcMid": 1.05,
+      "kcEnd": 0.6,
+      "stageLengths": [20, 30, 35, 20]
+    },
+    {
+      "id": "c11-cumin-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.cumin"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6.5,
+      "max": 8
+    },
+    {
+      "id": "c11-cumin-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.cumin"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 2
+    },
+    {
+      "id": "c11-cumin-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.cumin"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-cumin-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.cumin"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "low",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    }
+  ],
+  "references": [
+    {
+      "id": "a-cumin-heat-ecocrop-background-89",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 30 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Cuminum cyminum\"; field TMAX",
+          "interpretation": "normalized",
+          "note": "Same reading as claude-supplement-A.json: the field is an absolute species-level bound used for monthly climate matching; no daily-extreme basis, growth stage or duration is stated. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "b-cumin-cycle-duration-marrakech-safi-and-national-mean-background-90",
+      "topic": "background",
+      "summary": "Cycle: {\"basis\":\"sowing_to_harvest\",\"minDays\":null,\"maxDays\":null,\"marrakechSafiMeanDays\":103,\"marrakechSafiSdDays\":14.2,\"nationalMeanDays\":134,\"nationalSdDays\":27.2}",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-al-awamia-cumin-2024",
+          "locator": "PDF page(s) [7] (journal page(s) [203]);",
+          "interpretation": "normalized",
+          "note": "Means with standard deviations, not minimum/maximum days; kept as means so no range is invented.",
+          "page": null,
+          "quote": "the growing period for cumin production is longer in arid and hyper-arid zones (Tinghir, Errachidia, and Zagora) extending over 140–180 days, compared to only 115–140 days in mountainous areas and 103±14.2 days in the semi-arid climate and higher latitudes of the Marrakech-Safi region [...] Consequently, the average life cycle is 134±27.2 days, closely resembling the 120–140 days reported in India by Lal et al. (2014)."
+        }
+      ]
+    },
+    {
+      "id": "c11-cumin-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.cumin"
+      }
+    },
+    {
+      "id": "c11-cumin-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class shallow (about 0.2 to 0.5 m).",
+      "value": { "unit": "m (class range)", "min": 0.2, "max": 0.5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.cumin"
+      }
+    },
+    {
+      "id": "c11-cumin-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.cumin"
+      }
+    },
+    {
+      "id": "c11-cumin-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.cumin"
+      }
+    },
+    {
+      "id": "c11-cumin-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.cumin"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [],
+      "options": [],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [
+        {
+          "id": "cumin.forage_residue_feed.01",
+          "category": "forage_residue_feed",
+          "effect": "Measured crude protein of the named local feed material",
+          "nonLocal": false,
+          "region": "Chaouia Ourdigha, Morocco",
+          "conditions": [
+            "Samples from Chaouia Ourdigha; observational feed-composition study; no price, total per-hectare feed value or universal ration inferred.",
+            "Removal for feed may compete with residue retention; no erosion tradeoff quantified here."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "kind": "point",
+            "value": 6.3,
+            "unit": "% dry matter",
+            "measure": "crude protein of cumin straw",
+            "table": "Table 4",
+            "column": "CP",
+            "isRange": false
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-morocco-feed-2025",
+              "sourceSha256": "844fc99771225d7c9115e8da413c42109fd59a11ddd58ededd2413fbd3a2100c",
+              "quote": "Cumin straw 89.92c ± 1.86 b 6.99 ± 1.45 b 6.30 ± 1.01 d 40.72 ± 2.43 70.66d ± 2.11 48.76d ± 2.3 9.14b ± 1.1 50.91b ± 1.2",
+              "locator": "{\"pdfPage\":6,\"section\":\"Printed p.60; Table 4, CP column; heading: Chemical composition (%DM) and dry matter digestibility\"}",
+              "quoteCheck": "benefits:cumin.cumin.forage_residue_feed.01.quote"
+            },
+            {
+              "sourceId": "research-benefits-morocco-feed-2025",
+              "sourceSha256": "844fc99771225d7c9115e8da413c42109fd59a11ddd58ededd2413fbd3a2100c",
+              "quote": "Table 4. Chemical composition (%DM) and dry matter digestibility",
+              "locator": "{\"pdfPage\":6}",
+              "quoteCheck": "benefits:cumin.cumin.forage_residue_feed.01.tableHeadingQuote"
+            }
+          ],
+          "research": {
+            "cropId": "cumin",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Chaouia Ourdigha, Morocco",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only",
+            "tableHeadingQuote": {
+              "original": "Table 4. Chemical composition (%DM) and dry matter digestibility",
+              "english": "Table 4. Chemical composition (%DM) and dry matter digestibility",
+              "textFile": ".research-sources/2026-11-10/morocco-feed-2025-p006.txt",
+              "textSha256": "442d141906bdaad75618b7735ccd09097af264c508f120d045aa5017c72f1f8f",
+              "sourceId": "morocco-feed-2025",
+              "locator": { "pdfPage": 6 }
+            }
+          }
+        },
+        {
+          "id": "cumin.forage_residue_feed.02",
+          "category": "forage_residue_feed",
+          "effect": "Named crop material used in local sheep diets",
+          "nonLocal": false,
+          "region": "Chaouia Ourdigha, Morocco",
+          "conditions": [
+            "The paper reports local practices; this does not establish a safe complete diet or value for another crop."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-morocco-feed-2025",
+              "sourceSha256": "844fc99771225d7c9115e8da413c42109fd59a11ddd58ededd2413fbd3a2100c",
+              "quote": "According to field surveys, numerous kinds of unconventional feeds are introduced into the sheep's diet, including olive tree leaves, crude olive cake (COC), pulses straws like lentils and chickpeas, the endemic weed DA, aromatic and medicinal plant straws like cumin, fenugreek, coriander, and nigella and Medicago Arborea (MA) shrub.",
+              "locator": "{\"pdfPage\":1,\"section\":\"Abstract; printed p.55\"}",
+              "quoteCheck": "benefits:cumin.cumin.forage_residue_feed.02.quote"
+            }
+          ],
+          "research": {
+            "cropId": "cumin",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Chaouia Ourdigha, Morocco",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ]
+    }
+  }
+}

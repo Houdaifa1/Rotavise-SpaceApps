@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "2",
+  "id": "rotavise-pilot",
+  "version": "0.2.0",
+  "synthetic": false,
+  "regions": [
+    {
+      "id": "beni-mellal-tadla",
+      "name": "Beni Mellal / Tadla pilot",
+      "countryCode": "MA",
+      "scopeNote": "Evidence context; no coordinate or city boundary. Farm applicability is unreviewed.",
+      "citations": [
+        {
+          "sourceId": "inra-regional",
+          "locator": "Event body, 2024-05-06",
+          "interpretation": "context_only",
+          "note": "Local demonstration context only."
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "morocco-general",
+      "name": "Morocco, general guidance",
+      "countryCode": "MA",
+      "scopeNote": "National guidance cannot establish every local rule.",
+      "citations": [
+        {
+          "sourceId": "inra-wheat",
+          "locator": "PDF page 3, introduction",
+          "interpretation": "context_only",
+          "note": "National scope."
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "rabat-sale-kenitra",
+      "name": "Rabat-Sale-Kenitra",
+      "countryCode": "MA",
+      "scopeNote": "Evidence origin; not interchangeable with Tadla.",
+      "citations": [
+        {
+          "sourceId": "onca-legumes",
+          "locator": "PDF page 2, cover",
+          "interpretation": "context_only",
+          "note": "Explicit source region."
+        }
+      ],
+      "boundary": null
+    }
+  ],
+  "issues": [],
+  "conflicts": [],
+  "sourceFile": "sources.json",
+  "profileFiles": [
+    "profiles/durum-wheat.json",
+    "profiles/faba-bean.json",
+    "profiles/sugar-beet.json"
+  ]
+}

@@ -1,0 +1,1517 @@
+{
+  "id": "fig",
+  "version": "0.15.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Fig",
+    "localNames": [
+      { "language": "fr", "name": "Figuier" },
+      {
+        "language": "ar",
+        "name": "التين",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.fig.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الكرموس",
+        "recall": {
+          "confidence": "high",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.fig.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الكرموس",
+        "citations": [
+          {
+            "sourceId": "darija-wd-sparql-other",
+            "locator": "Q36146 ary",
+            "interpretation": "direct",
+            "note": "Explicit language tag ary in Wikidata; language fallback was not requested. P225 taxon name matches the catalog scientific name after author citation removal. Research record: fig.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "الكرموس"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      },
+      {
+        "language": "ary",
+        "name": "كرموس",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-figuier",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: fig.ary.1. Native-speaker review pending.",
+            "page": null,
+            "quote": "كرموس"
+          }
+        ],
+        "confidence": "low"
+      }
+    ],
+    "scientificName": "Ficus carica L.",
+    "family": "Moraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-fig",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF.",
+        "page": null,
+        "quote": "\"scientificName\":\"Ficus carica L.\""
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter.",
+        "page": null,
+        "quote": "Figuier 101,8 101,8"
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "ghoudan",
+      "name": "Ghoudan",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction, p.1-2",
+          "interpretation": "normalized",
+          "note": "Spelling \"Ghoudan\"; training entry spelled \"Ghoudane\".",
+          "page": 1,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "غودان",
+          "recall": {
+            "confidence": "low",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.ghoudan.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nabout",
+      "name": "Nabout",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction and Table 1 (local cultivars)",
+          "interpretation": "normalized",
+          "note": "Local Moroccan fig cultivar, not in the training list.",
+          "page": null,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "نبوط",
+          "recall": {
+            "confidence": "low",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.nabout.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "el-quoti-lbied",
+      "name": "El-Quoti Lbied",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction and Table 1 (local cultivars)",
+          "interpretation": "normalized",
+          "note": "Local Moroccan fig cultivar, not in the training list.",
+          "page": null,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "القوطي البيض",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.el-quoti-lbied.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fassi",
+      "name": "Fassi",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction and Table 1 (local cultivars)",
+          "interpretation": "normalized",
+          "note": "Local Moroccan fig cultivar, not in the training list.",
+          "page": null,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "فاسي",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.fassi.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "noukali",
+      "name": "Noukali",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction and Table 1 (local cultivars)",
+          "interpretation": "normalized",
+          "note": "Local Moroccan fig cultivar, not in the training list.",
+          "page": null,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "نوكالي",
+          "recall": {
+            "confidence": "low",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.noukali.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kadota",
+      "name": "Kadota",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Table 1 (introduced cultivars, geographical origin Italy)",
+          "interpretation": "normalized",
+          "note": "Introduced cultivar, evaluated in Moroccan material; confirms Kadota exists in Moroccan collections (not that it is widely grown).",
+          "page": null,
+          "quote": "Kadota Italy"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "ghoudane",
+      "name": "Ghoudane",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.fig.ghoudane"
+      },
+      "notes": "cultivar; local Moroccan; northern Morocco",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "غودان",
+          "recall": {
+            "confidence": "low",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.ghoudane.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bourjassot",
+      "name": "Bourjassot",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.fig.bourjassot"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "brown-turkey",
+      "name": "Brown Turkey",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.brown-turkey"
+      }
+    },
+    {
+      "id": "white-marseilles",
+      "name": "White Marseilles",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.white-marseilles"
+      }
+    },
+    {
+      "id": "calimyrna",
+      "name": "Calimyrna",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.calimyrna"
+      }
+    },
+    {
+      "id": "sari-lop",
+      "name": "Sari Lop",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.sari-lop"
+      }
+    },
+    {
+      "id": "mission",
+      "name": "Mission",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.mission"
+      }
+    },
+    {
+      "id": "adriatic",
+      "name": "Adriatic",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.adriatic"
+      }
+    },
+    {
+      "id": "dottato",
+      "name": "Dottato",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.dottato"
+      }
+    },
+    {
+      "id": "col-de-dame",
+      "name": "Col de Dame",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.col-de-dame"
+      }
+    },
+    {
+      "id": "beldi-local",
+      "name": "Beldi (local)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.fig.beldi-local"
+      },
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "البلدي",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.beldi-local.ar"
+          }
+        },
+        {
+          "language": "ary",
+          "name": "الكرموس البلدي",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.beldi-local.ary"
+          }
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only.",
+          "page": null,
+          "quote": "Figuier 101,8 101,8"
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.fig.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.fig.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.fig.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.fig.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-draa-tafilalet",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.fig.DRA"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "c11-fig-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.fig"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 8
+    },
+    {
+      "id": "c11-fig-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.fig"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 4.2
+    },
+    {
+      "id": "c11-fig-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.fig"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "references": [
+    {
+      "id": "c11-fig-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.fig"
+      }
+    },
+    {
+      "id": "c11-fig-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.fig"
+      }
+    },
+    {
+      "id": "c11-fig-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.fig"
+      }
+    },
+    {
+      "id": "c11-fig-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.fig"
+      }
+    },
+    {
+      "id": "c11-fig-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.fig"
+      }
+    }
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "fig-faostat-pp-2020",
+          "kind": "prices",
+          "value": 5956.3,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2020",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5530\",\"Producer Price (LCU/tonne)\",\"2020\",\"2020\",\"7021\",\"Annual value\",\"LCU\",\"5956.300000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762048,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2020.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2020.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-pp-2021",
+          "kind": "prices",
+          "value": 6455,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2021",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5530\",\"Producer Price (LCU/tonne)\",\"2021\",\"2021\",\"7021\",\"Annual value\",\"LCU\",\"6455.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762049,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2021.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2021.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-pp-2022",
+          "kind": "prices",
+          "value": 6679,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2022",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5530\",\"Producer Price (LCU/tonne)\",\"2022\",\"2022\",\"7021\",\"Annual value\",\"LCU\",\"6679.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762050,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2022.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2022.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-pp-2023",
+          "kind": "prices",
+          "value": 7422,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2023",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5530\",\"Producer Price (LCU/tonne)\",\"2023\",\"2023\",\"7021\",\"Annual value\",\"LCU\",\"7422.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762051,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2023.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2023.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-pp-2024",
+          "kind": "prices",
+          "value": 17111.1,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2024",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5530\",\"Producer Price (LCU/tonne)\",\"2024\",\"2024\",\"7021\",\"Annual value\",\"LCU\",\"17111.100000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":762052,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2024.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:fig.prices.fig-faostat-pp-2024.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-onca-fig-prices-6",
+          "kind": "prices",
+          "value": { "min": 5, "max": 8 },
+          "unit": "dh/Kg",
+          "currency": "MAD",
+          "year": null,
+          "region": "Taza-Taounate-Al Hoceima; Tanger-Tétouan (source regions)",
+          "commodity": "figues fleurs (breba figs)",
+          "scenarioId": null,
+          "definition": "published_range",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-fig",
+              "sourceSha256": "f683f056dce4041207c0d51d0ea7b73680e482b2675821240f188c95e6087df5",
+              "quote": "Le prix de vente des figues varie dans une fourchette de 5 à 8 dh/ Kg pour les figues fleurs et de2.5 à 3 dh/ Kg pour les figues fraiches.",
+              "locator": "{\"pdfPage\":34}",
+              "quoteCheck": "income:fig.prices.fig-onca-fig-prices-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "farm sale; exact transaction stage not stated",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_range",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-onca-fig-prices-7",
+          "kind": "prices",
+          "value": { "min": 2.5, "max": 3 },
+          "unit": "dh/Kg",
+          "currency": "MAD",
+          "year": null,
+          "region": "Taza-Taounate-Al Hoceima; Tanger-Tétouan (source regions)",
+          "commodity": "figues fraiches (fresh main-crop figs)",
+          "scenarioId": null,
+          "definition": "published_range",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-fig",
+              "sourceSha256": "f683f056dce4041207c0d51d0ea7b73680e482b2675821240f188c95e6087df5",
+              "quote": "Le prix de vente des figues varie dans une fourchette de 5 à 8 dh/ Kg pour les figues fleurs et de2.5 à 3 dh/ Kg pour les figues fraiches.",
+              "locator": "{\"pdfPage\":34}",
+              "quoteCheck": "income:fig.prices.fig-onca-fig-prices-7.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "farm sale; exact transaction stage not stated",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_range",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 2284.9,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"2284.900000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1901949,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:fig.yields.fig-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 2237.3,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"2237.300000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1901950,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:fig.yields.fig-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 1647.6,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"1647.600000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1901951,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:fig.yields.fig-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 1707.6,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"1707.600000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1901952,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:fig.yields.fig-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "fig-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 1552.7,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Figs",
+          "scenarioId": "fig-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"569\",\"'01315\",\"Figs\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"1552.700000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1901953,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:fig.yields.fig-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        }
+      ],
+      "options": [],
+      "gaps": [
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "economicObservationYear",
+          "status": "not_found",
+          "scope": "At least one regional/illustrative budget has no explicitly attached observation year; no publication/upload/contract year substituted."
+        },
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ],
+      "version": "benefits-2",
+      "records": [
+        {
+          "id": "b4.fig.biological_nitrogen_fixation.recall",
+          "category": "biological_nitrogen_fixation",
+          "status": "not_found",
+          "effect": "Not applicable: no conventional symbiotic crop N-fixation trait; associated free-living microbes are not a crop nitrogen credit.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "not_applicable",
+            "value": "not applicable",
+            "unit": "kg N/ha per crop period"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "high",
+            "basis": "Model recalls Fig (Moraceae) agronomy for biological nitrogen fixation; Crop does not have the conventional legume root-nodule fixation system.. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.biological_nitrogen_fixation.recall"
+          },
+          "applicability": "not_applicable",
+          "reason": "Crop does not have the conventional legume root-nodule fixation system."
+        },
+        {
+          "id": "b4.fig.residual_nitrogen_credit.recall",
+          "category": "residual_nitrogen_credit",
+          "status": "model_recall",
+          "effect": "Residues may recycle N already taken from soil; no new fixed-N credit. High-carbon residues may temporarily immobilize N. Quantity to the next crop is not quantified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "recycling only; net credit unquantified",
+            "unit": "kg N/ha to following crop"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Fig (Moraceae) agronomy for residual nitrogen credit; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.residual_nitrogen_credit.recall"
+          }
+        },
+        {
+          "id": "b4.fig.forage_residue_feed.recall",
+          "category": "forage_residue_feed",
+          "status": "model_recall",
+          "effect": "Selected leaves, pods or processing residues may have feed uses; woody prunings are not routine forage and species-specific safety and ration checks are essential.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional roughage or residue",
+            "unit": "qualitative feed value"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Fig (Moraceae) agronomy for forage residue feed; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.forage_residue_feed.recall"
+          }
+        },
+        {
+          "id": "b4.fig.disease_break.recall",
+          "category": "disease_break",
+          "status": "model_recall",
+          "effect": "A standing perennial is not an annual rotation break; assess a separately managed orchard-floor crop and its hosts. Repeating Moraceae can maintain family-associated disease inoculum. Crop family alone does not prove a disease-free interval.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional family break",
+            "unit": "qualitative next-crop disease effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Fig (Moraceae) agronomy for disease break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.disease_break.recall"
+          }
+        },
+        {
+          "id": "b4.fig.pest_break.recall",
+          "category": "pest_break",
+          "status": "model_recall",
+          "effect": "A standing perennial is not an annual rotation break; assess a separately managed orchard-floor crop and its hosts. Host weeds, volunteers and broad-host-range pests can bridge the interval; verify the named pest and next crop.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional host interruption",
+            "unit": "qualitative next-crop pest effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Fig (Moraceae) agronomy for pest break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.pest_break.recall"
+          }
+        },
+        {
+          "id": "b4.fig.weed_break.recall",
+          "category": "weed_break",
+          "status": "model_recall",
+          "effect": "Changing sowing season and cultivation may change weed pressure. Volunteers or seed return can offset suppression; no herbicidal effect or numerical reduction is assumed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "management-dependent weed pressure",
+            "unit": "qualitative weed effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Fig (Moraceae) agronomy for weed break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.weed_break.recall"
+          }
+        },
+        {
+          "id": "b4.fig.rooting_soil_structure_infiltration.recall",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "model_recall",
+          "effect": "Established perennial roots occupy soil over multiple years; rooting and orchard-floor infiltration depend on soil and management. Potential improvement is not a measured infiltration rate.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "root channels; depth not quantified",
+            "unit": "qualitative rooting/infiltration effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Fig (Moraceae) agronomy for rooting soil structure infiltration; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.rooting_soil_structure_infiltration.recall"
+          }
+        },
+        {
+          "id": "b4.fig.erosion_cover_residue.recall",
+          "category": "erosion_cover_residue",
+          "status": "model_recall",
+          "effect": "Litter and maintained orchard-floor vegetation can protect soil; tree canopy with bare interrows can still permit erosion. No crop-specific management C factor is recalled; tillage, cover fraction and season must be specified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "protective cover potential; C unquantified",
+            "unit": "dimensionless RUSLE C (unquantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Fig (Moraceae) agronomy for erosion cover residue; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.erosion_cover_residue.recall"
+          }
+        },
+        {
+          "id": "b4.fig.bare_soil_period_shortening.recall",
+          "category": "bare_soil_period_shortening",
+          "status": "model_recall",
+          "effect": "A maintained perennial stand can extend living-root presence; canopy gaps and harvest disturbance may still expose soil. No reduction in days is estimated without a comparison calendar.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "calendar-dependent cover duration",
+            "unit": "day (not quantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Fig (Moraceae) agronomy for bare soil period shortening; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.bare_soil_period_shortening.recall"
+          }
+        },
+        {
+          "id": "b4.fig.organic_matter_soil_carbon.recall",
+          "category": "organic_matter_soil_carbon",
+          "status": "model_recall",
+          "effect": "Retained litter, safe chipped prunings and orchard-floor cover can return organic material. Decomposition, tillage and water balance determine net soil C; no sequestration rate is claimed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional organic inputs; net C unquantified",
+            "unit": "soil C contribution (qualitative)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Fig (Moraceae) agronomy for organic matter soil carbon; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.organic_matter_soil_carbon.recall"
+          }
+        },
+        {
+          "id": "b4.fig.drought_tolerance.recall",
+          "category": "drought_tolerance",
+          "status": "model_recall",
+          "effect": "Moderate or variable drought response; establishment and reproductive stages may remain sensitive. Survival under drought does not establish low seasonal water demand.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative drought tolerance"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Fig (Moraceae) agronomy for drought tolerance; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.drought_tolerance.recall"
+          }
+        },
+        {
+          "id": "b4.fig.water_demand.recall",
+          "category": "water_demand",
+          "status": "model_recall",
+          "effect": "Moderate or management-dependent seasonal demand; climate, cycle length and crop coefficient determine ET. Rainfall and soil storage must be deducted to assess irrigation; drought survival is a separate trait.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative seasonal ET class"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Fig (Moraceae) agronomy for water demand; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.fig.water_demand.recall"
+          }
+        }
+      ]
+    }
+  }
+}

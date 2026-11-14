@@ -1,0 +1,2929 @@
+{
+  "date": "2026-11-12T00:57:14.432Z",
+  "machine": {
+    "model": "Apple M5",
+    "platform": "darwin",
+    "arch": "arm64",
+    "node": "v24.19.0",
+    "load": [5.84228515625, 9.5498046875, 9.41015625]
+  },
+  "verified": [
+    "capabilities and both readiness aliases report complete national data",
+    "capabilities → guest session; real default catalog 0.15.0",
+    "catalog options, crop detail, ETag and four cited role explanations in fr/en (missing crop-name languages stay absent)",
+    "atomic pilot field + 0.4 ha boundary → history → saved soil/water/reported health (illustrative inputs labelled in fixture)",
+    "terrain: queued → worker submit/poll/download → real raw hashes → completed contract",
+    "ecostress: queued → worker submit/poll/download → real raw hashes → completed contract",
+    "modis: queued → worker submit/poll/download → real raw hashes → completed contract",
+    "GRACE + GEDI reads and vegetation/rain analyses; missing HLS/GPM remain explicit unavailable states",
+    "real plan: current + ≥2 alternatives, fr/en notes, evidence counts, futureClimate, vulnerabilitySeasons, 10 grids and terrain outputs",
+    "what-if parent, accepted changes and before/after fields → unchanged parent hash → plan summaries",
+    "intake throughput {\"plans\":45,\"seconds\":2.975144250000012,\"plansPerSecond\":15.125317032947164}",
+    "Souss-Massa: resolved ma-souss-massa, 165 schedulable, 6 crops in ranked candidates; national-only essentials 165",
+    "Gharb: resolved ma-rabat-sale-kenitra, 169 schedulable, 6 crops in ranked candidates; national-only essentials 167",
+    "Oriental: resolved ma-oriental, 166 schedulable, 6 crops in ranked candidates; national-only essentials 165",
+    "verified account via disposable SMTP → guest plan claim → guest loses access, account reads unchanged result",
+    "first plan claim atomically moves all guest fields and their boundaries to the account; no separate field-claim endpoint",
+    "owned plan and field deletion"
+  ],
+  "skipped": [
+    "field-boundary tiles: disabled by default; no country dataset imported"
+  ],
+  "measurements": {
+    "engine": [
+      {
+        "event": "rotation_engine_finished",
+        "requestId": "20583762-a83e-4f85-b646-268c060707c7",
+        "seconds": 15.174810291000002
+      },
+      {
+        "event": "rotation_engine_finished",
+        "requestId": "dda6e9f3-3710-46de-827d-99e423ce16c8",
+        "seconds": 16.441865707999998
+      },
+      {
+        "event": "rotation_engine_finished",
+        "requestId": "c475854a-bb19-4234-abfd-59c338ab64ba",
+        "seconds": 5.816119624999992
+      },
+      {
+        "event": "rotation_engine_finished",
+        "requestId": "ca505e46-a314-4ad1-ac63-d412baba3e28",
+        "seconds": 6.665154500000004
+      },
+      {
+        "event": "rotation_engine_finished",
+        "requestId": "e2d4e517-e617-4b8a-82c4-f6ee90597e0e",
+        "seconds": 5.211721790999989
+      }
+    ],
+    "plansList": {
+      "n": 40,
+      "p50Ms": 4.33270800000173,
+      "p95Ms": 5.385083999979543,
+      "maxMs": 6.810874999995576,
+      "bytes": 906
+    },
+    "largePlan": {
+      "n": 40,
+      "p50Ms": 25.572707999992417,
+      "p95Ms": 32.97816700002295,
+      "maxMs": 36.12949999998091,
+      "bytes": 4933109
+    },
+    "cropDetail": {
+      "n": 40,
+      "p50Ms": 2.845333999983268,
+      "p95Ms": 3.469375000015134,
+      "maxMs": 4.20350000000326,
+      "bytes": 188345
+    },
+    "catalogOptions": {
+      "n": 40,
+      "p50Ms": 3.1875419999996666,
+      "p95Ms": 3.8052089999837335,
+      "maxMs": 4.602457999979379,
+      "bytes": 261158
+    },
+    "glossary": {
+      "n": 40,
+      "p50Ms": 1.7425829999847338,
+      "p95Ms": 1.8685000000114087,
+      "maxMs": 1.9097909999836702,
+      "bytes": 94524
+    },
+    "fieldList": {
+      "n": 40,
+      "p50Ms": 2.7812919999996666,
+      "p95Ms": 3.223667000012938,
+      "maxMs": 4.094416999985697,
+      "bytes": 725
+    },
+    "boundary": {
+      "n": 40,
+      "p50Ms": 3.344666999997571,
+      "p95Ms": 3.8884170000092126,
+      "maxMs": 4.687292000016896,
+      "bytes": 238
+    },
+    "vegetationHistory": {
+      "n": 40,
+      "p50Ms": 6.140875000011874,
+      "p95Ms": 9.811084000015398,
+      "maxMs": 11.415959000005387,
+      "bytes": 6557
+    },
+    "vegetation": {
+      "n": 40,
+      "p50Ms": 2.6374160000123084,
+      "p95Ms": 2.987542000017129,
+      "maxMs": 14.841542000009213,
+      "bytes": 58
+    },
+    "rain": {
+      "n": 40,
+      "p50Ms": 2.686167000007117,
+      "p95Ms": 3.080833000014536,
+      "maxMs": 3.9972079999861307,
+      "bytes": 58
+    },
+    "grace": {
+      "n": 40,
+      "p50Ms": 4.404792000015732,
+      "p95Ms": 5.298083000001498,
+      "maxMs": 6.872000000003027,
+      "bytes": 3165
+    },
+    "gedi": {
+      "n": 40,
+      "p50Ms": 3.3181249999906868,
+      "p95Ms": 3.864458000025479,
+      "maxMs": 5.836333000013838,
+      "bytes": 2010
+    },
+    "fieldListWithBoundaries": {
+      "n": 40,
+      "p50Ms": 6.1966669999819715,
+      "p95Ms": 6.911415999988094,
+      "maxMs": 7.5396659999969415
+    },
+    "intake": {
+      "plans": 45,
+      "seconds": 2.975144250000012,
+      "plansPerSecond": 15.125317032947164
+    }
+  },
+  "testIp": "192.0.2.27",
+  "dataCompleteness": {
+    "ok": true,
+    "checkedAt": "2026-11-12T00:57:25.443Z",
+    "incomplete": [],
+    "datasets": [
+      {
+        "dataset": "migrations",
+        "ok": true,
+        "detail": "31 migration hashes match"
+      },
+      {
+        "dataset": "catalogs",
+        "ok": true,
+        "detail": "15 releases, exact canonical checksums and crop counts"
+      },
+      {
+        "dataset": "triggers",
+        "ok": true,
+        "detail": "17 enabled protection triggers"
+      },
+      {
+        "dataset": "indexes",
+        "ok": true,
+        "detail": "38 required indexes valid and ready"
+      },
+      {
+        "dataset": "constraints",
+        "ok": true,
+        "detail": "153 required constraints validated"
+      },
+      {
+        "dataset": "autovacuum",
+        "ok": true,
+        "detail": "Reference/plan analyze scale 0.02; automatic vacuum enabled"
+      },
+      {
+        "dataset": "climateMidCentury",
+        "ok": true,
+        "detail": "89/89 positions ready, 1500 units per position"
+      },
+      {
+        "dataset": "climateNearTerm",
+        "ok": true,
+        "detail": "89/89 positions ready, 2100 units per position"
+      },
+      {
+        "dataset": "climateUnits",
+        "ok": true,
+        "detail": "186,900 units: 20 model/variable identities per experiment/year/position; near-term 600 per position"
+      },
+      {
+        "dataset": "grace",
+        "ok": true,
+        "detail": "313344 raw-source-matched rows; complete valid-cell grid in 20–37 N, 18 W–0 E (source no-data remains unavailable)"
+      },
+      {
+        "dataset": "gedi",
+        "ok": true,
+        "detail": "2072354 raw-source-matched rows; complete valid-cell grid in 20–37 N, 18 W–0 E (source no-data remains unavailable)"
+      }
+    ]
+  },
+  "catalog": {
+    "version": "0.15.0",
+    "sha256": "b1c18550fdb08feedba05a149fbe4e017380d2604d7260e30bc0ff55f0b5c44b",
+    "crops": 246,
+    "names": {
+      "en": 0,
+      "fr": 246,
+      "ar": 246,
+      "ary": 178
+    },
+    "issues": 25
+  },
+  "futureClimate": {
+    "status": "compared",
+    "reason": null,
+    "cell": {
+      "latitude": 32.375,
+      "longitude": -6.625
+    },
+    "worlds": [
+      {
+        "model": "GFDL-ESM4",
+        "experiment": "ssp245",
+        "status": "compared",
+        "topCandidateIds": [
+          "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "GFDL-ESM4",
+        "experiment": "ssp585",
+        "status": "compared",
+        "topCandidateIds": [
+          "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "IPSL-CM6A-LR",
+        "experiment": "ssp245",
+        "status": "compared",
+        "topCandidateIds": [
+          "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "IPSL-CM6A-LR",
+        "experiment": "ssp585",
+        "status": "compared",
+        "topCandidateIds": [
+          "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "MPI-ESM1-2-HR",
+        "experiment": "ssp245",
+        "status": "compared",
+        "topCandidateIds": [
+          "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "MPI-ESM1-2-HR",
+        "experiment": "ssp585",
+        "status": "compared",
+        "topCandidateIds": [
+          "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "MRI-ESM2-0",
+        "experiment": "ssp245",
+        "status": "compared",
+        "topCandidateIds": [
+          "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "MRI-ESM2-0",
+        "experiment": "ssp585",
+        "status": "compared",
+        "topCandidateIds": [
+          "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "UKESM1-0-LL",
+        "experiment": "ssp245",
+        "status": "compared",
+        "topCandidateIds": [
+          "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      },
+      {
+        "model": "UKESM1-0-LL",
+        "experiment": "ssp585",
+        "status": "compared",
+        "topCandidateIds": [
+          "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+        ]
+      }
+    ],
+    "topStableAcrossFutures": false,
+    "attribution": "NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6) v2.0, NASA Center for Climate Simulation; Thrasher et al. 2022, Scientific Data 9, 262; https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp-cmip6",
+    "nearTerm": {
+      "status": "compared",
+      "reason": null,
+      "notAForecast": true,
+      "windows": [
+        {
+          "experiment": "ssp245",
+          "firstAnchorYear": 2026,
+          "lastAnchorYear": 2035,
+          "lastDataYear": 2040
+        },
+        {
+          "experiment": "ssp585",
+          "firstAnchorYear": 2026,
+          "lastAnchorYear": 2035,
+          "lastDataYear": 2040
+        }
+      ],
+      "minimumCompleteAnalogs": 8,
+      "worlds": [
+        {
+          "model": "GFDL-ESM4",
+          "experiment": "ssp245",
+          "status": "compared",
+          "topCandidateIds": [
+            "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "GFDL-ESM4",
+          "experiment": "ssp585",
+          "status": "compared",
+          "topCandidateIds": [
+            "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "IPSL-CM6A-LR",
+          "experiment": "ssp245",
+          "status": "compared",
+          "topCandidateIds": [
+            "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "IPSL-CM6A-LR",
+          "experiment": "ssp585",
+          "status": "compared",
+          "topCandidateIds": [
+            "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "MPI-ESM1-2-HR",
+          "experiment": "ssp245",
+          "status": "compared",
+          "topCandidateIds": [
+            "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "MPI-ESM1-2-HR",
+          "experiment": "ssp585",
+          "status": "compared",
+          "topCandidateIds": [
+            "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "MRI-ESM2-0",
+          "experiment": "ssp245",
+          "status": "compared",
+          "topCandidateIds": [
+            "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "MRI-ESM2-0",
+          "experiment": "ssp585",
+          "status": "compared",
+          "topCandidateIds": [
+            "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "UKESM1-0-LL",
+          "experiment": "ssp245",
+          "status": "compared",
+          "topCandidateIds": [
+            "parsley@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        },
+        {
+          "model": "UKESM1-0-LL",
+          "experiment": "ssp585",
+          "status": "compared",
+          "topCandidateIds": [
+            "turnip@2026-11-17>chickpea@2027-11-15>black-oat@2028-10-01>arugula@2029-02-28>pearl-millet@2029-04-19"
+          ]
+        }
+      ],
+      "topStableAcrossFutures": false
+    },
+    "unitCount": 1900,
+    "unitIdsSha256": "9e1bccf165229e3472b1aede630f323432b382d4850513b247070c2e534a983c"
+  },
+  "plan": {
+    "bytes": 4933109,
+    "resultHash": "c1f23c990699be0c891e412e68dcee9a74d1ece3c95ba6ca489cf2ca99dbecd4",
+    "strategies": 4,
+    "alternatives": 3,
+    "evidence": {
+      "weatherSnapshotIds": [
+        "05c32755-f219-4e58-9182-f46f52282fe6",
+        "06332579-926f-4992-a6f8-2c21061b7813",
+        "0cbed37b-ad80-4e7c-a3e6-2bb902130f86",
+        "1a135ea0-b7ad-478a-9f9b-3177729df258",
+        "1c02fd9c-e9a1-44c3-9a81-5cdb1888261b",
+        "287986d7-8189-4207-b914-2a19858b6731",
+        "324fa4db-09f1-45df-b047-ad9b0dded838",
+        "35ba1030-2aea-4cdc-b5f5-46e7535a0d93",
+        "3896b996-9c06-4eae-87d1-a853678e4901",
+        "3f31ee75-cb99-406a-a708-cae6d2dc9880",
+        "49c396a4-b8bc-4c82-91d0-54d0d923b759",
+        "4ae79bdf-a699-4cda-8b62-64725b6d8a71",
+        "4beb83b0-7924-45f5-a708-d37c94a4f92a",
+        "50280569-31dc-49d7-96f1-0f2e17df20de",
+        "5f7de837-6018-421a-9e93-1ea798d7e6cd",
+        "676881dc-fa48-490f-9b26-91b23859b1c6",
+        "6eed66b2-4c43-4414-8c79-eddd6932719f",
+        "732d3b1b-663d-429a-8582-7b9f11210916",
+        "7a0fe69b-eac0-4afd-a66f-652df5b4cf1e",
+        "82e587bf-07c1-4fe3-9b1a-0c45d854944e",
+        "93a60958-06e8-47de-b300-d8b357915129",
+        "9c74d1b9-cf32-49a3-a1ac-e163018ac56a",
+        "ac0a0440-da6f-448d-a106-35485770a5ef",
+        "b2c4578e-b196-49ec-aaa0-c33f2aea3f99",
+        "b4299033-fcc1-4a89-b2ba-edc0a3180ac6",
+        "bd9898f1-ef92-4682-ba9a-94abf4a649e8",
+        "c0a2d3e5-99db-4eaa-8406-c522dba7d10c",
+        "c1d40ea5-5ef2-4e6e-8e4d-d7a2b78552dd",
+        "cabc3b18-c5d8-4271-842c-000b72d23336",
+        "db562a6d-2664-4a72-8ca8-305302f4ae15",
+        "dca4fc38-451e-4986-8981-7f5805d93586",
+        "ddb6dcd9-655f-4666-a295-c43ec123e506",
+        "decb6f10-1414-4943-8c39-e407f32253db",
+        "e3ee7f94-4a92-4332-8675-71ed2937c799",
+        "e433acf9-002a-47d9-be73-7f7b2b931198",
+        "fb7e592c-ab44-4f7d-9c5c-4480a4389b9c"
+      ],
+      "rulesUsed": {
+        "double_checked": 152,
+        "expert_reviewed": 0,
+        "model_recall": 2092
+      },
+      "expertReviewed": false
+    },
+    "futureClimate": "compared",
+    "grids": [
+      "POWER",
+      "GPM",
+      "HLS",
+      "SMAP",
+      "NEX-GDDP",
+      "NASADEM",
+      "GRACE",
+      "ECOSTRESS",
+      "MODIS",
+      "GEDI"
+    ]
+  },
+  "whatIf": {
+    "kind": "what_if",
+    "notAForecast": true,
+    "label": "What-if test with your own assumptions. It is not a forecast.",
+    "rainfallChangePercent": -10,
+    "temperatureChangeC": 1,
+    "sowingShiftDays": 7,
+    "appliedTo": {
+      "historicalWeather": true,
+      "futureModelWorlds": "applied"
+    },
+    "planning": {
+      "requestedEarliestStartDate": "2026-11-17",
+      "requestedLatestStartDate": "2027-05-03",
+      "effectiveEarliestStartDate": "2026-11-24",
+      "effectiveLatestStartDate": "2027-05-10"
+    }
+  },
+  "regions": [
+    {
+      "name": "Souss-Massa",
+      "location": {
+        "latitude": 30.4,
+        "longitude": -9.6
+      },
+      "regionIds": ["ma-souss-massa", "morocco-general"],
+      "rankedCrops": [
+        "amaranth",
+        "berseem",
+        "arugula",
+        "chard",
+        "cowpea",
+        "endive"
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "arugula"],
+          "loss": 0
+        },
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "chard"],
+          "loss": 0
+        },
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "cowpea"],
+          "loss": 0
+        }
+      ],
+      "schedulable": 165,
+      "nationalOnlyEssentials": [
+        {
+          "cropId": "acacia-saligna",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "alfalfa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "aloe-vera",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "amaranth",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "anise",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "annual-medic",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "artichoke",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "arugula",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "asparagus",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "atriplex",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "barley",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "basil",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "berseem",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bitter-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "black-oat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "blackberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "blueberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "borage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bottle-gourd",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bread-wheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "broccoli",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "brussels-sprout",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "buckwheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cabbage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "calendula",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "camelina",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cannabis",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cape-gooseberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "caper",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "caraway",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cardoon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "carrot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cassava",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "castor",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cauliflower",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "celeriac",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "celery",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chamomile",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chard",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chickpea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chilli",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chinese-cabbage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chives",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cocksfoot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "common-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "coriander",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cotton",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "courgette",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cowpea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "crimson-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cucumber",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cumin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "damask-rose",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "dill",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "dry-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "durum-wheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "eggplant",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "endive",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "faba-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fennel",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fenugreek",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "finger-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "flax",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fodder-beet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "forage-rape",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "foxtail-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "garden-cress",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "garlic",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "gherkin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "grass-pea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "green-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hairy-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hemp",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "henna",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "horseradish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hyssop",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "italian-ryegrass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "jerusalem-artichoke",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "kale",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "kohlrabi",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lambs-lettuce",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lavender",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "leek",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lemon-balm",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lemon-verbena",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lentil",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lettuce",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lima-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "luffa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "maize",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "marjoram",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "melon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "milk-thistle",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mint",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mung-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mustard",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "narrow-leaf-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "nigella",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oilseed-radish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "okra",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oregano",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pak-choi",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "parsley",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "parsnip",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pearl-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pepper",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "perennial-ryegrass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "persian-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "phacelia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "phalaris",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "potato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pumpkin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "purslane",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "quinoa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "radicchio",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "radish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "raspberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "red-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rice",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rose-geranium",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "roselle",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rosemary",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "runner-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rye",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "safflower",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "saffron",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sainfoin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "salsify",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "savory",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "scorzonera",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "shallot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sorghum",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sorrel",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "soybean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spelt",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spinach",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spring-onion",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "stevia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "strawberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "subterranean-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sudan-grass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sugarcane",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sulla",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sweet-corn",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sweet-potato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "table-beet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tall-fescue",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "taro",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tarragon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "teff",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "thyme",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tobacco",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tomato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "triticale",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "turnip",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "watercress",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "watermelon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "white-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "white-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "wormwood",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "yellow-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        }
+      ],
+      "notApplicable": [
+        "groundnut",
+        "rapeseed",
+        "sesame",
+        "sugar-beet",
+        "sunflower"
+      ],
+      "unsupported": [
+        "acacia-raddiana",
+        "aleppo-pine",
+        "almond",
+        "ammi-visnaga",
+        "apple",
+        "apricot",
+        "argan",
+        "artemisia",
+        "atlas-cedar",
+        "avocado",
+        "azarole",
+        "banana",
+        "bay-laurel",
+        "bitter-orange",
+        "carob",
+        "cherimoya",
+        "cherry",
+        "chestnut",
+        "cistus",
+        "citrus",
+        "cladanthus",
+        "cork-oak",
+        "date-palm",
+        "desert-truffle",
+        "dwarf-palm",
+        "esparto",
+        "eucalyptus",
+        "fig",
+        "grapefruit",
+        "grapevine",
+        "guava",
+        "hazelnut",
+        "holm-oak",
+        "jojoba",
+        "jujube",
+        "juniper-cade",
+        "kiwi",
+        "lemon",
+        "lentisk",
+        "loquat",
+        "lychee",
+        "mallow",
+        "mandarin",
+        "mango",
+        "marrubium",
+        "medlar",
+        "moringa",
+        "mulberry",
+        "mulberry-black",
+        "myrtle",
+        "oleaster",
+        "olive",
+        "papaya",
+        "passion-fruit",
+        "peach",
+        "pear",
+        "pecan",
+        "pennyroyal",
+        "persimmon",
+        "pineapple",
+        "pistachio",
+        "pitahaya",
+        "plum",
+        "pomegranate",
+        "prickly-pear",
+        "quince",
+        "rue",
+        "stone-pine",
+        "strawberry-tree",
+        "sumac",
+        "sweet-orange",
+        "thuya",
+        "walnut",
+        "wild-thyme",
+        "ziziphus-lotus"
+      ],
+      "otherGaps": [
+        {
+          "cropId": "groundnut",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        },
+        {
+          "cropId": "onion",
+          "codes": ["CALENDAR_EVIDENCE_UNAVAILABLE", "RULE_OUT_OF_SCOPE"]
+        },
+        {
+          "cropId": "rapeseed",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        },
+        {
+          "cropId": "sesame",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        },
+        {
+          "cropId": "sugar-beet",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        },
+        {
+          "cropId": "sunflower",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        }
+      ],
+      "outcome": "comparisons_available",
+      "futureClimate": "unavailable",
+      "futureClimateReason": "CLIMATE_NOT_COMPARED",
+      "nearTerm": "unavailable",
+      "nearTermReason": "CLIMATE_NOT_COMPARED",
+      "worlds": [],
+      "nearTermWorlds": []
+    },
+    {
+      "name": "Gharb",
+      "location": {
+        "latitude": 34.3,
+        "longitude": -6.3
+      },
+      "regionIds": ["ma-rabat-sale-kenitra", "morocco-general"],
+      "rankedCrops": [
+        "amaranth",
+        "berseem",
+        "arugula",
+        "chard",
+        "cowpea",
+        "endive"
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "arugula"],
+          "loss": 0
+        },
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "chard"],
+          "loss": 0
+        },
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "cowpea"],
+          "loss": 0
+        }
+      ],
+      "schedulable": 169,
+      "nationalOnlyEssentials": [
+        {
+          "cropId": "acacia-saligna",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "alfalfa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "aloe-vera",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "amaranth",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "anise",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "annual-medic",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "artichoke",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "arugula",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "asparagus",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "atriplex",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "barley",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "basil",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "berseem",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bitter-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "black-oat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "blackberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "blueberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "borage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bottle-gourd",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bread-wheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "broccoli",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "brussels-sprout",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "buckwheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cabbage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "calendula",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "camelina",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cannabis",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cape-gooseberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "caper",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "caraway",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cardoon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "carrot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cassava",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "castor",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cauliflower",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "celeriac",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "celery",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chamomile",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chard",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chickpea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chilli",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chinese-cabbage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chives",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cocksfoot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "common-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "coriander",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cotton",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "courgette",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cowpea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "crimson-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cucumber",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cumin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "damask-rose",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "dill",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "dry-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "durum-wheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "eggplant",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "endive",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "faba-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fennel",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fenugreek",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "finger-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "flax",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fodder-beet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "forage-rape",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "foxtail-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "garden-cress",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "garlic",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "gherkin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "grass-pea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "green-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hairy-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hemp",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "henna",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "horseradish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hyssop",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "italian-ryegrass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "jerusalem-artichoke",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "kale",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "kohlrabi",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lambs-lettuce",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lavender",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "leek",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lemon-balm",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lemon-verbena",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lentil",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lettuce",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lima-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "luffa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "maize",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "marjoram",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "melon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "milk-thistle",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mint",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mung-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mustard",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "narrow-leaf-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "nigella",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oilseed-radish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "okra",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oregano",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pak-choi",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "parsley",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "parsnip",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pearl-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pepper",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "perennial-ryegrass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "persian-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "phacelia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "phalaris",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "potato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pumpkin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "purslane",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "quinoa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "radicchio",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "radish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rapeseed",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "raspberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "red-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rice",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rose-geranium",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "roselle",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rosemary",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "runner-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rye",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "safflower",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "saffron",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sainfoin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "salsify",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "savory",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "scorzonera",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "shallot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sorghum",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sorrel",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "soybean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spelt",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spinach",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spring-onion",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "stevia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "strawberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "subterranean-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sudan-grass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sugarcane",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sulla",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sunflower",
+          "metrics": ["cycle_duration"]
+        },
+        {
+          "cropId": "sweet-corn",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sweet-potato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "table-beet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tall-fescue",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "taro",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tarragon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "teff",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "thyme",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tobacco",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tomato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "triticale",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "turnip",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "watercress",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "watermelon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "white-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "white-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "wormwood",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "yellow-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        }
+      ],
+      "notApplicable": ["sesame"],
+      "unsupported": [
+        "acacia-raddiana",
+        "aleppo-pine",
+        "almond",
+        "ammi-visnaga",
+        "apple",
+        "apricot",
+        "argan",
+        "artemisia",
+        "atlas-cedar",
+        "avocado",
+        "azarole",
+        "banana",
+        "bay-laurel",
+        "bitter-orange",
+        "carob",
+        "cherimoya",
+        "cherry",
+        "chestnut",
+        "cistus",
+        "citrus",
+        "cladanthus",
+        "cork-oak",
+        "date-palm",
+        "desert-truffle",
+        "dwarf-palm",
+        "esparto",
+        "eucalyptus",
+        "fig",
+        "grapefruit",
+        "grapevine",
+        "guava",
+        "hazelnut",
+        "holm-oak",
+        "jojoba",
+        "jujube",
+        "juniper-cade",
+        "kiwi",
+        "lemon",
+        "lentisk",
+        "loquat",
+        "lychee",
+        "mallow",
+        "mandarin",
+        "mango",
+        "marrubium",
+        "medlar",
+        "moringa",
+        "mulberry",
+        "mulberry-black",
+        "myrtle",
+        "oleaster",
+        "olive",
+        "papaya",
+        "passion-fruit",
+        "peach",
+        "pear",
+        "pecan",
+        "pennyroyal",
+        "persimmon",
+        "pineapple",
+        "pistachio",
+        "pitahaya",
+        "plum",
+        "pomegranate",
+        "prickly-pear",
+        "quince",
+        "rue",
+        "stone-pine",
+        "strawberry-tree",
+        "sumac",
+        "sweet-orange",
+        "thuya",
+        "walnut",
+        "wild-thyme",
+        "ziziphus-lotus"
+      ],
+      "otherGaps": [
+        {
+          "cropId": "onion",
+          "codes": ["CALENDAR_EVIDENCE_UNAVAILABLE", "RULE_OUT_OF_SCOPE"]
+        },
+        {
+          "cropId": "sesame",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        }
+      ],
+      "outcome": "comparisons_available",
+      "futureClimate": "unavailable",
+      "futureClimateReason": "CLIMATE_NOT_COMPARED",
+      "nearTerm": "unavailable",
+      "nearTermReason": "CLIMATE_NOT_COMPARED",
+      "worlds": [],
+      "nearTermWorlds": []
+    },
+    {
+      "name": "Oriental",
+      "location": {
+        "latitude": 34.7,
+        "longitude": -1.9
+      },
+      "regionIds": ["ma-oriental", "morocco-general"],
+      "rankedCrops": [
+        "amaranth",
+        "berseem",
+        "arugula",
+        "chard",
+        "cowpea",
+        "endive"
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "arugula"],
+          "loss": 0
+        },
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "chard"],
+          "loss": 0
+        },
+        {
+          "rank": 1,
+          "crops": ["amaranth", "berseem", "amaranth", "berseem", "cowpea"],
+          "loss": 0
+        }
+      ],
+      "schedulable": 166,
+      "nationalOnlyEssentials": [
+        {
+          "cropId": "acacia-saligna",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "alfalfa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "aloe-vera",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "amaranth",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "anise",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "annual-medic",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "artichoke",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "arugula",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "asparagus",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "atriplex",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "barley",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "basil",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "berseem",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bitter-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "black-oat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "blackberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "blueberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "borage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bottle-gourd",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "bread-wheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "broccoli",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "brussels-sprout",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "buckwheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cabbage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "calendula",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "camelina",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cannabis",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cape-gooseberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "caper",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "caraway",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cardoon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "carrot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cassava",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "castor",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cauliflower",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "celeriac",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "celery",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chamomile",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chard",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chickpea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chilli",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chinese-cabbage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "chives",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cocksfoot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "common-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "coriander",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cotton",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "courgette",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cowpea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "crimson-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cucumber",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "cumin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "damask-rose",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "dill",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "dry-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "durum-wheat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "eggplant",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "endive",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "faba-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fennel",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fenugreek",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "finger-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "flax",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "fodder-beet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "forage-rape",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "foxtail-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "garden-cress",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "garlic",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "gherkin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "grass-pea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "green-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hairy-vetch",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hemp",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "henna",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "horseradish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "hyssop",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "italian-ryegrass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "jerusalem-artichoke",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "kale",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "kohlrabi",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lambs-lettuce",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lavender",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "leek",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lemon-balm",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lemon-verbena",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lentil",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lettuce",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "lima-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "luffa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "maize",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "marjoram",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "melon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "milk-thistle",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mint",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mung-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "mustard",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "narrow-leaf-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "nigella",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oat",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oilseed-radish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "okra",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "oregano",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pak-choi",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "parsley",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "parsnip",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pea",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pearl-millet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pepper",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "perennial-ryegrass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "persian-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "phacelia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "phalaris",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "potato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "pumpkin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "purslane",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "quinoa",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "radicchio",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "radish",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "raspberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "red-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rice",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rose-geranium",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "roselle",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rosemary",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "runner-bean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "rye",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "safflower",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "saffron",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sage",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sainfoin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "salsify",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "savory",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "scorzonera",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "shallot",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sorghum",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sorrel",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "soybean",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spelt",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spinach",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "spring-onion",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "stevia",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "strawberry",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "subterranean-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sudan-grass",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sugarcane",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sulla",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sweet-corn",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "sweet-potato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "table-beet",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tall-fescue",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "taro",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tarragon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "teff",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "thyme",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tobacco",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "tomato",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "triticale",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "turnip",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "watercress",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "watermelon",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "white-clover",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "white-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "wormwood",
+          "metrics": ["planting_window", "cycle_duration"]
+        },
+        {
+          "cropId": "yellow-lupin",
+          "metrics": ["planting_window", "cycle_duration"]
+        }
+      ],
+      "notApplicable": ["groundnut", "onion", "rapeseed", "sesame"],
+      "unsupported": [
+        "acacia-raddiana",
+        "aleppo-pine",
+        "almond",
+        "ammi-visnaga",
+        "apple",
+        "apricot",
+        "argan",
+        "artemisia",
+        "atlas-cedar",
+        "avocado",
+        "azarole",
+        "banana",
+        "bay-laurel",
+        "bitter-orange",
+        "carob",
+        "cherimoya",
+        "cherry",
+        "chestnut",
+        "cistus",
+        "citrus",
+        "cladanthus",
+        "cork-oak",
+        "date-palm",
+        "desert-truffle",
+        "dwarf-palm",
+        "esparto",
+        "eucalyptus",
+        "fig",
+        "grapefruit",
+        "grapevine",
+        "guava",
+        "hazelnut",
+        "holm-oak",
+        "jojoba",
+        "jujube",
+        "juniper-cade",
+        "kiwi",
+        "lemon",
+        "lentisk",
+        "loquat",
+        "lychee",
+        "mallow",
+        "mandarin",
+        "mango",
+        "marrubium",
+        "medlar",
+        "moringa",
+        "mulberry",
+        "mulberry-black",
+        "myrtle",
+        "oleaster",
+        "olive",
+        "papaya",
+        "passion-fruit",
+        "peach",
+        "pear",
+        "pecan",
+        "pennyroyal",
+        "persimmon",
+        "pineapple",
+        "pistachio",
+        "pitahaya",
+        "plum",
+        "pomegranate",
+        "prickly-pear",
+        "quince",
+        "rue",
+        "stone-pine",
+        "strawberry-tree",
+        "sumac",
+        "sweet-orange",
+        "thuya",
+        "walnut",
+        "wild-thyme",
+        "ziziphus-lotus"
+      ],
+      "otherGaps": [
+        {
+          "cropId": "groundnut",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        },
+        {
+          "cropId": "onion",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        },
+        {
+          "cropId": "rapeseed",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        },
+        {
+          "cropId": "sesame",
+          "codes": ["CROP_NOT_APPLICABLE_IN_REGION"]
+        },
+        {
+          "cropId": "sunflower",
+          "codes": ["CALENDAR_EVIDENCE_UNAVAILABLE", "RULE_OUT_OF_SCOPE"]
+        }
+      ],
+      "outcome": "comparisons_available",
+      "futureClimate": "unavailable",
+      "futureClimateReason": "CLIMATE_NOT_COMPARED",
+      "nearTerm": "unavailable",
+      "nearTermReason": "CLIMATE_NOT_COMPARED",
+      "worlds": [],
+      "nearTermWorlds": []
+    }
+  ],
+  "seconds": 273.500193333
+}

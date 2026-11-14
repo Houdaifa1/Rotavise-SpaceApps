@@ -1,0 +1,306 @@
+{
+  "id": "apple",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Apple",
+    "localNames": [
+      { "language": "fr", "name": "Pommier" },
+      { "language": "ar", "name": "التفاح" }
+    ],
+    "scientificName": "Malus domestica (Suckow) Borkh.",
+    "family": "Rosaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:apple"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "golden-delicious",
+      "name": "Golden Delicious",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.apple.golden_delicious"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "starking-red-delicious-type",
+      "name": "Starking / Red Delicious type",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.apple.starking___red_delicious_type"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "gala",
+      "name": "Gala",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.apple.gala"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "granny-smith",
+      "name": "Granny Smith",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.apple.granny_smith"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "fuji",
+      "name": "Fuji",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.apple.fuji"
+      },
+      "notes": "cultivar or type"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:apple"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-apple-bloom-frost-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; open flowers and set fruitlets are the most frost-sensitive stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.apple.bloom_frost"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": -2.2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-apple-cold-dormant-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; approximate killing or severe-injury temperature of established wood",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.apple.cold_dormant"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy_or_mature_tree\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -25,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-apple-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge: leaf scorch, sunburn or fruit set loss above about this temperature",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.apple.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 36
+    }
+  ],
+  "references": [
+    {
+      "id": "f-apple-national-yield-fnh-yield-436",
+      "topic": "yield",
+      "summary": "Yield (system unspecified; region national, Morocco)",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-fnh-pommier",
+          "locator": "article body",
+          "interpretation": "normalized",
+          "note": "Values copied as stated; 16 t/ha is the page’s own figure, not computed here.",
+          "page": null,
+          "quote": "Elle s’étend sur une superficie totale de 50.590 ha, avec une dominance à l’échelle du Moyen-Atlas. La production nationale est en moyenne de l’ordre de 697.000 tonnes, avec un rendement moyen national de 16 tonnes/Ha."
+        }
+      ]
+    },
+    {
+      "id": "f-apple-campaign-2017-2018-yield-437",
+      "topic": "yield",
+      "summary": "Yield (system unspecified; region national, Morocco)",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-le360-pomme-midelt",
+          "locator": "article body",
+          "interpretation": "normalized",
+          "note": "Gives the campaign year that the FNH page leaves out.",
+          "page": null,
+          "quote": "La production nationale du pommier au titre de la campagne agricole 2017-2018 est de l’ordre de 697.000 tonnes avec un rendement moyen national de 16 T/Ha."
+        }
+      ]
+    },
+    {
+      "id": "a-apple-ecocrop-temperature-background-444",
+      "topic": "background",
+      "summary": "Temperature (species_adaptability_bound_not_damage_limit; not a damage limit) from -2 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Malus domestica\"; fields TOPMN, TOPMX, TMIN, TMAX, KTMP, KTMPR, GMIN, GMAX, LIFO",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA recorded as null. TOPMN/TOPMX are optima, TMIN/TMAX absolute adaptability bounds, KTMP/KTMPR killing-temperature fields as exported. None is a stage-specific daily damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-b-apple-stand-lifetime-background-468",
+      "topic": "background",
+      "summary": "Stand lifetime 9125–14600 days (orchard or perennial).",
+      "value": { "unit": "days", "min": 9125, "max": 14600 },
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "general fruit-tree horticulture knowledge",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.apple.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-a-apple-chilling-requirement-chill-requirement-469",
+      "topic": "chill_requirement",
+      "summary": "Chill requirement 800–1500 hours below about 7 C. A dormancy requirement, not a damage limit.",
+      "value": { "unit": "hours below about 7 C", "min": 800, "max": 1500 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general horticulture knowledge of chill requirement ranges; varies strongly by cultivar",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.apple.chilling_requirement"
+      }
+    },
+    {
+      "id": "t-f-apple-mature-yield-yield-470",
+      "topic": "yield",
+      "summary": "Yield 20–40 t/ha (region not Moroccan statistics; sourced national mean is 16 t/ha; this is an intensive-orchard recall). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 20, "max": 40 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general knowledge of mature orchard yields",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.apple.mature_yield"
+      }
+    },
+    {
+      "id": "t-g-apple-moroccan-status-presence-471",
+      "topic": "presence",
+      "summary": "major Moroccan orchard crop (Middle Atlas, Midelt, Azrou, Saïss)",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall; combined with sourced records where present",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.G.apple.moroccan_status"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

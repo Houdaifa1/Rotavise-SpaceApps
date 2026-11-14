@@ -1,0 +1,2 @@
+ALTER TABLE "catalog_versions" DROP CONSTRAINT "catalog_body_limit";--> statement-breakpoint
+ALTER TABLE "catalog_versions" ADD CONSTRAINT "catalog_body_limit" CHECK (octet_length("catalog_versions"."body"::text) between 1 and (CASE WHEN "catalog_versions"."schema_version"='2' THEN 16777216 ELSE 8388608 END));

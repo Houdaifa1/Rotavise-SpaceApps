@@ -1,0 +1,81 @@
+{
+  "id": "wild-thyme",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Wild thyme",
+    "localNames": [
+      { "language": "fr", "name": "Serpolet" },
+      { "language": "ar", "name": "الزعيتراء" }
+    ],
+    "scientificName": "Thymus serpyllum L.",
+    "family": "Lamiaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:wild-thyme"
+    }
+  },
+  "harvestProduct": "other",
+  "modelType": "wild_harvested",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:wild-thyme"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [],
+  "references": [
+    {
+      "id": "r-p-wild-thyme-fit-planner-fit-722",
+      "topic": "planner_fit",
+      "summary": "Planner fit recalled as \"wild_harvested_not_plannable\"; Wild-harvested; cultivated thyme is in the herbs file.. The release uses its own model type for this crop.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "judgement from crop habit and use; Moroccan scale unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.P.wild-thyme.fit"
+      }
+    },
+    {
+      "id": "r-c-wild-thyme-rotation-background-723",
+      "topic": "background",
+      "summary": "Rotation: perennial, orchard or wild crop: classic rotation does not apply",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "habit of the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.C.wild-thyme.rotation"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Wild-harvested plants are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Wild-harvested plant: listed for knowledge, never placed in a rotation."
+  ]
+}

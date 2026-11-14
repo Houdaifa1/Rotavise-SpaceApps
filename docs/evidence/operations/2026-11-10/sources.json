@@ -1,0 +1,46 @@
+{
+  "recorded_on": "2026-11-10",
+  "scope": "Existing local engineering policies and installed implementation, not agronomic facts or provider SLAs. New staging port/project names and optional alert settings are implementation identifiers, not sourced factual claims. Runtime verification is recorded separately in the review notes.",
+  "sources": [
+    {
+      "kind": "repository_source",
+      "revision": "f42d51eb3bb0d48b676275bcd635fcd6cc221784",
+      "path": "tooling/operations/monitor.mjs",
+      "saved_snapshot": "tooling__operations__monitor.mjs.txt",
+      "sha256": "45233a87210e3103048331d040294c8fd00e80cc13529c07e5a70967db64758e",
+      "exact_quote": "export const LIMITS = {\n  queueAgeSeconds: 300,\n  workerHeartbeatSeconds: 15,\n  diskFreeBytes: 10 * 1024 ** 3,\n  diskFreeFraction: 0.1,\n  backupAgeHours: 26,\n  repeatAlertHours: 6,\n  statusLogBytes: 1024 * 1024,\n};"
+    },
+    {
+      "kind": "repository_source",
+      "revision": "f42d51eb3bb0d48b676275bcd635fcd6cc221784",
+      "path": "tooling/operations/schedule.mjs",
+      "saved_snapshot": "tooling__operations__schedule.mjs.txt",
+      "sha256": "5b5b7789cabbaa56518d9c48a4986b0afbdd2d407093a7dc0881251606b22b45",
+      "exact_quote": "      calendar: { Hour: 2, Minute: 30 },"
+    },
+    {
+      "kind": "repository_source",
+      "revision": "f42d51eb3bb0d48b676275bcd635fcd6cc221784",
+      "path": "tooling/operations/backup.mjs",
+      "saved_snapshot": "tooling__operations__backup.mjs.txt",
+      "sha256": "b74fe252914dacad585ae5fad523d60477c05bc109d56fad5353ec43e8496f2d",
+      "exact_quote": "  retentionDays = 14,"
+    },
+    {
+      "kind": "repository_source",
+      "revision": "f42d51eb3bb0d48b676275bcd635fcd6cc221784",
+      "path": "apps/server/src/modules/auth/worker/mail.worker.ts",
+      "saved_snapshot": "apps__server__src__modules__auth__worker__mail.worker.ts.txt",
+      "sha256": "631f544790e449cc5cf40beb211f76edbe2ddb1184cd5ec31e9be68b77c930dc",
+      "exact_quote": "      secure: config.SMTP_TLS === \"implicit\",\n      requireTLS: config.SMTP_TLS === \"starttls\","
+    },
+    {
+      "kind": "repository_source",
+      "revision": "f42d51eb3bb0d48b676275bcd635fcd6cc221784",
+      "path": "apps/server/src/modules/plans/application/planning-store.ts",
+      "saved_snapshot": "apps__server__src__modules__plans__application__planning-store.ts.txt",
+      "sha256": "646653701c9bd62e16116b2f536dd477e4e0bc5ff6ab0abc77ff4ddf301d8e70",
+      "exact_quote": "  createHash(\"sha256\").update(stableJson(value)).digest(\"hex\");"
+    }
+  ]
+}

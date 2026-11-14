@@ -1,0 +1,297 @@
+{
+  "id": "hemp",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Industrial hemp",
+    "localNames": [
+      { "language": "fr", "name": "Chanvre" },
+      { "language": "ar", "name": "القنب" }
+    ],
+    "scientificName": "Cannabis sativa L.",
+    "family": "Cannabaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:hemp"
+    }
+  },
+  "harvestProduct": "fiber",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:hemp"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-hemp-cycle-days-ecocrop-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Cannabis sativa ssp. indica\", fields GMIN, GMAX",
+          "interpretation": "normalized",
+          "note": "Ecocrop growing-cycle length range in days; not Moroccan and not tied to a sowing date. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Species-level cycle length (FAO Ecocrop), not specific to Moroccan sowing dates. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 170
+    },
+    {
+      "id": "t-fill-hemp-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -3 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.hemp.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -3,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-hemp-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 38 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.hemp.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    {
+      "id": "t-hemp-cycle-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.cycle_duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 100,
+      "maxDays": 150
+    },
+    {
+      "id": "t-hemp-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-hemp-planting-window-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.planting_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. March-May. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "03-01",
+      "end": "05-31",
+      "precision": "approximate"
+    }
+  ],
+  "references": [
+    {
+      "id": "a-hemp-temperature-ecocrop-background-116",
+      "topic": "background",
+      "summary": "Temperature facts (unconfirmed_adaptability_limit): sourceFieldTMIN_degC 6; sourceFieldTMAX_degC 32.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Cannabis sativa ssp. indica\", fields TMIN, TMAX, KTMP",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA means no value. Not usable as a catalog damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-hemp-heat-background-223",
+      "topic": "background",
+      "summary": "Temperature (daily_maximum): Tolerant; stress above ~35 C",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.heat"
+      }
+    },
+    {
+      "id": "t-hemp-cold-background-224",
+      "topic": "background",
+      "summary": "Temperature (daily_minimum): Seedlings tolerate light frost (about -3 to -5 C)",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.cold"
+      }
+    },
+    {
+      "id": "t-hemp-preferred-predecessor-background-225",
+      "topic": "background",
+      "summary": "preferred predecessor: Cereals or legumes",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.preferred_predecessor"
+      }
+    },
+    {
+      "id": "t-hemp-prohibited-predecessor-background-226",
+      "topic": "background",
+      "summary": "prohibited predecessor: Hemp on hemp for more than 2-3 years (Fusarium, broomrape build-up)",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.prohibited_predecessor"
+      }
+    },
+    {
+      "id": "t-hemp-observed-yield-yield-227",
+      "topic": "yield",
+      "summary": "Yield (Legal cannabis harvest 2024 averaged 20 q/ha (sourced separately); product (flower, biomass) not specified). AI recall, not a Moroccan statistic.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall; not Moroccan statistics unless stated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.observed_yield"
+      }
+    },
+    {
+      "id": "t-hemp-varieties-background-228",
+      "topic": "background",
+      "summary": "Types: Local 'Beldia' (landrace) and imported varieties; Beldia averaged 17 q/ha and imported varieties 28 q/ha in 2024 (sourced separately). Cultivation is legal only for licensed cooperatives in Al Hoceima, Chefchaouen and Taounate (search summary).",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General recall; names omitted where not confident",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.hemp.varieties"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on."
+  ]
+}

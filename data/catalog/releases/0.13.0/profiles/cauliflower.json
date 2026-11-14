@@ -1,0 +1,771 @@
+{
+  "id": "cauliflower",
+  "version": "0.13.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Cauliflower",
+    "localNames": [
+      { "language": "fr", "name": "Chou-fleur" },
+      { "language": "ar", "name": "القرنبيط" },
+      {
+        "language": "ary",
+        "name": "القرنبيط",
+        "recall": {
+          "confidence": "medium",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.cauliflower.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الشفلور",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-chou-fleur",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: cauliflower.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "الشفلور"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      }
+    ],
+    "scientificName": "Brassica oleracea var. botrytis L.",
+    "family": "Brassicaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:cauliflower"
+    }
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "snowball-group",
+      "name": "Snowball group",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.cauliflower.snowball-group"
+      },
+      "notes": "type"
+    },
+    {
+      "id": "snow-crown",
+      "name": "Snow Crown",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.cauliflower.snow-crown"
+      }
+    },
+    {
+      "id": "fremont",
+      "name": "Fremont",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.cauliflower.fremont"
+      }
+    },
+    {
+      "id": "skywalker",
+      "name": "Skywalker",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.cauliflower.skywalker"
+      }
+    },
+    {
+      "id": "cheddar",
+      "name": "Cheddar",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.cauliflower.cheddar"
+      }
+    },
+    {
+      "id": "romanesco",
+      "name": "Romanesco",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.cauliflower.romanesco"
+      }
+    },
+    {
+      "id": "graffiti",
+      "name": "Graffiti",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.cauliflower.graffiti"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:cauliflower"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-souss-massa",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.cauliflower.SMA"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.cauliflower.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.cauliflower.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.cauliflower.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-cauliflower-ecocrop-growing-cycle-brassica-oleracea-var-botrytis-c-386e3581",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Brassica oleracea var. botrytis\"; fields GMIN,GMAX",
+          "interpretation": "normalized",
+          "note": "GMIN/GMAX read as ECOCROP growing-cycle length in days; the field definition is not in the saved tutorial extract, so the meaning is the conventional ECOCROP one, not independently verified here. Not Morocco-specific and not sowing-to-harvest by definition. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 60,
+      "maxDays": 120
+    },
+    {
+      "id": "b-cauliflower-planting-and-cycle-planting-window",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-brassicas",
+          "locator": "PNTTA bulletin 101 (2003), Le chou, Installation de la culture",
+          "interpretation": "normalized",
+          "note": "Group-level (cabbage-group) text applied to cauliflower and broccoli; months converted to full-month bounds.",
+          "page": null,
+          "quote": "plantation a lieu de Septembre à Janvier, au […] stade 3 à 4 feuilles […] est de l’ordre de 2 à 3 mois, selon les"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. transplanting at the 3–4 leaf stage, cabbage group. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "01-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "t-a-cauliflower-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of cauliflower: approximate cold/frost injury level",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cauliflower.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -5,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-cauliflower-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of cauliflower: approximate heat level where quality, fruit set or growth declines",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cauliflower.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_or_yield_loss_approximate) at stage \"curd formation (curd quality falls, buttoning)\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 28
+    },
+    {
+      "id": "t-c-cauliflower-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the family; interval depends on the disease concerned",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cauliflower.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-c-cauliflower-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cauliflower.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-cauliflower-preferred-predecessor-preferred-predecessor-family-2",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cauliflower.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-c-cauliflower-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation practice: avoid following the same botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.cauliflower.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. same-family disease and pest carry-over Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Brassicaceae"
+    },
+    {
+      "id": "t-fill-cauliflower-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical sowing-to-harvest length",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.cauliflower.duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 150
+    },
+    {
+      "id": "t-fill-cauliflower-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 30 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.cauliflower.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    },
+    {
+      "id": "c11-cauliflower-crop-water-coefficient",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO-56 Table 11 and 12 pattern recalled for the crop or its group; not checked against the tables.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop_water_coefficient.cauliflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. FAO-56 style crop coefficients and stage lengths in days, recalled for this crop or its crop group.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.7,
+      "kcMid": 1.05,
+      "kcEnd": 0.95,
+      "stageLengths": [35, 50, 40, 15]
+    },
+    {
+      "id": "c11-cauliflower-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.cauliflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7.5
+    },
+    {
+      "id": "c11-cauliflower-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.cauliflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.8
+    },
+    {
+      "id": "c11-cauliflower-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.cauliflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-cauliflower-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.cauliflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-cauliflower-break-alternaria-brassicicola",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.cauliflower.alternaria-brassicicola"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Dark leaf spot of brassicas.",
+      "metric": "crop_health_break",
+      "issueId": "alternaria-brassicicola",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-cauliflower-break-mycosphaerella-brassicicola",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.cauliflower.mycosphaerella-brassicicola"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Ring spot of brassicas.",
+      "metric": "crop_health_break",
+      "issueId": "mycosphaerella-brassicicola",
+      "minimumBreakDays": 730
+    }
+  ],
+  "references": [
+    {
+      "id": "a-cauliflower-cabbage-group-growth-limits-background-243",
+      "topic": "background",
+      "summary": "Temperature (growth_limit_not_damage; not a damage limit) from 4 to 24 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-pntta-brassicas",
+          "locator": "PNTTA bulletin 101 (2003), Le chou (Exigences édapho-climatiques, \"Les choux présentent les mêmes exigences\")",
+          "interpretation": "normalized",
+          "note": "Growth limits, not damage limits; the text applies to the whole cabbage group (head cabbage, cauliflower, Brussels sprout, broccoli, kohlrabi). The \"15 et 18 °C\" optimum sits in a fragment that did not match and is not quoted.",
+          "page": null,
+          "quote": "Les choux présentent les mêmes exigences […] rustique et très résistante au froid et à la […] la valeur de 24˚C est considérée comme un […] maximum alors que 4˚C est une valeur […] minimale de croissance. Sous nos conditions,"
+        }
+      ]
+    },
+    {
+      "id": "f-cauliflower-late-crop-yield-247",
+      "topic": "yield",
+      "summary": "Yield 30–30 t/ha",
+      "value": { "unit": "t/ha", "min": 30, "max": 30 },
+      "citations": [
+        {
+          "sourceId": "rs-pntta-brassicas",
+          "locator": "PNTTA bulletin 101 (2003), Le chou, Récolte",
+          "interpretation": "normalized",
+          "note": "Stated as \"dépasse\"; treated as an approximate achievable level for late crops, not a mean.",
+          "page": null,
+          "quote": "Celui des cultures tardives (organes récoltés […] chou pommé et 30 T/ha pour le chou fleur et"
+        }
+      ]
+    },
+    {
+      "id": "f-cauliflower-alhoceima-2023-2024-yield-250",
+      "topic": "yield",
+      "summary": "Yield 15–15 t/ha (product Choux fleur; years 2023-2024; province mean 2023-2024)",
+      "value": { "unit": "t/ha", "min": 15, "max": 15 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 67 / printed page 64, Table 37, Choux fleur row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "Value converted as stated in proposed (quintal/ha ÷ 10 = t/ha); no averaging or area/production division.",
+          "page": 67,
+          "quote": "Choux fleur 10 1 500 150"
+        }
+      ]
+    },
+    {
+      "id": "a-cauliflower-ecocrop-temperature-brassica-oleracea-var-botrytis-bac-4056f48d",
+      "topic": "background",
+      "summary": "FAO Ecocrop species-level temperature bounds (not daily damage limits): TOPMN 10, TOPMX 25, TMIN 5, TMAX 30, KTMP_killing_temperature -5 °C.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Brassica oleracea var. botrytis\"; fields TOPMN,TOPMX,TMIN,TMAX,KTMPR,KTMP",
+          "interpretation": "normalized",
+          "note": "Same caveat as claude-supplement-A.json: ECOCROP defines TMIN/TMAX as absolute growing-range bounds and KTMP as a killing temperature without a stage, duration or daily-extreme basis (see .research-sources/2026-11-06/ecocrop-tutorial.pdf). The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "c11-cauliflower-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.cauliflower"
+      }
+    },
+    {
+      "id": "c11-cauliflower-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class shallow (about 0.2 to 0.5 m).",
+      "value": { "unit": "m (class range)", "min": 0.2, "max": 0.5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.cauliflower"
+      }
+    },
+    {
+      "id": "c11-cauliflower-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.cauliflower"
+      }
+    },
+    {
+      "id": "c11-cauliflower-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.cauliflower"
+      }
+    },
+    {
+      "id": "c11-cauliflower-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.cauliflower"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

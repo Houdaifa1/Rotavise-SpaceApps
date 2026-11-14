@@ -1,0 +1,113 @@
+{
+  "recorded_on": "2026-11-10",
+  "scope": "Actual process exits read from tool results, with raw output saved. Final resumed operations/container/OpenAPI also persisted exit records before process termination. Missing PTY results from interrupted runs are not inferred from passing text. Final formatting evidence is in format-check-final-result.txt.",
+  "checks": [
+    {
+      "command": "pnpm lint",
+      "exit_code": 0,
+      "saved_log": "lint-1.log.txt",
+      "sha256": "050c69da23536758722729aeda55a8d0fb9d557495ef6d33d70873a3b64a71c1",
+      "exact_quotes": ["$ eslint ."]
+    },
+    {
+      "command": "pnpm lint",
+      "exit_code": 0,
+      "saved_log": "lint-2.log.txt",
+      "sha256": "050c69da23536758722729aeda55a8d0fb9d557495ef6d33d70873a3b64a71c1",
+      "exact_quotes": ["$ eslint ."]
+    },
+    {
+      "command": "pnpm format:check",
+      "exit_code": 1,
+      "saved_log": "format-check-1.log.txt",
+      "sha256": "b359f03dfe103469d5511696e333d8630fb3f99c9073302a21dd629c7de7622c",
+      "exact_quotes": [
+        "[warn] docs/steps/15/codex-ops-prompt.md",
+        "[warn] Code style issues found in the above file. Run Prettier with --write to fix."
+      ]
+    },
+    {
+      "command": "pnpm typecheck",
+      "exit_code": 0,
+      "saved_log": "typecheck-1.log.txt",
+      "sha256": "d690e0556fb521fa3c5918b04d93522b52788840d344932cd80dfca5f2d2ad18",
+      "exact_quotes": ["apps/server typecheck: Done"]
+    },
+    {
+      "command": "pnpm test:operations",
+      "exit_code": 0,
+      "saved_log": "operations-1.log.txt",
+      "sha256": "cdfe7c05fa2ea2e084f0657f4b8259cbff3c81a8de8dc0b0a27adfd9146e3153",
+      "exact_quotes": [
+        "Test Suites: 2 passed, 2 total",
+        "Tests:       19 passed, 19 total"
+      ]
+    },
+    {
+      "command": "pnpm test:operations",
+      "exit_code": 0,
+      "saved_log": "operations-2.log.txt",
+      "sha256": "4100cc22454e7b74b6889e90abbfcc2317588dee174a82f99f4aff92bc8acd00",
+      "exact_quotes": [
+        "Test Suites: 2 passed, 2 total",
+        "Tests:       24 passed, 24 total"
+      ]
+    },
+    {
+      "command": "pnpm test:operations",
+      "exit_code": 0,
+      "saved_log": "operations-final.log.txt",
+      "sha256": "dee2a30a24bcd5b3b5f07250a0f832191ae558f620fa231da89dddeafbe7319b",
+      "exact_quotes": [
+        "Test Suites: 2 passed, 2 total",
+        "Tests:       24 passed, 24 total"
+      ]
+    },
+    {
+      "command": "pnpm test:backend",
+      "exit_code": 0,
+      "saved_log": "backend-1.log.txt",
+      "sha256": "5c3375bc8cef3b3ee3acd7727cab25cda0287c5a8e927c4d056cc1a1c5cfc108",
+      "exact_quotes": [
+        "Test Suites: 6 passed, 6 total",
+        "Tests:       73 passed, 73 total"
+      ]
+    },
+    {
+      "command": "pnpm test:container",
+      "exit_code": 1,
+      "saved_log": "container-1.log.txt",
+      "sha256": "67ac9ee947690d3d67591b1c47231ac4e6729c2922f0ee23f6657819d957a0b6",
+      "exact_quotes": [
+        "ERROR: failed to build: failed to update builder last activity time: open /Users/houdaifadrahm/.docker/buildx/activity/.tmp-desktop-linux3025983346: operation not permitted"
+      ]
+    },
+    {
+      "command": "BUILDX_CONFIG=/tmp/rotavise-ops-buildx pnpm test:container",
+      "exit_code": 0,
+      "saved_log": "container-final.log.txt",
+      "sha256": "32d77bf0c1f2cea89a00dc71965ef0d1702bcf059d70b74f7ffa61c8bf4a708f",
+      "exact_quotes": [
+        "PASS production container: committed catalogs imported, repeat idempotent, research gaps retained, 0.3.0 rules present",
+        "PASS production engine: packaged Temporal/ESM, unchanged real evidence gaps, synthetic evidence rejected",
+        "PASS production Linux native Argon2id: supported parameters, correct/incorrect password and corrupt work-factor rejection",
+        "PASS production planning: guest ownership, private HTTP acceptance, no test fault routes",
+        "PASS production weather capabilities protected by internal token",
+        "PASS api: non-root production container, ready, graceful exit",
+        "PASS worker operations: loopback-only metrics, denied over published port",
+        "PASS production worker: durable full pipeline, one result, no invented agricultural output",
+        "PASS worker: non-root production container, ready, graceful exit",
+        "PASS unsafe production harness configuration rejected"
+      ]
+    },
+    {
+      "command": "pnpm openapi:generate",
+      "exit_code": 0,
+      "saved_log": "openapi-final.log.txt",
+      "sha256": "3101ccdb00e6b986166d2a37c49e7a23117556e712dd90c2c654857eaf089c59",
+      "exact_quotes": [
+        "Wrote /Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-ops/docs/api/openapi.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "id": "pennyroyal",
+  "version": "0.11.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Pennyroyal",
+    "localNames": [
+      { "language": "fr", "name": "Menthe pouliot" },
+      { "language": "ar", "name": "الفليو" }
+    ],
+    "scientificName": "Mentha pulegium L.",
+    "family": "Lamiaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:pennyroyal"
+    }
+  },
+  "harvestProduct": "other",
+  "modelType": "wild_harvested",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:pennyroyal"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pennyroyal.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "r-a-pennyroyal-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.A.pennyroyal.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -15,
+      "upperDegC": null
+    }
+  ],
+  "references": [
+    {
+      "id": "r-p-pennyroyal-fit-planner-fit-732",
+      "topic": "planner_fit",
+      "summary": "Planner fit recalled as \"perennial_stand\"; Wild in damp ground and lightly cultivated.. The release uses its own model type for this crop.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "judgement from crop habit and use; Moroccan scale unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.P.pennyroyal.fit"
+      }
+    },
+    {
+      "id": "r-b-pennyroyal-window-background-733",
+      "topic": "background",
+      "summary": "Planting: 03-01 to 04-30",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.B.pennyroyal.window"
+      }
+    },
+    {
+      "id": "r-b-pennyroyal-stand-lifetime-background-734",
+      "topic": "background",
+      "summary": "Stand lifetime 1095–1825 days.",
+      "value": { "unit": "days", "min": 1095, "max": 1825 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.B.pennyroyal.stand_lifetime"
+      }
+    },
+    {
+      "id": "r-c-pennyroyal-rotation-background-735",
+      "topic": "background",
+      "summary": "Rotation: perennial, orchard or wild crop: classic rotation does not apply",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "habit of the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.C.pennyroyal.rotation"
+      }
+    },
+    {
+      "id": "c11-pennyroyal-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.pennyroyal"
+      }
+    },
+    {
+      "id": "c11-pennyroyal-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class shallow (about 0.2 to 0.5 m).",
+      "value": { "unit": "m (class range)", "min": 0.2, "max": 0.5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.pennyroyal"
+      }
+    },
+    {
+      "id": "c11-pennyroyal-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.pennyroyal"
+      }
+    },
+    {
+      "id": "c11-pennyroyal-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.pennyroyal"
+      }
+    },
+    {
+      "id": "c11-pennyroyal-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.pennyroyal"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Wild-harvested plants are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Wild-harvested plant: listed for knowledge, never placed in a rotation.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

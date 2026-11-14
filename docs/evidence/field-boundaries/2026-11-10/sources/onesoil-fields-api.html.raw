@@ -1,0 +1,1039 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../stats_api/">
+      
+      
+        <link rel="next" href="../ndvi_api/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Fields API - OneSoil API Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css">
+    
+      <link rel="stylesheet" href="../styles/main.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fields-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OneSoil API Guide" class="md-header__button md-logo" aria-label="OneSoil API Guide" data-md-component="logo">
+      <div>
+    <svg viewBox="0 0 116 40"><path d="M10.0058 39.9602c-2.83947 0-5.23469-.9746-7.147-2.9239C.9465 35.0671 0 32.6604 0 29.7961c0-2.8642.96581-5.3108 2.89744-7.3396 1.95094-2.009 4.32683-3.0035 7.14696-3.0035 2.8202 0 5.1961.9945 7.1277 3.0035 1.951 2.0089 2.9168 4.4356 2.9168 7.2799 0 2.8444-.9658 5.2711-2.9168 7.2402-1.9509 1.9891-4.3075 2.9836-7.1663 2.9836Zm6.0653-10.2436c0-1.83-.5795-3.3218-1.7385-4.5351-1.1782-1.2133-2.5883-1.8299-4.2688-1.8299-1.68055 0-3.10995.6166-4.26893 1.8299-1.17829 1.2133-1.73846 2.7449-1.73846 4.5351 0 1.7901.57949 3.3018 1.71915 4.5151 1.17829 1.2134 2.60769 1.7902 4.30754 1.7902 1.6998 0 3.1292-.5967 4.3075-1.7902 1.1203-1.2133 1.6998-2.7051 1.6805-4.5151Zm9.098 9.9055v-7.8369c0-2.1681 1.2941-3.6997 3.2644-3.6997 1.7964 0 2.994 1.2929 2.994 3.6201v7.9165h3.6701v-8.9508c0-1.9692-.5408-3.461-1.6226-4.5152-1.0623-1.0542-2.3952-1.5912-3.9405-1.5912-2.0089 0-3.7087 1.0144-4.462 2.4465v-2.0487h-3.5928v14.6395h3.6894v.0199Zm25.6519-7.638c0 .5171-.0579 1.0741-.1352 1.6708H40.0426c.5215 2.0686 1.9123 3.1228 4.153 3.1228 1.5453 0 3.361-.6166 4.5972-1.4719l1.4681 2.6654c-1.7965 1.3326-3.8633 2.0089-6.2006 2.0089-2.5111 0-4.4041-.7558-5.7369-2.2277-1.3328-1.4719-1.9896-3.3019-1.9896-5.4302 0-2.2277.6761-4.0577 2.0669-5.5097s3.1485-2.168 5.3506-2.168c2.0668 0 3.786.6762 5.1188 1.989 1.2749 1.2929 1.9509 3.0632 1.9509 5.3506Zm-7.1083-4.2168c-1.8544 0-3.2259 1.1536-3.6701 3.0631h7.2242c-.3477-1.9095-1.6805-3.0631-3.5541-3.0631Zm14.294 12.1929c-2.9941 0-5.7176-1.3128-7.3016-3.6996l2.2214-2.7648c1.2556 1.7901 3.1292 2.7648 5.1188 2.7648 1.5839 0 2.7622-.8553 2.7622-2.1283 0-.7957-.5795-1.5117-1.7384-2.0686-.2512-.1393-.8886-.378-1.9123-.7758-.9852-.3978-1.7385-.7757-2.26-1.0741-2.0282-1.2133-3.052-2.8443-3.052-4.9328 0-1.6709.5988-3.0433 1.8157-4.1373 1.2169-1.094 2.8202-1.6708 4.7518-1.6708 2.5111 0 4.6166.8951 6.3357 2.6852l-2.0668 2.9041c-1.0624-1.1736-2.7815-1.8499-4.2303-1.8499-1.5453 0-2.4724.7559-2.4724 1.9095 0 .7758.5215 1.4322 1.5646 1.9692l1.9123.8553c1.0624.4575 1.8543.7956 2.3372 1.0542 2.1828 1.094 3.2838 2.7449 3.2838 4.9329 0 1.7702-.6567 3.2222-1.9509 4.356-1.3135 1.094-3.0134 1.6708-5.1188 1.6708Zm7.6878-7.6579c0-2.1482.6954-3.9781 2.1441-5.45 1.4294-1.5117 3.2645-2.2476 5.4665-2.2476 2.2214 0 4.0371.7558 5.4665 2.2476 1.4294 1.4719 2.1441 3.3018 2.1441 5.45 0 2.1681-.6954 3.998-2.1441 5.4699C77.3615 39.264 75.5265 40 73.3051 40c-2.2213 0-4.0371-.7558-5.4665-2.2278-1.4294-1.4719-2.1441-3.3018-2.1441-5.4699Zm4.8098 2.9836c.7533.7956 1.6998 1.2134 2.8201 1.2134 1.1204 0 2.0283-.3979 2.7816-1.2134.7533-.8354 1.1396-1.8299 1.1396-2.9836 0-1.1536-.3863-2.1481-1.1396-2.9438-.7533-.7956-1.6612-1.2133-2.7816-1.2133-1.1203 0-2.0668.3978-2.8201 1.2133-.7534.7957-1.1204 1.7902-1.1204 2.9438 0 1.1537.3477 2.1482 1.1204 2.9836Zm15.2984-12.5907c.8693-.8951.8693-2.4466 0-3.3019-.8692-.895-2.3759-.895-3.2258 0-.8692.8553-.8692 2.4068 0 3.3019.8499.8752 2.3759.8752 3.2258 0Zm.2125 2.3073h-3.6701V39.642h3.6701V25.0025Zm5.7369-5.7882v20.4078h-3.67V19.2143h3.67Zm6.7414-18.12032L99.3434 0c1.0426.51716 6.5286 1.67081 9.8706 3.1825 1.661.75584 3.342 1.77026 4.617 3.36151 1.274 1.59125 2.066 3.75929 2.066 6.32519 0 2.7648-1.197 4.734-2.395 5.8677-.579.5371-1.159.915-1.622 1.1736.521 2.6454.541 5.2113.541 7.3396h-3.477c0-4.913.27-10.0447-5.061-14.3809l2.125-2.8642c2.375 1.9294 3.901 4.0974 4.829 6.3252.096-.0796.154-.1194.27-.2188.637-.6166 1.314-1.4719 1.314-3.2422 0-1.8498-.522-3.04324-1.314-4.03777-.792-.99453-1.893-1.79016-3.264-2.40677-2.299-1.03431-4.81-1.49179-6.954-2.28741-.657 1.11387-2.3955 4.25658-2.3955 9.50775 0 3.4211.9079 4.8732 1.6805 5.5892.773.7161 1.7.8354 2.067.8354.618 0 1.854-.6763 3.419-1.3525l1.313 3.3018c-1.197.5172-2.646 1.631-4.732 1.631-.947 0-2.7817-.2784-4.4042-1.7901-.7147-.6564-1.217-1.2332-1.8351-2.6654-.6181-1.4321-.9851-3.262-.9851-5.5494 0-4.9727 1.159-9.14972 3.4769-12.55102Z"/></svg>
+</div>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OneSoil API Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fields API
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OneSoil API Guide" class="md-nav__button md-logo" aria-label="OneSoil API Guide" data-md-component="logo">
+      <div>
+    <svg viewBox="0 0 116 40"><path d="M10.0058 39.9602c-2.83947 0-5.23469-.9746-7.147-2.9239C.9465 35.0671 0 32.6604 0 29.7961c0-2.8642.96581-5.3108 2.89744-7.3396 1.95094-2.009 4.32683-3.0035 7.14696-3.0035 2.8202 0 5.1961.9945 7.1277 3.0035 1.951 2.0089 2.9168 4.4356 2.9168 7.2799 0 2.8444-.9658 5.2711-2.9168 7.2402-1.9509 1.9891-4.3075 2.9836-7.1663 2.9836Zm6.0653-10.2436c0-1.83-.5795-3.3218-1.7385-4.5351-1.1782-1.2133-2.5883-1.8299-4.2688-1.8299-1.68055 0-3.10995.6166-4.26893 1.8299-1.17829 1.2133-1.73846 2.7449-1.73846 4.5351 0 1.7901.57949 3.3018 1.71915 4.5151 1.17829 1.2134 2.60769 1.7902 4.30754 1.7902 1.6998 0 3.1292-.5967 4.3075-1.7902 1.1203-1.2133 1.6998-2.7051 1.6805-4.5151Zm9.098 9.9055v-7.8369c0-2.1681 1.2941-3.6997 3.2644-3.6997 1.7964 0 2.994 1.2929 2.994 3.6201v7.9165h3.6701v-8.9508c0-1.9692-.5408-3.461-1.6226-4.5152-1.0623-1.0542-2.3952-1.5912-3.9405-1.5912-2.0089 0-3.7087 1.0144-4.462 2.4465v-2.0487h-3.5928v14.6395h3.6894v.0199Zm25.6519-7.638c0 .5171-.0579 1.0741-.1352 1.6708H40.0426c.5215 2.0686 1.9123 3.1228 4.153 3.1228 1.5453 0 3.361-.6166 4.5972-1.4719l1.4681 2.6654c-1.7965 1.3326-3.8633 2.0089-6.2006 2.0089-2.5111 0-4.4041-.7558-5.7369-2.2277-1.3328-1.4719-1.9896-3.3019-1.9896-5.4302 0-2.2277.6761-4.0577 2.0669-5.5097s3.1485-2.168 5.3506-2.168c2.0668 0 3.786.6762 5.1188 1.989 1.2749 1.2929 1.9509 3.0632 1.9509 5.3506Zm-7.1083-4.2168c-1.8544 0-3.2259 1.1536-3.6701 3.0631h7.2242c-.3477-1.9095-1.6805-3.0631-3.5541-3.0631Zm14.294 12.1929c-2.9941 0-5.7176-1.3128-7.3016-3.6996l2.2214-2.7648c1.2556 1.7901 3.1292 2.7648 5.1188 2.7648 1.5839 0 2.7622-.8553 2.7622-2.1283 0-.7957-.5795-1.5117-1.7384-2.0686-.2512-.1393-.8886-.378-1.9123-.7758-.9852-.3978-1.7385-.7757-2.26-1.0741-2.0282-1.2133-3.052-2.8443-3.052-4.9328 0-1.6709.5988-3.0433 1.8157-4.1373 1.2169-1.094 2.8202-1.6708 4.7518-1.6708 2.5111 0 4.6166.8951 6.3357 2.6852l-2.0668 2.9041c-1.0624-1.1736-2.7815-1.8499-4.2303-1.8499-1.5453 0-2.4724.7559-2.4724 1.9095 0 .7758.5215 1.4322 1.5646 1.9692l1.9123.8553c1.0624.4575 1.8543.7956 2.3372 1.0542 2.1828 1.094 3.2838 2.7449 3.2838 4.9329 0 1.7702-.6567 3.2222-1.9509 4.356-1.3135 1.094-3.0134 1.6708-5.1188 1.6708Zm7.6878-7.6579c0-2.1482.6954-3.9781 2.1441-5.45 1.4294-1.5117 3.2645-2.2476 5.4665-2.2476 2.2214 0 4.0371.7558 5.4665 2.2476 1.4294 1.4719 2.1441 3.3018 2.1441 5.45 0 2.1681-.6954 3.998-2.1441 5.4699C77.3615 39.264 75.5265 40 73.3051 40c-2.2213 0-4.0371-.7558-5.4665-2.2278-1.4294-1.4719-2.1441-3.3018-2.1441-5.4699Zm4.8098 2.9836c.7533.7956 1.6998 1.2134 2.8201 1.2134 1.1204 0 2.0283-.3979 2.7816-1.2134.7533-.8354 1.1396-1.8299 1.1396-2.9836 0-1.1536-.3863-2.1481-1.1396-2.9438-.7533-.7956-1.6612-1.2133-2.7816-1.2133-1.1203 0-2.0668.3978-2.8201 1.2133-.7534.7957-1.1204 1.7902-1.1204 2.9438 0 1.1537.3477 2.1482 1.1204 2.9836Zm15.2984-12.5907c.8693-.8951.8693-2.4466 0-3.3019-.8692-.895-2.3759-.895-3.2258 0-.8692.8553-.8692 2.4068 0 3.3019.8499.8752 2.3759.8752 3.2258 0Zm.2125 2.3073h-3.6701V39.642h3.6701V25.0025Zm5.7369-5.7882v20.4078h-3.67V19.2143h3.67Zm6.7414-18.12032L99.3434 0c1.0426.51716 6.5286 1.67081 9.8706 3.1825 1.661.75584 3.342 1.77026 4.617 3.36151 1.274 1.59125 2.066 3.75929 2.066 6.32519 0 2.7648-1.197 4.734-2.395 5.8677-.579.5371-1.159.915-1.622 1.1736.521 2.6454.541 5.2113.541 7.3396h-3.477c0-4.913.27-10.0447-5.061-14.3809l2.125-2.8642c2.375 1.9294 3.901 4.0974 4.829 6.3252.096-.0796.154-.1194.27-.2188.637-.6166 1.314-1.4719 1.314-3.2422 0-1.8498-.522-3.04324-1.314-4.03777-.792-.99453-1.893-1.79016-3.264-2.40677-2.299-1.03431-4.81-1.49179-6.954-2.28741-.657 1.11387-2.3955 4.25658-2.3955 9.50775 0 3.4211.9079 4.8732 1.6805 5.5892.773.7161 1.7.8354 2.067.8354.618 0 1.854-.6763 3.419-1.3525l1.313 3.3018c-1.197.5172-2.646 1.631-4.732 1.631-.947 0-2.7817-.2784-4.4042-1.7901-.7147-.6564-1.217-1.2332-1.8351-2.6654-.6181-1.4321-.9851-3.262-.9851-5.5494 0-4.9727 1.159-9.14972 3.4769-12.55102Z"/></svg>
+</div>
+    </a>
+    OneSoil API Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stats_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Statistics API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fields API
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fields API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-field-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting field data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting field data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possible-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Possible errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-fields-by-geometry-in-wkt-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get fields by geometry (in WKT format)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-fields-by-bbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get fields by bbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ndvi_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NDVI API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tile layers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qgis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QGis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geoserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geoserver [deprecated]
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-field-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting field data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting field data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possible-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Possible errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-fields-by-geometry-in-wkt-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get fields by geometry (in WKT format)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-fields-by-bbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get fields by bbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fields-api">Fields API</h1>
+<p>This service provides the API for receiving field geometries by point, bbox or arbitrary geometry.</p>
+<div class="admonition warning">
+<p class="admonition-title">Limitations</p>
+<p>The maximum geometry area cannot exceed 400.000.000 square meters (40.000 ha).</p>
+<p>The supported EPSG is 4326 only.</p>
+</div>
+<h2 id="getting-field-data">Getting field data</h2>
+<p><code>GET /v1/fields/{year}/</code></p>
+<h3 id="request-parameters">Request parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>year</td>
+<td>Integer</td>
+<td>Requested year <code>&gt;= 2016</code></td>
+</tr>
+<tr>
+<td>bbox</td>
+<td>String</td>
+<td>Bounding box in the format <code>min_lon,min_lat,max_lon,max_lat</code> (<em>optional</em>)</td>
+</tr>
+<tr>
+<td>geometry_wkt</td>
+<td>WKT</td>
+<td>Area of interest encoded in <a href="https://www.ibm.com/docs/en/db2-warehouse?topic=formats-well-known-text-wkt-format">WKT format</a> (<em>optional</em>)</td>
+</tr>
+<tr>
+<td>crop_name</td>
+<td>String</td>
+<td>Crop name</td>
+</tr>
+<tr>
+<td>crop_season</td>
+<td>String</td>
+<td>Unique identifier of season (season1 / season2)</td>
+</tr>
+<tr>
+<td>include_all</td>
+<td>Boolean</td>
+<td>Return all available predictions, including in-season (<em>optional</em>, <em>default=<code>false</code></em>)</td>
+</tr>
+<tr>
+<td>not_found_if_empty</td>
+<td>Boolean</td>
+<td>Returns a 404 error instead of an empty FeatureCollection if no data is found (<em>optional</em>, <em>default=<code>false</code></em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="feature-properties">Feature properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Integer</td>
+<td>Unique identifier of field</td>
+</tr>
+<tr>
+<td>area</td>
+<td>Float</td>
+<td>Area in square meters</td>
+</tr>
+<tr>
+<td>crop_name</td>
+<td>String</td>
+<td>Crop name</td>
+</tr>
+<tr>
+<td>crop_eppo_code</td>
+<td>String</td>
+<td>Abbreviation in corresponding with <a href="https://gd.eppo.int/">EPPO Global Database</a></td>
+</tr>
+<tr>
+<td>crop_season</td>
+<td>String</td>
+<td>Unique identifier of season (season1 / season2)</td>
+</tr>
+<tr>
+<td>crop_season_start</td>
+<td>String</td>
+<td>String in format <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO-8601</a> that represented start of season date</td>
+</tr>
+<tr>
+<td>crop_season_end</td>
+<td>String</td>
+<td>String in format <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO-8601</a> that represented end of season date</td>
+</tr>
+<tr>
+<td>is_actual_season</td>
+<td>Boolean</td>
+<td>Shows whether the season is actual or historical</td>
+</tr>
+<tr>
+<td>crop_confidence</td>
+<td>Object</td>
+<td>Confidence level of the detected crops (Example <code>{"soybeans": 0.8286, "not_field": 0.1714}</code>)</td>
+</tr>
+<tr>
+<td>crop_predicted_for</td>
+<td>String</td>
+<td>String in format <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO-8601</a> that represented date for which prediction was made</td>
+</tr>
+<tr>
+<td>country_alpha_3</td>
+<td>String</td>
+<td>Country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">ISO 3166-1 alpha-3</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="possible-errors">Possible errors</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">400</label><label for="__tabbed_1_2">401</label><label for="__tabbed_1_3">403</label><label for="__tabbed_1_4">422</label><label for="__tabbed_1_5">5xx</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Invalid input parameters</p>
+</div>
+<div class="tabbed-block">
+<p>Token wasn't provided</p>
+</div>
+<div class="tabbed-block">
+<p>Not allowed. Quota exceeded or other restrictions have been violated</p>
+</div>
+<div class="tabbed-block">
+<p>No available data for this area
+or
+No predicted data for this area</p>
+</div>
+<div class="tabbed-block">
+<p>Server error. Please contact support</p>
+</div>
+</div>
+</div>
+<h3 id="examples">Examples</h3>
+<h4 id="get-fields-by-geometry-in-wkt-format">Get fields by geometry (in <a href="https://www.ibm.com/docs/en/db2-warehouse?topic=formats-well-known-text-wkt-format">WKT format</a>)</h4>
+<p>Click by any field within bounding box:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">html</label><label for="__tabbed_2_2">curl</label><label for="__tabbed_2_3">JavaScript</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><iframe style="width: 100%; height: 400px;" src="../assets/example_by_point.html"></iframe></p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ONESOIL_API_TOKEN</span><span class="o">=</span>&lt;YOUR<span class="w"> </span>TOKEN&gt;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ONESOIL_API_HOST</span><span class="o">=</span>https://api-b2b.prod-be.onesoil.ai
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>curl<span class="w"> </span>--request<span class="w"> </span>GET<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span>--url<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ONESOIL_API_HOST</span><span class="si">}</span><span class="s2">/v1/fields/2023?geometry_wkt=POINT(4.937641713030359+50.628494973329396)&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span>--header<span class="w"> </span><span class="s2">&quot;authorization: Bearer </span><span class="si">${</span><span class="nv">ONESOIL_API_TOKEN</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FeatureCollection&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;features&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MultiPolygon&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">                </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">                    </span><span class="p">[</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">                        </span><span class="p">[</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935040985</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631910051</span><span class="p">],</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.9351823</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631907703</span><span class="p">],</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935320847</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631837946</span><span class="p">],</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.9355924</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631563611</span><span class="p">],</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935720792</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631246685</span><span class="p">],</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936030437</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631039173</span><span class="p">],</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936289056</span><span class="p">,</span><span class="w"> </span><span class="mf">50.630450259</span><span class="p">],</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936358788</span><span class="p">,</span><span class="w"> </span><span class="mf">50.630426615</span><span class="p">],</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936389499</span><span class="p">,</span><span class="w"> </span><span class="mf">50.630313678</span><span class="p">],</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.93659223</span><span class="p">,</span><span class="w"> </span><span class="mf">50.630085456</span><span class="p">],</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.93676425</span><span class="p">,</span><span class="w"> </span><span class="mf">50.62997017</span><span class="p">],</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936795883</span><span class="p">,</span><span class="w"> </span><span class="mf">50.629879703</span><span class="p">],</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937035785</span><span class="p">,</span><span class="w"> </span><span class="mf">50.629695833</span><span class="p">],</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937099973</span><span class="p">,</span><span class="w"> </span><span class="mf">50.629537369</span><span class="p">],</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937203183</span><span class="p">,</span><span class="w"> </span><span class="mf">50.629468197</span><span class="p">],</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937364113</span><span class="p">,</span><span class="w"> </span><span class="mf">50.629083272</span><span class="p">],</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937705369</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628785288</span><span class="p">],</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937769554</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628626824</span><span class="p">],</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937872761</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628557651</span><span class="p">],</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937967651</span><span class="p">,</span><span class="w"> </span><span class="mf">50.62828625</span><span class="p">],</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.938241018</span><span class="p">,</span><span class="w"> </span><span class="mf">50.62805685</span><span class="p">],</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.938271723</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627943913</span><span class="p">],</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.938408405</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627829212</span><span class="p">],</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.93856932</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627444286</span><span class="p">],</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.938772953</span><span class="p">,</span><span class="w"> </span><span class="mf">50.62723853</span><span class="p">],</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.938697681</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627127357</span><span class="p">],</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.938517358</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627040417</span><span class="p">],</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937840637</span><span class="p">,</span><span class="w"> </span><span class="mf">50.626916767</span><span class="p">],</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937803464</span><span class="p">,</span><span class="w"> </span><span class="mf">50.626872415</span><span class="p">],</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937554341</span><span class="p">,</span><span class="w"> </span><span class="mf">50.626831589</span><span class="p">],</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.937230875</span><span class="p">,</span><span class="w"> </span><span class="mf">50.626702058</span><span class="p">],</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936838607</span><span class="p">,</span><span class="w"> </span><span class="mf">50.626618641</span><span class="p">],</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936521607</span><span class="p">,</span><span class="w"> </span><span class="mf">50.626646397</span><span class="p">],</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936350522</span><span class="p">,</span><span class="w"> </span><span class="mf">50.626784152</span><span class="p">],</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936319813</span><span class="p">,</span><span class="w"> </span><span class="mf">50.626897088</span><span class="p">],</span>
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936216607</span><span class="p">,</span><span class="w"> </span><span class="mf">50.62696626</span><span class="p">],</span>
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936185898</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627079196</span><span class="p">],</span>
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.936049213</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627193894</span><span class="p">],</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935750667</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627671045</span><span class="p">],</span>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935680939</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627694689</span><span class="p">],</span>
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935616748</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627853152</span><span class="p">],</span>
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935547019</span><span class="p">,</span><span class="w"> </span><span class="mf">50.627876796</span><span class="p">],</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935482827</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628035259</span><span class="p">],</span>
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935413098</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628058903</span><span class="p">],</span>
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935214983</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628399472</span><span class="p">],</span>
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935111773</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628468642</span><span class="p">],</span>
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.934950826</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628853564</span><span class="p">],</span>
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.934881096</span><span class="p">,</span><span class="w"> </span><span class="mf">50.628877208</span><span class="p">],</span>
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.934415117</span><span class="p">,</span><span class="w"> </span><span class="mf">50.629581988</span><span class="p">],</span>
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.934211455</span><span class="p">,</span><span class="w"> </span><span class="mf">50.629787737</span><span class="p">],</span>
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.934147257</span><span class="p">,</span><span class="w"> </span><span class="mf">50.629946199</span><span class="p">],</span>
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.93380597</span><span class="p">,</span><span class="w"> </span><span class="mf">50.630244173</span><span class="p">],</span>
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.933607835</span><span class="p">,</span><span class="w"> </span><span class="mf">50.63058474</span><span class="p">],</span>
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.933266541</span><span class="p">,</span><span class="w"> </span><span class="mf">50.630882712</span><span class="p">],</span>
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.933133525</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631087286</span><span class="p">],</span>
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.933138134</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631199635</span><span class="p">],</span>
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.933284057</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631309639</span><span class="p">],</span>
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.933927346</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631478842</span><span class="p">],</span>
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.934395841</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631695915</span><span class="p">],</span>
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.934644987</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631736747</span><span class="p">],</span>
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a><span class="w">                            </span><span class="p">[</span><span class="mf">4.935040985</span><span class="p">,</span><span class="w"> </span><span class="mf">50.631910051</span><span class="p">],</span>
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a><span class="w">                        </span><span class="p">]</span>
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a><span class="w">                    </span><span class="p">]</span>
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a><span class="w">                </span><span class="p">],</span>
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a><span class="w">            </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a><span class="w">                </span><span class="nt">&quot;area&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100893.63821834345</span><span class="p">,</span>
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a><span class="w">                </span><span class="nt">&quot;country_alpha_3&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BEL&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a><span class="w">                </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">194515048</span><span class="p">,</span>
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a><span class="w">                </span><span class="nt">&quot;crop_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wheat&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a><span class="w">                </span><span class="nt">&quot;crop_eppo_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TRZAX&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a><span class="w">                </span><span class="nt">&quot;crop_season&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;season1&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a><span class="w">                </span><span class="nt">&quot;crop_season_start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-03-01T00:00:00&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a><span class="w">                </span><span class="nt">&quot;crop_season_end&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-09-30T00:00:00&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a><span class="w">                </span><span class="nt">&quot;is_actual_season&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a><span class="w">                </span><span class="nt">&quot;crop_confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a><span class="w">                </span><span class="nt">&quot;crop_predicted_for&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-09-30T00:00:00&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a><span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">194515048</span><span class="p">,</span>
+<a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a><span class="w">    </span><span class="p">],</span>
+<a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a><span class="w">    </span><span class="nt">&quot;crs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;urn:ogc:def:crs:EPSG::4326&quot;</span><span class="p">}},</span>
+<a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ONESOIL_API_TOKEN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&lt;YOUR TOKEN&gt;&quot;</span><span class="p">;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ONESOIL_API_HOST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://api-b2b.prod-be.onesoil.ai&quot;</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">wellknown</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;wellknown&#39;</span><span class="p">);</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="kd">let</span><span class="w"> </span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">URLSearchParams</span><span class="p">({</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nx">geometry_wkt</span><span class="o">:</span><span class="w"> </span><span class="nx">wellknown</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="s1">&#39;type&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Point&#39;</span><span class="p">,</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="s1">&#39;coordinates&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">point</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="w"> </span><span class="nx">point</span><span class="p">.</span><span class="nx">lat</span><span class="p">]</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="p">}),</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p">});</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="kd">let</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">   </span><span class="sb">`</span><span class="si">${</span><span class="nx">ONESOIL_API_HOST</span><span class="si">}</span><span class="sb">/v1/fields/</span><span class="si">${</span><span class="nx">ONESOIL_YEAR</span><span class="si">}</span><span class="sb">?</span><span class="si">${</span><span class="nx">query</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">        </span><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">            </span><span class="s2">&quot;Accept&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">            </span><span class="s2">&quot;Authorization&quot;</span><span class="o">:</span><span class="w"> </span><span class="sb">`Bearer </span><span class="si">${</span><span class="nx">ONESOIL_API_TOKEN</span><span class="si">}</span><span class="sb">`</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="p">);</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">await</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">());</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h4 id="get-fields-by-bbox">Get fields by bbox</h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">html</label><label for="__tabbed_3_2">curl</label><label for="__tabbed_3_3">JavaScript</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><iframe style="width: 100%; height: 400px;" src="../assets/example_by_bbox.html"></iframe></p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ONESOIL_API_TOKEN</span><span class="o">=</span>&lt;YOUR<span class="w"> </span>TOKEN&gt;
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ONESOIL_API_HOST</span><span class="o">=</span><span class="s2">&quot;https://api-b2b.prod-be.onesoil.ai&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>curl<span class="w"> </span>--request<span class="w"> </span>GET<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>--url<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ONESOIL_API_HOST</span><span class="si">}</span><span class="s2">/v1/fields/2023?bbox=4.98%2C50.63%2C5.01%2C50.65&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span>--header<span class="w"> </span><span class="s2">&quot;authorization: Bearer </span><span class="si">${</span><span class="nv">ONESOIL_API_TOKEN</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ONESOIL_API_TOKEN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&lt;YOUR TOKEN&gt;&quot;</span><span class="p">;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ONESOIL_API_HOST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://api-b2b.prod-be.onesoil.ai&quot;</span><span class="p">;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">bbox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">4.98</span><span class="p">,</span><span class="w"> </span><span class="mf">50.63</span><span class="p">,</span><span class="w"> </span><span class="mf">5.01</span><span class="p">,</span><span class="w"> </span><span class="mf">50.65</span><span class="p">];</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">URLSearchParams</span><span class="p">({</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="nx">bbox</span><span class="o">:</span><span class="w"> </span><span class="nx">bbox</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">),</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">});</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="kd">let</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="sb">`</span><span class="si">${</span><span class="nx">ONESOIL_API_HOST</span><span class="si">}</span><span class="sb">/v1/fields/</span><span class="si">${</span><span class="nx">ONESOIL_YEAR</span><span class="si">}</span><span class="sb">?</span><span class="si">${</span><span class="nx">query</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">        </span><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">            </span><span class="s2">&quot;Accept&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">            </span><span class="s2">&quot;Authorization&quot;</span><span class="o">:</span><span class="w"> </span><span class="sb">`Bearer </span><span class="si">${</span><span class="nx">ONESOIL_API_TOKEN</span><span class="si">}</span><span class="sb">`</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="p">);</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">await</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">());</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jimp/0.22.10/jimp.min.js"></script>
+      
+        <script src="../scripts/examples_geoserver.js"></script>
+      
+    
+  </body>
+</html>

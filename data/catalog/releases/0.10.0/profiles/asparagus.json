@@ -1,0 +1,383 @@
+{
+  "id": "asparagus",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Asparagus",
+    "localNames": [
+      { "language": "fr", "name": "Asperge" },
+      { "language": "ar", "name": "الهليون" }
+    ],
+    "scientificName": "Asparagus officinalis L.",
+    "family": "Asparagaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:asparagus"
+    }
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "multi_year_stand",
+  "cultivars": [
+    {
+      "id": "diane",
+      "name": "Diane",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-btta-102",
+          "locator": "PNTTA bulletin 102 (Mar 2003), L'asperge, Variétés",
+          "interpretation": "normalized",
+          "note": "As printed in 2003.",
+          "page": null,
+          "quote": "Diane, Junon et Minerve, Larac"
+        }
+      ]
+    },
+    {
+      "id": "junon",
+      "name": "Junon",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-btta-102",
+          "locator": "PNTTA bulletin 102 (Mar 2003), L'asperge, Variétés",
+          "interpretation": "normalized",
+          "note": "As printed in 2003.",
+          "page": null,
+          "quote": "Diane, Junon et Minerve, Larac"
+        }
+      ]
+    },
+    {
+      "id": "minerve",
+      "name": "Minerve",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-btta-102",
+          "locator": "PNTTA bulletin 102 (Mar 2003), L'asperge, Variétés",
+          "interpretation": "normalized",
+          "note": "As printed in 2003.",
+          "page": null,
+          "quote": "Diane, Junon et Minerve, Larac"
+        }
+      ]
+    },
+    {
+      "id": "larac",
+      "name": "Larac",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-btta-102",
+          "locator": "PNTTA bulletin 102 (Mar 2003), L'asperge, Variétés",
+          "interpretation": "normalized",
+          "note": "As printed in 2003.",
+          "page": null,
+          "quote": "Diane, Junon et Minerve, Larac"
+        }
+      ]
+    },
+    {
+      "id": "uc-157",
+      "name": "UC 157",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.asparagus.uc-157"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "mary-washington",
+      "name": "Mary Washington",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.asparagus.mary-washington"
+      },
+      "notes": "cultivar"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:asparagus"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-asparagus-stand-lifetime-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-btta-102",
+          "locator": "PNTTA bulletin 102 (Mar 2003), L'asperge",
+          "interpretation": "normalized",
+          "note": "Stand lifetime 10–20 years as stated.",
+          "page": null,
+          "quote": "La vie d’une asperge […] raie est grandement influencée par la sévérité […] de la récolte (10-20 ans)."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "stand_lifetime",
+      "minDays": 3650,
+      "maxDays": 7300
+    },
+    {
+      "id": "t-a-asparagus-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of asparagus: approximate cold/frost injury level",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.asparagus.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -1,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-asparagus-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of asparagus: approximate heat level where quality, fruit set or growth declines",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.asparagus.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_or_yield_loss_approximate) at stage \"spear quality (spears open early in heat)\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-b-asparagus-sowing-window-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of asparagus: typical Mediterranean sowing/planting months; not Moroccan-specific",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.asparagus.sowing_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. planting crowns. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "01-15",
+      "end": "03-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "t-c-asparagus-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the family; interval depends on the disease concerned",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.asparagus.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 8
+    },
+    {
+      "id": "t-c-asparagus-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.asparagus.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-asparagus-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation practice: avoid following the same botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.asparagus.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. same-family disease and pest carry-over Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Asparagaceae"
+    },
+    {
+      "id": "t-fill-asparagus-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 40 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.asparagus.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    }
+  ],
+  "references": [
+    {
+      "id": "a-asparagus-growth-start-and-optimum-background-271",
+      "topic": "background",
+      "summary": "Temperature (activity_start_and_optimum_not_damage; not a damage limit) from 10 °C at spear growth.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-pntta-btta-102",
+          "locator": "PNTTA bulletin 102 (Mar 2003), L'asperge, Exigences",
+          "interpretation": "normalized",
+          "note": "The value 18 °C is on the next line of the extract.",
+          "page": null,
+          "quote": "température dépasse 10˚C, l’optimum est de"
+        }
+      ]
+    },
+    {
+      "id": "a-asparagus-ecocrop-temperature-asparagus-officinalis-background-304",
+      "topic": "background",
+      "summary": "FAO Ecocrop species-level temperature bounds (not daily damage limits): TOPMN 15, TOPMX 30, TMIN 6, TMAX 38, KTMP_killing_temperature -1 °C.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Asparagus officinalis\"; fields TOPMN,TOPMX,TMIN,TMAX,KTMPR,KTMP",
+          "interpretation": "normalized",
+          "note": "Same caveat as claude-supplement-A.json: ECOCROP defines TMIN/TMAX as absolute growing-range bounds and KTMP as a killing temperature without a stage, duration or daily-extreme basis (see .research-sources/2026-11-06/ecocrop-tutorial.pdf). The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "b-asparagus-ecocrop-growing-cycle-asparagus-officinalis-background-305",
+      "topic": "background",
+      "summary": "Cycle 210–270 days.",
+      "value": { "unit": "days", "min": 210, "max": 270 },
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Asparagus officinalis\"; fields GMIN,GMAX",
+          "interpretation": "normalized",
+          "note": "GMIN/GMAX read as ECOCROP growing-cycle length in days; the field definition is not in the saved tutorial extract, so the meaning is the conventional ECOCROP one, not independently verified here. Not Morocco-specific and not sowing-to-harvest by definition. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on."
+  ]
+}

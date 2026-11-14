@@ -1,0 +1,526 @@
+{
+  "id": "rosemary",
+  "version": "0.11.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Rosemary",
+    "localNames": [
+      { "language": "fr", "name": "Romarin" },
+      { "language": "ar", "name": "إكليل الجبل" }
+    ],
+    "scientificName": "Salvia rosmarinus Spenn.",
+    "family": "Lamiaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:rosemary"
+    }
+  },
+  "harvestProduct": "other",
+  "modelType": "multi_year_stand",
+  "cultivars": [
+    {
+      "id": "tuscan-blue",
+      "name": "Tuscan Blue",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.rosemary.tuscan-blue"
+      }
+    },
+    {
+      "id": "prostratus",
+      "name": "Prostratus",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.rosemary.prostratus"
+      }
+    },
+    {
+      "id": "miss-jessopp-s-upright",
+      "name": "Miss Jessopp's Upright",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.rosemary.miss-jessopp-s-upright"
+      }
+    },
+    {
+      "id": "salem",
+      "name": "Salem",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.rosemary.salem"
+      }
+    },
+    {
+      "id": "arp",
+      "name": "Arp",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.rosemary.arp"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:rosemary"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.rosemary.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.rosemary.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.rosemary.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "r-b-rosemary-stand-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "woody perennial shrub; commercial stands renewed after about 8-15 years",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.B.rosemary.stand"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "stand_lifetime",
+      "minDays": 2920,
+      "maxDays": 5475
+    },
+    {
+      "id": "t-fill-rosemary-window0-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical Moroccan Mediterranean sowing/planting season, zone dependent",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.rosemary.window0"
+      },
+      "conditions": "Recalled by the AI model; unverified. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "10-01",
+      "end": "03-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "t-rosemary-a-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural knowledge of frost tolerance by stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rosemary.A.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -10,
+      "upperDegC": null
+    },
+    {
+      "id": "t-rosemary-a-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural knowledge of heat stress by stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rosemary.A.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    },
+    {
+      "id": "t-rosemary-c-rotation-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "family-based rotation logic (same-family host diseases/pests); not Moroccan guidance",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rosemary.C.rotation"
+      },
+      "conditions": "Recalled by the AI model; unverified. Poaceae (before establishment) Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "c11-rosemary-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.rosemary"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 8
+    },
+    {
+      "id": "c11-rosemary-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.rosemary"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 2
+    },
+    {
+      "id": "c11-rosemary-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.rosemary"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-rosemary-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.rosemary"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "low",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    }
+  ],
+  "references": [
+    {
+      "id": "a-rosemary-heat-ecocrop-background-330",
+      "topic": "background",
+      "summary": "Temperature (species_absolute_maximum_not_damage_limit; not a damage limit) to 38 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "row ScientificName=Rosmarinus officinalis, column TMAX",
+          "interpretation": "normalized",
+          "note": "Adaptability bound for climate matching, not a heat-damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "b-rosemary-cycle-ecocrop-background-331",
+      "topic": "background",
+      "summary": "Cycle 120–270 days.",
+      "value": { "unit": "days", "min": 120, "max": 270 },
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "row ScientificName=Rosmarinus officinalis, columns GMIN/GMAX",
+          "interpretation": "normalized",
+          "note": "Generic growing-period range; not a Moroccan sowing-to-harvest duration. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-rosemary-b-season-background-371",
+      "topic": "background",
+      "summary": "Cycle 1825–2920 days.",
+      "value": { "unit": "days", "min": 1825, "max": 2920 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Mediterranean agronomy recall; Moroccan timing unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rosemary.B.season"
+      }
+    },
+    {
+      "id": "t-rosemary-b-season-background-372",
+      "topic": "background",
+      "summary": "Planting: plant autumn or early spring",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Mediterranean agronomy recall; Moroccan timing unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rosemary.B.season"
+      }
+    },
+    {
+      "id": "t-rosemary-f-yield-yield-373",
+      "topic": "yield",
+      "summary": "Yield 2–5 t/ha. AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 2, "max": 5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "typical published ranges recalled; not verified for Morocco",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rosemary.F.yield"
+      }
+    },
+    {
+      "id": "c11-rosemary-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.rosemary"
+      }
+    },
+    {
+      "id": "c11-rosemary-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.rosemary"
+      }
+    },
+    {
+      "id": "c11-rosemary-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.rosemary"
+      }
+    },
+    {
+      "id": "c11-rosemary-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.rosemary"
+      }
+    },
+    {
+      "id": "c11-rosemary-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.rosemary"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

@@ -1,0 +1,1579 @@
+{
+  "id": "citrus",
+  "version": "0.14.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Citrus (orange)",
+    "localNames": [
+      { "language": "fr", "name": "Agrumes" },
+      {
+        "language": "ar",
+        "name": "الحمضيات",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.citrus.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الحوامض",
+        "recall": {
+          "confidence": "medium",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.citrus.ary"
+        }
+      }
+    ],
+    "scientificName": "Citrus sinensis (Mill.) Pers., 1806",
+    "family": "Rutaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-citrus",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF.",
+        "page": null,
+        "quote": "\"scientificName\":\"Citrus sinensis (Mill.) Pers., 1806\""
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter.",
+        "page": null,
+        "quote": "Olivier Agrumes Grenadier"
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "maroc-late",
+      "name": "Maroc Late",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.citrus.maroc-late"
+      },
+      "notes": "cultivar; Morocco; late-maturing sweet orange of Moroccan selection; exact botanical group unconfirmed in my recall"
+    },
+    {
+      "id": "washington-navel",
+      "name": "Washington Navel",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.washington-navel"
+      },
+      "notes": "cultivar; sweet orange"
+    },
+    {
+      "id": "navelate",
+      "name": "Navelate",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.navelate"
+      },
+      "notes": "cultivar; sweet orange"
+    },
+    {
+      "id": "salustiana",
+      "name": "Salustiana",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.salustiana"
+      },
+      "notes": "cultivar; sweet orange"
+    },
+    {
+      "id": "valencia-late",
+      "name": "Valencia Late",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.valencia-late"
+      },
+      "notes": "cultivar; sweet orange, late"
+    },
+    {
+      "id": "sanguinelli-blood-orange",
+      "name": "Sanguinelli (blood orange)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.sanguinelli-(blood-orange)"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "nour-clementine",
+      "name": "Nour clementine",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.nour-clementine"
+      },
+      "notes": "cultivar; Moroccan selection; clementine"
+    },
+    {
+      "id": "nules-clementine",
+      "name": "Nules clementine",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.nules-clementine"
+      },
+      "notes": "cultivar; Spanish"
+    },
+    {
+      "id": "nadorcott",
+      "name": "Nadorcott",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "high",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.nadorcott"
+      },
+      "notes": "cultivar; Mandarin hybrid, discovered in Morocco; late mandarin, important export"
+    },
+    {
+      "id": "murcott",
+      "name": "Murcott",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.murcott"
+      },
+      "notes": "cultivar; mandarin hybrid"
+    },
+    {
+      "id": "ortanique",
+      "name": "Ortanique",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.ortanique"
+      },
+      "notes": "cultivar; tangor"
+    },
+    {
+      "id": "fortune",
+      "name": "Fortune",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.fortune"
+      },
+      "notes": "cultivar; mandarin hybrid"
+    },
+    {
+      "id": "eureka-lemon",
+      "name": "Eureka lemon",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.eureka-lemon"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "verna-lemon",
+      "name": "Verna lemon",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.verna-lemon"
+      },
+      "notes": "cultivar; Spanish"
+    },
+    {
+      "id": "marsh-grapefruit",
+      "name": "Marsh grapefruit",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.marsh-grapefruit"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "bitter-seville-orange",
+      "name": "Bitter (Seville) orange",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.citrus.bitter-(seville)-orange"
+      },
+      "notes": "type group; used for marmalade/ornamental use"
+    },
+    {
+      "id": "clementine-fina",
+      "name": "Clementine Fina",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.clementine-fina"
+      }
+    },
+    {
+      "id": "clemenules",
+      "name": "Clemenules",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.clemenules"
+      }
+    },
+    {
+      "id": "marisol",
+      "name": "Marisol",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.marisol"
+      }
+    },
+    {
+      "id": "oroval",
+      "name": "Oroval",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.oroval"
+      }
+    },
+    {
+      "id": "oronules",
+      "name": "Oronules",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.oronules"
+      }
+    },
+    {
+      "id": "hernandina",
+      "name": "Hernandina",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.hernandina"
+      }
+    },
+    {
+      "id": "clemenpons",
+      "name": "Clemenpons",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.clemenpons"
+      }
+    },
+    {
+      "id": "esbal",
+      "name": "Esbal",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.esbal"
+      }
+    },
+    {
+      "id": "ellendale",
+      "name": "Ellendale",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.ellendale"
+      }
+    },
+    {
+      "id": "navelina",
+      "name": "Navelina",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.navelina"
+      }
+    },
+    {
+      "id": "newhall",
+      "name": "Newhall",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.newhall"
+      }
+    },
+    {
+      "id": "lane-late",
+      "name": "Lane Late",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.lane-late"
+      }
+    },
+    {
+      "id": "cara-cara",
+      "name": "Cara Cara",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.cara-cara"
+      }
+    },
+    {
+      "id": "midknight",
+      "name": "Midknight",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.midknight"
+      }
+    },
+    {
+      "id": "shamouti",
+      "name": "Shamouti",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.shamouti"
+      }
+    },
+    {
+      "id": "baladi-local-orange",
+      "name": "Baladi (local orange)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.baladi-local-orange"
+      },
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "البرتقال البلدي",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.baladi-local-orange.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "berna-lemon",
+      "name": "Berna lemon",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.berna-lemon"
+      }
+    },
+    {
+      "id": "lisbon-lemon",
+      "name": "Lisbon lemon",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.lisbon-lemon"
+      }
+    },
+    {
+      "id": "fino-lemon",
+      "name": "Fino lemon",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.fino-lemon"
+      }
+    },
+    {
+      "id": "meyer-lemon",
+      "name": "Meyer lemon",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.meyer-lemon"
+      }
+    },
+    {
+      "id": "persian-lime-tahiti",
+      "name": "Persian lime (Tahiti)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.persian-lime-tahiti"
+      }
+    },
+    {
+      "id": "mexican-lime",
+      "name": "Mexican lime",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.mexican-lime"
+      }
+    },
+    {
+      "id": "star-ruby",
+      "name": "Star Ruby",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.star-ruby"
+      }
+    },
+    {
+      "id": "rio-red",
+      "name": "Rio Red",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.rio-red"
+      }
+    },
+    {
+      "id": "ruby-red",
+      "name": "Ruby Red",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.ruby-red"
+      }
+    },
+    {
+      "id": "duncan",
+      "name": "Duncan",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.duncan"
+      }
+    },
+    {
+      "id": "nagami-kumquat",
+      "name": "Nagami kumquat",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.nagami-kumquat"
+      }
+    },
+    {
+      "id": "satsuma-owari",
+      "name": "Satsuma Owari",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.satsuma-owari"
+      }
+    },
+    {
+      "id": "okitsu",
+      "name": "Okitsu",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.okitsu"
+      }
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.nova"
+      }
+    },
+    {
+      "id": "orri",
+      "name": "Orri",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.orri"
+      }
+    },
+    {
+      "id": "tango",
+      "name": "Tango",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.citrus.tango"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only.",
+          "page": null,
+          "quote": "Olivier Agrumes Grenadier"
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    },
+    {
+      "regionId": "ma-souss-massa",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.citrus.SMA"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.citrus.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.citrus.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.citrus.TAD"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.citrus.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "c11-citrus-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.citrus"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7.5
+    },
+    {
+      "id": "c11-citrus-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.citrus"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.7
+    },
+    {
+      "id": "c11-citrus-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.citrus"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoid waterlogged soil.",
+      "metric": "soil_drainage",
+      "value": "avoid_waterlogging"
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "references": [
+    {
+      "id": "c11-citrus-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.citrus"
+      }
+    },
+    {
+      "id": "c11-citrus-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.citrus"
+      }
+    },
+    {
+      "id": "c11-citrus-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.citrus"
+      }
+    },
+    {
+      "id": "c11-citrus-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.citrus"
+      }
+    },
+    {
+      "id": "c11-citrus-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.citrus"
+      }
+    }
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "citrus-faostat-pp-2020",
+          "kind": "prices",
+          "value": 2650,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2020",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5530\",\"Producer Price (LCU/tonne)\",\"2020\",\"2020\",\"7021\",\"Annual value\",\"LCU\",\"2650.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":764617,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2020.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2020.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-pp-2021",
+          "kind": "prices",
+          "value": 2892,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2021",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5530\",\"Producer Price (LCU/tonne)\",\"2021\",\"2021\",\"7021\",\"Annual value\",\"LCU\",\"2892.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":764618,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2021.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2021.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-pp-2022",
+          "kind": "prices",
+          "value": 3640,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2022",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5530\",\"Producer Price (LCU/tonne)\",\"2022\",\"2022\",\"7021\",\"Annual value\",\"LCU\",\"3640.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":764619,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2022.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2022.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-pp-2023",
+          "kind": "prices",
+          "value": 4952,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2023",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5530\",\"Producer Price (LCU/tonne)\",\"2023\",\"2023\",\"7021\",\"Annual value\",\"LCU\",\"4952.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":764620,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2023.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2023.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-pp-2024",
+          "kind": "prices",
+          "value": 5185,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2024",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5530\",\"Producer Price (LCU/tonne)\",\"2024\",\"2024\",\"7021\",\"Annual value\",\"LCU\",\"5185.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":764621,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2024.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:citrus.prices.citrus-faostat-pp-2024.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-onca-citrus-prices-additional",
+          "kind": "prices",
+          "value": 2,
+          "unit": "DH/Kg",
+          "currency": "MAD",
+          "year": null,
+          "region": "Oriental: Berkane; Maroc late orange, gravity irrigation, sale on tree",
+          "commodity": null,
+          "scenarioId": "citrus-onca-berkane",
+          "definition": "technical_budget_assumption",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-citrus",
+              "sourceSha256": "85215c5dc1f2a5a22573d9434d046fc28fe213cd55e784db34d33a0758754d4e",
+              "quote": "Gravitaire /Vente sur pied 30000 2 60000",
+              "locator": "{\"pdfPage\":83}",
+              "quoteCheck": "income:citrus.prices.citrus-onca-citrus-prices-additional.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to the source table.",
+            "market": "sale on tree",
+            "nominal": null,
+            "nominalBasis": "As reported; nominal/constant-price basis not explicitly stated.",
+            "columnInterpretation": "Table 26, Maroc late, gravity/sale on tree; price column.",
+            "statistic": "technical_budget_assumption",
+            "limitations": [
+              "Observation year not_found; historical reference, not a current quote.",
+              "Source cost/margin tables are not reconciled; do not calculate profit from this record.",
+              "citrus and sweet-orange share the catalog Citrus sinensis identity; these records represent the same source scenario, not two independent crops."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 13562,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"13562.000000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1907896,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:citrus.yields.citrus-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 17172.8,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"17172.800000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1907897,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:citrus.yields.citrus-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 21299.6,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"21299.600000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1907898,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:citrus.yields.citrus-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 14694.8,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"14694.800000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1907899,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:citrus.yields.citrus-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 15964.3,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Oranges",
+          "scenarioId": "citrus-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"490\",\"'01323\",\"Oranges\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"15964.300000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1907900,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:citrus.yields.citrus-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Two catalog profiles share the Citrus sinensis identity; both map to Oranges. Do not double-count production."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-onca-citrus-yields-additional",
+          "kind": "yields",
+          "value": 30000,
+          "unit": "Kg/ha",
+          "currency": null,
+          "year": null,
+          "region": "Oriental: Berkane; Maroc late orange, gravity irrigation, sale on tree",
+          "commodity": null,
+          "scenarioId": "citrus-onca-berkane",
+          "definition": "technical_budget_assumption",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-citrus",
+              "sourceSha256": "85215c5dc1f2a5a22573d9434d046fc28fe213cd55e784db34d33a0758754d4e",
+              "quote": "Gravitaire /Vente sur pied 30000 2 60000",
+              "locator": "{\"pdfPage\":83}",
+              "quoteCheck": "income:citrus.yields.citrus-onca-citrus-yields-additional.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to the source table.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "columnInterpretation": "Table 26, Maroc late; production column, per-hectare orchard budget.",
+            "statistic": "technical_budget_assumption",
+            "limitations": [
+              "Observation year not_found; historical reference, not a current quote.",
+              "Source cost/margin tables are not reconciled; do not calculate profit from this record.",
+              "citrus and sweet-orange share the catalog Citrus sinensis identity; these records represent the same source scenario, not two independent crops."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "citrus-onca-citrus-costs-additional",
+          "kind": "costs",
+          "value": 35900,
+          "unit": "Dh/ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Oriental: Berkane; Maroc late orange, gravity irrigation, sale on tree",
+          "commodity": null,
+          "scenarioId": "citrus-onca-berkane",
+          "definition": "Published total variable costs in the named table; source-specific accounting retained.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-citrus",
+              "sourceSha256": "85215c5dc1f2a5a22573d9434d046fc28fe213cd55e784db34d33a0758754d4e",
+              "quote": "Gravitaire /Vente sur pied 14470 6200 1480 1750 12000 35900",
+              "locator": "{\"pdfPage\":81}",
+              "quoteCheck": "income:citrus.costs.citrus-onca-citrus-costs-additional.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to the source table.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "As reported; nominal/constant-price basis not explicitly stated.",
+            "columnInterpretation": "Table 23, Maroc late; final total variable-cost column.",
+            "statistic": "technical_budget_assumption",
+            "limitations": [
+              "Observation year not_found; historical reference, not a current quote.",
+              "Source cost/margin tables are not reconciled; do not calculate profit from this record.",
+              "citrus and sweet-orange share the catalog Citrus sinensis identity; these records represent the same source scenario, not two independent crops."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote",
+            "costDefinition": "Published total variable costs in the named table; source-specific accounting retained."
+          }
+        },
+        {
+          "id": "citrus-onca-citrus-margins-additional",
+          "kind": "margins",
+          "value": 23714,
+          "unit": "DH/ha",
+          "currency": "MAD",
+          "year": null,
+          "region": "Oriental: Berkane; Maroc late orange, gravity irrigation, sale on tree",
+          "commodity": null,
+          "scenarioId": "citrus-onca-berkane",
+          "definition": "Source-labelled gross margin; fixed/variable accounting is source-specific, not standardised.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-citrus",
+              "sourceSha256": "85215c5dc1f2a5a22573d9434d046fc28fe213cd55e784db34d33a0758754d4e",
+              "quote": "Gravitaire/ Vente sur pied 23714",
+              "locator": "{\"pdfPage\":84}",
+              "quoteCheck": "income:citrus.margins.citrus-onca-citrus-margins-additional.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to the source table.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "As reported; nominal/constant-price basis not explicitly stated.",
+            "columnInterpretation": "Table 29, Maroc late; gravity/sale-on-tree row.",
+            "statistic": "technical_budget_assumption",
+            "limitations": [
+              "Observation year not_found; historical reference, not a current quote.",
+              "Source cost/margin tables are not reconciled; do not calculate profit from this record.",
+              "citrus and sweet-orange share the catalog Citrus sinensis identity; these records represent the same source scenario, not two independent crops."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote",
+            "marginDefinition": "Source-labelled gross margin; fixed/variable accounting is source-specific, not standardised.",
+            "validationFlags": [
+              "source_cost_margin_tables_not_reconciled_do_not_use_for_profit"
+            ]
+          }
+        }
+      ],
+      "options": [],
+      "gaps": [
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ]
+    }
+  }
+}

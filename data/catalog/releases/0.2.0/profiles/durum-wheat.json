@@ -1,0 +1,191 @@
+{
+  "id": "durum-wheat",
+  "version": "0.2.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Durum wheat",
+    "scientificName": "Triticum turgidum subsp. durum (Desf.) Husn.",
+    "family": "Poaceae",
+    "citations": [
+      {
+        "sourceId": "kew-durum",
+        "locator": "Accepted name and classification",
+        "interpretation": "direct",
+        "note": "Accepted taxonomic identity; not cultivar evidence."
+      }
+    ],
+    "localNames": []
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "inra-regional",
+          "locator": "Event body, 2024-05-06",
+          "interpretation": "context_only",
+          "note": "Durum is included in local demonstration crops, not certified suitable."
+        }
+      ],
+      "note": "Pilot research candidate only; requires specialist assessment for the actual farm and campaign."
+    }
+  ],
+  "rules": [
+    {
+      "id": "durum-november",
+      "citations": [
+        {
+          "sourceId": "inra-wheat",
+          "locator": "PDF page 4 (printed page 2), installation",
+          "interpretation": "normalized",
+          "note": "Named preferred month encoded as full month; not a rigid deadline."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Autumn sowing preferred in November; cultivar, rainfall onset and zone matter.",
+      "metric": "planting_window",
+      "start": "11-01",
+      "end": "11-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "durum-ph",
+      "citations": [
+        {
+          "sourceId": "inra-wheat",
+          "locator": "PDF page 3, Table 1",
+          "interpretation": "direct",
+          "note": "Research reference; not an approved constraint."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Source favorable pH range; laboratory method unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6.5,
+      "max": 7.5
+    },
+    {
+      "id": "durum-drainage",
+      "citations": [
+        {
+          "sourceId": "onca-cereals",
+          "locator": "PDF page 23, section 3.1",
+          "interpretation": "direct",
+          "note": "Research reference; not an approved constraint."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Durum-specific qualitative drainage preference; depth and texture remain narrative context.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "durum-germination",
+      "citations": [
+        {
+          "sourceId": "onca-cereals",
+          "locator": "PDF page 23, section 3.1",
+          "interpretation": "direct",
+          "note": "Research reference; not an approved constraint."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Source reference range, not an exclusion threshold; measurement medium/averaging unresolved.",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "germination",
+      "stageWindow": null,
+      "lowerDegC": 12,
+      "upperDegC": 20
+    },
+    {
+      "id": "durum-legume-predecessor",
+      "citations": [
+        {
+          "sourceId": "inra-wheat",
+          "locator": "PDF page 3, rotation",
+          "interpretation": "normalized",
+          "note": "Legume preference normalized to Fabaceae, consistent with Kew faba taxonomy."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Preference for food or forage legumes. No numeric break interval or measured soil-health gain is provided.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "cycle_duration",
+      "reason": "No sourced cultivar-specific sowing-to-harvest interval for the pilot. Calendar harvest examples cannot supply a duration range."
+    },
+    {
+      "topic": "water_demand",
+      "reason": "No shared sourced comparison method for low/moderate/high demand across these crops."
+    },
+    {
+      "topic": "water_demand",
+      "reason": "General wheat water ranges lack a defined cultivar/seasonal accounting basis; no irrigation adequacy or comparable water class is inferred."
+    },
+    {
+      "topic": "crop_health",
+      "reason": "No sourced crop-health break rule was extracted."
+    },
+    {
+      "topic": "cultivar",
+      "reason": "No cultivar selected or locally reviewed. Maturity and tolerances depend on cultivar and management."
+    }
+  ],
+  "limitations": [
+    "National references need local review; cultivar and production system unspecified.",
+    "The 500 mm figure in the adjacent ONCA bread-wheat subsection is not a durum rule.",
+    "No quantitative crop-specific return interval established.",
+    "No Beni Mellal agronomist review has occurred. Research extraction is not agricultural validation."
+  ]
+}

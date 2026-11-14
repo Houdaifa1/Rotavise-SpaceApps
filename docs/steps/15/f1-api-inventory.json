@@ -1,0 +1,473 @@
+{
+  "generatedFrom": "packages/contracts/src/openapi/operations.ts",
+  "operations": [
+    {
+      "operation": "getFieldBoundaryTile",
+      "method": "get",
+      "path": "/api/v1/field-boundaries/tiles/{z}/{x}/{y}",
+      "module": "boundary",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F3/F4/F5 field outlines and suggestions have not landed."
+    },
+    {
+      "operation": "getFieldBoundaryAt",
+      "method": "post",
+      "path": "/api/v1/field-boundaries/at",
+      "module": "boundary",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F3/F4/F5 field outlines and suggestions have not landed."
+    },
+    {
+      "operation": "getRootLive",
+      "method": "get",
+      "path": "/health/live",
+      "module": "capabilities",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "Operational liveness diagnostics, not needed by farmer boot."
+    },
+    {
+      "operation": "getRootReady",
+      "method": "get",
+      "path": "/health/ready",
+      "module": "capabilities",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "Operational liveness diagnostics, not needed by farmer boot."
+    },
+    {
+      "operation": "getCapabilities",
+      "method": "get",
+      "path": "/api/v1/capabilities",
+      "module": "capabilities",
+      "status": "used",
+      "usedBy": "S00 boot and shell feature availability",
+      "reason": null
+    },
+    {
+      "operation": "getLive",
+      "method": "get",
+      "path": "/api/v1/health/live",
+      "module": "capabilities",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "Operational liveness diagnostics, not needed by farmer boot."
+    },
+    {
+      "operation": "getReady",
+      "method": "get",
+      "path": "/api/v1/health/ready",
+      "module": "capabilities",
+      "status": "used",
+      "usedBy": "S00 readiness, retry and recovery",
+      "reason": null
+    },
+    {
+      "operation": "getGlossary",
+      "method": "get",
+      "path": "/api/v1/glossary",
+      "module": "glossary",
+      "status": "used",
+      "usedBy": "S00, S16 and GlossaryTerm",
+      "reason": null
+    },
+    {
+      "operation": "getOpenApi",
+      "method": "get",
+      "path": "/api/v1/openapi.json",
+      "module": null,
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "Developer documentation; the browser validates contracts locally, it does not render the OpenAPI document."
+    },
+    {
+      "operation": "getAuthCapabilities",
+      "method": "get",
+      "path": "/api/v1/auth/capabilities",
+      "module": "account",
+      "status": "used",
+      "usedBy": "Retained S02 account form",
+      "reason": null
+    },
+    {
+      "operation": "getAccount",
+      "method": "get",
+      "path": "/api/v1/account",
+      "module": "account",
+      "status": "used",
+      "usedBy": "S00 owner discovery and retained S19 account",
+      "reason": null
+    },
+    {
+      "operation": "getCatalogOptions",
+      "method": "get",
+      "path": "/api/v1/catalog/options",
+      "module": "catalog",
+      "status": "used",
+      "usedBy": "S00 and retained planner",
+      "reason": null
+    },
+    {
+      "operation": "getCatalogOptionsVersion",
+      "method": "get",
+      "path": "/api/v1/catalog/options/{catalogId}/{version}",
+      "module": "catalog",
+      "status": "used",
+      "usedBy": "Retained planner's pinned result catalog",
+      "reason": null
+    },
+    {
+      "operation": "getCropDetail",
+      "method": "get",
+      "path": "/api/v1/catalog/crops/{catalogId}/{version}/{cropId}",
+      "module": "catalog",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F9 crop detail has not landed."
+    },
+    {
+      "operation": "getWeatherCapabilities",
+      "method": "get",
+      "path": "/api/v1/weather/capabilities",
+      "module": "weather",
+      "status": "used",
+      "usedBy": "Retained weather explorer",
+      "reason": null
+    },
+    {
+      "operation": "queryWeather",
+      "method": "post",
+      "path": "/api/v1/weather/query",
+      "module": "weather",
+      "status": "used",
+      "usedBy": "Retained weather explorer",
+      "reason": null
+    },
+    {
+      "operation": "createPlanSession",
+      "method": "post",
+      "path": "/api/v1/plan-sessions",
+      "module": "plans",
+      "status": "used",
+      "usedBy": "Shared guest owner and retained planner",
+      "reason": null
+    },
+    {
+      "operation": "revokePlanSession",
+      "method": "delete",
+      "path": "/api/v1/plan-sessions/current",
+      "module": "plans",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F10 clear-device/session settings have not landed."
+    },
+    {
+      "operation": "submitPlan",
+      "method": "post",
+      "path": "/api/v1/plans",
+      "module": "plans",
+      "status": "used",
+      "usedBy": "Retained planner (format 1); format 2 UI is F6",
+      "reason": null
+    },
+    {
+      "operation": "listPlans",
+      "method": "get",
+      "path": "/api/v1/plans",
+      "module": "plans",
+      "status": "used",
+      "usedBy": "Retained account saved plans",
+      "reason": null
+    },
+    {
+      "operation": "getPlan",
+      "method": "get",
+      "path": "/api/v1/plans/{id}",
+      "module": "plans",
+      "status": "used",
+      "usedBy": "Retained planner progress/result",
+      "reason": null
+    },
+    {
+      "operation": "setPlanLabel",
+      "method": "put",
+      "path": "/api/v1/plans/{id}/label",
+      "module": "plans",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F7/F10 plan label, deletion, explanation and settings have not landed."
+    },
+    {
+      "operation": "deletePlan",
+      "method": "delete",
+      "path": "/api/v1/plans/{id}",
+      "module": "plans",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F7/F10 plan label, deletion, explanation and settings have not landed."
+    },
+    {
+      "operation": "submitWhatIf",
+      "method": "post",
+      "path": "/api/v1/plans/{id}/what-if",
+      "module": "plans",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F9 what-if has not landed."
+    },
+    {
+      "operation": "claimPlan",
+      "method": "post",
+      "path": "/api/v1/plans/{id}/claim",
+      "module": "plans",
+      "status": "used",
+      "usedBy": "Retained planner guest-to-account claim",
+      "reason": null
+    },
+    {
+      "operation": "explainPlan",
+      "method": "post",
+      "path": "/api/v1/plans/{id}/explanation",
+      "module": "plans",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F7/F10 plan label, deletion, explanation and settings have not landed."
+    },
+    {
+      "operation": "getCropHealthStatus",
+      "method": "get",
+      "path": "/api/v1/crop-health/status",
+      "module": "cropHealth",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F9 photo check has not landed; availability comes from capabilities."
+    },
+    {
+      "operation": "checkCropPhoto",
+      "method": "post",
+      "path": "/api/v1/crop-health/photo",
+      "module": "cropHealth",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F9 photo check has not landed; availability comes from capabilities."
+    },
+    {
+      "operation": "createField",
+      "method": "post",
+      "path": "/api/v1/fields",
+      "module": "fields",
+      "status": "used",
+      "usedBy": "Retained account/planner field save",
+      "reason": null
+    },
+    {
+      "operation": "createFieldWithHistory",
+      "method": "post",
+      "path": "/api/v1/fields-with-history",
+      "module": "fields",
+      "status": "used",
+      "usedBy": "Retained planner field/history save",
+      "reason": null
+    },
+    {
+      "operation": "listFields",
+      "method": "get",
+      "path": "/api/v1/fields",
+      "module": "fields",
+      "status": "used",
+      "usedBy": "Retained account saved fields",
+      "reason": null
+    },
+    {
+      "operation": "getField",
+      "method": "get",
+      "path": "/api/v1/fields/{id}",
+      "module": "fields",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F5 field detail/edit/delete has not landed."
+    },
+    {
+      "operation": "updateField",
+      "method": "put",
+      "path": "/api/v1/fields/{id}",
+      "module": "fields",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F5 field detail/edit/delete has not landed."
+    },
+    {
+      "operation": "deleteField",
+      "method": "delete",
+      "path": "/api/v1/fields/{id}",
+      "module": "fields",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F5 field detail/edit/delete has not landed."
+    },
+    {
+      "operation": "getFieldBoundary",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/boundary",
+      "module": "boundary",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F3/F4/F5 field outlines and suggestions have not landed."
+    },
+    {
+      "operation": "saveFieldBoundary",
+      "method": "put",
+      "path": "/api/v1/fields/{id}/boundary",
+      "module": "boundary",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F3/F4/F5 field outlines and suggestions have not landed."
+    },
+    {
+      "operation": "deleteFieldBoundary",
+      "method": "delete",
+      "path": "/api/v1/fields/{id}/boundary",
+      "module": "boundary",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F3/F4/F5 field outlines and suggestions have not landed."
+    },
+    {
+      "operation": "listFieldHistory",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/history",
+      "module": "history",
+      "status": "used",
+      "usedBy": "Retained account field history",
+      "reason": null
+    },
+    {
+      "operation": "createFieldHistoryEntry",
+      "method": "post",
+      "path": "/api/v1/fields/{id}/history",
+      "module": "history",
+      "status": "used",
+      "usedBy": "Retained account history editor",
+      "reason": null
+    },
+    {
+      "operation": "updateFieldHistoryEntry",
+      "method": "put",
+      "path": "/api/v1/fields/{id}/history/{entryId}",
+      "module": "history",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F5 history update/delete has not landed."
+    },
+    {
+      "operation": "deleteFieldHistoryEntry",
+      "method": "delete",
+      "path": "/api/v1/fields/{id}/history/{entryId}",
+      "module": "history",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F5 history update/delete has not landed."
+    },
+    {
+      "operation": "requestObservation",
+      "method": "post",
+      "path": "/api/v1/fields/{id}/observations",
+      "module": "observations",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 NASA request/status screens have not landed."
+    },
+    {
+      "operation": "listObservations",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/observations",
+      "module": "observations",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 NASA request/status screens have not landed."
+    },
+    {
+      "operation": "getObservation",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/observations/{observationId}",
+      "module": "observations",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 NASA request/status screens have not landed."
+    },
+    {
+      "operation": "getVegetationAnalysis",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/analysis/vegetation",
+      "module": "analysis",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 evidence screens have not landed."
+    },
+    {
+      "operation": "getRainAnalysis",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/analysis/rain",
+      "module": "analysis",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 evidence screens have not landed."
+    },
+    {
+      "operation": "requestExtraction",
+      "method": "post",
+      "path": "/api/v1/fields/{id}/extractions",
+      "module": "extractions",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 NASA extraction screens have not landed."
+    },
+    {
+      "operation": "listExtractions",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/extractions",
+      "module": "extractions",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 NASA extraction screens have not landed."
+    },
+    {
+      "operation": "getExtraction",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/extractions/{extractionId}",
+      "module": "extractions",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 NASA extraction screens have not landed."
+    },
+    {
+      "operation": "getVegetationHistory",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/analysis/vegetation-history",
+      "module": "analysis",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 evidence screens have not landed."
+    },
+    {
+      "operation": "getCanopyBiomass",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/canopy-biomass",
+      "module": "analysis",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 evidence screens have not landed."
+    },
+    {
+      "operation": "getWaterStorage",
+      "method": "get",
+      "path": "/api/v1/fields/{id}/water-storage",
+      "module": "analysis",
+      "status": "not-used-in-F1",
+      "usedBy": null,
+      "reason": "F8 evidence screens have not landed."
+    }
+  ]
+}

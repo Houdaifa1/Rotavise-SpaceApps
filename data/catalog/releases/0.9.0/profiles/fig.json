@@ -1,0 +1,59 @@
+{
+  "id": "fig",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Fig",
+    "localNames": [{ "language": "fr", "name": "Figuier" }],
+    "scientificName": "Ficus carica L.",
+    "family": "Moraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-fig",
+        "page": null,
+        "quote": "\"scientificName\":\"Ficus carica L.\"",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF."
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "page": null,
+        "quote": "Figuier 101,8 101,8",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter."
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "page": null,
+          "quote": "Figuier 101,8 101,8",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only."
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance."
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "id": "italian-ryegrass",
+  "version": "0.12.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Italian ryegrass",
+    "localNames": [
+      { "language": "fr", "name": "Ray-grass d'Italie" },
+      { "language": "ar", "name": "الريغراس" }
+    ],
+    "scientificName": "Lolium multiflorum Lam.",
+    "family": "Poaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:italian-ryegrass"
+    }
+  },
+  "harvestProduct": "forage",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "gulf",
+      "name": "Gulf",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.italian-ryegrass.gulf"
+      }
+    },
+    {
+      "id": "marshall",
+      "name": "Marshall",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.italian-ryegrass.marshall"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:italian-ryegrass"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.italian-ryegrass.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.italian-ryegrass.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.italian-ryegrass.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.italian-ryegrass.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-italian-ryegrass-cycle-days-ecocrop-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Lolium multiflorum\", fields GMIN, GMAX",
+          "interpretation": "normalized",
+          "note": "Ecocrop growing-cycle length range in days; not Moroccan and not tied to a sowing date. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Species-level cycle length (FAO Ecocrop), not specific to Moroccan sowing dates. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 270
+    },
+    {
+      "id": "t-fill-italian-ryegrass-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -10 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.italian-ryegrass.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -10,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-italian-ryegrass-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical sowing-to-harvest length",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.italian-ryegrass.duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 150,
+      "maxDays": 210
+    },
+    {
+      "id": "t-fill-italian-ryegrass-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 34 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.italian-ryegrass.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 34
+    },
+    {
+      "id": "t-italian-ryegrass-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 2
+    },
+    {
+      "id": "t-italian-ryegrass-planting-window-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.planting_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. September-November, irrigated or high rainfall. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-30",
+      "precision": "approximate"
+    },
+    {
+      "id": "c11-italian-ryegrass-crop-water-coefficient",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO-56 Table 11 and 12 pattern recalled for the crop or its group; not checked against the tables.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop_water_coefficient.italian-ryegrass"
+      },
+      "conditions": "Recalled by the AI model; unverified. FAO-56 style crop coefficients and stage lengths in days, recalled for this crop or its crop group.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.4,
+      "kcMid": 0.9,
+      "kcEnd": 0.85,
+      "stageLengths": [20, 30, 60, 30]
+    },
+    {
+      "id": "c11-italian-ryegrass-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.italian-ryegrass"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7.5
+    },
+    {
+      "id": "c11-italian-ryegrass-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.italian-ryegrass"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 5.6
+    },
+    {
+      "id": "c11-italian-ryegrass-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.italian-ryegrass"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoid waterlogged soil.",
+      "metric": "soil_drainage",
+      "value": "avoid_waterlogging"
+    },
+    {
+      "id": "c11-italian-ryegrass-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.italian-ryegrass"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    }
+  ],
+  "references": [
+    {
+      "id": "a-italian-ryegrass-temperature-ecocrop-background-117",
+      "topic": "background",
+      "summary": "Temperature facts (unconfirmed_adaptability_limit): sourceFieldTMIN_degC 2; sourceFieldTMAX_degC 38; sourceFieldKTMP_degC 0.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Lolium multiflorum\", fields TMIN, TMAX, KTMP",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA means no value. Not usable as a catalog damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-italian-ryegrass-heat-background-229",
+      "topic": "background",
+      "summary": "Temperature (daily_maximum): Growth stops above ~30 C; summer die-back",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.heat"
+      }
+    },
+    {
+      "id": "t-italian-ryegrass-cold-background-230",
+      "topic": "background",
+      "summary": "Temperature (daily_minimum): Moderately hardy; damage below about -10 C",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.cold"
+      }
+    },
+    {
+      "id": "t-italian-ryegrass-cycle-duration-background-231",
+      "topic": "background",
+      "summary": "Cycle: Annual, 3-5 cuts, season ends May-June",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.cycle_duration"
+      }
+    },
+    {
+      "id": "t-italian-ryegrass-preferred-predecessor-background-232",
+      "topic": "background",
+      "summary": "preferred predecessor: Summer crops or legumes",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.preferred_predecessor"
+      }
+    },
+    {
+      "id": "t-italian-ryegrass-prohibited-predecessor-background-233",
+      "topic": "background",
+      "summary": "prohibited predecessor: Ryegrass after cereals with shared diseases",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.prohibited_predecessor"
+      }
+    },
+    {
+      "id": "t-italian-ryegrass-observed-yield-yield-234",
+      "topic": "yield",
+      "summary": "Yield (Green forage ~30-60 t/ha irrigated; ~6-10 t DM/ha (not Moroccan statistics)). AI recall, not a Moroccan statistic.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall; not Moroccan statistics unless stated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.observed_yield"
+      }
+    },
+    {
+      "id": "t-italian-ryegrass-varieties-background-235",
+      "topic": "background",
+      "summary": "Types: Annual vs perennial ryegrass types; no Moroccan cultivar names recalled.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General recall; names omitted where not confident",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.italian-ryegrass.varieties"
+      }
+    },
+    {
+      "id": "c11-italian-ryegrass-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.italian-ryegrass"
+      }
+    },
+    {
+      "id": "c11-italian-ryegrass-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.italian-ryegrass"
+      }
+    },
+    {
+      "id": "c11-italian-ryegrass-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: high.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.italian-ryegrass"
+      }
+    },
+    {
+      "id": "c11-italian-ryegrass-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: high.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.italian-ryegrass"
+      }
+    },
+    {
+      "id": "c11-italian-ryegrass-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: high.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.italian-ryegrass"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

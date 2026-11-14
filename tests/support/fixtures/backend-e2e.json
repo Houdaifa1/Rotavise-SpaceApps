@@ -1,0 +1,75 @@
+{
+  "synthetic": true,
+  "note": "Illustrative farmer submission for backend verification, never an observed farm history, soil test or diagnosis. Pilot point/outline match the published P9 real satellite samples. Satellite evidence is read separately from docs/evidence.",
+  "profile": {
+    "schema_version": "1",
+    "name": "Tadla pilot — illustrative inputs",
+    "location": { "latitude": 32.4, "longitude": -6.55 },
+    "soil": {
+      "status": "known",
+      "observations": [
+        {
+          "metric": "ph",
+          "value": 7,
+          "unit": "pH",
+          "method": "unknown",
+          "measured_on": "2026-06-01",
+          "source": "farmer_observation"
+        }
+      ]
+    },
+    "water": { "status": "reported", "availability": "irrigation_available" },
+    "crop_health": {
+      "status": "reported",
+      "observations": [
+        {
+          "crop_id": "durum-wheat",
+          "kind": "disease",
+          "name": "unidentified leaf symptoms",
+          "observed_on": "2026-04-01",
+          "source": "farmer_report",
+          "confirmation": "reported"
+        }
+      ]
+    }
+  },
+  "history": {
+    "schema_version": "1",
+    "crop_id": "durum-wheat",
+    "planted_on": "2025-11-01",
+    "harvested_on": "2026-06-01"
+  },
+  "boundary": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-6.5503, 32.3998],
+        [-6.5496, 32.3998],
+        [-6.5496, 32.4004],
+        [-6.5503, 32.4004],
+        [-6.5503, 32.3998]
+      ]
+    ]
+  },
+  "preferences": {
+    "mode": "consider",
+    "considered_crop_ids": ["barley", "lentil", "durum-wheat", "faba-bean"],
+    "excluded_crop_ids": [],
+    "priorities": {
+      "climate": 3,
+      "water": 2,
+      "soil_health": 2,
+      "crop_health": 1
+    },
+    "equipment_limits": { "mechanisation": "small" },
+    "market_access": "local",
+    "income_weight": 3
+  },
+  "current_rotation": { "crop_ids": ["durum-wheat", "faba-bean"] },
+  "farmer_context": {
+    "equipment": "limited",
+    "market_preference": "household_food",
+    "forage_need": "some",
+    "erosion_concern": "moderate"
+  }
+}

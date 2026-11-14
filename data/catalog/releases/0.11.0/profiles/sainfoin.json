@@ -1,0 +1,432 @@
+{
+  "id": "sainfoin",
+  "version": "0.11.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sainfoin",
+    "localNames": [{ "language": "fr", "name": "Sainfoin" }],
+    "scientificName": "Onobrychis viciifolia",
+    "family": "Fabaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "low",
+      "basis": "Identity recalled by the AI model; names and family not checked against a source.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-08",
+      "researchItem": "C11.crop.sainfoin.identity"
+    }
+  },
+  "harvestProduct": "forage",
+  "modelType": "multi_year_stand",
+  "cultivars": [
+    {
+      "id": "perly",
+      "name": "Perly",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.sainfoin.perly"
+      }
+    },
+    {
+      "id": "visnovsky",
+      "name": "Visnovsky",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.sainfoin.visnovsky"
+      }
+    },
+    {
+      "id": "cotswold-common",
+      "name": "Cotswold Common",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.sainfoin.cotswold-common"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.sainfoin.presence"
+      },
+      "note": "Candidate only: mountain forage legume."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.sainfoin.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-beni-mellal-khenifra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.sainfoin.BMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "c11-sainfoin-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.sainfoin.planting_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. Planting window as recalled.",
+      "metric": "planting_window",
+      "start": "10-15",
+      "end": "02-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "c11-sainfoin-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.sainfoin.cycle_duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as recalled.",
+      "metric": "cycle_duration",
+      "basis": "stand_lifetime",
+      "minDays": 1460,
+      "maxDays": 2555
+    },
+    {
+      "id": "c11-sainfoin-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.sainfoin.temperature"
+      },
+      "conditions": "Recalled by the AI model; unverified. cold damage limit as recalled (whole cycle).",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -25,
+      "upperDegC": null
+    },
+    {
+      "id": "c11-sainfoin-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.sainfoin.temperature"
+      },
+      "conditions": "Recalled by the AI model; unverified. heat damage limit as recalled (whole cycle).",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    {
+      "id": "c11-sainfoin-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.sainfoin.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "c11-sainfoin-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.sainfoin"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6.5,
+      "max": 8.5
+    },
+    {
+      "id": "c11-sainfoin-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.sainfoin"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 2
+    },
+    {
+      "id": "c11-sainfoin-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.sainfoin"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoid waterlogged soil.",
+      "metric": "soil_drainage",
+      "value": "avoid_waterlogging"
+    },
+    {
+      "id": "c11-sainfoin-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.sainfoin"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "low",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-sainfoin-break-phytophthora-medicaginis",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sainfoin.phytophthora-medicaginis"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Phytophthora root rot of alfalfa.",
+      "metric": "crop_health_break",
+      "issueId": "phytophthora-medicaginis",
+      "minimumBreakDays": 1460
+    }
+  ],
+  "references": [
+    {
+      "id": "c11-sainfoin-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Fixes atmospheric nitrogen through root symbiosis, which can reduce nitrogen needs of the next crop.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.sainfoin"
+      }
+    },
+    {
+      "id": "c11-sainfoin-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class very deep (about 2 to 5 m).",
+      "value": { "unit": "m (class range)", "min": 2, "max": 5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.sainfoin"
+      }
+    },
+    {
+      "id": "c11-sainfoin-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: high.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.sainfoin"
+      }
+    },
+    {
+      "id": "c11-sainfoin-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: high.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.sainfoin"
+      }
+    },
+    {
+      "id": "c11-sainfoin-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: high.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.sainfoin"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "other",
+      "reason": "Every value was recalled by the AI model and is unverified."
+    }
+  ],
+  "limitations": [
+    "Added in 0.11.0 from AI recall; no source consulted; not expert reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

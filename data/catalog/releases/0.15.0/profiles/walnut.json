@@ -1,0 +1,1397 @@
+{
+  "id": "walnut",
+  "version": "0.15.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Walnut",
+    "localNames": [
+      { "language": "fr", "name": "Noyer" },
+      { "language": "ar", "name": "الجوز" },
+      {
+        "language": "ary",
+        "name": "الكركاع",
+        "recall": {
+          "confidence": "high",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.walnut.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "كركاع",
+        "citations": [
+          {
+            "sourceId": "darija-wikt-041",
+            "locator": "Moroccan Arabic → Noun",
+            "interpretation": "direct",
+            "note": "Explicit Moroccan Arabic section of Wiktionary. Wiktionary supplies the Moroccan Arabic word and English crop gloss; scientific identity is supplied by a separate saved botanical source. Botanical pairing: WD-SPARQL-OTHER, see research record. Research record: walnut.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "كركاع"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      },
+      {
+        "language": "ary",
+        "name": "الجوز",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-noyer",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: walnut.ary.1. Native-speaker review pending.",
+            "page": null,
+            "quote": "الجوز"
+          }
+        ],
+        "confidence": "low"
+      }
+    ],
+    "scientificName": "Juglans regia L.",
+    "family": "Juglandaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:walnut"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "franquette",
+      "name": "Franquette",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.franquette"
+      },
+      "notes": "cultivar; French"
+    },
+    {
+      "id": "hartley",
+      "name": "Hartley",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.hartley"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "serr",
+      "name": "Serr",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.serr"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "chandler",
+      "name": "Chandler",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.chandler"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "local-seedling-populations",
+      "name": "Local seedling populations",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.local-seedling-populations"
+      },
+      "notes": "local population; Atlas valleys"
+    },
+    {
+      "id": "lara",
+      "name": "Lara",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.lara"
+      }
+    },
+    {
+      "id": "howard",
+      "name": "Howard",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.howard"
+      }
+    },
+    {
+      "id": "tulare",
+      "name": "Tulare",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.tulare"
+      }
+    },
+    {
+      "id": "vina",
+      "name": "Vina",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.vina"
+      }
+    },
+    {
+      "id": "fernor",
+      "name": "Fernor",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.fernor"
+      }
+    },
+    {
+      "id": "fernette",
+      "name": "Fernette",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.fernette"
+      }
+    },
+    {
+      "id": "parisienne",
+      "name": "Parisienne",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.parisienne"
+      }
+    },
+    {
+      "id": "mayette",
+      "name": "Mayette",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.mayette"
+      }
+    },
+    {
+      "id": "corne",
+      "name": "Corne",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.corne"
+      }
+    },
+    {
+      "id": "payne",
+      "name": "Payne",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.payne"
+      }
+    },
+    {
+      "id": "solano",
+      "name": "Solano",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.solano"
+      }
+    },
+    {
+      "id": "pedro",
+      "name": "Pedro",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.pedro"
+      }
+    },
+    {
+      "id": "sunland",
+      "name": "Sunland",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.walnut.sunland"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:walnut"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.walnut.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-beni-mellal-khenifra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.walnut.BMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.walnut.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-walnut-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy/horticulture knowledge: spring frost kills new shoots and catkins near -2 C; dormant wood tolerates far lower",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.walnut.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"budburst\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-walnut-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: kernel and husk sunburn above about 38 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.walnut.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"fruit_development\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    {
+      "id": "c11-walnut-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.walnut"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7.5
+    },
+    {
+      "id": "c11-walnut-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.walnut"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.5
+    },
+    {
+      "id": "c11-walnut-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.walnut"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    }
+  ],
+  "references": [
+    {
+      "id": "f-walnut-yield-fruits-secs-yield-442",
+      "topic": "yield",
+      "summary": "Yield (system mostly seedling forest-style orchards; region national, Morocco)",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-le360-fruits-secs",
+          "locator": "article body",
+          "interpretation": "normalized",
+          "note": "Area (6,923 ha) and about 12,000 t are in the preceding sentences of the same article.",
+          "page": null,
+          "quote": "la productivité moyenne de cette filière est, elle, faible en se situant à 0,6 t/ha de noix en coque non-décortiquées"
+        }
+      ]
+    },
+    {
+      "id": "t-a-walnut-chilling-chill-requirement-579",
+      "topic": "chill_requirement",
+      "summary": "Chill requirement 700–1500 hours_below_7C. A dormancy requirement, not a damage limit.",
+      "value": { "unit": "hours_below_7C", "min": 700, "max": 1500 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: cultivar dependent",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.walnut.chilling"
+      }
+    },
+    {
+      "id": "t-b-walnut-planting-window-background-580",
+      "topic": "background",
+      "summary": "Planting: 12-01 to 02-28",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall: planting of dormant trees in winter",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.walnut.planting_window"
+      }
+    },
+    {
+      "id": "t-b-walnut-stand-lifetime-background-581",
+      "topic": "background",
+      "summary": "Stand lifetime 18250–36500 days.",
+      "value": { "unit": "days", "min": 18250, "max": 36500 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: 50 years or more; first useful crop about year 5 to 8; orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.walnut.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-c-walnut-rotation-background-582",
+      "topic": "background",
+      "summary": "Rotation: orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "perennial; not rotated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.walnut.rotation"
+      }
+    },
+    {
+      "id": "t-f-walnut-observed-yield-yield-583",
+      "topic": "yield",
+      "summary": "Yield 0.5–4 t/ha (system rainfed_to_irrigated). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 0.5, "max": 4 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall; irrigated modern orchards at the high end",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.walnut.observed_yield"
+      }
+    },
+    {
+      "id": "c11-walnut-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.walnut"
+      }
+    },
+    {
+      "id": "c11-walnut-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class very deep (about 2 to 5 m).",
+      "value": { "unit": "m (class range)", "min": 2, "max": 5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.walnut"
+      }
+    },
+    {
+      "id": "c11-walnut-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.walnut"
+      }
+    },
+    {
+      "id": "c11-walnut-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.walnut"
+      }
+    },
+    {
+      "id": "c11-walnut-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.walnut"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "walnut-onca-walnut-prices-1",
+          "kind": "prices",
+          "value": { "min": 1500, "max": 2000 },
+          "unit": "dh/quintal",
+          "currency": "MAD",
+          "year": null,
+          "region": "Fès-Meknès; Béni Mellal-Khénifra; Marrakech-Safi",
+          "commodity": null,
+          "scenarioId": null,
+          "definition": "published_range",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-walnut",
+              "sourceSha256": "2c853149fdd9c9459c3ffcd229ec8303aae562154253d88a393508c3e877df47",
+              "quote": "Le prix de vente des noix en coques varie dans une fourchette de 1 500 à 2 000 dh/ quintal.",
+              "locator": "{\"pdfPage\":62}",
+              "quoteCheck": "income:walnut.prices.walnut-onca-walnut-prices-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "farm sale; exact transaction stage not stated",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_range",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "rangeScope": "Published range across source zones, quality and/or selling methods; not annual same-market extremes.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-onca-walnut-prices-2",
+          "kind": "prices",
+          "value": 1700,
+          "unit": "Dh/qx",
+          "currency": "MAD",
+          "year": null,
+          "region": "Fès-Meknès: mountains, gravity irrigation",
+          "commodity": null,
+          "scenarioId": "walnut-onca-orchard-selected",
+          "definition": "published_point",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-walnut",
+              "sourceSha256": "2c853149fdd9c9459c3ffcd229ec8303aae562154253d88a393508c3e877df47",
+              "quote": "Gravitaire 15 1700 25500",
+              "locator": "{\"pdfPage\":62}",
+              "quoteCheck": "income:walnut.prices.walnut-onca-walnut-prices-2.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "sale of walnuts in shell",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Selling-price column in per-hectare receipts table.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 1732.8,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Walnuts, in shell",
+          "scenarioId": "walnut-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"222\",\"'01376\",\"Walnuts, in shell\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"1732.800000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1918023,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:walnut.yields.walnut-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 3686.6,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Walnuts, in shell",
+          "scenarioId": "walnut-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"222\",\"'01376\",\"Walnuts, in shell\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"3686.600000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1918024,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:walnut.yields.walnut-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 1809.1,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Walnuts, in shell",
+          "scenarioId": "walnut-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"222\",\"'01376\",\"Walnuts, in shell\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"1809.100000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1918025,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:walnut.yields.walnut-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 1193.7,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Walnuts, in shell",
+          "scenarioId": "walnut-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"222\",\"'01376\",\"Walnuts, in shell\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"1193.700000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1918026,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:walnut.yields.walnut-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 1421.1,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Walnuts, in shell",
+          "scenarioId": "walnut-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"222\",\"'01376\",\"Walnuts, in shell\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"1421.100000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1918027,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:walnut.yields.walnut-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-onca-walnut-yields-6",
+          "kind": "yields",
+          "value": 15,
+          "unit": "qx/ha",
+          "currency": null,
+          "year": null,
+          "region": "Fès-Meknès: mountains, gravity irrigation",
+          "commodity": null,
+          "scenarioId": "walnut-onca-orchard-selected",
+          "definition": "technical_budget_production_assumption",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-walnut",
+              "sourceSha256": "2c853149fdd9c9459c3ffcd229ec8303aae562154253d88a393508c3e877df47",
+              "quote": "Gravitaire 15 1700 25500",
+              "locator": "{\"pdfPage\":62}",
+              "quoteCheck": "income:walnut.yields.walnut-onca-walnut-yields-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "statistic": "technical_budget_production_assumption",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Production column in per-hectare receipts table.",
+            "unitBasis": "Per-hectare budget scope; original production column is Kg or qx.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-onca-walnut-costs-1",
+          "kind": "costs",
+          "value": 9355,
+          "unit": "Dh/Ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Fès-Meknès: mountains, gravity irrigation",
+          "commodity": null,
+          "scenarioId": "walnut-onca-orchard-selected",
+          "definition": "Source variable costs, including family labour when valued by the table.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-walnut",
+              "sourceSha256": "2c853149fdd9c9459c3ffcd229ec8303aae562154253d88a393508c3e877df47",
+              "quote": "Gravitaire 6435 2200 720 9355",
+              "locator": "{\"pdfPage\":62}",
+              "quoteCheck": "income:walnut.costs.walnut-onca-walnut-costs-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Final column: total variable costs.",
+            "costDefinition": "Source variable costs, including family labour when valued by the table.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "walnut-onca-walnut-margins-1",
+          "kind": "margins",
+          "value": 8316,
+          "unit": "DH/ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Fès-Meknès: mountains, gravity irrigation",
+          "commodity": null,
+          "scenarioId": "walnut-onca-orchard-selected",
+          "definition": "Source calls this gross margin but deducts fixed depreciation as well as variable costs; not comparable to revenue minus variable costs alone.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-walnut",
+              "sourceSha256": "2c853149fdd9c9459c3ffcd229ec8303aae562154253d88a393508c3e877df47",
+              "quote": "Gravitaire 8316",
+              "locator": "{\"pdfPage\":63}",
+              "quoteCheck": "income:walnut.margins.walnut-onca-walnut-margins-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "marginDefinition": "Source calls this gross margin but deducts fixed depreciation as well as variable costs; not comparable to revenue minus variable costs alone.",
+            "validationFlags": [
+              "source_margin_definition_includes_depreciation"
+            ],
+            "provenanceType": "source_quote"
+          }
+        }
+      ],
+      "options": [],
+      "gaps": [
+        {
+          "field": "economicObservationYear",
+          "status": "not_found",
+          "scope": "At least one regional/illustrative budget has no explicitly attached observation year; no publication/upload/contract year substituted."
+        },
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ],
+      "version": "benefits-2",
+      "records": [
+        {
+          "id": "b4.walnut.biological_nitrogen_fixation.recall",
+          "category": "biological_nitrogen_fixation",
+          "status": "not_found",
+          "effect": "Not applicable: no conventional symbiotic crop N-fixation trait; associated free-living microbes are not a crop nitrogen credit.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "not_applicable",
+            "value": "not applicable",
+            "unit": "kg N/ha per crop period"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "high",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for biological nitrogen fixation; Crop does not have the conventional legume root-nodule fixation system.. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.biological_nitrogen_fixation.recall"
+          },
+          "applicability": "not_applicable",
+          "reason": "Crop does not have the conventional legume root-nodule fixation system."
+        },
+        {
+          "id": "b4.walnut.residual_nitrogen_credit.recall",
+          "category": "residual_nitrogen_credit",
+          "status": "model_recall",
+          "effect": "Residues may recycle N already taken from soil; no new fixed-N credit. High-carbon residues may temporarily immobilize N. Quantity to the next crop is not quantified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "recycling only; net credit unquantified",
+            "unit": "kg N/ha to following crop"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for residual nitrogen credit; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.residual_nitrogen_credit.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.forage_residue_feed.recall",
+          "category": "forage_residue_feed",
+          "status": "model_recall",
+          "effect": "Selected leaves, pods or processing residues may have feed uses; woody prunings are not routine forage and species-specific safety and ration checks are essential.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional roughage or residue",
+            "unit": "qualitative feed value"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for forage residue feed; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.forage_residue_feed.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.disease_break.recall",
+          "category": "disease_break",
+          "status": "model_recall",
+          "effect": "A standing perennial is not an annual rotation break; assess a separately managed orchard-floor crop and its hosts. Repeating Juglandaceae can maintain family-associated disease inoculum. Crop family alone does not prove a disease-free interval.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional family break",
+            "unit": "qualitative next-crop disease effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for disease break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.disease_break.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.pest_break.recall",
+          "category": "pest_break",
+          "status": "model_recall",
+          "effect": "A standing perennial is not an annual rotation break; assess a separately managed orchard-floor crop and its hosts. Host weeds, volunteers and broad-host-range pests can bridge the interval; verify the named pest and next crop.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional host interruption",
+            "unit": "qualitative next-crop pest effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for pest break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.pest_break.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.weed_break.recall",
+          "category": "weed_break",
+          "status": "model_recall",
+          "effect": "Changing sowing season and cultivation may change weed pressure. Volunteers or seed return can offset suppression; no herbicidal effect or numerical reduction is assumed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "management-dependent weed pressure",
+            "unit": "qualitative weed effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for weed break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.weed_break.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.rooting_soil_structure_infiltration.recall",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "model_recall",
+          "effect": "Established perennial roots occupy soil over multiple years; rooting and orchard-floor infiltration depend on soil and management. Potential improvement is not a measured infiltration rate.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "root channels; depth not quantified",
+            "unit": "qualitative rooting/infiltration effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for rooting soil structure infiltration; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.rooting_soil_structure_infiltration.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.erosion_cover_residue.recall",
+          "category": "erosion_cover_residue",
+          "status": "model_recall",
+          "effect": "Litter and maintained orchard-floor vegetation can protect soil; tree canopy with bare interrows can still permit erosion. No crop-specific management C factor is recalled; tillage, cover fraction and season must be specified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "protective cover potential; C unquantified",
+            "unit": "dimensionless RUSLE C (unquantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for erosion cover residue; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.erosion_cover_residue.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.bare_soil_period_shortening.recall",
+          "category": "bare_soil_period_shortening",
+          "status": "model_recall",
+          "effect": "A maintained perennial stand can extend living-root presence; canopy gaps and harvest disturbance may still expose soil. No reduction in days is estimated without a comparison calendar.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "calendar-dependent cover duration",
+            "unit": "day (not quantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for bare soil period shortening; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.bare_soil_period_shortening.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.organic_matter_soil_carbon.recall",
+          "category": "organic_matter_soil_carbon",
+          "status": "model_recall",
+          "effect": "Retained litter, safe chipped prunings and orchard-floor cover can return organic material. Decomposition, tillage and water balance determine net soil C; no sequestration rate is claimed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional organic inputs; net C unquantified",
+            "unit": "soil C contribution (qualitative)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for organic matter soil carbon; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.organic_matter_soil_carbon.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.drought_tolerance.recall",
+          "category": "drought_tolerance",
+          "status": "model_recall",
+          "effect": "Moderate or variable drought response; establishment and reproductive stages may remain sensitive. Survival under drought does not establish low seasonal water demand.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative drought tolerance"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for drought tolerance; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.drought_tolerance.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.water_demand.recall",
+          "category": "water_demand",
+          "status": "model_recall",
+          "effect": "High seasonal demand under productive, full-cover management; climate, cycle length and crop coefficient determine ET. Rainfall and soil storage must be deducted to assess irrigation; drought survival is a separate trait.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "high",
+            "unit": "qualitative seasonal ET class"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Walnut (Juglandaceae) agronomy for water demand; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.walnut.water_demand.recall"
+          }
+        },
+        {
+          "id": "b4.walnut.rooting_soil_structure_infiltration.fao-roots",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "sourced",
+          "effect": "FAO-56 maximum effective rooting depth for Walnut Orchard; this is a reference rooting range, not measured infiltration or a guarantee of penetration through compacted soil.",
+          "nonLocal": true,
+          "region": "Global reference; not validated on this Moroccan field",
+          "conditions": [
+            "FAO-56 Table 22 generic conditions; use shallower roots for irrigation scheduling where soil restricts growth.",
+            "Source row: Walnut Orchard; first listed management/season scenario retained. Other scenarios remain in the saved source."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "min": 1.7,
+            "max": 2.4,
+            "unit": "m maximum effective rooting depth"
+          },
+          "citations": [
+            {
+              "sourceId": "b4-fao-roots",
+              "quote": "Walnut Orchard |\n1.7-2.4",
+              "locator": "{\"section\":\"FAO-56 Table 22\",\"lineStart\":564,\"textFile\":\".research-sources/2026-11-11/fao-roots.txt\"}",
+              "sourceSha256": "f7eabb739742734c411a8d31527b709fba004a943e373ed406587017b3be0e98",
+              "quoteCheck": "b4:b4.walnut.rooting_soil_structure_infiltration.fao-roots"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

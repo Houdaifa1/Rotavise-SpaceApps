@@ -1,0 +1,17 @@
+{
+  "errors": [
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:53487/api/v1/health/ready",
+      "status": 503
+    },
+    {
+      "url": "http://127.0.0.1:53487/api/v1/account",
+      "status": 404
+    }
+  ],
+  "body": "Aller au contenu\nGlossaire\nPhoto de culture\nÀ propos\nFR\nEN\nRotavise\nRotavise ne peut pas joindre son serveur pour le moment.\n\nVotre travail enregistré est conservé sur le serveur.\n\nNouvelle tentative dans 10 secondes.\n\nRéessayer"
+}

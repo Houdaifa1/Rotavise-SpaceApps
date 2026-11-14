@@ -1,0 +1,407 @@
+{
+  "id": "eggplant",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Eggplant",
+    "localNames": [{ "language": "fr", "name": "Aubergine" }],
+    "scientificName": "Solanum melongena L.",
+    "family": "Solanaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-eggplant",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Solanum melongena L.\""
+      },
+      {
+        "sourceId": "pntta-solanums",
+        "locator": "PDF page 2",
+        "interpretation": "direct",
+        "note": "French name as written.",
+        "page": 2,
+        "quote": "L'AUBERGINE"
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "black-beauty",
+      "name": "Black Beauty",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.eggplant.black-beauty"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "violette-de-barbentane",
+      "name": "Violette de Barbentane",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.eggplant.violette-de-barbentane"
+      },
+      "notes": "cultivar; French; oval purple"
+    },
+    {
+      "id": "long-purple-black-types",
+      "name": "Long purple/black types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.eggplant.long-purple-black-types"
+      },
+      "notes": "type group"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-solanums",
+          "locator": "PDF page 2",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin.",
+          "page": 2,
+          "quote": "L'AUBERGINE"
+        }
+      ],
+      "note": "National bulletin; irrigated; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "eggplant-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-solanums",
+          "locator": "PDF page 3",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": 3,
+          "quote": "Culture de saison (plein champ): semis en Mars-Mai"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Open-field season crop.",
+      "metric": "planting_window",
+      "start": "03-01",
+      "end": "05-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "eggplant-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "FAO row of 130 days; the table's Mediterranean row prints an unusable total.",
+          "page": null,
+          "quote": "30 40 40 20 130"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO arid-region row.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 130,
+      "maxDays": 130
+    },
+    {
+      "id": "eggplant-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values.",
+          "page": null,
+          "quote": "Egg Plant 1.05 0.90"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group.",
+          "page": null,
+          "quote": "Solanum Family (Solanaceae) 0.6 1.15 0.80"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "30 40 40 20 130"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.6,
+      "kcMid": 1.05,
+      "kcEnd": 0.9,
+      "stageLengths": [30, 40, 40, 20]
+    },
+    {
+      "id": "c-eggplant-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-solanums",
+          "locator": "PDF page 3 (pdftotext page split; the PDF is OCR'd from a 3-column bulletin layout and pdftotext reads columns out of strict order, so the quote below is the exact text as extracted even though neighbouring sentences on the same page belong to other columns)",
+          "interpretation": "normalized",
+          "note": "The bulletin explicitly states eggplant culture practice equals pepper's immediately before this passage, so the rotation requirement is read as applying to both. Corroborates, with an independent source, the catalog's existing C.eggplant.minimum_return_interval (5 years, Solanaceae, from pntta-roots.pdf, nematode management) — two sources now agree on a ~4-5 year Solanaceae break for eggplant. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 3
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. soil-borne disease build-up under solanaceous monoculture Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Solanaceae"
+    },
+    {
+      "id": "t-a-eggplant-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture/agronomy knowledge: frost-tender Solanaceae; chilling injury already below roughly 10 C but 0 C used as the kill level",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.eggplant.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-eggplant-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general horticulture/agronomy knowledge: above about 35 C flower drop and poor fruit set",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.eggplant.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-c-eggplant-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.eggplant.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-fill-eggplant-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 40 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.eggplant.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    }
+  ],
+  "references": [
+    {
+      "id": "c-eggplant-minimum-return-interval-background-4",
+      "topic": "background",
+      "summary": "Return interval 5 years under condition: nematode management.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-pntta-roots",
+          "locator": "PDF/printed pages 1–2, potato — Principaux ennemis, continuation",
+          "interpretation": "normalized",
+          "note": "The source explicitly extends its return rule to a solanaceous crop. Preserve the nematode-management context and the source's five-year return wording; do not reinterpret as five intervening full years.",
+          "page": null,
+          "quote": "avant cinq années"
+        }
+      ]
+    },
+    {
+      "id": "f-eggplant-observed-yield-yield-20",
+      "topic": "yield",
+      "summary": "Yield 20–20 t/ha (product fresh fruit; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 20, "max": 20 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 67 / printed page 64, Table 37, Aubergine row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. No farming-system breakdown. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "id": "f-eggplant-settat-2015-2016-yield-21",
+      "topic": "yield",
+      "summary": "Yield 15–15 t/ha (product fresh fruit; years 2015-2016; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 15, "max": 15 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 71, Production agricole, Aubergine row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "id": "a-eggplant-heat-background-74",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 40 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Solanum melongena\"; field TMAX",
+          "interpretation": "normalized",
+          "note": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "k-eggplant-background-51",
+      "topic": "background",
+      "summary": "Warm-season fruiting vegetable with a prolonged harvest period. Chilling restricts growth and frost damages plants. Excessive heat and water stress can impair flower retention and fruit set. Tomato, pepper and potato may share some diseases; host specificity still needs organism-level checking. Transplant age and the distinction between first picking and final picking affect the cycle definition.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.eggplant"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

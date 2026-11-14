@@ -1,0 +1,71 @@
+[
+  {
+    "command": "pnpm lint",
+    "startedAt": "2026-11-12T21:05:23.287796+00:00",
+    "status": "passed",
+    "log": "lint.log",
+    "exitCode": 0,
+    "elapsedSeconds": 11.53,
+    "finishedAt": "2026-11-12T21:05:34.815255+00:00"
+  },
+  {
+    "command": "pnpm format:check",
+    "startedAt": "2026-11-12T21:05:34.815848+00:00",
+    "status": "passed",
+    "log": "format-check.log",
+    "exitCode": 0,
+    "elapsedSeconds": 18.27,
+    "finishedAt": "2026-11-12T21:05:53.091202+00:00"
+  },
+  {
+    "command": "pnpm typecheck",
+    "startedAt": "2026-11-12T21:05:53.091605+00:00",
+    "status": "passed",
+    "log": "typecheck.log",
+    "exitCode": 0,
+    "elapsedSeconds": 21.35,
+    "finishedAt": "2026-11-12T21:06:14.444919+00:00"
+  },
+  {
+    "command": "pnpm build",
+    "startedAt": "2026-11-12T21:06:14.445592+00:00",
+    "status": "passed",
+    "log": "build.log",
+    "exitCode": 0,
+    "elapsedSeconds": 16.02,
+    "finishedAt": "2026-11-12T21:06:30.463184+00:00"
+  },
+  {
+    "command": "pnpm test:unit",
+    "startedAt": "2026-11-12T21:06:30.463795+00:00",
+    "status": "passed",
+    "log": "test-unit.log",
+    "exitCode": 0,
+    "elapsedSeconds": 17.85,
+    "finishedAt": "2026-11-12T21:06:48.315073+00:00"
+  },
+  {
+    "command": "pnpm test:web",
+    "startedAt": "2026-11-12T21:06:48.315757+00:00",
+    "status": "passed",
+    "log": "test-web.log",
+    "exitCode": 0,
+    "elapsedSeconds": 7.19,
+    "finishedAt": "2026-11-12T21:06:55.502402+00:00"
+  },
+  {
+    "command": "pnpm test:map",
+    "startedAt": "2026-11-12T21:06:55.502749+00:00",
+    "status": "passed",
+    "log": "test-map.log",
+    "exitCode": 0,
+    "elapsedSeconds": 54.98,
+    "finishedAt": "2026-11-12T21:07:50.478104+00:00"
+  },
+  {
+    "command": "pnpm test:e2e --reporter=list,json",
+    "startedAt": "2026-11-12T21:29:17.613810+00:00",
+    "status": "running",
+    "log": "test-e2e.log"
+  }
+]

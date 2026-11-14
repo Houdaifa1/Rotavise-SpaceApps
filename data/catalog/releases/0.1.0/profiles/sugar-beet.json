@@ -1,0 +1,174 @@
+{
+  "id": "sugar-beet",
+  "version": "0.1.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sugar beet",
+    "scientificName": "Beta vulgaris L.",
+    "family": "Amaranthaceae",
+    "citations": [
+      {
+        "sourceId": "kew-beet",
+        "locator": "Accepted name and classification",
+        "interpretation": "direct",
+        "note": "Accepted taxonomic identity; not cultivar evidence."
+      }
+    ]
+  },
+  "harvestProduct": "sugar_root",
+  "cultivar": {
+    "status": "unknown",
+    "reason": "No cultivar selected or locally reviewed. Maturity and tolerances depend on cultivar and management."
+  },
+  "productionSystems": ["unspecified"],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "context_only",
+          "note": "Explicit regional context; actual farm/campaign applicability pending."
+        }
+      ],
+      "note": "Pilot research candidate only; requires specialist assessment for the actual farm and campaign."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "reason": "No Beni Mellal agronomist review has occurred. Research extraction is not agricultural validation."
+  },
+  "knowledge": {
+    "plantingWindows": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "beet-tadla-autumn",
+          "citations": [
+            {
+              "sourceId": "onca-sugar-beet",
+              "locator": "PDF page 10, Table 3; page 8, section 3.1.2.1",
+              "interpretation": "normalized",
+              "note": "Early September to mid-November approximated; annual campaign confirmation required."
+            }
+          ],
+          "evidenceRegionIds": ["beni-mellal-tadla"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Beni Moussa, Dir and Beni Amir; actual dates determined by regional campaign commission and processing arrangements.",
+          "metric": "planting_window",
+          "unit": "month_day",
+          "timeBasis": "recurring_calendar",
+          "stage": "sowing",
+          "start": "09-01",
+          "end": "11-15",
+          "precision": "approximate"
+        }
+      ]
+    },
+    "duration": {
+      "status": "unknown",
+      "reason": "The page 10 irrigation example has a 250-day cycle, but is not a cultivar-specific maturity interval and is not used for scheduling."
+    },
+    "soilRequirements": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "beet-ph",
+          "citations": [
+            {
+              "sourceId": "onca-sugar-beet",
+              "locator": "PDF page 6, section 2",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["beni-mellal-tadla"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source favorable pH range; laboratory method unspecified.",
+          "metric": "soil_ph",
+          "unit": "pH",
+          "timeBasis": "field_measurement",
+          "stage": "whole_cycle",
+          "method": "unspecified",
+          "min": 6.5,
+          "max": 7.5
+        }
+      ]
+    },
+    "temperatureRequirements": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "beet-growth-maxima",
+          "citations": [
+            {
+              "sourceId": "onca-sugar-beet",
+              "locator": "PDF page 6, section 2",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["beni-mellal-tadla"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source reference range, not an exclusion threshold; measurement medium/averaging unresolved.",
+          "metric": "temperature",
+          "unit": "degC",
+          "timeBasis": "unspecified",
+          "stage": "vegetative_growth",
+          "medium": "unspecified",
+          "min": 20,
+          "max": 28
+        }
+      ]
+    },
+    "waterDemandClass": {
+      "status": "unknown",
+      "reason": "No shared sourced comparison method for low/moderate/high demand across these crops."
+    },
+    "waterReference": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "beet-water-scenario",
+          "citations": [
+            {
+              "sourceId": "onca-sugar-beet",
+              "locator": "PDF page 6, section 2",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["beni-mellal-tadla"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source water-use scenario for root yield 60 tonnes/ha; not net irrigation, available farm water or water balance.",
+          "metric": "seasonal_crop_water_reference",
+          "unit": "mm",
+          "timeBasis": "source_scenario_whole_cycle",
+          "stage": "whole_cycle",
+          "min": 550,
+          "max": 600
+        }
+      ]
+    },
+    "rotationRestrictions": {
+      "status": "unknown",
+      "reason": "No reviewed numerical return interval or transition exclusions for the pilot established from this source."
+    }
+  },
+  "limitations": [
+    "Sugar beet requires local campaign and processing context; profile is a candidate, not a recommendation.",
+    "Older agronomy terminology Chenopodiaceae is reconciled to current Kew Amaranthaceae identity.",
+    "Source describes favorable temperature maxima but does not specify a daily measurement basis.",
+    "Degree-day reference has no defined base temperature; no thermal duration model inferred."
+  ]
+}

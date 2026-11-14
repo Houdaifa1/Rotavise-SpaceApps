@@ -1,0 +1,34 @@
+$ pnpm build:server && node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/web/jest.config.mjs --selectProjects unit web-unit
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+Running 2 projects:
+- unit
+- web-unit
+(node:99073) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99072) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99071) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99069) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99068) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99076) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99075) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99074) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99070) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Test Suites: 12 passed, 12 total
+Tests:       423 passed, 423 total
+Snapshots:   0 total
+Time:        3.157 s
+Ran all test suites in 2 projects.

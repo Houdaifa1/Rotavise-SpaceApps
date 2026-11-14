@@ -1,0 +1,425 @@
+{
+  "id": "lima-bean",
+  "version": "0.12.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Lima bean",
+    "localNames": [
+      { "language": "fr", "name": "Haricot de Lima" },
+      {
+        "language": "ar",
+        "name": "فاصوليا ليما",
+        "recall": {
+          "confidence": "medium",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.lima-bean.ar"
+        }
+      }
+    ],
+    "scientificName": "Phaseolus lunatus",
+    "family": "Fabaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "low",
+      "basis": "Identity recalled by the AI model; names and family not checked against a source.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-08",
+      "researchItem": "C11.crop.lima-bean.identity"
+    }
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.lima-bean.presence"
+      },
+      "note": "Candidate only: minor pulse."
+    }
+  ],
+  "rules": [
+    {
+      "id": "c11-lima-bean-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.lima-bean.planting_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. Planting window as recalled.",
+      "metric": "planting_window",
+      "start": "04-01",
+      "end": "06-01",
+      "precision": "approximate"
+    },
+    {
+      "id": "c11-lima-bean-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.lima-bean.cycle_duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 100,
+      "maxDays": 150
+    },
+    {
+      "id": "c11-lima-bean-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.lima-bean.temperature"
+      },
+      "conditions": "Recalled by the AI model; unverified. cold damage limit as recalled (whole cycle).",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 2,
+      "upperDegC": null
+    },
+    {
+      "id": "c11-lima-bean-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.lima-bean.temperature"
+      },
+      "conditions": "Recalled by the AI model; unverified. heat damage limit as recalled (whole cycle).",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    {
+      "id": "c11-lima-bean-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.lima-bean.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "c11-lima-bean-crop-water-coefficient",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO-56 Table 11 and 12 pattern recalled for the crop or its group; not checked against the tables.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop_water_coefficient.lima-bean"
+      },
+      "conditions": "Recalled by the AI model; unverified. FAO-56 style crop coefficients and stage lengths in days, recalled for this crop or its crop group.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.4,
+      "kcMid": 1.15,
+      "kcEnd": 0.35,
+      "stageLengths": [20, 30, 40, 20]
+    },
+    {
+      "id": "c11-lima-bean-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.lima-bean"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7
+    },
+    {
+      "id": "c11-lima-bean-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.lima-bean"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.5
+    },
+    {
+      "id": "c11-lima-bean-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.lima-bean"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-lima-bean-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.lima-bean"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-lima-bean-break-xanthomonas-axonopodis-phaseoli",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lima-bean.xanthomonas-axonopodis-phaseoli"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Common bacterial blight of bean.",
+      "metric": "crop_health_break",
+      "issueId": "xanthomonas-axonopodis-phaseoli",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-lima-bean-break-pseudomonas-syringae-phaseolicola",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.lima-bean.pseudomonas-syringae-phaseolicola"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Halo blight of bean.",
+      "metric": "crop_health_break",
+      "issueId": "pseudomonas-syringae-phaseolicola",
+      "minimumBreakDays": 730
+    }
+  ],
+  "references": [
+    {
+      "id": "c11-lima-bean-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Fixes atmospheric nitrogen through root symbiosis, which can reduce nitrogen needs of the next crop.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.lima-bean"
+      }
+    },
+    {
+      "id": "c11-lima-bean-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.lima-bean"
+      }
+    },
+    {
+      "id": "c11-lima-bean-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.lima-bean"
+      }
+    },
+    {
+      "id": "c11-lima-bean-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.lima-bean"
+      }
+    },
+    {
+      "id": "c11-lima-bean-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: medium.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.lima-bean"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "other",
+      "reason": "Every value was recalled by the AI model and is unverified."
+    }
+  ],
+  "limitations": [
+    "Added in 0.11.0 from AI recall; no source consulted; not expert reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

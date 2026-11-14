@@ -1,0 +1,297 @@
+{
+  "id": "rye",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Rye",
+    "localNames": [
+      { "language": "fr", "name": "Seigle" },
+      { "language": "ar", "name": "الجودار" }
+    ],
+    "scientificName": "Secale cereale L.",
+    "family": "Poaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:rye"
+    }
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:rye"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-rye-cycle-days-ecocrop-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Secale cereale\", fields GMIN, GMAX",
+          "interpretation": "normalized",
+          "note": "Ecocrop growing-cycle length range in days; not Moroccan and not tied to a sowing date. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Species-level cycle length (FAO Ecocrop), not specific to Moroccan sowing dates. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 110,
+      "maxDays": 270
+    },
+    {
+      "id": "t-fill-rye-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -25 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.rye.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -25,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-rye-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 35 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.rye.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-rye-cycle-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.cycle_duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 170,
+      "maxDays": 200
+    },
+    {
+      "id": "t-rye-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 2
+    },
+    {
+      "id": "t-rye-planting-window-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.planting_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. October-November. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "10-01",
+      "end": "11-30",
+      "precision": "approximate"
+    }
+  ],
+  "references": [
+    {
+      "id": "a-rye-temperature-ecocrop-background-100",
+      "topic": "background",
+      "summary": "Temperature facts (unconfirmed_adaptability_limit): sourceFieldTMIN_degC 3; sourceFieldTMAX_degC 31; sourceFieldKTMP_degC -1.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Secale cereale\", fields TMIN, TMAX, KTMP",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA means no value. Not usable as a catalog damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-rye-heat-background-130",
+      "topic": "background",
+      "summary": "Temperature (daily_maximum): Grain-fill damage above ~30 C daily max",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.heat"
+      }
+    },
+    {
+      "id": "t-rye-cold-background-131",
+      "topic": "background",
+      "summary": "Temperature (daily_minimum): Very winter-hardy; damage mostly below about -20 C",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.cold"
+      }
+    },
+    {
+      "id": "t-rye-preferred-predecessor-background-132",
+      "topic": "background",
+      "summary": "preferred predecessor: Legumes or fallow",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.preferred_predecessor"
+      }
+    },
+    {
+      "id": "t-rye-prohibited-predecessor-background-133",
+      "topic": "background",
+      "summary": "prohibited predecessor: Rye or other cereals the previous year",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.prohibited_predecessor"
+      }
+    },
+    {
+      "id": "t-rye-observed-yield-yield-134",
+      "topic": "yield",
+      "summary": "Yield (Grain ~1.5-3 t/ha; minor crop in Morocco). AI recall, not a Moroccan statistic.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall; not Moroccan statistics unless stated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.observed_yield"
+      }
+    },
+    {
+      "id": "t-rye-varieties-background-135",
+      "topic": "background",
+      "summary": "Types: No Moroccan cultivar names recalled.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General recall; names omitted where not confident",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.rye.varieties"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on."
+  ]
+}

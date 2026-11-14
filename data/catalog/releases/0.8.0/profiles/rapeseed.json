@@ -1,0 +1,257 @@
+{
+  "id": "rapeseed",
+  "version": "0.8.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Rapeseed",
+    "localNames": [{ "language": "fr", "name": "Colza" }],
+    "scientificName": "Brassica napus L.",
+    "family": "Brassicaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-rapeseed",
+        "page": null,
+        "quote": "\"scientificName\":\"Brassica napus L.\"",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "ardna-oilseed-reference",
+        "page": 62,
+        "quote": "Semis du colza",
+        "locator": "PDF page 62, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine."
+      }
+    ]
+  },
+  "harvestProduct": "oilseed",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "page": 22,
+          "quote": "Ces variétés sont destinées à des zones du Bour favorable, notamment le Saïs, le Gharb et le Loukkos",
+          "locator": "PDF page 22",
+          "interpretation": "context_only",
+          "note": "Favourable rainfed zones named by the sheet."
+        }
+      ],
+      "note": "Zones the ONCA sheet names."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "page": 22,
+          "quote": "Ces variétés sont destinées à des zones du Bour favorable, notamment le Saïs, le Gharb et le Loukkos",
+          "locator": "PDF page 22",
+          "interpretation": "context_only",
+          "note": "Favourable rainfed zones named by the sheet."
+        }
+      ],
+      "note": "Zones the ONCA sheet names."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "page": 22,
+          "quote": "Ces variétés sont destinées à des zones du Bour favorable, notamment le Saïs, le Gharb et le Loukkos",
+          "locator": "PDF page 22",
+          "interpretation": "context_only",
+          "note": "Favourable rainfed zones named by the sheet."
+        }
+      ],
+      "note": "Zones the ONCA sheet names."
+    }
+  ],
+  "rules": [
+    {
+      "id": "rapeseed-sowing",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-reference",
+          "page": 62,
+          "quote": "L'époque idéale de semis est comprise entre 15 octobre et 15 novembre",
+          "locator": "PDF page 62, 4.4.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National reference.",
+      "metric": "planting_window",
+      "start": "10-15",
+      "end": "11-15",
+      "precision": "exact_day"
+    },
+    {
+      "id": "rapeseed-duration",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-reference",
+          "page": 64,
+          "quote": "A 163 jours après semis, cette dernière accomplit déjà son cycle biologique",
+          "locator": "PDF page 64, 4.5",
+          "interpretation": "normalized",
+          "note": "One short-cycle variety, Narjisse."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "One short-cycle variety; others may take longer.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 163,
+      "maxDays": 163
+    },
+    {
+      "id": "rapeseed-frost",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "page": 21,
+          "quote": "la température minimale descend en dessous de -4°C",
+          "locator": "PDF page 21, 2.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Foliage frost; the sheet refers to the winter phase.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -4,
+      "upperDegC": null
+    },
+    {
+      "id": "rapeseed-soil-ph",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "page": 21,
+          "quote": "Le meilleur pH du sol se situe entre 6 et 8.5",
+          "locator": "PDF page 21",
+          "interpretation": "normalized",
+          "note": "Range as written; the guide does not state the method."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Preference from the ONCA sheet; warns only.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 8.5
+    },
+    {
+      "id": "rapeseed-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Rapeseed, Canola 1.0-1.15 9 0.35 0.6",
+          "locator": "Table 12, Rapeseed",
+          "interpretation": "normalized",
+          "note": "Upper mid value 1.15 and end 0.35."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Oil Crops 0.35 1.15 0.35",
+          "locator": "Table 12, Oil crops group",
+          "interpretation": "normalized",
+          "note": "Initial value 0.35 from the group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "25 35 45 25 130 April/May Medit.; California",
+          "locator": "Table 11, Sunflower",
+          "interpretation": "normalized",
+          "note": "FAO has no rapeseed row; the sunflower oil crop's stage shares are used as a stated substitute."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.35,
+      "kcMid": 1.15,
+      "kcEnd": 0.35,
+      "stageLengths": [25, 35, 45, 25]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "cycle_duration",
+      "reason": "Only one variety's cycle is sourced."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Water stage shares borrow the sunflower row."
+  ]
+}

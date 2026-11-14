@@ -1,0 +1,99 @@
+{
+  "id": "alfalfa",
+  "version": "0.6.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Alfalfa",
+    "localNames": [],
+    "scientificName": "Medicago sativa L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-alfalfa",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Medicago sativa L.\""
+      }
+    ]
+  },
+  "harvestProduct": "forage",
+  "modelType": "multi_year_stand",
+  "cultivars": [
+    {
+      "id": "africaine",
+      "name": "Africaine",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-alfalfa",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "AFRICAINE INRA-MAROC 1986"
+        }
+      ]
+    },
+    {
+      "id": "moapa",
+      "name": "Moapa",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-alfalfa",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "MOAPA INRA-MAROC 1986"
+        }
+      ]
+    },
+    {
+      "id": "sonora",
+      "name": "Sonora",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-alfalfa",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "SONORA INRA MAROC 1986"
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Forage crops table",
+          "interpretation": "context_only",
+          "note": "Irrigated alfalfa area in the Tadla perimeter.",
+          "page": null,
+          "quote": "Luzerne 30 452"
+        }
+      ],
+      "note": "Listed for Tadla; not schedulable in this release."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "No sourced Tadla sowing window collected yet."
+    },
+    {
+      "topic": "cycle_duration",
+      "reason": "No sourced duration collected yet."
+    }
+  ],
+  "limitations": ["Identity and local presence only."]
+}

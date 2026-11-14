@@ -1,0 +1,210 @@
+{
+  "label": "Real catalog 0.3.0 + live NASA POWER + stored NEX-GDDP-CMIP6 tile; illustrative field; not expert-reviewed",
+  "seconds": 26.6,
+  "status": "completed",
+  "outcome": "comparisons_available",
+  "synthetic": false,
+  "catalog": "rotavise-pilot 0.3.0",
+  "engine": "rotation-engine-4",
+  "regions": ["beni-mellal-tadla", "morocco-general"],
+  "weatherSnapshots": 35,
+  "scenarioUnits": 690,
+  "crops": {
+    "alfalfa": "insufficient_evidence",
+    "barley": "schedulable",
+    "bread-wheat": "schedulable",
+    "chickpea": "insufficient_evidence",
+    "durum-wheat": "schedulable",
+    "faba-bean": "schedulable",
+    "lentil": "insufficient_evidence",
+    "maize": "insufficient_evidence",
+    "sesame": "insufficient_evidence",
+    "sugar-beet": "schedulable"
+  },
+  "choices": [
+    {
+      "cropId": "faba-bean",
+      "role": "considered",
+      "outcome": "ranked",
+      "bestRank": 1
+    },
+    {
+      "cropId": "sugar-beet",
+      "role": "considered",
+      "outcome": "ranked",
+      "bestRank": 49
+    },
+    {
+      "cropId": "durum-wheat",
+      "role": "history",
+      "outcome": "recorded",
+      "bestRank": null
+    }
+  ],
+  "accounting": {
+    "schedulableCrops": 5,
+    "expansions": 780,
+    "completed": 125,
+    "compared": 125,
+    "shown": 50,
+    "pruned": 0,
+    "truncated": false,
+    "rejections": [
+      {
+        "code": "NO_WINDOW_BEFORE_HORIZON",
+        "count": 625
+      }
+    ]
+  },
+  "futureClimate": {
+    "status": "compared",
+    "reason": null,
+    "worldsCompared": 10,
+    "topStableAcrossFutures": true
+  },
+  "top": [
+    {
+      "rank": 1,
+      "rotation": [
+        "faba-bean (sow 2026-10-23..2026-12-31)",
+        "bread-wheat (sow 2027-11-01..2027-12-15)",
+        "faba-bean (sow 2028-10-15..2028-12-31)"
+      ],
+      "climateMeanLoss": 0.01322110884,
+      "worstDecileLoss": 0.022475471785,
+      "analogYears": 30,
+      "soilHealth": 0,
+      "futures": [
+        {
+          "experiment": "ssp245",
+          "meanChange": -0.004859516347,
+          "range": [-0.011561375126, 0.000107025382]
+        },
+        {
+          "experiment": "ssp585",
+          "meanChange": -0.006131542792,
+          "range": [-0.012038990168, -0.002854850804]
+        }
+      ]
+    },
+    {
+      "rank": 1,
+      "rotation": [
+        "faba-bean (sow 2026-10-23..2026-12-31)",
+        "durum-wheat (sow 2027-11-01..2027-12-15)",
+        "faba-bean (sow 2028-10-15..2028-12-31)"
+      ],
+      "climateMeanLoss": 0.01322110884,
+      "worstDecileLoss": 0.022475471785,
+      "analogYears": 30,
+      "soilHealth": 0,
+      "futures": [
+        {
+          "experiment": "ssp245",
+          "meanChange": -0.004859516347,
+          "range": [-0.011561375126, 0.000107025382]
+        },
+        {
+          "experiment": "ssp585",
+          "meanChange": -0.006131542792,
+          "range": [-0.012038990168, -0.002854850804]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "rotation": [
+        "faba-bean (sow 2026-10-23..2026-12-31)",
+        "barley (sow 2027-11-01..2027-12-15)",
+        "faba-bean (sow 2028-10-15..2028-12-31)"
+      ],
+      "climateMeanLoss": 0.017817536148,
+      "worstDecileLoss": 0.028287575742,
+      "analogYears": 30,
+      "soilHealth": 0,
+      "futures": [
+        {
+          "experiment": "ssp245",
+          "meanChange": -0.009871752455,
+          "range": [-0.018120593004, -0.004025806136]
+        },
+        {
+          "experiment": "ssp585",
+          "meanChange": -0.012757142564,
+          "range": [-0.018573591378, -0.010575514968]
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "rotation": [
+        "faba-bean (sow 2026-10-23..2026-12-31)",
+        "faba-bean (sow 2027-10-15..2027-12-31)",
+        "bread-wheat (sow 2028-11-01..2028-12-15)"
+      ],
+      "climateMeanLoss": 0.013128247343,
+      "worstDecileLoss": 0.023956159833,
+      "analogYears": 30,
+      "soilHealth": 0.333333333333,
+      "futures": [
+        {
+          "experiment": "ssp245",
+          "meanChange": -0.005616186318,
+          "range": [-0.012057287803, -0.002251345798]
+        },
+        {
+          "experiment": "ssp585",
+          "meanChange": -0.006775027155,
+          "range": [-0.013322604999, -0.003495010912]
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "rotation": [
+        "faba-bean (sow 2026-10-23..2026-12-31)",
+        "faba-bean (sow 2027-10-15..2027-12-31)",
+        "durum-wheat (sow 2028-11-01..2028-12-15)"
+      ],
+      "climateMeanLoss": 0.013128247343,
+      "worstDecileLoss": 0.023956159833,
+      "analogYears": 30,
+      "soilHealth": 0.333333333333,
+      "futures": [
+        {
+          "experiment": "ssp245",
+          "meanChange": -0.005616186318,
+          "range": [-0.012057287803, -0.002251345798]
+        },
+        {
+          "experiment": "ssp585",
+          "meanChange": -0.006775027155,
+          "range": [-0.013322604999, -0.003495010912]
+        }
+      ]
+    }
+  ],
+  "bestPerConsideredCrop": [
+    {
+      "cropId": "faba-bean",
+      "rank": 1,
+      "rotation": [
+        "faba-bean 2026-10-23",
+        "bread-wheat 2027-11-01",
+        "faba-bean 2028-10-15"
+      ],
+      "climateMeanLoss": 0.01322110884
+    },
+    {
+      "cropId": "sugar-beet",
+      "rank": 49,
+      "rotation": [
+        "sugar-beet 2026-10-23",
+        "faba-bean 2027-10-15",
+        "bread-wheat 2028-11-01"
+      ],
+      "climateMeanLoss": 0.113313767184
+    }
+  ],
+  "reasons": ["IRRIGATION_ADEQUACY_UNKNOWN", "NOT_EXPERT_REVIEWED"]
+}

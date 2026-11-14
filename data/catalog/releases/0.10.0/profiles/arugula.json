@@ -1,0 +1,345 @@
+{
+  "id": "arugula",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Rocket",
+    "localNames": [
+      { "language": "fr", "name": "Roquette" },
+      { "language": "ar", "name": "الجرجير" }
+    ],
+    "scientificName": "Eruca vesicaria (L.) Cav.",
+    "family": "Brassicaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:arugula"
+    }
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "cultivated-rocket",
+      "name": "cultivated rocket",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.arugula.cultivated-rocket"
+      },
+      "notes": "type"
+    },
+    {
+      "id": "wild-rocket",
+      "name": "wild rocket",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.arugula.wild-rocket"
+      },
+      "notes": "type"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:arugula"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-arugula-ecocrop-growing-cycle-eruca-sativa-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Eruca sativa\"; fields GMIN,GMAX",
+          "interpretation": "normalized",
+          "note": "GMIN/GMAX read as ECOCROP growing-cycle length in days; the field definition is not in the saved tutorial extract, so the meaning is the conventional ECOCROP one, not independently verified here. Not Morocco-specific and not sowing-to-harvest by definition. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 70,
+      "maxDays": 150
+    },
+    {
+      "id": "t-a-arugula-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of arugula / rocket: approximate cold/frost injury level",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.arugula.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -5,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-arugula-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of arugula / rocket: approximate heat level where quality, fruit set or growth declines",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.arugula.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_or_yield_loss_approximate) at stage \"vegetative growth (rapid bolting)\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    },
+    {
+      "id": "t-b-arugula-cycle-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of arugula / rocket",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.arugula.cycle"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 30,
+      "maxDays": 50
+    },
+    {
+      "id": "t-b-arugula-sowing-window-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of arugula / rocket: typical Mediterranean sowing/planting months; not Moroccan-specific",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.arugula.sowing_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. direct sowing, repeated. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "03-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "t-c-arugula-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the family; interval depends on the disease concerned",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.arugula.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 2
+    },
+    {
+      "id": "t-c-arugula-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.arugula.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-arugula-preferred-predecessor-preferred-predecessor-family-2",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general crop-rotation practice: cereals and legumes are broadly good predecessors for vegetables; not sourced to a Moroccan document",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.arugula.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-c-arugula-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation practice: avoid following the same botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.arugula.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. same-family disease and pest carry-over Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Brassicaceae"
+    },
+    {
+      "id": "t-fill-arugula-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 35 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.arugula.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    }
+  ],
+  "references": [
+    {
+      "id": "a-arugula-ecocrop-temperature-eruca-sativa-background-303",
+      "topic": "background",
+      "summary": "FAO Ecocrop species-level temperature bounds (not daily damage limits): TOPMN 15, TOPMX 25, TMIN 8, TMAX 29 °C.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Eruca sativa\"; fields TOPMN,TOPMX,TMIN,TMAX,KTMPR,KTMP",
+          "interpretation": "normalized",
+          "note": "Same caveat as claude-supplement-A.json: ECOCROP defines TMIN/TMAX as absolute growing-range bounds and KTMP as a killing temperature without a stage, duration or daily-extreme basis (see .research-sources/2026-11-06/ecocrop-tutorial.pdf). The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-f-arugula-typical-yield-yield-320",
+      "topic": "yield",
+      "summary": "Yield 5–12 t/ha (system irrigated; typical commercial range recalled from general sources; not Moroccan statistics). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 5, "max": 12 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general horticultural/agronomic knowledge of arugula / rocket",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.arugula.typical_yield"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on."
+  ]
+}

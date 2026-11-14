@@ -1,0 +1,169 @@
+import { execFileSync } from "node:child_process";
+import { mkdir, rm, writeFile } from "node:fs/promises";
+import { homedir } from "node:os";
+import { dirname, join, resolve } from "node:path";
+import { repoRoot, settings } from "./lib.mjs";
+
+const escapeXml = (text) =>
+  String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+export function jobs(prefix = "local.rotavise") {
+  if (!/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/i.test(prefix))
+    throw new Error("INVALID_SCHEDULE_PREFIX");
+  return [
+    {
+      label: `${prefix}.backup`,
+      command: "backup",
+      calendar: { Hour: 2, Minute: 30 },
+    },
+    { label: `${prefix}.monitor`, command: "monitor", interval: 60 },
+  ];
+}
+
+export function plist(job, config = settings(), nodePath = process.execPath) {
+  const path = [
+    dirname(nodePath),
+    "/usr/local/bin",
+    "/opt/homebrew/bin",
+    "/Applications/Docker.app/Contents/Resources/bin",
+    "/usr/bin",
+    "/bin",
+  ].join(":");
+  const environment = {
+    PATH: path,
+    ROTAVISE_DATA_DIR: config.dataDir,
+    ROTAVISE_ENV_FILE: config.envFile,
+    ROTAVISE_PROJECT: config.project,
+    PROXY_PORT: String(config.proxyPort),
+    ROTAVISE_ENVIRONMENT: config.environment,
+    BACKUP_RETENTION_DAYS: String(config.retentionDays),
+    ...(process.env.ROTAVISE_LOCAL_DATABASE === "rotavise"
+      ? {
+          ROTAVISE_LOCAL_DATABASE: "rotavise",
+          ROTAVISE_CONFIG_ENV_FILE:
+            process.env.ROTAVISE_CONFIG_ENV_FILE ?? join(repoRoot, ".env"),
+          ROTAVISE_BACKUP_DIR:
+            process.env.ROTAVISE_BACKUP_DIR ??
+            join(repoRoot, ".artifacts/backups"),
+        }
+      : {}),
+  };
+  const lines = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">',
+    '<plist version="1.0">',
+    "<dict>",
+    `  <key>Label</key><string>${escapeXml(job.label)}</string>`,
+    "  <key>ProgramArguments</key>",
+    "  <array>",
+    `    <string>${escapeXml(nodePath)}</string>`,
+    `    <string>${escapeXml(join(repoRoot, "tooling/operations/ops.mjs"))}</string>`,
+    `    <string>${escapeXml(job.command)}</string>`,
+    "  </array>",
+    `  <key>WorkingDirectory</key><string>${escapeXml(repoRoot)}</string>`,
+    "  <key>EnvironmentVariables</key>",
+    "  <dict>",
+    ...Object.entries(environment).map(
+      ([key, value]) =>
+        `    <key>${key}</key><string>${escapeXml(value)}</string>`,
+    ),
+    "  </dict>",
+    `  <key>StandardOutPath</key><string>${escapeXml(join(config.logDir, `${job.command}.log`))}</string>`,
+    `  <key>StandardErrorPath</key><string>${escapeXml(join(config.logDir, `${job.command}.log`))}</string>`,
+    "  <key>RunAtLoad</key><false/>",
+  ];
+  if (job.interval)
+    lines.push(`  <key>StartInterval</key><integer>${job.interval}</integer>`);
+  if (job.calendar)
+    lines.push(
+      "  <key>StartCalendarInterval</key>",
+      "  <dict>",
+      ...Object.entries(job.calendar).map(
+        ([key, value]) => `    <key>${key}</key><integer>${value}</integer>`,
+      ),
+      "  </dict>",
+    );
+  lines.push("</dict>", "</plist>", "");
+  return lines.join("\n");
+}
+
+const agentsDir = () =>
+  process.env.ROTAVISE_LAUNCHD_DIR
+    ? resolve(process.env.ROTAVISE_LAUNCHD_DIR)
+    : join(homedir(), "Library/LaunchAgents");
+const selectedJobs = (prefix) =>
+  process.env.ROTAVISE_LOCAL_DATABASE === "rotavise"
+    ? jobs(prefix).filter((job) => job.command === "backup")
+    : jobs(prefix);
+const domain = () => `gui/${process.getuid()}`;
+
+export function checkSchedulePrefix(prefix, config = settings()) {
+  if (config.environment !== "production" && prefix === "local.rotavise")
+    throw new Error("STAGING_SCHEDULE_PREFIX_REQUIRED");
+}
+
+export async function install(
+  prefix = process.env.ROTAVISE_LAUNCHD_PREFIX ?? "local.rotavise",
+) {
+  const config = settings();
+  checkSchedulePrefix(prefix, config);
+  await mkdir(agentsDir(), { recursive: true });
+  await mkdir(config.logDir, { recursive: true, mode: 0o700 });
+  for (const job of selectedJobs(prefix)) {
+    const file = join(agentsDir(), `${job.label}.plist`);
+    await writeFile(file, plist(job, config));
+    execFileSync("plutil", ["-lint", file], { stdio: "pipe" });
+    try {
+      execFileSync("launchctl", ["bootout", `${domain()}/${job.label}`], {
+        stdio: "pipe",
+      });
+    } catch {
+      // not loaded yet
+    }
+    execFileSync("launchctl", ["bootstrap", domain(), file], { stdio: "pipe" });
+    console.log(`Installed ${job.label}`);
+  }
+}
+
+export async function uninstall(
+  prefix = process.env.ROTAVISE_LAUNCHD_PREFIX ?? "local.rotavise",
+) {
+  checkSchedulePrefix(prefix);
+  for (const job of selectedJobs(prefix)) {
+    try {
+      execFileSync("launchctl", ["bootout", `${domain()}/${job.label}`], {
+        stdio: "pipe",
+      });
+    } catch {
+      // not loaded
+    }
+    await rm(join(agentsDir(), `${job.label}.plist`), { force: true });
+    console.log(`Removed ${job.label}`);
+  }
+}
+
+export function scheduleStatus(
+  prefix = process.env.ROTAVISE_LAUNCHD_PREFIX ?? "local.rotavise",
+) {
+  checkSchedulePrefix(prefix);
+  for (const job of selectedJobs(prefix)) {
+    try {
+      const text = execFileSync(
+        "launchctl",
+        ["print", `${domain()}/${job.label}`],
+        { encoding: "utf8", stdio: "pipe" },
+      );
+      const state = /state = (\w+)/.exec(text)?.[1] ?? "unknown";
+      const runs = /runs = (\d+)/.exec(text)?.[1] ?? "?";
+      const exit = /last exit code = (\S+)/.exec(text)?.[1] ?? "never run";
+      console.log(
+        `${job.label}: loaded (${state}), runs ${runs}, last exit ${exit}`,
+      );
+    } catch {
+      console.log(`${job.label}: not installed`);
+    }
+  }
+}

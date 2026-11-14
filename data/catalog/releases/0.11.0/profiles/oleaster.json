@@ -1,0 +1,215 @@
+{
+  "id": "oleaster",
+  "version": "0.11.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Wild olive (oleaster)",
+    "localNames": [{ "language": "fr", "name": "Olivier sauvage (oléastre)" }],
+    "scientificName": "Olea europaea var. sylvestris",
+    "family": "Oleaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "low",
+      "basis": "Identity recalled by the AI model; names and family not checked against a source.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-08",
+      "researchItem": "C11.crop.oleaster.identity"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "wild_harvested",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.oleaster.presence"
+      },
+      "note": "Wild and rootstock use; not planned."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.oleaster.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.oleaster.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.oleaster.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.oleaster.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "c11-oleaster-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy and botany recall; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop.oleaster.temperature"
+      },
+      "conditions": "Recalled by the AI model; unverified. cold damage limit as recalled (whole cycle).",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -10,
+      "upperDegC": null
+    }
+  ],
+  "references": [
+    {
+      "id": "c11-oleaster-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.oleaster"
+      }
+    },
+    {
+      "id": "c11-oleaster-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.oleaster"
+      }
+    },
+    {
+      "id": "c11-oleaster-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.oleaster"
+      }
+    },
+    {
+      "id": "c11-oleaster-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: high.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.oleaster"
+      }
+    },
+    {
+      "id": "c11-oleaster-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: low.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.oleaster"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "other",
+      "reason": "Every value was recalled by the AI model and is unverified."
+    }
+  ],
+  "limitations": [
+    "Added in 0.11.0 from AI recall; no source consulted; not expert reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

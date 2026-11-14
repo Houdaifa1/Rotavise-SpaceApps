@@ -1,0 +1,235 @@
+{
+  "id": "maize",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Maize",
+    "localNames": [],
+    "scientificName": "Zea mays L.",
+    "family": "Poaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-maize",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Zea mays L.\""
+      }
+    ]
+  },
+  "harvestProduct": "forage",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "doukkalia",
+      "name": "Doukkalia",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "DOUKKALIA PRECOCE INRA MAROC 1990"
+        }
+      ]
+    },
+    {
+      "id": "el-abdia",
+      "name": "El Abdia",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "EL ABDIA PRECOCE INRA MAROC 1999"
+        }
+      ]
+    },
+    {
+      "id": "kamla",
+      "name": "Kamla",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "KAMLA PRECOCE INRA MAROC 1990"
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-silage-maize",
+          "page": 1,
+          "quote": "le cycle long a été semé début avril",
+          "locator": "PDF page 1",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; irrigated; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "maize-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-silage-maize",
+          "page": 1,
+          "quote": "le cycle long a été semé début avril",
+          "locator": "PDF page 1",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Dates from Moroccan silage trials, not a recommendation; summer short-cycle sowing is not modelled.",
+      "metric": "planting_window",
+      "start": "04-01",
+      "end": "04-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "maize-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 50 30 150 April Spain",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "150 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO Mediterranean-climate row; silage is cut earlier.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 150,
+      "maxDays": 150
+    },
+    {
+      "id": "maize-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Maize, Field (grain) (field corn) 1.20 0.60-0.35",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Cereals 0.3 1.15 0.4",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 50 30 150 April Spain",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.3,
+      "kcMid": 1.2,
+      "kcEnd": 0.6,
+      "stageLengths": [30, 40, 50, 30]
+    },
+    {
+      "id": "maize-heat",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "page": 15,
+          "quote": "Maximum air temperature above which pollination starts to fail (heat stress) (°C) Conservative (1) 40",
+          "locator": "PDF page 15",
+          "interpretation": "normalized",
+          "note": "No flowering timing used, so applied across the cycle."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop default; applied across the cycle.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed."
+  ]
+}

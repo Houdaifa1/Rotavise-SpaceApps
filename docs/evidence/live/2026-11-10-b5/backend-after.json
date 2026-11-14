@@ -1,0 +1,227 @@
+{
+  "command": "BACKEND_E2E_REPORT=/tmp/b5-e2e-post-review.json pnpm test:backend-e2e --benchmark",
+  "exitCode": 0,
+  "note": "Final post-review run, including corrected concurrent cache accounting. Disposable PostgreSQL and original P9 NASA bytes, live POWER; all assertions and measured read budgets passed. No production data or deployment.",
+  "report": {
+    "date": "2026-11-10T18:50:40.545Z",
+    "machine": {
+      "model": "Apple M5",
+      "platform": "darwin",
+      "arch": "arm64",
+      "node": "v24.19.0",
+      "load": [2.5859375, 1.98388671875, 2.0078125]
+    },
+    "verified": [
+      "capabilities \u2192 guest session; real default catalog 0.15.0",
+      "catalog options, crop detail, ETag and four cited role explanations in fr/en (missing crop-name languages stay absent)",
+      "atomic pilot field + 0.4 ha boundary \u2192 history \u2192 saved soil/water/reported health (illustrative inputs labelled in fixture)",
+      "terrain: queued \u2192 worker submit/poll/download \u2192 real raw hashes \u2192 completed contract",
+      "ecostress: queued \u2192 worker submit/poll/download \u2192 real raw hashes \u2192 completed contract",
+      "modis: queued \u2192 worker submit/poll/download \u2192 real raw hashes \u2192 completed contract",
+      "GRACE + GEDI reads and vegetation/rain analyses; missing HLS/GPM remain explicit unavailable states",
+      "real plan: current + \u22652 alternatives, fr/en notes, evidence counts, futureClimate, vulnerabilitySeasons, 10 grids and terrain outputs",
+      "what-if parent, accepted changes and before/after fields \u2192 unchanged parent hash \u2192 plan summaries",
+      "intake throughput {\"plans\":45,\"seconds\":2.871929250000001,\"plansPerSecond\":15.668909671086078}",
+      "verified account via disposable SMTP \u2192 guest plan claim \u2192 guest loses access, account reads unchanged result",
+      "first plan claim atomically moves all guest fields and their boundaries to the account; no separate field-claim endpoint",
+      "owned plan and field deletion"
+    ],
+    "skipped": [
+      "Giovanni baseline: no stored real 2001\u20132020 pilot daily file; POWER rain fallback is asserted. NEX-GDDP tile not in repository: futureClimate unavailable is asserted. No remote multi-hour job or credentials used.",
+      "field-boundary tiles: disabled by default; no country dataset imported"
+    ],
+    "measurements": {
+      "plansList": {
+        "n": 40,
+        "p50Ms": 8.124540999997407,
+        "p95Ms": 9.751917000001413,
+        "maxMs": 13.274375000008149,
+        "bytes": 908
+      },
+      "largePlan": {
+        "n": 40,
+        "p50Ms": 29.192582999996375,
+        "p95Ms": 32.71891699999105,
+        "maxMs": 36.44083400000818,
+        "bytes": 4647010
+      },
+      "cropDetail": {
+        "n": 40,
+        "p50Ms": 3.321083999995608,
+        "p95Ms": 4.489499999996042,
+        "maxMs": 4.969584000005852,
+        "bytes": 188345
+      },
+      "catalogOptions": {
+        "n": 40,
+        "p50Ms": 4.415499999988242,
+        "p95Ms": 5.413083000006736,
+        "maxMs": 6.1574170000094455,
+        "bytes": 261158
+      },
+      "glossary": {
+        "n": 40,
+        "p50Ms": 1.9928329999966081,
+        "p95Ms": 2.1231249999982538,
+        "maxMs": 2.2671249999984866,
+        "bytes": 94524
+      },
+      "fieldList": {
+        "n": 40,
+        "p50Ms": 3.6114159999997355,
+        "p95Ms": 5.243207999999868,
+        "maxMs": 8.694457999998122,
+        "bytes": 725
+      },
+      "boundary": {
+        "n": 40,
+        "p50Ms": 4.0454159999935655,
+        "p95Ms": 4.9273339999926975,
+        "maxMs": 5.829375000001164,
+        "bytes": 238
+      },
+      "vegetationHistory": {
+        "n": 40,
+        "p50Ms": 7.708666999998968,
+        "p95Ms": 10.947708000006969,
+        "maxMs": 13.119250000003376,
+        "bytes": 6557
+      },
+      "vegetation": {
+        "n": 40,
+        "p50Ms": 2.9651670000021113,
+        "p95Ms": 3.4725000000034925,
+        "maxMs": 3.8492499999993015,
+        "bytes": 58
+      },
+      "rain": {
+        "n": 40,
+        "p50Ms": 3.09375,
+        "p95Ms": 3.8610829999961425,
+        "maxMs": 4.295833999989554,
+        "bytes": 58
+      },
+      "grace": {
+        "n": 40,
+        "p50Ms": 5.2182080000056885,
+        "p95Ms": 7.212165999997524,
+        "maxMs": 7.752874999991036,
+        "bytes": 3210
+      },
+      "gedi": {
+        "n": 40,
+        "p50Ms": 4.154791000008117,
+        "p95Ms": 5.1695420000032755,
+        "maxMs": 7.3101670000032755,
+        "bytes": 2010
+      },
+      "fieldListWithBoundaries": {
+        "n": 40,
+        "p50Ms": 6.52654099999927,
+        "p95Ms": 7.299832999997307,
+        "maxMs": 7.626625000004424
+      },
+      "intake": {
+        "plans": 45,
+        "seconds": 2.871929250000001,
+        "plansPerSecond": 15.668909671086078
+      }
+    },
+    "catalog": {
+      "version": "0.15.0",
+      "sha256": "b1c18550fdb08feedba05a149fbe4e017380d2604d7260e30bc0ff55f0b5c44b",
+      "crops": 246,
+      "names": {
+        "en": 0,
+        "fr": 246,
+        "ar": 246,
+        "ary": 178
+      },
+      "issues": 25
+    },
+    "plan": {
+      "bytes": 4647010,
+      "resultHash": "a2f9d0b7d5adabbfadcfce35ff937aa6e730b2d7b795e0777e014332e95d4ea9",
+      "strategies": 4,
+      "alternatives": 3,
+      "evidence": {
+        "weatherSnapshotIds": [
+          "0c1bb55e-af33-47a2-878a-e49b024147de",
+          "1ab48a59-5afa-4d86-a964-98b6127a8a9d",
+          "1b9588ad-c360-46d8-b3cd-461ace9cc57e",
+          "2650184e-16c8-45d6-b971-1f4b464670e8",
+          "30384144-3284-4c44-a918-85c6e71ce357",
+          "35cf11d6-4b4d-4b57-a781-f26140ee4365",
+          "429f14b3-adee-4760-99a3-736186eed843",
+          "47b972d8-ae65-4a3c-a482-88eab580f9ac",
+          "49b0e6d2-55cd-4408-bd1e-9f71fa13a6ec",
+          "50107e97-f16c-45a9-a369-377acc402932",
+          "520b2f46-dae4-43aa-8cbc-52aa751fa76d",
+          "53a5125a-775a-42a2-a4f4-178af0a902ff",
+          "5950d1bc-9494-4e94-a3bd-144879b2acb4",
+          "5c020b30-307d-48d3-b746-3a0a1d14fbb3",
+          "61196adf-b955-4246-899c-d532fdbcfa26",
+          "645b9c4e-0e9e-474d-9ad4-00a86edbda07",
+          "656b33b1-7a24-4b69-a58c-28697987d7c3",
+          "6714f4c5-3ad4-4c39-a467-d76fda54a095",
+          "6924094c-66a3-4c93-b5b9-ace39b4cebe8",
+          "78948380-bd04-4480-b127-d52b47cf265e",
+          "8229b380-640f-49e9-8269-7c4d84d33d7d",
+          "8afeb683-a13c-4276-8489-d059c1e39605",
+          "8b85558b-c712-4d3e-b643-fbe532d5769e",
+          "90987a34-ec8a-47ac-93eb-4b80239ffe64",
+          "9200c6a4-70b9-4f7e-ace9-31a89c2704b1",
+          "94a4ef3b-ee30-4fae-a7f0-20dd4ab6641e",
+          "95433fc1-ec33-451c-bb1e-a3239538109e",
+          "a4cc58a6-c9f4-4b03-b041-dc623ddb0a2e",
+          "b0e9cb17-af9f-4484-8c9b-022a9da256db",
+          "be1d919c-f24f-4c3b-bae5-7ebb01ae0160",
+          "ca9cccdc-794b-4bf6-9f71-4b04c4f7ca63",
+          "d367ce37-75cd-4d69-adca-c63a0005339e",
+          "db00f5bb-466a-42c1-9115-14879e6a425d",
+          "dd9f0795-3b9a-41ff-82e2-e1ab01e3a9d9",
+          "ea2ff5b6-e792-48c1-8ed9-979759b7bd30",
+          "fbd06b8c-b475-42a1-bf8b-9dc245c687d0"
+        ],
+        "rulesUsed": {
+          "double_checked": 152,
+          "expert_reviewed": 0,
+          "model_recall": 2092
+        },
+        "expertReviewed": false
+      },
+      "futureClimate": "unavailable",
+      "grids": [
+        "POWER",
+        "GPM",
+        "HLS",
+        "SMAP",
+        "NEX-GDDP",
+        "NASADEM",
+        "GRACE",
+        "ECOSTRESS",
+        "MODIS",
+        "GEDI"
+      ]
+    },
+    "whatIf": {
+      "kind": "what_if",
+      "notAForecast": true,
+      "label": "What-if test with your own assumptions. It is not a forecast.",
+      "rainfallChangePercent": -10,
+      "temperatureChangeC": 1,
+      "sowingShiftDays": 7,
+      "appliedTo": {
+        "historicalWeather": true,
+        "futureModelWorlds": "not_prepared"
+      },
+      "planning": {
+        "requestedEarliestStartDate": "2026-11-15",
+        "requestedLatestStartDate": "2027-05-01",
+        "effectiveEarliestStartDate": "2026-11-22",
+        "effectiveLatestStartDate": "2027-05-08"
+      }
+    },
+    "seconds": 88.829685917
+  }
+}

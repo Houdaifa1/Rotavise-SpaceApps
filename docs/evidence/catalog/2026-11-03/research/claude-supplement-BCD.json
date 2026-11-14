@@ -1,0 +1,1011 @@
+[
+  {
+    "item": "C.rapeseed.preferred_predecessor",
+    "status": "found",
+    "crop": "rapeseed",
+    "metric": "preferred_predecessor_family",
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 1,
+      "title": "Référentiel technique et technico-économique — Filière oléagineuses",
+      "publisher": "ONCA / ARDNA",
+      "year": null,
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file621e396c5d44d-N1077_PhIII_Referentiel_Oleagineuses_VD_1-Ardna.pdf",
+      "retrievedOn": "2026-11-04",
+      "localFile": ".research-sources/2026-11-03/onca-oilseeds.pdf",
+      "fileSha256": "6da3ccb6ea1be49cbd121e436ea2c611cf446e1f2c143cbf13f849c62743595b",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 59 (pdftotext page split, re-verified 2026-11-06)",
+    "quote": "le colza n'a pas d'exigence particulière, le colza valorise bien les précédents riches mais s'accommode facilement derrière une céréale à paille",
+    "translation": "Rapeseed has no particular requirement; it makes good use of rich predecessors but adapts easily behind a straw cereal.",
+    "interpretation": "A straw cereal (durum/bread wheat, barley) is named as an easy, workable predecessor for rapeseed. This is phrased as tolerance, not an exclusive preference, so record it as the preferred family rather than the only acceptable one.",
+    "confidence": "medium",
+    "applicabilityNote": "General ONCA oilseed guidance, not Tadla- or region-specific. The same page also says rapeseed is itself a good predecessor to wheat, which is a separate (forward) relationship, not recorded here.",
+    "quoteRecheckedOn": "2026-11-06"
+  },
+  {
+    "item": "C.potato.minimum_return_interval",
+    "status": "found",
+    "crop": "potato",
+    "metric": "minimum_return_interval",
+    "proposed": {
+      "years": null,
+      "sourceRangeYears": {
+        "min": 5,
+        "max": 6
+      },
+      "family": "Solanaceae"
+    },
+    "thresholdType": null,
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 1,
+      "title": "Référentiel technique et technico-économique — Filière cultures maraîchères",
+      "publisher": "ONCA / ARDNA",
+      "year": null,
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file621e306b6bc34-N1077-r%C3%A9f%C3%A9rentiel-culture-maraich%C3%A8res_VD-Ardna.pdf",
+      "retrievedOn": "2026-11-04",
+      "localFile": ".research-sources/2026-11-03/onca-vegetables.pdf",
+      "fileSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 42 (pdftotext page split, re-verified 2026-11-06), potato chapter, tuber-moth protection section",
+    "quote": "en principe, une bonne rotation amène la pomme de terre sur le même terrain tous les 5 ou 6 ans",
+    "translation": "In principle, a good rotation brings potato back to the same field only every 5 or 6 years.",
+    "interpretation": "Stated as general good practice inside a passage about protecting tubers from the potato tuber moth, not as a disease-specific exception. Keep the 5-6 year range rather than picking one endpoint.",
+    "confidence": "high",
+    "applicabilityNote": "The same paragraph separately advises against growing potato near eggplant fields (field-to-field proximity, to limit shared pest movement) — that is a spatial-neighbour rule, not a predecessor-crop rule, and is NOT recorded as C.potato.prohibited_predecessor. No prohibited-predecessor fact was found for potato in this source.",
+    "quoteRecheckedOn": "2026-11-06"
+  },
+  {
+    "item": "C.potato.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "potato",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "grep of .research-sources/2026-11-03/onca-vegetables.plain.txt for précédent/rotation/assolement near potato chapter",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "ONCA pomme de terre Maroc précédent cultural interdit rotation",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "ONCA vegetables guide (page 42) advises against growing potato near (spatially adjacent to) eggplant fields to limit tuber-moth movement — a field-proximity rule, not a temporal predecessor-crop rule. No source found stating which crop must not precede potato."
+  },
+  {
+    "item": "C.eggplant.prohibited_predecessor",
+    "status": "found",
+    "crop": "eggplant",
+    "metric": "prohibited_predecessor_family",
+    "proposed": {
+      "family": "Solanaceae",
+      "sourceRangeYears": {
+        "min": 4,
+        "max": 5
+      },
+      "condition": "soil-borne disease build-up under solanaceous monoculture"
+    },
+    "thresholdType": null,
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 1,
+      "title": "Fiches techniques V: La tomate, l'aubergine, le poivron, le gombo — Bulletin 100",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA / IAV Hassan II",
+      "year": 2003,
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file64216deb3274d-btta_100.pdf",
+      "retrievedOn": "2026-11-04",
+      "localFile": ".research-sources/2026-11-03/pntta-solanums.pdf",
+      "fileSha256": "baa305f0cadb7eb13aea766234fa15e2f4b96a5a23a3c842b91a4c25c8a19c50",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 3 (pdftotext page split; the PDF is OCR'd from a 3-column bulletin layout and pdftotext reads columns out of strict order, so the quote below is the exact text as extracted even though neighbouring sentences on the same page belong to other columns)",
+    "quote": "L'installation de la culture [aubergine] est la même que pour le poivron. ... Il est très exigent en rotation des cultures. La dissémination rapide de beaucoup de maladies interdit la monoculture. Les meilleurs rendements sont obtenus dans les terrains vierges ou nouvellement acquis, n'ayant pas été occupés par une autre solanacée pendant les 4 ou 5 dernières années.",
+    "translation": "Eggplant is established the same way as pepper. ... It is very demanding in crop rotation. The rapid spread of many diseases rules out monoculture. The best yields are obtained on virgin or newly acquired land that has not been occupied by another solanaceous crop for the last 4 or 5 years.",
+    "interpretation": "The bulletin explicitly states eggplant culture practice equals pepper's immediately before this passage, so the rotation requirement is read as applying to both. Corroborates, with an independent source, the catalog's existing C.eggplant.minimum_return_interval (5 years, Solanaceae, from pntta-roots.pdf, nematode management) — two sources now agree on a ~4-5 year Solanaceae break for eggplant.",
+    "confidence": "medium",
+    "applicabilityNote": "OCR column-interleaving on this page makes attribution between the eggplant and pepper paragraphs imperfect; treat as a shared Solanaceae-family rule for both crops rather than an eggplant-exclusive statement. Research evidence only.",
+    "quoteRecheckedOn": "2026-11-06"
+  },
+  {
+    "item": "C.eggplant.preferred_predecessor",
+    "status": "not_found",
+    "crop": "eggplant",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "grep of .research-sources/2026-11-03/pntta-solanums.plain.txt and onca-vegetables for eggplant-specific preferred predecessor",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The same PNTTA solanums bulletin states pepper is a good predecessor for root vegetables ('Le poivron est un bon précédent cultural pour les légumes racines'), but this describes what eggplant/pepper precede, not what should precede eggplant. No source found naming a preferred predecessor family for eggplant itself."
+  },
+  {
+    "item": "C.chickpea.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "chickpea",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "grep of .research-sources/2026-11-03/onca-legumes.plain.txt sections 1-9 for pois-chiche-specific prohibited predecessor",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "pois chiche Maroc précédent cultural à éviter rotation ONCA INRA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "ONCA legumes guide gives a 5-year rotation between two legumes as anthracnose control for chickpea (already recorded as C.chickpea.minimum_return_interval) but names no specific prohibited predecessor crop or family."
+  },
+  {
+    "item": "C.groundnut.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "groundnut",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "grep of .research-sources/2026-11-03/pntta-groundnut.plain.txt for précédent/rotation",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "arachide Maroc précédent cultural interdit rotation ONSSA PNTTA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "PNTTA groundnut bulletin's 'Précédents culturaux' section (already partly used for C.groundnut.preferred_predecessor) reports surveyed Loukkos growers' actual predecessor practice — potato (18/25 plots) and bread wheat (6/25 plots) — but states no predecessor to avoid."
+  },
+  {
+    "item": "C.garlic.preferred_predecessor",
+    "status": "not_found",
+    "crop": "garlic",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "grep of .research-sources/2026-11-03/pntta-garlic.plain.txt and onca-vegetables onion chapter for garlic-specific predecessor",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "ONCA ail Maroc référentiel technique calendrier plantation récolte durée cycle jours",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "ONCA vegetables guide's onion chapter (page 57) names cereals, potato, sugar beet as favourable predecessors for onion and explicitly folds garlic into the same 3-5/4-5 year allium return interval, but does not restate the favourable-predecessor list for garlic itself, and the catalog's existing research already declined to transfer the onion list to garlic without a garlic-specific statement."
+  },
+  {
+    "item": "C.garlic.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "garlic",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same as C.garlic.preferred_predecessor",
+        "where": "local corpus and web",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "Same as C.garlic.preferred_predecessor: onion's unfavourable list (other alliums, peas, alfalfa, pasture) is not restated for garlic specifically in any source opened so far."
+  },
+  {
+    "item": "C.cabbage.minimum_return_interval",
+    "status": "not_found",
+    "crop": "cabbage",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of .research-sources/2026-11-03/pntta-brassicas.plain.txt for précédent/rotation/assolement",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "chou Maroc PNTTA rotation culturale années clubroot hernie",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "PNTTA brassicas bulletin mentions 'méthodes culturales (rotation)' twice as a generic disease/pest management lever, with no stated year count or predecessor crop."
+  },
+  {
+    "item": "C.cabbage.preferred_predecessor",
+    "status": "not_found",
+    "crop": "cabbage",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.cabbage.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found; see C.cabbage.minimum_return_interval."
+  },
+  {
+    "item": "C.cabbage.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "cabbage",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.cabbage.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found; see C.cabbage.minimum_return_interval. Note PNTTA cucurbits bulletin names cabbage ('choux') as a crop for which gherkin/cornichon can be a good predecessor — that is a forward relationship (what precedes cabbage, from the cucumber crop's perspective) and is recorded as the closest adjacent evidence, but it is a single-source, non-Moroccan-specific statement about a crop (cornichon) not in this catalog, so it is not promoted to a found fact."
+  },
+  {
+    "item": "C.courgette.minimum_return_interval",
+    "status": "not_found",
+    "crop": "courgette",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of .research-sources/2026-11-03/pntta-cucurbits.plain.txt for précédent/rotation near courgette-specific section",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "courgette Maroc rotation culturale années ONCA PNTTA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The bulletin's rotation-predecessor passage ('tomate, poivron, pomme de terre, luzerne' as good predecessors; gherkin as a good predecessor for tomato/pepper/potato, green bean and cabbage) is in the gherkin (cornichon) section, a different cucurbit species from courgette (Cucurbita pepo). Not transferred to courgette without a courgette-specific statement."
+  },
+  {
+    "item": "C.courgette.preferred_predecessor",
+    "status": "not_found",
+    "crop": "courgette",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.courgette.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "See C.courgette.minimum_return_interval."
+  },
+  {
+    "item": "C.courgette.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "courgette",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.courgette.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "See C.courgette.minimum_return_interval."
+  },
+  {
+    "item": "C.green-bean.minimum_return_interval",
+    "status": "not_found",
+    "crop": "green-bean",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of onca-legumes.plain.txt and pntta-cucurbits.plain.txt for haricot vert",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "haricot vert Maroc rotation culturale années ONCA PNTTA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "PNTTA cucurbits bulletin names gherkin (cornichon) as a good predecessor for green bean ('le haricot vert'), a forward (what-precedes-green-bean) statement from a non-Moroccan-specific, single-crop source; no return-interval figure found."
+  },
+  {
+    "item": "C.green-bean.preferred_predecessor",
+    "status": "found",
+    "crop": "green-bean",
+    "metric": "preferred_predecessor_family",
+    "proposed": {
+      "family": "Cucurbitaceae",
+      "previousCrop": "gherkin (cornichon)"
+    },
+    "thresholdType": null,
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 1,
+      "title": "PNTTA cucurbits bulletin (concombre/cornichon chapter)",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA",
+      "year": null,
+      "url": "unknown (local file name only; original URL not re-identified from the 2026-11-03 manifest in the time available)",
+      "retrievedOn": "2026-11-04",
+      "localFile": ".research-sources/2026-11-03/pntta-cucurbits.pdf",
+      "fileSha256": "UNVERIFIED-source-manifest-not-cross-checked-for-this-file; re-hash before catalog use",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "plain-text extraction, line ~351 of pntta-cucurbits.plain.txt (3-column OCR; page number not recovered in the time available)",
+    "quote": "Les meilleurs précédents culturaux sont la tomate, le poivron, la pomme de terre et la luzerne. Le cornichon peut être un bon précédent cultural pour ces mêmes cultures, pour le haricot vert et les choux.",
+    "translation": "The best predecessor crops [for gherkin] are tomato, pepper, potato and alfalfa. Gherkin can itself be a good predecessor for these same crops, for green bean and for cabbage.",
+    "interpretation": "States gherkin (a cucurbit) as a good predecessor for green bean. Family mapped as Cucurbitaceae, but note the named crop is gherkin specifically, not courgette, melon or watermelon, which this catalog also needs and which are NOT covered by this statement.",
+    "confidence": "low",
+    "applicabilityNote": "LOWER CONFIDENCE THAN USUAL: (1) this fork did not re-verify the file's SHA-256 against the 2026-11-03 source-manifest.json before writing this entry — do this before any catalog use; (2) the source is about gherkin, a related but distinct cucurbit species, generalised here to 'a cucurbit predecessor is favourable for green bean'; (3) page locator is a plain-text line number, not a PDF page. Treat as a lead for expert review, not catalog-ready evidence.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false
+  },
+  {
+    "item": "C.green-bean.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "green-bean",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.green-bean.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.lentil.minimum_return_interval",
+    "status": "not_found",
+    "crop": "lentil",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of onca-legumes.plain.txt mildew/anthracnose sections for lentil-specific return interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "lentille Maroc rotation culturale années mildiou ONCA INRA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "ONCA legumes guide's mildew (Peronospora) control section, illustrated with a lentil-mildew figure, recommends 'adoption d'une rotation adéquate (diffère selon les régions)' — adequate rotation, varying by region — with no number given. The same document gives chickpea's anthracnose-specific 5-year figure (already recorded), which is not restated for lentil."
+  },
+  {
+    "item": "C.lentil.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "lentil",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.lentil.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.lettuce.minimum_return_interval",
+    "status": "not_found",
+    "crop": "lettuce",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of pntta-lettuce.plain.txt for précédent/rotation",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "laitue Maroc rotation culturale années mildiou PNTTA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "PNTTA lettuce bulletin mentions 'bonne rotation culturale' as downy-mildew (Bremia) control with no year figure."
+  },
+  {
+    "item": "C.lettuce.preferred_predecessor",
+    "status": "not_found",
+    "crop": "lettuce",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.lettuce.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.lettuce.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "lettuce",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.lettuce.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.maize.minimum_return_interval",
+    "status": "not_found",
+    "crop": "maize",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of inra-maize-sesamia.plain.txt and onca-cereals.plain.txt for maize-specific return interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "maïs Maroc rotation culturale années sesamia ONCA INRA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The INRA Sesamia (stem borer) note discusses maize pest pressure but does not state a return-interval figure."
+  },
+  {
+    "item": "C.maize.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "maize",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.maize.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found; existing catalog research already has C.maize.preferred_predecessor (bersim/Fabaceae) from a separate source."
+  },
+  {
+    "item": "C.melon.minimum_return_interval",
+    "status": "not_found",
+    "crop": "melon",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of pntta-cucurbits.plain.txt for melon-specific précédent/rotation",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "melon Maroc rotation culturale années fusariose PNTTA ONCA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No melon-specific rotation statement found; the bulletin's predecessor passage discussed above is specific to gherkin, not melon."
+  },
+  {
+    "item": "C.melon.preferred_predecessor",
+    "status": "not_found",
+    "crop": "melon",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.melon.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.melon.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "melon",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.melon.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "PNTTA roots bulletin advises carrot not be planted near a cotton or melon field (aphid movement) — a spatial-proximity rule naming melon as the risk source for a different crop (carrot), not a predecessor rule for melon itself."
+  },
+  {
+    "item": "C.pea.minimum_return_interval",
+    "status": "not_found",
+    "crop": "pea",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of onca-legumes.plain.txt and inra-pea-ascochyta.plain.txt for pea-specific return interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "pois Maroc rotation culturale années ascochytose INRA ONCA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "ONCA legumes guide's mildew section (Peronospora pisi for pea) gives only 'adoption d'une rotation adéquate (diffère selon les régions)', no number."
+  },
+  {
+    "item": "C.pea.preferred_predecessor",
+    "status": "not_found",
+    "crop": "pea",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.pea.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.pea.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "pea",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.pea.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "ONCA vegetables guide's onion chapter names peas among onion's unfavourable predecessors ('autres alliacées, pois, luzerne, prairie'), which is the reverse relationship (pea as a poor predecessor FOR onion), not a predecessor rule for pea itself."
+  },
+  {
+    "item": "C.rapeseed.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "rapeseed",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "grep of onca-oilseeds.plain.txt rapeseed rotation section (lines 3100-3240) for an explicitly prohibited predecessor",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The same rapeseed rotation passage used for C.rapeseed.preferred_predecessor states rapeseed 'has no particular requirement' for its predecessor and names no crop to avoid before it; it does caution against short cereal-only rotations degrading disease control, which is about rapeseed's own return interval (already partially recorded), not a prohibited predecessor."
+  },
+  {
+    "item": "C.sesame.minimum_return_interval",
+    "status": "not_found",
+    "crop": "sesame",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of ormvat-sesame.txt for return interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "sésame Maroc Tadla rotation culturale années ORMVAT",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found beyond the existing preferred-predecessor entry (cereals)."
+  },
+  {
+    "item": "C.sugar-beet.minimum_return_interval",
+    "status": "not_found",
+    "crop": "sugar-beet",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of onca-sugar-beet.plain.txt and inra-beet-diseases.plain.txt for a general (non-cercosporiosis) return interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "betterave sucrière Maroc rotation culturale années retour ONCA ORMVAT",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "An unrelated web search surfaced a 1991 Doukkala study (via agris.fao.org) stating barley and maize are the best predecessors for sugar beet against Rhizoctonia solani damping-off — a real Moroccan source, but not yet opened/verified by this fork, and about a predecessor preference rather than a return-interval figure. Left for a follow-up research pass rather than recorded on an unverified secondary citation."
+  },
+  {
+    "item": "C.sugar-beet.preferred_predecessor",
+    "status": "not_found",
+    "crop": "sugar-beet",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.sugar-beet.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "See C.sugar-beet.minimum_return_interval note on the unverified Doukkala Rhizoctonia study (barley, maize as predecessors) — a promising lead not yet confirmed from the primary source."
+  },
+  {
+    "item": "C.table-beet.minimum_return_interval",
+    "status": "not_found",
+    "crop": "table-beet",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of pntta-roots.plain.txt for table-beet-specific (betterave potagère/rouge) return interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "betterave rouge potagère Maroc rotation culturale années PNTTA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "pntta-roots.plain.txt's generic 'La rotation culturale doit être respectée' line appears in the carrot section (already used for carrot's prohibited/minimum-return facts); the bulletin does not have a distinct table-beet (red beet) chapter in the saved extract."
+  },
+  {
+    "item": "C.table-beet.preferred_predecessor",
+    "status": "not_found",
+    "crop": "table-beet",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.table-beet.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.table-beet.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "table-beet",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.table-beet.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.watermelon.minimum_return_interval",
+    "status": "not_found",
+    "crop": "watermelon",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of pntta-cucurbits.plain.txt and virus-wmv/eppo files for watermelon-specific return interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "pastèque Maroc rotation culturale années fusariose PNTTA ONCA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found; the bulletin's cucurbit predecessor passage is specific to gherkin (see courgette/melon entries)."
+  },
+  {
+    "item": "C.watermelon.preferred_predecessor",
+    "status": "not_found",
+    "crop": "watermelon",
+    "metric": "preferred_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.watermelon.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "C.watermelon.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "watermelon",
+    "metric": "prohibited_predecessor_family",
+    "searched": [
+      {
+        "query": "same corpus scan as C.watermelon.minimum_return_interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "None found."
+  },
+  {
+    "item": "B.chickpea.duration.spring",
+    "status": "not_found",
+    "crop": "chickpea",
+    "metric": "cycle_duration",
+    "searched": [
+      {
+        "query": "grep of inra-chickpea-06304.plain.txt for spring-sowing-specific cycle duration",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "pois chiche Maroc semis de printemps durée cycle jours ONCA INRA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The existing catalog research already has winter-sown chickpea's duration (5.5 months, partial coverage) from a Moroccan source. No source opened gives a separate spring-sowing duration in Morocco; a 2017 ONCA Taza memoir on chickpea intercropped in an olive orchard was identified by web search as a plausible lead but not opened/verified in the time available."
+  },
+  {
+    "item": "B.faba-bean.duration",
+    "status": "not_found",
+    "crop": "faba-bean",
+    "metric": "cycle_duration",
+    "searched": [
+      {
+        "query": "grep of inra-legumes-2015 and onca-legumes.plain.txt for faba-bean-specific Moroccan sowing-to-harvest duration",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "fève féverole Maroc durée cycle semis récolte jours ONCA INRA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The already-saved INRA legumes 2015 document discusses faba bean development stages and the ONCA legumes guide discusses faba-bean rotation and disease (chocolate spot), but neither gives an explicit sowing-to-harvest day or month count for Moroccan conditions distinct from the FAO European figure the catalog currently uses."
+  },
+  {
+    "item": "B.garlic.heat",
+    "status": "not_found",
+    "crop": "garlic",
+    "metric": "temperature",
+    "searched": [
+      {
+        "query": "grep of pntta-garlic.plain.txt for a daily-maximum heat-damage figure",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "ail Maroc température maximale dégâts chaleur PNTTA ONSSA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "pntta-garlic.plain.txt gives germination and bulbing temperature ranges (optimum-type values) but no daily-maximum damage limit."
+  },
+  {
+    "item": "B.garlic.cold",
+    "status": "not_found",
+    "crop": "garlic",
+    "metric": "temperature",
+    "searched": [
+      {
+        "query": "same corpus scan as B.garlic.heat",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "Same document gives garlic's vernalization cold-exposure range (for bulbing physiology, an optimum/requirement, not a damage limit)."
+  },
+  {
+    "item": "B.garlic.duration",
+    "status": "not_found",
+    "crop": "garlic",
+    "metric": "cycle_duration",
+    "searched": [
+      {
+        "query": "same corpus scan as B.garlic.heat",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "ONCA ail Maroc référentiel technique calendrier plantation récolte durée cycle jours",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No ONCA/PNTTA source opened gives an explicit Moroccan planting-to-harvest day count for garlic; a dedicated ONCA garlic référentiel (parallel to the onion/potato/tomato one already in the corpus) was not located by web search in the time available."
+  },
+  {
+    "item": "D.bread-wheat.ear_frost_timing",
+    "status": "not_found",
+    "crop": "bread-wheat",
+    "metric": "stage_timing",
+    "searched": [
+      {
+        "query": "re-read of onca-cereals.plain.txt §Tableau 5 (stade épi 1 cm) and surrounding frost passage (lines 1620-1870)",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The already-sourced ONCA cereals guide (page ~25-27) defines 'épi 1 cm' morphologically ('le sommet de l'épi est distant de 1 cm du plateau de tallage') and separately states frost resistance changes at this stage (page 28, already sourced for the -4°C limit), but gives no elapsed-days-after-sowing or growing-degree-day figure for when the stage is reached — only that tillering duration depends on variety earliness and sowing date. Re-confirms Codex's existing not_found conclusion."
+  },
+  {
+    "item": "D.durum-wheat.ear_frost_timing",
+    "status": "not_found",
+    "crop": "durum-wheat",
+    "metric": "stage_timing",
+    "searched": [
+      {
+        "query": "same passage as D.bread-wheat.ear_frost_timing (the ONCA cereals guide covers durum, bread wheat and barley together)",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "Same as D.bread-wheat.ear_frost_timing."
+  },
+  {
+    "item": "D.sugar-beet.cercosporiosis_return",
+    "status": "not_found",
+    "crop": "sugar-beet",
+    "metric": "minimum_return_interval",
+    "searched": [
+      {
+        "query": "grep of onca-sugar-beet.plain.txt and inra-beet-diseases.plain.txt for a cercosporiosis-specific return interval",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "betterave sucrière cercosporiose Maroc rotation minimale années ONCA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "A French (non-Moroccan) cooperative (Cristal Union) testimonial states a rotation shorter than 4 years is one of several factors that raise cercosporiosis risk — nonLocal, informal/testimonial rather than an extension guide, and not a stated 'minimum interval' recommendation, so not promoted to a found fact. Ezzahiri (2013) 'Guide de protection phytosanitaire de la betterave à sucre au Maroc' (AMPP) was identified as the most likely primary Moroccan source but was not located/opened in the time available."
+  },
+  {
+    "item": "B.alfalfa.stand_lifetime",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "B.chickpea.duration.winter",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "B.sesame.duration",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "B.sesame.planting_window",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.carrot.prohibited_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.chickpea.minimum_return_interval",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.chickpea.preferred_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.eggplant.minimum_return_interval",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.faba-bean.minimum_return_interval",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.faba-bean.preferred_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.garlic.minimum_return_interval",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.groundnut.minimum_return_interval",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.groundnut.preferred_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.lentil.preferred_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.maize.preferred_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.onion.minimum_return_interval",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.onion.prohibited_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.rapeseed.minimum_return_interval",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.sesame.preferred_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "C.sugar-beet.prohibited_predecessor",
+    "status": "reviewed_no_new_research_needed",
+    "note": "Reviewed on 2026-11-06 against the cited source in facts.json. The underlying fact is already sourced with an exact quote; the recorded 'missingFields' gap is a catalog-authoring decision (unit/scalar-vs-range representation, or an expert severity/scope judgement), not a missing source. No further web or corpus research was attempted; re-opening the source would not add new information. This gap belongs to catalog-release expert review, not research."
+  },
+  {
+    "item": "D.sugar-beet.bolting",
+    "status": "not_found",
+    "crop": "sugar-beet",
+    "metric": "stage_timing",
+    "searched": [
+      {
+        "query": "re-read of onca-sugar-beet.plain.txt lines 216-229 and 909-921 for temperature basis and six-leaf-stage day-after-sowing figure",
+        "where": "local corpus",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "Already-sourced: 'au stade 6 feuilles, l'action d'une basse temperature (5C) pendant au moins 30 jours peut induire une montee a graine' (onca-sugar-beet.pdf). A separate passage (thinning operations) says the 4-6 leaf stage occurs 'pendant les premieres semaines apres semis' (within the first weeks after sowing) but gives no day count, and the 5C figure is not labelled daily minimum/mean/maximum in the source. Re-confirms Codex's existing partial coverage; no new timing or temperature-basis fact found."
+  }
+]

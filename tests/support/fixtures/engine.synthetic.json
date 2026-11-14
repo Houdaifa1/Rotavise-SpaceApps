@@ -1,0 +1,590 @@
+{
+  "synthetic": true,
+  "purpose": "Deterministic engine infrastructure tests, never agricultural output.",
+  "input": {
+    "schema_version": "1",
+    "location": {
+      "latitude": 32.3,
+      "longitude": -6.3
+    },
+    "history": {
+      "status": "known",
+      "completeness": "complete",
+      "entries": [
+        {
+          "crop_id": "synthetic-beta",
+          "planted_on": "2027-01-01",
+          "harvested_on": "2027-01-10"
+        }
+      ]
+    },
+    "crop_health": {
+      "status": "unknown"
+    },
+    "soil": {
+      "status": "known",
+      "observations": [
+        {
+          "metric": "ph",
+          "value": 7,
+          "unit": "pH",
+          "method": "water",
+          "measured_on": "2029-01-01",
+          "source": "laboratory_report"
+        }
+      ]
+    },
+    "water": {
+      "status": "reported",
+      "availability": "rainfed"
+    },
+    "planning": {
+      "cycles": 2,
+      "earliest_start_date": "2029-12-30",
+      "latest_start_date": "2029-12-31",
+      "search_end_date": "2030-01-10"
+    },
+    "preferences": {
+      "mode": "consider",
+      "considered_next_crop_ids": ["synthetic-alpha"],
+      "excluded_crop_ids": [],
+      "priority": "soil_health"
+    }
+  },
+  "context": {
+    "assessedOn": "2029-01-01",
+    "location": {
+      "latitude": 32.3,
+      "longitude": -6.3
+    },
+    "region": {
+      "status": "resolved",
+      "regionId": "synthetic-region",
+      "resolutionId": "synthetic-resolution",
+      "resolutionVersion": "0.0.1"
+    },
+    "productionSystem": "rainfed",
+    "historyCoverageStart": "2020-01-01",
+    "cultivars": [
+      {
+        "cropId": "synthetic-alpha",
+        "cultivarId": "synthetic-alpha-cultivar"
+      },
+      {
+        "cropId": "synthetic-beta",
+        "cultivarId": "synthetic-beta-cultivar"
+      }
+    ],
+    "verifiedHealthObservations": []
+  },
+  "catalog": {
+    "schemaVersion": "1",
+    "id": "synthetic-engine-catalog",
+    "version": "0.0.1",
+    "synthetic": true,
+    "regions": [
+      {
+        "id": "synthetic-region",
+        "name": "Synthetic region",
+        "countryCode": "MA",
+        "scopeNote": "Test only; not Beni Mellal evidence.",
+        "citations": [
+          {
+            "sourceId": "synthetic-source",
+            "locator": "Synthetic engine fixture",
+            "interpretation": "direct",
+            "note": "Invented test rules; no agricultural evidence or real review."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "synthetic-source",
+        "title": "Invented engine fixture",
+        "publisher": "Synthetic test",
+        "url": "https://example.invalid/test-only",
+        "publicationYear": null,
+        "accessedAt": "2026-09-27T00:00:00Z",
+        "evidence": {
+          "kind": "verified_extract",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "bytes": 1,
+          "artifactPath": null,
+          "captureNote": "Synthetic marker; not a source hash."
+        },
+        "geographicScope": "Test only",
+        "limitations": ["Invented fixture; no source evidence"],
+        "synthetic": true
+      }
+    ],
+    "profiles": [
+      {
+        "id": "synthetic-alpha",
+        "version": "0.0.1",
+        "synthetic": true,
+        "identity": {
+          "name": "Synthetic crop 0",
+          "scientificName": "Synthetic species 0",
+          "family": "Poaceae",
+          "citations": [
+            {
+              "sourceId": "synthetic-source",
+              "locator": "Synthetic engine fixture",
+              "interpretation": "direct",
+              "note": "Invented test rules; no agricultural evidence or real review."
+            }
+          ]
+        },
+        "harvestProduct": "dry_grain",
+        "cultivar": {
+          "status": "specified",
+          "id": "synthetic-alpha-cultivar",
+          "name": "Synthetic cultivar",
+          "citations": [
+            {
+              "sourceId": "synthetic-source",
+              "locator": "Synthetic engine fixture",
+              "interpretation": "direct",
+              "note": "Invented test rules; no agricultural evidence or real review."
+            }
+          ]
+        },
+        "productionSystems": ["rainfed"],
+        "applicability": [
+          {
+            "regionId": "synthetic-region",
+            "status": "reviewed",
+            "citations": [
+              {
+                "sourceId": "synthetic-source",
+                "locator": "Synthetic engine fixture",
+                "interpretation": "direct",
+                "note": "Invented test rules; no agricultural evidence or real review."
+              }
+            ],
+            "note": "Synthetic scope, not real geographic applicability."
+          }
+        ],
+        "review": {
+          "status": "reviewed",
+          "reviewer": "Synthetic test actor",
+          "qualification": "Invented test marker, not an agronomist",
+          "reviewedAt": "2026-09-27T00:00:00Z",
+          "regionIds": ["synthetic-region"],
+          "note": "No actual review."
+        },
+        "knowledge": {
+          "plantingWindows": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-alpha-window",
+                "metric": "planting_window",
+                "unit": "month_day",
+                "timeBasis": "recurring_calendar",
+                "stage": "sowing",
+                "start": "12-30",
+                "end": "12-31",
+                "precision": "exact_day",
+                "executionScope": {
+                  "cultivarId": "synthetic-alpha-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          },
+          "duration": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-alpha-duration",
+                "metric": "cycle_duration",
+                "unit": "calendar_day",
+                "timeBasis": "sowing_to_harvest",
+                "stage": "whole_cycle",
+                "min": 1,
+                "max": 3,
+                "executionScope": {
+                  "cultivarId": "synthetic-alpha-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          },
+          "soilRequirements": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-alpha-ph",
+                "metric": "soil_ph",
+                "unit": "pH",
+                "timeBasis": "field_measurement",
+                "stage": "whole_cycle",
+                "method": "water_extract",
+                "min": 6,
+                "max": 8,
+                "executionScope": {
+                  "cultivarId": "synthetic-alpha-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          },
+          "temperatureRequirements": {
+            "status": "unknown",
+            "reason": "Test only; no real agricultural evidence."
+          },
+          "waterDemandClass": {
+            "status": "unknown",
+            "reason": "Test only; no real agricultural evidence."
+          },
+          "waterReference": {
+            "status": "unknown",
+            "reason": "Test only; no real agricultural evidence."
+          },
+          "rotationRestrictions": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-alpha-return",
+                "metric": "minimum_return_interval",
+                "unit": "calendar_year",
+                "timeBasis": "between_same_crop_sowings",
+                "stage": "whole_cycle",
+                "cropId": "synthetic-alpha",
+                "minimumYears": 1,
+                "executionScope": {
+                  "cultivarId": "synthetic-alpha-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          },
+          "healthRestrictions": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-alpha-health",
+                "metric": "crop_health_break",
+                "unit": "calendar_day",
+                "timeBasis": "after_last_host_harvest",
+                "stage": "whole_cycle",
+                "issueId": "synthetic-issue",
+                "kind": "disease",
+                "matchingNames": ["Synthetic issue"],
+                "hostCropIds": ["synthetic-alpha"],
+                "minimumBreakDays": 10,
+                "executionScope": {
+                  "cultivarId": "synthetic-alpha-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          }
+        },
+        "limitations": [
+          "Synthetic fixture; must never enter production evidence."
+        ]
+      },
+      {
+        "id": "synthetic-beta",
+        "version": "0.0.1",
+        "synthetic": true,
+        "identity": {
+          "name": "Synthetic crop 1",
+          "scientificName": "Synthetic species 1",
+          "family": "Fabaceae",
+          "citations": [
+            {
+              "sourceId": "synthetic-source",
+              "locator": "Synthetic engine fixture",
+              "interpretation": "direct",
+              "note": "Invented test rules; no agricultural evidence or real review."
+            }
+          ]
+        },
+        "harvestProduct": "dry_grain",
+        "cultivar": {
+          "status": "specified",
+          "id": "synthetic-beta-cultivar",
+          "name": "Synthetic cultivar",
+          "citations": [
+            {
+              "sourceId": "synthetic-source",
+              "locator": "Synthetic engine fixture",
+              "interpretation": "direct",
+              "note": "Invented test rules; no agricultural evidence or real review."
+            }
+          ]
+        },
+        "productionSystems": ["rainfed"],
+        "applicability": [
+          {
+            "regionId": "synthetic-region",
+            "status": "reviewed",
+            "citations": [
+              {
+                "sourceId": "synthetic-source",
+                "locator": "Synthetic engine fixture",
+                "interpretation": "direct",
+                "note": "Invented test rules; no agricultural evidence or real review."
+              }
+            ],
+            "note": "Synthetic scope, not real geographic applicability."
+          }
+        ],
+        "review": {
+          "status": "reviewed",
+          "reviewer": "Synthetic test actor",
+          "qualification": "Invented test marker, not an agronomist",
+          "reviewedAt": "2026-09-27T00:00:00Z",
+          "regionIds": ["synthetic-region"],
+          "note": "No actual review."
+        },
+        "knowledge": {
+          "plantingWindows": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-beta-window",
+                "metric": "planting_window",
+                "unit": "month_day",
+                "timeBasis": "recurring_calendar",
+                "stage": "sowing",
+                "start": "01-04",
+                "end": "01-06",
+                "precision": "exact_day",
+                "executionScope": {
+                  "cultivarId": "synthetic-beta-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          },
+          "duration": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-beta-duration",
+                "metric": "cycle_duration",
+                "unit": "calendar_day",
+                "timeBasis": "sowing_to_harvest",
+                "stage": "whole_cycle",
+                "min": 1,
+                "max": 2,
+                "executionScope": {
+                  "cultivarId": "synthetic-beta-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          },
+          "soilRequirements": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-beta-ph",
+                "metric": "soil_ph",
+                "unit": "pH",
+                "timeBasis": "field_measurement",
+                "stage": "whole_cycle",
+                "method": "water_extract",
+                "min": 6,
+                "max": 8,
+                "executionScope": {
+                  "cultivarId": "synthetic-beta-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          },
+          "temperatureRequirements": {
+            "status": "unknown",
+            "reason": "Test only; no real agricultural evidence."
+          },
+          "waterDemandClass": {
+            "status": "unknown",
+            "reason": "Test only; no real agricultural evidence."
+          },
+          "waterReference": {
+            "status": "unknown",
+            "reason": "Test only; no real agricultural evidence."
+          },
+          "rotationRestrictions": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-beta-return",
+                "metric": "minimum_return_interval",
+                "unit": "calendar_year",
+                "timeBasis": "between_same_crop_sowings",
+                "stage": "whole_cycle",
+                "cropId": "synthetic-beta",
+                "minimumYears": 1,
+                "executionScope": {
+                  "cultivarId": "synthetic-beta-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          },
+          "healthRestrictions": {
+            "status": "sourced",
+            "rules": [
+              {
+                "citations": [
+                  {
+                    "sourceId": "synthetic-source",
+                    "locator": "Synthetic engine fixture",
+                    "interpretation": "direct",
+                    "note": "Invented test rules; no agricultural evidence or real review."
+                  }
+                ],
+                "evidenceRegionIds": ["synthetic-region"],
+                "productionSystems": ["rainfed"],
+                "severity": "hard",
+                "reviewStatus": "reviewed",
+                "conditions": "Synthetic rule to exercise infrastructure only.",
+                "id": "synthetic-beta-health",
+                "metric": "crop_health_break",
+                "unit": "calendar_day",
+                "timeBasis": "after_last_host_harvest",
+                "stage": "whole_cycle",
+                "issueId": "synthetic-issue",
+                "kind": "disease",
+                "matchingNames": ["Synthetic issue"],
+                "hostCropIds": ["synthetic-beta"],
+                "minimumBreakDays": 10,
+                "executionScope": {
+                  "cultivarId": "synthetic-beta-cultivar",
+                  "conditionsStatus": "encoded_by_scope"
+                }
+              }
+            ]
+          }
+        },
+        "limitations": [
+          "Synthetic fixture; must never enter production evidence."
+        ]
+      }
+    ]
+  }
+}

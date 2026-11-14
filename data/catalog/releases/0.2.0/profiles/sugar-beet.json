@@ -1,0 +1,172 @@
+{
+  "id": "sugar-beet",
+  "version": "0.2.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sugar beet",
+    "scientificName": "Beta vulgaris L.",
+    "family": "Amaranthaceae",
+    "citations": [
+      {
+        "sourceId": "kew-beet",
+        "locator": "Accepted name and classification",
+        "interpretation": "direct",
+        "note": "Accepted taxonomic identity; not cultivar evidence."
+      }
+    ],
+    "localNames": []
+  },
+  "harvestProduct": "sugar_root",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "context_only",
+          "note": "Explicit regional context; actual farm/campaign applicability pending."
+        }
+      ],
+      "note": "Pilot research candidate only; requires specialist assessment for the actual farm and campaign."
+    }
+  ],
+  "rules": [
+    {
+      "id": "beet-tadla-autumn",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3; page 8, section 3.1.2.1",
+          "interpretation": "normalized",
+          "note": "Early September to mid-November approximated; annual campaign confirmation required."
+        }
+      ],
+      "scope": {
+        "regionIds": ["beni-mellal-tadla"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Beni Moussa, Dir and Beni Amir; actual dates determined by regional campaign commission and processing arrangements.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "beet-ph",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 6, section 2",
+          "interpretation": "direct",
+          "note": "Research reference; not an approved constraint."
+        }
+      ],
+      "scope": {
+        "regionIds": ["beni-mellal-tadla"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Source favorable pH range; laboratory method unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6.5,
+      "max": 7.5
+    },
+    {
+      "id": "beet-growth-maxima",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 6, section 2",
+          "interpretation": "direct",
+          "note": "Research reference; not an approved constraint."
+        }
+      ],
+      "scope": {
+        "regionIds": ["beni-mellal-tadla"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Source reference range, not an exclusion threshold; measurement medium/averaging unresolved.",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": 20,
+      "upperDegC": 28
+    },
+    {
+      "id": "beet-water-scenario",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 6, section 2",
+          "interpretation": "direct",
+          "note": "Research reference; not an approved constraint."
+        }
+      ],
+      "scope": {
+        "regionIds": ["beni-mellal-tadla"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "extracted"
+      },
+      "conditions": "Source water-use scenario for root yield 60 tonnes/ha; not net irrigation, available farm water or water balance.",
+      "metric": "water_reference",
+      "basis": "seasonal_scenario",
+      "minMm": 550,
+      "minInclusive": true,
+      "maxMm": 600
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "cycle_duration",
+      "reason": "The page 10 irrigation example has a 250-day cycle, but is not a cultivar-specific maturity interval and is not used for scheduling."
+    },
+    {
+      "topic": "water_demand",
+      "reason": "No shared sourced comparison method for low/moderate/high demand across these crops."
+    },
+    {
+      "topic": "rotation",
+      "reason": "No reviewed numerical return interval or transition exclusions for the pilot established from this source."
+    },
+    {
+      "topic": "crop_health",
+      "reason": "No sourced crop-health break rule was extracted."
+    },
+    {
+      "topic": "cultivar",
+      "reason": "No cultivar selected or locally reviewed. Maturity and tolerances depend on cultivar and management."
+    }
+  ],
+  "limitations": [
+    "Sugar beet requires local campaign and processing context; profile is a candidate, not a recommendation.",
+    "Older agronomy terminology Chenopodiaceae is reconciled to current Kew Amaranthaceae identity.",
+    "Source describes favorable temperature maxima but does not specify a daily measurement basis.",
+    "Degree-day reference has no defined base temperature; no thermal duration model inferred.",
+    "No Beni Mellal agronomist review has occurred. Research extraction is not agricultural validation."
+  ]
+}

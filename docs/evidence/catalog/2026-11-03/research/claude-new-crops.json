@@ -1,0 +1,2368 @@
+[
+  {
+    "item": "A.strawberry.cold",
+    "status": "found",
+    "crop": "strawberry",
+    "metric": "temperature",
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": {
+        "basis": "phenological_stage_only",
+        "note": "Source gives the stage name (full bloom) with a 30-minute exposure duration, not a days-after-planting or GDD timing."
+      },
+      "lowerDegC": -1,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "non_morocco_reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 4,
+      "title": "Frost Damage and Protection in Strawberry and Saskatoon Orchards",
+      "publisher": "Manitoba Agriculture (Government of Manitoba)",
+      "year": 0,
+      "url": "https://gov.mb.ca/agriculture/crops/crop-management/fruit-crops/print,frost-damage-and-protection-in-strawberry-and-saskatoon-orchards.html",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/mb-strawberry-frost.html",
+      "fileSha256": "4f7bf2fce54e841397b62fc6595d0521c88c7ab4a2d747d762ca32265be167a1",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true
+    },
+    "locator": "section \"Strawberries Frost Tolerance and Injury Symptoms\"",
+    "quote": "Strawberry flower buds and fruit are susceptible to frost injury any time after bud break (-1ºC or lower)... Strawberry flower buds can tolerate lower frost temperatures depending on its stage of development. For example tight bud flower stage can tolerate -5ºC, tight with white petals -2.2ºC, full bloom -1ºC, past full bloom and immature fruit can tolerate -2.2ºC. Note: These temperatures would have to be present for 30 minutes with an expected kill rate of 90%.",
+    "translation": "Already in English.",
+    "interpretation": "The source gives per-stage 30-minute, 90%-kill thresholds. The most conservative (least cold-tolerant) named flowering stage is full bloom at -1°C; earlier (tight bud, -5°C) and later (immature fruit, -2.2°C) stages tolerate more cold. -1°C is recorded as the flowering-stage damage limit because it is the stage this catalog's existing crops label 'flowering' and is the most restrictive value for that stage.",
+    "confidence": "medium",
+    "applicabilityNote": "This is a Canadian (Manitoba) extension source, not a Moroccan or Mediterranean one (nonLocal=true, tier 4, last resort per the research rules). No Moroccan- or FAO-sourced strawberry frost threshold was found in this pass. Applicability to Gharb/Loukkos conditions and local cultivars is unverified.",
+    "quoteRecheckedOn": "2026-11-06"
+  },
+  {
+    "item": "A.strawberry.heat",
+    "status": "not_found",
+    "searched": [
+      {
+        "query": "FAO Ecocrop strawberry Fragaria ananassa temperature tolerance optimal",
+        "where": "web search + FAO Ecocrop data sheet id=1112",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "strawberry flower frost damage temperature chart extension (heat side)",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "FAO Ecocrop lists an 'absolute max' of 28 for Fragaria x ananassa, but the page gives no unit and does not say whether this is a damage/survival limit or just an uncommon-tolerance boundary (fields for killing temperature are blank/'no input'), so it fails the quote-and-definition standard and cannot be used. A gardening site (not an extension/research tier source) claims most cultivars stop setting fruit above ~27°C, but is not citable under the source-priority rules."
+  },
+  {
+    "item": "B.strawberry.planting_window",
+    "status": "not_found",
+    "searched": [
+      {
+        "query": "strawberry Fragaria ananassa cycle length FAO Ecocrop days 180 270",
+        "where": "FAO Ecocrop data sheet id=1112",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "FAO Ecocrop gives a 'crop cycle' of 180–270 with no stated unit (likely days, unconfirmed) and no planting-window dates; this does not meet the exact-quote standard for a Moroccan planting window. No Moroccan Gharb/Loukkos planting-calendar source (INRA, ORMVA du Gharb/Loukkos, ONCA) was checked in the time available for this pass."
+  },
+  {
+    "item": "B.strawberry.planting_window.pass2",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "strawberry",
+    "metric": "planting_window",
+    "proposed": {
+      "start": "09-15",
+      "end": null,
+      "precision": "approximate",
+      "endNote": "Source says \"début octobre\" (early October); no day is given, so no end day is invented."
+    },
+    "scope": {
+      "regions": [
+        "Gharb",
+        "Loukkos"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 4,
+      "title": "Fraise, framboise, cerise...ces fruits rouges qui cartonnent",
+      "publisher": "le360.ma (Moroccan news outlet), attributing figures to INRA",
+      "year": 2019,
+      "url": "https://fr.le360.ma/societe/fraise-framboise-ceriseces-fruits-rouges-qui-cartonnent-191094",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/le360-fruits-rouges.html",
+      "fileSha256": "cd2fcbb047c80ca4764e1a7c09c462f22932cdbeabb22e5ba2eb5452f7297c98",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Press article (published 2019-05-27) that attributes the planting dates to INRA; the INRA original was not located. Secondary, therefore tier 4."
+    },
+    "locator": "paragraph beginning \"Depuis 2010, de nouvelles variétés sont cultivées\"",
+    "quote": "Les dates de plantation varient beaucoup selon le type de plant utilisé, le climat général de la région et les variétés choisies. Au Maroc, les dates de plantation optimales se situent entre le 15 septembre et début octobre, précise l’INRA.",
+    "translation": "Planting dates vary greatly with the type of plant, the general climate of the region and the chosen varieties. In Morocco the optimal planting dates are between 15 September and early October, INRA states.",
+    "interpretation": "Start 15 September is explicit; the end is \"early October\" with no day. Recorded as a partial window. The page (a 2019 press article) attributes the dates to INRA but the INRA original was not found. This pass supersedes the not_found entry B.strawberry.planting_window from pass 1.",
+    "confidence": "low",
+    "applicabilityNote": "Gharb and Loukkos producers (the article is about those two regions). A conflicting set of dates appears in a student blog (see B.strawberry.planting_window.conflict_iav_blog).",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "exact end day",
+      "INRA primary document",
+      "distinction by plant type (fresh vs. cold-stored)"
+    ],
+    "supersedes": "B.strawberry.planting_window (pass 1, not_found)"
+  },
+  {
+    "item": "B.strawberry.planting_window.conflict_iav_blog",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "strawberry",
+    "metric": "planting_window",
+    "proposed": {
+      "start": "11-10",
+      "end": "12-15",
+      "precision": "exact_day",
+      "plantType": "fresh plants",
+      "secondWindow": {
+        "start": "07-01",
+        "end": "08-15",
+        "plantType": "cold-stored (\"Fridge\") plants"
+      }
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 4,
+      "title": "Le fraisier (student blog, agronomie-iav.blogspot.com)",
+      "publisher": "Unattributed student blog for IAV Hassan II agronomy course notes",
+      "year": 2015,
+      "url": "https://agronomie-iav.blogspot.com/2015/08/le-fraisier.html",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/iav-blog-fraisier.html",
+      "fileSha256": "a85e9c01261d0d6bdefd8deef4f11d864baf95b5da384ef80b5fa7e31b0b3607",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Weak, unattributed course-notes blog; recorded only because it conflicts with the le360/INRA planting dates. Do not rely on it."
+    },
+    "locator": "section on planting dates",
+    "quote": "In Morocco, optimum planting dates are located: (1) between November 10 and December 15 for fresh plants and (2) between 1 July and 15 August for plants",
+    "translation": "Same text (already English).",
+    "interpretation": "A different set of dates from the le360/INRA statement (15 Sep - early Oct). Cannot be reconciled from the sources at hand: they may refer to different plant types or regions, or the blog may be wrong. Do not choose silently.",
+    "confidence": "low",
+    "applicabilityNote": "Unattributed student blog; recorded only to show the conflict. Not usable for a catalog release.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "authoritative source",
+      "region"
+    ],
+    "conflictsWith": "B.strawberry.planting_window.pass2"
+  },
+  {
+    "item": "B.strawberry.cycle_duration.pass2",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "strawberry",
+    "metric": "cycle_duration",
+    "proposed": {
+      "basis": "planting_to_end_of_production",
+      "minDays": null,
+      "maxDays": null,
+      "plantingStart": "09-15",
+      "productionEndNote": "production ends in July (no day given); soil preparation starts in August"
+    },
+    "scope": {
+      "regions": [
+        "Gharb",
+        "Loukkos"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 4,
+      "title": "Fraise, framboise, cerise...ces fruits rouges qui cartonnent",
+      "publisher": "le360.ma (Moroccan news outlet), attributing figures to INRA",
+      "year": 2019,
+      "url": "https://fr.le360.ma/societe/fraise-framboise-ceriseces-fruits-rouges-qui-cartonnent-191094",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/le360-fruits-rouges.html",
+      "fileSha256": "cd2fcbb047c80ca4764e1a7c09c462f22932cdbeabb22e5ba2eb5452f7297c98",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Press article (published 2019-05-27) that attributes the planting dates to INRA; the INRA original was not located. Secondary, therefore tier 4."
+    },
+    "locator": "paragraph before \"Lire aussi\"",
+    "quote": "Les travaux du sol commencent en août au sein des exploitations et la fin de la production s’achevant en juillet",
+    "translation": "Soil work starts in August on the farms and production ends in July.",
+    "interpretation": "Gives the calendar frame of the season (soil work August, planting from 15 September, production ending July) but no number of days; no duration is computed from it.",
+    "confidence": "low",
+    "applicabilityNote": "Gharb/Loukkos press description, not a technical sheet.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "minDays and maxDays",
+      "harvest start date"
+    ],
+    "supersedes": "B.strawberry.cycle_duration (not recorded in pass 1)"
+  },
+  {
+    "item": "A.strawberry.heat.pass2",
+    "status": "not_found",
+    "crop": "strawberry",
+    "searched": [
+      {
+        "query": "fraisier Maroc températures létales chaleur floraison arrêt nouaison",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "strawberry Morocco Loukkos planting date cultivar yield",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "FAO ECOCROP lists TMAX 28 for Fragaria x ananassa with no stated stage or daily basis (see ecocrop record below). The le360 (2019) article states a mean temperature of 10-15 C for good flowering and 20 C for good fertilisation; these are optima, not damage limits, and are not recorded as damage limits. Mouden et al. 2013 gives no temperature limit."
+  },
+  {
+    "item": "A.strawberry.heat.ecocrop",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "strawberry",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 28.0,
+      "ecocropNote": "ECOCROP's TMAX field, not a confirmed daily maximum air-temperature reading. "
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Fragaria x ananassa"
+    },
+    "source": {
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "Same file and caveats as claude-supplement-A.json: ECOCROP TMAX/TMIN/KTMP are species-level adaptability bounds, not confirmed daily extremes, and carry no growth stage or duration."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Fragaria x ananassa\"; field TMAX",
+    "quote": "Fragaria x ananassa,...,TMIN=6,TMAX=28,...,KTMPR=NA,KTMP=NA,...",
+    "translation": "n/a (numeric database fields)",
+    "interpretation": "Same reading as claude-supplement-A.json: the field is an absolute species-level bound used for monthly climate matching; no daily-extreme basis, growth stage or duration is stated.",
+    "confidence": "low",
+    "applicabilityNote": "Global species model, not Moroccan; closest FAO-tier evidence only. ",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily air-temperature basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ]
+  },
+  {
+    "item": "C.strawberry.rotation",
+    "status": "not_found",
+    "crop": "strawberry",
+    "searched": [
+      {
+        "query": "fraisier précédent cultural rotation retour même parcelle années Verticillium Maroc",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "strawberry rotation Morocco predecessor crop return interval",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "Search returned only general (non-Moroccan, non-quotable) rotation advice; the Moroccan sources opened (Mouden et al. 2013) mention soil-borne Rhizoctonia, Fusarium and Verticillium on strawberry but state no rotation interval or predecessor. Preferred predecessor, prohibited predecessor and minimum return interval therefore all remain not found."
+  },
+  {
+    "item": "F.strawberry.observed_yield",
+    "status": "not_found",
+    "crop": "strawberry",
+    "searched": [
+      {
+        "query": "Maatala fruits rouges Loukkos fraise rendement moyen t/ha",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "ORMVAG fraise rendement 42 t/ha Gharb strawberry",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "strawberry Morocco Loukkos Gharb planting date cultivar yield t/ha study",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "Mouden et al. 2013 (opened) state 2010 area 3,035 ha and production 140,600 t but no t/ha figure; a yield is not constructed by dividing. Search snippets mention about 42 t/ha (attributed to ORMVAG by a trade article) and about 50 t/ha for greenhouse (Medias24, 2026), but those pages returned 403 or were not opened, so neither is recorded as a fact. Maatala et al. 2020 (RMSAV 8(3): 339-346) is the likely primary source for the yield and was not retrievable (core.ac.uk returned 403)."
+  },
+  {
+    "item": "G.strawberry.disease.grey_mould",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "strawberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonName": {
+        "en": "grey mould (Botrytis fruit rot)",
+        "fr": "pourriture grise",
+        "ar": null
+      },
+      "scientificName": "Botrytis cinerea",
+      "hostCrops": [
+        "strawberry"
+      ],
+      "visibleSymptoms": "Fruits first brown, then become covered with fruiting structures first whitish-grey and then grey (source text).",
+      "moroccoOccurrence": "Named as one of the two most important fungal diseases of strawberry in Morocco; surveyed in Moulay Bousselham (Gharb/Loukkos), 2010 season.",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Mycoflore de quelques variétés du fraisier (Fragaria ananassa L.), cultivées dans la région du Gharb et le Loukkos (Maroc)",
+      "publisher": "Journal of Applied Biosciences 61: 4490-4514 (Mouden, Benkirane, Ouazzani Touhami, Douira; Université Ibn Tofail, Kénitra)",
+      "year": 2013,
+      "url": "https://ajol.info/index.php/jab/article/view/85597/75527",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/jab-631-2012.pdf",
+      "fileSha256": "cb5fff2e512679601886cebeba1f3027e99788d2974c0e12aa98abd7214fc93c",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed field study (Moulay Bousselham, 2010 season). Introductory statements on the main diseases cite Benicha 2006, Chtaina et al. 2009 and Walali Loudyi & Skiredj 2003."
+    },
+    "locator": "PDF page(s) [3, 4] (journal page(s) [4492, 4493]); ",
+    "quote": "l´oïdium et la pourriture grise sont signalées comme les deux maladies cryptogamiques les plus importantes au Maroc, causées respectivement par les champignons Sphaerotheca macularis et Botrytis cinerea. [...] brunissent au début puis se couvrent de fructifications d’abord blanc-grisâtre ensuite grise",
+    "translation": "Powdery mildew and grey mould are reported as the two most important fungal diseases in Morocco, caused respectively by Sphaerotheca macularis and Botrytis cinerea. [...] (other fruits) first turn brown and then become covered with fruiting bodies first whitish-grey and then grey.",
+    "interpretation": "Both quotes are from the same paper. The Arabic/Darija name was not given by the source. No treatment information recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "Gharb/Loukkos field survey (two farms, three cultivars: Camarosa, Festival and Splander, as spelled in the paper).",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "Arabic/Darija name",
+      "rotation advice"
+    ]
+  },
+  {
+    "item": "G.strawberry.disease.powdery_mildew",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "strawberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonName": {
+        "en": "powdery mildew",
+        "fr": "oïdium",
+        "ar": null
+      },
+      "scientificName": "Sphaerotheca macularis",
+      "hostCrops": [
+        "strawberry"
+      ],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": "Named as one of the two most important fungal diseases of strawberry in Morocco, present throughout the season.",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Mycoflore de quelques variétés du fraisier (Fragaria ananassa L.), cultivées dans la région du Gharb et le Loukkos (Maroc)",
+      "publisher": "Journal of Applied Biosciences 61: 4490-4514 (Mouden, Benkirane, Ouazzani Touhami, Douira; Université Ibn Tofail, Kénitra)",
+      "year": 2013,
+      "url": "https://ajol.info/index.php/jab/article/view/85597/75527",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/jab-631-2012.pdf",
+      "fileSha256": "cb5fff2e512679601886cebeba1f3027e99788d2974c0e12aa98abd7214fc93c",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed field study (Moulay Bousselham, 2010 season). Introductory statements on the main diseases cite Benicha 2006, Chtaina et al. 2009 and Walali Loudyi & Skiredj 2003."
+    },
+    "locator": "PDF page(s) [3] (journal page(s) [4492]); ",
+    "quote": "l´oïdium et la pourriture grise sont signalées comme les deux maladies cryptogamiques les plus importantes au Maroc, causées respectivement par les champignons Sphaerotheca macularis et Botrytis cinerea. Ces deux maladies sévissent durant toute la campagne",
+    "translation": "Powdery mildew and grey mould are the two most important fungal diseases in Morocco... Both diseases occur throughout the season.",
+    "interpretation": "Identity and Moroccan importance only; the paper gives no powdery-mildew symptom description, so visibleSymptoms stays null.",
+    "confidence": "medium",
+    "applicabilityNote": "Moroccan strawberry in general; cited by the authors from earlier Moroccan work (Chtaina et al. 2009).",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "visible symptoms",
+      "Arabic/Darija name",
+      "rotation advice"
+    ]
+  },
+  {
+    "item": "G.strawberry.pest.mites_noctuids_aphids",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "strawberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonName": {
+        "en": "mites, noctuid caterpillars, aphids (as named by farmers)",
+        "fr": "acariens, noctuelles, pucerons",
+        "ar": null
+      },
+      "scientificName": null,
+      "hostCrops": [
+        "strawberry"
+      ],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": "Reported by Moroccan strawberry farmers (Benicha 2006, cited).",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Mycoflore de quelques variétés du fraisier (Fragaria ananassa L.), cultivées dans la région du Gharb et le Loukkos (Maroc)",
+      "publisher": "Journal of Applied Biosciences 61: 4490-4514 (Mouden, Benkirane, Ouazzani Touhami, Douira; Université Ibn Tofail, Kénitra)",
+      "year": 2013,
+      "url": "https://ajol.info/index.php/jab/article/view/85597/75527",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/jab-631-2012.pdf",
+      "fileSha256": "cb5fff2e512679601886cebeba1f3027e99788d2974c0e12aa98abd7214fc93c",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed field study (Moulay Bousselham, 2010 season). Introductory statements on the main diseases cite Benicha 2006, Chtaina et al. 2009 and Walali Loudyi & Skiredj 2003."
+    },
+    "locator": "PDF page(s) [3] (journal page(s) [4492]); ",
+    "quote": "Les principales maladies et ravageurs signalés par les agriculteurs sont l'oïdium, les acariens, les noctuelles, le Botrytis, les pucerons et le mildiou (Benicha, 2006).",
+    "translation": "The main diseases and pests reported by farmers are powdery mildew, mites, noctuid moths, Botrytis, aphids and downy mildew (Benicha, 2006).",
+    "interpretation": "A list of pest groups only: no scientific names, symptoms or Moroccan locations are stated, so this is a lead for the photo-check catalog, not a complete record.",
+    "confidence": "low",
+    "applicabilityNote": "Secondary citation inside a mycology paper.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "scientific names",
+      "visible symptoms",
+      "location"
+    ]
+  },
+  {
+    "item": "A.cumin.cold",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "temperature",
+    "proposed": {
+      "basis": "unspecified_air_temperature",
+      "medium": "air",
+      "stage": "flowering_and_seed",
+      "stageWindow": {
+        "basis": "phenological_stage_only",
+        "note": "source names flowers and seeds only; no timing in days or GDD"
+      },
+      "lowerDegC": 2,
+      "upperDegC": null,
+      "direction": "damage occurs below this value"
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "Draa-Tafilalet",
+        "Marrakech-Safi",
+        "Oriental"
+      ],
+      "farmingSystem": "rainfed and irrigated",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [6] (journal page(s) [202]); ",
+    "quote": "Cumin is sensitive to frost, as both its flowers and seeds could be damaged at temperatures below 2°C.",
+    "translation": "Same text (already English).",
+    "interpretation": "The source states damage to flowers and seeds below 2 degrees C. It does not say whether this is a daily minimum, for how long, or which cultivar. Recorded as the cold damage limit for the flowering/seed stage, basis unspecified.",
+    "confidence": "medium",
+    "applicabilityNote": "Moroccan oasis and Marrakech-Safi cumin; the sentence is in the authors' discussion of sowing dates and is not attributed to a specific reference (the following sentence cites Rahman et al. 2020).",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_minimum basis",
+      "exposure duration",
+      "stage timing in days"
+    ]
+  },
+  {
+    "item": "A.cumin.heat",
+    "status": "not_found",
+    "crop": "cumin",
+    "searched": [
+      {
+        "query": "cumin Maroc Cuminum cyminum date de semis rendement fiche technique INRA",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "Al Awamia 2024 cumin Morocco farming systems sowing yield",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The Moroccan cumin paper gives only an optimum (\"temperatures ranging from 9°C to 26°C\", citing Rahman et al. 2020), which is an optimum range, not a damage limit, and is not recorded as one. FAO ECOCROP lists TMAX 30 (separate record)."
+  },
+  {
+    "item": "A.cumin.heat.ecocrop",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 30.0,
+      "ecocropNote": "ECOCROP's TMAX field, not a confirmed daily maximum air-temperature reading. "
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Cuminum cyminum"
+    },
+    "source": {
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "Same file and caveats as claude-supplement-A.json: ECOCROP TMAX/TMIN/KTMP are species-level adaptability bounds, not confirmed daily extremes, and carry no growth stage or duration."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Cuminum cyminum\"; field TMAX",
+    "quote": "Cuminum cyminum,...,TMIN=9,TMAX=30,...,KTMPR=NA,KTMP=NA,...",
+    "translation": "n/a (numeric database fields)",
+    "interpretation": "Same reading as claude-supplement-A.json: the field is an absolute species-level bound used for monthly climate matching; no daily-extreme basis, growth stage or duration is stated.",
+    "confidence": "low",
+    "applicabilityNote": "Global species model, not Moroccan; closest FAO-tier evidence only. ",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily air-temperature basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ]
+  },
+  {
+    "item": "B.cumin.planting_window",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "planting_window",
+    "proposed": {
+      "start": "10-25",
+      "end": "02-07",
+      "precision": "approximate",
+      "conversionNote": "\"last week of October\" taken as 25 October and \"early February\" as 7 February; both are approximations of the source wording",
+      "regionalWindows": [
+        {
+          "zone": "rain-fed Marrakech-Safi",
+          "sourceWords": "sown upon rain first arrival, typically between December and January; most farmers plant in January"
+        },
+        {
+          "zone": "warmer oasis zones (Alnif, Errissani)",
+          "sourceWords": "late October to early November"
+        },
+        {
+          "zone": "colder zones (Errachidia, Tinghir, Boudnib)",
+          "sourceWords": "late January to February, to protect seedlings from frost"
+        }
+      ]
+    },
+    "scope": {
+      "regions": [
+        "Draa-Tafilalet",
+        "Marrakech-Safi",
+        "Oriental"
+      ],
+      "farmingSystem": "rainfed and irrigated",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [6] (journal page(s) [202]); ",
+    "quote": "According to our survey, sowing begins in the last week of October and lasts through early February. [...] In colder regions like Errachidia, Tinghir, and Boudnib, sowing takes place in late January to February to protect seedlings from frost damage. [...] Most farmers in the Marrakech-Safi region plant in January, avoiding December to shorten the crop lifecycle as a disease management measure against cumin wilt and blight",
+    "translation": "Sowing begins in the last week of October and lasts through early February [...] colder regions sow in late January to February to protect seedlings from frost [...] most Marrakech-Safi farmers plant in January, avoiding December to shorten the crop lifecycle (disease management).",
+    "interpretation": "National farmer-survey window with regional sub-windows. Day numbers for \"last week\" and \"early\" are approximations and are flagged as such.",
+    "confidence": "medium",
+    "applicabilityNote": "Farmer-reported practice (survey of 69 farmers), not an agronomic recommendation; regional differences are large, so a single national window is a poor planner input.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "exact day numbers",
+      "planner-ready per-zone windows"
+    ]
+  },
+  {
+    "item": "B.cumin.cycle_duration.arid_oases",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "cycle_duration",
+    "proposed": {
+      "basis": "sowing_to_harvest",
+      "minDays": 140,
+      "maxDays": 180,
+      "zone": "arid and hyper-arid zones (Tinghir, Errachidia, Zagora)"
+    },
+    "scope": {
+      "regions": [
+        "Draa-Tafilalet (Tinghir, Errachidia, Zagora)"
+      ],
+      "farmingSystem": "irrigated oasis",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [7] (journal page(s) [203]); ",
+    "quote": "the growing period for cumin production is longer in arid and hyper-arid zones (Tinghir, Errachidia, and Zagora) extending over 140–180 days, compared to only 115–140 days in mountainous areas and 103±14.2 days in the semi-arid climate and higher latitudes of the Marrakech-Safi region",
+    "translation": "Same text (already English).",
+    "interpretation": "Farmer-reported growing period by zone. Grains are harvested green between late March and May. This record holds the arid-oasis range; the other zones are in the two records below.",
+    "confidence": "medium",
+    "applicabilityNote": "Durations are \"reported by farmers\" and \"closely associated with the planting period rather than the local ecosystem\".",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false
+  },
+  {
+    "item": "B.cumin.cycle_duration.mountain",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "cycle_duration",
+    "proposed": {
+      "basis": "sowing_to_harvest",
+      "minDays": 115,
+      "maxDays": 140,
+      "zone": "mountainous areas"
+    },
+    "scope": {
+      "regions": [
+        "mountainous areas (provinces not named)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [7] (journal page(s) [203]); ",
+    "quote": "the growing period for cumin production is longer in arid and hyper-arid zones (Tinghir, Errachidia, and Zagora) extending over 140–180 days, compared to only 115–140 days in mountainous areas and 103±14.2 days in the semi-arid climate and higher latitudes of the Marrakech-Safi region",
+    "translation": "Same text (already English).",
+    "interpretation": "Mountain-zone range from the same sentence; provinces not named in the source.",
+    "confidence": "medium",
+    "applicabilityNote": "Farmer-reported.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false
+  },
+  {
+    "item": "B.cumin.cycle_duration.marrakech_safi_and_national_mean",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "cycle_duration",
+    "proposed": {
+      "basis": "sowing_to_harvest",
+      "minDays": null,
+      "maxDays": null,
+      "marrakechSafiMeanDays": 103,
+      "marrakechSafiSdDays": 14.2,
+      "nationalMeanDays": 134,
+      "nationalSdDays": 27.2
+    },
+    "scope": {
+      "regions": [
+        "Marrakech-Safi",
+        "Morocco (national mean)"
+      ],
+      "farmingSystem": "mostly rainfed in Marrakech-Safi",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [7] (journal page(s) [203]); ",
+    "quote": "the growing period for cumin production is longer in arid and hyper-arid zones (Tinghir, Errachidia, and Zagora) extending over 140–180 days, compared to only 115–140 days in mountainous areas and 103±14.2 days in the semi-arid climate and higher latitudes of the Marrakech-Safi region [...] Consequently, the average life cycle is 134±27.2 days, closely resembling the 120–140 days reported in India by Lal et al. (2014).",
+    "translation": "Same text (already English).",
+    "interpretation": "Means with standard deviations, not minimum/maximum days; kept as means so no range is invented.",
+    "confidence": "medium",
+    "applicabilityNote": "Farmer-reported.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "minDays and maxDays"
+    ]
+  },
+  {
+    "item": "C.cumin.minimum_return_interval",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "minimum_return_interval",
+    "proposed": {
+      "years": 3,
+      "applies_to": "fields affected by cumin wilt (Fusarium oxysporum f. sp. cumini)",
+      "basis": "minimum years before cumin returns, other crops in between"
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [10] (journal page(s) [206]); ",
+    "quote": "Continuous cumin cropping in the same field is not recommended. [...] To minimize wilt disease in affected fields, Lal et al. (2014) recommend at least a three years rotation with other crops.",
+    "translation": "Continuous cumin in the same field is not recommended. To minimise wilt in affected fields, Lal et al. (2014) recommend at least a three-year rotation with other crops.",
+    "interpretation": "The three-year figure is the authors' citation of Lal et al. (2014) (Indian extension/research literature), not a Moroccan measurement; it applies to wilt-affected fields.",
+    "confidence": "medium",
+    "applicabilityNote": "Not Moroccan-derived; the Moroccan paper adopts it as the recommendation.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "Moroccan trial confirmation"
+    ],
+    "family": "Apiaceae (cumin)",
+    "nonLocalOrigin": "Lal et al. 2014 (India)"
+  },
+  {
+    "item": "C.cumin.preferred_predecessor",
+    "status": "not_found",
+    "crop": "cumin",
+    "searched": [
+      {
+        "query": "Al Awamia 2024 cumin crop rotation Morocco preceding crop",
+        "where": "full text of the saved paper",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The paper lists common Moroccan cropping systems: Cumin-Onion-Cumin, Fallow-Cumin-Fallow, Cumin-Alfalfa-Cumin (printed \"Cumin-AlfalfaCumin\"), Cumin-Henna-Cumin, Cumin-Cereals-Cumin and Cumin-Watermelon-Cumin. These describe what farmers do, not a stated preferred predecessor, so no preferred family is recorded.",
+    "commonPractice": "Cumin-Onion-Cumin, Fallow-Cumin-Fallow, Cumin-Alfalfa-Cumin, Cumin-Henna-Cumin, Cumin-Cereals-Cumin, Cumin-Watermelon-Cumin (Homrani Bakali et al. 2024, PDF page 10)"
+  },
+  {
+    "item": "C.cumin.prohibited_predecessor",
+    "status": "not_found",
+    "crop": "cumin",
+    "searched": [
+      {
+        "query": "Al Awamia 2024 cumin crop rotation Morocco avoid",
+        "where": "full text of the saved paper",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No prohibited predecessor family is stated. The paper (citing Lal et al. 2014) advises against growing cumin near water-demanding crops such as watermelon, alfalfa and onion because it raises blight susceptibility; that is about neighbouring crops, not predecessors, even though watermelon, alfalfa and onion also appear in the listed rotations."
+  },
+  {
+    "item": "F.cumin.observed_yield",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "observed_yield",
+    "proposed": {
+      "unit": "t/ha",
+      "national_mean": 0.37,
+      "national_sd": 0.24,
+      "range_min": 0.05,
+      "range_max": 1.15,
+      "rainfed_mean": 0.3,
+      "irrigated_mean": 0.41,
+      "conversion": "published quintals per hectare x 0.1 (3.7+/-2.4, 0.5-11.5, 3.0 and 4.1 q/ha)",
+      "basis": "farmer-reported, survey of 69 farmers",
+      "regionalMeansQPerHa": {
+        "Alnif cercle": 3.3,
+        "Mengoub": 2.8,
+        "Marrakech region": 2.0,
+        "overall average cited": 2.5
+      }
+    },
+    "scope": {
+      "regions": [
+        "Draa-Tafilalet",
+        "Marrakech-Safi",
+        "Oriental"
+      ],
+      "farmingSystem": "rainfed and irrigated",
+      "cultivars": "local and imported seed"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [1, 4] (journal page(s) [197, 200]); ",
+    "quote": "According to farmers, yields vary significantly, ranging from 0.5 to 11.5 q/ha, with an average of 3.7±2.4 q/ha across Morocco. The yield average is 3.0 q/ha in the rain-fed system, slightly lower than the 4.1 q/ha recorded in irrigated systems. [...] In fact, the average yield in the Alnif cercle is 3.3 q/ha, 2.8 q/ha in the Mengoub region and only 2 q/ha in Marrakech region (MAPM, 2014; Hemmi et al., 2017).",
+    "translation": "Same text (already English).",
+    "interpretation": "Quintals per hectare converted by multiplying by 0.1 (1 quintal = 100 kg), as Codex did for the other official yields. Survey year is not stated in the paper (\"yield data from the year preceding this study\"); the Alnif/Mengoub/Marrakech figures cite MAPM 2014 and Hemmi et al. 2017.",
+    "confidence": "medium",
+    "applicabilityNote": "Farmer estimates, not field trials; national mean covers rain-fed Marrakech-Safi and irrigated oases.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "survey year",
+      "per-province yields"
+    ]
+  },
+  {
+    "item": "G.cumin.disease.fusarium_wilt",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonName": {
+        "en": "cumin wilt (Fusarium wilt)",
+        "fr": "flétrissure fusarienne du cumin",
+        "ar": null
+      },
+      "scientificName": "Fusarium oxysporum f. sp. cumini",
+      "hostCrops": [
+        "cumin"
+      ],
+      "visibleSymptoms": "Wilting of plantlets (and damping-off or post-emergence dieback of seedlings) after attack by seed-borne fungal pathogens (source text).",
+      "moroccoOccurrence": "The most frequently observed disease on Moroccan cumin crops (farmer survey: Draa-Tafilalet, Marrakech-Safi, Oriental).",
+      "rotationAdvice": "At least a three-year rotation with other crops in wilt-affected fields (Lal et al. 2014, as cited)."
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [9, 10] (journal page(s) [205, 206]); ",
+    "quote": "Wilt, blight, and powdery mildew are likely the three most significant diseases that commonly attack cumin crops, severely reducing yield and seed quality. Among these, wilt disease caused by Fusarium oxysporum f. sp. cumini is the most frequently observed disease on Moroccan cumin crops. [...] seed damping-off or post-emergence dieback, and wilting of plantlets upon attack by seed-borne fungal pathogens",
+    "translation": "Wilt, blight and powdery mildew are probably the three most significant cumin diseases [...] wilt caused by Fusarium oxysporum f. sp. cumini is the most frequently observed disease on Moroccan cumin. [...] damping-off, post-emergence dieback and wilting of plantlets after attack by seed-borne pathogens.",
+    "interpretation": "The symptom wording is about seedlings and is the only visible description in the paper; adult-plant symptoms are not described. Fungicide use mentioned in the paper is not recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "Moroccan oasis and Marrakech-Safi farmer survey; blight and powdery mildew are named but not described, so they are not recorded as separate entries.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "adult-plant symptoms",
+      "Arabic/Darija name"
+    ]
+  },
+  {
+    "item": "G.cumin.pest.aphids",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonName": {
+        "en": "aphids (cotton aphid, green peach aphid)",
+        "fr": "pucerons",
+        "ar": null
+      },
+      "scientificName": null,
+      "hostCrops": [
+        "cumin"
+      ],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": "The most frequently observed insect pests on Moroccan cumin in the authors' surveys, particularly in the oases.",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [10] (journal page(s) [206]); ",
+    "quote": "Surface grasshoppers, lucerne caterpillars, cotton aphids, green peach aphids, onion thrips, and brown mites are the six primary pests identified in cumin crops (Lal et al. 2014). According to our surveys, aphids were the most frequently observed insect pests, particularly in the oases.",
+    "translation": "Same text (already English).",
+    "interpretation": "The six primary pests are the Lal et al. (2014) list for cumin generally; only aphids are confirmed as the most frequent in Morocco. No scientific names or symptoms are given in the paper. Insecticide names in the paper are not recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "Farmer survey in the oases.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "scientific names",
+      "visible symptoms"
+    ]
+  },
+  {
+    "item": "G.cumin.weed.spergularia",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cumin",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "weed",
+      "commonName": {
+        "en": "Spergularia diandra (sandspurry)",
+        "fr": null,
+        "ar": null
+      },
+      "scientificName": "Spergularia diandra (Guss.) Boiss.",
+      "hostCrops": [
+        "cumin"
+      ],
+      "visibleSymptoms": "Grows densely and sets numerous seeds on sandy soil, competing with the crop (source text).",
+      "moroccoOccurrence": "Oasis fields, especially Tafraout Sidi Ali (Zagora).",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Cumin cultivation in Morocco: seeds used, technical management, production issues, and recommended actions for development",
+      "publisher": "AFRIMED AJ - Al Awamia (145), pp. 197-210 (Homrani Bakali, Sekkour, Sabri et al.; INRA Maroc and ORMVA Tafilalet authors)",
+      "year": 2024,
+      "url": "https://revues.imist.ma/index.php/Afrimed/article/download/48192/27751",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/al-awamia-cumin-2024.pdf",
+      "fileSha256": "70875c3f7b2d3520d1208ad3bf52ab67486111f61db0e7d421232ad4b37eff4f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study by INRA Maroc and ORMVA du Tafilalet staff, in INRA's own journal; farmer survey of 69 farmers in 7 provinces. Could arguably rank as tier 1; kept at tier 3 because it is a journal article. Statements attributed to Lal et al. (2014) are the authors' citation of non-Moroccan literature."
+    },
+    "locator": "PDF page(s) [10] (journal page(s) [206]); ",
+    "quote": "Another serious weed impacting yield in the oases, especially in Tafraout Sidi Ali, is Spergularia diandra (Guss.) Boiss, which thrives in sandy soil.",
+    "translation": "Same text (already English).",
+    "interpretation": "Weed entry for completeness; the English common name \"sandspurry\" is not in the source and is left to review.",
+    "confidence": "medium",
+    "applicabilityNote": "Oasis soils.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "common names"
+    ]
+  },
+  {
+    "item": "B.saffron.flowering_period",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "saffron",
+    "metric": "planting_window",
+    "proposed": {
+      "metricNote": "This is the flowering (harvest) period, not a planting window.",
+      "floweringStart": "10-01",
+      "floweringEnd": "11-30",
+      "precision": "full_month",
+      "trialPlanting": "pot trial corms planted 28 August 2018 (Oujda); breeding-square corms planted 21 September 2015"
+    },
+    "scope": {
+      "regions": [
+        "Oriental (Oujda)"
+      ],
+      "farmingSystem": "experimental pots and open field",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Effect of thermal forcing of corms on the flowering of saffron (Crocus sativus L.)",
+      "publisher": "Black Sea Journal of Agriculture 4(2): 66-70 (Mzabri et al.; Mohammed First University Oujda and INRA Oujda)",
+      "year": 2021,
+      "url": "https://dergipark.org.tr/en/download/article-file/1450149",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/dergipark-1450149.pdf",
+      "fileSha256": "0c10f0edc0d83ecbd1d4c2a8e617f702d48d9dddbe66cfa87f18e576da523aec",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Peer-reviewed Moroccan study from Oujda (eastern Morocco), pot trial plus open-field corms; not the Taliouine production area."
+    },
+    "locator": "PDF page(s) [2] (journal page(s) [67]); ",
+    "quote": "The control corms flowered during the usual flowering period of this species under the climatic conditions of the eastern region of Morocco, namely between October and November. [...] On August 28, 2018, the corms that underwent the different treatments were planted, with a distance of 5cm between the corms (in all directions) and at a depth of 7cm.",
+    "translation": "Same text (already English).",
+    "interpretation": "Flowering falls in October-November in eastern Morocco; the 28 August planting is the date used in an experimental pot trial, not a recommended planting window. Not used as B.saffron.planting_window.",
+    "confidence": "medium",
+    "applicabilityNote": "Oujda (eastern Morocco) pot and open-field trial, not the Taliouine/Taznakht production zone.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "recommended planting window",
+      "Taliouine/Taznakht timing"
+    ]
+  },
+  {
+    "item": "B.saffron.planting_window",
+    "status": "not_found",
+    "crop": "saffron",
+    "searched": [
+      {
+        "query": "safran Taliouine Crocus sativus plantation bulbes période floraison rendement fiche technique ORMVA Ouarzazate",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "safran Maroc conduite culturale plantation cormes juillet août septembre densité ANDZOA ORMVAO fiche",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "saffron Morocco cultivation corms planted August September Taliouine flowering October",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No Moroccan technical sheet with a recommended corm planting window was retrieved. Search snippets mention late July as the best period in an INRA Taliouine study (core.ac.uk 230581481, which returned 403 and was not opened) and a French guide (July to mid-August, non-Moroccan); neither is recorded as a fact. The only opened Moroccan dates are the experimental plantings in B.saffron.flowering_period."
+  },
+  {
+    "item": "B.saffron.stand_lifetime",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "saffron",
+    "metric": "cycle_duration",
+    "proposed": {
+      "basis": "stand_lifetime",
+      "minDays": null,
+      "maxDays": null,
+      "note": "The chapter studied saffron plots with 2, 3, 4, 6 and 10 years of occupation in Taliouine and says soil changes can decrease yields even after 6 years of cultivation. No productive lifetime or replanting year is stated."
+    },
+    "scope": {
+      "regions": [
+        "Taliouine"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Saffron Endomycorrhizae: Diversity and Effect on Plant Growth and Corm Formation",
+      "publisher": "IntechOpen book chapter (Ourras, El Aymani, Mouden, ... Douira; Université Ibn Tofail, Kénitra), Arbuscular Mycorrhizal Fungi in Agriculture - New Insights",
+      "year": null,
+      "url": "https://api.intechopen.com/chapter/pdf-download/84052.pdf",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/intechopen-84052.pdf",
+      "fileSha256": "6d6888df07c7d480daaa0b6e16099fc50df61badc5280424ec9e7e583b47db71",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Open-access book chapter; production figures are attributed to ANDZOA. Year of publication not stated in the saved PDF text."
+    },
+    "locator": "PDF page(s) [6]; ",
+    "quote": "The changes in soil’s chemical and physical properties can play an important role in decreasing saffron yields even after 6 years of cultivation",
+    "translation": "Same text, in English.",
+    "interpretation": "Qualitative evidence that yields can decline after about six years; it is not a stated stand lifetime or replanting interval, so no minimum or maximum is recorded.",
+    "confidence": "low",
+    "applicabilityNote": "Taliouine soil-microbiology chapter; the sentence is a general statement from the authors (reference [42] in the chapter).",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "stand lifetime in years",
+      "replanting interval"
+    ]
+  },
+  {
+    "item": "A.saffron.heat.ecocrop",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "saffron",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 23.0,
+      "ecocropNote": "ECOCROP's TMAX field, not a confirmed daily maximum air-temperature reading. "
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Crocus sativus"
+    },
+    "source": {
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "Same file and caveats as claude-supplement-A.json: ECOCROP TMAX/TMIN/KTMP are species-level adaptability bounds, not confirmed daily extremes, and carry no growth stage or duration."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Crocus sativus\"; field TMAX",
+    "quote": "Crocus sativus,...,TMIN=4,TMAX=23,...,KTMPR=NA,KTMP=NA,...",
+    "translation": "n/a (numeric database fields)",
+    "interpretation": "Same reading as claude-supplement-A.json: the field is an absolute species-level bound used for monthly climate matching; no daily-extreme basis, growth stage or duration is stated.",
+    "confidence": "low",
+    "applicabilityNote": "Global species model, not Moroccan; closest FAO-tier evidence only. ",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily air-temperature basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ]
+  },
+  {
+    "item": "A.saffron.cold",
+    "status": "not_found",
+    "crop": "saffron",
+    "searched": [
+      {
+        "query": "safran Taliouine froid gel limite température dommage",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "saffron Morocco cold damage temperature corm",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The Oujda study gives a physiology requirement (\"High temperatures (23-27 °C) are required to break bud dormancy and for flower initiation\") which is a requirement, not a damage limit. ECOCROP has no KTMP for Crocus sativus (NA); TMIN 4 is an adaptability bound only."
+  },
+  {
+    "item": "C.saffron.rotation",
+    "status": "not_found",
+    "crop": "saffron",
+    "searched": [
+      {
+        "query": "Moroccan saffron Taliouine corm years plantation lifespan replanting rotation fallow Fusarium corm rot",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No source stating a preferred predecessor, a prohibited predecessor or a return interval for saffron in Morocco was found. Saffron is a corm perennial occupying the field for several years, so a rotation-style predecessor rule may not fit this crop at all."
+  },
+  {
+    "item": "F.saffron.observed_yield",
+    "status": "not_found",
+    "crop": "saffron",
+    "searched": [
+      {
+        "query": "safran Taliouine rendement kg/ha",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "saffron Morocco stigma yield kg/ha Anti-Atlas",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The Intechopen chapter (ANDZOA figures) gives 3 t of dry stigmas on 600 ha in 2009 and 6.8 t on about 1800 ha in 2018, but a per-hectare yield is not constructed by dividing. Search snippets mention 2-5 kg/ha and 5.6 kg/ha figures from press sources that were not opened, so they are not recorded. The Oujda paper states only that \"the average productivity of saffron in Morocco remains modest with a significant annual fluctuation\".",
+    "areaAndProduction": {
+      "2009": {
+        "dryStigmaTonnes": 3,
+        "hectares": 600
+      },
+      "2018": {
+        "dryStigmaTonnes": 6.8,
+        "hectares": 1800
+      }
+    },
+    "source": "ANDZOA via intechopen-84052.pdf, PDF page 2"
+  },
+  {
+    "item": "G.saffron.disease.corm_root_rot",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "saffron",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonName": {
+        "en": "saffron corm and root rot / necrosis",
+        "fr": "pourriture des cormes et des racines (nécrose)",
+        "ar": null
+      },
+      "scientificName": "Rhizoctonia violacea and Fusarium oxysporum (as named in the abstract)",
+      "hostCrops": [
+        "saffron"
+      ],
+      "visibleSymptoms": "Necrosis at the corms causing death of the plant (abstract wording).",
+      "moroccoOccurrence": "Taliouine and Taznakht (Anti-Atlas); the abstract says yield varies widely from year to year partly for this reason.",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Sanitary assessment of saffron corms and soil from Great Moroccan production areas: Taliouine and Taznakht",
+      "publisher": "Acta Horticulturae 1184: 263-266 (Bentata, Lage, Bakhy, Ibrahimi, Jbair, El Aissami, Kissayi, Labhilili)",
+      "year": 2017,
+      "url": "https://ishs.org/ishs-article/1184_37/",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/ishs-1184-37.html",
+      "fileSha256": "55dca3bdce52112ebbb766b3cdfa0fac7cbb8870b92ddb87b172f508ac723973",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Abstract only (ISHS page); the full text was not opened."
+    },
+    "locator": "",
+    "quote": "Unfortunately, this is due to several problems, including the development of necrosis at the corms of saffron and causing the death of the plant. [...] we have determined the following species: Rhizoctonia violacea and Fusarium oxysporum which are responsible for root rot disease or death.",
+    "translation": "Same text (already English).",
+    "interpretation": "Abstract-level evidence only (the full text was not opened). The abstract names two fungi as responsible for root rot or death and describes corm necrosis; it gives no detailed visible symptoms on leaves or flowers.",
+    "confidence": "medium",
+    "applicabilityNote": "Samples from Taliouine and Taznakht soils and corms.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "visible above-ground symptoms",
+      "rotation advice",
+      "Arabic/Darija name"
+    ]
+  },
+  {
+    "item": "B.mint.cuts_per_year",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "mint",
+    "metric": "cycle_duration",
+    "proposed": {
+      "basis": "cuts_per_year",
+      "cutsPerYearMax": 6,
+      "cutsPerYearProgrammed": 5,
+      "note": "Cuts per year are reported, not a sowing-to-harvest duration or stand lifetime. Neither the planting window nor the stand lifetime is stated."
+    },
+    "scope": {
+      "regions": [
+        "Settat",
+        "Meknes",
+        "Benslimane",
+        "Marrakech",
+        "Larache",
+        "Agadir"
+      ],
+      "farmingSystem": "mostly irrigated (drip)",
+      "cultivars": "varieties named (Meknassi, Abdi, Ziani, Doukkali, Tamaris, Lbrouj, Tiznit)"
+    },
+    "source": {
+      "tier": 4,
+      "title": "Filière menthe: une activité de niche à fort potentiel de développement",
+      "publisher": "Finances News Hebdo (Moroccan business weekly), published 2021-11-13",
+      "year": 2021,
+      "url": "https://www.fnh.ma/article/actualite-economique/filiere-menthe-une-activite-de-niche-a-fort-potentiel-de-developpement",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/fnh-menthe.html",
+      "fileSha256": "fe3035c5a7acad5d5a5deb8e3e48b3e9f6e924a2426ed6e4b900837e102b7e85",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Press article; figures are not attributed to a named official statistic in the saved text."
+    },
+    "locator": "",
+    "quote": "Selon les variétés, elle permet plusieurs coupes, pouvant aller jusqu’à 6/an.",
+    "translation": "Depending on the variety, it allows several cuts, up to 6 a year.",
+    "interpretation": "FNH gives up to 6 cuts a year; La Vie éco (2015) says five cuts or harvests are scheduled per year (\"Cinq coupes -ou récoltes- sont programmées par an\"). Both are press statements.",
+    "confidence": "low",
+    "applicabilityNote": "Press articles; mint is a perennial cut several times a year, so a sowing-to-harvest duration does not apply.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "planting window",
+      "stand lifetime in years",
+      "primary agronomic source"
+    ],
+    "secondQuote": {
+      "source": "lavieeco",
+      "text": "Cinq coupes -ou récoltes- sont programmées par an.",
+      "url": "https://www.lavieeco.com/?p=63361",
+      "fileSha256": "02975df17b744397ed1fc48be2716126ce3345418aabad207b062092ec78f0ab"
+    }
+  },
+  {
+    "item": "F.mint.observed_yield",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "mint",
+    "metric": "observed_yield",
+    "proposed": {
+      "unit": "t/ha/year",
+      "statedValues": [
+        {
+          "value": 22.5,
+          "meaning": "average yield per hectare according to producers",
+          "source": "La Vie éco 2015"
+        },
+        {
+          "value": 22,
+          "meaning": "total production \"can reach more than 22 t per year per hectare\"; 4-6 t per cut",
+          "source": "FNH 2021"
+        },
+        {
+          "value": 40,
+          "meaning": "\"specialists\" say harvests could reach even 40 t/ha",
+          "source": "FNH 2021"
+        },
+        {
+          "valueRange": [
+            40,
+            120
+          ],
+          "meaning": "Settat, variety Lbrouj, converted from 100,000-300,000 bunches per hectare per harvest by the article",
+          "source": "La Vie éco 2015"
+        }
+      ],
+      "nationalArea": {
+        "hectares": 4500,
+        "tonnes": 70000,
+        "source": "FNH 2021"
+      }
+    },
+    "scope": {
+      "regions": [
+        "Morocco",
+        "Settat"
+      ],
+      "farmingSystem": "mostly irrigated",
+      "cultivars": "various"
+    },
+    "source": {
+      "tier": 4,
+      "title": "Le Maroc exporte environ 6 000 tonnes de menthe par an",
+      "publisher": "La Vie éco (Moroccan weekly), published 2015-07-16",
+      "year": 2015,
+      "url": "https://www.lavieeco.com/?p=63361",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/lavieeco-menthe.html",
+      "fileSha256": "02975df17b744397ed1fc48be2716126ce3345418aabad207b062092ec78f0ab",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Press article; yield figures are stated as coming \"selon les producteurs\"."
+    },
+    "locator": "",
+    "quote": "Le rendement à l’hectare est de 22,5 tonnes selon les producteurs. [...] Soit 40 à 120 tonnes par hectare et par an pour une superficie de 800 hectares.",
+    "translation": "The yield per hectare is 22.5 tonnes according to producers. [...] That is 40 to 120 tonnes per hectare per year for an area of 800 hectares.",
+    "interpretation": "Two press articles agree on about 22 t/ha/year nationally; La Vie éco's Settat figure (40-120 t) is derived from bunch counts and conflicts with it. Both are shown, not reconciled. FNH 2021 (second source, saved as fnh-menthe.html) says \"La production totale peut atteindre plus de 22 tonnes/an par hectare\".",
+    "confidence": "low",
+    "applicabilityNote": "Press articles quoting producers, not official statistics; irrigated vs rain-fed split is not given (FNH says rain-fed yield is low).",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "official statistic",
+      "rainfed vs irrigated split"
+    ],
+    "secondQuote": {
+      "source": "fnh",
+      "text": "La production totale peut atteindre plus de 22 tonnes/an par hectare.",
+      "url": "https://www.fnh.ma/article/actualite-economique/filiere-menthe-une-activite-de-niche-a-fort-potentiel-de-developpement",
+      "fileSha256": "fe3035c5a7acad5d5a5deb8e3e48b3e9f6e924a2426ed6e4b900837e102b7e85"
+    }
+  },
+  {
+    "item": "A.mint.cold_heat",
+    "status": "not_found",
+    "crop": "mint",
+    "searched": [
+      {
+        "query": "menthe verte nana Maroc culture rendement plantation INRA fiche",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "mint Mentha Morocco diseases pests rust Puccinia verticillium",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No Moroccan or FAO damage limit for mint was found. FAO ECOCROP has no row for Mentha spicata itself; the nearest rows are Mentha spicata var. crispa (TMIN 4, TMAX 36, KTMP -1, KTMPR -8) and M. x piperita (TMIN 4, TMAX 35, KTMP 0, KTMPR -8). These are different taxa from the Moroccan \"nana\" mint and are not recorded as facts."
+  },
+  {
+    "item": "C.mint.rotation",
+    "status": "not_found",
+    "crop": "mint",
+    "searched": [
+      {
+        "query": "menthe Maroc rotation précédent cultural durée de la menthaie",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No source on predecessor, prohibited predecessor or return interval. A 2024 survey of 264 mint growers in Fez-Meknes and Casablanca-Settat reports crop rotation with legumes as the most common agroecological practice (87.1 %, search-result snippet only; the paper was not opened)."
+  },
+  {
+    "item": "G.mint.diseases_pests",
+    "status": "not_found",
+    "crop": "mint",
+    "searched": [
+      {
+        "query": "mint Mentha Morocco diseases pests rust Puccinia verticillium wilt survey Meknes Settat growers",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "Mentha spicata Maroc rouille Puccinia menthae verticilliose maladies ravageurs",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No opened Moroccan source describes mint diseases or pests. Search results point to a 2024 Agricultural Research survey of 264 growers (not opened) and to general mint-disease lists (Puccinia menthae, Verticillium dahliae, etc.) that are not Moroccan and are not recorded."
+  },
+  {
+    "item": "A.blueberry.cold",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "blueberry",
+    "metric": "temperature",
+    "proposed": {
+      "basis": "unspecified_air_temperature",
+      "medium": "air",
+      "stage": "dormancy",
+      "stageWindow": {
+        "basis": "phenological_stage_only",
+        "note": "full dormancy"
+      },
+      "lowerDegC": null,
+      "upperDegC": null,
+      "toleranceRangeDegC": {
+        "southern_highbush_and_rabbiteye": [
+          -26,
+          -14
+        ],
+        "northern_highbush": [
+          -30,
+          -20
+        ]
+      },
+      "note": "Source gives cultivar-group ranges, not one value; the cold-tolerance range for the groups grown in Morocco (Southern Highbush, Rabbiteye) is -14 to -26 C."
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "Loukkos",
+        "Gharb",
+        "Souss-Massa"
+      ],
+      "farmingSystem": "protected/field berry production",
+      "cultivars": "Southern Highbush (mostly), Rabbiteye"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Principales maladies et ravageurs affectant la culture de myrtillier",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires 8(3): 307-316 (Nouere, Amiri, Lahlali; ENA Meknès)",
+      "year": 2020,
+      "url": "https://agrimaroc.org/index.php/Actes_IAVH2/article/download/835/1177",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/agrimaroc-835.pdf",
+      "fileSha256": "485964e00fd7989b07f52ac3a588920c6bf6886e69537aac4cbe67d9e5bbdbb1",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed review. Symptom descriptions and the cold/heat statements are compiled from non-Moroccan literature (Dil et al. 2013, Dominguez 2016, Ward 2013, etc.) as cited by the authors."
+    },
+    "locator": "PDF page(s) [2] (journal page(s) [308]); ",
+    "quote": "En pleine dormance, le Northern Highbush présente une tolérance au froid allant de -20 à -30°C, tandis que la tolérance des Rabitteyes et Southern Highbush se situe entre -14 à -26°C. [...] Le froid hivernal cause souvent de graves dégâts aux bougeons floraux du myrtillier et aux jeunes pousses dans les régions de production les plus froides.",
+    "translation": "In full dormancy Northern Highbush tolerates cold from -20 to -30 C, while Rabbiteye and Southern Highbush tolerate -14 to -26 C. [...] Winter cold often causes severe damage to flower buds and young shoots in the coldest production regions.",
+    "interpretation": "Cold tolerance during dormancy by cultivar group; the narrower Southern Highbush range is the relevant one for Morocco. Whether the numbers are damage onset or lethal limits, and the air-temperature basis, are not stated. No single damage value is chosen.",
+    "confidence": "low",
+    "applicabilityNote": "Compiled in a Moroccan review from non-Moroccan literature (Dominguez 2016, as cited); dormancy stage is not a stage in the catalog's list. Morocco's mild winters make the practical constraint chill hours, not frost (the same paper notes early European varieties needed strong chilling).",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "single value",
+      "daily_minimum basis",
+      "catalog stage for dormancy"
+    ],
+    "nonLocalOrigin": "Dominguez 2016 as cited"
+  },
+  {
+    "item": "A.blueberry.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "blueberry",
+    "metric": "temperature",
+    "proposed": {
+      "basis": "unspecified_air_temperature",
+      "medium": "air",
+      "stage": "fruit_development",
+      "stageWindow": {
+        "basis": "phenological_stage_only",
+        "note": "fruit; no timing given"
+      },
+      "lowerDegC": null,
+      "upperDegC": 30,
+      "direction": "fruit damage above this value"
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "Loukkos",
+        "Gharb",
+        "Souss-Massa"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Principales maladies et ravageurs affectant la culture de myrtillier",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires 8(3): 307-316 (Nouere, Amiri, Lahlali; ENA Meknès)",
+      "year": 2020,
+      "url": "https://agrimaroc.org/index.php/Actes_IAVH2/article/download/835/1177",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/agrimaroc-835.pdf",
+      "fileSha256": "485964e00fd7989b07f52ac3a588920c6bf6886e69537aac4cbe67d9e5bbdbb1",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed review. Symptom descriptions and the cold/heat statements are compiled from non-Moroccan literature (Dil et al. 2013, Dominguez 2016, Ward 2013, etc.) as cited by the authors."
+    },
+    "locator": "PDF page(s) [2] (journal page(s) [308]); ",
+    "quote": "Les températures élevées, supérieures à 30°C, peuvent affecter négativement le fruit en provoquant des rides et des brûlures.",
+    "translation": "High temperatures above 30 C can negatively affect the fruit, causing wrinkles and burns.",
+    "interpretation": "Gives a heat threshold with a described damage (fruit wrinkling and burns). Duration, daily-maximum basis and stage timing are not stated.",
+    "confidence": "low",
+    "applicabilityNote": "Moroccan review citing Dominguez 2016; not Moroccan data. A trade-press snippet about a 43 C heat wave scorching blueberry shoots in Larache was not opened and is not recorded.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "daily_maximum basis",
+      "exposure duration",
+      "stage timing"
+    ],
+    "nonLocalOrigin": "Dominguez 2016 as cited"
+  },
+  {
+    "item": "B.blueberry.season",
+    "status": "not_found",
+    "crop": "blueberry",
+    "searched": [
+      {
+        "query": "blueberry Morocco Loukkos Gharb planting yield t/ha frost heat damage cultivar study ONSSA",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "The review says out-of-season production starts in November (\"la production hors saisons qui commencent en novembre\") but gives no planting window and no stand lifetime. It states an installation cost and yield but no orchard lifetime. Not recorded as a window or lifetime."
+  },
+  {
+    "item": "C.blueberry.rotation",
+    "status": "not_found",
+    "crop": "blueberry",
+    "searched": [
+      {
+        "query": "blueberry Morocco rotation predecessor replant",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "Blueberry is a long-lived shrub; no rotation fact (predecessor, prohibited predecessor, return interval) was found. The review mentions orchard sanitation but no crop rotation."
+  },
+  {
+    "item": "F.blueberry.observed_yield",
+    "status": "found",
+    "coverage": "found",
+    "crop": "blueberry",
+    "metric": "observed_yield",
+    "proposed": {
+      "unit": "t/ha",
+      "national_mean": 12,
+      "campaign": "2017-2018",
+      "priceNote": "average sale price stated as 70 Dh/kg (not a yield)"
+    },
+    "scope": {
+      "regions": [
+        "Morocco (Loukkos mainly)"
+      ],
+      "farmingSystem": "irrigated",
+      "cultivars": "Southern Highbush mostly"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Principales maladies et ravageurs affectant la culture de myrtillier",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires 8(3): 307-316 (Nouere, Amiri, Lahlali; ENA Meknès)",
+      "year": 2020,
+      "url": "https://agrimaroc.org/index.php/Actes_IAVH2/article/download/835/1177",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/agrimaroc-835.pdf",
+      "fileSha256": "485964e00fd7989b07f52ac3a588920c6bf6886e69537aac4cbe67d9e5bbdbb1",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed review. Symptom descriptions and the cold/heat statements are compiled from non-Moroccan literature (Dil et al. 2013, Dominguez 2016, Ward 2013, etc.) as cited by the authors."
+    },
+    "locator": "PDF page(s) [2] (journal page(s) [308]); ",
+    "quote": "Le rendement moyen de la myrtille durant la campagne 2017-2018 a été estimé à 12 T/ha avec un prix moyen de vente de 70 Dh/Kg (Anonyme 1, 2018).",
+    "translation": "The average blueberry yield during the 2017-2018 campaign was estimated at 12 t/ha with an average sale price of 70 Dh/kg (Anonyme 1, 2018).",
+    "interpretation": "National average estimated for one campaign, cited from an unnamed 2018 source. A search snippet reports about 18.3 t/ha for 2024 (trade press, not opened); it is not recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "National average, irrigated protected production; region and system split not given.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "regional split",
+      "primary source for the 12 t/ha estimate"
+    ]
+  },
+  {
+    "item": "G.blueberry.disease.grey_mould",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "blueberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonName": {
+        "en": "grey mould (Botrytis)",
+        "fr": "pourriture grise",
+        "ar": null
+      },
+      "scientificName": "Botrytis cinerea",
+      "hostCrops": [
+        "blueberry"
+      ],
+      "visibleSymptoms": "Leaves: circular to irregular beige to dark brown spots with dark brown margins; fruit: a greyish tuft (source text).",
+      "moroccoOccurrence": "Listed among the bioagresseurs posing serious problems to Moroccan producers; an ONSSA-registered control exists for grey mould (not recorded).",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Principales maladies et ravageurs affectant la culture de myrtillier",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires 8(3): 307-316 (Nouere, Amiri, Lahlali; ENA Meknès)",
+      "year": 2020,
+      "url": "https://agrimaroc.org/index.php/Actes_IAVH2/article/download/835/1177",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/agrimaroc-835.pdf",
+      "fileSha256": "485964e00fd7989b07f52ac3a588920c6bf6886e69537aac4cbe67d9e5bbdbb1",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed review. Symptom descriptions and the cold/heat statements are compiled from non-Moroccan literature (Dil et al. 2013, Dominguez 2016, Ward 2013, etc.) as cited by the authors."
+    },
+    "locator": "PDF page(s) [1, 2] (journal page(s) [307, 308]); ",
+    "quote": "Plusieurs bioagresseurs posent de sérieux problèmes aux producteurs incluant le Botrytis, l'Oïdium, le Phytophthora, la Drosophila suzukii, la cécidomyie, les thrips et les cochenilles. [...] Sur les feuilles (Figure 1A), le B. cinerea provoque des tâches sous forme circulaire à irrégulière de couleur beige à brun foncé avec des marges de couleur brun foncé (Dil et al., 2013). Sur les fruits, une touffe grisâtre est remarquée (Figure 1B) (Schilder, 2011).",
+    "translation": "Several pests pose serious problems to producers, including Botrytis, powdery mildew, Phytophthora, Drosophila suzukii, midge, thrips and mealybugs. [...] On leaves, B. cinerea causes circular to irregular spots, beige to dark brown with dark brown margins. On fruit, a greyish tuft is seen.",
+    "interpretation": "Symptoms come from the non-Moroccan references the review cites; Moroccan occurrence is the general statement in the abstract. No treatment information recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "Loukkos (main area), Gharb, Souss-Massa.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "Arabic/Darija name",
+      "rotation advice"
+    ]
+  },
+  {
+    "item": "G.blueberry.disease.anthracnose",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "blueberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonName": {
+        "en": "anthracnose",
+        "fr": "anthracnose",
+        "ar": null
+      },
+      "scientificName": "Colletotrichum acutatum and C. gloeosporioides (as named for blueberry in the review)",
+      "hostCrops": [
+        "blueberry"
+      ],
+      "visibleSymptoms": "Leaves: brown to dark brown or red lesions, irregular or circular; fruit: sunken, circular or irregular necrotic spots; stems: greyish or brownish spots (figure caption and text).",
+      "moroccoOccurrence": "The review notes that an ONSSA-registered control exists for anthracnose on blueberry in Morocco, implying the disease is present; no survey data.",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Principales maladies et ravageurs affectant la culture de myrtillier",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires 8(3): 307-316 (Nouere, Amiri, Lahlali; ENA Meknès)",
+      "year": 2020,
+      "url": "https://agrimaroc.org/index.php/Actes_IAVH2/article/download/835/1177",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/agrimaroc-835.pdf",
+      "fileSha256": "485964e00fd7989b07f52ac3a588920c6bf6886e69537aac4cbe67d9e5bbdbb1",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed review. Symptom descriptions and the cold/heat statements are compiled from non-Moroccan literature (Dil et al. 2013, Dominguez 2016, Ward 2013, etc.) as cited by the authors."
+    },
+    "locator": "PDF page(s) [3, 4] (journal page(s) [309, 310]); ",
+    "quote": "Figure 2: les symptômes de l’anthracnose sur le myrtillier. A et B, brun à brun foncé ou rouge avec des lésions irrégulières ou circulaires sur les feuilles; C, Tâches nécrotiques enfoncées, circulaires ou irrégulières sur fruits; D, tige touchée [...] Au Maroc, le produit homologué contre l’anthracnose sur myrtillier est à base de B. subtilis (ONSSA, 2018).",
+    "translation": "Figure 2: anthracnose symptoms on blueberry. A and B, brown to dark brown or red irregular or circular lesions on leaves; C, sunken circular or irregular necrotic spots on fruit; D, affected stem. [...] In Morocco, the product registered against anthracnose on blueberry is Bacillus subtilis-based (ONSSA, 2018).",
+    "interpretation": "Occurrence in Morocco is inferred from the existence of a registered product; the registered product itself is not recorded (no treatment advice).",
+    "confidence": "low",
+    "applicabilityNote": "Symptoms from non-Moroccan references.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "direct Moroccan occurrence statement",
+      "Arabic/Darija name"
+    ]
+  },
+  {
+    "item": "G.blueberry.disease.phytophthora_root_rot",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "blueberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonName": {
+        "en": "Phytophthora root rot",
+        "fr": "pourriture racinaire à Phytophthora",
+        "ar": null
+      },
+      "scientificName": "Phytophthora cinnamomi",
+      "hostCrops": [
+        "blueberry"
+      ],
+      "visibleSymptoms": "Roots become smaller than normal with root necrosis; above-ground leaves turn yellow to red followed by marginal scorch; growth stops, terminal buds die and eventually the whole plant dies (source text).",
+      "moroccoOccurrence": "Phytophthora is among the problems named in the abstract; the text says P. cinnamomi \"could be a big problem\" for Moroccan producers because most grow the susceptible Southern Highbush; no Moroccan detection is quoted.",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Principales maladies et ravageurs affectant la culture de myrtillier",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires 8(3): 307-316 (Nouere, Amiri, Lahlali; ENA Meknès)",
+      "year": 2020,
+      "url": "https://agrimaroc.org/index.php/Actes_IAVH2/article/download/835/1177",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/agrimaroc-835.pdf",
+      "fileSha256": "485964e00fd7989b07f52ac3a588920c6bf6886e69537aac4cbe67d9e5bbdbb1",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed review. Symptom descriptions and the cold/heat statements are compiled from non-Moroccan literature (Dil et al. 2013, Dominguez 2016, Ward 2013, etc.) as cited by the authors."
+    },
+    "locator": "PDF page(s) [6] (journal page(s) [312]); ",
+    "quote": "P. cinnamomi touche en premier lieu les racines qui deviennent plus petites que la normale (Larach et al., 2009) avec une nécrose racinaire. [...] les feuilles prennent une coloration jaune à rouge, suivie d’une brûlure marginale (Ward, 2013)",
+    "translation": "P. cinnamomi first affects the roots, which become smaller than normal with root necrosis. [...] the leaves turn yellow to red, followed by marginal scorch.",
+    "interpretation": "The review itself hedges Moroccan relevance. Symptoms come from Chilean and US literature. A separate Moroccan survey snippet (blueberry root rot at 66/45/39 % of farms) was not opened.",
+    "confidence": "low",
+    "applicabilityNote": "Moroccan occurrence not directly demonstrated in the opened text.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "direct Moroccan occurrence"
+    ]
+  },
+  {
+    "item": "G.blueberry.pest.drosophila_suzukii",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "blueberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonName": {
+        "en": "spotted wing drosophila",
+        "fr": "drosophile à ailes tachetées",
+        "ar": null
+      },
+      "scientificName": "Drosophila suzukii (Matsumura)",
+      "hostCrops": [
+        "blueberry",
+        "raspberry"
+      ],
+      "visibleSymptoms": "Larvae feed on the pulp, creating a depressed, soft area on the surface with a brownish interior; the egg-laying scar exposes the fruit to secondary rot (source text).",
+      "moroccoOccurrence": "EPPO: present in Morocco, first recorded 2013 on raspberries (Gharb and Loukkos).",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Principales maladies et ravageurs affectant la culture de myrtillier",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires 8(3): 307-316 (Nouere, Amiri, Lahlali; ENA Meknès)",
+      "year": 2020,
+      "url": "https://agrimaroc.org/index.php/Actes_IAVH2/article/download/835/1177",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/agrimaroc-835.pdf",
+      "fileSha256": "485964e00fd7989b07f52ac3a588920c6bf6886e69537aac4cbe67d9e5bbdbb1",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed review. Symptom descriptions and the cold/heat statements are compiled from non-Moroccan literature (Dil et al. 2013, Dominguez 2016, Ward 2013, etc.) as cited by the authors."
+    },
+    "locator": "PDF page(s) [8] (journal page(s) [314]); ",
+    "quote": "Suite à l’éclosion, les larves commencent à se nourrir de la pulpe des fruits, créant une zone déprimée et molle en surface avec l’intérieur brunâtre (Casdar, 2015).",
+    "translation": "After hatching, the larvae start to feed on the fruit pulp, creating a depressed, soft area on the surface with a brownish interior.",
+    "interpretation": "Symptom quote from the Moroccan blueberry review (French sources cited). Moroccan presence comes from the EPPO record (tier 2) saved as eppo-drossu-ma.html: \"first specimens were observed in 2013 on raspberries\".",
+    "confidence": "medium",
+    "applicabilityNote": "Gharb and Loukkos.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "Arabic/Darija name",
+      "rotation advice (not applicable to a mobile pest)"
+    ],
+    "moroccoOccurrenceSource": {
+      "tier": 2,
+      "url": "https://gd.eppo.int/taxon/DROSSU/distribution/MA",
+      "localFile": ".research-sources/2026-11-06/eppo-drossu-ma.html",
+      "fileSha256": "8b924128ecd235379ecc9f76923efad356b1ef1a5258a1b047f8ce87b8abd9de",
+      "quote": "EPPO Reporting Service (2019/027) : first specimens were observed in 2013 on raspberries."
+    }
+  },
+  {
+    "item": "G.blueberry.pest.thrips",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "blueberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonName": {
+        "en": "flower thrips (Frankliniella spp.)",
+        "fr": "thrips",
+        "ar": null
+      },
+      "scientificName": "Frankliniella spp. (F. bispinosa, F. tritici, F. occidentalis as named in the review)",
+      "hostCrops": [
+        "blueberry"
+      ],
+      "visibleSymptoms": "Leaf curling with leaves turning red; reduced fruit set and deformed berries (source text).",
+      "moroccoOccurrence": "Thrips listed among the bioagresseurs posing serious problems to Moroccan producers; the species named are described from Florida/Georgia literature.",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Principales maladies et ravageurs affectant la culture de myrtillier",
+      "publisher": "Revue Marocaine des Sciences Agronomiques et Vétérinaires 8(3): 307-316 (Nouere, Amiri, Lahlali; ENA Meknès)",
+      "year": 2020,
+      "url": "https://agrimaroc.org/index.php/Actes_IAVH2/article/download/835/1177",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/agrimaroc-835.pdf",
+      "fileSha256": "485964e00fd7989b07f52ac3a588920c6bf6886e69537aac4cbe67d9e5bbdbb1",
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Moroccan peer-reviewed review. Symptom descriptions and the cold/heat statements are compiled from non-Moroccan literature (Dil et al. 2013, Dominguez 2016, Ward 2013, etc.) as cited by the authors."
+    },
+    "locator": "PDF page(s) [8] (journal page(s) [314]); ",
+    "quote": "Le thrips de bleuet peut provoquer l’enroulement des feuilles qui virent alors au rouge (MAPANB, 2013). [...] Ces thrips entraînent une nouaison réduite et la formation des baies déformées (Turner et Liburd, 2007).",
+    "translation": "Blueberry thrips can cause leaf curling, with the leaves turning red. [...] These thrips cause reduced fruit set and the formation of deformed berries.",
+    "interpretation": "Species-level Moroccan occurrence is not shown; only the genus-level problem statement in the abstract.",
+    "confidence": "low",
+    "applicabilityNote": "Species from Florida literature.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "Moroccan species identity"
+    ]
+  },
+  {
+    "item": "A.raspberry.heat.ecocrop",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "raspberry",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 28.0,
+      "ecocropNote": "ECOCROP's TMAX field, not a confirmed daily maximum air-temperature reading. "
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Rubus idaeus ssp. idaeus"
+    },
+    "source": {
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "Same file and caveats as claude-supplement-A.json: ECOCROP TMAX/TMIN/KTMP are species-level adaptability bounds, not confirmed daily extremes, and carry no growth stage or duration."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Rubus idaeus ssp. idaeus\"; field TMAX",
+    "quote": "Rubus idaeus ssp. idaeus,...,TMIN=5,TMAX=28,...,KTMPR=-35,KTMP=-1,...",
+    "translation": "n/a (numeric database fields)",
+    "interpretation": "Same reading as claude-supplement-A.json: the field is an absolute species-level bound used for monthly climate matching; no daily-extreme basis, growth stage or duration is stated.",
+    "confidence": "low",
+    "applicabilityNote": "Global species model, not Moroccan; closest FAO-tier evidence only. ",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily air-temperature basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ]
+  },
+  {
+    "item": "A.raspberry.cold.ecocrop",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "raspberry",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "KTMP",
+      "sourceFieldValueDegC": -1.0,
+      "ecocropNote": "ECOCROP's KTMP field, not a confirmed daily minimum air-temperature reading. KTMPR for this row is -35 (a different field); only KTMP is recorded here as in claude-supplement-A.json."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Rubus idaeus ssp. idaeus"
+    },
+    "source": {
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "Same file and caveats as claude-supplement-A.json: ECOCROP TMAX/TMIN/KTMP are species-level adaptability bounds, not confirmed daily extremes, and carry no growth stage or duration."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Rubus idaeus ssp. idaeus\"; field KTMP",
+    "quote": "Rubus idaeus ssp. idaeus,...,TMIN=5,TMAX=28,...,KTMPR=-35,KTMP=-1,...",
+    "translation": "n/a (numeric database fields)",
+    "interpretation": "Same reading as claude-supplement-A.json: the field is an absolute species-level bound used for monthly climate matching; no daily-extreme basis, growth stage or duration is stated.",
+    "confidence": "low",
+    "applicabilityNote": "Global species model, not Moroccan; closest FAO-tier evidence only. KTMPR for this row is -35 (a different field); only KTMP is recorded here as in claude-supplement-A.json.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily air-temperature basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ]
+  },
+  {
+    "item": "A.blueberry.heat.ecocrop",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "blueberry",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 42.0,
+      "ecocropNote": "ECOCROP's TMAX field, not a confirmed daily maximum air-temperature reading. "
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Vaccinium corymbosum"
+    },
+    "source": {
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "Same file and caveats as claude-supplement-A.json: ECOCROP TMAX/TMIN/KTMP are species-level adaptability bounds, not confirmed daily extremes, and carry no growth stage or duration."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Vaccinium corymbosum\"; field TMAX",
+    "quote": "Vaccinium corymbosum,...,TMIN=7,TMAX=42,...,KTMPR=-29,KTMP=-1,...",
+    "translation": "n/a (numeric database fields)",
+    "interpretation": "Same reading as claude-supplement-A.json: the field is an absolute species-level bound used for monthly climate matching; no daily-extreme basis, growth stage or duration is stated.",
+    "confidence": "low",
+    "applicabilityNote": "Global species model, not Moroccan; closest FAO-tier evidence only. ",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily air-temperature basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ]
+  },
+  {
+    "item": "B_C_F.raspberry",
+    "status": "not_found",
+    "crop": "raspberry",
+    "searched": [
+      {
+        "query": "framboisier Maroc Loukkos culture plantation récolte rendement t/ha maladies INRA",
+        "where": "web search",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "Maroc framboisier maladies ravageurs Revue Marocaine des Sciences Agronomiques et Vétérinaires framboise",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No opened Moroccan source gives a raspberry planting window, stand lifetime, rotation fact or yield. Search snippets mention an area of about 2,400 ha in 2018-19, production about 21,890 t and a Gharb yield range of 10-12 t/ha, none from an opened source, so none is recorded. Raspberry is a perennial cane crop and may fit the orchard-style model better than the rotation engine."
+  },
+  {
+    "item": "G.raspberry.pest.drosophila_suzukii",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "raspberry",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonName": {
+        "en": "spotted wing drosophila",
+        "fr": "drosophile à ailes tachetées",
+        "ar": null
+      },
+      "scientificName": "Drosophila suzukii",
+      "hostCrops": [
+        "raspberry",
+        "blueberry"
+      ],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": "Present in Morocco; first specimens observed in 2013 on raspberries; found in the Gharb and Loukkos (via Boughdad et al. 2021 as cited by EPPO).",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 2,
+      "title": "Drosophila suzukii (DROSSU) - Distribution details in Morocco",
+      "publisher": "EPPO Global Database",
+      "year": 2021,
+      "url": "https://gd.eppo.int/taxon/DROSSU/distribution/MA",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/eppo-drossu-ma.html",
+      "fileSha256": "8b924128ecd235379ecc9f76923efad356b1ef1a5258a1b047f8ce87b8abd9de",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "EPPO distribution record \"evaluated on the basis of information dated 2021\". The page cites Boughdad et al. 2021, J. Pest Sci. 94: 261-271 for the Gharb and Loukkos finding."
+    },
+    "locator": "",
+    "quote": "EPPO Reporting Service (2019/027) : first specimens were observed in 2013 on raspberries.",
+    "translation": "Same text (already English).",
+    "interpretation": "EPPO (tier 2) establishes Moroccan presence and the raspberry host; the page gives no symptom description. Symptoms for blueberry are recorded in G.blueberry.pest.drosophila_suzukii and are expected to be similar, but that is not asserted for raspberry here.",
+    "confidence": "medium",
+    "applicabilityNote": "Gharb and Loukkos.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "raspberry symptom wording"
+    ],
+    "situation": "Present, no details (EPPO, information dated 2021); first recorded 2013"
+  },
+  {
+    "item": "G.berry-crops.diseases.survey",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "berry-crops (species not named in the abstract)",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonName": {
+        "en": "grey mould, root rot, powdery mildew (berry crops)",
+        "fr": "pourriture grise, pourriture racinaire, oïdium",
+        "ar": null
+      },
+      "scientificName": null,
+      "hostCrops": [
+        "strawberry",
+        "raspberry",
+        "blueberry"
+      ],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": "Primary diseases reported by berry farmers in the Gharb and Loukkos in a 2025 farmer survey; almost 100% of respondents encountered D. suzukii.",
+      "rotationAdvice": null
+    },
+    "scope": {
+      "regions": [
+        "morocco-general"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified"
+    },
+    "source": {
+      "tier": 3,
+      "title": "Phytosanitary challenges and management of Drosophila suzukii (Diptera: Drosophilidae): farmer knowledge and practices - insights from berry crop farmers in Northwest Morocco",
+      "publisher": "Vegetos (International Journal of Plant Research & Biotechnology), published 2025-11-04 (Kallali, Seddiqi; author list as shown on the journal page)",
+      "year": 2025,
+      "url": "https://vegetosindia.org/article/phytosanitary-challenges-and-management-of-drosophila-suzukii-diptera-drosophilidae-farmer-knowledge-and-practices-insights-from-berry-crop-farmers-in-northwest-morocco",
+      "retrievedOn": "2026-11-06",
+      "localFile": ".research-sources/2026-11-06/vegetos-dsuzukii.html",
+      "fileSha256": "88282ffec8b5a88d9ec3718666147d24845055326ab8ddb26ed74cb27bd6ff1f",
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": false,
+      "tierNote": "Abstract only (journal page; DOI 10.1007/s42535-025-01520-7). The abstract says \"berry crops\" without naming species."
+    },
+    "locator": "",
+    "quote": "the primary diseases affecting berry crops in this study were gray mold, root rot, and powdery mildew [...] almost 100% of the respondents encountered D. suzukii",
+    "translation": "Same text (already English).",
+    "interpretation": "Abstract-level evidence: which berry species were surveyed is not stated, so the three hosts are listed as the berry crops of the Gharb/Loukkos, not as individually confirmed hosts.",
+    "confidence": "low",
+    "applicabilityNote": "Farmer-knowledge survey.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "species-level hosts",
+      "symptom descriptions"
+    ]
+  }
+]

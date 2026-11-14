@@ -1,0 +1,556 @@
+{
+  "id": "bread-wheat",
+  "version": "0.7.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Bread wheat",
+    "localNames": [
+      { "language": "fr", "name": "Blé tendre" },
+      { "language": "ar", "name": "القمح اللين" }
+    ],
+    "scientificName": "Triticum aestivum L.",
+    "family": "Poaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-bread-wheat",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Triticum aestivum L.\""
+      },
+      {
+        "sourceId": "onca-cereals",
+        "locator": "PDF page 23, crop name",
+        "interpretation": "direct",
+        "note": "Local name as written in the source.",
+        "page": 23,
+        "quote": "Exigences édapho-climatiques du Blé tendre"
+      },
+      {
+        "sourceId": "inra-arabic-guides",
+        "locator": "Cereal guide preamble (scanned)",
+        "interpretation": "context_only",
+        "note": "Arabic name read from the scanned page image; not machine-checked."
+      }
+    ]
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "achtar",
+      "name": "Achtar",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-bread-wheat",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ACHTAR INRA MAROC 1988"
+        }
+      ]
+    },
+    {
+      "id": "arrehane",
+      "name": "Arrehane",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-bread-wheat",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ARREHANE INRA MAROC 1996"
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-cereals",
+          "locator": "Superficies",
+          "interpretation": "context_only",
+          "note": "Autumn cereals are a major crop group in the Tadla perimeter."
+        },
+        {
+          "sourceId": "onca-cereals",
+          "locator": "PDF page 53, Table 21",
+          "interpretation": "context_only",
+          "note": "Varieties in seed demand at the SONACOS Fkih Ben Salah centre (bread wheat); not a recommendation.",
+          "page": 53,
+          "quote": "Fkih ben S alah (Tadla) Karim Marzak Carioca Achtar Maghchouch Karim Marzak Achtar Arrehane Carioca Riad"
+        }
+      ],
+      "note": "Pilot candidate; requires specialist assessment for the farm and campaign."
+    },
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-cereals",
+          "locator": "PDF page 10, section 1.2",
+          "interpretation": "context_only",
+          "note": "Cereals are grown across the country's agroclimatic zones.",
+          "page": 10,
+          "quote": "Les céréales sont pratiquées dans les différentes zones agro-climatiques du pays"
+        }
+      ],
+      "note": "National guidance. Rainfall is not yet checked against the crop, so a dry or desert location can still be listed; local suitability needs a specialist."
+    }
+  ],
+  "rules": [
+    {
+      "id": "bread-sowing",
+      "citations": [
+        {
+          "sourceId": "onca-cereals",
+          "locator": "PDF page 43, section 5.3 and Table 11",
+          "interpretation": "normalized",
+          "note": "Early November encoded as 1 November; mid-December as 15 December.",
+          "page": 43,
+          "quote": "la date optimale du semis se situerait entre le début du mois de novembre et la moitié du mois de décembre dans la majorité des régions céréalières au Maroc"
+        },
+        {
+          "sourceId": "inra-wheat",
+          "locator": "PDF page 4, installation",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 4,
+          "quote": "Semer en automne, de préférence au mois de novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National optimum for most cereal regions; the first autumn rains and the zone decide the actual date.",
+      "metric": "planting_window",
+      "start": "11-01",
+      "end": "12-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "bread-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Winter Wheat",
+          "interpretation": "normalized",
+          "note": "Mediterranean winter wheat sown in November: 240 days in total.",
+          "page": null,
+          "quote": "30 140 40 30 240 November Mediterranean"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Grains (small)",
+          "interpretation": "normalized",
+          "note": "Small grains sown in October/November in arid regions: 165 days.",
+          "page": null,
+          "quote": "25 35 65 40 165 Oct/Nov Pakistan; Arid Reg."
+        },
+        {
+          "sourceId": "inra-wheat",
+          "locator": "PDF page 7, harvest",
+          "interpretation": "context_only",
+          "note": "Moroccan harvest timing is consistent with the FAO range.",
+          "page": 7,
+          "quote": "La récolte débute au mois de mai dans les zones arides et semi-arides jusqu'à fin Juin"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO-56 general stage lengths, not a Moroccan cultivar trial; the cultivar and season move the harvest within this range.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 165,
+      "maxDays": 240
+    },
+    {
+      "id": "bread-flowering-heat",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 47, Wheat 4.2 Air temperature stress",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 47,
+          "quote": "Maximum air temperature above which pollination starts to fail (heat stress) (°C) Conservative (1) 35.0 (Estimate)"
+        },
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 45, Wheat 1.3 Flowering",
+          "interpretation": "normalized",
+          "note": "Flowering window from the earliest start to the latest end of the recommended ranges.",
+          "page": 45,
+          "quote": "Time from sowing to flowering (growing degree day) Cultivar (4) Time to emergence + 1000 - 1300 Length of the flowering stage (growing degree day) Cultivar (4) 150 - 280"
+        },
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 45, Wheat 1.1 Threshold air temperatures",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 45,
+          "quote": "T base Base temperature (°C) Conservative (1) 0.0 T upper Upper temperature (°C) Conservative (1) 26.0"
+        },
+        {
+          "sourceId": "fao-aquacrop-chapter-3",
+          "locator": "PDF page 12, section 3.2.3 Method 3",
+          "interpretation": "direct",
+          "note": "Growing-degree-day method used to time the stage.",
+          "page": 12,
+          "quote": "However the check is only on the maximum air temperature"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop default (estimate): pollination starts to fail when the daily maximum exceeds the limit during flowering. Not calibrated for a Moroccan cultivar.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": {
+        "basis": "growing_degree_days_from_sowing",
+        "method": "aquacrop_method_3",
+        "startGdd": 1100,
+        "endGdd": 1830,
+        "baseDegC": 0,
+        "upperDegC": 26
+      },
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "bread-flowering-cold",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 47, Wheat 4.2 Air temperature stress",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 47,
+          "quote": "Minimum air temperature below which pollination starts to fail (cold stress) (°C) Conservative (1) 5.0 (Estimate)"
+        },
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 45, Wheat 1.3 Flowering",
+          "interpretation": "normalized",
+          "note": "Flowering window from the earliest start to the latest end of the recommended ranges.",
+          "page": 45,
+          "quote": "Time from sowing to flowering (growing degree day) Cultivar (4) Time to emergence + 1000 - 1300 Length of the flowering stage (growing degree day) Cultivar (4) 150 - 280"
+        },
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 45, Wheat 1.1 Threshold air temperatures",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 45,
+          "quote": "T base Base temperature (°C) Conservative (1) 0.0 T upper Upper temperature (°C) Conservative (1) 26.0"
+        },
+        {
+          "sourceId": "fao-aquacrop-chapter-3",
+          "locator": "PDF page 12, section 3.2.3 Method 3",
+          "interpretation": "direct",
+          "note": "Growing-degree-day method used to time the stage.",
+          "page": 12,
+          "quote": "However the check is only on the maximum air temperature"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop default (estimate): pollination starts to fail when the daily minimum falls below the limit during flowering.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": {
+        "basis": "growing_degree_days_from_sowing",
+        "method": "aquacrop_method_3",
+        "startGdd": 1100,
+        "endGdd": 1830,
+        "baseDegC": 0,
+        "upperDegC": 26
+      },
+      "lowerDegC": 5,
+      "upperDegC": null
+    },
+    {
+      "id": "bread-legume-predecessor",
+      "citations": [
+        {
+          "sourceId": "inra-wheat",
+          "locator": "PDF page 3, rotation",
+          "interpretation": "normalized",
+          "note": "Food or forage legumes encoded as the family Fabaceae.",
+          "page": 3,
+          "quote": "Il est important de pratiquer des rotations culturales incluant de préférence les légumineuses alimentaires ou fourragères"
+        },
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 35",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 35,
+          "quote": "un assolement biennal se basant sur une légumineuse et une céréale est fort recommandé"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "A preference, not a requirement; no measured soil gain is claimed.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "bread-crown-rot-break",
+      "citations": [
+        {
+          "sourceId": "onca-cereals",
+          "locator": "PDF page 81, section 10.1",
+          "interpretation": "normalized",
+          "note": "Two years encoded as 730 days; three years is preferred.",
+          "page": 81,
+          "quote": "Adopter une rotation d'au moins 2 ans, de préférence de 3 ans avec colza, pois chiche, lentille, fève, ou mélange fourrager"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Applies when crown rot is confirmed on the field; three years is preferred.",
+      "metric": "crop_health_break",
+      "issueId": "fusarium-crown-rot",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "bread-common-root-rot-break",
+      "citations": [
+        {
+          "sourceId": "onca-cereals",
+          "locator": "PDF page 82, section 10.2",
+          "interpretation": "normalized",
+          "note": "Two years encoded as 730 days.",
+          "page": 82,
+          "quote": "Utiliser une rotation d'au moins de 2 ans et de préférence 3 ans"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Applies when common root rot is confirmed on the field; three years is preferred.",
+      "metric": "crop_health_break",
+      "issueId": "common-root-rot",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "bread-drainage",
+      "citations": [
+        {
+          "sourceId": "onca-cereals",
+          "locator": "PDF page 23, section 3.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 23,
+          "quote": "Le blé tendre exige un sol sain, drainant bien"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Qualitative drainage need.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "bread-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "- with non-frozen soils 0.7 1.15 0.25-0.4",
+          "locator": "Table 12, Winter Wheat",
+          "interpretation": "normalized",
+          "note": "Kc ini 0.7, mid 1.15; the lower end 0.25 is used for a crop harvested dry."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 140 40 30 240 November Mediterranean",
+          "locator": "Table 11, Winter Wheat",
+          "interpretation": "normalized",
+          "note": "Stage lengths 30, 140, 40, 30 days; their shares are scaled to the crop's duration."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted for local wind and humidity or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.7,
+      "kcMid": 1.15,
+      "kcEnd": 0.25,
+      "stageLengths": [30, 140, 40, 30]
+    },
+    {
+      "id": "bread-arid-rainfall",
+      "citations": [
+        {
+          "sourceId": "onca-cereals",
+          "page": 24,
+          "quote": "Les régions arides, à pluviométrie comprise entre 150 et 200 mm",
+          "locator": "PDF page 24, section 3.3",
+          "interpretation": "normalized",
+          "note": "The guide adds that grain production there comes about one year in two or three. Encoded as a warning for rainfed fields at or below 200 mm a year."
+        },
+        {
+          "sourceId": "onca-cereals",
+          "page": 24,
+          "quote": "la production de grain est très aléatoire",
+          "locator": "PDF page 24, section 3.3",
+          "interpretation": "direct",
+          "note": "Consequence stated by the guide."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["rainfed"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "A warning for rainfed cereals where mean annual rain is at or below 200 mm; written for barley systems and applied to the cereal group.",
+      "metric": "water_reference",
+      "basis": "annual_rainfall",
+      "minMm": 150,
+      "minInclusive": true,
+      "maxMm": 200
+    },
+    {
+      "id": "bread-soil-salinity",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "page": 79,
+          "quote": "Wheat (Triticum aestivum) 6.0 20.1 7.1",
+          "locator": "PDF page 79, Annex III Table III-1",
+          "interpretation": "normalized",
+          "note": "ECe 6 dS/m is the threshold where yield starts to fall; the following columns are the slope and rating."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Yield starts to fall above this saturated-paste salinity; checked only against a farmer's soil test.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 6
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "temperature",
+      "reason": "Ear frost below −4 °C after the 1 cm ear stage (ONCA cereals, page 28) has no sourced stage timing and is not evaluated."
+    },
+    {
+      "topic": "cultivar",
+      "reason": "Rules are not cultivar-specific; cultivar maturity moves the harvest date."
+    }
+  ],
+  "limitations": [
+    "Based on national official guides and FAO defaults, not yet expert-reviewed.",
+    "Not a Tadla cultivar trial."
+  ]
+}

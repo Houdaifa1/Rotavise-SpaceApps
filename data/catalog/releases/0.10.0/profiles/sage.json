@@ -1,0 +1,246 @@
+{
+  "id": "sage",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sage",
+    "localNames": [
+      { "language": "fr", "name": "Sauge officinale" },
+      { "language": "ar", "name": "المريمية" }
+    ],
+    "scientificName": "Salvia officinalis L.",
+    "family": "Lamiaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:sage"
+    }
+  },
+  "harvestProduct": "other",
+  "modelType": "multi_year_stand",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:sage"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-fill-sage-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical stand length",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sage.duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "stand_lifetime",
+      "minDays": 1460,
+      "maxDays": 2190
+    },
+    {
+      "id": "t-fill-sage-window0-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical Moroccan Mediterranean sowing/planting season, zone dependent",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sage.window0"
+      },
+      "conditions": "Recalled by the AI model; unverified. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "10-01",
+      "end": "03-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "t-sage-a-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural knowledge of frost tolerance by stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sage.A.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -12,
+      "upperDegC": null
+    },
+    {
+      "id": "t-sage-a-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural knowledge of heat stress by stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sage.A.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    {
+      "id": "t-sage-c-rotation-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "family-based rotation logic (same-family host diseases/pests); not Moroccan guidance",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sage.C.rotation"
+      },
+      "conditions": "Recalled by the AI model; unverified. Poaceae Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    }
+  ],
+  "references": [
+    {
+      "id": "a-sage-heat-ecocrop-background-336",
+      "topic": "background",
+      "summary": "Temperature (species_absolute_maximum_not_damage_limit; not a damage limit) to 30 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "row ScientificName=Salvia officinalis, column TMAX",
+          "interpretation": "normalized",
+          "note": "Adaptability bound for climate matching, not a heat-damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "b-sage-cycle-ecocrop-background-337",
+      "topic": "background",
+      "summary": "Cycle 120–240 days.",
+      "value": { "unit": "days", "min": 120, "max": 240 },
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "row ScientificName=Salvia officinalis, columns GMIN/GMAX",
+          "interpretation": "normalized",
+          "note": "Generic growing-period range; not a Moroccan sowing-to-harvest duration. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-sage-b-season-background-380",
+      "topic": "background",
+      "summary": "Cycle 1460–2190 days.",
+      "value": { "unit": "days", "min": 1460, "max": 2190 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Mediterranean agronomy recall; Moroccan timing unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sage.B.season"
+      }
+    },
+    {
+      "id": "t-sage-b-season-background-381",
+      "topic": "background",
+      "summary": "Planting: plant autumn or early spring",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Mediterranean agronomy recall; Moroccan timing unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sage.B.season"
+      }
+    },
+    {
+      "id": "t-sage-f-yield-yield-382",
+      "topic": "yield",
+      "summary": "Yield 1.5–3 t/ha. AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 1.5, "max": 3 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "typical published ranges recalled; not verified for Morocco",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.sage.F.yield"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on."
+  ]
+}

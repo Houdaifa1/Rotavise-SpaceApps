@@ -1,0 +1,122 @@
+{
+  "id": "stone-pine",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Stone pine",
+    "localNames": [
+      { "language": "fr", "name": "Pin pignon" },
+      { "language": "ar", "name": "الصنوبر الثمري" }
+    ],
+    "scientificName": "Pinus pinea L.",
+    "family": "Pinaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:stone-pine"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "wild_harvested",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:stone-pine"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "r-a-stone-pine-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.A.stone-pine.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -20,
+      "upperDegC": null
+    }
+  ],
+  "references": [
+    {
+      "id": "r-p-stone-pine-fit-planner-fit-711",
+      "topic": "planner_fit",
+      "summary": "Planner fit recalled as \"wild_harvested_not_plannable\"; Forest and plantation tree (pine nuts); not a rotation crop.. The release uses its own model type for this crop.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "judgement from crop habit and use; Moroccan scale unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.P.stone-pine.fit"
+      }
+    },
+    {
+      "id": "r-b-stone-pine-stand-lifetime-background-712",
+      "topic": "background",
+      "summary": "Stand lifetime 36500–73000 days.",
+      "value": { "unit": "days", "min": 36500, "max": 73000 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.B.stone-pine.stand_lifetime"
+      }
+    },
+    {
+      "id": "r-c-stone-pine-rotation-background-713",
+      "topic": "background",
+      "summary": "Rotation: perennial, orchard or wild crop: classic rotation does not apply",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "habit of the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.C.stone-pine.rotation"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Wild-harvested plants are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Wild-harvested plant: listed for knowledge, never placed in a rotation."
+  ]
+}

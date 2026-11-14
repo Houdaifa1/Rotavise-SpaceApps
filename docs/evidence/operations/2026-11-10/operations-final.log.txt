@@ -1,0 +1,18 @@
+$ pnpm build:server && node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects operations-unit operations-integration --runInBand
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+Running 2 projects:
+- operations-integration
+- operations-unit
+(node:93674) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Test Suites: 2 passed, 2 total
+Tests:       24 passed, 24 total
+Snapshots:   0 total
+Time:        17.8 s, estimated 31 s
+Ran all test suites in 2 projects.

@@ -1,0 +1,3576 @@
+{
+  "config": {
+    "argv": [
+      "/Users/houdaifadrahm/.nvm/versions/node/v24.19.0/bin/node",
+      "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/node_modules/.pnpm/@playwright+test@1.63.0/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "tooling/web/playwright.config.mjs",
+      "--reporter=list,json"
+    ],
+    "configFile": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/tooling/web/playwright.config.mjs",
+    "rootDir": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "design",
+        "name": "design",
+        "testDir": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/tests/e2e",
+        "testIgnore": [],
+        "testMatch": ["design.spec.mjs"],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "app",
+        "name": "app",
+        "testDir": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/tests/e2e",
+        "testIgnore": ["design.spec.mjs"],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [["list"], ["json"]],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "design.spec.mjs",
+      "file": "design.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F0 design fr at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:51:47.469Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "design",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/design-F0-design-fr-at-390px-design/attachments/design-f4d3e811986448ead1fffd1f8debdad21ad96615.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-9556dc58e1fa6bc4316b",
+          "file": "design.spec.mjs",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "F0 design en at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6621,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:51:52.780Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "design",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/design-F0-design-en-at-390px-design/attachments/design-1f4088f0d5a5e6d3a9409f82177dc4ee9448f0c8.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-356c50a147ad67f93ee8",
+          "file": "design.spec.mjs",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "F0 design fr at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6324,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:51:59.406Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "design",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/design-F0-design-fr-at-768px-design/attachments/design-645f99f43982839408ec87d1e1ebf0027e28f95a.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-471343bcf5fc9fe870d5",
+          "file": "design.spec.mjs",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "F0 design en at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6634,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:52:05.736Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "design",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/design-F0-design-en-at-768px-design/attachments/design-cd79f932f568427577128376ad6a06734350f489.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-27538ce9124b6f8e3bc4",
+          "file": "design.spec.mjs",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "F0 design fr at 1024px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5799,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:52:12.375Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "design",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/design-F0-design-fr-at-1024px-design/attachments/design-1c67505dfc1c4c5bd1c9df7f80fdf4397960bbaf.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-f9611cc73a2c51b6eb33",
+          "file": "design.spec.mjs",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "F0 design en at 1024px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7519,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:52:18.179Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "design",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/design-F0-design-en-at-1024px-design/attachments/design-0e48a774f81ef9f3551b6463592d5c56af7ae782.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-5d8da607d9e4709010dc",
+          "file": "design.spec.mjs",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "F0 design fr at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4722,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:52:25.704Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "design",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/design-F0-design-fr-at-1440px-design/attachments/design-2f8af50e43426f0378d6768968815bb74147d1d8.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-8f8a198878187a0920a3",
+          "file": "design.spec.mjs",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "F0 design en at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5864,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:52:30.431Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "design",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/design-F0-design-en-at-1440px-design/attachments/design-625dbeebbe99a5b891703dc2dfc52a9651c90dd0.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-9ed7098a4f97fecf088c",
+          "file": "design.spec.mjs",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "F0 keyboard, menus, dialogs, chart gaps, upload, and sheet detents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "design",
+              "projectName": "design",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26928,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:52:36.299Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84a3fefbbbca6fdab28b-0fbc3d388e2ad9149a85",
+          "file": "design.spec.mjs",
+          "line": 56,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "farmer-workflow.spec.mjs",
+      "file": "farmer-workflow.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "guest reviews a real catalog request, resumes a durable insufficient-evidence result and keeps its token private",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9057,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:53:03.757Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7dafb0a8fd2ea851be7a-99e096e5a2a30f29d26e",
+          "file": "farmer-workflow.spec.mjs",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "email account verifies through real SMTP and saves a named field",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7437,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:53:15.336Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7dafb0a8fd2ea851be7a-e832b842f172ad32fa84",
+          "file": "farmer-workflow.spec.mjs",
+          "line": 159,
+          "column": 1
+        },
+        {
+          "title": "weather explorer charts persisted recorded NASA evidence and validates input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3647,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:53:22.777Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7dafb0a8fd2ea851be7a-5576cf1ef26777e3dea2",
+          "file": "farmer-workflow.spec.mjs",
+          "line": 207,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "field-creation.spec.mjs",
+      "file": "field-creation.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API fr 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28749,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:53:27.118Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Pin 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-96fba-int-save-to-real-API-fr-390-app/attachments/Pin-390-354f371ffff1151d9249e3aa2aa67609de051cb7.png"
+                    },
+                    {
+                      "name": "Draw 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-96fba-int-save-to-real-API-fr-390-app/attachments/Draw-390-51f1855fb4051873406096570f7d4bcedf85f6b7.png"
+                    },
+                    {
+                      "name": "geojson 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-96fba-int-save-to-real-API-fr-390-app/attachments/geojson-390-8ec1b86f5c393f6d60f948b9d6faaf70f00fbfe2.png"
+                    },
+                    {
+                      "name": "kml 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-96fba-int-save-to-real-API-fr-390-app/attachments/kml-390-ddf58368828cba2a55d9a2602662d7e6fa591e73.png"
+                    },
+                    {
+                      "name": "zip 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-96fba-int-save-to-real-API-fr-390-app/attachments/zip-390-7f489fdeab162c65c4594c9bd4f45440a8db5ae3.png"
+                    },
+                    {
+                      "name": "Paint 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-96fba-int-save-to-real-API-fr-390-app/attachments/Paint-390-31c4a675025c9537fb318a6729c89edee241caf6.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-9e0f4a95cf06072be54c",
+          "file": "field-creation.spec.mjs",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API fr 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25630,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:53:57.901Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Pin 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-81a45-int-save-to-real-API-fr-768-app/attachments/Pin-768-f9d5b534a7987b2f055184286752acfaf90ea97e.png"
+                    },
+                    {
+                      "name": "Draw 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-81a45-int-save-to-real-API-fr-768-app/attachments/Draw-768-00c785a40a4ad7d27e69160e79e90814745f88c8.png"
+                    },
+                    {
+                      "name": "geojson 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-81a45-int-save-to-real-API-fr-768-app/attachments/geojson-768-a4940d4eb0be8ff6a7b7665a6aa2b09cfd196bbe.png"
+                    },
+                    {
+                      "name": "kml 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-81a45-int-save-to-real-API-fr-768-app/attachments/kml-768-a2430efda6ef6a9121a5c0a5d5708b78eaeb946b.png"
+                    },
+                    {
+                      "name": "zip 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-81a45-int-save-to-real-API-fr-768-app/attachments/zip-768-3c3c2e59224c02b057a1a05110eeb056689eea91.png"
+                    },
+                    {
+                      "name": "Paint 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-81a45-int-save-to-real-API-fr-768-app/attachments/Paint-768-55a756a99312630a9373a1b91d038a1a5f93430d.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-a7189f3149039356bfb1",
+          "file": "field-creation.spec.mjs",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API fr 1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:54:23.536Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Pin 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-f9f78-nt-save-to-real-API-fr-1024-app/attachments/Pin-1024-28a159fc7254c382fa468d55139429da8ccd10b6.png"
+                    },
+                    {
+                      "name": "Draw 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-f9f78-nt-save-to-real-API-fr-1024-app/attachments/Draw-1024-8d5c7126c7dfe26b0382326a75152b5d026410ca.png"
+                    },
+                    {
+                      "name": "geojson 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-f9f78-nt-save-to-real-API-fr-1024-app/attachments/geojson-1024-03121b41afd1f137766e75f700975687218e097e.png"
+                    },
+                    {
+                      "name": "kml 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-f9f78-nt-save-to-real-API-fr-1024-app/attachments/kml-1024-dcc6798534ddb0a95d0fc5f037e23328db7ab55e.png"
+                    },
+                    {
+                      "name": "zip 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-f9f78-nt-save-to-real-API-fr-1024-app/attachments/zip-1024-639bef9d21307f5866193babb17d77d7cb6bbfc5.png"
+                    },
+                    {
+                      "name": "Paint 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-f9f78-nt-save-to-real-API-fr-1024-app/attachments/Paint-1024-3b3205958c01c4b2a9625b0e3b02b7ce34dd800f.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-45b38889055074d2fedf",
+          "file": "field-creation.spec.mjs",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API fr 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28975,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:54:48.122Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Pin 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-01faf-nt-save-to-real-API-fr-1440-app/attachments/Pin-1440-0ebe2bd47dbd05168967a76b4801606fc946481b.png"
+                    },
+                    {
+                      "name": "Draw 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-01faf-nt-save-to-real-API-fr-1440-app/attachments/Draw-1440-9ac812192ee0fdf1b22df6d2542955cfb56686c0.png"
+                    },
+                    {
+                      "name": "geojson 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-01faf-nt-save-to-real-API-fr-1440-app/attachments/geojson-1440-60c5806ac41612ca2da40487f63f0b50aec0d8a5.png"
+                    },
+                    {
+                      "name": "kml 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-01faf-nt-save-to-real-API-fr-1440-app/attachments/kml-1440-00c069d6df37327e7048bb4e4da7a54b930c3185.png"
+                    },
+                    {
+                      "name": "zip 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-01faf-nt-save-to-real-API-fr-1440-app/attachments/zip-1440-2144e5d38919d6697b8d392b4fa161c37fc74e8f.png"
+                    },
+                    {
+                      "name": "Paint 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-01faf-nt-save-to-real-API-fr-1440-app/attachments/Paint-1440-fac3b80dae82dc730c7154f2a94336a8ba539084.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-642c5759caa8a293cad3",
+          "file": "field-creation.spec.mjs",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API en 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 27828,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:55:17.102Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Pin 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-0b92e-int-save-to-real-API-en-390-app/attachments/Pin-390-5b8ef9508a49afe215b9022b6831235cf6038376.png"
+                    },
+                    {
+                      "name": "Draw 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-0b92e-int-save-to-real-API-en-390-app/attachments/Draw-390-7253772361da355ed7a270071aa9903114f86ead.png"
+                    },
+                    {
+                      "name": "geojson 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-0b92e-int-save-to-real-API-en-390-app/attachments/geojson-390-733b9e0a3833e8de1a868bac4d31544589bf61b6.png"
+                    },
+                    {
+                      "name": "kml 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-0b92e-int-save-to-real-API-en-390-app/attachments/kml-390-796fec79717d921fcbe8e36a859fcfeb0f21b6c3.png"
+                    },
+                    {
+                      "name": "zip 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-0b92e-int-save-to-real-API-en-390-app/attachments/zip-390-a3c0bc350523687943835b5b3d24c11991000c76.png"
+                    },
+                    {
+                      "name": "Paint 390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-0b92e-int-save-to-real-API-en-390-app/attachments/Paint-390-1f8d3e74dc279e0431611b44ef37510bd7462666.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-292dc6f8b4fbce640a6d",
+          "file": "field-creation.spec.mjs",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API en 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28482,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:55:44.934Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Pin 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-707b6-int-save-to-real-API-en-768-app/attachments/Pin-768-7f04e26c582080e2f8f0b8e9ef32f31e250a4e3a.png"
+                    },
+                    {
+                      "name": "Draw 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-707b6-int-save-to-real-API-en-768-app/attachments/Draw-768-7c91cc059b791788da63105b9c3de1f343d0f35d.png"
+                    },
+                    {
+                      "name": "geojson 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-707b6-int-save-to-real-API-en-768-app/attachments/geojson-768-280860732341ddb8ab63ba826a68094655cf4f6c.png"
+                    },
+                    {
+                      "name": "kml 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-707b6-int-save-to-real-API-en-768-app/attachments/kml-768-acb79d154f348a26ccca2e0797a3f9306c4a303b.png"
+                    },
+                    {
+                      "name": "zip 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-707b6-int-save-to-real-API-en-768-app/attachments/zip-768-8feb813a329eef4957a895a5529088e2dc40ccbf.png"
+                    },
+                    {
+                      "name": "Paint 768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-707b6-int-save-to-real-API-en-768-app/attachments/Paint-768-be14327888034f47f89bcbac66f40a825c023a38.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-626a171042a9645d3dc8",
+          "file": "field-creation.spec.mjs",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API en 1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28832,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:56:13.422Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Pin 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-28e45-nt-save-to-real-API-en-1024-app/attachments/Pin-1024-c77ad16ddd8074118dfd4848cc7cdf965cadfb5d.png"
+                    },
+                    {
+                      "name": "Draw 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-28e45-nt-save-to-real-API-en-1024-app/attachments/Draw-1024-f316d7ae344c1d0f5a1cdbd8fe910c3623b2b199.png"
+                    },
+                    {
+                      "name": "geojson 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-28e45-nt-save-to-real-API-en-1024-app/attachments/geojson-1024-3da1fea3213a378726d8a7128ad843ea6cb468cf.png"
+                    },
+                    {
+                      "name": "kml 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-28e45-nt-save-to-real-API-en-1024-app/attachments/kml-1024-6b057ff3b22acc3d843f2b2b9e344c3f47cfea95.png"
+                    },
+                    {
+                      "name": "zip 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-28e45-nt-save-to-real-API-en-1024-app/attachments/zip-1024-bf967aefdcf74f08bdafefb4b6224c8f307133f2.png"
+                    },
+                    {
+                      "name": "Paint 1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-28e45-nt-save-to-real-API-en-1024-app/attachments/Paint-1024-679f4147ff31624fb066c95ba733a0066ba86bd4.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-522c7695a172e1dd5593",
+          "file": "field-creation.spec.mjs",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API en 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32634,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:56:42.260Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Pin 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-430ae-nt-save-to-real-API-en-1440-app/attachments/Pin-1440-1cdbe1042072ff45d0f49cc67b2015e5ab9545ff.png"
+                    },
+                    {
+                      "name": "Draw 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-430ae-nt-save-to-real-API-en-1440-app/attachments/Draw-1440-d2b4347333f3f0f7ccdfcd8c67c56c63d771514e.png"
+                    },
+                    {
+                      "name": "geojson 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-430ae-nt-save-to-real-API-en-1440-app/attachments/geojson-1440-8549b925c58f59d0e143a281485f44ad02a7813c.png"
+                    },
+                    {
+                      "name": "kml 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-430ae-nt-save-to-real-API-en-1440-app/attachments/kml-1440-d6d062e81daf1e5bb64fca944bf953bad0b209cf.png"
+                    },
+                    {
+                      "name": "zip 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-430ae-nt-save-to-real-API-en-1440-app/attachments/zip-1440-ce0c2766c630eb47a0ed14924d24fb2efe908746.png"
+                    },
+                    {
+                      "name": "Paint 1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-pin-dra-430ae-nt-save-to-real-API-en-1440-app/attachments/Paint-1440-4649bfe9095e8639cface455cb6f40d787aafb9c.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-8b4d7212ce62283332ea",
+          "file": "field-creation.spec.mjs",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "S04 real FTW selection, missing suggestion and atomic history fr 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 34386,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:57:14.899Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Suggested field with history",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-real-FT-2b63a-n-and-atomic-history-fr-390-app/attachments/Suggested-field-with-history-0999318627bad2f64380720a2f2a0c580ee2d4c3.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-084d17ee66a4deae5447",
+          "file": "field-creation.spec.mjs",
+          "line": 330,
+          "column": 5
+        },
+        {
+          "title": "S04 real FTW selection, missing suggestion and atomic history fr 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25112,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:57:49.293Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Suggested field with history",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-real-FT-2ae32-n-and-atomic-history-fr-768-app/attachments/Suggested-field-with-history-b8db83bb9fb05ecd3a261009a91865a3a543ad45.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-101b429f03e358379ab8",
+          "file": "field-creation.spec.mjs",
+          "line": 330,
+          "column": 5
+        },
+        {
+          "title": "S04 real FTW selection, missing suggestion and atomic history fr 1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19711,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:58:14.412Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Suggested field with history",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-real-FT-3d8e5--and-atomic-history-fr-1024-app/attachments/Suggested-field-with-history-817feafd32969b4f87e1c049f346089dff318e40.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-20d7cec6de915a02c2cd",
+          "file": "field-creation.spec.mjs",
+          "line": 330,
+          "column": 5
+        },
+        {
+          "title": "S04 real FTW selection, missing suggestion and atomic history fr 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:58:34.127Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Suggested field with history",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-real-FT-fce88--and-atomic-history-fr-1440-app/attachments/Suggested-field-with-history-662acbb85293c2666be3e420a8bb7c1b3ac3a4b3.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-ee4aa83971689368b288",
+          "file": "field-creation.spec.mjs",
+          "line": 330,
+          "column": 5
+        },
+        {
+          "title": "S04 real FTW selection, missing suggestion and atomic history en 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23226,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:58:54.183Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Suggested field with history",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-real-FT-562ab-n-and-atomic-history-en-390-app/attachments/Suggested-field-with-history-e78cf8c857a055abcf9542dd294f620a6ac3f7a5.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-b1a211c591ddb881e0dd",
+          "file": "field-creation.spec.mjs",
+          "line": 330,
+          "column": 5
+        },
+        {
+          "title": "S04 real FTW selection, missing suggestion and atomic history en 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24241,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:59:17.416Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Suggested field with history",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-real-FT-9700e-n-and-atomic-history-en-768-app/attachments/Suggested-field-with-history-2bc0fd4764d520861869bad554ba227d661cac0d.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-dcb934f73014b315c625",
+          "file": "field-creation.spec.mjs",
+          "line": 330,
+          "column": 5
+        },
+        {
+          "title": "S04 real FTW selection, missing suggestion and atomic history en 1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23382,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T01:59:41.664Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Suggested field with history",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-real-FT-0959c--and-atomic-history-en-1024-app/attachments/Suggested-field-with-history-fecb4552c32623fb11371d23da56e2d77968f289.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-d10381b32891b9a28127",
+          "file": "field-creation.spec.mjs",
+          "line": 330,
+          "column": 5
+        },
+        {
+          "title": "S04 real FTW selection, missing suggestion and atomic history en 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:00:05.052Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Suggested field with history",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-real-FT-95353--and-atomic-history-en-1440-app/attachments/Suggested-field-with-history-fcb6513f2600dba65cb253a92dad8a27d43ae522.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-99bf943580d8b954de86",
+          "file": "field-creation.spec.mjs",
+          "line": 330,
+          "column": 5
+        },
+        {
+          "title": "S04 retained selections on offline, conflict, service failure and partial save fr",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:00:31.053Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-2a64c7804e7dd20bb3ef",
+          "file": "field-creation.spec.mjs",
+          "line": 486,
+          "column": 3
+        },
+        {
+          "title": "S04 retained selections on offline, conflict, service failure and partial save en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8975,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:00:40.894Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-cdcabe046956d51a7a2d",
+          "file": "field-creation.spec.mjs",
+          "line": 486,
+          "column": 3
+        },
+        {
+          "title": "S04 keyboard paint and per-polygon upload validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14254,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:00:49.875Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Keyboard painted field",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-keyboar-aeef7-r-polygon-upload-validation-app/attachments/Keyboard-painted-field-43e031b73cfbb1ae359f65cc4c96cb45ed6119a4.png"
+                    },
+                    {
+                      "name": "Valid imported polygon",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/field-creation-S04-keyboar-aeef7-r-polygon-upload-validation-app/attachments/Valid-imported-polygon-6438451f8ad3c686d7517f1d88ec49b109bf1b18.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-8c218b2c5c6e864c6d36",
+          "file": "field-creation.spec.mjs",
+          "line": 570,
+          "column": 1
+        },
+        {
+          "title": "S04 paint frame pacing with 2,000 selected HLS cells and the real worker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3745,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "F3_PAINT {\"selectedCells\":2000,\"medianFrameMs\":16.699999999999818,\"worstFrameMs\":49.899999999999636,\"frames\":50,\"workerJobs\":10,\"maximumWorkerMs\":33.10000002384186}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:01:04.134Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "paint-frame-pacing",
+                      "contentType": "application/json",
+                      "body": "eyJzZWxlY3RlZENlbGxzIjoyMDAwLCJtZWRpYW5GcmFtZU1zIjoxNi42OTk5OTk5OTk5OTk4MTgsIndvcnN0RnJhbWVNcyI6NDkuODk5OTk5OTk5OTk5NjM2LCJmcmFtZXMiOjUwLCJ3b3JrZXJKb2JzIjoxMCwibWF4aW11bVdvcmtlck1zIjozMy4xMDAwMDAwMjM4NDE4Nn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-4d64a012544be8971528",
+          "file": "field-creation.spec.mjs",
+          "line": 602,
+          "column": 1
+        },
+        {
+          "title": "S04 keeps the draft across language and layout changes and cancels without a write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6679,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:01:07.887Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-78c45333af9e9400efb2",
+          "file": "field-creation.spec.mjs",
+          "line": 779,
+          "column": 1
+        },
+        {
+          "title": "S04 stops blind retries after a confirmed write with invalid-response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6093,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:01:14.577Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-3c2d2d01295534003bf8",
+          "file": "field-creation.spec.mjs",
+          "line": 810,
+          "column": 3
+        },
+        {
+          "title": "S04 stops blind retries after a confirmed write with lost-response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6378,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:01:20.676Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3448b0f51787bff1a11-3bde257e16f68d124923",
+          "file": "field-creation.spec.mjs",
+          "line": 810,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "field-detail.spec.mjs",
+      "file": "field-detail.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S05 keeps the map and list beside the field at desktop widths and opens every tab at four widths in French and English",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32790,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:01:27.482Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31bc66e1835fd5880777-3951f0f8a475c05574aa",
+          "file": "field-detail.spec.mjs",
+          "line": 101,
+          "column": 1
+        },
+        {
+          "title": "S05 renames on Enter, reapplies a real version conflict and confirms deletion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:02:05.478Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31bc66e1835fd5880777-5e41155b131d45ecb86f",
+          "file": "field-detail.spec.mjs",
+          "line": 146,
+          "column": 1
+        },
+        {
+          "title": "S06 adds and edits with the crop strip, rejects overlap, reloads a concurrent history version, and deletes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12275,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:02:12.009Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31bc66e1835fd5880777-b7719650a35fcbb820b9",
+          "file": "field-detail.spec.mjs",
+          "line": 192,
+          "column": 1
+        },
+        {
+          "title": "S07 saves exact soil, water, and health bodies on the real field API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10484,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:02:24.290Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31bc66e1835fd5880777-6c5d312a35a92d84ad99",
+          "file": "field-detail.spec.mjs",
+          "line": 254,
+          "column": 1
+        },
+        {
+          "title": "S15 searches the real release in four languages, filters and virtualizes, persists name mode and renders all twelve returned effects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:02:34.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31bc66e1835fd5880777-e1bbbee8cc174e6a6ba2",
+          "file": "field-detail.spec.mjs",
+          "line": 330,
+          "column": 1
+        },
+        {
+          "title": "S05 starts all six NASA requests, checks persisted states, and shows completed HLS evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:02:48.230Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31bc66e1835fd5880777-6356fe6b822d33a41e76",
+          "file": "field-detail.spec.mjs",
+          "line": 453,
+          "column": 1
+        },
+        {
+          "title": "S05 edits the saved outline with the keyboard and keeps the field and map visible offline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:03.270Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31bc66e1835fd5880777-83414dbbe87d308c916a",
+          "file": "field-detail.spec.mjs",
+          "line": 532,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "fm.spec.mjs",
+      "file": "fm.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FM native raster, retina, wheel and keyboard 1440 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3374,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:08.825Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "metrics",
+                      "contentType": "application/json",
+                      "body": "ewogICJuYXZpZ2F0aW9uVG9GaWVsZFRpbGVzTXMiOiAxNjgyLjc5OTk5OTk1MjMxNjMsCiAgImNhbWVyYVRvRmllbGRUaWxlc01zIjogMTIzOC43OTk5OTk5NTIzMTYzLAogICJncmFwaGljc1JlbmRlcmVyIjogIkFOR0xFIChHb29nbGUsIFZ1bGthbiAxLjMuMCAoU3dpZnRTaGFkZXIgRGV2aWNlIChMTFZNIDEwLjAuMCkgKDB4MDAwMEMwREUpKSwgU3dpZnRTaGFkZXIgZHJpdmVyKSIsCiAgIm1heHpvb20iOiAxNSwKICAidGlsZVNpemUiOiAyNTYsCiAgImNhbnZhcyI6IFsKICAgIDEwODUsCiAgICA4NTIKICBdLAogICJjc3MiOiBbCiAgICAxMDg1LAogICAgODUyCiAgXSwKICAiZHByIjogMSwKICAid2hlZWxEZWx0YSI6IDAuMjQ1MjkyNjYxMDUxODA2MjUsCiAgImZyYWN0aW9uYWwiOiA5LAogICJzYW1wbGVzIjogWwogICAgewogICAgICAidGltZSI6IDE3MDIuOSwKICAgICAgInpvb20iOiAxNAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzE5LjYsCiAgICAgICJ6b29tIjogMTQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTczNi4zLAogICAgICAiem9vbSI6IDE0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE3NTIuOSwKICAgICAgInpvb20iOiAxNAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzY5LjYsCiAgICAgICJ6b29tIjogMTQuMTIxNzU4MzU3NzY0NgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzg2LjMsCiAgICAgICJ6b29tIjogMTQuMTU3NTI3NzgwNjk5NDIKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTgwMywKICAgICAgInpvb20iOiAxNC4xODQ2MDUxODI4MDI4NDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTgxOS43LAogICAgICAiem9vbSI6IDE0LjIwNTg4NjYyNjc0ODE2MgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxODM2LjIsCiAgICAgICJ6b29tIjogMTQuMjIxMDk4OTAxMjA4OTc3CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4NTIuOSwKICAgICAgInpvb20iOiAxNC4yMzQyNjcxODYzOTgzNTIKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTg2OS42LAogICAgICAiem9vbSI6IDE0LjI0MDI2MTQ2NDg4NDU1OAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxODg2LjMsCiAgICAgICJ6b29tIjogMTQuMjQzNDk2OTY0MTcyNzk1CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5MDIuOSwKICAgICAgInpvb20iOiAxNC4yNDUxNjAzMDU2MDMyMwogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTE5LjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5MzYuMywKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTk1MywKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTk2OS42LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTg2LjMsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIwMDIuOSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjAxOS42LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMDM2LjMsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIwNTIuOSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjA2OS42LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMDg2LjMsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIxMDMsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIxMTkuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjEzNi4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMTUyLjksCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIxNjkuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjE4Ni4zLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMjAyLjksCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIyMTkuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjIzNi4zLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMjUyLjksCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIyNjkuNSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjI4Ni4zLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMzAzLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMzE5LjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIzMzYuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjM1MywKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0KICBdLAogICJjb21taXRzIjogMQp9"
+                    },
+                    {
+                      "name": "driver-warnings",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-3ce39c25e5d32f8a1dcc",
+          "file": "fm.spec.mjs",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "FM native raster, retina, wheel and keyboard 1440 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3848,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:14.816Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "metrics",
+                      "contentType": "application/json",
+                      "body": "ewogICJuYXZpZ2F0aW9uVG9GaWVsZFRpbGVzTXMiOiAyMDEyLAogICJjYW1lcmFUb0ZpZWxkVGlsZXNNcyI6IDE1NzcuMTk5OTk5OTg4MDc5LAogICJncmFwaGljc1JlbmRlcmVyIjogIkFOR0xFIChHb29nbGUsIFZ1bGthbiAxLjMuMCAoU3dpZnRTaGFkZXIgRGV2aWNlIChMTFZNIDEwLjAuMCkgKDB4MDAwMEMwREUpKSwgU3dpZnRTaGFkZXIgZHJpdmVyKSIsCiAgIm1heHpvb20iOiAxNSwKICAidGlsZVNpemUiOiAyNTYsCiAgImNhbnZhcyI6IFsKICAgIDIxNzAsCiAgICAxNzA0CiAgXSwKICAiY3NzIjogWwogICAgMTA4NSwKICAgIDg1MgogIF0sCiAgImRwciI6IDIsCiAgIndoZWVsRGVsdGEiOiAwLjI0NTI5MjY2MTA1MTgwNjI1LAogICJmcmFjdGlvbmFsIjogMywKICAic2FtcGxlcyI6IFsKICAgIHsKICAgICAgInRpbWUiOiAyMDY3LjMsCiAgICAgICJ6b29tIjogMTQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjA4My45LAogICAgICAiem9vbSI6IDE0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIxMDAuNiwKICAgICAgInpvb20iOiAxNAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMTE3LjMsCiAgICAgICJ6b29tIjogMTQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjE2Ny4zLAogICAgICAiem9vbSI6IDE0LjEzMjc3NDI3ODk3NDE2MgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMjE3LjIsCiAgICAgICJ6b29tIjogMTQuMjEzNDA1Mzk5Mjc5Njk5CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIyNjcuMiwKICAgICAgInpvb20iOiAxNC4yNDEyOTg4NDAyNTg2MDMKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjMxNy4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMzY3LjMsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIzODMuOSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjQwMC42LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyNDE3LjMsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDI0MzQsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDI0NTAuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjQ2Ny4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyNDgzLjksCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDI1MTcuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjU2Ny4zLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyNTgzLjksCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDI2MDAuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjYxNy4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyNjMzLjksCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDI2NTAuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjY2Ny4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyNjgzLjksCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDI3MDAuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjcxNy4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfQogIF0sCiAgImNvbW1pdHMiOiAxCn0="
+                    },
+                    {
+                      "name": "driver-warnings",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-881f3806bd1913a27464",
+          "file": "fm.spec.mjs",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "FM native raster, retina, wheel and keyboard 768 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2802,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:18.670Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "metrics",
+                      "contentType": "application/json",
+                      "body": "ewogICJuYXZpZ2F0aW9uVG9GaWVsZFRpbGVzTXMiOiAxMzM0LAogICJjYW1lcmFUb0ZpZWxkVGlsZXNNcyI6IDk0My4xOTk5OTk5ODgwNzkxLAogICJncmFwaGljc1JlbmRlcmVyIjogIkFOR0xFIChHb29nbGUsIFZ1bGthbiAxLjMuMCAoU3dpZnRTaGFkZXIgRGV2aWNlIChMTFZNIDEwLjAuMCkgKDB4MDAwMEMwREUpKSwgU3dpZnRTaGFkZXIgZHJpdmVyKSIsCiAgIm1heHpvb20iOiAxNSwKICAidGlsZVNpemUiOiAyNTYsCiAgImNhbnZhcyI6IFsKICAgIDQ1MywKICAgIDk3NgogIF0sCiAgImNzcyI6IFsKICAgIDQ1MywKICAgIDk3NgogIF0sCiAgImRwciI6IDEsCiAgIndoZWVsRGVsdGEiOiAwLjI0NTI5MjY2MTA1MTgwNjI1LAogICJmcmFjdGlvbmFsIjogOSwKICAic2FtcGxlcyI6IFsKICAgIHsKICAgICAgInRpbWUiOiAxMzY0LjUsCiAgICAgICJ6b29tIjogMTQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTM4MS4xLAogICAgICAiem9vbSI6IDE0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDEzOTcuNywKICAgICAgInpvb20iOiAxNAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNDE0LjUsCiAgICAgICJ6b29tIjogMTQuMTA4NzQ1NDE0MTMwOTM1CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE0MzEuMSwKICAgICAgInpvb20iOiAxNC4xNDY4OTI5MjEyMTk3MgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNDQ3LjgsCiAgICAgICJ6b29tIjogMTQuMTc4MzEyNjcxNTc4NTI2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE0NjQuNCwKICAgICAgInpvb20iOiAxNC4xOTg5ODIyMjU2MDkzNTgKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTQ4MS4xLAogICAgICAiem9vbSI6IDE0LjIxNjA0NDMzMTc1MDU5MgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNDk3LjgsCiAgICAgICJ6b29tIjogMTQuMjI4NDg2ODY1MzUxOTA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE1MTQuNSwKICAgICAgInpvb20iOiAxNC4yMzcxNjkyMDY0MDc4MzUKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTUzMS4xLAogICAgICAiem9vbSI6IDE0LjI0MjAwMTY2Njg3Nzc3NAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNTQ3LjgsCiAgICAgICJ6b29tIjogMTQuMjQ0NjQyMjY0NDA0OTczCiAgICB9LAogICAgewogICAgICAidGltZSI6IDE1NjQuNSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTU4MS4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNTk3LjcsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2MTQuNSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTYzMS4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNjQ3LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2NjQuNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTY4MS4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNjk3LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE3MTQuNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTczMS4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzQ3LjcsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE3NjQuNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTc4MS4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzk3LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4MTQuNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTgzMSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTg0Ny43LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxODY0LjQsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4ODEuMSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTg5Ny44LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTE0LjQsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5MzEuMSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTk0Ny44LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTY0LjQsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5ODEuMSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTk5Ny43LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMDE0LjQsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9CiAgXSwKICAiY29tbWl0cyI6IDEKfQ=="
+                    },
+                    {
+                      "name": "driver-warnings",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-5bcdc63577ff06b3d21b",
+          "file": "fm.spec.mjs",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "FM native raster, retina, wheel and keyboard 768 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3035,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:21.478Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "metrics",
+                      "contentType": "application/json",
+                      "body": "ewogICJuYXZpZ2F0aW9uVG9GaWVsZFRpbGVzTXMiOiAxMzc2LjMwMDAwMDAxMTkyMSwKICAiY2FtZXJhVG9GaWVsZFRpbGVzTXMiOiAxMDAzLjM5OTk5OTk3NjE1ODEsCiAgImdyYXBoaWNzUmVuZGVyZXIiOiAiQU5HTEUgKEdvb2dsZSwgVnVsa2FuIDEuMy4wIChTd2lmdFNoYWRlciBEZXZpY2UgKExMVk0gMTAuMC4wKSAoMHgwMDAwQzBERSkpLCBTd2lmdFNoYWRlciBkcml2ZXIpIiwKICAibWF4em9vbSI6IDE1LAogICJ0aWxlU2l6ZSI6IDI1NiwKICAiY2FudmFzIjogWwogICAgOTA2LAogICAgMTk1MgogIF0sCiAgImNzcyI6IFsKICAgIDQ1MywKICAgIDk3NgogIF0sCiAgImRwciI6IDIsCiAgIndoZWVsRGVsdGEiOiAwLjI0NTI5MjY2MTA1MTgwNjI1LAogICJmcmFjdGlvbmFsIjogNywKICAic2FtcGxlcyI6IFsKICAgIHsKICAgICAgInRpbWUiOiAxMzg3LjM2NiwKICAgICAgInpvb20iOiAxNAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNDA0LAogICAgICAiem9vbSI6IDE0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE0MjAuNiwKICAgICAgInpvb20iOiAxNAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNDM3LjMsCiAgICAgICJ6b29tIjogMTQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTQ1My45LAogICAgICAiem9vbSI6IDE0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE0NzAuNywKICAgICAgInpvb20iOiAxNC4xMjY2MzU1Njg2NjAxNTYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTQ4Ny4zLAogICAgICAiem9vbSI6IDE0LjE3MzE5MTA1NTA3Mzg4CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE1MjAuNiwKICAgICAgInpvb20iOiAxNC4yMDIzMTE1ODIxMjA0MzIKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTUzNy4zLAogICAgICAiem9vbSI6IDE0LjIyMTg0MzQ3MzQ5MzM1CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE1NTQsCiAgICAgICJ6b29tIjogMTQuMjM0NTg1NzkzNTg3NTQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTU4Ny4zLAogICAgICAiem9vbSI6IDE0LjI0MjEzNzcyOTM3MDA3OQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNjA0LAogICAgICAiem9vbSI6IDE0LjI0NTIxMjk0MjM1NDA5CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2MzcuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTY1My45LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNjcwLjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2ODcuMywKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTcwNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTcyMC42LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzM3LjMsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE3NTMuOSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTc3MC43LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzg3LjIsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4MDQsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4MjAuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTgzNy4zLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxODUzLjksCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4NzAuNiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTg4Ny4zLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTA0LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTIwLjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5MzcuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTk1My45LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTcwLjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5ODcuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjAwMy45LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMDIwLjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIwMzcuMywKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjA1My45LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfQogIF0sCiAgImNvbW1pdHMiOiAxCn0="
+                    },
+                    {
+                      "name": "driver-warnings",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-f8ae73aaf2127555a936",
+          "file": "fm.spec.mjs",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "FM native raster, retina, wheel and keyboard 390 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2730,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:24.518Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "metrics",
+                      "contentType": "application/json",
+                      "body": "ewogICJuYXZpZ2F0aW9uVG9GaWVsZFRpbGVzTXMiOiAxMzM0LAogICJjYW1lcmFUb0ZpZWxkVGlsZXNNcyI6IDk1MSwKICAiZ3JhcGhpY3NSZW5kZXJlciI6ICJBTkdMRSAoR29vZ2xlLCBWdWxrYW4gMS4zLjAgKFN3aWZ0U2hhZGVyIERldmljZSAoTExWTSAxMC4wLjApICgweDAwMDBDMERFKSksIFN3aWZ0U2hhZGVyIGRyaXZlcikiLAogICJtYXh6b29tIjogMTUsCiAgInRpbGVTaXplIjogMjU2LAogICJjYW52YXMiOiBbCiAgICAzOTAsCiAgICA1MjgKICBdLAogICJjc3MiOiBbCiAgICAzOTAsCiAgICA1MjgKICBdLAogICJkcHIiOiAxLAogICJ3aGVlbERlbHRhIjogMC4yNDUyOTI2NjEwNTE4MDYyNSwKICAiZnJhY3Rpb25hbCI6IDksCiAgInNhbXBsZXMiOiBbCiAgICB7CiAgICAgICJ0aW1lIjogMTM1My42LAogICAgICAiem9vbSI6IDE0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDEzNzAuMiwKICAgICAgInpvb20iOiAxNAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMzg2LjksCiAgICAgICJ6b29tIjogMTQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTQwMy42LAogICAgICAiem9vbSI6IDE0LjExMTYxODMzNTY0NDk4MgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNDIwLjIsCiAgICAgICJ6b29tIjogMTQuMTQ5OTk4NDc2NTcwMjQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTQzNi45LAogICAgICAiem9vbSI6IDE0LjE3ODYyMzE4MzI1MjMzCiAgICB9LAogICAgewogICAgICAidGltZSI6IDE0NTMuNiwKICAgICAgInpvb20iOiAxNC4yMDEyOTc1MzM1NjM3NTcKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTQ3MC4yLAogICAgICAiem9vbSI6IDE0LjIxOTA5MDI5Njk5ODI0NAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNDg2LjksCiAgICAgICJ6b29tIjogMTQuMjMwMjY4NTIxNzU5OTA1CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE1MDMuNSwKICAgICAgInpvb20iOiAxNC4yMzcxNjkyMDYzODUwMDMKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTUyMC4yLAogICAgICAiem9vbSI6IDE0LjI0MjIwNDU3NDkyMzUKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTUzNi45LAogICAgICAiem9vbSI6IDE0LjI0NDczNDkxMDY1NTE0OQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNTUzLjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE1NzAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTU4Ni45LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNjAzLjUsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2MjAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTYzNi45LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNjUzLjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2NzAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTY4Ni44LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzAzLjUsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE3MjAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTczNi44LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzUzLjUsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE3NzAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTc4Ni44LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxODAzLjUsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4MjAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTgzNi45LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxODUzLjUsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4NzAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTg4Ni44LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTAzLjUsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5MjAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTkzNi44LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTUzLjUsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5NzAuMiwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTk4Ni44LAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMDAzLjYsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9CiAgXSwKICAiY29tbWl0cyI6IDEKfQ=="
+                    },
+                    {
+                      "name": "driver-warnings",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-21ac6ee2b169d1ef0fc4",
+          "file": "fm.spec.mjs",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "FM native raster, retina, wheel and keyboard 390 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:27.252Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "metrics",
+                      "contentType": "application/json",
+                      "body": "ewogICJuYXZpZ2F0aW9uVG9GaWVsZFRpbGVzTXMiOiAxNTIyLAogICJjYW1lcmFUb0ZpZWxkVGlsZXNNcyI6IDExNzYuNjAwMDAwMDIzODQxOSwKICAiZ3JhcGhpY3NSZW5kZXJlciI6ICJBTkdMRSAoR29vZ2xlLCBWdWxrYW4gMS4zLjAgKFN3aWZ0U2hhZGVyIERldmljZSAoTExWTSAxMC4wLjApICgweDAwMDBDMERFKSksIFN3aWZ0U2hhZGVyIGRyaXZlcikiLAogICJtYXh6b29tIjogMTUsCiAgInRpbGVTaXplIjogMjU2LAogICJjYW52YXMiOiBbCiAgICA3ODAsCiAgICAxMDU2CiAgXSwKICAiY3NzIjogWwogICAgMzkwLAogICAgNTI4CiAgXSwKICAiZHByIjogMiwKICAid2hlZWxEZWx0YSI6IDAuMjQ1MjkyNjYxMDUxODA2MjUsCiAgImZyYWN0aW9uYWwiOiA5LAogICJzYW1wbGVzIjogWwogICAgewogICAgICAidGltZSI6IDE1MzYuNTMyLAogICAgICAiem9vbSI6IDE0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE1NTMuMSwKICAgICAgInpvb20iOiAxNAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNTY5LjgsCiAgICAgICJ6b29tIjogMTQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTU4Ni41LAogICAgICAiem9vbSI6IDE0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2MDMuMiwKICAgICAgInpvb20iOiAxNC4xMDU4Mzg5OTMyMzgxMzQKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTYxOS44LAogICAgICAiem9vbSI6IDE0LjE0NjY4MzE2MDY5ODI0MgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNjM2LjQsCiAgICAgICJ6b29tIjogMTQuMTc0ODIyOTU1NTUyNzY4CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2NTMuMSwKICAgICAgInpvb20iOiAxNC4xOTgxNTEzMjMyMzYzMQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNjY5LjgsCiAgICAgICJ6b29tIjogMTQuMjE2Mjk5NzUwNzE3NzQyCiAgICB9LAogICAgewogICAgICAidGltZSI6IDE2ODYuNCwKICAgICAgInpvb20iOiAxNC4yMjc2NDA4MTEzNTYxMDUKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTcwMy4yLAogICAgICAiem9vbSI6IDE0LjIzNjA1NDcwNTU0MDcyMgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzE5LjgsCiAgICAgICJ6b29tIjogMTQuMjQxNjIzMjM1Mzc0MjI0CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE3MzYuNCwKICAgICAgInpvb20iOiAxNC4yNDQ1MDAwMTczODg3OTcKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTc1My4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxNzY5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE3ODYuNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTgwMy4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxODE5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4MzYuNSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTg1My4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxODY5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE4ODYuNSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTkwMy4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTE5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5MzYuNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTk1My4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxOTY5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDE5ODYuNSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjAwMy4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMDE5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIwMzYuNSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjA1My4xLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMDY5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIwODYuNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjEwMy4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMTE5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIxMzYuNSwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjE1My4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAyMTY5LjgsCiAgICAgICJ6b29tIjogMTQuMjQ1MjkyNjYxMDUxODA2CiAgICB9LAogICAgewogICAgICAidGltZSI6IDIxODYuNCwKICAgICAgInpvb20iOiAxNC4yNDUyOTI2NjEwNTE4MDYKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMjIwMy4yLAogICAgICAiem9vbSI6IDE0LjI0NTI5MjY2MTA1MTgwNgogICAgfQogIF0sCiAgImNvbW1pdHMiOiAxCn0="
+                    },
+                    {
+                      "name": "driver-warnings",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-4516b5bd12012ede881e",
+          "file": "fm.spec.mjs",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "FM compact status keeps the map usable during an actual API outage at three widths",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4903,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:30.465Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-3374457e72dc72d29f50",
+          "file": "fm.spec.mjs",
+          "line": 200,
+          "column": 1
+        },
+        {
+          "title": "FM clean map load has no console errors or missing resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1433,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:35.373Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-cab142355c9d2971d00c",
+          "file": "fm.spec.mjs",
+          "line": 240,
+          "column": 1
+        },
+        {
+          "title": "FM WebGL fallback explains the issue and retries without blocking the shell",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1544,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:36.814Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ea40569bb50e6bd2b7d-8bb660b193d1ce942b73",
+          "file": "fm.spec.mjs",
+          "line": 259,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "health.spec.mjs",
+      "file": "health.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S00 real API delay, unavailable, retry and recovery preserve the shell",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4536,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:38.700Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-b5d3d303b13ef48d9ed2",
+          "file": "health.spec.mjs",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "S00 capabilities off is an honest state and creates no guest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3964,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:45.545Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-b19dc533a3b73312c8b3",
+          "file": "health.spec.mjs",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "S00 catalog unavailable leaves glossary available and pauses planning",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3933,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:49.517Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-cb2eea9fc23e295e9b11",
+          "file": "health.spec.mjs",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "S00 valid unavailable readiness is explained without blocking the shell",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2005,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:53.457Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-d72c66df0005b0cbf46b",
+          "file": "health.spec.mjs",
+          "line": 139,
+          "column": 1
+        },
+        {
+          "title": "S00 degraded capabilities is explained without an uncaught error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:55.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-fe3590193e682d5e406b",
+          "file": "health.spec.mjs",
+          "line": 168,
+          "column": 3
+        },
+        {
+          "title": "S00 degraded account is explained without an uncaught error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1639,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:56.691Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-ee43885b6dc32d4b53cb",
+          "file": "health.spec.mjs",
+          "line": 168,
+          "column": 3
+        },
+        {
+          "title": "S00 degraded glossary?lang=fr is explained without an uncaught error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2332,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:03:58.335Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-56b4a24af07d80d7b945",
+          "file": "health.spec.mjs",
+          "line": 168,
+          "column": 3
+        },
+        {
+          "title": "S01 first run, live language switch, persistence, return visit, no load toast",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4786,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:00.674Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-bb0406ad4b3edeb96ba8",
+          "file": "health.spec.mjs",
+          "line": 199,
+          "column": 1
+        },
+        {
+          "title": "offline bar follows actual browser connectivity and recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1798,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:05.467Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-6aa1ed99e939f206f10b",
+          "file": "health.spec.mjs",
+          "line": 220,
+          "column": 1
+        },
+        {
+          "title": "S16 real glossary fr at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3068,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:07.270Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "glossary",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/health-S16-real-glossary-fr-at-390px-app/attachments/glossary-1590924d3a9c8c246c762821ddcb15b64739dda8.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-793cf3ee052422c4f031",
+          "file": "health.spec.mjs",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "S16 real glossary en at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3961,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:10.342Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "glossary",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/health-S16-real-glossary-en-at-390px-app/attachments/glossary-cccf4779c5e1e7690b194fe95cd05ea9bbacbfa6.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-47e3114c9a2d5485c23d",
+          "file": "health.spec.mjs",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "S16 real glossary fr at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3524,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:14.308Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "glossary",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/health-S16-real-glossary-fr-at-768px-app/attachments/glossary-091cfce01acf3b7696df70072d3d13f912dd47e2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-9b5a9bef40d217b1d771",
+          "file": "health.spec.mjs",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "S16 real glossary en at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4119,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:17.837Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "glossary",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/health-S16-real-glossary-en-at-768px-app/attachments/glossary-96009938c7c985be0f6ae79636202696cb182764.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-10ba059c1c34dc5f0621",
+          "file": "health.spec.mjs",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "S16 real glossary fr at 1024px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:21.960Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "glossary",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/health-S16-real-glossary-fr-at-1024px-app/attachments/glossary-82ce0b55846313e7e0b352c6edcb1464de55433c.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-a57b6c96bdba4ef5a603",
+          "file": "health.spec.mjs",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "S16 real glossary en at 1024px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:24.799Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "glossary",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/health-S16-real-glossary-en-at-1024px-app/attachments/glossary-8b6ea1780d02dbf7f74f306b7be62026ccbc93ef.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-d1fe5f23b3f5a440b0ba",
+          "file": "health.spec.mjs",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "S16 real glossary fr at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:29.029Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "glossary",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/health-S16-real-glossary-fr-at-1440px-app/attachments/glossary-e0a70e84e1fdd3481f8a33d2751b3c11096b9da2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-d01278c6b7e36f89e055",
+          "file": "health.spec.mjs",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "S16 real glossary en at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:33.248Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "glossary",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/health-S16-real-glossary-en-at-1440px-app/attachments/glossary-b3d9896a52753fd80b7227fb774d1ab51dd060d0.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-f73fb175eff35e3f18d8",
+          "file": "health.spec.mjs",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "phone sheet has three detents and closes and reopens with keyboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5074,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:36.721Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-0a97960e48ab0383bc93",
+          "file": "health.spec.mjs",
+          "line": 279,
+          "column": 1
+        },
+        {
+          "title": "language switch preserves glossary search and phone sheet height",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3886,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:41.799Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-2742d3d32a239e11b113",
+          "file": "health.spec.mjs",
+          "line": 321,
+          "column": 1
+        },
+        {
+          "title": "invalid route identifiers never request a private resource",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1116,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:45.691Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-76626026ef1cced1299d",
+          "file": "health.spec.mjs",
+          "line": 337,
+          "column": 1
+        },
+        {
+          "title": "F1 production boot performance fr on throttled phone",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3297,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "F1_PERFORMANCE fr {\"lcp\":2136,\"inputs\":[24,24,24],\"element\":\"Votre terre a un plan.\"}\n"
+                    },
+                    {
+                      "text": "F1_RESOURCES [{\"name\":\"boot.js\",\"duration\":162,\"bytes\":1017},{\"name\":\"rolldown-runtime-hePW80VL.js\",\"duration\":168,\"bytes\":716},{\"name\":\"index-BW_eECjZ.js\",\"duration\":1624,\"bytes\":76328},{\"name\":\"Runtime-9LFOPl9p.js\",\"duration\":796,\"bytes\":16245},{\"name\":\"operations-lOn43tIi.js\",\"duration\":1156,\"bytes\":39333},{\"name\":\"feedback-BE2VxMMf.js\",\"duration\":1571,\"bytes\":67658},{\"name\":\"hooks-uKv1jKZE.js\",\"duration\":971,\"bytes\":24217},{\"name\":\"preload-helper-BZ1Pz5am.js\",\"duration\":519,\"bytes\":688},{\"name\":\"RetryButton-bVJ-bR_t.js\",\"duration\":715,\"bytes\":612},{\"name\":\"index-DfAGSRZu.css\",\"duration\":323,\"bytes\":8166},{\"name\":\"ibm-plex-sans-latin-400-normal-CDDApCn2.woff2\",\"duration\":1404,\"bytes\":22588},{\"name\":\"fraunces-latin-500-normal-DnGCNyPD.woff2\",\"duration\":1055,\"bytes\":18000},{\"name\":\"live\",\"duration\":204,\"bytes\":42},{\"name\":\"capabilities\",\"duration\":258,\"bytes\":1753},{\"name\":\"Welcome-B1PjOAJe.js\",\"duration\":161,\"bytes\":778},{\"name\":\"ibm-plex-sans-latin-500-normal-6ng42L7E.woff2\",\"duration\":287,\"bytes\":24184},{\"name\":\"options\",\"duration\":201,\"bytes\":2588},{\"name\":\"glossary?lang=fr\",\"duration\":198,\"bytes\":0}]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:46.813Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "performance",
+                      "contentType": "application/json",
+                      "body": "eyJwcm9maWxlIjoiNHggQ1BVLCAxNTAgbXMgUlRULCAxLjYgTWJwcyBkb3dubG9hZCIsImxjcCI6MjEzNiwiaW5wdXRzIjpbMjQsMjQsMjRdLCJlbGVtZW50IjoiVm90cmUgdGVycmUgYSB1biBwbGFuLiIsIm1heGltdW1PYnNlcnZlZElucHV0TXMiOjI0fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-aa01ae6df8a8c01447cf",
+          "file": "health.spec.mjs",
+          "line": 353,
+          "column": 3
+        },
+        {
+          "title": "F1 production boot performance en on throttled phone",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3255,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "F1_PERFORMANCE en {\"lcp\":2136,\"inputs\":[16,16,16],\"element\":\"Your land has a plan.\"}\n"
+                    },
+                    {
+                      "text": "F1_RESOURCES [{\"name\":\"boot.js\",\"duration\":156,\"bytes\":1017},{\"name\":\"rolldown-runtime-hePW80VL.js\",\"duration\":162,\"bytes\":716},{\"name\":\"operations-lOn43tIi.js\",\"duration\":1151,\"bytes\":39333},{\"name\":\"feedback-BE2VxMMf.js\",\"duration\":1563,\"bytes\":67658},{\"name\":\"index-BW_eECjZ.js\",\"duration\":1616,\"bytes\":76328},{\"name\":\"Runtime-9LFOPl9p.js\",\"duration\":792,\"bytes\":16245},{\"name\":\"hooks-uKv1jKZE.js\",\"duration\":978,\"bytes\":24217},{\"name\":\"index-DfAGSRZu.css\",\"duration\":317,\"bytes\":8166},{\"name\":\"preload-helper-BZ1Pz5am.js\",\"duration\":513,\"bytes\":688},{\"name\":\"RetryButton-bVJ-bR_t.js\",\"duration\":708,\"bytes\":612},{\"name\":\"ibm-plex-sans-latin-400-normal-CDDApCn2.woff2\",\"duration\":1405,\"bytes\":22588},{\"name\":\"fraunces-latin-500-normal-DnGCNyPD.woff2\",\"duration\":1061,\"bytes\":18000},{\"name\":\"live\",\"duration\":198,\"bytes\":42},{\"name\":\"capabilities\",\"duration\":250,\"bytes\":1753},{\"name\":\"Welcome-B1PjOAJe.js\",\"duration\":160,\"bytes\":778},{\"name\":\"ibm-plex-sans-latin-500-normal-6ng42L7E.woff2\",\"duration\":287,\"bytes\":24184},{\"name\":\"options\",\"duration\":199,\"bytes\":2588},{\"name\":\"glossary?lang=en\",\"duration\":204,\"bytes\":0}]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:50.117Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "performance",
+                      "contentType": "application/json",
+                      "body": "eyJwcm9maWxlIjoiNHggQ1BVLCAxNTAgbXMgUlRULCAxLjYgTWJwcyBkb3dubG9hZCIsImxjcCI6MjEzNiwiaW5wdXRzIjpbMTYsMTYsMTZdLCJlbGVtZW50IjoiWW91ciBsYW5kIGhhcyBhIHBsYW4uIiwibWF4aW11bU9ic2VydmVkSW5wdXRNcyI6MTZ9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f17faf172e09d982792-72d451a44ebcc2b79fb0",
+          "file": "health.spec.mjs",
+          "line": 353,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "map.spec.mjs",
+      "file": "map.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "S03 uses the live cloudless basemap with only approved provider hosts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2941,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:53.812Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-766fc54fd109ea76569b",
+          "file": "map.spec.mjs",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "S03 empty state and creation menu pass across four widths in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18559,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:04:59.446Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "map-fr-390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-empty-state-and-cr-e8886-ur-widths-in-both-languages-app/attachments/map-fr-390-dae812665565c86346fc943fc7f18bfd34a59dc6.png"
+                    },
+                    {
+                      "name": "map-fr-768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-empty-state-and-cr-e8886-ur-widths-in-both-languages-app/attachments/map-fr-768-6659770a44ae7b358aba45d0e4ed1c5ca9289596.png"
+                    },
+                    {
+                      "name": "map-fr-1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-empty-state-and-cr-e8886-ur-widths-in-both-languages-app/attachments/map-fr-1024-729e596dc5b7b543f077f6cbc316c90bbcce7869.png"
+                    },
+                    {
+                      "name": "map-fr-1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-empty-state-and-cr-e8886-ur-widths-in-both-languages-app/attachments/map-fr-1440-df4d42737c3c03f7722c53a8d804ac9bff748e80.png"
+                    },
+                    {
+                      "name": "map-en-390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-empty-state-and-cr-e8886-ur-widths-in-both-languages-app/attachments/map-en-390-28571ee2bf9dbfb4d649d45b9f1ee50ddc67b6e4.png"
+                    },
+                    {
+                      "name": "map-en-768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-empty-state-and-cr-e8886-ur-widths-in-both-languages-app/attachments/map-en-768-327131119576054eb5e95c8075cd8503ac561167.png"
+                    },
+                    {
+                      "name": "map-en-1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-empty-state-and-cr-e8886-ur-widths-in-both-languages-app/attachments/map-en-1024-bade56a05e5266780486ef8944792221461698d4.png"
+                    },
+                    {
+                      "name": "map-en-1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-empty-state-and-cr-e8886-ur-widths-in-both-languages-app/attachments/map-en-1440-8cdd40169417dbed33cdb556b4f263f4bee435ba.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-5ed25b5e8c9f03e53f30",
+          "file": "map.spec.mjs",
+          "line": 159,
+          "column": 1
+        },
+        {
+          "title": "S03 searches and sorts real saved fields, loads the next cursor and keeps the selected map interactive offline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15912,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:05:18.013Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-9d80cb6b1abdd1f068cd",
+          "file": "map.spec.mjs",
+          "line": 211,
+          "column": 1
+        },
+        {
+          "title": "S03 checks real tile pixels, steps past transparent dates and compares with the keyboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11498,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:05:33.931Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-340c526a20e13cd3697c",
+          "file": "map.spec.mjs",
+          "line": 310,
+          "column": 1
+        },
+        {
+          "title": "S03 locates only after an explicit request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2819,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:05:45.436Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-3ad12f714e071e9ebd9a",
+          "file": "map.spec.mjs",
+          "line": 360,
+          "column": 1
+        },
+        {
+          "title": "S03 first paint and input on a throttled phone (fr)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4311,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "F2_PHONE fr {\"lcp\":2140,\"inputs\":[32,32,32],\"element\":\"Ouverture de votre espace\"}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:05:48.262Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "timings",
+                      "contentType": "application/json",
+                      "body": "eyJsY3AiOjIxNDAsImlucHV0cyI6WzMyLDMyLDMyXSwiZWxlbWVudCI6Ik91dmVydHVyZSBkZSB2b3RyZSBlc3BhY2UifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-d4de06cef3fc02cabd85",
+          "file": "map.spec.mjs",
+          "line": 387,
+          "column": 3
+        },
+        {
+          "title": "S03 first paint and input on a throttled phone (en)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5236,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "F2_PHONE en {\"lcp\":2212,\"inputs\":[24,24,24],\"element\":\"Opening your workspace\"}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:05:52.580Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "timings",
+                      "contentType": "application/json",
+                      "body": "eyJsY3AiOjIyMTIsImlucHV0cyI6WzI0LDI0LDI0XSwiZWxlbWVudCI6Ik9wZW5pbmcgeW91ciB3b3Jrc3BhY2UifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-9938cc76a8c1324f93ac",
+          "file": "map.spec.mjs",
+          "line": 387,
+          "column": 3
+        },
+        {
+          "title": "S03 real renderer pans and moves through fractional zooms",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4009,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "F2_FRAME_PACING {\"start\":10.019704293267784,\"end\":11,\"fractionalSteps\":17,\"panned\":true,\"wheelDelta\":0.24529266105180447,\"zoomFrames\":{\"medianMs\":16.699999999999818,\"worstMs\":33.299999999999955,\"frames\":16},\"panFrames\":{\"medianMs\":16.699999999999818,\"worstMs\":33.40000000000009,\"frames\":15}}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:05:57.823Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "frame-pacing",
+                      "contentType": "application/json",
+                      "body": "eyJzdGFydCI6MTAuMDE5NzA0MjkzMjY3Nzg0LCJlbmQiOjExLCJmcmFjdGlvbmFsU3RlcHMiOjE3LCJwYW5uZWQiOnRydWUsIndoZWVsRGVsdGEiOjAuMjQ1MjkyNjYxMDUxODA0NDcsInpvb21GcmFtZXMiOnsibWVkaWFuTXMiOjE2LjY5OTk5OTk5OTk5OTgxOCwid29yc3RNcyI6MzMuMjk5OTk5OTk5OTk5OTU1LCJmcmFtZXMiOjE2fSwicGFuRnJhbWVzIjp7Im1lZGlhbk1zIjoxNi42OTk5OTk5OTk5OTk4MTgsIndvcnN0TXMiOjMzLjQwMDAwMDAwMDAwMDA5LCJmcmFtZXMiOjE1fX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-bdad4075b6a9450b58ca",
+          "file": "map.spec.mjs",
+          "line": 455,
+          "column": 1
+        },
+        {
+          "title": "S03 reports a failed list request and retries the real endpoint",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3049,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:06:01.841Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-20afb3dc76fdcb845fc8",
+          "file": "map.spec.mjs",
+          "line": 541,
+          "column": 1
+        },
+        {
+          "title": "S03 selected field and imagery popover remain usable across four widths and both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "app",
+              "projectName": "app",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 59328,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-13T02:06:04.896Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "selected-layers-fr-390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-selected-field-and-451e1-r-widths-and-both-languages-app/attachments/selected-layers-fr-390-36043ec3c3bb3f876185cfb9f37771a895a84e8e.png"
+                    },
+                    {
+                      "name": "selected-layers-fr-768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-selected-field-and-451e1-r-widths-and-both-languages-app/attachments/selected-layers-fr-768-b2beb8c9085d861d5a918c19b57e03d5227ccb21.png"
+                    },
+                    {
+                      "name": "selected-layers-fr-1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-selected-field-and-451e1-r-widths-and-both-languages-app/attachments/selected-layers-fr-1024-655b2e9fc57c0633a5a85fdd612f83ef65741d0f.png"
+                    },
+                    {
+                      "name": "selected-layers-fr-1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-selected-field-and-451e1-r-widths-and-both-languages-app/attachments/selected-layers-fr-1440-ec176fd343c6f40d4e73060c82a47b6632d87657.png"
+                    },
+                    {
+                      "name": "selected-layers-en-390",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-selected-field-and-451e1-r-widths-and-both-languages-app/attachments/selected-layers-en-390-2bc130fd2a5be5fa59a8beda8e296c997536b863.png"
+                    },
+                    {
+                      "name": "selected-layers-en-768",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-selected-field-and-451e1-r-widths-and-both-languages-app/attachments/selected-layers-en-768-09a4242f0537f985b68ee99dd8622ab1112c5864.png"
+                    },
+                    {
+                      "name": "selected-layers-en-1024",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-selected-field-and-451e1-r-widths-and-both-languages-app/attachments/selected-layers-en-1024-9588d0e12ca394b4c9afe8908b6c40ae4504e301.png"
+                    },
+                    {
+                      "name": "selected-layers-en-1440",
+                      "contentType": "image/png",
+                      "path": "/Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/.artifacts/playwright/test-results/map-S03-selected-field-and-451e1-r-widths-and-both-languages-app/attachments/selected-layers-en-1440-c5b33505f30797ac339ca6088900daf3b53fac06.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd9647ae9ba4c0f0da46-978a43d34a4ecd0db636",
+          "file": "map.spec.mjs",
+          "line": 564,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-13T01:51:46.124Z",
+    "duration": 918500.9,
+    "expected": 83,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

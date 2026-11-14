@@ -1,0 +1,327 @@
+[
+  {
+    "command": "pnpm test:backend-e2e-real-climate",
+    "start": "2026-11-11T20:21:40.922Z",
+    "end": "2026-11-11T20:22:23.189Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-test-backend-e2e-real-climate-1794428500922.log"
+  },
+  {
+    "command": "pnpm test:backend-e2e-real-climate",
+    "start": "2026-11-11T20:23:15.086Z",
+    "end": "2026-11-11T20:23:37.351Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-test-backend-e2e-real-climate-1794428595086.log"
+  },
+  {
+    "command": "pnpm test:backend-e2e-real-climate",
+    "start": "2026-11-11T20:24:22.457Z",
+    "end": "2026-11-11T20:26:48.366Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-test-backend-e2e-real-climate-1794428662457.log"
+  },
+  {
+    "command": "pnpm test:backend-e2e-real-climate",
+    "start": "2026-11-11T20:28:07.551Z",
+    "end": "2026-11-11T20:34:38.496Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-test-backend-e2e-real-climate-1794428887551.log"
+  },
+  {
+    "command": "pnpm openapi:generate",
+    "start": "2026-11-11T20:36:59.145Z",
+    "end": "2026-11-11T20:37:13.549Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-openapi-generate-1794429419144.log"
+  },
+  {
+    "command": "pnpm lint",
+    "start": "2026-11-11T20:37:13.550Z",
+    "end": "2026-11-11T20:37:26.311Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-lint-1794429433550.log"
+  },
+  {
+    "command": "pnpm format:check",
+    "start": "2026-11-11T20:37:26.312Z",
+    "end": "2026-11-11T20:37:46.767Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-format-check-1794429446312.log"
+  },
+  {
+    "command": "pnpm typecheck",
+    "start": "2026-11-11T20:37:46.767Z",
+    "end": "2026-11-11T20:38:12.528Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-typecheck-1794429466767.log"
+  },
+  {
+    "command": "pnpm ops:restore-drill --local-database",
+    "start": "2026-11-12T00:19:24.698Z",
+    "end": "2026-11-12T00:23:26.169Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-ops-restore-drill---local-database-1794442764697.log"
+  },
+  {
+    "command": "pnpm ops:restore-drill --local-database",
+    "start": "2026-11-12T00:24:01.611Z",
+    "end": "2026-11-12T00:28:39.300Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-ops-restore-drill---local-database-1794443041610.log"
+  },
+  {
+    "command": "pnpm lint",
+    "start": "2026-11-12T00:24:44.138Z",
+    "end": "2026-11-12T00:25:02.131Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-lint-1794443084138.log"
+  },
+  {
+    "command": "pnpm format:check",
+    "start": "2026-11-12T00:25:02.133Z",
+    "end": "2026-11-12T00:25:26.227Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-format-check-1794443102132.log"
+  },
+  {
+    "command": "pnpm typecheck",
+    "start": "2026-11-12T00:25:26.228Z",
+    "end": "2026-11-12T00:25:51.825Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-typecheck-1794443126228.log"
+  },
+  {
+    "command": "pnpm test:backend",
+    "start": "2026-11-12T00:25:51.826Z",
+    "end": "2026-11-12T00:28:52.555Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-test-backend-1794443151826.log"
+  },
+  {
+    "command": "pnpm db:check-complete",
+    "start": "2026-11-12T00:28:39.303Z",
+    "end": "2026-11-12T00:29:03.290Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-db-check-complete-1794443319302.log"
+  },
+  {
+    "command": "pnpm ops:status --local-database",
+    "start": "2026-11-12T00:29:03.290Z",
+    "end": "2026-11-12T00:29:08.912Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-ops-status---local-database-1794443343290.log"
+  },
+  {
+    "command": "pnpm climate:status",
+    "start": "2026-11-12T00:29:08.913Z",
+    "end": "2026-11-12T00:29:09.346Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-climate-status-1794443348913.log"
+  },
+  {
+    "command": "pnpm db:consolidate --verify-only",
+    "start": "2026-11-12T00:29:09.347Z",
+    "end": "2026-11-12T00:35:05.646Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-db-consolidate---verify-only-1794443349347.log"
+  },
+  {
+    "command": "pnpm test:backend",
+    "start": "2026-11-12T00:29:31.643Z",
+    "end": "2026-11-12T00:33:23.481Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-backend-1794443371643.log"
+  },
+  {
+    "command": "pnpm test:plans",
+    "start": "2026-11-12T00:33:23.484Z",
+    "end": "2026-11-12T00:34:21.623Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-plans-1794443603483.log"
+  },
+  {
+    "command": "pnpm test:catalog",
+    "start": "2026-11-12T00:34:21.624Z",
+    "end": "2026-11-12T00:36:41.357Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-catalog-1794443661624.log"
+  },
+  {
+    "command": "pnpm test:engine",
+    "start": "2026-11-12T00:36:41.358Z",
+    "end": "2026-11-12T00:42:30.698Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-engine-1794443801358.log"
+  },
+  {
+    "command": "pnpm test:api-docs",
+    "start": "2026-11-12T00:42:30.700Z",
+    "end": "2026-11-12T00:42:49.071Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-test-api-docs-1794444150700.log"
+  },
+  {
+    "command": "pnpm test:api-docs",
+    "start": "2026-11-12T00:43:47.108Z",
+    "end": "2026-11-12T00:44:12.453Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-api-docs-1794444227108.log"
+  },
+  {
+    "command": "pnpm ops:backup --local-database --restore-drill",
+    "start": "2026-11-12T00:43:48.228Z",
+    "end": "2026-11-12T00:51:13.804Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-ops-backup---local-database---restore-drill-1794444228227.log"
+  },
+  {
+    "command": "pnpm test:unit",
+    "start": "2026-11-12T00:44:12.454Z",
+    "end": "2026-11-12T00:44:33.035Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-unit-1794444252454.log"
+  },
+  {
+    "command": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects terrain-integration",
+    "start": "2026-11-12T00:44:33.036Z",
+    "end": "2026-11-12T00:44:39.212Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-terrain-integration-1794444273036.log"
+  },
+  {
+    "command": "pnpm test:container",
+    "start": "2026-11-12T00:44:39.213Z",
+    "end": "2026-11-12T00:48:02.216Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-container-1794444279213.log"
+  },
+  {
+    "command": "pnpm test:operations",
+    "start": "2026-11-12T00:48:02.219Z",
+    "end": "2026-11-12T00:48:45.545Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-test-operations-1794444482218.log"
+  },
+  {
+    "command": "pnpm db:consolidate --verify-only",
+    "start": "2026-11-12T00:49:04.975Z",
+    "end": "2026-11-12T00:55:54.601Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-db-consolidate---verify-only-1794444544975.log"
+  },
+  {
+    "command": "pnpm climate:status",
+    "start": "2026-11-12T00:50:28.186Z",
+    "end": "2026-11-12T00:50:31.238Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-climate-status-1794444628183.log"
+  },
+  {
+    "command": "pnpm test:operations",
+    "start": "2026-11-12T00:51:48.710Z",
+    "end": "2026-11-12T00:52:39.280Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-operations-1794444708709.log"
+  },
+  {
+    "command": "pnpm lint",
+    "start": "2026-11-12T00:52:57.689Z",
+    "end": "2026-11-12T00:53:20.187Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-lint-1794444777689.log"
+  },
+  {
+    "command": "pnpm format:check",
+    "start": "2026-11-12T00:53:20.198Z",
+    "end": "2026-11-12T00:53:49.570Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-format-check-1794444800197.log"
+  },
+  {
+    "command": "pnpm typecheck",
+    "start": "2026-11-12T00:53:49.572Z",
+    "end": "2026-11-12T00:54:24.871Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-typecheck-1794444829572.log"
+  },
+  {
+    "command": "pnpm test:backend-e2e-real-climate",
+    "start": "2026-11-12T00:57:02.798Z",
+    "end": "2026-11-12T01:01:47.982Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-test-backend-e2e-real-climate-1794445022797.log"
+  },
+  {
+    "command": "node tooling/performance/backend-engine-benchmark.mjs",
+    "start": "2026-11-12T01:01:55.049Z",
+    "end": "2026-11-12T01:02:10.994Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-engine-final-1794445315049.log",
+    "hashesMatchB5": true
+  },
+  {
+    "command": "pnpm db:check-complete",
+    "start": "2026-11-12T01:02:46.887Z",
+    "end": "2026-11-12T01:03:02.712Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-db-check-complete-1794445366887.log"
+  },
+  {
+    "command": "pnpm ops:status --local-database",
+    "start": "2026-11-12T01:03:02.713Z",
+    "end": "2026-11-12T01:03:07.378Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-ops-status---local-database-1794445382713.log"
+  },
+  {
+    "command": "node tooling/performance/backend-engine-benchmark.mjs",
+    "start": "2026-11-12T01:03:31.477Z",
+    "end": "2026-11-12T01:03:47.140Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-engine-final-1794445411477.log",
+    "hashesMatchB5": true
+  },
+  {
+    "command": "pnpm lint",
+    "start": "2026-11-12T01:06:54.827Z",
+    "end": "2026-11-12T01:07:07.389Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-lint-1794445614827.log"
+  },
+  {
+    "command": "pnpm format:check",
+    "start": "2026-11-12T01:07:07.391Z",
+    "end": "2026-11-12T01:07:24.753Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-format-check-1794445627390.log"
+  },
+  {
+    "command": "pnpm typecheck",
+    "start": "2026-11-12T01:07:24.754Z",
+    "end": "2026-11-12T01:07:48.295Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-typecheck-1794445644754.log"
+  },
+  {
+    "command": "node tooling/performance/backend-engine-benchmark.mjs",
+    "start": "2026-11-12T05:01:07.620Z",
+    "end": "2026-11-12T05:01:19.275Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-engine-final-1794459667620.log",
+    "hashesMatchB5": true
+  },
+  {
+    "command": "pnpm ops:schedule install",
+    "start": "2026-11-12T05:01:16.329Z",
+    "end": "2026-11-12T05:01:16.393Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-ops-schedule-install-1794459676328.log"
+  },
+  {
+    "command": "pnpm format:check",
+    "start": "2026-11-12T05:03:17.993Z",
+    "end": "2026-11-12T05:03:30.622Z",
+    "exitCode": 0,
+    "log": "/tmp/b6-format-check-1794459797992.log"
+  }
+]

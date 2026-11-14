@@ -1,0 +1,1117 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>ANCFCC</title>
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+<!--[if lte IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<meta name="author" content="ANCFCC">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="/media/1299/favicon.png" type="image/png" rel="icon">
+<link rel="shortcut icon" href="/media/1297/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/media/1297/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/media/1297/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="/scripts/js/jquery-3.7.1.min.js"></script> 
+	
+<link href="/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/css/CssJsCloud/font-awesome.min.css" rel="stylesheet" media="all">
+
+<link href="/css/animate.min.css" rel="stylesheet" />
+	
+	
+<link rel="stylesheet" type="text/css" href="/css/Slider.css?d=20261110103659" />
+<link rel="stylesheet" type="text/css" href="/css/Menu.css?d=20261110103659" />
+<link rel="stylesheet" type="text/css" href="/css/styles.css?d=20261110103659" />
+	
+
+
+</head>
+
+<body>
+
+    <div id="global-content">
+
+        <div class="head" style="background-color: white">
+
+    <div class="top-head">
+
+        <div class="container">
+            <div id="row">
+                <div style="display: flex;flex-direction: row;justify-content: flex-end;padding: 5px 0;margin-top: 4px;" id="c2" class="col-md-12">
+
+                    <div class="Search " style="">
+                        <div class="Recherche">
+
+                            <form action="/search/" method="GET">
+
+                                <span class="icon"><i class="fa fa-search"></i></span>
+                                <input type="search" id="search" placeholder="Recherche..."  name=" query">
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="lang "><a href="/ar" style="color: #fff;font-size: 1.0rem;font-weight: bold;">النسخة العربية</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle-head">
+        <div class="container">
+            <div class="row">
+                <a href="/">
+                    <img class="" src="/media/1003/logo02.png" width="403">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-menu">
+        <div class="container">
+
+            <div class="row">
+                <div id="c1" class="col-md-12">
+
+                    <nav id="navigation-box" class="">
+                        <!-- Menu Hamburger pour Mobile -->
+                        <a href="#" id="navigation-toggle">
+                            <span class="menu-icon">
+                                <span class="icon-toggle" role="button" aria-label="Toggle Navigation"><span class="lines"></span></span>
+                            </span>
+                        </a>
+
+                        <!-- Contenu Menu Principal -->
+                        <ul id="navigation" class="naviga">
+                            <li><a href="/" class="first leaf"">Accueil</a></li>
+
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" id="presentationMenu" class="expanded">Présentation</a>
+                                <ul id="dropdown-1" class="dropdown-menu">
+
+                                    <li>
+                                        <a href="/presentation/" class="first leaf" onclick="changeActiveElement('2')">
+                                            Mot
+                                            du
+                                            Directeur Général
+                                        </a>
+                                    </li>
+                                    <li><a href="/missionsAttributions/" class="leaf">Missions et attributions</a></li>
+                                    <li><a href="/conseiladministration/" class="leaf">Conseil d'administration</a></li>
+                                    <li><a href="/organigramme/" class="leaf">Organigramme</a></li>
+                                    <li><a href="/chiffrecles/" class="last leaf">Chiffres clés</a></li>
+                                    <li><a href="/CapitalHumain/" class="last leaf">Capital humain</a></li>
+                                    <li><a href="/ServicesExterieurs/" class="leaf">Réseau des Blocs Fonciers </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" class="expanded">Métiers</a>
+                                <ul id="dropdown-2" class="dropdown-menu">
+                                    <li>
+                                        <a href="/nos-métiers/conservateur-général/" class="first leaf">
+                                            Conservateur
+                                            général
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/nos-métiers/conservation-foncière-cadastre/" class="leaf">
+                                            Conservation
+                                            Foncière-Cadastre
+                                        </a>
+                                    </li>
+                                    <li><a href="/nos-métiers/cartographie/" class="leaf">Cartographie</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" class="expanded">
+                                    Produits et
+                                    formalités
+                                </a>
+                                <ul id="dropdown-2" class="dropdown-menu">
+                                    <li><a href="/produits-et-formalités/produits/" class="first leaf">Produits </a></li>
+                                    <li><a href="/produits-et-formalités/formalités/" class="leaf">Formalités </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" class="expanded">Espace media</a>
+                                <ul id="dropdown-3" class="dropdown-menu">
+                                    <li><a href="/publications/" class="first leaf">Publications</a></li>
+                                    <li><a href="/PhotoTheque/" class="leaf">Médiathèque</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <span class="sub-nav-toggle plus"></span><a href="#" class="expanded">
+                                    Espace
+                                    professionnel
+                                </a>
+                                <ul id="dropdown-3" class="dropdown-menu">
+                                    <li>
+                                        <a href="https://espaceigt.ancfcc.gov.ma" class="first leaf">
+                                            Espace Cadastre &amp;
+                                            Cartographie
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://espacenotaire.ancfcc.gov.ma/" class="leaf">
+                                            Espace conservation
+                                            foncière
+                                            /
+                                            Notaires
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://espaceadoul.ancfcc.gov.ma/" class="leaf">
+                                            Espace conservation
+                                            foncière
+                                            /
+                                            Adouls
+                                        </a>
+                                    </li>
+									      <li>
+										  <a href="https://contentieux.ancfcc.gov.ma" class="leaf">
+											  Espace contentieux /avocats ANCFCC
+										  </a>
+									  </li>
+                                </ul>
+                            </li>
+                            <div class="lang"><a href="/ar" style="color: white; font-family: 'Cairo';">النسخة العربية</a></div>
+                        </ul>
+                    </nav>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        <div id="hero">
+    <video autoplay muted loop style="width: 100%; height: 400px; object-fit: fill">
+        <source src="/media/1003/video.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+
+
+        
+
+<script src="/scripts/js/moment-with-locales.min.js"></script>
+<style>
+
+    .new-tag {
+        position: absolute;
+        top: 8px;
+        right: 81%;
+        color: white;
+        font-size: 9px;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-family: 'Arial Black', sans-serif;
+        text-transform: uppercase;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transform: rotate(0deg) !important;
+        z-index: 10;
+        animation: pulse 2s infinite linear;
+        background: linear-gradient(135deg, #d50000, #ff1744);
+    }
+
+    /* Animation pulsante */
+    @keyframes pulse {
+        0%, 100% {
+            transform: rotate(-5deg) scale(1);
+            background: linear-gradient(135deg, #d50000, #ff1744);
+        }
+
+        50% {
+            transform: rotate(-5deg) scale(1.1);
+            background: linear-gradient(135deg, #ff5252, #ff1744);
+        }
+    }
+
+
+    /* header {
+        padding: 10px 0;
+        background: rgb(9 45 97 / 45%) !important;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        height: 514px !important;
+    }*/
+    .Spinner {
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba( 255, 255, 255, .8 ) url('/media/1231/throbber_12.gif') 50% 50% no-repeat;
+    }
+
+    body.loading .Spinner {
+        display: block;
+    }
+
+    #Cartoches1 .pic img {
+        /*border: 3px double #ddd;*/
+        border-radius: 30%;
+        box-shadow: 0 3px 6px 1px #c5c5c5;
+    }
+
+    #Cartoches1 .txt a {
+        margin-top: 4px;
+        display: block;
+    }
+</style>
+
+<div id="Milieu">
+    <div class="container ">
+        <div class="row">
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <section id="services">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Services </h2>
+            <p>en ligne</p>
+        </div>
+
+
+        <div class="services-box">
+            <div class="service">
+                <div class="flip-box">
+                    <div class="flip-box">
+
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+
+
+                            <div class="etiquet-price" style="top: -3%;">
+                                <p>100</p>
+                                <div></div>
+                            </div>
+                            <img src="/Content/img/certificate.png" style="width: 50px !important; margin-top: -4%;" /><br />
+                            <h2>Certificat de propriété</h2>
+
+                            <a href="CertificatPropriete">
+                                <p id="produit">
+
+                                    <img src="/media/1166/panier.png" style="width:20px!important" /><a href="CertificatPropriete" style="color: black; margin-left: 3%;">Commander</a>
+                                    <img src="/media/1166/search.png" style="width:20px!important" /><a href="suivicertificatspage" style="color: black; margin-left: 3%;">Suivre</a>
+                                </p>
+                            </a>
+                            <p>
+                                <img src="/media/1166/verifier.png" style="width:20px!important" /><a href="consultationpdfpage" style="color: black; margin-left: 3%; "><strong>Vérifier</strong></a>
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="service">
+                <div class="flip-box">
+
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <div class="etiquet-price">
+                                <p>100</p>
+                                <div></div>
+                            </div>
+                            <img src="/Content/img/IMG_8958.ico" style="margin-bottom: 5%; width: 60px;" />
+                            <h2>Plan Cadastral</h2>
+
+                            <a href="PlanCadastral">
+                                <p id="produit">
+                                    <img src="/media/1166/panier.png" style="width:20px!important" /><a href="PlanCadastral" style="color: black; margin-left: 3%;">Commander</a>
+                                    <img src="/media/1166/search.png" style="width:20px!important" /><a href="suivicertificatspage" style="color: black; margin-left: 3%;">Suivre</a>
+                                </p>
+                            </a>
+                            <p>
+                                <img src="/media/1166/verifier.png" style="width:20px!important" /><a href="consultationpdfpage" style="color: black; margin-left: 3%; "><strong>Vérifier</strong></a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="service">
+                <div class="flip-box">
+
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <div class="etiquet-price">
+                                <p>15</p>
+                                <div></div>
+                            </div>
+                            <img src="/Content/img/IMG_8959.ico" style=" width: 60px; margin-top: -4%; margin-bottom: 11%;" />
+                            <h2>Calcul de contenance</h2>
+
+                            <a href="CalculCadastral">
+                                <p id="produit">
+                                    <img src="/media/1166/panier.png" style="width:20px!important" /><a href="CalculeAndMapPage" style="color: black; margin-left: 3%;">Commander</a>
+                                    <img src="/media/1166/search.png" style="width:20px!important" /><a href="suivicertificatspage" style="color: black; margin-left: 3%;">Suivre</a>
+                                </p>
+                            </a>
+
+                            <p>
+                                <img src="/media/1166/verifier.png" style="width:20px!important" /><a href="consultationpdfpage" style="color: black; margin-left: 3%; "><strong>Vérifier</strong></a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="service">
+                <div class="flip-box">
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <img src="media/8526/icon-checkauth.png" style="width: 90px; " />
+                            <h2 style="height: 50px;">Authenticité des documents livrés</h2>
+
+                            <a href="/consultationpdfpage/">
+                                <p>
+                                    <img src="/media/1166/verifier.png" style="width:20px!important" />
+                                    <a href="/consultationpdfpage/" style="color: black; margin-left: 3%;"><strong>Vérifier</strong></a>
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="service">
+                <div class="flip-box">
+
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <img src="/Content/img/referentielprix.png" style="width: 110px; margin-top: -15px;" />
+                            <h2 style="margin-left: 6%;">Référentiel Commun des Prix</h2>
+                            <p>
+                                <img src="/media/1166/oeil.png" style="width:20px!important" /><a href="" style="color: black; margin-left: 3%; pointer-events: none; opacity: 0.5; cursor: not-allowed;"><strong>Consulter</strong></a>
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="services-box">
+            <div class="service">
+                <div class="flip-box">
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <img src="/Content/img/carto.png" style="width: 90px; margin-top: -20px;" />
+                            <h2>Cartographie</h2>
+
+                            <a href="ConsultationPdfPage">
+                                <p>
+                                    <img src="/media/1166/panier.png" style="width:20px!important" />
+                                    <a href="CartographiePage" style="color: black; margin-left: 3%;"><strong>Commander</strong></a>
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="service">
+                <div class="flip-box">
+
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <img src="/Content/img/mohafadati.png" style=" width: 120px; margin-top: -15%; margin-bottom: -8px;" />
+                            <h2>Mohafadati</h2>
+
+                            <a href="DemandeSuiviTitresPage">
+                                <p>
+                                    <img src="/media/1166/info.png" style="width:20px!important" /><a href="DemandeSuiviTitresPage" style="color: black; margin-left: 3%;"><strong>Renseigner</strong></a>
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="flip-box">
+
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <img src="/Content/img/publicitefonciere.png" style="width: 100px; margin-top: -19px; margin-bottom: -9px;" />
+                            <h2>Publicité foncière</h2>
+
+                            <p>
+                                <img src="/media/1166/consulter.png" style="width:20px!important" /><a href="ConsultationPubliciteFonciere" style="color: black; margin-left: 3%;"><strong>Consulter</strong></a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="service">
+                <div class="flip-box">
+
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <img src="/Content/img/chikaya.png" style="margin-top: -5%; width: 85px;" />
+                            <h2>Chikaya</h2>
+
+                            <p>
+                                <img src="/media/1166/reclamer.png" style="width:20px!important" /><a href="https://chikaya.ancfcc.gov.ma/index.php?page=citoyen.AccueilCitoyen" style="color: black; margin-left: 3%;"><strong>Réclamer</strong></a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="flip-box">
+
+                    <div class="flip-box">
+                        <div class="flip-box-front">
+                            <div class="top-bar">
+                                <span class="new-tag">Nouveau</span>
+                            </div>
+                            <img src="/media/1166/fatourati.png" style="margin-top: -5%; padding-bottom: 6%; width: 85px;" />
+                            <h2>
+                                Paiement des droits de la conservation foncière - Public -
+                            </h2>
+
+                            <p style="  padding-top: 6%; ">
+                                <img src="/media/1166/fatouraticon.png" style="width:20px!important" />
+    <a href="/adminlogin/Surface/PromoteurImmeubilierSurface/RegelementDroitParticulier" style="color: black; margin-left: 3%;"><strong>Payer</strong></a>
+                            
+                                
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="flip-box">
+                    <div class="flip-box-front">
+                        <div class="top-bar">
+                            <span class="new-tag">Nouveau</span>
+                        </div>
+                        <img src="/media/1166/facture_2.png" style="margin-top: -5%; padding-bottom: 6%; width: 85px;" />
+                        <h2>
+                            Plateforme électronique de dépôt des factures des fournisseurs
+                        </h2>
+                        <p style="padding-top: 8%;">
+                            <img src="/media/1166/facture_2.png" style="width:20px!important" />
+                            <a href="https://facture.ancfcc.gov.ma/" style="color: black; margin-left: 3%;"><strong>Déposer</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--      <div class="service">
+                <div class="flip-box">
+
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="top-bar"></div>
+                            <img src="~/media/1166/card-in-use.png" style=" margin-top: -27px; width: 100px;" />
+                            <h2>Les droits de la conservation fonciére</h2>
+                            <p>
+                                <img src="~/media/1166/oeil.png" style="width:20px!important" /><a href="/adminlogin/Surface/PromoteurImmeubilierSurface/RegelementDroitParticulier" style="color: black; margin-left: 3%;"><strong>Consulter</strong></a>
+                                <img src="~/media/1166/panier.png" style="width:20px!important" /><a href="/adminlogin/Surface/PromoteurImmeubilierSurface/RegelementDroitParticulier" style="color: black; margin-left: 3%;"><strong>Payer</strong></a>
+                            </p>
+                        </div>
+                        <div class="flip-box-back">
+                            <div class="top-bar"></div>
+                            <a href="/adminlogin/Surface/PromoteurImmeubilierSurface/RegelementDroitParticulier"><img src="~/media/1166/RegelementDroitParticulier.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+    </section>
+
+
+    <section id="formulairess">
+        <div class="section-title" data-aos="fade-up" style="margin-top:4%!important;">
+            <h2>Formulaires </h2>
+            <p> en ligne</p>
+        </div>
+        <div class="container">
+            <div class="row" id="nos-formulaires">
+                <div class="col-md-3">
+                    <div class="service">
+                        <div class="flip-boxv2">
+                            <div class="flip-boxv2">
+                                <div class="flip-boxv2-front">
+                                    <img src="/Content/img/archives.png" width="70" />
+                                    <h2 style="color: #db921e; font-weight: bold; font-size: 17px; height: 70px; padding-left: 10%; padding-right: 10%; line-height: 28px; margin-top: 5%; text-align: center;">
+                                        <a href="/DemandeCertificatsPage?type=2" style="color: #db921e;">   Demande duplicata du titre foncier</a>
+                                    </h2>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service">
+                        <div class="flip-boxv2">
+                            <div class="flip-boxv2">
+                                <div class="flip-boxv2-front">
+                                    <img src="/Content/img/file.png" width="70" />
+                                    <h2 style="color: #db921e; font-weight: bold; font-size: 17px; height: 70px; padding-left: 10%; padding-right: 10%; line-height: 28px; margin-top: 5%; text-align: center;">
+                                        <a href="/DemandeCertificatsPage?type=3" style="color: #db921e;">  Demande copie du document </a>
+                                    </h2>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service">
+                        <div class="flip-boxv2">
+                            <div class="flip-boxv2">
+                                <div class="flip-boxv2-front">
+                                    <img src="/Content/img/bornge.png" width="70" />
+                                    <h2 style="color: #db921e; font-weight: bold; font-size: 17px; height: 70px; padding-left: 10%; padding-right: 10%; line-height: 28px; margin-top: 5%; text-align: center;">
+                                        <a href="/DemandeBornagePage" style="color: #db921e;">   Demande bornage/ reprise de bornage </a>
+                                    </h2>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bloc-actualites">
+
+
+        <div class="section-title" data-aos="fade-up" style="padding-top: 3%; padding-bottom: 2%!important;">
+            <h2>Actualités</h2>
+            <p> et événements</p>
+        </div>
+
+        <div class="container">
+            <div class="row" id="actualites-service">
+
+
+	
+
+
+                <div class="col-md-3 kenburns-top" id="categorie">
+                    <a href="/actualités"> <h1 id="title-actualites" style="padding:0%!important">Appel à candidature & postes de responsabilité</h1></a>
+                </div>
+
+                <div class="col-md-3" id="categorie">
+                    <a href="/actualites"><h1 id="title-actualites" style=" margin-top: 5%;">Publications & Événements</h1></a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section id="Objects">
+        <div class="container-fluid" style=" margin-top: 3%">
+            <div class="row d-flex justify-content-between">
+                <div class="obj col-md-2 col-sm-6 col-xs-12">
+                    <div class="cro">
+                        <a href="/servicesexterieurs/">
+                            <div class="col-md-8 col-sm-8 col-xs-8"><span>Réseau des blocs fonciers </span></div>
+                            <div class="p0 col-md-4 col-sm-4 col-xs-4"><img src="/media/1015/cro_1.png" class="displayed"></div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="obj col-md-2 col-sm-6 col-xs-12">
+                    <div class="cro">
+                        <a href="/TarifsFr/">
+                            <div class="col-md-8 col-sm-8 col-xs-8"><span>Tarifs des droits de la conservation foncière</span></div>
+                            <div class="p0 col-md-4 col-sm-4 col-xs-4"><img src="/media/1018/cro_4.png" class="displayed"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="obj col-md-2 col-sm-6 col-xs-12">
+                    <div class="cro">
+                        <a href="/LiensUtiles/">
+                            <div class="col-md-8 col-sm-8 col-xs-8"><span>Liens utiles</span></div>
+                            <div class="p0 col-md-4 col-sm-4 col-xs-4"><img src="/media/1019/cro_5.png" class="displayed"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="obj col-md-2 col-sm-6 col-xs-12">
+                    <div class="cro">
+                        <a href="/Publications/">
+                            <div class="col-md-8 col-sm-8 col-xs-8"><span>Espace téléchargement</span></div>
+                            <div class="p0 col-md-4 col-sm-4 col-xs-4"><img src="/media/1020/cro_6.png" class="displayed"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="obj col-md-2 col-sm-6 col-xs-12">
+                    <div class="cro">
+                        <a href="/contact/">
+                            <div class="col-md-8 col-sm-8 col-xs-8"><span>Contact</span></div>
+                            <div class="p0 col-md-4 col-sm-4 col-xs-4"><img src="/media/1022/cro_8.png" class="displayed"></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+<div id="SpinnerLoading" class="Spinner">
+
+</div>
+<!---Milieu-->
+
+<script>
+
+
+  //  chargerConservationFonciere();
+    initDropdown();
+
+	function showSpinner() {
+        $("#SpinnerLoading").show();
+    }
+    function hideSpinner() {
+        $("#SpinnerLoading").hide();
+    }
+
+
+    hideSpinner();
+
+
+    $(document)
+        .ajaxStart(function () {
+            showSpinner();
+        })
+        .ajaxStop(function () {
+            hideSpinner();
+        });
+
+
+         
+    function initDropdown() {
+		$("#NatureProcedure").val('0');
+		$("#NatureProcedure").prop('disabled', true);
+		$("#typeAvis").val('0');
+		$("#NatureReference").val('0');
+
+    }
+
+    function searchpub() {
+
+        var conservationFonciere = $("#conservationFonciere").val();
+        var NatureProcedure = $("#NatureProcedure").val();
+        var NatureReference = $("#NatureReference").val();
+
+        var typeAvis = $("#typeAvis").val();
+        var conservationFonciereLibelle = $("#conservationFonciere option:selected").text();
+
+        if (!conservationFonciere) addBorder("conservationFonciere");
+        else deleteBorder("conservationFonciere");
+
+
+
+        if (conservationFonciere) {
+
+            $.ajax({
+            type: "POST",
+            dataType: 'json',
+            cache: false,
+            async: true,
+            contentType: "application/json; charset=utf-8",
+            url: window.location.protocol + '//' + window.location.host + '/AdminLogin/surface/PubliciteFonciereSurface/searchPub/',
+            data: '{ "conservationFonciere" : "' + conservationFonciere + '" ,"conservationFonciereLibelle" : "' + conservationFonciereLibelle + '", "NatureReference" : "' + NatureReference + '" ,"NatureProcedure" : "' + NatureProcedure + '" , "typeAvis" : "' + typeAvis + '"}',
+            complete: function (result) {
+
+                    if (result.status == 200) {
+
+            //lResult = JSON.parse(result.responseText);
+                        window.location.href = '/adminlogin/Surface/PubliciteFonciereSurface/PubliciteFonciere';
+
+        }
+        },
+            error: function (xhr, ajaxOptions, thrownError) {
+
+                    console.log(xhr.status);
+                    console.log(thrownError);
+        }
+
+        });
+        }
+
+
+
+    }
+
+
+    function GetListProcedure(choixID) {
+
+        var lResult = {};
+        var resultatId = "";
+
+        $("#typeAvis").empty();
+        $("#typeAvis").append("<option value='0' >--Select--</option>");
+
+            //Titre Foncier
+
+            if (choixID == "T") {
+
+                $("#NatureProcedure").prop('disabled', true);
+
+                $.ajax({
+                    type: "POST",
+                    dataType: 'json',
+                    cache: false,
+                    async: false,
+                    contentType: "application/json; charset=utf-8",
+                    url: window.location.protocol + '//' + window.location.host + '/AdminLogin/surface/PubliciteFonciereSurface/GetListProcedureFr/',
+                    data: '{ "choixID" : "' + choixID + '"}',
+
+                    complete: function (result) {
+
+                        if (result) {
+                            if (result.status == 200) {
+
+                                if (result.responseText) lResult = JSON.parse(result.responseText);
+
+                            }
+                        }
+
+
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.status);
+                        console.log(thrownError);
+                    }
+
+                });
+
+                $("#typeAvis").empty();
+                $("#typeAvis").append("<option value='0' >--Select--</option>");
+
+                if (lResult != "-1") {
+                    for (var i = 0; i < lResult.length; i++) {
+
+                        $("#typeAvis").append("<option value='" + lResult[i].id + "' >" + lResult[i].libelle + "</option>");
+                    }
+                }
+            }
+
+            else if (choixID == "R") {
+                $("#NatureProcedure").prop('disabled', false);
+            }
+
+
+    }
+
+    function GetListNormalSpeciale(choixID) {
+
+        var lResult = {};
+        var resultatId = "";
+
+        $("#typeAvis").empty();
+        $("#typeAvis").append("<option value='0' >--Select--</option>");
+
+            //Requisition Normale
+
+            if (choixID == 'O') resultatId = 2;
+            if (choixID == 'S') resultatId = 3;
+
+                $.ajax({
+                    type: "POST",
+                    dataType: 'json',
+                    cache: false,
+                    async: false,
+                    contentType: "application/json; charset=utf-8",
+                    url: window.location.protocol + '//' + window.location.host + '/AdminLogin/surface/PubliciteFonciereSurface/GetListProcedureFr/',
+                    data: '{ "choixID" : "' + resultatId + '"}',
+
+                    complete: function (result) {
+
+                        if (result) {
+                            if (result.status == 200) {
+
+                                if (result.responseText) lResult = JSON.parse(result.responseText);
+
+                            }
+                        }
+
+
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.status);
+                        console.log(thrownError);
+                    }
+
+                });
+
+                $("#typeAvis").empty();
+                $("#typeAvis").append("<option value='0' >--Select--</option>");
+
+                if (lResult != "-1") {
+                    for (var i = 0; i < lResult.length; i++) {
+
+                        $("#typeAvis").append("<option value='" + lResult[i].id + "' >" + lResult[i].libelle + "</option>");
+                    }
+                }
+
+    }
+
+
+    function chargerConservationFonciere() {
+
+        var lResult = {};
+        var choixID = "";
+
+            $.ajax({
+                type: "POST",
+                dataType: 'json',
+                cache: false,
+                async: false,
+                contentType: "application/json; charset=utf-8",
+                url: window.location.protocol + '//' + window.location.host + '/AdminLogin/surface/PubliciteFonciereSurface/GetListConservationFonciere/',
+                data: '{ "choixID" : "' + choixID + '"}',
+
+                complete: function (result) {
+                    if (result) {
+                        if (result.status == 200) {
+
+                            if (result.responseText) lResult = JSON.parse(result.responseText);
+
+                        }
+                    }
+
+
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    console.log(xhr.status);
+                    console.log(thrownError);
+                }
+
+            });
+
+            $("#conservationFonciere").empty();
+            $("#conservationFonciere").append("<option value='' >--Select--</option>");
+
+            for (var i = 0; i < lResult.length; i++) {
+
+                $("#conservationFonciere").append("<option value='" + lResult[i].id + "' >" + lResult[i].libelle + "</option>");
+            }
+        }
+
+
+    function addBorder(elementID) {
+        $('#' + elementID).css('border', 'solid 1px red');
+    }
+    function deleteBorder(elementID) {
+        $('#' + elementID).css('border', 'solid 1px gray');
+    }
+
+
+</script>
+ 
+
+        <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                        <p>
+                            <strong>Adresse:</strong><a href="/contact/" style="color:white;font-size:14px"> Avenue Abderrahim Bouabid, Hay Riad, Rabat</a><br>
+                          <!--  <strong>Téléphone:</strong>
+                        <p>+212 6 60 10 27 01 / 02 / 03 / 04 / 05 / 06 </p>
+                        <br>
+                        <strong>Fax:</strong> +212 5 37 70 58 85<br><br />
+                        </p> -->
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>MENU</h4>
+                    <ul>
+                        <li> <img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/Home/">Accueil</a></li>
+                        <li><img src="/media/1135/Fleche.png" width="10"> <a href="/présentation/missions-et-attributions/">Missions et attributions</a></li>
+                        <li><img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/produits-et-formalités/produits/">Produits</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>NOS MÉTIERS</h4>
+                    <ul>
+                        <li><img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/nos-métiers/conservation-foncière-cadastre/">Conservation foncière</a></li>
+                        <li><img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/nos-métiers/conservation-foncière-cadastre/">Cadastre</a></li>
+                        <li><img src="/media/1135/Fleche.png" width="10" style="margin-right:5px"> <a href="/nos-métiers/cartographie/">Cartographie</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>SERVICE RECLAMATION</h4>
+                    <p style="line-height: 24px;">
+                        Pour toute réclamation, veuillez adresser votre demande à <strong style="color: #d58512;">
+                            <a href="https://chikaya.ancfcc.gov.ma/index.php?page=citoyen.AccueilCitoyen" style="color: #d58512;font-size:15px">Chikaya</a>
+                        </strong>
+						<hr/>
+					   <strong> Pour toute réclamation, suggestion ou information <br/> E-Services, contactez-nous sur :</strong><strong style="color: #d58512">  +212 53 014 1414 / +212 80 000 2929 / +212 80 000 2016</strong> <br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong style="color: #d58512;"><span>ANCFCC</span></strong> Agence Nationale de la Conservation Foncière, du Cadastre et de la Cartographie
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    var d = new Date();
+    d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = "Language=fr-fr;" + expires + ";path=/";
+</script>
+
+
+<script type="text/javascript" charset="utf-8" src="/scripts/js/cookie.js"></script>
+
+    </div>
+
+
+    <script type="text/javascript" src="/scripts/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/js/slider.js"></script>
+    <script type="text/javascript" src="/scripts/js/Menu.js"></script>
+    <script type="text/javascript" src="/scripts/js/top.js"></script>
+    <script type="text/javascript" src="/scripts/js/wow_animation.js"></script>
+
+    <script type="text/javascript">
+        fetch('/AdminLogin/Surface/CertificatsSurface/GetAppInsightsKey')
+            .then(response => response.json())
+            .then(config => {
+                var appInsights = window.appInsights || function (config) {
+                    function r(config) {
+                        t[config] = function () {
+                            var i = arguments;
+                            t.queue.push(function () { t[config].apply(t, i); });
+                        };
+                    }
+                    var t = { config: config }, u = document, e = window, o = 'script', s = u.createElement(o);
+                    s.src = config.url || '//az416426.vo.msecnd.net/scripts/a/ai.0.js';
+                    u.getElementsByTagName(o)[0].parentNode.appendChild(s);
+                    t.queue = [];
+                    for (var i = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Ajax']; i.length;) r('track' + i.pop());
+                    return t;
+                }({
+                    instrumentationKey: config.instrumentationKey
+                });
+
+                window.appInsights = appInsights;
+                appInsights.trackPageView();
+            })
+            .catch(error => console.error('Could not load App Insights key', error));
+    </script>
+
+
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+
+            init_Home();
+        });
+    </script>
+
+
+
+</body>
+</html>

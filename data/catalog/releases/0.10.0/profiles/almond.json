@@ -1,0 +1,247 @@
+{
+  "id": "almond",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Almond",
+    "localNames": [
+      { "language": "fr", "name": "Amandier" },
+      { "language": "ar", "name": "اللوز" }
+    ],
+    "scientificName": "Prunus dulcis (Mill.) D.A.Webb",
+    "family": "Rosaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:almond"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "marcona",
+      "name": "Marcona",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.almond.marcona"
+      },
+      "notes": "cultivar; Spanish"
+    },
+    {
+      "id": "ferragnes",
+      "name": "Ferragnes",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.almond.ferragnes"
+      },
+      "notes": "cultivar; French"
+    },
+    {
+      "id": "ferraduel",
+      "name": "Ferraduel",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.almond.ferraduel"
+      },
+      "notes": "cultivar; French"
+    },
+    {
+      "id": "texas",
+      "name": "Texas",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.almond.texas"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "local-seedling-beldi-populations",
+      "name": "Local seedling (beldi) populations",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.almond.local-seedling-(beldi)-populations"
+      },
+      "notes": "local population; common in the Atlas and Souss"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:almond"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-almond-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy/horticulture knowledge: open flowers are damaged near -2 C, young fruit near -1 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.almond.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-almond-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: kernel quality falls under heat stress above about 38 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.almond.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"fruit_development\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    }
+  ],
+  "references": [
+    {
+      "id": "t-a-almond-chilling-chill-requirement-574",
+      "topic": "chill_requirement",
+      "summary": "Chill requirement 200–600 hours_below_7C. A dormancy requirement, not a damage limit.",
+      "value": { "unit": "hours_below_7C", "min": 200, "max": 600 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: cultivar dependent, low-chill types exist",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.almond.chilling"
+      }
+    },
+    {
+      "id": "t-b-almond-planting-window-background-575",
+      "topic": "background",
+      "summary": "Planting: 12-01 to 02-28",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall: planting of dormant trees in winter",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.almond.planting_window"
+      }
+    },
+    {
+      "id": "t-b-almond-stand-lifetime-background-576",
+      "topic": "background",
+      "summary": "Stand lifetime 9125–14600 days.",
+      "value": { "unit": "days", "min": 9125, "max": 14600 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: 25 to 40 years; harvest about August to September; orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.almond.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-c-almond-rotation-background-577",
+      "topic": "background",
+      "summary": "Rotation (prohibited): Rosaceae",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "perennial; avoid replanting Prunus soon after Prunus (replant disease)",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.almond.rotation"
+      }
+    },
+    {
+      "id": "t-f-almond-observed-yield-yield-578",
+      "topic": "yield",
+      "summary": "Yield 0.5–1.5 t/ha (system rainfed). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 0.5, "max": 1.5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall; irrigated plantings reach about 2 to 4 t/ha",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.almond.observed_yield"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

@@ -1,0 +1,1015 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cropland Extent (2019) &#8212; Digital Earth Africa 2026 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/doc_css.css?v=9cacf62b" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../_static/documentation_options.js?v=fc6fd62b"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'data_specs/Cropland_extent_specs';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="canonical" href="https://docs.digitalearthafrica.org/en/latest/data_specs/Cropland_extent_specs.html" />
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Coastlines Monitoring" href="Coastlines_specs.html" />
+    <link rel="prev" title="Digital Earth Africa Data and Products" href="index.html" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Open external websites in a new tab.
+      document.querySelectorAll("a[href^='http']").forEach(function (link) {
+        const url = new URL(link.href, window.location.href);
+
+        if (url.hostname !== window.location.hostname) {
+          link.setAttribute("target", "_blank");
+          link.setAttribute("rel", "noopener noreferrer");
+        }
+      });
+
+      // Add the language selector to the PyData article header.
+      const articleHeader = document.querySelector(
+        ".bd-header-article, .article-header"
+      );
+
+      if (articleHeader && !document.querySelector(".lang-picker")) {
+        const languagePicker = document.createElement("div");
+
+        languagePicker.className = "lang-picker";
+        languagePicker.innerHTML =
+          '<a href="/en/latest/">English</a>' +
+          '<span aria-hidden="true"> | </span>' +
+          '<a href="/fr/latest/">Français</a>';
+
+        articleHeader.prepend(languagePicker);
+      }
+    });
+  </script>
+
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="digital-earth-africa" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/data_specs/Cropland_extent_specs.html" /><meta name="readthedocs-http-status" content="200" /></head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs"
+         aria-label="Search the docs"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Digital Earth Africa 2026 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Digital Earth Africa 2026 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Home
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Data
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../platform_tools/index_platform.html">
+    Platforms
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../platform_tools/index_direct_access.html">
+    Direct Access
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../service_status/index.html">
+    Tech Alert
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/digitalearthafrica" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Home
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Data
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../platform_tools/index_platform.html">
+    Platforms
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../platform_tools/index_direct_access.html">
+    Direct Access
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../service_status/index.html">
+    Tech Alert
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/digitalearthafrica" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Agriculture</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cropland Extent (2019)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Coastal</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Coastlines_specs.html">Coastlines Monitoring</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geomedians</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="GeoMAD_specs.html">GeoMAD cloud-free composites</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Surface Water</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Landsat_WOfS_specs.html">Water Observations from Space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Waterbodies_specs.html">Waterbodies Monitoring (historical extent and surface area time series)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Water_Quality_specs.html">Water Quality Monitoring Service (WQMS)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vegetation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Fractional_Cover_specs.html">Fractional Cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NDVI_Anomaly_specs.html">Monthly Normalised Difference Vegetation Index (NDVI) Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NDVI_Climatology_specs.html">Normalised Difference Vegetation Index (NDVI) Climatology</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Elevation and Topography</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="SRTM_DEM_specs.html">Shuttle Radar Topography Mission (SRTM) 1 Arc-Second Global Digital Elevation Model and DEM Derivatives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Agriculture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="WaPOR_specs.html">WaPOR, remote sensing for water productivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DIWASA_Blue_and_Green_ET_specs.html">IWMI Evapotranspiration Products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESA_World_Cereal_specs.html">ESA - WorldCereal</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Elevation and Topography</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="COP_DEM_specs.html">Copernicus DEM (COP-DEM)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Land Cover</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CCI_Landcover_specs.html">ESA Climate Change Initiative Land Cover at 300m spatial resolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CGLS_LULC_specs.html">Copernicus Global Land Service Global Land Cover at 100m spatial resolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESA_WorldCover_specs.html">ESA WorldCover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IO_LULC_specs.html">ESRI Global Land Use Land Cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Africapolis_urban_specs.html">OECD/SWAC Africapolis with green space indicators</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Meteorology</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CHIRPS_specs.html">Rainfall estimates (CHIRPS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ERA5_Climate_Data_specs.html">ERA5 Climate Gridded Data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Satellite Images</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Landsat_C2_SR_specs.html">Landsat Collection 2 Level-2 Surface Reflectance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Landsat_C2_ST_specs.html">Landsat Collection 2 Level-2 Surface Temperature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-1_specs.html">Sentinel-1 Normalised Radar Backscatter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-2_Level-2A_specs.html">Sentinel-2 Level-2A Surface Reflectance Collection 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-3_Land_Surface_Temperature_specs.html">Sentinel-3 SLSTR Land Surface Temperature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-3_OLCI_L2_LAND_specs.html">Sentinel-3 OLCI L2 LAND</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-3_OLCI_L2_WATER_specs.html">Sentinel-3 OLCI L2 Water</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-5P_specs.html">Sentinel-5P TROPOMI</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Satellite Image Mosaics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ALOS_PALSAR_annual_mosaic_specs.html">ALOS PALSAR, ALOS-2 PALSAR-2 and JERS-1 SAR Annual Mosaic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-1_Monthly_Mosaic_specs.html">Sentinel-1 Monthly Mosaic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Planet_NICFI_specs.html">Planet NICFI</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Soil</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iSDA_Soil_Data.html">iSDA Soil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GRAFS_specs.html">Global Root-zone moisture Analysis &amp; Forecasting System (GRAFS)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Surface Water</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CGLM_Lake_Water_Quality_specs.html">Copernicus Global Land Service - Lake Water Quality</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Urban</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="World_Settlement_Footprint_specs.html">World Settlement Footprint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vegetation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Global_Mangrove_Watch_specs.html">Global Mangrove Watch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About the Data</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Landsat_tiers.html">Landsat Collection 2 tiers</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Digital Earth Africa Data and Products</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Cropland Extent (2019)</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="Cropland-Extent-(2019)">
+<h1>Cropland Extent (2019)<a class="headerlink" href="#Cropland-Extent-(2019)" title="Link to this heading">#</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#Service-Overview" id="id1">Service Overview</a></p>
+<ul>
+<li><p><a class="reference internal" href="#Background" id="id2">Background</a></p></li>
+<li><p><a class="reference internal" href="#Description" id="id3">Description</a></p></li>
+<li><p><a class="reference internal" href="#Specifications" id="id4">Specifications</a></p></li>
+<li><p><a class="reference internal" href="#Media-and-example-images" id="id5">Media and example images</a></p></li>
+<li><p><a class="reference internal" href="#License" id="id6">License</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#Data-Access" id="id7">Data Access</a></p>
+<ul>
+<li><p><a class="reference internal" href="#Amazon-Web-Services-S3" id="id8">Amazon Web Services S3</a></p></li>
+<li><p><a class="reference internal" href="#Open-Data-Cube-(ODC)" id="id9">Open Data Cube (ODC)</a></p></li>
+<li><p><a class="reference internal" href="#OGC-Web-Services-(OWS)" id="id10">OGC Web Services (OWS)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#Technical-information" id="id11">Technical information</a></p>
+<ul>
+<li><p><a class="reference internal" href="#Algorithm" id="id12">Algorithm</a></p></li>
+<li><p><a class="reference internal" href="#Training-and-Validation-data" id="id13">Training and Validation data</a></p></li>
+<li><p><a class="reference internal" href="#Validation-method" id="id14">Validation method</a></p></li>
+<li><p><a class="reference internal" href="#Validation-results" id="id15">Validation results</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<p><strong>Date modified:</strong> December 2024</p>
+<section id="Service-Overview">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Service Overview</a><a class="headerlink" href="#Service-Overview" title="Link to this heading">#</a></h2>
+<section id="Background">
+<h3><a class="toc-backref" href="#id2" role="doc-backlink">Background</a><a class="headerlink" href="#Background" title="Link to this heading">#</a></h3>
+<p>A central focus for governing bodies in Africa is the need to secure the necessary food sources to support their populations. It has been estimated that the current production of crops will need to double by 2050 to meet future needs for food production. Higher level crop-based products that can assist with managing food insecurity, such as cropping watering intensities, crop types, or crop productivity, require as a starting point precise and accurate cropland extent maps indicating where
+cropland occurs. Current cropland extent maps are either inaccurate, have coarse spatial resolutions, or are not updated regularly. An accurate, high-resolution, and regularly updated cropland area map for the African continent is therefore recognised as a gap in the current crop monitoring services.</p>
+<p>A <a class="reference external" href="https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/blob/main/Datasets/Cropland_extent.ipynb">Jupyter Notebook</a> which demonstrates loading and using cropland extent datasets in the Sandbox is also available.</p>
+</section>
+<section id="Description">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Description</a><a class="headerlink" href="#Description" title="Link to this heading">#</a></h3>
+<p>Digital Earth Africa’s cropland extent map for Africa shows the estimated location of croplands in the following countries for the period January to December 2019:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask</span></code>: Entire African continent</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask_eastern</span></code>: Tanzania, Kenya, Uganda, Ethiopia, Rwanda, and Burundi</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask_western</span></code>: Nigeria, Benin, Togo, Ghana, Cote d’Ivoire, Liberia, Sierra Leone, Guinea, and Guinea-Bissau</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask_northern</span></code>: Morocco, Algeria, Tunisia, Libya, and Egypt</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask_sahel</span></code>: Mauritania, Senegal, Gambia, Mali, Burkina Faso, Niger, Chad, Sudan, South Sudan, Somalia, and Djibouti</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask_southern</span></code>: South Africa, Namibia, Botswana, Lesotho, and Eswanti</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask_southeast</span></code>: Zimbabwe, Zambia, Mozambique, and Malawi</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask_central</span></code>: Angola, Democratic Republic of the Congo, Congo, Gabon, Cameroon, Equatorial Guinea, and Central African Republic</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crop_mask_indian_ocean</span></code>: Madagascar, Mauritius, Reunion, and Comoros</p></li>
+</ul>
+<p>Cropland is defined as:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>"a piece of land of minimum 0.01 ha (a single 10m x 10m pixel) that is sowed/planted and
+harvestable at least once within the 12 months after the sowing/planting date."
+</pre></div>
+</div>
+<p>This definition will exclude non-planted grazing lands and perennial crops which can be difficult for satellite imagery to differentiate from natural vegetation.</p>
+<p>The provisional cropland extent maps have a resolution of 10 metres, and were built using Copernicus Sentinel-2 satellite images from 2019. The cropland extent maps were built seperately using extensive training data from Eastern, Western, Northern, and Sahel Africa, coupled with a Random Forest machine learning model. A detailed exploration of the methods used to produce the cropland extent map can be found in the Jupyter Notebooks in DE Africa’s
+<a class="reference external" href="https://github.com/digitalearthafrica/crop-mask">crop-mask</a> GitHub repository.</p>
+<p>Independent validation datasets suggest the following accuracies:</p>
+<ul class="simple">
+<li><p>The <strong>Eastern Africa</strong> crop mask has an <strong>overall accuracy of 90.3 %, and an f-score of 0.85</strong></p></li>
+<li><p>The <strong>Western Africa</strong> crop mask has an <strong>overall accuracy of 83.6 %, and an f-score of 0.75</strong></p></li>
+<li><p>The <strong>Northern Africa</strong> crop mask has an <strong>overall accuracy of 94.0 %, and an f-score of 0.91</strong></p></li>
+<li><p>The <strong>Sahel Africa</strong> crop mask has an <strong>overall accuracy of 87.9 %, and an f-score of 0.78</strong></p></li>
+<li><p>The <strong>Southern Africa</strong> crop mask has an <strong>overall accuracy of 86.4 %, and an f-score of 0.75</strong></p></li>
+<li><p>The <strong>Southeast Africa</strong> crop mask has an <strong>overall accuracy of 87.3 %, and an f-score of 0.83</strong></p></li>
+<li><p>The <strong>Central Africa</strong> crop mask has an <strong>overall accuracy of 88.3 %, and an f-score of 0.82</strong></p></li>
+<li><p>The <strong>Indian Ocean Africa</strong> crop mask has an <strong>overall accuracy of 90.7 %, and an f-score of 0.84</strong></p></li>
+</ul>
+<p>The algorithms for <em>most</em> regions tend to report more omission errors (labelling actual crops as non-crops) than commission errors (labelling non-crops as crops). Where commission errors occur, they tend to be focussed around wetlands and seasonal grasslands which spectrally resemble some kinds of cropping.</p>
+<p>The products contain three measurements:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mask</span></code>: This band displays cropped regions as a binary map. Values of <code class="docutils literal notranslate"><span class="pre">1</span></code> indicate the presence of crops, while a value of <code class="docutils literal notranslate"><span class="pre">0</span></code> indicates the absence of cropping. This band is a <em>pixel-based</em> cropland extent map, meaning the map displays the raw output of the pixel-based Random Forest classification.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">prob</span></code>: This band displays the prediction probabilities for the ‘crop’ class. As this service uses a random forest classifier, the prediction probabilities refer to the percentage of trees that voted for the random forest classification. For example, if the model had 200 decision trees in the random forest, and 150 of the trees voted ‘crop’, the prediction probability is <strong>150 / 200 x 100 = 75 %</strong>. Thresholding this band at &gt; 50 % will produce a map identical to <code class="docutils literal notranslate"><span class="pre">mask</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">filtered</span></code>: This band displays cropped regions as a binary map. Values of <code class="docutils literal notranslate"><span class="pre">1</span></code> indicate the presence of crops, while a value of <code class="docutils literal notranslate"><span class="pre">0</span></code> indicates the absence of cropping. This band is an <em>object-based</em> cropland extent map where the <code class="docutils literal notranslate"><span class="pre">mask</span></code> band has been filtered using an image segmentation algorithm (see <a class="reference external" href="https://www.mdpi.com/2072-4292/6/7/6111/htm">this paper</a> for details on the algorithm used). During this process, segments smaller than 1 Ha (100 10m x 10m pixels) are merged with
+neighbouring segments, resulting in a map where the smallest classified region is 1 Ha in size. The <code class="docutils literal notranslate"><span class="pre">filtered</span></code> dataset is provided as a complement to the <code class="docutils literal notranslate"><span class="pre">mask</span></code> band; small commission errors are removed by object-based filtering, and the ‘salt and pepper’ effect typical of classifying pixels is diminished.</p></li>
+</ul>
+</section>
+<section id="Specifications">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Specifications</a><a class="headerlink" href="#Specifications" title="Link to this heading">#</a></h3>
+<p><strong>Table 1: Cropland extent specifications</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Specification</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Product names</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">crop_mask_&lt;region&gt;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Cell size - X (metres)</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>Cell size - Y (metres)</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Coordinate reference system</p></td>
+<td><p>EPSG: 6933</p></td>
+</tr>
+<tr class="row-even"><td><p>Temporal resolution</p></td>
+<td><p>Annual</p></td>
+</tr>
+<tr class="row-odd"><td><p>Temporal range</p></td>
+<td><p>2019</p></td>
+</tr>
+<tr class="row-even"><td><p>Parent dataset</p></td>
+<td><p>Sentinel-2 Semiannual GeoMAD</p></td>
+</tr>
+<tr class="row-odd"><td><p>Update frequency</p></td>
+<td><p>TBD</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Table 2: Cropland extent measurements</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Band ID</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Value range</p></th>
+<th class="head"><p>Data type</p></th>
+<th class="head"><p>NoData/Fill value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>mask</p></td>
+<td><p>crop extent (pixel)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">-</span> <span class="pre">1</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">uint8</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>prob</p></td>
+<td><p>crop probability (pixel)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">-</span> <span class="pre">100</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">uint8</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>filtered</p></td>
+<td><p>crop extent (object-based)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">-</span> <span class="pre">1</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">uint8</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Figure 1: The dataset coverage for the provisional cropland extent maps; a) Northern Africa, b) Sahel Africa, c) Western Africa, d) Eastern Africa, e) Southeast Africa, f) Southern Africa, g) Central Africa, h) Indian Ocean</strong></p>
+<p><img alt="0a1c987a6f254846a0253a6a622083b3" class="no-scaled-link" src="../_images/crop_mask_extent.png" style="width: 800px;" /></p>
+</section>
+<section id="Media-and-example-images">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Media and example images</a><a class="headerlink" href="#Media-and-example-images" title="Link to this heading">#</a></h3>
+<p><strong>Image 1: Example of Eastern Africa cropland extent near Addis Ababa, Ethiopia.</strong></p>
+<p><em>1.1:</em> Cropland extent (pixel) for the entire East Africa region</p>
+<p><em>1.2:</em> True colour image</p>
+<p><em>1.3:</em> Cropland extent (object-filtered)</p>
+<p><em>1.4:</em> Cropland extent (pixel)</p>
+<p><em>1.5:</em> Crop probability; purple-to-pink regions show low probability, orange-yellow regions show high probability</p>
+<p><img alt="f107dff6070c4e319b251ffae88642a4" class="no-scaled-link" src="../_images/crop_mask_example_ethiopia_labelled.png" style="width: 1000px;" /></p>
+</section>
+<section id="License">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">License</a><a class="headerlink" href="#License" title="Link to this heading">#</a></h3>
+<p>CC BY Attribution 4.0 International License</p>
+</section>
+</section>
+<section id="Data-Access">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Data Access</a><a class="headerlink" href="#Data-Access" title="Link to this heading">#</a></h2>
+<section id="Amazon-Web-Services-S3">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Amazon Web Services S3</a><a class="headerlink" href="#Amazon-Web-Services-S3" title="Link to this heading">#</a></h3>
+<p>The cropland extent service is available in AWS S3 thanks to the Public Dataset Program.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>AWS S3 details</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Bucket ARN</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">arn:aws:s3:::deafrica-services</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Product names</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">crop_mask</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_eastern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_western</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_northern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_sahel</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_southern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_southeast</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_central</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_indian_ocean</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The bucket is located in the region <code class="docutils literal notranslate"><span class="pre">af-south-1</span></code> (Cape Town)</p>
+<p>The following file path convention applies to the crop mask:</p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask_eastern/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask_western/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask_northern/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask_sahel/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask_southern/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask_southeast/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask_central/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s3://deafrica-services/crop_mask_indian_ocean/1-0-0/&lt;path&gt;/&lt;row&gt;/&lt;year&gt;/</span></code></p>
+</section>
+<section id="Open-Data-Cube-(ODC)">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Open Data Cube (ODC)</a><a class="headerlink" href="#Open-Data-Cube-(ODC)" title="Link to this heading">#</a></h3>
+<p>The cropland extent datasets can be accessed through the Digital Earth Africa ODC API, which is available through the <a class="reference external" href="https://sandbox.digitalearth.africa/hub/login">Digital Earth Africa Sandbox</a>.</p>
+<p><strong>ODC product names:</strong> <code class="docutils literal notranslate"><span class="pre">crop_mask</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_eastern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_western</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_northern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_sahel</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_southern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_southeast</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_central</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_indian_ocean</span></code></p>
+<p>For examples on how to use the ODC API, see the DE Africa <a class="reference external" href="https://github.com/digitalearthafrica/deafrica-sandbox-notebooks">example notebook repository</a>.</p>
+</section>
+<section id="OGC-Web-Services-(OWS)">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">OGC Web Services (OWS)</a><a class="headerlink" href="#OGC-Web-Services-(OWS)" title="Link to this heading">#</a></h3>
+<p>This service is available through DE Africa’s OWS.</p>
+<p><strong>Table 3: OWS data access details.</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>OWS details</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">DE</span> <span class="pre">Africa</span> <span class="pre">Services</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Web Map Services (WMS) URL</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">https://ows.digitalearth.africa/wms?version=1.3.0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Web Coverage Service (WCS) URL</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">https://ows.digitalearth.africa/wcs?version=2.1.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Layer names</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">crop_mask</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_eastern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_western</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_northern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_sahel</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_southern</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_southeast</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_central</span></code>, <code class="docutils literal notranslate"><span class="pre">crop_mask_indian_ocean</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Digital Earth Africa OWS details can be found at <a class="reference external" href="https://ows.digitalearth.africa/">https://ows.digitalearth.africa/</a>.</p>
+<p>For instructions on how to connect to OWS, see <a class="reference external" href="../web_services/index.ipynb">this tutorial</a>.</p>
+</section>
+</section>
+<section id="Technical-information">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Technical information</a><a class="headerlink" href="#Technical-information" title="Link to this heading">#</a></h2>
+<section id="Algorithm">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Algorithm</a><a class="headerlink" href="#Algorithm" title="Link to this heading">#</a></h3>
+<p><strong>Figure 2: The algorithm used to generate the cropland extent map for each region of Africa.</strong></p>
+<p><img alt="a75f7a736938491fae486ba1f3e86663" class="no-scaled-link" src="../_images/crop_mask_algo_eastern.PNG" style="width: 1000px;" /></p>
+</section>
+<section id="Training-and-Validation-data">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Training and Validation data</a><a class="headerlink" href="#Training-and-Validation-data" title="Link to this heading">#</a></h3>
+<p>Reference data for the continental cropland extent map will be officially released when the remainder of the cropland extent maps are produced. For now, the training and validation data can be downloaded directly from github:</p>
+<p><strong>Training data:</strong></p>
+<ul class="simple">
+<li><p>Eastern cropland extent training data is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/eastern_cropmask/data/Eastern_training_data_20210427.geojson">here</a></p></li>
+<li><p>Western cropland extent training data is <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/western_cropmask/data/Western_training_data_20210609.geojson">here</a>.</p></li>
+<li><p>Northern cropland extent training data is <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/northern_cropmask/data/northern_training_data_20210803.geojson">here</a>.</p></li>
+<li><p>Sahel cropland extent training data is <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/sahel_cropmask/data/sahel_training_data_20211110.geojson">here</a>.</p></li>
+<li><p>Southern cropland extent training data is <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/southern_cropmask/data/Southern_training_data_20211108.geojson">here</a>.</p></li>
+<li><p>Southeast cropland extent training data is <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/southeast_cropmask/data/Southeast_training_data_20220222.geojson">here</a>.</p></li>
+<li><p>Central cropland extent training data is <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/central_cropmask/data/Central_training_data_20220304.geojson">here</a>.</p></li>
+<li><p>Indian Ocean cropland extent training data is <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/indian_ocean_cropmask/data/Indian_ocean_training_data_20220310.geojson">here</a></p></li>
+</ul>
+<p><strong>Validation data:</strong></p>
+<ul class="simple">
+<li><p>Validation data for Eastern Africa is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/tree/main/testing/eastern_cropmask/data">here</a> as a shapefile and is called <code class="docutils literal notranslate"><span class="pre">validation_samples.shp</span></code>.</p></li>
+<li><p>Validation data for Western Africa is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/tree/main/testing/western_cropmask/data">here</a> as a shapefile and is called <code class="docutils literal notranslate"><span class="pre">validation_samples.shp</span></code>.</p></li>
+<li><p>Validation data for Northern Africa is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/northern_cropmask/data/">here</a> as a shapefile and is called <code class="docutils literal notranslate"><span class="pre">validation_samples.shp</span></code>.</p></li>
+<li><p>Validation data for Sahel Africa is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/blob/main/testing/sahel_cropmask/data/">here</a> as a shapefile and is called <code class="docutils literal notranslate"><span class="pre">validation_samples.shp</span></code>.</p></li>
+<li><p>Validation data for Southern Africa is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/tree/main/testing/southern_cropmask/data">here</a> as a shapefile and is called <code class="docutils literal notranslate"><span class="pre">validation_samples.shp</span></code>.</p></li>
+<li><p>Validation data for Southeast Africa is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/tree/main/testing/southeast_cropmask/data">here</a> as a shapefile and is called <code class="docutils literal notranslate"><span class="pre">validation_samples.shp</span></code>.</p></li>
+<li><p>Validation data for Central Africa is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/tree/main/testing/central_cropmask/data">here</a> as a shapefile and is called <code class="docutils literal notranslate"><span class="pre">validation_samples.shp</span></code>.</p></li>
+<li><p>Validation data for Indian Ocean Africa is located <a class="reference external" href="https://github.com/digitalearthafrica/crop-mask/tree/main/testing/indian_ocean_cropmask/data">here</a> as a shapefile and is called <code class="docutils literal notranslate"><span class="pre">validation_samples.shp</span></code>.</p></li>
+</ul>
+</section>
+<section id="Validation-method">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Validation method</a><a class="headerlink" href="#Validation-method" title="Link to this heading">#</a></h3>
+<p>Reference samples, used to both create and validate the cropland extent maps, were produced as part of the broader continental-scale cropland extent for Africa project lead by the Digital Earth Africa Establishment team. Polygons were labelled through the DE Africa distributed network of implementing partners as part of the DE Africa Validation Task Team. These partners include RCMRD, OSS, AfriGIST, AGRHYMET, NADMO, and DE Africa.</p>
+<p>The reference dataset was created using a stratified sampling design. Samples were stratified at two levels. First, samples were stratified by simplified Agro-Ecological Zones (AEZs). Second, within each AEZ, samples were stratified by a pre-existing, high-quality cropland extent map, namely the Global Food Security-Support Analysis Data (GFSAD) at 30m product. The GFSAD product was reprojected to 60 x 60m cells using ‘mode’ as the aggregating statistic. This increased the probability of samples
+falling within homogenous crop/non-crop regions. For each AEZ, 2,000 40 x 40 metre polygons were randomly generated, with polygons equally split between the crop and non-crop labels of the reprojected GFSAD product.</p>
+<p>Sample polygons for each AEZ were assessed using Collect Earth Online (CEO) tool developed by NASA SERVIR. Analysts used image interpretation to classify each polygon as either ‘crop’, ‘non-crop’, ‘mixed’, or ‘unsure’; where the ‘crop’ and ‘non-crop’ labels was only selected if the sample region is homogeneously crop or non-crop. Monthly Sentinel-2 mosaics, a two year NDVI time-series (2018-06 to 2020-06), and Bing ‘Aerial’ basemaps were available to assist the image interpretation.</p>
+<p>In total, around &gt;25,000 training samples, and ~1,800 validation samples were collected as shown in Figure 3 below.</p>
+<p><strong>Figure 3: Reference locations for the cropland extent maps.</strong></p>
+<p><em>Left:</em> Locations of the map validation samples, <em>Right:</em> Locations of the training samples</p>
+<p><img alt="af73763f6d2043acb9a0aec13bd6a362" class="no-scaled-link" src="../_images/reference_points.png" style="width: 800px;" /></p>
+<p>The accuracy of the method for collecting reference samples described above was independently evaluated by <a class="reference external" href="https://www.radiant.earth/">Radiant Earth</a>. Radiant Earth’s team developed a visualisation app to validate a random subset of the labels collected using the CEO tool. The app retrieves Airbus SPOT imagery over the area of interest in four 6-month windows (covering the two-year of the training data specification). For each AEZ, the app would sequentially retrieve the images for each
+individual polygon, visualize all the available imagery and overlay the polygon on top of it. A member of Radiant’s team would then interpret the class (Crop, No-Crop, Mixed) based on the guideline and examples provided by Digital Earth Africa, and record that in the app. After validating all polygons, a new GeoJSON file would be generated with the additional property for validation labels. The results of this independent validation of DE Africa’s reference samples are shown in Table 4. The
+overall accuracy is 96.3 %, indicating that the reference samples are of a high quality and fit-for-purpose.</p>
+<p><strong>Table 4: Validation of the reference data samples</strong></p>
+<p><img alt="4502ab9be4e149f1ab243667a6139b82" class="no-scaled-link" src="../_images/RE_validation_results.PNG" style="width: 350px;" /></p>
+</section>
+<section id="Validation-results">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Validation results</a><a class="headerlink" href="#Validation-results" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The cropland extent map for <strong>Eastern Africa</strong> was validated using an isolated set of 300 samples (100 crop, 200 non-crop). The results are shown as a confusion matrix in Table 5. The overall accuracy is 90.3%. The producer’s accuracy for the crop class is 81 % (omission error of 19 %), and the user’s accuracy is 89 % (commission error of 11 %).</p></li>
+</ul>
+<p><strong>Table 5: Validation results for the Eastern Africa cropland extent map</strong></p>
+<p><img alt="3e73524556934d65846e425548eda154" class="no-scaled-link" src="../_images/eastern_validation_results.PNG" style="width: 400px;" /></p>
+<ul class="simple">
+<li><p>The cropland extent map for <strong>Western Africa</strong> was validated using an isolated set of 298 samples (97 crop, 201 non-crop). The results are shown as a confusion matrix in Table 6. The overall accuracy is 83.6 %. The producer’s accuracy for the crop class is 74.2 % (omission error of 25.8 %), and the user’s accuracy is 75.0 % (commission error of 25.0 %).</p></li>
+</ul>
+<p><strong>Table 6: Validation results for the Western Africa cropland extent map</strong></p>
+<p><img alt="cadbf30ab75844ad95f03fb708bfc112" class="no-scaled-link" src="../_images/western_validation_results.PNG" style="width: 410px;" /></p>
+<ul class="simple">
+<li><p>The cropland extent map for <strong>Northern Africa</strong> was validated using an isolated set of 300 samples (100 crop, 200 non-crop). The results are shown as a confusion matrix in Table 7. The overall accuracy is 94.0 %. The producer’s accuracy for the crop class is 90.0 % (omission error of 10.0 %), and the user’s accuracy is 91.8 % (commission error of 8.2 %).</p></li>
+</ul>
+<p><strong>Table 7: Validation results for the Northern Africa cropland extent map</strong></p>
+<p><img alt="80f50f65513443ab938f94b65e3e84e9" class="no-scaled-link" src="../_images/northern_validation_results.PNG" style="width: 410px;" /></p>
+<ul class="simple">
+<li><p>The cropland extent map for <strong>Sahel Africa</strong> was validated using an isolated set of 288 samples (88 crop, 200 non-crop). The results are shown as a confusion matrix in Table 8. The overall accuracy is 87.9 %. The producer’s accuracy for the crop class is 70.5 % (omission error of 29.5 %), and the user’s accuracy is 87.3 % (commission error of 12.7 %).</p></li>
+</ul>
+<p><strong>Table 8: Validation results for the Sahel Africa cropland extent map</strong></p>
+<p><img alt="5858100901b8429da003edf92de2849b" class="no-scaled-link" src="../_images/sahel_validation_results.PNG" style="width: 410px;" /></p>
+<ul class="simple">
+<li><p>The cropland extent map for <strong>Southern Africa</strong> was validated using an isolated set of 166 samples (49 crop, 113 non-crop). The results are shown as a confusion matrix in Table 9. The overall accuracy is 86.4 %. The producer’s accuracy for the crop class is 67.4 % (omission error of 32.6 %), and the user’s accuracy is 84.6 % (commission error of 15.4 %).</p></li>
+</ul>
+<p><strong>Table 9: Validation results for the Southern Africa cropland extent map</strong></p>
+<p><img alt="51332ed9254a4c939a92ea6a9635498f" class="no-scaled-link" src="../_images/southern_validation_results.PNG" style="width: 410px;" /></p>
+<ul class="simple">
+<li><p>The cropland extent map for <strong>Southeast Africa</strong> was validated using an isolated set of 134 samples (47 crop, 87 non-crop). The results are shown as a confusion matrix in Table 10. The overall accuracy is 87.3 %. The producer’s accuracy for the crop class is 89.4 % (omission error of 10.6 %), and the user’s accuracy is 77.8 % (commission error of 22.2 %).</p></li>
+</ul>
+<p><strong>Table 10: Validation results for the Southeast Africa cropland extent map</strong></p>
+<p><img alt="3bb3195cff0a4a20b0581fee7ba2ed88" class="no-scaled-link" src="../_images/southeast_validation_results.PNG" style="width: 410px;" /></p>
+<ul class="simple">
+<li><p>The cropland extent map for <strong>Central Africa</strong> was validated using an isolated set of 145 samples (45 crop, 100 non-crop). The results are shown as a confusion matrix in Table 11. The overall accuracy is 88.3 %. The producer’s accuracy for the crop class is 84.4 % (omission error of 15.6 %), and the user’s accuracy is 79.2 % (commission error of 20.8 %).</p></li>
+</ul>
+<p><strong>Table 11: Validation results for the Central Africa cropland extent map</strong></p>
+<p><img alt="fae06430c5b643d3bf86f9d471f72f39" class="no-scaled-link" src="../_images/central_validation_results.PNG" style="width: 410px;" /></p>
+<ul class="simple">
+<li><p>The cropland extent map for <strong>Indian Ocean Africa</strong> was validated using an isolated set of 150 samples (50 crop, 100 non-crop). The results are shown as a confusion matrix in Table 12. The overall accuracy is 90.7 %. The producer’s accuracy for the crop class is 76.0 % (omission error of 24.0 %), and the user’s accuracy is 95.0 % (commission error of 5.0 %).</p></li>
+</ul>
+<p><strong>Table 12: Validation results for the Indian Ocean Africa cropland extent map</strong></p>
+<p><img alt="2765b1fc549f41ba8d1e9f7f399edbd6" class="no-scaled-link" src="../_images/indian_ocean_validation_results.PNG" style="width: 410px;" /></p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Service-Overview">Service Overview</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Background">Background</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Description">Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Specifications">Specifications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Media-and-example-images">Media and example images</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#License">License</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Data-Access">Data Access</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Amazon-Web-Services-S3">Amazon Web Services S3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Open-Data-Cube-(ODC)">Open Data Cube (ODC)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#OGC-Web-Services-(OWS)">OGC Web Services (OWS)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Technical-information">Technical information</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Algorithm">Algorithm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Training-and-Validation-data">Training and Validation data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Validation-method">Validation method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Validation-results">Validation results</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div class="deafrica-footer">
+
+  <div class="deafrica-footer__column deafrica-footer__column--primary">
+    <div class="deafrica-footer__programme-block">
+      <strong>Digital Earth Africa is a programme of</strong>
+      <a href="https://www.icipe.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit icipe">
+        <img
+          src="../_static/icipe.png"
+          alt="icipe – International Centre of Insect Physiology and Ecology"
+          class="deafrica-footer__programme-logo"
+        >
+      </a>
+    </div>
+  </div>
+
+  <div class="deafrica-footer__bottom">
+    <div class="deafrica-footer__legal">
+      <span>© 2026 Digital Earth Africa. All Rights Reserved.</span>
+      <a href="https://digitalearthafrica.org/en_za/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+    </div>
+
+    <div class="deafrica-footer__social" aria-label="Digital Earth Africa social media">
+      
+      <a class="deafrica-footer__whatsapp" href="https://wa.me/27662839754" target="_blank" rel="noopener noreferrer" aria-label="Contact Digital Earth Africa on WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+      <a href="https://www.youtube.com/@digitalearthafrica" target="_blank" rel="noopener noreferrer" aria-label="Digital Earth Africa on YouTube" title="YouTube">
+        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.flickr.com/photos/184270351@N05/" target="_blank" rel="noopener noreferrer" aria-label="Digital Earth Africa on Flickr" title="Flickr">
+        <i class="fa-brands fa-flickr" aria-hidden="true"></i>
+      </a>
+      <a href="https://x.com/DEarthAfrica" target="_blank" rel="noopener noreferrer" aria-label="Digital Earth Africa on X" title="X">
+        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/digitalearthafrica/" target="_blank" rel="noopener noreferrer" aria-label="Digital Earth Africa on LinkedIn" title="LinkedIn">
+        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+</div></div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

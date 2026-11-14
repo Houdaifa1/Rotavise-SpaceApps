@@ -1,0 +1,326 @@
+{
+  "label": "Real catalog 0.8.0 + live NASA POWER; illustrative rainfed fields; not expert-reviewed",
+  "results": [
+    {
+      "field": "Beni Moussa (Tadla)",
+      "status": "completed",
+      "error": null,
+      "seconds": 58,
+      "outcome": "comparisons_available",
+      "regions": [
+        "beni-mellal-tadla",
+        "ma-beni-mellal-khenifra",
+        "morocco-general"
+      ],
+      "schedulable": [
+        "barley",
+        "bread-wheat",
+        "durum-wheat",
+        "faba-bean",
+        "lentil"
+      ],
+      "compared": 125,
+      "top": ["faba-bean", "barley", "faba-bean"],
+      "nextThree": [
+        "faba-bean>bread-wheat>faba-bean",
+        "faba-bean>durum-wheat>faba-bean",
+        "lentil>barley>faba-bean"
+      ],
+      "climateMeanLoss": 0.036767261602,
+      "water": {
+        "meanLoss": 0.621776041554,
+        "worstDecileLoss": 0.721787706818,
+        "completeAnalogs": 30,
+        "meanCropWaterUseMm": 1895.6,
+        "meanRainMm": 715.3,
+        "meanShortfallMm": 1183.8,
+        "meanAnnualRainMm": 344
+      },
+      "rain": {
+        "source": "power_corrected_to_gpm",
+        "reference": "GPM IMERG Final Daily V07",
+        "firstYear": 2001,
+        "lastYear": 2020,
+        "powerAnnualMm": 526.2,
+        "referenceAnnualMm": 341.3,
+        "monthlyFactors": [
+          0.5716, 0.5764, 0.6572, 0.7472, 0.821, 0.6682, 0.4718, 0.4244, 0.5554,
+          0.7084, 0.6699, 0.6348
+        ]
+      },
+      "soilCarbon": {
+        "start": 57.86,
+        "top": {
+          "id": "faba-bean@2026-11-06>barley@2027-11-01>faba-bean@2028-10-15",
+          "status": "no_residue_data",
+          "annualInputGrazedTCPerHa": null,
+          "annualInputKeptTCPerHa": null,
+          "after20YearsGrazedTCPerHa": null,
+          "after20YearsKeptTCPerHa": null
+        }
+      },
+      "yields": {
+        "model": "AquaCrop-OSPy 3.1.0",
+        "calibration": "uncalibrated_default_parameters",
+        "soilClass": "ClayLoam",
+        "top": [
+          {
+            "cropId": "faba-bean",
+            "status": "no_crop_model",
+            "seasons": 0,
+            "meanYieldTPerHa": null,
+            "worstDecileYieldTPerHa": null,
+            "meanIrrigationMm": null
+          },
+          {
+            "cropId": "bread-wheat",
+            "status": "estimated",
+            "seasons": 30,
+            "meanYieldTPerHa": 1.07,
+            "worstDecileYieldTPerHa": 0,
+            "meanIrrigationMm": 0,
+            "attainment": 0.14
+          },
+          {
+            "cropId": "faba-bean",
+            "status": "no_crop_model",
+            "seasons": 0,
+            "meanYieldTPerHa": null,
+            "worstDecileYieldTPerHa": null,
+            "meanIrrigationMm": null
+          }
+        ]
+      },
+      "extremes": {
+        "meanHottestDayC": 42.5,
+        "hottestDayC": 44.4,
+        "meanColdestNightC": -3.2,
+        "coldestNightC": -5.8,
+        "meanLongestDrySpellDays": 66.3,
+        "longestDrySpellDays": 93,
+        "meanWettestDayMm": 28.4,
+        "wettestDayMm": 46.9,
+        "droughtSeasonShare": 0.022
+      },
+      "soil": {
+        "ph": 7.68,
+        "clay": 32.99,
+        "organicCarbon": 12.13
+      },
+      "soilWarnings": [],
+      "warnings": []
+    },
+    {
+      "field": "Sidi Slimane (Gharb)",
+      "status": "completed",
+      "error": null,
+      "seconds": 56.7,
+      "outcome": "comparisons_available",
+      "regions": ["ma-rabat-sale-kenitra", "morocco-general"],
+      "schedulable": [
+        "barley",
+        "bread-wheat",
+        "durum-wheat",
+        "faba-bean",
+        "lentil",
+        "rapeseed",
+        "sunflower"
+      ],
+      "compared": 320,
+      "top": ["faba-bean", "bread-wheat", "faba-bean"],
+      "nextThree": [
+        "faba-bean>durum-wheat>faba-bean",
+        "faba-bean>barley>faba-bean",
+        "faba-bean>bread-wheat>rapeseed"
+      ],
+      "climateMeanLoss": 0.00160187688,
+      "water": {
+        "meanLoss": 0.397100344884,
+        "worstDecileLoss": 0.513578750658,
+        "completeAnalogs": 30,
+        "meanCropWaterUseMm": 1781.8,
+        "meanRainMm": 1180.3,
+        "meanShortfallMm": 710.2,
+        "meanAnnualRainMm": 547.8
+      },
+      "rain": {
+        "source": "power_corrected_to_gpm",
+        "reference": "GPM IMERG Final Daily V07",
+        "firstYear": 2001,
+        "lastYear": 2020,
+        "powerAnnualMm": 512.8,
+        "referenceAnnualMm": 576.9,
+        "monthlyFactors": [
+          1.1278, 1.1244, 1.2128, 1.1814, 1.3209, 1.4008, 1.0189, 1.2733,
+          0.8033, 1.0329, 1.0932, 1.1447
+        ]
+      },
+      "soilCarbon": {
+        "start": 58.17,
+        "top": {
+          "id": "faba-bean@2026-11-06>bread-wheat@2027-11-01>faba-bean@2028-10-15",
+          "status": "estimated",
+          "annualInputGrazedTCPerHa": 0.32,
+          "annualInputKeptTCPerHa": 0.59,
+          "after20YearsGrazedTCPerHa": 58.17,
+          "after20YearsKeptTCPerHa": 58.92
+        }
+      },
+      "yields": {
+        "model": "AquaCrop-OSPy 3.1.0",
+        "calibration": "uncalibrated_default_parameters",
+        "soilClass": "ClayLoam",
+        "top": [
+          {
+            "cropId": "faba-bean",
+            "status": "no_crop_model",
+            "seasons": 0,
+            "meanYieldTPerHa": null,
+            "worstDecileYieldTPerHa": null,
+            "meanIrrigationMm": null
+          },
+          {
+            "cropId": "bread-wheat",
+            "status": "estimated",
+            "seasons": 30,
+            "meanYieldTPerHa": 4.34,
+            "worstDecileYieldTPerHa": 0,
+            "meanIrrigationMm": 0,
+            "attainment": 0.57
+          },
+          {
+            "cropId": "faba-bean",
+            "status": "no_crop_model",
+            "seasons": 0,
+            "meanYieldTPerHa": null,
+            "worstDecileYieldTPerHa": null,
+            "meanIrrigationMm": null
+          }
+        ]
+      },
+      "extremes": {
+        "meanHottestDayC": 42.4,
+        "hottestDayC": 45.8,
+        "meanColdestNightC": 3.6,
+        "coldestNightC": 1.5,
+        "meanLongestDrySpellDays": 68,
+        "longestDrySpellDays": 91,
+        "meanWettestDayMm": 46.5,
+        "wettestDayMm": 69.7,
+        "droughtSeasonShare": 0.122
+      },
+      "soil": {
+        "ph": 7.39,
+        "clay": 28.42,
+        "organicCarbon": 12.43
+      },
+      "soilWarnings": [],
+      "warnings": []
+    },
+    {
+      "field": "Taroudant (Souss)",
+      "status": "completed",
+      "error": null,
+      "seconds": 45,
+      "outcome": "comparisons_available",
+      "regions": ["ma-souss-massa", "morocco-general"],
+      "schedulable": [
+        "barley",
+        "bread-wheat",
+        "durum-wheat",
+        "faba-bean",
+        "lentil"
+      ],
+      "compared": 125,
+      "top": ["faba-bean", "barley", "faba-bean"],
+      "nextThree": [
+        "faba-bean>bread-wheat>faba-bean",
+        "faba-bean>durum-wheat>faba-bean",
+        "lentil>barley>faba-bean"
+      ],
+      "climateMeanLoss": 0.024490985685,
+      "water": {
+        "meanLoss": 0.780469741576,
+        "worstDecileLoss": 0.844793488059,
+        "completeAnalogs": 30,
+        "meanCropWaterUseMm": 2164.3,
+        "meanRainMm": 472.3,
+        "meanShortfallMm": 1692,
+        "meanAnnualRainMm": 227.8
+      },
+      "rain": {
+        "source": "power_corrected_to_gpm",
+        "reference": "GPM IMERG Final Daily V07",
+        "firstYear": 2001,
+        "lastYear": 2020,
+        "powerAnnualMm": 254.7,
+        "referenceAnnualMm": 224.8,
+        "monthlyFactors": [
+          0.9385, 1.1736, 0.8381, 0.7135, 0.4538, 0.2, 0.2, 0.7089, 0.9643,
+          1.009, 0.8354, 1.0352
+        ]
+      },
+      "soilCarbon": {
+        "start": 37.44,
+        "top": {
+          "id": "faba-bean@2026-11-06>barley@2027-11-01>faba-bean@2028-10-15",
+          "status": "estimated",
+          "annualInputGrazedTCPerHa": 0.11,
+          "annualInputKeptTCPerHa": 0.22,
+          "after20YearsGrazedTCPerHa": 37.44,
+          "after20YearsKeptTCPerHa": 37.76
+        }
+      },
+      "yields": {
+        "model": "AquaCrop-OSPy 3.1.0",
+        "calibration": "uncalibrated_default_parameters",
+        "soilClass": "Loam",
+        "top": [
+          {
+            "cropId": "faba-bean",
+            "status": "no_crop_model",
+            "seasons": 0,
+            "meanYieldTPerHa": null,
+            "worstDecileYieldTPerHa": null,
+            "meanIrrigationMm": null
+          },
+          {
+            "cropId": "barley",
+            "status": "estimated",
+            "seasons": 30,
+            "meanYieldTPerHa": 0.41,
+            "worstDecileYieldTPerHa": 0,
+            "meanIrrigationMm": 0,
+            "attainment": 0.18
+          },
+          {
+            "cropId": "faba-bean",
+            "status": "no_crop_model",
+            "seasons": 0,
+            "meanYieldTPerHa": null,
+            "worstDecileYieldTPerHa": null,
+            "meanIrrigationMm": null
+          }
+        ]
+      },
+      "extremes": {
+        "meanHottestDayC": 43.7,
+        "hottestDayC": 45,
+        "meanColdestNightC": -1.2,
+        "coldestNightC": -3.8,
+        "meanLongestDrySpellDays": 98.3,
+        "longestDrySpellDays": 141,
+        "meanWettestDayMm": 36.3,
+        "wettestDayMm": 118.5,
+        "droughtSeasonShare": 0.156
+      },
+      "soil": {
+        "ph": 7.65,
+        "clay": 26.76,
+        "organicCarbon": 8.21
+      },
+      "soilWarnings": [],
+      "warnings": []
+    }
+  ]
+}

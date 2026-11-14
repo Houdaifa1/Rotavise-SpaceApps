@@ -1,0 +1,74 @@
+[
+  {
+    "command": "pnpm lint",
+    "startedAt": "2026-11-13T01:49:45.860090+00:00",
+    "status": "passed",
+    "log": "lint.log",
+    "exitCode": 0,
+    "elapsedSeconds": 10.92,
+    "finishedAt": "2026-11-13T01:49:56.785632+00:00"
+  },
+  {
+    "command": "pnpm format:check",
+    "startedAt": "2026-11-13T02:10:03.424740+00:00",
+    "status": "passed",
+    "log": "format-check.log",
+    "exitCode": 0,
+    "elapsedSeconds": 13.24,
+    "finishedAt": "2026-11-13T02:10:16.665968+00:00"
+  },
+  {
+    "command": "pnpm typecheck",
+    "startedAt": "2026-11-13T01:50:13.859026+00:00",
+    "status": "passed",
+    "log": "typecheck.log",
+    "exitCode": 0,
+    "elapsedSeconds": 14.02,
+    "finishedAt": "2026-11-13T01:50:27.875629+00:00"
+  },
+  {
+    "command": "pnpm build",
+    "startedAt": "2026-11-13T01:50:27.876088+00:00",
+    "status": "passed",
+    "log": "build.log",
+    "exitCode": 0,
+    "elapsedSeconds": 11.03,
+    "finishedAt": "2026-11-13T01:50:38.906087+00:00"
+  },
+  {
+    "command": "pnpm test:unit",
+    "startedAt": "2026-11-13T01:50:38.906481+00:00",
+    "status": "passed",
+    "log": "test-unit.log",
+    "exitCode": 0,
+    "elapsedSeconds": 10.92,
+    "finishedAt": "2026-11-13T01:50:49.824570+00:00"
+  },
+  {
+    "command": "pnpm test:web",
+    "startedAt": "2026-11-13T01:50:49.825739+00:00",
+    "status": "passed",
+    "log": "test-web.log",
+    "exitCode": 0,
+    "elapsedSeconds": 5.23,
+    "finishedAt": "2026-11-13T01:50:55.053486+00:00"
+  },
+  {
+    "command": "pnpm test:map",
+    "startedAt": "2026-11-13T01:50:55.053760+00:00",
+    "status": "passed",
+    "log": "test-map.log",
+    "exitCode": 0,
+    "elapsedSeconds": 39.67,
+    "finishedAt": "2026-11-13T01:51:34.729413+00:00"
+  },
+  {
+    "command": "pnpm test:e2e --reporter=list,json",
+    "startedAt": "2026-11-13T01:51:34.730448+00:00",
+    "status": "passed",
+    "log": "test-e2e.log",
+    "exitCode": 0,
+    "elapsedSeconds": 929.94,
+    "finishedAt": "2026-11-13T02:07:04.667646+00:00"
+  }
+]

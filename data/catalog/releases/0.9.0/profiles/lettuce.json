@@ -1,0 +1,174 @@
+{
+  "id": "lettuce",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Lettuce",
+    "localNames": [{ "language": "fr", "name": "Laitue" }],
+    "scientificName": "Lactuca sativa L.",
+    "family": "Asteraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-lettuce",
+        "page": null,
+        "quote": "\"scientificName\":\"Lactuca sativa L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-lettuce",
+        "page": 1,
+        "quote": "LA LAITUE",
+        "locator": "PDF page 1",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-lettuce",
+          "page": 1,
+          "quote": "LA LAITUE",
+          "locator": "PDF page 1",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "lettuce-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-lettuce",
+          "page": 1,
+          "quote": "Pour la culture de printemps, le semis se fait entre Mars et Août",
+          "locator": "PDF page 1",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Spring crop, in a nursery.",
+      "metric": "planting_window",
+      "start": "03-01",
+      "end": "08-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "lettuce-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "20 30 15 10 75 April Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "75 days."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 25 10 105 Nov/Jan Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "105 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO rows.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 75,
+      "maxDays": 105
+    },
+    {
+      "id": "lettuce-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Lettuce 1.00 0.95",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Small Vegetables 0.7 1.05 0.95",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "20 30 15 10 75 April Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.7,
+      "kcMid": 1,
+      "kcEnd": 0.95,
+      "stageLengths": [20, 30, 15, 10]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

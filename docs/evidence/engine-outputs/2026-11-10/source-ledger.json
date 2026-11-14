@@ -1,0 +1,194 @@
+{
+  "recordedOn": "2026-11-10",
+  "purpose": "Trace existing implementation/specification metadata reused for rotation-outputs-1; no new scientific research or crop facts",
+  "sources": [
+    {
+      "id": "POWER",
+      "savedSource": "packages/contracts/src/weather/power-grid.ts",
+      "sha256": "1281d66edccda866fb5d03f98d0364b3afa7af600c19776a673b6fa8353f7339",
+      "exactQuote": "// intersection of the MERRA-2 (0.5° × 0.625°) cell and the CERES SYN1deg (1°)",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "GPM",
+      "savedSource": "packages/contracts/src/weather/rain-reference.contract.ts",
+      "sha256": "44eda330787c43892606aedfafaa1b92d2b4259e8b7b93f019cd8ae301b0e8e3",
+      "exactQuote": "// GPM IMERG Final daily V07 for the field's 0.1° cell, as a monthly climatology.",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "HLS",
+      "savedSource": "docs/specification/ROTAVISE_HANDOFF.md",
+      "sha256": "f14e3ab77bb357e99466d638af23e27f5854fca71518d0c64bc0bc933820673c",
+      "exactQuote": "30 m; clouds; needs enough clean pixels inside the field boundary",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "SMAP",
+      "savedSource": "packages/contracts/src/observations/observation.contract.ts",
+      "sha256": "442f6a28531ff6c913225a73c373d20ac966d538e70ad4472495a887a0105124",
+      "exactQuote": "// The 9 km EASE-Grid cell, named by AppEEARS row and column.",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "NEX-GDDP",
+      "savedSource": "packages/contracts/src/climate-scenarios/scenario.contract.ts",
+      "sha256": "7667ccd8c6fb2e73736ad089e9cbe96079bb67d9b5d68ae18e6c34efe5d31158",
+      "exactQuote": "// NEX-GDDP-CMIP6 v2.0 daily downscaled projections (0.25°), read through the",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "NEX-GDDP_TILE",
+      "savedSource": "packages/contracts/src/climate-scenarios/scenario.contract.ts",
+      "sha256": "7667ccd8c6fb2e73736ad089e9cbe96079bb67d9b5d68ae18e6c34efe5d31158",
+      "exactQuote": "// NCCS THREDDS NetCDF Subset Service one 1° × 1° tile, model, experiment,",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "NASADEM",
+      "savedSource": "packages/contracts/src/observations/terrain-water.contract.ts",
+      "sha256": "7c5444e1679cb6bdae1e23fbd0a55737ad8f0570672eab3aee4628b6f969db71",
+      "exactQuote": "NASADEM_NC.001 elevation (30 m) via AppEEARS",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "ECOSTRESS",
+      "savedSource": "packages/contracts/src/observations/terrain-water.contract.ts",
+      "sha256": "7c5444e1679cb6bdae1e23fbd0a55737ad8f0570672eab3aee4628b6f969db71",
+      "exactQuote": "ECO_L2T_LSTE.002 land surface temperature (70 m) via AppEEARS",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "MODIS",
+      "savedSource": "packages/contracts/src/observations/terrain-water.contract.ts",
+      "sha256": "7c5444e1679cb6bdae1e23fbd0a55737ad8f0570672eab3aee4628b6f969db71",
+      "exactQuote": "MOD13Q1.061 vegetation indices (250 m, 16 day) via AppEEARS",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "GEDI",
+      "savedSource": "packages/contracts/src/observations/gedi.contract.ts",
+      "sha256": "55c6f26504bbe34ac1149dada2dded6f42173a51edce68fe820e2e3286cd1bf1",
+      "exactQuote": "// GEDI L4B gridded aboveground biomass density around a field. A 1 km cell",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "GRACE",
+      "savedSource": "apps/server/src/modules/earth-observations/application/water-storage.service.ts",
+      "sha256": "d766f66ac7ee53d1eea3f097887fc50df0dd45ce7abe43fade588a3aaf5cb3b4",
+      "exactQuote": "water storage over hundreds of kilometres, so it says nothing about a field.",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    },
+    {
+      "id": "LS_PROVENANCE",
+      "savedSource": "packages/domain/src/terrain/terrain.ts",
+      "sha256": "fbe7ce136d4d0a997cfcebf1015aa14560b0ad8e2821d09078b9f90f4bba3d7e",
+      "exactQuote": "Renard et al. (1997) USDA Agriculture Handbook 703, after McCool et al. (1987, 1989); formulas recalled, not re-read, and checked against the unit plot (LS = 1 at 22.13 m and 9%)",
+      "basis": "existing_repository_metadata; not independent provider or scientific verification",
+      "providerReverification": "not_found"
+    }
+  ],
+  "not_found": [
+    {
+      "item": "rainfall erosivity R",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    },
+    {
+      "item": "soil erodibility K",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    },
+    {
+      "item": "support practice factor P",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    },
+    {
+      "item": "fully sourced field LS",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    },
+    {
+      "item": "crop equipment/operation requirements",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    },
+    {
+      "item": "crop market-access requirements",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    },
+    {
+      "item": "comparable net income with currency, area, period and costs",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    },
+    {
+      "item": "measured field infiltration",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    },
+    {
+      "item": "measured field drainage",
+      "scope": "Current structured catalog and pinned field summaries; no fabricated replacement added"
+    }
+  ],
+  "releaseManifests": [
+    {
+      "path": "data/catalog/releases/0.1.0/manifest.json",
+      "sha256": "2bfee83a58844047d6f4dc957a8ceec91df5e8e0c48809a1d2da7b8dae1a8d47"
+    },
+    {
+      "path": "data/catalog/releases/0.10.0/manifest.json",
+      "sha256": "45c1471c84e0759a6fe94cb389b2dcf5aadb74f77787e65e186cd0451a89f64c"
+    },
+    {
+      "path": "data/catalog/releases/0.11.0/manifest.json",
+      "sha256": "90231d69eb0fda5915f0079dc52c4d545c643755e56c8bdc07d54e8c9861fc71"
+    },
+    {
+      "path": "data/catalog/releases/0.12.0/manifest.json",
+      "sha256": "391ce49203a6f1e7d6a58d8c9620764f7317774493fc7391171e70419adf6fb5"
+    },
+    {
+      "path": "data/catalog/releases/0.13.0/manifest.json",
+      "sha256": "f1010a9509daafa82dde97072ab98171f81516d4137f201e51f1a8f151fcfda6"
+    },
+    {
+      "path": "data/catalog/releases/0.2.0/manifest.json",
+      "sha256": "b2916cfade8a58e5794d8ae4249f549d3895fe49c653408c448e8f0adfb09bc9"
+    },
+    {
+      "path": "data/catalog/releases/0.3.0/manifest.json",
+      "sha256": "1bcbf9186850387be9d8cd859e3304da22cbf039ea9071e44748dd9769436e11"
+    },
+    {
+      "path": "data/catalog/releases/0.4.0/manifest.json",
+      "sha256": "cda1494fae276145f6f9fead31d38cb9f387c4184cffe8db98c44f688ee5f49d"
+    },
+    {
+      "path": "data/catalog/releases/0.5.0/manifest.json",
+      "sha256": "995b98f534614a3bd11d661d2c9d5d62ffb29296f6eef71bb85421bc0d10b3a4"
+    },
+    {
+      "path": "data/catalog/releases/0.6.0/manifest.json",
+      "sha256": "078baae07fa852e4fd1e947226f325a011da0671c3751f98627845add1269d9d"
+    },
+    {
+      "path": "data/catalog/releases/0.7.0/manifest.json",
+      "sha256": "f16d007db899818947b4f447731a6c2fe08cab7f8995c018c4a2c46373d232c8"
+    },
+    {
+      "path": "data/catalog/releases/0.8.0/manifest.json",
+      "sha256": "f6c970b8b72e9c3378b55cf7c523a4f7dc1f7b43aab7f137e69e7d7afda8c551"
+    },
+    {
+      "path": "data/catalog/releases/0.9.0/manifest.json",
+      "sha256": "d64721b7bb705a80d3279ef4679af9d96bafcf10010ae31153d832a25e547bb8"
+    }
+  ]
+}

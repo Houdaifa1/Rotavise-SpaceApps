@@ -1,0 +1,190 @@
+{
+  "purpose": "Real recorded NASA weather arithmetic plus real-catalog evidence gaps; no farmer recommendation",
+  "weatherSynthetic": false,
+  "captureIdentity": "Demo identifiers label committed files; not PostgreSQL snapshot IDs",
+  "measurements": [
+    {
+      "sample": "beni-mellal-leap",
+      "file": "nasa-power-beni-mellal-leap.json",
+      "rawSha256": "b10fac0fd71e738341aaf37fdcb7163961c7deafc3080431135920eae846eea1",
+      "normalizedSha256": "0436579038c10d43aedcdaa97b6b0080e86545ffa325a2f7d6b9ef15bb8c527f",
+      "request": {
+        "latitude": 32.3373,
+        "longitude": -6.3498,
+        "startDate": "2024-02-27",
+        "endDate": "2024-03-02",
+        "variables": [
+          "temperatureMin",
+          "temperatureMax",
+          "temperatureMean",
+          "precipitation"
+        ]
+      },
+      "expectedDays": 5,
+      "metrics": {
+        "temperatureMin": {
+          "min": 0.47,
+          "max": 6.1,
+          "mean": 2.864,
+          "unit": "degC"
+        },
+        "temperatureMax": {
+          "min": 12.06,
+          "max": 18.79,
+          "mean": 16.462,
+          "unit": "degC"
+        },
+        "temperatureMean": {
+          "min": 6.71,
+          "max": 10.85,
+          "mean": 8.964,
+          "unit": "degC"
+        },
+        "precipitation": {
+          "totalMm": 1.87,
+          "meanMmPerDay": 0.374,
+          "dryDays": 4,
+          "longestDrySpellDays": 4
+        }
+      }
+    },
+    {
+      "sample": "sydney-year",
+      "file": "nasa-power-sydney-year.json",
+      "rawSha256": "bf94f7bf353a524037c40f83c92f98ea482202a0d72c90a0bbe6080da7a1f896",
+      "normalizedSha256": "ba5a62eb7f484538c1397254128f465f852f397f35229da79cbc9bda369e3eab",
+      "request": {
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "startDate": "2023-12-30",
+        "endDate": "2024-01-03",
+        "variables": [
+          "temperatureMin",
+          "temperatureMax",
+          "temperatureMean",
+          "precipitation"
+        ]
+      },
+      "expectedDays": 5,
+      "metrics": {
+        "temperatureMin": {
+          "min": 19.3,
+          "max": 22.21,
+          "mean": 21.094,
+          "unit": "degC"
+        },
+        "temperatureMax": {
+          "min": 23.32,
+          "max": 26.05,
+          "mean": 24.628,
+          "unit": "degC"
+        },
+        "temperatureMean": {
+          "min": 20.8,
+          "max": 23.54,
+          "mean": 22.445999999999998,
+          "unit": "degC"
+        },
+        "precipitation": {
+          "totalMm": 12.25,
+          "meanMmPerDay": 2.45,
+          "dryDays": 1,
+          "longestDrySpellDays": 1
+        }
+      }
+    },
+    {
+      "sample": "beni-mellal-season",
+      "file": "nasa-power-beni-mellal-season.json",
+      "rawSha256": "b7dc5f4a77c42a1a4d5e5d749698d09d741c60db8fb9f32c430ddeaa9efee2d9",
+      "normalizedSha256": "25cbdedab43b5fb90028a5b98ec882ac59625cec925993d21f8a4d0ac11b433f",
+      "request": {
+        "latitude": 32.3373,
+        "longitude": -6.3498,
+        "startDate": "2023-12-01",
+        "endDate": "2024-03-31",
+        "variables": [
+          "temperatureMin",
+          "temperatureMax",
+          "temperatureMean",
+          "precipitation"
+        ]
+      },
+      "expectedDays": 122,
+      "metrics": {
+        "temperatureMin": {
+          "min": 0.47,
+          "max": 13.57,
+          "mean": 7.38770491803279,
+          "unit": "degC"
+        },
+        "temperatureMax": {
+          "min": 10.19,
+          "max": 30.28,
+          "mean": 20.733196721311472,
+          "unit": "degC"
+        },
+        "temperatureMean": {
+          "min": 6.71,
+          "max": 20.66,
+          "mean": 12.972377049180333,
+          "unit": "degC"
+        },
+        "precipitation": {
+          "totalMm": 182.22000000000003,
+          "meanMmPerDay": 1.4936065573770494,
+          "dryDays": 101,
+          "longestDrySpellDays": 29
+        }
+      }
+    }
+  ],
+  "catalogGap": {
+    "inputSynthetic": true,
+    "inputPurpose": "Illustrative unknown farmer inputs, not a real field submission",
+    "catalog": {
+      "id": "rotavise-pilot",
+      "version": "0.1.0",
+      "sha256": "d951b9c07b03739a77d43d0518c68ebc13b80d805fa58dcd076ef9cd82ed3a55"
+    },
+    "outcome": "insufficient_evidence",
+    "counts": {
+      "pairs": 9,
+      "schedules": 0,
+      "combinationsExamined": 0
+    },
+    "consideredChoices": [
+      {
+        "cropId": "durum-wheat",
+        "status": "insufficient_evidence",
+        "pairIds": [
+          "durum-wheat>durum-wheat",
+          "durum-wheat>faba-bean",
+          "durum-wheat>sugar-beet"
+        ]
+      },
+      {
+        "cropId": "faba-bean",
+        "status": "insufficient_evidence",
+        "pairIds": [
+          "faba-bean>durum-wheat",
+          "faba-bean>faba-bean",
+          "faba-bean>sugar-beet"
+        ]
+      },
+      {
+        "cropId": "sugar-beet",
+        "status": "insufficient_evidence",
+        "pairIds": [
+          "sugar-beet>durum-wheat",
+          "sugar-beet>faba-bean",
+          "sugar-beet>sugar-beet"
+        ]
+      }
+    ],
+    "candidates": 0,
+    "comparisonGroups": 0,
+    "weatherEvidenceForPlanning": 0,
+    "recommendations": null
+  }
+}

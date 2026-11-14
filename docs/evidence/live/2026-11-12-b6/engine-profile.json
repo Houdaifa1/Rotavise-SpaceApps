@@ -1,0 +1,187 @@
+{
+  "command": "node --cpu-prof --cpu-prof-dir=.artifacts/b6 --cpu-prof-name=engine.cpuprofile tooling/performance/backend-engine-benchmark.mjs",
+  "exitCode": 1,
+  "report": {
+    "date": "2026-11-12T01:04:38.052Z",
+    "machine": {
+      "model": "Apple M5",
+      "node": "v24.19.0",
+      "platform": "darwin",
+      "arch": "arm64",
+      "load": [4.197265625, 5.98046875, 7.626953125]
+    },
+    "catalog": "0.15.0",
+    "syntheticWeather": true,
+    "cases": [
+      {
+        "mode": "suggest",
+        "seconds": 7.055442542,
+        "cpuSeconds": 8.639537,
+        "sha256": "9bb8becab13d0a4a4b72859aa79a0b7091042fec37fafb47c7ced7d1ac13ce9e",
+        "bytes": 4761982,
+        "candidates": 4,
+        "schedulable": 168
+      },
+      {
+        "mode": "declared",
+        "seconds": 6.489581167,
+        "cpuSeconds": 7.517091,
+        "sha256": "c1114a23a427f0a467a87f53d43173def5f71fa997c0ca90afbdf6d08db935b6",
+        "bytes": 4937244,
+        "candidates": 5,
+        "schedulable": 168
+      }
+    ]
+  },
+  "hotFunctions": [
+    {
+      "frame": "(garbage collector) :-1",
+      "sampledSeconds": 0.946749
+    },
+    {
+      "frame": "assessRotationsCore dist/rotation/assess.js:264",
+      "sampledSeconds": 0.908542
+    },
+    {
+      "frame": "prune dist/rotation/search.js:334",
+      "sampledSeconds": 0.785082
+    },
+    {
+      "frame": "stable dist/identity/canonical-catalog.js:4",
+      "sampledSeconds": 0.77142
+    },
+    {
+      "frame": "process @noble/hashes/sha2.js:71",
+      "sampledSeconds": 0.685998
+    },
+    {
+      "frame": " dist/rotation/assess.js:443",
+      "sampledSeconds": 0.633166
+    },
+    {
+      "frame": "encode node:internal/encoding:354",
+      "sampledSeconds": 0.569335
+    },
+    {
+      "frame": " dist/rotation/search.js:329",
+      "sampledSeconds": 0.516786
+    },
+    {
+      "frame": "place dist/rotation/search.js:73",
+      "sampledSeconds": 0.475639
+    },
+    {
+      "frame": "encodeUtf8String :-1",
+      "sampledSeconds": 0.441667
+    },
+    {
+      "frame": "best dist/rotation/search.js:327",
+      "sampledSeconds": 0.420797
+    },
+    {
+      "frame": "searchRotations dist/rotation/search.js:362",
+      "sampledSeconds": 0.39217
+    },
+    {
+      "frame": "estimate dist/rotation/climate.js:707",
+      "sampledSeconds": 0.374421
+    },
+    {
+      "frame": "dayNumber dist/rotation/days.js:7",
+      "sampledSeconds": 0.33854
+    },
+    {
+      "frame": "finalize dist/rotation/assess.js:183",
+      "sampledSeconds": 0.321203
+    },
+    {
+      "frame": " dist/rotation/reasons.js:23",
+      "sampledSeconds": 0.281167
+    },
+    {
+      "frame": "extend dist/rotation/search.js:245",
+      "sampledSeconds": 0.27221
+    },
+    {
+      "frame": "exposure dist/rotation/climate.js:182",
+      "sampledSeconds": 0.254749
+    },
+    {
+      "frame": "season dist/rotation/climate.js:445",
+      "sampledSeconds": 0.252335
+    },
+    {
+      "frame": "rotationExtremes dist/rotation/climate.js:575",
+      "sampledSeconds": 0.231134
+    },
+    {
+      "frame": " dist/rotation/assess.js:449",
+      "sampledSeconds": 0.220831
+    },
+    {
+      "frame": "orderedReasons dist/rotation/reasons.js:22",
+      "sampledSeconds": 0.216668
+    },
+    {
+      "frame": "nextOccurrence dist/rotation/search.js:52",
+      "sampledSeconds": 0.214833
+    },
+    {
+      "frame": "vulnerability dist/rotation/climate.js:231",
+      "sampledSeconds": 0.209126
+    },
+    {
+      "frame": " dist/identity/canonical-catalog.js:10",
+      "sampledSeconds": 0.185204
+    },
+    {
+      "frame": "slotWaterTerms dist/rotation/climate.js:509",
+      "sampledSeconds": 0.174625
+    },
+    {
+      "frame": "values dist/rotation/assess.js:433",
+      "sampledSeconds": 0.15729
+    },
+    {
+      "frame": "waterEstimate dist/rotation/climate.js:481",
+      "sampledSeconds": 0.151371
+    },
+    {
+      "frame": " dist/rotation/search.js:335",
+      "sampledSeconds": 0.13571
+    },
+    {
+      "frame": "(program) :-1",
+      "sampledSeconds": 0.131708
+    },
+    {
+      "frame": " dist/rotation/assess.js:445",
+      "sampledSeconds": 0.124831
+    },
+    {
+      "frame": " dist/rotation/assess.js:825",
+      "sampledSeconds": 0.117664
+    },
+    {
+      "frame": "shiftYears dist/rotation/days.js:29",
+      "sampledSeconds": 0.107997
+    },
+    {
+      "frame": "rotationWater dist/rotation/climate.js:530",
+      "sampledSeconds": 0.094704
+    },
+    {
+      "frame": " dist/rotation/benefits.js:13",
+      "sampledSeconds": 0.069835
+    }
+  ],
+  "hostDiagnostics": {
+    "processInventoryExitCode": 127,
+    "processInventoryError": "operation not permitted: ps",
+    "thermalWarnings": "none recorded",
+    "performanceWarnings": "none recorded",
+    "lowPowerMode": 0,
+    "memoryFreePercentage": 49
+  },
+  "causeConfirmed": false
+}

@@ -1,0 +1,589 @@
+{
+  "id": "potato",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Potato (main season)",
+    "localNames": [{ "language": "fr", "name": "Pomme de terre" }],
+    "scientificName": "Solanum tuberosum L.",
+    "family": "Solanaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-potato",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Solanum tuberosum L.\""
+      },
+      {
+        "sourceId": "ardna-vegetable-reference",
+        "locator": "PDF page 13, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine.",
+        "page": 13,
+        "quote": "la culture de pomme de terre"
+      }
+    ]
+  },
+  "harvestProduct": "root_tuber",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "spunta",
+      "name": "Spunta",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "high",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.spunta"
+      },
+      "notes": "cultivar; Dutch; dominant Moroccan variety"
+    },
+    {
+      "id": "desiree",
+      "name": "Desiree",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.desiree"
+      },
+      "notes": "cultivar; Dutch; red skin"
+    },
+    {
+      "id": "nicola",
+      "name": "Nicola",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.nicola"
+      },
+      "notes": "cultivar; German; yellow flesh, salad type"
+    },
+    {
+      "id": "mondial",
+      "name": "Mondial",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.mondial"
+      },
+      "notes": "cultivar; Dutch"
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.atlas"
+      },
+      "notes": "cultivar; Dutch"
+    },
+    {
+      "id": "elodie",
+      "name": "Elodie",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.elodie"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "bintje",
+      "name": "Bintje",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.bintje"
+      },
+      "notes": "cultivar; Dutch"
+    },
+    {
+      "id": "agria",
+      "name": "Agria",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.agria"
+      },
+      "notes": "cultivar; German; frying"
+    },
+    {
+      "id": "lady-rosetta",
+      "name": "Lady Rosetta",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.lady-rosetta"
+      },
+      "notes": "cultivar; UK; crisping"
+    },
+    {
+      "id": "fabula",
+      "name": "Fabula",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.potato.fabula"
+      },
+      "notes": "cultivar"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "locator": "PDF page 13",
+          "interpretation": "context_only",
+          "note": "National presence.",
+          "page": 13,
+          "quote": "elle est devenue cultivable pratiquement dans toutes les régions du Maroc"
+        }
+      ],
+      "note": "National reference; needs irrigation in most places."
+    }
+  ],
+  "rules": [
+    {
+      "id": "potato-sowing-main",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "locator": "PDF page 13",
+          "interpretation": "normalized",
+          "note": "Main season; the other four planting seasons are not modelled.",
+          "page": 13,
+          "quote": "La plantation s'effectue entre Janvier et Février"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Main season only.",
+      "metric": "planting_window",
+      "start": "01-01",
+      "end": "02-29",
+      "precision": "full_month"
+    },
+    {
+      "id": "potato-duration",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-souss",
+          "locator": "PDF page 19, 10.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 19,
+          "quote": "La durée complète du cycle végétatif vari d'environ 80 à 150 jours"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Depends on variety.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 80,
+      "maxDays": 150
+    },
+    {
+      "id": "potato-frost",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "locator": "PDF page 13",
+          "interpretation": "normalized",
+          "note": "Frost encoded as a minimum below 0 °C; the guide gives no figure.",
+          "page": 13,
+          "quote": "La pomme de terre est très sensible au gel"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Any frost day counts.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "potato-soil-ph",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-rsk",
+          "locator": "PDF page 7",
+          "interpretation": "normalized",
+          "note": "Range as written; the guide does not state the method.",
+          "page": 7,
+          "quote": "dans un sol légèrement acide (pH=5.5 à 6)"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Preference from the ONCA sheet; warns only.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 5.5,
+      "max": 6
+    },
+    {
+      "id": "potato-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Potato",
+          "interpretation": "normalized",
+          "note": "Mid 1.15, end 0.75.",
+          "page": null,
+          "quote": "Potato 1.15 0.75"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Roots and tubers group",
+          "interpretation": "normalized",
+          "note": "Initial 0.5 from the group.",
+          "page": null,
+          "quote": "Roots and Tubers 0.5 1.10 0.95"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Potato",
+          "interpretation": "normalized",
+          "note": "Stage shares, using 45 for the mid stage.",
+          "page": null,
+          "quote": "25 30 30/45 30 115/130 Jan/Nov (Semi) Arid Climate"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 1.15,
+      "kcEnd": 0.75,
+      "stageLengths": [25, 30, 45, 30]
+    },
+    {
+      "id": "a-potato-heat-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-fao-yield-water",
+          "locator": "PDF page 202 / printed page 187, Potato — Crop response to water",
+          "interpretation": "normalized",
+          "note": "FAO explicitly discusses soil and air temperatures together, and does not identify daily maximum air temperature, a specific stage, or exposure duration. Do not assign those fields from context.",
+          "page": 202,
+          "quote": "heat stress is 35 oC or higher"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Damage limit (damage) at stage \"whole_cycle\". Quote re-found in the saved source text.",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "c-potato-minimum-return-interval-minimum-return-interval",
+      "citations": [
+        {
+          "sourceId": "rs-onca-vegetables",
+          "locator": "PDF page 42 (pdftotext page split, re-verified 2026-11-06), potato chapter, tuber-moth protection section",
+          "interpretation": "normalized",
+          "note": "Stated as general good practice inside a passage about protecting tubers from the potato tuber moth, not as a disease-specific exception. Keep the 5-6 year range rather than picking one endpoint.",
+          "page": 42,
+          "quote": "en principe, une bonne rotation amène la pomme de terre sur le même terrain tous les 5 ou 6 ans"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Source range 5–6 years; the larger is used. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 6
+    },
+    {
+      "id": "t-c-potato-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation guidance for the botanical family: cereals or legumes before potato",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.potato.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-potato-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "high",
+        "basis": "general rotation guidance for the botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.potato.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Solanaceae"
+    },
+    {
+      "id": "t-fill-potato-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 35 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.potato.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    }
+  ],
+  "references": [
+    {
+      "id": "c-potato-minimum-return-interval-background-8",
+      "topic": "background",
+      "summary": "Return interval 5 years under condition: nematode management.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-pntta-roots",
+          "locator": "PDF/printed pages 1–2, potato — Principaux ennemis, continuation",
+          "interpretation": "normalized",
+          "note": "The source explicitly extends its return rule to a solanaceous crop. Preserve the nematode-management context and the source's five-year return wording; do not reinterpret as five intervening full years.",
+          "page": null,
+          "quote": "avant cinq années"
+        }
+      ]
+    },
+    {
+      "id": "c-potato-minimum-return-interval-verticillium-alternative-background-9",
+      "topic": "background",
+      "summary": "Return interval 3 years under condition: Verticillium guidance.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-onca-vegetables",
+          "locator": "PDF/printed page 31, Verticilliose — Lutte",
+          "interpretation": "normalized",
+          "note": "The guide gives a minimum three-year interval between solanaceous crops in its Verticillium subsection. This differs in condition and duration from the general five-year nematode advice in PNTTA. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "id": "f-potato-observed-yield-yield-35",
+      "topic": "yield",
+      "summary": "Yield 23.04–23.04 t/ha (product tubers; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 23.04, "max": 23.04 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 67 / printed page 64, Table 37, Pomme de terre row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. Source gives the printed productivity directly. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "id": "f-potato-settat-2015-2016-yield-36",
+      "topic": "yield",
+      "summary": "Yield 35–35 t/ha (product tubers; years 2015-2016; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 35, "max": 35 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 71, Production agricole, Pommes de terre row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "id": "a-potato-heat-background-84",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 30 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Solanum tuberosum\"; field TMAX=30",
+          "interpretation": "normalized",
+          "note": "CONFLICT to record, not resolve: EcoCrop's whole-species absolute maximum (30 °C) is lower than the FAO-66 'heat stress is 35 °C or higher' figure already on file. Both are tier-2 FAO-family sources; neither states a daily-maximum air basis or growth stage. Flag both values for agronomist reconciliation. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "k-potato-background-63",
+      "topic": "background",
+      "summary": "Tuber crop; harvest product can be early new potatoes or mature storage tubers. Frost can kill foliage even where protected underground organs survive. High soil temperature can impair tuber initiation and growth; soil and air heat measurements are not interchangeable. Solanaceous crops can share pathogens; breaks must account for volunteers and the particular nematode or disease. Tuber initiation, canopy growth and bulking have different water and temperature sensitivities; seed-tuber health matters.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.potato"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Early, late, off-season and mountain crops are in the source but not modelled."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Moroccan soils are usually above the preferred pH, so most fields will show this warning.",
+    "Offered for irrigated fields only: the sources describe irrigated production.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

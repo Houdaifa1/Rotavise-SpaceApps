@@ -1,0 +1,999 @@
+{
+  "id": "carrot",
+  "version": "0.11.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Carrot",
+    "localNames": [{ "language": "fr", "name": "Carotte" }],
+    "scientificName": "Daucus carota L.",
+    "family": "Apiaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-carrot",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Daucus carota L.\""
+      },
+      {
+        "sourceId": "pntta-roots",
+        "locator": "PDF page 4",
+        "interpretation": "direct",
+        "note": "French name as written.",
+        "page": 4,
+        "quote": "LA CAROTTE"
+      }
+    ]
+  },
+  "harvestProduct": "root_tuber",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "nantes-types",
+      "name": "Nantes types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.carrot.nantes-types"
+      },
+      "notes": "type group; dominant in Morocco"
+    },
+    {
+      "id": "chantenay-types",
+      "name": "Chantenay types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.carrot.chantenay-types"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "kuroda-types",
+      "name": "Kuroda types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.carrot.kuroda-types"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "flakkee-types",
+      "name": "Flakkee types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.carrot.flakkee-types"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "nantaise-2",
+      "name": "Nantaise 2",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.nantaise-2"
+      }
+    },
+    {
+      "id": "touchon",
+      "name": "Touchon",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.touchon"
+      }
+    },
+    {
+      "id": "danvers-126",
+      "name": "Danvers 126",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.danvers-126"
+      }
+    },
+    {
+      "id": "imperator-58",
+      "name": "Imperator 58",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.imperator-58"
+      }
+    },
+    {
+      "id": "berlicum",
+      "name": "Berlicum",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.berlicum"
+      }
+    },
+    {
+      "id": "autumn-king",
+      "name": "Autumn King",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.autumn-king"
+      }
+    },
+    {
+      "id": "nairobi",
+      "name": "Nairobi",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.nairobi"
+      }
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.napoli"
+      }
+    },
+    {
+      "id": "bolero",
+      "name": "Bolero",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.bolero"
+      }
+    },
+    {
+      "id": "chantenay-a-coeur-rouge",
+      "name": "Chantenay à coeur rouge",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.carrot.chantenay-a-coeur-rouge"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "locator": "PDF page 4",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin.",
+          "page": 4,
+          "quote": "LA CAROTTE"
+        }
+      ],
+      "note": "National bulletin; irrigated; check your local calendar."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.carrot.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-souss-massa",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.carrot.SMA"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.carrot.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.carrot.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.carrot.TAD"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "carrot-sowing",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": null,
+          "quote": "30 40 60 20 150 Feb/Mar Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO Mediterranean planting month; the Moroccan bulletin gives no date.",
+      "metric": "planting_window",
+      "start": "02-01",
+      "end": "03-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "carrot-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "150 days.",
+          "page": null,
+          "quote": "30 40 60 20 150 Feb/Mar Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO Mediterranean row.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 150,
+      "maxDays": 150
+    },
+    {
+      "id": "carrot-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values.",
+          "page": null,
+          "quote": "Carrots 1.05 0.95"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group.",
+          "page": null,
+          "quote": "Small Vegetables 0.7 1.05 0.95"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "30 40 60 20 150 Feb/Mar Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.7,
+      "kcMid": 1.05,
+      "kcEnd": 0.95,
+      "stageLengths": [30, 40, 60, 20]
+    },
+    {
+      "id": "carrot-heat",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "locator": "PDF page 4",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": 4,
+          "quote": "A une température supérieure à 30˚C"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Leaf growth slows and roots lose market value.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    },
+    {
+      "id": "a-carrot-cold-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-fao-frost-chapter4",
+          "locator": "Chapter 4, Table 4.5, germination column, Carrot row",
+          "interpretation": "normalized",
+          "note": "Field-crop critical injury range reproduced by FAO, not the harvested-product freezing table. Preserve the published endpoints without selecting one. A daily-minimum air metric, stage dates and Moroccan cultivar validation are not supplied.",
+          "page": null,
+          "quote": "Carrot -6, -7"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Damage limit (damage) at stage \"germination\". Quote re-found in the saved source text.",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "germination",
+      "stageWindow": null,
+      "lowerDegC": -6,
+      "upperDegC": null
+    },
+    {
+      "id": "a-carrot-cold-temperature-2",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Daucus carota\"; fields KTMP=0, KTMPR=-1",
+          "interpretation": "normalized",
+          "note": "KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "c-carrot-minimum-return-interval-minimum-return-interval",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-roots",
+          "locator": "PDF/printed page 4, carrot — Principaux ennemis, right column",
+          "interpretation": "normalized",
+          "note": "Five years before the same carrot crop returns, to reduce Alternaria and nematode problems. Both saved original-host and ARDNA PDFs show 5; a search-index rendering of 6 is rejected. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 4
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 5
+    },
+    {
+      "id": "c-carrot-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-roots",
+          "locator": "PDF/printed page 4, carrot — Principaux ennemis, right column",
+          "interpretation": "normalized",
+          "note": "The restriction is alfalfa-specific, associated with cavity spot. It does not prohibit all Fabaceae. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 4
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "g-carrot-pests-crop-health-break",
+      "citations": [
+        {
+          "sourceId": "rs-pntta-carrot-web",
+          "locator": "Section 'Principaux ennemis de la culture et méthodes de lutte'",
+          "interpretation": "normalized",
+          "note": "Direct quote naming the main named pests (aphids, nematodes, leafminer) and a parasitic weed (dodder); the stated minimum return interval (5 years) is recorded alongside for context though it belongs to section C, not this item. No treatment, pesticide or dose recorded.",
+          "page": null,
+          "quote": "Les mauvaises herbes (cuscute), les pucerons, les nématodes et la mineuse sont les ennemis les plus redoutables de la culture. ... La carotte ne doit pas revenir sur la même parcelle avant 5 années afin d'éviter l'alternaria et les nématodes."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "5 years without host crops after Aphids, root-knot nematodes and leafminer (named together as the main enemies; a parasitic weed, dodder, is also named).",
+      "metric": "crop_health_break",
+      "issueId": "aphids-root-knot-nematodes-and-leafminer-named-together-as-the-main--3",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "t-c-carrot-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family: cereals leave a clean seedbed with few carrot pests",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.carrot.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-fill-carrot-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -6 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.carrot.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -6,
+      "upperDegC": null
+    },
+    {
+      "id": "c11-carrot-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.carrot"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7
+    },
+    {
+      "id": "c11-carrot-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.carrot"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1
+    },
+    {
+      "id": "c11-carrot-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.carrot"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-carrot-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.carrot"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-carrot-break-sclerotinia-minor",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.carrot.sclerotinia-minor"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Lettuce drop (Sclerotinia minor).",
+      "metric": "crop_health_break",
+      "issueId": "sclerotinia-minor",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-carrot-break-streptomyces-scabies",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.carrot.streptomyces-scabies"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Common scab of potato.",
+      "metric": "crop_health_break",
+      "issueId": "streptomyces-scabies",
+      "minimumBreakDays": 1095
+    },
+    {
+      "id": "c11-carrot-break-orobanche-crenata",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.carrot.orobanche-crenata"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Broomrape of legumes.",
+      "metric": "crop_health_break",
+      "issueId": "orobanche-crenata",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "c11-carrot-break-cercospora-carotae",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.carrot.cercospora-carotae"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Cercospora leaf spot of carrot.",
+      "metric": "crop_health_break",
+      "issueId": "cercospora-carotae",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-carrot-break-helicobasidium-purpureum",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.carrot.helicobasidium-purpureum"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Violet root rot.",
+      "metric": "crop_health_break",
+      "issueId": "helicobasidium-purpureum",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "c11-carrot-break-plasmopara-umbelliferarum",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.carrot.plasmopara-umbelliferarum"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Downy mildew of umbellifers.",
+      "metric": "crop_health_break",
+      "issueId": "plasmopara-umbelliferarum",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-carrot-break-meloidogyne-incognita",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.carrot.meloidogyne-incognita"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Southern root-knot nematode.",
+      "metric": "crop_health_break",
+      "issueId": "meloidogyne-incognita",
+      "minimumBreakDays": 1095
+    }
+  ],
+  "references": [
+    {
+      "id": "f-carrot-observed-yield-yield-14",
+      "topic": "yield",
+      "summary": "Yield 10–10 t/ha (product carrot roots; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 10, "max": 10 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 67 / printed page 64, Table 37, Carotte row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. No farming-system breakdown. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "id": "f-carrot-settat-2015-2016-yield-15",
+      "topic": "yield",
+      "summary": "Yield 35–35 t/ha (product roots; years 2015-2016; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 35, "max": 35 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 71, Production agricole, Carottes row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "id": "k-carrot-background-47",
+      "topic": "background",
+      "summary": "Cool-season vegetable grown for its storage root. Established roots and exposed young tissues differ in freezing response. Hot conditions can impair root growth and eating quality. Disease-specific preceding-crop risks matter; an apparently unrelated crop can still host a root pathogen. Compaction, stones and root damage can cause forking; root shape is not a disease diagnosis on its own.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.carrot"
+      }
+    },
+    {
+      "id": "c11-carrot-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.carrot"
+      }
+    },
+    {
+      "id": "c11-carrot-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.carrot"
+      }
+    },
+    {
+      "id": "c11-carrot-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.carrot"
+      }
+    },
+    {
+      "id": "c11-carrot-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.carrot"
+      }
+    },
+    {
+      "id": "c11-carrot-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.carrot"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

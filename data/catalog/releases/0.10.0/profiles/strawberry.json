@@ -1,0 +1,524 @@
+{
+  "id": "strawberry",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Strawberry",
+    "localNames": [
+      { "language": "fr", "name": "Fraisier" },
+      { "language": "ar", "name": "الفراولة" }
+    ],
+    "scientificName": "Fragaria × ananassa (Duchesne ex Weston) Duchesne ex Rozier",
+    "family": "Rosaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:strawberry"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "chandler-gariguette-douglas-osso-grande-selva",
+      "name": "Chandler, Gariguette, Douglas, Osso Grande, Selva",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section V Le fraisier",
+          "interpretation": "normalized",
+          "note": "2003 report; strawberry crop id is not in catalogue 0.9.0.",
+          "page": null,
+          "quote": "chandler, gauriguette, douglas, osso grande et selva"
+        }
+      ],
+      "notes": "cultivar_list"
+    },
+    {
+      "id": "camarosa",
+      "name": "Camarosa",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "high",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.strawberry.camarosa"
+      },
+      "notes": "cultivar; USA (California); main export cultivar in the Loukkos"
+    },
+    {
+      "id": "fortuna",
+      "name": "Fortuna",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.strawberry.fortuna"
+      },
+      "notes": "cultivar; USA (Florida)"
+    },
+    {
+      "id": "festival",
+      "name": "Festival",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.strawberry.festival"
+      },
+      "notes": "cultivar; USA (Florida)"
+    },
+    {
+      "id": "sabrina",
+      "name": "Sabrina",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.strawberry.sabrina"
+      },
+      "notes": "cultivar; Spanish"
+    },
+    {
+      "id": "candonga",
+      "name": "Candonga",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.strawberry.candonga"
+      },
+      "notes": "cultivar; Spanish"
+    },
+    {
+      "id": "albion",
+      "name": "Albion",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.strawberry.albion"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "san-andreas",
+      "name": "San Andreas",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.strawberry.san-andreas"
+      },
+      "notes": "cultivar; USA"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:strawberry"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "a-strawberry-cold-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-mb-strawberry-frost",
+          "locator": "section \"Strawberries Frost Tolerance and Injury Symptoms\"",
+          "interpretation": "normalized",
+          "note": "The source gives per-stage 30-minute, 90%-kill thresholds. The most conservative (least cold-tolerant) named flowering stage is full bloom at -1°C; earlier (tight bud, -5°C) and later (immature fruit, -2.2°C) stages tolerate more cold. -1°C is recorded as the flowering-stage damage limit because it is the stage this catalog's existing crops label 'flowering' and is the most restrictive value for that stage.",
+          "page": null,
+          "quote": "Strawberry flower buds and fruit are susceptible to frost injury any time after bud break (-1ºC or lower)... Strawberry flower buds can tolerate lower frost temperatures depending on its stage of development. For example tight bud flower stage can tolerate -5ºC, tight with white petals -2.2ºC, full bloom -1ºC, past full bloom and immature fruit can tolerate -2.2ºC. Note: These temperatures would have to be present for 30 minutes with an expected kill rate of 90%."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Damage limit (damage) at stage \"flowering\". Quote re-found in the saved source text.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": -1,
+      "upperDegC": null
+    },
+    {
+      "id": "b-strawberry-planting-window-conflict-iav-blog-planting-window",
+      "citations": [
+        {
+          "sourceId": "rs-iav-blog-fraisier",
+          "locator": "section on planting dates",
+          "interpretation": "normalized",
+          "note": "A different set of dates from the le360/INRA statement (15 Sep - early Oct). Cannot be reconciled from the sources at hand: they may refer to different plant types or regions, or the blog may be wrong. Do not choose silently.",
+          "page": null,
+          "quote": "In Morocco, optimum planting dates are located: (1) between November 10 and December 15 for fresh plants and (2) between 1 July and 15 August for plants"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "11-10",
+      "end": "12-15",
+      "precision": "exact_day"
+    },
+    {
+      "id": "r-a-strawberry-crown-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "dormant crowns survive to roughly -10 C with cover; relevant only for open-field dormant plants, not Moroccan lowland production",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.A.strawberry.crown_cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -10,
+      "upperDegC": null
+    },
+    {
+      "id": "r-b-strawberry-cycle-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "recall of Mediterranean tunnel strawberry practice",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.B.strawberry.cycle"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 240,
+      "maxDays": 300
+    },
+    {
+      "id": "t-a-strawberry-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: fruit set and quality fall and sunburn rises above about 30-35 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.strawberry.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-c-strawberry-rotation-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: Verticillium and Phytophthora build up after Solanaceae and strawberry; 3 to 4 years break commonly advised",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.strawberry.rotation"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-c-strawberry-rotation-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: Verticillium and Phytophthora build up after Solanaceae and strawberry; 3 to 4 years break commonly advised",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.strawberry.rotation"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-strawberry-rotation-preferred-predecessor-family-2",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: Verticillium and Phytophthora build up after Solanaceae and strawberry; 3 to 4 years break commonly advised",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.strawberry.rotation"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-c-strawberry-rotation-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: Verticillium and Phytophthora build up after Solanaceae and strawberry; 3 to 4 years break commonly advised",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.strawberry.rotation"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Solanaceae"
+    },
+    {
+      "id": "t-c-strawberry-rotation-prohibited-predecessor-family-2",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: Verticillium and Phytophthora build up after Solanaceae and strawberry; 3 to 4 years break commonly advised",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.strawberry.rotation"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Rosaceae"
+    },
+    {
+      "id": "t-fill-strawberry-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -8 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.strawberry.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -8,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-strawberry-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 38 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.strawberry.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    }
+  ],
+  "references": [
+    {
+      "id": "b-strawberry-planting-window-pass2-background-86",
+      "topic": "background",
+      "summary": "Planting: 09-15 to null",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-le360-fruits-rouges",
+          "locator": "paragraph beginning \"Depuis 2010, de nouvelles variétés sont cultivées\"",
+          "interpretation": "normalized",
+          "note": "Start 15 September is explicit; the end is \"early October\" with no day. Recorded as a partial window. The page (a 2019 press article) attributes the dates to INRA but the INRA original was not found. This pass supersedes the not_found entry B.strawberry.planting_window from pass 1.",
+          "page": null,
+          "quote": "Les dates de plantation varient beaucoup selon le type de plant utilisé, le climat général de la région et les variétés choisies. Au Maroc, les dates de plantation optimales se situent entre le 15 septembre et début octobre, précise l’INRA."
+        }
+      ]
+    },
+    {
+      "id": "b-strawberry-cycle-duration-pass2-background-87",
+      "topic": "background",
+      "summary": "Cycle: {\"basis\":\"planting_to_end_of_production\",\"minDays\":null,\"maxDays\":null,\"plantingStart\":\"09-15\",\"productionEndNote\":\"production ends in July (no day given); soil preparation starts in August\"}",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-le360-fruits-rouges",
+          "locator": "paragraph before \"Lire aussi\"",
+          "interpretation": "normalized",
+          "note": "Gives the calendar frame of the season (soil work August, planting from 15 September, production ending July) but no number of days; no duration is computed from it.",
+          "page": null,
+          "quote": "Les travaux du sol commencent en août au sein des exploitations et la fin de la production s’achevant en juillet"
+        }
+      ]
+    },
+    {
+      "id": "a-strawberry-heat-ecocrop-background-88",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 28 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Fragaria x ananassa\"; field TMAX",
+          "interpretation": "normalized",
+          "note": "Same reading as claude-supplement-A.json: the field is an absolute species-level bound used for monthly climate matching; no daily-extreme basis, growth stage or duration is stated. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-f-strawberry-observed-yield-yield-554",
+      "topic": "yield",
+      "summary": "Yield 30–60 t/ha (system irrigated_under_tunnel). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 30, "max": 60 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall of intensive tunnel production in Gharb/Loukkos; not statistics",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.strawberry.observed_yield"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on."
+  ]
+}

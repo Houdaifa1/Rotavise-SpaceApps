@@ -1,0 +1,21 @@
+packages:
+  - apps/*
+  - packages/*
+saveExact: true
+strictPeerDependencies: true
+overrides:
+  "@esbuild-kit/core-utils>esbuild": "0.28.2"
+  "fast-uri@>=3.0.0 <3.1.9": "3.1.9"
+  "fast-uri@>=4.0.0 <4.2.3": "4.2.3"
+  "fastify@>=5.12.2 <5.12.6": "5.12.6"
+  "zod@<4.6.6": "4.6.6"
+engineStrict: true
+pmOnFail: error
+minimumReleaseAge: 0
+allowBuilds:
+  esbuild: true
+  "@parcel/watcher": false
+  unrs-resolver: true
+injectWorkspacePackages: true
+syncInjectedDepsAfterScripts:
+  - build

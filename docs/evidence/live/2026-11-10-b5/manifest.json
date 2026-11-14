@@ -1,0 +1,48 @@
+{
+  "recordedOn": "2026-11-10",
+  "scope": "Read-only export of public NASA evidence around the published P9 pilot. No guest tokens, owners or credentials exported. Not national coverage.",
+  "files": [
+    {
+      "file": "MOD13Q1-061-results.csv",
+      "sha256": "2cf004577fa6267145bb11e285339f57ed30381abc45900d0a6ead8b7bb3237c",
+      "bytes": 1056598,
+      "source": "rotavise_live.field_extraction_files; original AppEEARS bytes from P9"
+    },
+    {
+      "file": "pilot-extractions.json",
+      "sha256": "18455760b4097f71ab6e80da8fd7626844f2298ba3b8668989eb1d7c3d7550a3",
+      "bytes": 103012,
+      "source": "rotavise_live.field_extractions; P9 pilot results (ECOSTRESS predates policy 2; retained for comparison only)"
+    },
+    {
+      "file": "pilot-grace.json",
+      "sha256": "be84b67df95d30a50476a082692737bdbdcefce7cf2d17be3d7544d386805f2b",
+      "bytes": 7606,
+      "source": "rotavise_live.regional_water_storage; exact nearest-cell imported source values, no re-extraction or interpolation"
+    },
+    {
+      "file": "pilot-gedi.json",
+      "sha256": "1e06e0e1199e115348afb6dc9c6b10bd0b89d25064198a3e9bf5d0516d9349c5",
+      "bytes": 1691,
+      "source": "rotavise_live.regional_gedi_biomass; exact P9 imported cells in pilot service bbox"
+    },
+    {
+      "file": "../2026-11-09/NASADEM-NC-001-results.csv",
+      "source": "Original P9 raw bytes already stored in repository",
+      "sha256": "2e4b51f88487e266b9be7d24ebf2828f24d067ff7e11a67a6d8f8daf81e3fe5a",
+      "bytes": 4858
+    },
+    {
+      "file": "../2026-11-09/ECO-L2T-LSTE-002-results.csv",
+      "source": "Original P9 raw bytes already stored in repository",
+      "sha256": "e7c0e429e459bed3b1546ea9599d1212b9531b76ecf009172f929d8cd37bb2a5",
+      "bytes": 330484
+    },
+    {
+      "file": "../2026-11-09/ECO-L4T-ESI-002-results.csv",
+      "source": "Original P9 raw bytes already stored in repository",
+      "sha256": "d4be6de44174ffc38f90ce0c17ffb2cdfcf4ef69a862dbfe39293423fd75369b",
+      "bytes": 4826
+    }
+  ]
+}

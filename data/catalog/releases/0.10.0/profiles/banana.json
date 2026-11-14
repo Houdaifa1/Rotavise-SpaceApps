@@ -1,0 +1,205 @@
+{
+  "id": "banana",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Banana",
+    "localNames": [
+      { "language": "fr", "name": "Bananier" },
+      { "language": "ar", "name": "الموز" }
+    ],
+    "scientificName": "Musa acuminata Colla",
+    "family": "Musaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:banana"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "grande-naine",
+      "name": "Grande Naine",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.banana.grande-naine"
+      },
+      "notes": "cultivar; Cavendish subgroup; greenhouse, Souss"
+    },
+    {
+      "id": "dwarf-cavendish",
+      "name": "Dwarf Cavendish",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.banana.dwarf-cavendish"
+      },
+      "notes": "cultivar; Cavendish subgroup; greenhouse"
+    },
+    {
+      "id": "williams",
+      "name": "Williams",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.banana.williams"
+      },
+      "notes": "cultivar; Cavendish subgroup"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:banana"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-banana-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy/horticulture knowledge: chilling injury and growth stop below about 10-12 C; frost kills leaves",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.banana.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 10,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-banana-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: leaf scorch above about 38 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.banana.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    }
+  ],
+  "references": [
+    {
+      "id": "t-b-banana-planting-window-background-588",
+      "topic": "background",
+      "summary": "Planting: 03-01 to 04-30",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall: tissue-culture plants set out in spring under cover",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.banana.planting_window"
+      }
+    },
+    {
+      "id": "t-b-banana-duration-background-589",
+      "topic": "background",
+      "summary": "Cycle 365–450 days.",
+      "value": { "unit": "days", "min": 365, "max": 450 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: plant crop about 12 to 15 months, later ratoons faster; plantations last several years; orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.banana.duration"
+      }
+    },
+    {
+      "id": "t-c-banana-rotation-background-590",
+      "topic": "background",
+      "summary": "Rotation: orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "perennial plantation; replanting needs clean soil",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.banana.rotation"
+      }
+    },
+    {
+      "id": "t-f-banana-observed-yield-yield-591",
+      "topic": "yield",
+      "summary": "Yield 40–60 t/ha (system irrigated_under_cover). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 40, "max": 60 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall of protected production in the Souss; not statistics",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.banana.observed_yield"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

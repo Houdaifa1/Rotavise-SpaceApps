@@ -1,0 +1,1460 @@
+[
+  {
+    "item": "A.cabbage.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "cabbage",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 32,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Brassica oleracea var. capitata",
+      "commonNameAsPublished": "cabbage, Shetland cabbage, Savoy cabbage"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Brassica oleracea var. capitata\"; field TMAX",
+    "quote": "Brassica oleracea var. capitata,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=32,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature cabbage species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.cabbage"
+  },
+  {
+    "item": "A.chickpea.cold",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "chickpea",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "KTMP",
+      "sourceFieldValueDegC": 0,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's KTMP field, not a confirmed daily_minimum air-temperature reading."
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Cicer arietinum",
+      "commonNameAsPublished": "chickpea, Bengal gram, pois chiche"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Cicer arietinum\"; field KTMP",
+    "quote": "Cicer arietinum,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=-,...,KTMP=0,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "KTMP is ECOCROP's 'Killing Temperature' field. KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_minimum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature chickpea species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.chickpea"
+  },
+  {
+    "item": "A.chickpea.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "chickpea",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 35,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Cicer arietinum",
+      "commonNameAsPublished": "chickpea, Bengal gram, pois chiche"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Cicer arietinum\"; field TMAX",
+    "quote": "Cicer arietinum,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=35,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature chickpea species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.chickpea"
+  },
+  {
+    "item": "A.courgette.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "courgette",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 40,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Cucurbita pepo",
+      "commonNameAsPublished": "marrow, pumpkin, squash"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Cucurbita pepo\"; field TMAX",
+    "quote": "Cucurbita pepo,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=40,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature courgette species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.courgette"
+  },
+  {
+    "item": "A.eggplant.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "eggplant",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 40,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Solanum melongena",
+      "commonNameAsPublished": "eggplant, aubergine, brinjal"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Solanum melongena\"; field TMAX",
+    "quote": "Solanum melongena,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=40,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature eggplant species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.eggplant"
+  },
+  {
+    "item": "A.green-bean.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "green-bean",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 32,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Phaseolus vulgaris",
+      "commonNameAsPublished": "common bean, french bean"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Phaseolus vulgaris\"; field TMAX",
+    "quote": "Phaseolus vulgaris,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=32,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature green-bean species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.green-bean"
+  },
+  {
+    "item": "A.groundnut.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "groundnut",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 45,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Arachis hypogaea",
+      "commonNameAsPublished": "groundnut, peanut, arachide"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Arachis hypogaea\"; field TMAX",
+    "quote": "Arachis hypogaea,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=45,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature groundnut species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.groundnut"
+  },
+  {
+    "item": "A.melon.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "melon",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 35,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Cucumis melo",
+      "commonNameAsPublished": "rock melon, sweet melon, cantaloupe"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Cucumis melo\"; field TMAX",
+    "quote": "Cucumis melo,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=35,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature melon species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.melon"
+  },
+  {
+    "item": "A.onion.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "onion",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 30,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Allium cepa",
+      "commonNameAsPublished": "onion, potato onion, shallot"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Allium cepa\"; field TMAX",
+    "quote": "Allium cepa,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=30,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature onion species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.onion"
+  },
+  {
+    "item": "A.rapeseed.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "rapeseed",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 41,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Brassica napus",
+      "commonNameAsPublished": "rape, colza, raapzaad"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Brassica napus\"; field TMAX",
+    "quote": "Brassica napus,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=41,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature rapeseed species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.rapeseed"
+  },
+  {
+    "item": "A.table-beet.cold",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "table-beet",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "KTMP",
+      "sourceFieldValueDegC": 0,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's KTMP field, not a confirmed daily_minimum air-temperature reading."
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Beta vulgaris",
+      "commonNameAsPublished": "Silver beet, Beetroot, Sugarbeet"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Beta vulgaris\"; field KTMP",
+    "quote": "Beta vulgaris,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=-,...,KTMP=0,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "KTMP is ECOCROP's 'Killing Temperature' field. KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_minimum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature table-beet species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.table-beet"
+  },
+  {
+    "item": "A.table-beet.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "table-beet",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 35,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Beta vulgaris",
+      "commonNameAsPublished": "Silver beet, Beetroot, Sugarbeet"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Beta vulgaris\"; field TMAX",
+    "quote": "Beta vulgaris,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=35,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature table-beet species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.table-beet"
+  },
+  {
+    "item": "A.watermelon.heat",
+    "status": "found",
+    "coverage": "partial",
+    "crop": "watermelon",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": null,
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "TMAX",
+      "sourceFieldValueDegC": 40,
+      "ecocropNote": "See applicabilityNote: this is ECOCROP's TMAX field, not a confirmed daily_maximum air-temperature reading."
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference (FAO ECOCROP global species model)"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Citrullus lanatus",
+      "commonNameAsPublished": "watermelon, pasteque"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Citrullus lanatus\"; field TMAX",
+    "quote": "Citrullus lanatus,,...,TOPMN=-,TOPMX=-,TMIN=-,TMAX=40,...,KTMP=-,KTMPR=-,...",
+    "translation": "n/a (numeric database field, not prose)",
+    "interpretation": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "FAO ECOCROP is a global species-level model, not Moroccan-specific, and this field's time-basis is not confirmed as a daily extreme. Treat as the closest available FAO-tier evidence, not a catalog-ready threshold.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "confirmed daily_maximum air basis",
+      "growth-stage applicability and timing",
+      "Moroccan cultivar validation"
+    ],
+    "priorSearchLog": [
+      {
+        "query": "FAO Ecocrop database TMIN TMAX absolute temperature watermelon species sheet",
+        "where": "web search + EcoCrop_DB.csv bulk export (openclim/ecocrop GitHub mirror of ecocrop.fao.org)",
+        "on": "2026-11-06"
+      }
+    ],
+    "trainingKnowledgeRef": "K.watermelon"
+  },
+  {
+    "item": "A.courgette.cold",
+    "status": "not_found",
+    "crop": "courgette",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Cucurbita pepo killing temperature frost",
+        "where": "EcoCrop_DB.csv (KTMP=NA for this species)",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "courgette zucchini frost kill temperature daily minimum study Morocco OR Mediterranean",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "EcoCrop records no killing-temperature value for Cucurbita pepo (KTMP=NA). General horticultural sources agree cucurbits are chilling-sensitive near 0 °C but none gave a quotable, page-cited daily-minimum figure from a tier 1-3 source."
+  },
+  {
+    "item": "A.eggplant.cold",
+    "status": "not_found",
+    "crop": "eggplant",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Solanum melongena killing temperature frost",
+        "where": "EcoCrop_DB.csv (KTMP=NA for this species)",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "aubergine eggplant frost damage temperature France OR Morocco extension bulletin",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "A French regional bulletin gives a minimum air temperature of 16 °C as a preference, not a damage/kill threshold; EcoCrop has no KTMP for this species. No citable daily-minimum damage figure found."
+  },
+  {
+    "item": "A.green-bean.cold",
+    "status": "not_found",
+    "crop": "green-bean",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Phaseolus vulgaris killing temperature frost",
+        "where": "EcoCrop_DB.csv (KTMP=NA for this species)",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "haricot vert gel température dégâts seuil",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "A German seed-germination table states the bean 'ne tolère pas le gel' (does not tolerate frost) with no numeric threshold. EcoCrop has no KTMP value for this species."
+  },
+  {
+    "item": "A.lentil.cold",
+    "status": "not_found",
+    "crop": "lentil",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Lens culinaris killing temperature frost",
+        "where": "EcoCrop_DB.csv (KTMP=NA for this species)",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "lentil frost damage Morocco ICARDA Marchouch minimum temperature study",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No killing-temperature value in EcoCrop for Lens culinaris; the Choukri et al. 2020 ICARDA/Morocco paper already saved for A.lentil.heat addresses heat stress only and does not state a cold-damage threshold."
+  },
+  {
+    "item": "A.lettuce.cold",
+    "status": "not_found",
+    "crop": "lettuce",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Lactuca sativa",
+        "where": "EcoCrop_DB.csv bulk export — no row for Lactuca sativa in this mirror",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "lettuce Lactuca sativa frost kill temperature seedling extension",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No ECOCROP entry exists for Lactuca sativa in the bulk export used. Extension sources (Oregon State, NC State) describe mature lettuce as tolerant of 'a light frost' and seedlings as more vulnerable, with no numeric daily-minimum figure and no FAO/Moroccan page citation."
+  },
+  {
+    "item": "A.lettuce.heat",
+    "status": "not_found",
+    "crop": "lettuce",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Lactuca sativa heat bolting temperature",
+        "where": "EcoCrop_DB.csv bulk export — no row for Lactuca sativa in this mirror",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "lettuce bolting temperature threshold daily maximum research",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "Sources disagree and are secondary/commercial (Colorado State's bolting project: above 85°F/29.4°C; another gardening guide: above 75°F/23.9°C): no single FAO/Moroccan-tier, page-cited figure found."
+  },
+  {
+    "item": "A.watermelon.cold",
+    "status": "not_found",
+    "crop": "watermelon",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Citrullus lanatus killing temperature frost",
+        "where": "EcoCrop_DB.csv (KTMP=NA for this species)",
+        "on": "2026-11-06"
+      },
+      {
+        "query": "watermelon frost damage temperature threshold Mediterranean",
+        "where": "web search",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "EcoCrop has no killing-temperature value for Citrullus lanatus. No other page-cited source found."
+  },
+  {
+    "item": "A.cabbage.cold",
+    "status": "found",
+    "coverage": "partial",
+    "supplementTo": "existing facts.json record A.cabbage.cold (FAO frost chapter 4, -5/-7 °C germination-stage critical range)",
+    "crop": "cabbage",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "KTMP",
+      "sourceFieldValueDegC": -1
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "international reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Brassica oleracea var. capitata"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Brassica oleracea var. capitata\"; fields KTMP=-1, KTMPR=-10",
+    "quote": "KTMP=-1,KTMPR=-10",
+    "translation": "n/a (numeric database field)",
+    "interpretation": "KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage.",
+    "confidence": "low",
+    "applicabilityNote": "CONFLICT to record, not resolve: EcoCrop's killing temperature (-1 °C) is much warmer than the FAO frost-chapter germination-stage critical injury range already on file (-5 to -7 °C). The two are plausibly different metrics (whole-plant kill point vs germination-stage critical injury range) rather than a true contradiction, but this is not confirmed by either source and should go to an agronomist as an open question.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "reconciliation with the existing -5/-7 °C FAO figure",
+      "daily_minimum air basis",
+      "stage timing"
+    ],
+    "trainingKnowledgeRef": "K.cabbage"
+  },
+  {
+    "item": "A.carrot.cold",
+    "status": "found",
+    "coverage": "partial",
+    "supplementTo": "existing facts.json record A.carrot.cold (FAO frost chapter 4, -6/-7 °C germination-stage critical range)",
+    "crop": "carrot",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "KTMP",
+      "sourceFieldValueDegC": 0
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "international reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Daucus carota"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Daucus carota\"; fields KTMP=0, KTMPR=-1",
+    "quote": "KTMP=0,KTMPR=-1",
+    "translation": "n/a (numeric database field)",
+    "interpretation": "KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage.",
+    "confidence": "low",
+    "applicabilityNote": "CONFLICT to record, not resolve: EcoCrop's killing temperature (0 °C) is much warmer than the FAO frost-chapter germination-stage critical injury range already on file (-6 to -7 °C). Flag for agronomist review rather than silently preferring one.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "reconciliation with the existing -6/-7 °C FAO figure",
+      "daily_minimum air basis",
+      "stage timing"
+    ],
+    "trainingKnowledgeRef": "K.carrot"
+  },
+  {
+    "item": "A.faba-bean.heat",
+    "status": "found",
+    "coverage": "partial",
+    "supplementTo": "existing facts.json record A.faba-bean.heat (Bishop et al. 2016, UK cultivar Wizard, 28 °C flowering t50)",
+    "crop": "faba-bean",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 32,
+      "sourceFieldName": "TMAX"
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Vicia faba"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Vicia faba\"; field TMAX=32",
+    "quote": "TMAX=32",
+    "translation": "n/a (numeric database field)",
+    "interpretation": "A whole-species absolute upper adaptability bound (32 °C), broader/later than the already-saved flowering-stage 28 °C damage figure from Bishop et al. 2016. Not contradictory (different stages/metrics); complementary context only. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "Does not resolve the missing daily_maximum basis or Moroccan validation already flagged on the existing record.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "daily_maximum air basis",
+      "stage timing",
+      "Moroccan cultivar validation"
+    ],
+    "trainingKnowledgeRef": "K.faba-bean"
+  },
+  {
+    "item": "A.lentil.heat",
+    "status": "found",
+    "coverage": "partial",
+    "supplementTo": "existing facts.json record A.lentil.heat (Choukri et al. 2020, ICARDA Marchouch, Morocco, 35 °C)",
+    "crop": "lentil",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 32,
+      "sourceFieldName": "TMAX"
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Lens culinaris"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Lens culinaris\"; field TMAX=32",
+    "quote": "TMAX=32",
+    "translation": "n/a (numeric database field)",
+    "interpretation": "CONFLICT to record, not resolve: EcoCrop's whole-species absolute maximum (32 °C) is lower than the existing tier-1 Moroccan ICARDA Marchouch reproductive-phase experimental threshold already on file (35 °C). The ICARDA figure is Moroccan field evidence and should be weighted higher by an agronomist, but both are kept on record per the no-silent-pick rule.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "reconciliation between 32 °C (EcoCrop) and 35 °C (ICARDA)",
+      "mapping to a supported stage",
+      "days/GDD stage timing"
+    ],
+    "trainingKnowledgeRef": "K.lentil"
+  },
+  {
+    "item": "A.potato.heat",
+    "status": "found",
+    "coverage": "partial",
+    "supplementTo": "existing facts.json record A.potato.heat (FAO Irrigation & Drainage Paper 66, p.187/202, 35 °C 'heat stress')",
+    "crop": "potato",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30,
+      "sourceFieldName": "TMAX"
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Solanum tuberosum"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Solanum tuberosum\"; field TMAX=30",
+    "quote": "TMAX=30",
+    "translation": "n/a (numeric database field)",
+    "interpretation": "CONFLICT to record, not resolve: EcoCrop's whole-species absolute maximum (30 °C) is lower than the FAO-66 'heat stress is 35 °C or higher' figure already on file. Both are tier-2 FAO-family sources; neither states a daily-maximum air basis or growth stage. Flag both values for agronomist reconciliation.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "reconciliation between 30 °C (EcoCrop) and 35 °C (FAO-66)",
+      "air-versus-soil basis",
+      "daily_maximum metric",
+      "growth-stage applicability"
+    ],
+    "trainingKnowledgeRef": "K.potato"
+  },
+  {
+    "item": "A.sugar-beet.cold",
+    "status": "found",
+    "coverage": "partial",
+    "supplementTo": "existing facts.json record A.sugar-beet.cold (FAO frost chapter 4, -6/-7 °C germination-stage critical range)",
+    "crop": "sugar-beet",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "KTMP",
+      "sourceFieldValueDegC": 0
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "international reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Beta vulgaris"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Beta vulgaris\"; fields KTMP=0, KTMPR=-3",
+    "quote": "KTMP=0,KTMPR=-3",
+    "translation": "n/a (numeric database field)",
+    "interpretation": "KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage.",
+    "confidence": "low",
+    "applicabilityNote": "CONFLICT to record, not resolve: EcoCrop's killing temperature (0 °C) is much warmer than the FAO frost-chapter germination-stage critical injury range already on file (-6 to -7 °C). Flag for agronomist review.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "reconciliation with the existing -6/-7 °C FAO figure",
+      "daily_minimum air basis",
+      "stage timing"
+    ],
+    "trainingKnowledgeRef": "K.sugar-beet"
+  },
+  {
+    "item": "A.groundnut.cold",
+    "status": "not_found_additional",
+    "crop": "groundnut",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Arachis hypogaea killing temperature",
+        "where": "EcoCrop_DB.csv (KTMP=NA for this species)",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No new evidence beyond the existing FAO frost-chapter -0.5/-1 °C figure already on file; EcoCrop has no killing-temperature value for this species. Existing partial record stands unchanged."
+  },
+  {
+    "item": "A.maize.cold",
+    "status": "not_found_additional",
+    "crop": "maize",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Zea mays killing temperature",
+        "where": "EcoCrop_DB.csv (KTMP=NA for this species)",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No new evidence beyond the existing FAO frost-chapter -2/-3 °C figure already on file; EcoCrop has no killing-temperature value for this species. Existing partial record stands unchanged."
+  },
+  {
+    "item": "A.melon.cold",
+    "status": "not_found_additional",
+    "crop": "melon",
+    "searched": [
+      {
+        "query": "FAO Ecocrop Cucumis melo killing temperature",
+        "where": "EcoCrop_DB.csv (KTMP=NA for this species)",
+        "on": "2026-11-06"
+      }
+    ],
+    "closestEvidence": "No new evidence beyond the existing FAO frost-chapter -0.5/-1 °C figure already on file; EcoCrop has no killing-temperature value for this species. Existing partial record stands unchanged."
+  },
+  {
+    "item": "A.pea.cold",
+    "status": "found",
+    "coverage": "partial",
+    "supplementTo": "existing facts.json record A.pea.cold (FAO frost chapter 4, -7/-8 °C germination-stage critical range)",
+    "crop": "pea",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": null,
+      "sourceFieldName": "KTMP",
+      "sourceFieldValueDegC": 0
+    },
+    "thresholdType": "damage",
+    "scope": {
+      "regions": [
+        "international reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Pisum sativum"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Pisum sativum\"; fields KTMP=0, KTMPR=-2",
+    "quote": "KTMP=0,KTMPR=-2",
+    "translation": "n/a (numeric database field)",
+    "interpretation": "KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage.",
+    "confidence": "low",
+    "applicabilityNote": "CONFLICT to record, not resolve: EcoCrop's killing temperature (0 °C) is much warmer than the FAO frost-chapter germination-stage critical injury range already on file (-7 to -8 °C). Flag for agronomist review.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "reconciliation with the existing -7/-8 °C FAO figure",
+      "daily_minimum air basis",
+      "stage timing"
+    ],
+    "trainingKnowledgeRef": "K.pea"
+  },
+  {
+    "item": "A.pea.heat",
+    "status": "found",
+    "coverage": "partial",
+    "supplementTo": "existing facts.json record A.pea.heat (Bueckert & Warkentin 2013, Canada field-pea trial, 29 °C)",
+    "crop": "pea",
+    "metric": "temperature",
+    "proposed": {
+      "basis": null,
+      "medium": null,
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30,
+      "sourceFieldName": "TMAX"
+    },
+    "thresholdType": "unconfirmed_adaptability_limit",
+    "scope": {
+      "regions": [
+        "international reference"
+      ],
+      "farmingSystem": "unspecified",
+      "cultivars": "unspecified",
+      "scientificName": "Pisum sativum"
+    },
+    "source": {
+      "localFile": ".research-sources/2026-11-06/ecocrop-db.csv",
+      "fileSha256": "4187e8846336e185c4583165211c5981855e95adfbefd897bd2bd481de48d106",
+      "bytes": 1622384,
+      "retrievedOn": "2026-11-06",
+      "retrievedAt": "2026-11-06T00:05:00+00:00",
+      "url": "https://raw.githubusercontent.com/openclim/ecocrop/master/EcoCrop_DB.csv",
+      "tier": 2,
+      "title": "ECOCROP database (bulk export), FAO ECOCROP (ecocrop.fao.org)",
+      "publisher": "FAO",
+      "year": null,
+      "language": "en",
+      "licence": "unknown",
+      "nonLocal": true,
+      "tierNote": "FAO Ecocrop is named as a tier-2 source in the task's source-priority list. Not Morocco-specific; mirrors ecocrop.fao.org's own published data fields (verified field definitions against the official ECOCROP tutorial PDF, saved as ecocrop-tutorial.pdf)."
+    },
+    "locator": "EcoCrop_DB.csv row for ScientificName=\"Pisum sativum\"; field TMAX=30",
+    "quote": "TMAX=30",
+    "translation": "n/a (numeric database field)",
+    "interpretation": "Broadly consistent with (not contradicting) the existing 29 °C Canadian field-pea flowering/pod-abortion figure. Does not add a stage timing or Moroccan validation. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields.",
+    "confidence": "low",
+    "applicabilityNote": "Supplementary only; existing record's missing fields (Moroccan green-pea applicability, stage timing) remain unresolved.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "missingFields": [
+      "Moroccan green-pea applicability",
+      "stage timing from sowing"
+    ],
+    "trainingKnowledgeRef": "K.pea"
+  }
+]

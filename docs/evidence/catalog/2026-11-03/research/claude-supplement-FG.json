@@ -1,0 +1,538 @@
+[
+  {
+    "item": "G.onion.diseases",
+    "status": "found",
+    "crop": "onion",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonNameEn": "Onion downy mildew",
+      "commonNameFr": "Mildiou de l'oignon",
+      "commonNameAr": null,
+      "scientificName": "Peronospora destructor",
+      "hostCrops": ["onion"],
+      "visibleSymptoms": "Sur feuilles, des taches claires allongées avec une discrète zonation sont observées. En condition humide, elles se recouvrent d'un feutrage gris violacé. Ces symptômes peuvent être également observés sur tige ou hampe florale.",
+      "moroccoOccurrence": {
+        "reported": true,
+        "where": ["morocco-general (ONCA/ARDNA vegetable référentiel; no specific region named in this passage)"],
+        "asOfSourceYear": null,
+        "currentDistributionVerified": false
+      },
+      "minimumBreakYears": 4
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/onca-vegetables.pdf",
+      "fileSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+      "retrievedOn": "2026-11-04",
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file621e306b6bc34-N1077-r%C3%A9f%C3%A9rentiel-culture-maraich%C3%A8res_VD-Ardna.pdf",
+      "tier": 1,
+      "title": "Référentiel technique et technico-économique — Filière cultures maraîchères",
+      "publisher": "ONCA / ARDNA",
+      "year": null,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF printed pages 61-64, section 3.8.1 'Le mildiou de l'oignon', Symptômes, and Tableau 21 (rotation minimale de 4 ans recommandée)",
+    "quote": "Sur feuilles, des taches claires allongées avec une discrète zonation sont observées. En condition humide, elles se recouvrent d'un feutrage gris violacé. ... rotation au minimum de 4 ans recommandée",
+    "translation": "On leaves, elongated pale spots with faint zonation are observed. In humid conditions they become covered with a greyish-purple felt. ... a minimum 4-year rotation is recommended.",
+    "interpretation": "Direct quote of the disease's symptom description and the stated minimum rotation break, recorded as-is from the source. No treatment, pesticide or dose recorded.",
+    "confidence": "high",
+    "applicabilityNote": "Research evidence only; occurrence is as reported in this Moroccan technical référentiel, with no specific province named in this passage. Review before catalog integration.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "found"
+  },
+  {
+    "item": "G.garlic.diseases",
+    "status": "found",
+    "crop": "garlic",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonNameEn": "Fungal diseases of garlic (no distinct description in this source; treated as shared with onion)",
+      "commonNameFr": "Maladies cryptogamiques de l'ail",
+      "commonNameAr": null,
+      "scientificName": null,
+      "hostCrops": ["garlic", "onion"],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": {
+        "reported": true,
+        "where": ["morocco-general (PNTTA bulletin 96)"],
+        "asOfSourceYear": 2002,
+        "currentDistributionVerified": false
+      },
+      "minimumBreakYears": null
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/pntta-garlic.pdf",
+      "fileSha256": "c717841cea0f74ffb8bdcd62ef52879f7fbe1ff6ecd99f1d4573a9dc72a34810",
+      "retrievedOn": "2026-11-04",
+      "url": "https://www.agrimaroc.net/bulletins/btta_96.pdf",
+      "tier": 1,
+      "title": "Fiches techniques I: L'absinthe, l'ail, le céleri, le cerfeuil, la ciboulette, la coriandre — Bulletin 96",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA / IAV Hassan II",
+      "year": 2002,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 1, garlic (L'AIL) cultivation notes",
+    "quote": "maladies cryptogamiques... (voir oignon)",
+    "translation": "fungal diseases... (see onion)",
+    "interpretation": "This Moroccan extension bulletin explicitly states garlic's fungal diseases are the same as onion's rather than describing them separately. No independent garlic-specific symptom text is given in this source; the symptom text for the shared disease profile is the one recorded under G.onion.diseases (Peronospora destructor downy mildew). No treatment, pesticide or dose recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "Weak evidence by itself: a cross-reference statement, not an independent garlic description. Review before catalog integration; a garlic-specific source (e.g. ONSSA or INRA) would strengthen this.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "partial",
+    "missingFields": ["garlic-specific visible symptoms", "scientific name as applied to garlic"],
+    "supportingEvidenceRefs": ["G.onion.diseases"]
+  },
+  {
+    "item": "G.pepper.diseases",
+    "status": "found",
+    "crop": "pepper",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonNameEn": "Powdery mildew, grey mould, downy mildew and Rhizoctonia (named as a group to protect against; no individual symptom text given)",
+      "commonNameFr": "l'oïdium, la pourriture grise, le mildiou, Rhizoctonia",
+      "commonNameAr": null,
+      "scientificName": "Botrytis cinerea (named); others (oïdium, mildiou, Rhizoctonia) named only by common/genus name in this source",
+      "hostCrops": ["pepper"],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": {
+        "reported": true,
+        "where": ["morocco-general (PNTTA bulletin 100)"],
+        "asOfSourceYear": 2003,
+        "currentDistributionVerified": false
+      },
+      "minimumBreakYears": null
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/pntta-solanums.pdf",
+      "fileSha256": "baa305f0cadb7eb13aea766234fa15e2f4b96a5a23a3c842b91a4c25c8a19c50",
+      "retrievedOn": "2026-11-04",
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file64216deb3274d-btta_100.pdf",
+      "tier": 1,
+      "title": "Fiches techniques V: La tomate, l'aubergine, le poivron, le gombo — Bulletin 100",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA / IAV Hassan II",
+      "year": 2003,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 3, LE POIVRON-PIMENT, preventive treatment paragraph",
+    "quote": "la culture doit être protégée contre l'oidium, la pourriture grise (Botrytis Cinerea), les acariens en temps chaud, le mildiou, Rhizoctonia et le coup de soleil",
+    "translation": "the crop must be protected against powdery mildew, grey mould (Botrytis cinerea), mites in hot weather, downy mildew, Rhizoctonia and sunscald",
+    "interpretation": "This is a named list of pathogens/disorders to protect against, not an individual symptom description per organism. Recorded as-is; mites and sunscald are not diseases and are excluded from this crop_issue record's disease framing (noted for completeness only). No treatment, pesticide or dose recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "Names are sourced but symptom detail per organism is not given here. A more detailed Moroccan pepper disease sheet (ONSSA/INRA) would improve this record. Research evidence only.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "partial",
+    "missingFields": ["per-organism visible symptoms", "scientific names for oïdium/mildiou/Rhizoctonia as applied here"]
+  },
+  {
+    "item": "G.tomato.diseases",
+    "status": "found",
+    "crop": "tomato",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "disease",
+      "commonNameEn": "Tomato yellow leaf curl virus (named); bacteriosis (named generically)",
+      "commonNameFr": "TYLC; bactériose",
+      "commonNameAr": null,
+      "scientificName": "Tomato yellow leaf curl virus (TYLCV, source abbreviation 'TYLC')",
+      "hostCrops": ["tomato"],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": {
+        "reported": true,
+        "where": ["Souss-Massa, Rabat, Gharb and other Moroccan tomato-growing regions named in this source for the crop generally"],
+        "asOfSourceYear": 2003,
+        "currentDistributionVerified": false
+      },
+      "minimumBreakYears": null
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/pntta-solanums.pdf",
+      "fileSha256": "baa305f0cadb7eb13aea766234fa15e2f4b96a5a23a3c842b91a4c25c8a19c50",
+      "retrievedOn": "2026-11-04",
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file64216deb3274d-btta_100.pdf",
+      "tier": 1,
+      "title": "Fiches techniques V: La tomate, l'aubergine, le poivron, le gombo — Bulletin 100",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA / IAV Hassan II",
+      "year": 2003,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 1, LA TOMATE, cultivation/pest-watch paragraph",
+    "quote": "Il faut surveiller les nématodes, les taupins, les vers gris, les pucerons, la mineuse, les acariens en temps chaud, les maladies cryptogamiques, la bactériose et le TYLC.",
+    "translation": "Nematodes, wireworms, cutworms, aphids, leafminer, mites in hot weather, fungal diseases, bacteriosis and TYLC must be monitored.",
+    "interpretation": "Named list from a Moroccan technical bulletin; TYLC and bacteriosis are the only diseases named specifically (fungal diseases are mentioned only generically as 'maladies cryptogamiques'). No individual symptom text given. No treatment, pesticide or dose recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "Research evidence only; a dedicated ONSSA/INRA tomato disease sheet with named fungal pathogens and visible symptoms would improve this record.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "partial",
+    "missingFields": ["named fungal pathogen identity", "per-organism visible symptoms"]
+  },
+  {
+    "item": "G.eggplant.diseases",
+    "status": "not_found",
+    "searched": [
+      { "query": "existing local source: pntta-solanums.pdf (Fiches techniques V: tomate, aubergine, poivron, gombo)", "where": ".research-sources/2026-11-03/pntta-solanums.plain.txt", "on": "2026-11-06" },
+      { "query": "ONSSA Maroc aubergine maladies fiche technique", "where": "web (not queried with a dedicated search this pass; time-boxed)", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "The bulletin states eggplant's installation and cultural practices ('les soins culturaux') are the same as pepper's ('L'installation de la culture est la même que pour le poivron. Les soins culturaux sont également les mêmes'), but it never explicitly extends this to diseases specifically, unlike the garlic/onion cross-reference which names 'maladies cryptogamiques' directly. Treating this as an eggplant disease record would be an inference beyond what the source states, so it is left not_found rather than invented."
+  },
+  {
+    "item": "G.carrot.pests",
+    "status": "found",
+    "crop": "carrot",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonNameEn": "Aphids, root-knot nematodes and leafminer (named together as the main enemies; a parasitic weed, dodder, is also named)",
+      "commonNameFr": "pucerons, nématodes, mineuse (et la cuscute, une plante parasite)",
+      "commonNameAr": null,
+      "scientificName": null,
+      "hostCrops": ["carrot"],
+      "visibleSymptoms": "Les maladies de la carotte sont également nombreuses et risquent de provoquer la formation de racines fourchues: Pythium, Sclerotinia, Rhizoctonia et Macrophomina spp. L'oïdium attaque aussi la culture en temps humide et chaud.",
+      "moroccoOccurrence": {
+        "reported": true,
+        "where": ["morocco-general"],
+        "asOfSourceYear": 2018,
+        "currentDistributionVerified": false
+      },
+      "minimumBreakYears": 5
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/pntta-carrot-web.html",
+      "fileSha256": "0b2fcdedbfe592a1fdbc7c39679301897e1ac3fa83b92d48638d698faa673744",
+      "retrievedOn": "2026-11-04",
+      "url": "https://www.agrimaroc.net/2018/05/27/la-carotte/",
+      "tier": 1,
+      "title": "La carotte — web republication of IAV technical sheet",
+      "publisher": "A. Skiredj, H. Elattir, A. Elfadl / IAV Hassan II / Transfert de Technologie en Agriculture",
+      "year": 2018,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "Section 'Principaux ennemis de la culture et méthodes de lutte'",
+    "quote": "Les mauvaises herbes (cuscute), les pucerons, les nématodes et la mineuse sont les ennemis les plus redoutables de la culture. ... La carotte ne doit pas revenir sur la même parcelle avant 5 années afin d'éviter l'alternaria et les nématodes.",
+    "translation": "Weeds (dodder), aphids, nematodes and leafminer are the crop's most formidable enemies. ... Carrot should not return to the same plot before 5 years, to avoid alternaria and nematodes.",
+    "interpretation": "Direct quote naming the main named pests (aphids, nematodes, leafminer) and a parasitic weed (dodder); the stated minimum return interval (5 years) is recorded alongside for context though it belongs to section C, not this item. No treatment, pesticide or dose recorded.",
+    "confidence": "high",
+    "applicabilityNote": "Research evidence only; organisms are named generically (pucerons, nématodes, mineuse) without species-level identification in this source.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "partial",
+    "missingFields": ["species-level identification of the named pests"]
+  },
+  {
+    "item": "G.courgette.pests",
+    "status": "found",
+    "crop": "courgette",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonNameEn": "Aphids, thrips, wireworms, cutworms, red spider mite (named as the crop's main enemies, alongside powdery mildew)",
+      "commonNameFr": "pucerons, thrips, taupins, vers gris, araignée rouge (et l'oïdium)",
+      "commonNameAr": null,
+      "scientificName": null,
+      "hostCrops": ["courgette"],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": { "reported": true, "where": ["morocco-general (PNTTA bulletin 99)"], "asOfSourceYear": 2002, "currentDistributionVerified": false },
+      "minimumBreakYears": null
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/pntta-cucurbits.pdf",
+      "fileSha256": "6b468db74272a50a23ac2c6ccb03a0b8f72ee21cb0995d6c864e529c33e4b5af",
+      "retrievedOn": "2026-11-04",
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file64216d582fa56-btta_99.pdf",
+      "tier": 1,
+      "title": "Fiches techniques IV: Le melon, la pastèque, les courges, le concombre, le cornichon — Bulletin 99",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA / IAV Hassan II",
+      "year": 2002,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 2, LES COURGES section, 'Principaux ennemis de la culture et méthodes de lutte'",
+    "quote": "Les principaux ennemis de la culture sont la nuile, l'oïdium, l'araignée rouge, les pucerons, les thrips, les taupins et le vers gris.",
+    "translation": "The crop's main enemies are [a word the PDF-to-text extraction renders as 'la nuile', likely a caterpillar/moth, uncertain], powdery mildew, red spider mite, aphids, thrips, wireworms and cutworms.",
+    "interpretation": "Direct quote from the LES COURGES (courgette/squash) section, which covers Cucurbita pepo (courgette group) per this bulletin's own classification. One word ('la nuile') could not be confidently identified due to a PDF text-extraction artifact; it is quoted as extracted rather than guessed. No treatment, pesticide or dose recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "Research evidence only; re-extracting the source PDF at higher fidelity would resolve the uncertain word.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "partial",
+    "missingFields": ["identity of the OCR/extraction-uncertain organism name 'la nuile'"]
+  },
+  {
+    "item": "G.melon.pests",
+    "status": "found",
+    "crop": "melon",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonNameEn": "Nematodes, broomrape, powdery mildew, fusarium wilt (list truncated by a page/column break in the source extraction before it continued)",
+      "commonNameFr": "nématodes, orobanche, oïdium, fusariose, [liste tronquée]",
+      "commonNameAr": null,
+      "scientificName": null,
+      "hostCrops": ["melon"],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": { "reported": true, "where": ["morocco-general (PNTTA bulletin 99)"], "asOfSourceYear": 2002, "currentDistributionVerified": false },
+      "minimumBreakYears": null
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/pntta-cucurbits.pdf",
+      "fileSha256": "6b468db74272a50a23ac2c6ccb03a0b8f72ee21cb0995d6c864e529c33e4b5af",
+      "retrievedOn": "2026-11-04",
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file64216d582fa56-btta_99.pdf",
+      "tier": 1,
+      "title": "Fiches techniques IV: Le melon, la pastèque, les courges, le concombre, le cornichon — Bulletin 99",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA / IAV Hassan II",
+      "year": 2002,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 1, LE MELON section, 'Traitements phytosanitaires' paragraph",
+    "quote": "Le melon est attaqué par un grand nombre de parasites (nématodes, orobanche, oïdium, fusariose,",
+    "translation": "Melon is attacked by a large number of pests (nematodes, broomrape, powdery mildew, fusarium wilt,",
+    "interpretation": "The source sentence is cut off mid-list by a page/column break in the extracted text; the list continues on the next page but the continuation could not be reliably matched back to this sentence within this pass. Recorded honestly as truncated rather than guessing the remainder. No treatment, pesticide or dose recorded.",
+    "confidence": "low",
+    "applicabilityNote": "Re-opening the source PDF directly (not the auto-extracted text) would likely recover the rest of this list; flagged for a follow-up pass.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "partial",
+    "missingFields": ["remainder of the pest/disease list after 'fusariose,'"]
+  },
+  {
+    "item": "G.watermelon.pests",
+    "status": "found",
+    "crop": "watermelon",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonNameEn": "Same pests as melon (this source explicitly refers watermelon pest/disease management to the melon section)",
+      "commonNameFr": "mêmes ennemis que le melon",
+      "commonNameAr": null,
+      "scientificName": null,
+      "hostCrops": ["watermelon", "melon"],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": { "reported": true, "where": ["morocco-general (PNTTA bulletin 99)"], "asOfSourceYear": 2002, "currentDistributionVerified": false },
+      "minimumBreakYears": null
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/pntta-cucurbits.pdf",
+      "fileSha256": "6b468db74272a50a23ac2c6ccb03a0b8f72ee21cb0995d6c864e529c33e4b5af",
+      "retrievedOn": "2026-11-04",
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file64216d582fa56-btta_99.pdf",
+      "tier": 1,
+      "title": "Fiches techniques IV: Le melon, la pastèque, les courges, le concombre, le cornichon — Bulletin 99",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA / IAV Hassan II",
+      "year": 2002,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 1-2, LA PASTÈQUE section",
+    "quote": "Se référer à la culture de melon.",
+    "translation": "Refer to melon cultivation.",
+    "interpretation": "The source itself defers watermelon's pest/disease management to the melon entry (G.melon.pests), rather than describing it independently. Recorded as a cross-reference, consistent with how the garlic/onion cross-reference was handled above. No treatment, pesticide or dose recorded.",
+    "confidence": "medium",
+    "applicabilityNote": "The melon entry it refers to is itself truncated; see G.melon.pests missingFields.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "partial",
+    "missingFields": ["watermelon-specific confirmation; inherits G.melon.pests' truncation"],
+    "supportingEvidenceRefs": ["G.melon.pests"]
+  },
+  {
+    "item": "G.lettuce.pests",
+    "status": "found",
+    "crop": "lettuce",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonNameEn": "Caterpillars/worms, aphids, leafminer and whitefly (named as the main enemies)",
+      "commonNameFr": "vers, pucerons, mineuse, mouche blanche",
+      "commonNameAr": null,
+      "scientificName": null,
+      "hostCrops": ["lettuce"],
+      "visibleSymptoms": null,
+      "moroccoOccurrence": { "reported": true, "where": ["morocco-general (PNTTA bulletin 103)"], "asOfSourceYear": 2003, "currentDistributionVerified": false },
+      "minimumBreakYears": null
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/pntta-lettuce.pdf",
+      "fileSha256": "ac246bcc940659a8c8937bdacd1fe1eed4c967ae648dc1d66091d3f22f322ab9",
+      "retrievedOn": "2026-11-04",
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file64216f5920300-btta_103.pdf",
+      "tier": 1,
+      "title": "Fiches techniques VIII: La laitue, les chicorées, le topinambour, la verveine, la tomate industrielle — Bulletin 103",
+      "publisher": "Ministère de l'Agriculture et du Développement Rural / PNTTA / IAV Hassan II",
+      "year": 2003,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page 1, LA LAITUE section, 'Principaux ennemis de la culture'",
+    "quote": "pour la culture de laitue sont les vers, les pucerons, la mineuse et la mouche blanche.",
+    "translation": "for lettuce cultivation are worms, aphids, leafminer and whitefly.",
+    "interpretation": "Direct quote naming lettuce's main pests. No treatment, pesticide or dose recorded.",
+    "confidence": "high",
+    "applicabilityNote": "Research evidence only; organisms named generically without species-level identification.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "partial",
+    "missingFields": ["species-level identification of the named pests"]
+  },
+  {
+    "item": "G.lentil.pests",
+    "status": "found",
+    "crop": "lentil",
+    "metric": "crop_issue",
+    "proposed": {
+      "kind": "pest",
+      "commonNameEn": "Lentil seed weevil (bruchid)",
+      "commonNameFr": "Bruche de la lentille",
+      "commonNameAr": null,
+      "scientificName": "Bruchus lentis",
+      "hostCrops": ["lentil"],
+      "visibleSymptoms": "La présence de larves dans les graines peut être repérée par l'ouverture circulaire visible à la surface de ces dernières, les rendant impropres à la consommation humaine.",
+      "moroccoOccurrence": { "reported": true, "where": ["morocco-general (ONCA/ARDNA grain-legume référentiel)"], "asOfSourceYear": null, "currentDistributionVerified": false },
+      "minimumBreakYears": null
+    },
+    "thresholdType": null,
+    "scope": { "regions": ["morocco-general"], "farmingSystem": "unspecified", "cultivars": "unspecified" },
+    "source": {
+      "localFile": ".research-sources/2026-11-03/onca-legumes.pdf",
+      "fileSha256": "366c0f07efca9de83ee0bc33827f8ba97fc27d26e70630ff9fc5ecd2a852242b",
+      "retrievedOn": "2026-11-04",
+      "url": "https://ardna.org/admincockpit/files/contenus_files/ticket_file6197a6d5ca53c-N1077-Referentiel-legumineuse-Ph-III_VD_1.pdf",
+      "tier": 1,
+      "title": "Référentiel technique et technico-économique — Filière légumineuses alimentaires",
+      "publisher": "ONCA / ARDNA",
+      "year": null,
+      "language": "fr",
+      "licence": "unknown",
+      "nonLocal": false
+    },
+    "locator": "PDF page ~80, section 'Bruche (Bruchus rufimanus & Bruchus lentis)'",
+    "quote": "Les bruches sont de petits insectes de l'ordre des coléoptères, dont les larves se développent à l'intérieur des graines de fève/féverole (Bruchus rufimanus) et lentille (Bruchus lentis) ... la présence de larves dans les graines peut être repérée par l'ouverture circulaire visible à la surface de ces dernières",
+    "translation": "Bruchids are small beetles whose larvae develop inside the seeds of faba bean/féverole (Bruchus rufimanus) and lentil (Bruchus lentis) ... larvae in the seeds can be spotted by the circular opening visible on their surface",
+    "interpretation": "Direct quote naming the lentil-specific weevil species and its visible seed symptom. No treatment, pesticide or dose recorded.",
+    "confidence": "high",
+    "applicabilityNote": "Research evidence only; this is a storage/post-harvest pest (seed weevil), distinct from field-disease symptoms.",
+    "quoteRecheckedOn": "2026-11-06",
+    "catalogReady": false,
+    "coverage": "found"
+  },
+  {
+    "item": "G.green-bean.pests",
+    "status": "not_found",
+    "searched": [
+      { "query": "existing local source: pntta-brassicas.pdf (Fiches techniques VI/VII: patate douce, navet, choux, petit pois, haricot filet)", "where": ".research-sources/2026-11-03/pntta-brassicas.plain.txt", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "The bulletin has a dedicated 'LE HARICOT FILET' (green bean) section, but the extracted text for that section only contains its page-4 title banner and a short post-harvest/storage paragraph (temperature and transport sensitivity); the pest/disease paragraph for this crop was not present in the extracted text, likely lost to the same multi-column PDF-extraction issue seen elsewhere in this source. Not recorded as found because no pest content for green bean survived extraction."
+  },
+  {
+    "item": "G.maize.diseases",
+    "status": "not_found",
+    "searched": [
+      { "query": "existing local source: inra-maize-sesamia.pdf (pest Sesamia only, no disease content)", "where": ".research-sources/2026-11-03/inra-maize-sesamia.plain.txt", "on": "2026-11-06" },
+      { "query": "ONSSA OR INRA Maroc maladies maïs helminthosporiose rouille charbon fiche technique", "where": "web (WebSearch)", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "A 2014 INRA phytopathology study names septoria, brown rust and helminthosporiose as wheat's main leaf diseases, and a 2018 Settat-region study on cereals generally mentions rust/septoria/helminthosporiose/fusariose in order of importance for cereals broadly; neither is maize-specific. A Revue Marocaine de Protection des Plantes (2019) paper studies maize helminthosporiose resistance in DRC-tested varieties, but it is a research paper on resistance breeding, not a Moroccan extension sheet describing the disease's visible symptoms and occurrence for farmers. No ONSSA, INRA Maroc, ONCA or PNTTA maize-specific disease sheet was found in this pass."
+  },
+  {
+    "item": "G.sesame.diseases",
+    "status": "not_found",
+    "searched": [
+      { "query": "existing local source: ormvat-sesame.html (only a passing mention of disease-resistant varieties, no named disease)", "where": ".research-sources/2026-11-03/ormvat-sesame.html", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "The ORMVA du Tadla sesame page mentions wanting 'nouvelles variétés vigoureuses et résistantes aux maladies' (new vigorous, disease-resistant varieties) without naming any specific disease, organism or symptom. Not enough to record as a found crop_issue."
+  },
+  {
+    "item": "G.sesame.pests",
+    "status": "not_found",
+    "searched": [
+      { "query": "existing local source: ormvat-sesame.html (no pest content found)", "where": ".research-sources/2026-11-03/ormvat-sesame.html", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "No pest content found in the one locally saved Moroccan sesame source (ORMVAT sesame page), and no additional tier-1/tier-2 Moroccan sesame pest source was retrieved in this time-boxed pass."
+  },
+  {
+    "item": "G.sunflower.pests",
+    "status": "not_found",
+    "searched": [
+      { "query": "PNTTA tournesol ravageurs ennemis culture Maroc bulletin", "where": "web (WebSearch)", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "An INRA Meknès (1998) AGRIS record discusses sunflower's cryptogamic (fungal) diseases in Morocco, led by downy mildew with several races identified, but this concerns diseases, not insect pests, and the record itself was not opened as a full document in this pass (only its AGRIS abstract metadata was seen). French extension bulletins name the sunflower moth (pyrale) as the main pest, but those sources are explicitly non-Moroccan (nonLocal) and were not pursued further given the time budget for this pass."
+  },
+  {
+    "item": "G.table-beet.diseases",
+    "status": "not_found",
+    "searched": [
+      { "query": "existing local source: pntta-roots.pdf, LA BETTERAVE POTAGÈRE section", "where": ".research-sources/2026-11-03/pntta-roots.plain.txt", "on": "2026-11-06" },
+      { "query": "existing local source: inra-beet-diseases.pdf (P. Rieuf, 'Les principales maladies de la betterave')", "where": ".research-sources/2026-11-03/inra-beet-diseases.plain.txt", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "The PNTTA table-beet (betterave potagère) section's extracted text begins mid-sentence: '...être utilisés régulièrement afin d'éviter ces maladies durant les périodes pluvieuses et chaudes du cycle cultural' ('...must be used regularly to avoid these diseases during the rainy, hot periods of the growing cycle'), with the sentence naming which diseases lost to a page/column break in extraction; the disease names themselves were not recovered. The INRA beet-disease monograph (P. Rieuf) is titled generically 'de la betterave' and states some of the organisms it covers are specific to beet while others attack the wider Chenopodiaceae family, but its introduction frames the crop by its sugar-accumulating root ('réduisant les réserves qu'elle accumule dans sa racine (sucre)'), i.e. it reads as a sugar-beet-focused source; treating its content as table-beet-specific without an explicit statement to that effect would be an unsupported inference, so it is not used here."
+  },
+  {
+    "item": "G.table-beet.pests",
+    "status": "not_found",
+    "searched": [
+      { "query": "existing local source: pntta-roots.pdf, LA BETTERAVE POTAGÈRE section", "where": ".research-sources/2026-11-03/pntta-roots.plain.txt", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "No pest paragraph for betterave potagère survived in the extracted text of this section (see G.table-beet.diseases for the same truncation issue); no other locally saved or web-retrieved Moroccan table-beet-specific pest source was found in this pass."
+  },
+  {
+    "item": "F.cabbage.observed_yield",
+    "status": "not_found",
+    "searched": [
+      { "query": "chou (cabbage) row search in hcp-crops.pdf, hcp-settat-2021.pdf, hcp-alhoceima-2025.pdf, hcp-tanger-region-2025.pdf", "where": "local .research-sources/2026-11-03/ HCP provincial/regional monographs", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "None of the four already-downloaded HCP monographs' extracted text contains a 'chou' (cabbage) row; these reports appear to aggregate minor vegetable crops rather than listing cabbage individually. No MAPMDREF or FAOSTAT cabbage-yield source for Morocco was retrieved in this time-boxed pass."
+  },
+  {
+    "item": "F.lettuce.observed_yield",
+    "status": "not_found",
+    "searched": [
+      { "query": "laitue (lettuce) row search in hcp-crops.pdf, hcp-settat-2021.pdf, hcp-alhoceima-2025.pdf, hcp-tanger-region-2025.pdf", "where": "local .research-sources/2026-11-03/ HCP provincial/regional monographs", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "No 'laitue' row found in the same four HCP monographs. The PNTTA lettuce bulletin (pntta-lettuce.pdf) gives cultivation practice, not an observed-yield statistic for Morocco. No MAPMDREF or FAOSTAT lettuce-yield source for Morocco was retrieved in this pass."
+  },
+  {
+    "item": "F.table-beet.observed_yield",
+    "status": "not_found",
+    "searched": [
+      { "query": "betterave (beet) row search in hcp-crops.pdf, hcp-settat-2021.pdf, hcp-alhoceima-2025.pdf, hcp-tanger-region-2025.pdf", "where": "local .research-sources/2026-11-03/ HCP provincial/regional monographs", "on": "2026-11-06" }
+    ],
+    "closestEvidence": "The only 'Betterave' rows found in these monographs are explicitly under 'cultures sucrières' (sugar crops) alongside sugar cane, i.e. sugar beet, not table beet; using them for table beet would misattribute a different crop's yield. No table-beet-specific Moroccan yield source was retrieved in this pass."
+  }
+]

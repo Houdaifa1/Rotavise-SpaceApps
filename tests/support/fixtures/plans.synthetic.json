@@ -1,0 +1,46 @@
+{
+  "synthetic": true,
+  "purpose": "Infrastructure request testing only; not a real farm or agricultural recommendation.",
+  "input": {
+    "schema_version": "1",
+    "location": { "latitude": 32.34, "longitude": -6.35 },
+    "history": {
+      "status": "known",
+      "completeness": "partial",
+      "entries": [
+        {
+          "crop_id": "durum-wheat",
+          "planted_on": "2024-11-01",
+          "harvested_on": "2025-06-01"
+        }
+      ]
+    },
+    "crop_health": {
+      "status": "reported",
+      "observations": [
+        {
+          "crop_id": "durum-wheat",
+          "kind": "disease",
+          "name": "SYNTHETIC symptom observation",
+          "observed_on": "2025-04-01",
+          "source": "farmer_report",
+          "confirmation": "reported"
+        }
+      ]
+    },
+    "soil": { "status": "unknown" },
+    "water": { "status": "unknown" },
+    "planning": {
+      "cycles": 2,
+      "earliest_start_date": "2040-01-01",
+      "latest_start_date": "2040-01-08",
+      "search_end_date": "2041-01-01"
+    },
+    "preferences": {
+      "mode": "consider",
+      "considered_next_crop_ids": ["faba-bean", "unsupported-crop"],
+      "excluded_crop_ids": ["sugar-beet"],
+      "priority": "lower_water_demand"
+    }
+  }
+}

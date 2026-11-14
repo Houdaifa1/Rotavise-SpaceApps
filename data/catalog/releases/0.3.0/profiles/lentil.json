@@ -1,0 +1,242 @@
+{
+  "id": "lentil",
+  "version": "0.3.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Lentil",
+    "localNames": [
+      { "language": "fr", "name": "Lentille" },
+      { "language": "ar", "name": "العدس" }
+    ],
+    "scientificName": "Lens culinaris Medik.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-lentil",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Lens culinaris Medik.\""
+      },
+      {
+        "sourceId": "onca-legumes-reference",
+        "locator": "PDF page 40, crop name",
+        "interpretation": "direct",
+        "note": "Local name as written in the source.",
+        "page": 40,
+        "quote": "Lentille La date de semis affecte significativement la production de la lentille"
+      },
+      {
+        "sourceId": "inra-arabic-guides",
+        "locator": "Legume guide cover (scanned)",
+        "interpretation": "context_only",
+        "note": "Arabic name read from the scanned page image; not machine-checked."
+      }
+    ]
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "abda",
+      "name": "Abda",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ABDA (L 593153-16) I.N.R.A.MAROC 2004"
+        }
+      ]
+    },
+    {
+      "id": "bekria",
+      "name": "Bekria",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "BEKRIA I.N.R.A.MAROC 1989"
+        }
+      ]
+    },
+    {
+      "id": "chakkouf",
+      "name": "Chakkouf",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "CHAKKOUF (ILL6001-81) I.N.R.A.MAROC 2009"
+        }
+      ]
+    },
+    {
+      "id": "zaria",
+      "name": "Zaria",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ZARIA (L8635) I.N.R.A.MAROC 2003"
+        }
+      ]
+    },
+    {
+      "id": "karam",
+      "name": "Karam",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-lentil",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "KARAM I.N.R.A.MAROC 2024"
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 40",
+          "interpretation": "context_only",
+          "note": "National guidance only."
+        }
+      ],
+      "note": "Not schedulable in this release."
+    }
+  ],
+  "rules": [
+    {
+      "id": "lentil-sowing-irrigated",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 40",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 40,
+          "quote": "Dans les régions du Bour favorable ou l'irrigué, il est conseillé d'opter pour des semis du 15 octobre à 15 novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Recorded as reference: not scheduled until a sourced temperature limit allows the same climate comparison as the other crops.",
+      "metric": "planting_window",
+      "start": "10-15",
+      "end": "11-15",
+      "precision": "exact_day"
+    },
+    {
+      "id": "lentil-sowing-semi-arid",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 40",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 40,
+          "quote": "En région semi-aride, le semis est à réaliser de préférence du 15 novembre au 15 décembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["rainfed"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Recorded as reference: not scheduled until a sourced temperature limit allows the same climate comparison as the other crops.",
+      "metric": "planting_window",
+      "start": "11-15",
+      "end": "12-15",
+      "precision": "exact_day"
+    },
+    {
+      "id": "lentil-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Lentil",
+          "interpretation": "normalized",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "25 35 70 40 170 Oct/Nov Arid Region"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Recorded as reference: not scheduled until a sourced temperature limit allows the same climate comparison as the other crops.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 170,
+      "maxDays": 170
+    },
+    {
+      "id": "lentil-anthracnose-break",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 75, anthracnose",
+          "interpretation": "normalized",
+          "note": "Five years encoded as 1,825 days.",
+          "page": 75,
+          "quote": "Rotation de 5 ans entre deux légumineuses"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Applies when anthracnose is confirmed.",
+      "metric": "crop_health_break",
+      "issueId": "legume-anthracnose",
+      "minimumBreakDays": 1825
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "temperature",
+      "reason": "Only germination temperatures are sourced; no damage limit to compare climate risk."
+    }
+  ],
+  "limitations": [
+    "Recorded as reference: not scheduled until a sourced temperature limit allows the same climate comparison as the other crops."
+  ]
+}

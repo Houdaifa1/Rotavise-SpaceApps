@@ -1,0 +1,2184 @@
+[
+ {
+  "item": "R.A.strawberry.flower_frost",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "strawberry",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "flowering",
+   "stageWindow": null,
+   "lowerDegC": -2,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "horticultural guidance: open blossoms damaged around -1 to -2 C (complements the nonLocal sourced -1 C)",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.strawberry.crown_cold",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "strawberry",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "dormancy",
+   "stageWindow": null,
+   "lowerDegC": -10,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "dormant crowns survive to roughly -10 C with cover; relevant only for open-field dormant plants, not Moroccan lowland production",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.B.strawberry.cycle",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "strawberry",
+  "metric": "cycle_duration",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "planting_to_harvest_end",
+   "minDays": 240,
+   "maxDays": 300,
+   "note": "transplant Sep-Oct, pick roughly Dec-Jan to May-Jun under tunnels; single-season annual culture"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "recall of Mediterranean tunnel strawberry practice",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.strawberry.verticillium",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "strawberry",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Verticillium wilt",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Verticillium dahliae",
+   "hostCrops": [
+    "strawberry"
+   ],
+   "visibleSymptoms": "outer leaves wilt and dry, plant stunted, vascular browning in crown",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.strawberry.phytophthora",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "strawberry",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Crown rot",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Phytophthora cactorum",
+   "hostCrops": [
+    "strawberry"
+   ],
+   "visibleSymptoms": "sudden wilting, reddish-brown crown tissue when cut",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.strawberry.spider_mite",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "strawberry",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "pest",
+   "nameEn": "Two-spotted spider mite",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Tetranychus urticae",
+   "hostCrops": [
+    "strawberry"
+   ],
+   "visibleSymptoms": "bronzed stippled leaves, fine webbing on leaf undersides",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.strawberry.whitefly",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "strawberry",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "pest",
+   "nameEn": "Greenhouse whitefly",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Trialeurodes vaporariorum",
+   "hostCrops": [
+    "strawberry"
+   ],
+   "visibleSymptoms": "honeydew, sooty mould, small white flies rising from leaves",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.cumin.terminal_heat",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "cumin",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_maximum",
+   "medium": "air",
+   "stage": "flowering",
+   "stageWindow": null,
+   "lowerDegC": null,
+   "upperDegC": 35
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "seed set of cool-season umbellifers declines above roughly 35 C; unverified",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.cumin.seedling_cold",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "cumin",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "emergence",
+   "stageWindow": null,
+   "lowerDegC": -2,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "young cumin seedlings are frost-sensitive; threshold approximate",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.G.cumin.alternaria",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "cumin",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Alternaria blight",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Alternaria burnsii",
+   "hostCrops": [
+    "cumin"
+   ],
+   "visibleSymptoms": "brown leaf spots, drying of umbels",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.cumin.powdery_mildew",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "cumin",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Powdery mildew",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Erysiphe polygoni",
+   "hostCrops": [
+    "cumin"
+   ],
+   "visibleSymptoms": "white powdery coating on leaves and stems",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.B.saffron.corm_lifting",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "saffron",
+  "metric": "stand_lifetime",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "corm_replanting_interval",
+   "minYears": 4,
+   "maxYears": 6,
+   "note": "corms lifted, divided and replanted"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "traditional saffron practice recall",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.saffron.dormant_cold",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "saffron",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "dormancy",
+   "stageWindow": null,
+   "lowerDegC": -15,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "corms tolerate hard winter cold when dormant/leafing; exact limit uncertain",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.saffron.summer_dormancy_heat",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "saffron",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_maximum",
+   "medium": "air",
+   "stage": "dormancy",
+   "stageWindow": null,
+   "lowerDegC": null,
+   "upperDegC": 40
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "corms are summer-dormant and tolerate hot dry soil; flowering is cold-induced by autumn cooling",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.G.saffron.fusarium",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "saffron",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Corm rot",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Fusarium oxysporum f.sp. gladioli",
+   "hostCrops": [
+    "saffron"
+   ],
+   "visibleSymptoms": "soft rot of corms, yellowing of leaves",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.saffron.rodents",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "saffron",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "pest",
+   "nameEn": "Rodents and corm eaters",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Rodentia (various)",
+   "hostCrops": [
+    "saffron"
+   ],
+   "visibleSymptoms": "gnawed corms and excavated planting holes",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.mint.frost",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "mint",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "vegetative_growth",
+   "stageWindow": null,
+   "lowerDegC": -5,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "aerial shoots burned by hard frost; rhizomes survive much colder",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.B.mint.replant",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "mint",
+  "metric": "stand_lifetime",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "stand_lifetime",
+   "minYears": 3,
+   "maxYears": 5
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "stands usually replanted after 3-5 years because of rhizome crowding and disease build-up",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.mint.rust",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "mint",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Mint rust",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Puccinia menthae",
+   "hostCrops": [
+    "mint"
+   ],
+   "visibleSymptoms": "orange-brown pustules on leaf undersides, leaf drop",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.mint.verticillium",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "mint",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Verticillium wilt",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Verticillium dahliae",
+   "hostCrops": [
+    "mint"
+   ],
+   "visibleSymptoms": "stunted, wilted shoots; can be fatal on infested soil",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.mint.flea_beetle",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "mint",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "pest",
+   "nameEn": "Mint flea beetle",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Longitarsus spp.",
+   "hostCrops": [
+    "mint"
+   ],
+   "visibleSymptoms": "small shot-holes in leaves; larvae feed on roots",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.raspberry.chill",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "raspberry",
+  "metric": "chill_requirement",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "chillHours": {
+    "min": 800,
+    "max": 1600
+   },
+   "unit": "hours below 7 C",
+   "note": "floricane types; primocane types need less"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "fruit-crop knowledge of Rubus chilling needs; cultivar dependent",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.B.raspberry.planting",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "raspberry",
+  "metric": "planting_window",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "start": "11-15",
+   "end": "03-15",
+   "precision": "approximate"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "bare-root canes planted in dormancy; fruiting from second year",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.raspberry.botrytis",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "raspberry",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Grey mould",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Botrytis cinerea",
+   "hostCrops": [
+    "raspberry"
+   ],
+   "visibleSymptoms": "grey fuzzy mould on ripening fruit",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.raspberry.cane_blight",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "raspberry",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Cane blight",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Leptosphaeria coniothyrium",
+   "hostCrops": [
+    "raspberry"
+   ],
+   "visibleSymptoms": "dark lesions at cane nodes, brittle dying canes",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.raspberry.root_rot",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "raspberry",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Phytophthora root rot",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Phytophthora rubi",
+   "hostCrops": [
+    "raspberry"
+   ],
+   "visibleSymptoms": "wilting and dying canes in wet soil, reddish root rot",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.raspberry.beetle",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "raspberry",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "pest",
+   "nameEn": "Raspberry beetle",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Byturus tomentosus",
+   "hostCrops": [
+    "raspberry"
+   ],
+   "visibleSymptoms": "grubs in fruit",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.B.damask-rose.stand",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "damask-rose",
+  "metric": "stand_lifetime",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "stand_lifetime",
+   "minYears": 15,
+   "maxYears": 30
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "rose hedge plantings for flower harvest are long-lived perennials; orchard-like model",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.B.damask-rose.harvest",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "damask-rose",
+  "metric": "harvest_window",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "start": "04-15",
+   "end": "05-31",
+   "precision": "approximate",
+   "note": "flowers picked at dawn over about 3-5 weeks"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "recall of the Dades-valley rose harvest season",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.coriander.seedling_cold",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "coriander",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "vegetative_growth",
+   "stageWindow": null,
+   "lowerDegC": -5,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "hardy to light frost as seedling, killed by hard frost; unverified",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.coriander.bolting_heat",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "coriander",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_maximum",
+   "medium": "air",
+   "stage": "vegetative_growth",
+   "stageWindow": null,
+   "lowerDegC": null,
+   "upperDegC": 30
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "long hot days trigger bolting; leaf crop degrades above roughly 30 C",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.G.coriander.powdery_mildew",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "coriander",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Powdery mildew",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Erysiphe heraclei",
+   "hostCrops": [
+    "coriander"
+   ],
+   "visibleSymptoms": "white powder on leaves and umbels",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.coriander.aphids",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "coriander",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "pest",
+   "nameEn": "Aphids",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Hyadaphis coriandri",
+   "hostCrops": [
+    "coriander"
+   ],
+   "visibleSymptoms": "clustered aphids on umbels, sticky honeydew",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.nigella.frost",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "nigella",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "vegetative_growth",
+   "stageWindow": null,
+   "lowerDegC": -3,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "annual spring/autumn crop sensitive to hard frost; threshold unverified",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.G.nigella.damping_off",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "nigella",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Damping-off and root rot",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Fusarium/Rhizoctonia spp.",
+   "hostCrops": [
+    "nigella"
+   ],
+   "visibleSymptoms": "seedlings collapse at soil line; poor stand in wet soil",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.fenugreek.frost",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "fenugreek",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "flowering",
+   "stageWindow": null,
+   "lowerDegC": -2,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "pod set damaged by frost; seedlings tolerate light frost; unverified",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.fenugreek.heat",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "fenugreek",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_maximum",
+   "medium": "air",
+   "stage": "flowering",
+   "stageWindow": null,
+   "lowerDegC": null,
+   "upperDegC": 35
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "flower and pod abortion in heat; approximate",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.G.fenugreek.powdery_mildew",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "fenugreek",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Powdery mildew",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Erysiphe polygoni",
+   "hostCrops": [
+    "fenugreek"
+   ],
+   "visibleSymptoms": "white coating on leaves and pods",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.fenugreek.root_rot",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "fenugreek",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Root rot",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Rhizoctonia solani / Fusarium spp.",
+   "hostCrops": [
+    "fenugreek"
+   ],
+   "visibleSymptoms": "wilt and brown root lesions",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.rosemary.frost",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "rosemary",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "whole_cycle",
+   "stageWindow": null,
+   "lowerDegC": -10,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "hardy to roughly -10 C depending on cultivar",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.B.rosemary.stand",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "rosemary",
+  "metric": "stand_lifetime",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "stand_lifetime",
+   "minYears": 8,
+   "maxYears": 15
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "woody perennial shrub; commercial stands renewed after about 8-15 years",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.rosemary.root_rot",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "rosemary",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Root rot",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Phytophthora/Armillaria spp.",
+   "hostCrops": [
+    "rosemary"
+   ],
+   "visibleSymptoms": "dieback in waterlogged soil",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.thyme.frost",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "thyme",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "whole_cycle",
+   "stageWindow": null,
+   "lowerDegC": -15,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "common thyme is hardy to about -15 C; wild Moroccan thymes not documented here",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.B.thyme.stand",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "thyme",
+  "metric": "stand_lifetime",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "stand_lifetime",
+   "minYears": 4,
+   "maxYears": 8
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "cultivated thyme stands decline after several years; wild harvest is not plannable",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.G.thyme.root_rot",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "thyme",
+  "metric": "crop_issue",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "kind": "disease",
+   "nameEn": "Root and crown rot",
+   "nameFr": null,
+   "nameAr": null,
+   "scientificName": "Rhizoctonia/Phytophthora spp.",
+   "hostCrops": [
+    "thyme"
+   ],
+   "visibleSymptoms": "patchy dieback in wet soil",
+   "moroccoOccurrence": null,
+   "rotationAdvice": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general plant-pathology/entomology knowledge of host association; no Moroccan occurrence claim",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.F.sweet-potato.yield",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "sweet-potato",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "irrigated": {
+    "min": 15,
+    "max": 30
+   },
+   "rainfed": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general warm-climate irrigated sweet-potato yields; replaces the contradictory HCP row without computing from area/production",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.B.sweet-potato.season",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "sweet-potato",
+  "metric": "planting_window",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "start": "04-15",
+   "end": "06-15",
+   "precision": "approximate",
+   "cycleDays": {
+    "min": 120,
+    "max": 150
+   }
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "frost-free warm-season crop planted from vine cuttings",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.sweet-potato.cold",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "sweet-potato",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "whole_cycle",
+   "stageWindow": null,
+   "lowerDegC": 8,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "chilling injury and growth stop below about 10 C; vines killed by frost",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.triticale.cold",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "triticale",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "vegetative_growth",
+   "stageWindow": null,
+   "lowerDegC": -15,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "winter hardiness is between wheat and rye; cultivar dependent",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.triticale.heat",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "triticale",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_maximum",
+   "medium": "air",
+   "stage": "flowering",
+   "stageWindow": null,
+   "lowerDegC": null,
+   "upperDegC": 32
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "anthesis heat sterility similar to wheat",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.B.triticale.season",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "triticale",
+  "metric": "planting_window",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "start": "11-01",
+   "end": "12-31",
+   "precision": "approximate",
+   "cycleDays": {
+    "min": 170,
+    "max": 210
+   }
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "autumn-sown cereal like barley/wheat in rainfed zones",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.C.triticale.rotation",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "triticale",
+  "metric": "rotation",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "family": "Poaceae",
+   "preferredPredecessorFamilies": [
+    "Fabaceae"
+   ],
+   "avoidFamilies": [
+    "Poaceae"
+   ],
+   "minimumReturnYears": 2
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "cereal rotation logic, shared diseases with wheat/barley",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.kohlrabi.temperature",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "kohlrabi",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "whole_cycle",
+   "stageWindow": null,
+   "lowerDegC": -5,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "brassica relative of cabbage; heat above roughly 28 C makes it woody",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.chives.temperature",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "chives",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "whole_cycle",
+   "stageWindow": null,
+   "lowerDegC": -20,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "hardy perennial Allium; dormant in cold, regrows in spring",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.A.jerusalem-artichoke.temperature",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "jerusalem-artichoke",
+  "metric": "temperature",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "basis": "daily_minimum",
+   "medium": "air",
+   "stage": "whole_cycle",
+   "stageWindow": null,
+   "lowerDegC": -20,
+   "upperDegC": null
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "tubers overwinter in frozen soil; shoots killed by frost",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false,
+  "thresholdType": "damage"
+ },
+ {
+  "item": "R.F.kiwi.yield",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "kiwi",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "min": 20,
+   "max": 30,
+   "note": "mature orchard, shelled or fresh as customary for the crop; wide range"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general orchard yield knowledge; not Moroccan statistics",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.F.mango.yield",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "mango",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "min": 8,
+   "max": 20,
+   "note": "mature orchard, shelled or fresh as customary for the crop; wide range"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general orchard yield knowledge; not Moroccan statistics",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.F.papaya.yield",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "papaya",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "min": 30,
+   "max": 60,
+   "note": "mature orchard, shelled or fresh as customary for the crop; wide range"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general orchard yield knowledge; not Moroccan statistics",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.F.pistachio.yield",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "pistachio",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "min": 1,
+   "max": 2.5,
+   "note": "mature orchard, shelled or fresh as customary for the crop; wide range"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general orchard yield knowledge; not Moroccan statistics",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.F.pecan.yield",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "pecan",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "min": 1,
+   "max": 3,
+   "note": "mature orchard, shelled or fresh as customary for the crop; wide range"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general orchard yield knowledge; not Moroccan statistics",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.F.hazelnut.yield",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "hazelnut",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "min": 1,
+   "max": 2,
+   "note": "mature orchard, shelled or fresh as customary for the crop; wide range"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general orchard yield knowledge; not Moroccan statistics",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.F.carob.yield",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "carob",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "min": 1,
+   "max": 3,
+   "note": "mature orchard, shelled or fresh as customary for the crop; wide range"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "general orchard yield knowledge; not Moroccan statistics",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.A.cherry.beldi_chill",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "cherry",
+  "metric": "chill_requirement",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "chillHours": {
+    "min": 600,
+    "max": 1000
+   },
+   "unit": "hours below 7 C",
+   "note": "local late-blooming landraces"
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "chill hours for low/medium-chill sweet cherry types; conflicts with sourced 1500+ figure noted in the trees report",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "R.F.apple.system",
+  "status": "training_based",
+  "coverage": "training_based",
+  "crop": "apple",
+  "metric": "observed_yield",
+  "provenance": {
+   "kind": "model_training",
+   "addedOn": "2026-11-06",
+   "documentAttribution": null
+  },
+  "proposed": {
+   "unit": "t/ha",
+   "irrigated": {
+    "min": 25,
+    "max": 45
+   },
+   "rainfed": {
+    "min": 8,
+    "max": 15
+   }
+  },
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "basis": "modern irrigated orchards vs traditional rainfed",
+  "scope": {
+   "geography": "general crop knowledge; not a Moroccan field observation",
+   "cultivars": "varies"
+  },
+  "numericPlannerParameters": null,
+  "catalogReady": false
+ },
+ {
+  "item": "RV.sunflower.open-pollinated-populations",
+  "crop": "sunflower",
+  "name": "Open-pollinated populations",
+  "varietyKind": "type group",
+  "origin": null,
+  "notableTraits": "older population varieties grown before hybrid adoption",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.sunflower.oilseed-hybrids",
+  "crop": "sunflower",
+  "name": "Oilseed hybrids",
+  "varietyKind": "type group",
+  "origin": null,
+  "notableTraits": "most grown area; seed imported",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.sunflower.high-oleic-hybrids",
+  "crop": "sunflower",
+  "name": "High-oleic hybrids",
+  "varietyKind": "type group",
+  "origin": null,
+  "notableTraits": "modern hybrid type",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.sugar-beet.monogerm-hybrids",
+  "crop": "sugar-beet",
+  "name": "Monogerm hybrids",
+  "varietyKind": "type group",
+  "origin": null,
+  "notableTraits": "precision seeding, imported seed",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.sugar-beet.rhizomania-tolerant-hybrids",
+  "crop": "sugar-beet",
+  "name": "Rhizomania-tolerant hybrids",
+  "varietyKind": "type group",
+  "origin": null,
+  "notableTraits": "used on infested Tadla/Doukkala fields; names not recalled with confidence",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.sesame.local-white-seeded-populations",
+  "crop": "sesame",
+  "name": "Local white-seeded populations",
+  "varietyKind": "landrace group",
+  "origin": null,
+  "notableTraits": "Beldi types in Tafilalet/Haouz; no registered names recalled",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.sesame.local-brown/dark-seeded-populations",
+  "crop": "sesame",
+  "name": "Local brown/dark-seeded populations",
+  "varietyKind": "landrace group",
+  "origin": null,
+  "notableTraits": "no names recalled",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.cumin.local-beldi-populations",
+  "crop": "cumin",
+  "name": "Local Beldi populations",
+  "varietyKind": "landrace group",
+  "origin": null,
+  "notableTraits": "Oasis and mountain landraces; no registered cultivar",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.saffron.taliouine-clonal-population",
+  "crop": "saffron",
+  "name": "Taliouine clonal population",
+  "varietyKind": "clonal population",
+  "origin": null,
+  "notableTraits": "single corm lineage, sterile triploid; no named cultivars exist",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.cotton.upland-cotton-type-(gossypium-hirsutum)",
+  "crop": "cotton",
+  "name": "Upland cotton type (Gossypium hirsutum)",
+  "varietyKind": "species group",
+  "origin": null,
+  "notableTraits": "historical Gharb/Loukkos crop; named cultivars not recalled",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.rice.thaibonnet",
+  "crop": "rice",
+  "name": "Thaibonnet",
+  "varietyKind": "cultivar",
+  "origin": "France",
+  "notableTraits": "French long-grain indica type; presence in Gharb is a low-confidence recall",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.rice.japonica-medium-grain-types",
+  "crop": "rice",
+  "name": "Japonica medium-grain types",
+  "varietyKind": "type group",
+  "origin": null,
+  "notableTraits": "main group historically grown in Gharb; no names recalled",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.quinoa.titicaca",
+  "crop": "quinoa",
+  "name": "Titicaca",
+  "varietyKind": "cultivar",
+  "origin": "Denmark",
+  "notableTraits": "Danish-bred lowland type used in Mediterranean trials",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.quinoa.puno",
+  "crop": "quinoa",
+  "name": "Puno",
+  "varietyKind": "cultivar",
+  "origin": "Peru",
+  "notableTraits": "Andean-origin type used in trials",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.quinoa.regalona",
+  "crop": "quinoa",
+  "name": "Regalona",
+  "varietyKind": "cultivar",
+  "origin": "Chile",
+  "notableTraits": "Chilean lowland type used in trials",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ },
+ {
+  "item": "RV.citrus.maroc-late",
+  "crop": "citrus",
+  "name": "Maroc Late",
+  "varietyKind": "cultivar",
+  "origin": "Morocco",
+  "notableTraits": "late-maturing sweet orange of Moroccan selection; exact botanical group unconfirmed in my recall",
+  "status": "training_based",
+  "originOfKnowledge": "model_training",
+  "valueKind": "model_recall_unverified",
+  "confidence": "low",
+  "catalogReady": false,
+  "moroccoOccurrenceVerified": false
+ }
+]

@@ -1,0 +1,92 @@
+{
+  "tier": 1,
+  "error": null,
+  "params": {
+    "dates": [
+      {
+        "endDate": "12-31-2024",
+        "startDate": "01-01-2023"
+      }
+    ],
+    "layers": [
+      {
+        "layer": "B04",
+        "product": "HLSS30.020"
+      },
+      {
+        "layer": "B8A",
+        "product": "HLSS30.020"
+      },
+      {
+        "layer": "Fmask",
+        "product": "HLSS30.020"
+      },
+      {
+        "layer": "B04",
+        "product": "HLSL30.020"
+      },
+      {
+        "layer": "B05",
+        "product": "HLSL30.020"
+      },
+      {
+        "layer": "Fmask",
+        "product": "HLSL30.020"
+      },
+      {
+        "layer": "Geophysical_Data_sm_rootzone_pctl",
+        "product": "SPL4SMGP.008"
+      },
+      {
+        "layer": "Geophysical_Data_sm_rootzone",
+        "product": "SPL4SMGP.008"
+      }
+    ],
+    "coordinates": [
+      {
+        "id": "p1",
+        "category": "tadla-plain",
+        "latitude": 32.4,
+        "longitude": -6.55
+      },
+      {
+        "id": "p2",
+        "category": "tadla-plain",
+        "latitude": 32.4003,
+        "longitude": -6.55
+      },
+      {
+        "id": "p3",
+        "category": "tadla-plain",
+        "latitude": 32.4,
+        "longitude": -6.5496
+      },
+      {
+        "id": "p4",
+        "category": "tadla-plain",
+        "latitude": 32.4003,
+        "longitude": -6.5496
+      }
+    ]
+  },
+  "status": "processing",
+  "created": "2026-10-17T16:13:03.242695",
+  "task_id": "728e0d1e-3ae6-47b5-8a6d-25317fa15b1d",
+  "updated": "2026-10-17T16:33:29.145131",
+  "estimate": {
+    "request_size": 23392,
+    "request_tier": 0,
+    "request_memory": 1
+  },
+  "retry_at": null,
+  "has_swath": false,
+  "task_name": "rotavise-step11-evidence",
+  "task_type": "point",
+  "api_version": "v1",
+  "svc_version": "3.131",
+  "web_version": null,
+  "has_nsidc_daac": true,
+  "expires_on": "2026-11-16T16:33:29.145131",
+  "attempts": 1,
+  "cluster_processing": true
+}

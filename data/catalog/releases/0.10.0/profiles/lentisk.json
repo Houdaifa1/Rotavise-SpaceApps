@@ -1,0 +1,108 @@
+{
+  "id": "lentisk",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Mastic tree",
+    "localNames": [
+      { "language": "fr", "name": "Lentisque" },
+      { "language": "ar", "name": "الضرو" }
+    ],
+    "scientificName": "Pistacia lentiscus L.",
+    "family": "Anacardiaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:lentisk"
+    }
+  },
+  "harvestProduct": "other",
+  "modelType": "wild_harvested",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:lentisk"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "r-a-lentisk-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.A.lentisk.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -10,
+      "upperDegC": null
+    }
+  ],
+  "references": [
+    {
+      "id": "r-p-lentisk-fit-planner-fit-742",
+      "topic": "planner_fit",
+      "summary": "Planner fit recalled as \"wild_harvested_not_plannable\"; Wild shrub; oil and resin.. The release uses its own model type for this crop.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "judgement from crop habit and use; Moroccan scale unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.P.lentisk.fit"
+      }
+    },
+    {
+      "id": "r-c-lentisk-rotation-background-743",
+      "topic": "background",
+      "summary": "Rotation: perennial, orchard or wild crop: classic rotation does not apply",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "habit of the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.C.lentisk.rotation"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Wild-harvested plants are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Wild-harvested plant: listed for knowledge, never placed in a rotation."
+  ]
+}

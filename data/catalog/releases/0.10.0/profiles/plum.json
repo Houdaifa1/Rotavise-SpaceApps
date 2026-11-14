@@ -1,0 +1,274 @@
+{
+  "id": "plum",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Plum",
+    "localNames": [
+      { "language": "fr", "name": "Prunier" },
+      { "language": "ar", "name": "البرقوق" }
+    ],
+    "scientificName": "Prunus domestica L.",
+    "family": "Rosaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:plum"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "santa-rosa",
+      "name": "Santa Rosa",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.plum.santa_rosa"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "black-amber",
+      "name": "Black Amber",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.plum.black_amber"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "golden-japan",
+      "name": "Golden Japan",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.plum.golden_japan"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "president",
+      "name": "President",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.plum.president"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "stanley",
+      "name": "Stanley",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.plum.stanley"
+      },
+      "notes": "cultivar or type"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:plum"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-plum-bloom-frost-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; open flowers and set fruitlets are the most frost-sensitive stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.plum.bloom_frost"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": -2.2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-plum-cold-dormant-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; approximate killing or severe-injury temperature of established wood",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.plum.cold_dormant"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy_or_mature_tree\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -20,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-plum-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge: leaf scorch, sunburn or fruit set loss above about this temperature",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.plum.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 36
+    }
+  ],
+  "references": [
+    {
+      "id": "a-plum-ecocrop-temperature-background-446",
+      "topic": "background",
+      "summary": "Temperature (species_adaptability_bound_not_damage_limit; not a damage limit) from -2 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Prunus domestica\"; fields TOPMN, TOPMX, TMIN, TMAX, KTMP, KTMPR, GMIN, GMAX, LIFO",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA recorded as null. TOPMN/TOPMX are optima, TMIN/TMAX absolute adaptability bounds, KTMP/KTMPR killing-temperature fields as exported. None is a stage-specific daily damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-b-plum-stand-lifetime-background-476",
+      "topic": "background",
+      "summary": "Stand lifetime 5475–9125 days (orchard or perennial).",
+      "value": { "unit": "days", "min": 5475, "max": 9125 },
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "general fruit-tree horticulture knowledge",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.plum.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-a-plum-chilling-requirement-chill-requirement-477",
+      "topic": "chill_requirement",
+      "summary": "Chill requirement 500–1000 hours below about 7 C. A dormancy requirement, not a damage limit.",
+      "value": { "unit": "hours below about 7 C", "min": 500, "max": 1000 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general horticulture knowledge of chill requirement ranges; varies strongly by cultivar",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.plum.chilling_requirement"
+      }
+    },
+    {
+      "id": "t-f-plum-mature-yield-yield-478",
+      "topic": "yield",
+      "summary": "Yield 10–30 t/ha (region not Moroccan statistics; recall). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 10, "max": 30 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general knowledge of mature orchard yields",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.plum.mature_yield"
+      }
+    },
+    {
+      "id": "t-g-plum-moroccan-status-presence-479",
+      "topic": "presence",
+      "summary": "grown in Saïss, Middle Atlas foothills and Haouz",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall; combined with sourced records where present",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.G.plum.moroccan_status"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

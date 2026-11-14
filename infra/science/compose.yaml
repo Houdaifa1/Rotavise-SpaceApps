@@ -1,0 +1,15 @@
+name: rotavise-science
+services:
+  science:
+    build:
+      context: ../..
+      dockerfile: infra/docker/science.Dockerfile
+    ports:
+      - "127.0.0.1:8090:8090"
+    read_only: true
+    tmpfs:
+      - /tmp
+    environment:
+      HOME: /tmp
+      NUMBA_CACHE_DIR: /tmp
+    restart: unless-stopped

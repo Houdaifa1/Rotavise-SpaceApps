@@ -1,0 +1,189 @@
+{
+  "id": "pitahaya",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Dragon fruit",
+    "localNames": [
+      { "language": "fr", "name": "Pitaya" },
+      { "language": "ar", "name": "فاكهة التنين" }
+    ],
+    "scientificName": "Selenicereus undatus (Haw.) D.R.Hunt",
+    "family": "Cactaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:pitahaya"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:pitahaya"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-pitahaya-bloom-frost-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; open flowers and set fruitlets are the most frost-sensitive stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.pitahaya.bloom_frost"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-pitahaya-cold-dormant-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; approximate killing or severe-injury temperature of established wood",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.pitahaya.cold_dormant"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy_or_mature_tree\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": 2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-pitahaya-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge: leaf scorch, sunburn or fruit set loss above about this temperature",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.pitahaya.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    }
+  ],
+  "references": [
+    {
+      "id": "a-pitahaya-ecocrop-temperature-background-467",
+      "topic": "background",
+      "summary": "Temperature facts (species_adaptability_bound_not_damage_limit): basis species_level_bounds_not_daily_extremes; medium air; absoluteMinDegC 12; absoluteMaxDegC 34; optimumMinDegC 18; optimumMaxDegC 28; growingPeriodDaysMin 0; growingPeriodDaysMax 0; lifeForm other.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Hylocereus undatus\"; fields TOPMN, TOPMX, TMIN, TMAX, KTMP, KTMPR, GMIN, GMAX, LIFO",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA recorded as null. TOPMN/TOPMX are optima, TMIN/TMAX absolute adaptability bounds, KTMP/KTMPR killing-temperature fields as exported. None is a stage-specific daily damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-b-pitahaya-stand-lifetime-background-546",
+      "topic": "background",
+      "summary": "Stand lifetime 5475–9125 days (orchard or perennial).",
+      "value": { "unit": "days", "min": 5475, "max": 9125 },
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "general fruit-tree horticulture knowledge",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.pitahaya.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-f-pitahaya-mature-yield-yield-547",
+      "topic": "yield",
+      "summary": "Yield 10–30 t/ha (region not Moroccan statistics; recall). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 10, "max": 30 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general knowledge of mature orchard yields",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.pitahaya.mature_yield"
+      }
+    },
+    {
+      "id": "t-g-pitahaya-moroccan-status-presence-548",
+      "topic": "presence",
+      "summary": "recent protected plantings reported in warm zones; extent unverified",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall; combined with sourced records where present",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.G.pitahaya.moroccan_status"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

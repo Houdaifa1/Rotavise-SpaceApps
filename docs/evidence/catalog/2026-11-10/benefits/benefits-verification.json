@@ -1,0 +1,32 @@
+{
+  "checkedOn": "2026-11-10T05:28:14.134397+00:00",
+  "status": "passed",
+  "command": "python3 inline research validator (JSON uniqueness, full catalog/effect matrix, numeric quote support, fresh source re-extraction, source/derivative hashes, tracked baseline)",
+  "exitCode": 0,
+  "crops": 246,
+  "batchSizes": [25, 25, 25, 25, 25, 25, 25, 25, 25, 21],
+  "sourcedRecords": 102,
+  "cropsWithEvidence": 45,
+  "notFoundCropEffectSlots": 2136,
+  "sourceManifestEntries": 23,
+  "sourceQuoteOccurrencesChecked": 131,
+  "uniqueQuotesChecked": 92,
+  "quoteArtifactCount": 36,
+  "quoteArtifactRecheckMethods": {
+    "fresh_OCR_from_saved_page_image": 14,
+    "fresh_pdftotext_from_saved_PDF": 10,
+    "fresh_HTML_extraction_from_saved_HTML": 8,
+    "saved_publisher_web_extract": 3,
+    "manual_transcription_bound_to_saved_page_image": 1
+  },
+  "distinctHashReferencedFiles": 319,
+  "trackedFilesHashChecked": 1755,
+  "trackedFilesChanged": [],
+  "observations": [
+    "All original quotes rechecked against saved source data and fresh extraction/OCR where applicable.",
+    "One reviewed transcription is bound to and visually checked against its saved original page image; raw OCR is also preserved.",
+    "Table images and units/columns inspected visually, including the chickpea CP conflict; numerical magnitudes are checked for literal support.",
+    "English translations and agronomic applicability have not received independent expert review.",
+    "No app tests or OpenAPI generation needed: no application, contract or reason-code change."
+  ]
+}

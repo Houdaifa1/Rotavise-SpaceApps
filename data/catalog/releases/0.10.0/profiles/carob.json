@@ -1,0 +1,432 @@
+{
+  "id": "carob",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Carob",
+    "localNames": [
+      { "language": "fr", "name": "Caroubier" },
+      { "language": "ar", "name": "الخروب" }
+    ],
+    "scientificName": "Ceratonia siliqua L.",
+    "family": "Fabaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:carob"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "ceratonia-siliqua-male-female-and-hermaphrodite-trees",
+      "name": "Ceratonia siliqua (male, female and hermaphrodite trees)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recalled type/landrace name; omitted where unsure",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.carob.V.ceratonia-siliqua-male-female-and-hermap"
+      }
+    },
+    {
+      "id": "dkar-spontaneous-male-type-from-a-search-snippet-source-not-saved",
+      "name": "Dkar (spontaneous male type, from a search snippet, source not saved)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.carob.dkar"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "lanta-grafted-type-from-a-search-snippet-source-not-saved",
+      "name": "Lanta (grafted type, from a search snippet, source not saved)",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.carob.lanta"
+      },
+      "notes": "cultivar or type"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:carob"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "a-carob-cold-ecocrop-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "row ScientificName=Ceratonia siliqua, column KTMP",
+          "interpretation": "normalized",
+          "note": "Copied value; not a daily-minimum stage damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Damage limit (species_killing_temperature_unstaged) at stage \"whole_cycle\". Species-level killing temperature, not a stage-timed limit.",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-carob-bloom-frost-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; open flowers and set fruitlets are the most frost-sensitive stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.carob.bloom_frost"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": -4,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-carob-cold-dormant-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; approximate killing or severe-injury temperature of established wood",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.carob.cold_dormant"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy_or_mature_tree\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -7,
+      "upperDegC": null
+    },
+    {
+      "id": "t-carob-a-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural knowledge of frost tolerance by stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.carob.A.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormant tree\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -8,
+      "upperDegC": null
+    },
+    {
+      "id": "t-carob-a-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticultural knowledge of heat stress by stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.carob.A.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 45
+    }
+  ],
+  "references": [
+    {
+      "id": "a-carob-heat-ecocrop-background-346",
+      "topic": "background",
+      "summary": "Temperature (species_absolute_maximum_not_damage_limit; not a damage limit) to 39 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "row ScientificName=Ceratonia siliqua, column TMAX",
+          "interpretation": "normalized",
+          "note": "Adaptability bound for climate matching, not a heat-damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "b-carob-cycle-ecocrop-background-347",
+      "topic": "background",
+      "summary": "Cycle 210–365 days.",
+      "value": { "unit": "days", "min": 210, "max": 365 },
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "row ScientificName=Ceratonia siliqua, columns GMIN/GMAX",
+          "interpretation": "normalized",
+          "note": "Generic growing-period range; not a Moroccan sowing-to-harvest duration. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "f-carob-observed-yield-yield-355",
+      "topic": "yield",
+      "summary": "Yield 1–5 t/ha (1 t/ha at 40 trees/ha on poor soil; 4-5 t/ha in favourable rainfed (bour) or irrigated land)",
+      "value": { "unit": "t/ha", "min": 1, "max": 5 },
+      "citations": [
+        {
+          "sourceId": "rs-herbs-fnh-caroube",
+          "locator": "paragraph beginning \"En effet, le rendement à l'hectare\"",
+          "interpretation": "normalized",
+          "note": "Range copied; no year or region split, no cultivar.",
+          "page": null,
+          "quote": "le rendement à l’hectare de la caroube varie entre 1 tonne pour un terrain peu fertile ayant une densité de 40 arbres, et 4, voire 5 tonnes/ hectare pour un terrain se situant dans le bour favorable ou une zone irriguée"
+        }
+      ]
+    },
+    {
+      "id": "b-carob-stand-lifetime-background-356",
+      "topic": "background",
+      "summary": "Cycle: {\"basis\":\"stand_lifetime\",\"firstHarvestYear\":6,\"treeLifespanYearsAtLeast\":400}",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-herbs-fnh-caroube",
+          "locator": "quote from operator M. Laâroussi El Alami",
+          "interpretation": "normalized",
+          "note": "First harvest year 6 and lifespan above 400 years as stated by an operator.",
+          "page": null,
+          "quote": "les récoltes ne commencent en moyenne qu’à partir de la sixième année, mais c’est un arbre qui peut vivre au-delà de 400 ans"
+        }
+      ]
+    },
+    {
+      "id": "f-carob-national-production-yield-357",
+      "topic": "yield",
+      "summary": "Yield (national total, not t/ha)",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-herbs-fnh-caroube",
+          "locator": "second paragraph",
+          "interpretation": "normalized",
+          "note": "National production figure; sources disagree elsewhere (INRA 59,700 t, FAO 21,976 t in 2021 per search snippets, not saved).",
+          "page": null,
+          "quote": "le Royaume est devenu le deuxième producteur mondial (50.000 tonnes) derrière l’Espagne"
+        }
+      ]
+    },
+    {
+      "id": "a-carob-ecocrop-temperature-background-456",
+      "topic": "background",
+      "summary": "Temperature (species_adaptability_bound_not_damage_limit; not a damage limit) from 0 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Ceratonia siliqua\"; fields TOPMN, TOPMX, TMIN, TMAX, KTMP, KTMPR, GMIN, GMAX, LIFO",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA recorded as null. TOPMN/TOPMX are optima, TMIN/TMAX absolute adaptability bounds, KTMP/KTMPR killing-temperature fields as exported. None is a stage-specific daily damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-carob-b-season-background-405",
+      "topic": "background",
+      "summary": "Cycle 18250–36500 days.",
+      "value": { "unit": "days", "min": 18250, "max": 36500 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Mediterranean agronomy recall; Moroccan timing unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.carob.B.season"
+      }
+    },
+    {
+      "id": "t-carob-b-season-background-406",
+      "topic": "background",
+      "summary": "Planting: plant autumn-winter",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Mediterranean agronomy recall; Moroccan timing unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.carob.B.season"
+      }
+    },
+    {
+      "id": "t-carob-c-rotation-background-407",
+      "topic": "background",
+      "summary": "Rotation (return): 0",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "family-based rotation logic (same-family host diseases/pests); not Moroccan guidance",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.carob.C.rotation"
+      }
+    },
+    {
+      "id": "t-carob-f-yield-yield-408",
+      "topic": "yield",
+      "summary": "Yield 1–5 t/ha. AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 1, "max": 5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "typical published ranges recalled; not verified for Morocco",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.carob.F.yield"
+      }
+    },
+    {
+      "id": "t-b-carob-stand-lifetime-background-513",
+      "topic": "background",
+      "summary": "Stand lifetime 36500–73000 days (orchard or perennial).",
+      "value": { "unit": "days", "min": 36500, "max": 73000 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general fruit-tree horticulture knowledge",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.carob.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-f-carob-mature-yield-yield-514",
+      "topic": "yield",
+      "summary": "Yield 2–6 t/ha (region not Moroccan statistics; recall for pods; Moroccan reference not saved). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 2, "max": 6 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general knowledge of mature orchard yields",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.carob.mature_yield"
+      }
+    },
+    {
+      "id": "t-g-carob-moroccan-status-presence-515",
+      "topic": "presence",
+      "summary": "traditional low-input tree in Abda, Souss, Taounate and Khémisset zones (per FNH press page)",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall; combined with sourced records where present",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.G.carob.moroccan_status"
+      }
+    },
+    {
+      "id": "r-f-carob-yield-yield-604",
+      "topic": "yield",
+      "summary": "Yield 1–3 t/ha (mature orchard, shelled or fresh as customary for the crop; wide range). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 1, "max": 3 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general orchard yield knowledge; not Moroccan statistics",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.F.carob.yield"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

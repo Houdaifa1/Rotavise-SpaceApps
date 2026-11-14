@@ -1,0 +1,228 @@
+{
+  "id": "potato",
+  "version": "0.8.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Potato (main season)",
+    "localNames": [{ "language": "fr", "name": "Pomme de terre" }],
+    "scientificName": "Solanum tuberosum L.",
+    "family": "Solanaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-potato",
+        "page": null,
+        "quote": "\"scientificName\":\"Solanum tuberosum L.\"",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "ardna-vegetable-reference",
+        "page": 13,
+        "quote": "la culture de pomme de terre",
+        "locator": "PDF page 13, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine."
+      }
+    ]
+  },
+  "harvestProduct": "root_tuber",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "page": 13,
+          "quote": "elle est devenue cultivable pratiquement dans toutes les régions du Maroc",
+          "locator": "PDF page 13",
+          "interpretation": "context_only",
+          "note": "National presence."
+        }
+      ],
+      "note": "National reference; needs irrigation in most places."
+    }
+  ],
+  "rules": [
+    {
+      "id": "potato-sowing-main",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "page": 13,
+          "quote": "La plantation s'effectue entre Janvier et Février",
+          "locator": "PDF page 13",
+          "interpretation": "normalized",
+          "note": "Main season; the other four planting seasons are not modelled."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Main season only.",
+      "metric": "planting_window",
+      "start": "01-01",
+      "end": "02-29",
+      "precision": "full_month"
+    },
+    {
+      "id": "potato-duration",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-souss",
+          "page": 19,
+          "quote": "La durée complète du cycle végétatif vari d'environ 80 à 150 jours",
+          "locator": "PDF page 19, 10.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Depends on variety.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 80,
+      "maxDays": 150
+    },
+    {
+      "id": "potato-frost",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "page": 13,
+          "quote": "La pomme de terre est très sensible au gel",
+          "locator": "PDF page 13",
+          "interpretation": "normalized",
+          "note": "Frost encoded as a minimum below 0 °C; the guide gives no figure."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Any frost day counts.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "potato-soil-ph",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-rsk",
+          "page": 7,
+          "quote": "dans un sol légèrement acide (pH=5.5 à 6)",
+          "locator": "PDF page 7",
+          "interpretation": "normalized",
+          "note": "Range as written; the guide does not state the method."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Preference from the ONCA sheet; warns only.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 5.5,
+      "max": 6
+    },
+    {
+      "id": "potato-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Potato 1.15 0.75",
+          "locator": "Table 12, Potato",
+          "interpretation": "normalized",
+          "note": "Mid 1.15, end 0.75."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Roots and Tubers 0.5 1.10 0.95",
+          "locator": "Table 12, Roots and tubers group",
+          "interpretation": "normalized",
+          "note": "Initial 0.5 from the group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "25 30 30/45 30 115/130 Jan/Nov (Semi) Arid Climate",
+          "locator": "Table 11, Potato",
+          "interpretation": "normalized",
+          "note": "Stage shares, using 45 for the mid stage."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 1.15,
+      "kcEnd": 0.75,
+      "stageLengths": [25, 30, 45, 30]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Early, late, off-season and mountain crops are in the source but not modelled."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Moroccan soils are usually above the preferred pH, so most fields will show this warning.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

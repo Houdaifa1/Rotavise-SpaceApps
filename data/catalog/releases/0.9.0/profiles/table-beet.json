@@ -1,0 +1,166 @@
+{
+  "id": "table-beet",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Table beet",
+    "localNames": [{ "language": "fr", "name": "Betterave potagère" }],
+    "scientificName": "Beta vulgaris L.",
+    "family": "Amaranthaceae",
+    "citations": [
+      {
+        "sourceId": "kew-beet-gbif",
+        "page": null,
+        "quote": "\"scientificName\":\"Beta vulgaris L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-roots",
+        "page": 2,
+        "quote": "LA BETTERAVE POTAGÈRE",
+        "locator": "PDF page 2",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "root_tuber",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "page": 2,
+          "quote": "LA BETTERAVE POTAGÈRE",
+          "locator": "PDF page 2",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "table-beet-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "page": 2,
+          "quote": "Le meilleur moment du semis est Avril-Mai-Juin",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National bulletin; check your local calendar.",
+      "metric": "planting_window",
+      "start": "04-01",
+      "end": "06-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "table-beet-duration",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "page": 2,
+          "quote": "La récolte se fait 4-5 mois après la plantation",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Four to five months encoded as 120–150 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "From the bulletin.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 120,
+      "maxDays": 150
+    },
+    {
+      "id": "table-beet-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Beets, table 1.05 0.95",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Roots and Tubers 0.5 1.10 0.95",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "25 30 25 10 90 Feb/Mar Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 1.05,
+      "kcEnd": 0.95,
+      "stageLengths": [25, 30, 25, 10]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

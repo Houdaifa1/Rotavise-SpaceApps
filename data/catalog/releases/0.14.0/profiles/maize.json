@@ -1,0 +1,1755 @@
+{
+  "id": "maize",
+  "version": "0.14.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Maize",
+    "localNames": [
+      {
+        "language": "fr",
+        "name": "Maïs",
+        "recall": {
+          "confidence": "high",
+          "basis": "French name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.maize.fr"
+        }
+      },
+      {
+        "language": "ar",
+        "name": "الذرة",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.maize.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الذرة",
+        "recall": {
+          "confidence": "high",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.maize.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الذرة",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-mais",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: maize.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "الذرة"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      },
+      {
+        "language": "ary",
+        "name": "درة",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-mais",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: maize.ary.1. Native-speaker review pending.",
+            "page": null,
+            "quote": "درة"
+          }
+        ],
+        "confidence": "low"
+      }
+    ],
+    "scientificName": "Zea mays L.",
+    "family": "Poaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-maize",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Zea mays L.\""
+      }
+    ]
+  },
+  "harvestProduct": "forage",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "doukkalia",
+      "name": "Doukkalia",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "DOUKKALIA PRECOCE INRA MAROC 1990"
+        }
+      ],
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "الدكالية",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.doukkalia.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "el-abdia",
+      "name": "El Abdia",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "EL ABDIA PRECOCE INRA MAROC 1999"
+        }
+      ],
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "العبدية",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.el-abdia.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kamla",
+      "name": "Kamla",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "KAMLA PRECOCE INRA MAROC 1990"
+        }
+      ]
+    },
+    {
+      "id": "inram-383",
+      "name": "INRAM 383",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-agris-maize-double-cross",
+          "locator": "abstract",
+          "interpretation": "normalized",
+          "note": "1965 double-cross hybrids; historical, likely no longer grown. Abstract says four hybrids but lists three.",
+          "page": null,
+          "quote": "1-INRAM 383 hybride precoce a grains blancs.2-INRAM 590 hybride demi-precoce a grains jaune. 3-INRAM 935"
+        }
+      ],
+      "notes": "historic_hybrid"
+    },
+    {
+      "id": "inram-590",
+      "name": "INRAM 590",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-agris-maize-double-cross",
+          "locator": "abstract",
+          "interpretation": "normalized",
+          "note": "Historical only.",
+          "page": null,
+          "quote": "1-INRAM 383 hybride precoce a grains blancs.2-INRAM 590 hybride demi-precoce a grains jaune. 3-INRAM 935"
+        }
+      ],
+      "notes": "historic_hybrid"
+    },
+    {
+      "id": "inram-935",
+      "name": "INRAM 935",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-agris-maize-double-cross",
+          "locator": "abstract",
+          "interpretation": "normalized",
+          "note": "Historical only.",
+          "page": null,
+          "quote": "1-INRAM 383 hybride precoce a grains blancs.2-INRAM 590 hybride demi-precoce a grains jaune. 3-INRAM 935"
+        }
+      ],
+      "notes": "historic_hybrid"
+    },
+    {
+      "id": "grain-hybrids",
+      "name": "Grain hybrids",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.maize.grain-hybrids"
+      },
+      "notes": "type group; mostly imported hybrids"
+    },
+    {
+      "id": "silage-hybrids",
+      "name": "Silage hybrids",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.maize.silage-hybrids"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "sweet-corn",
+      "name": "Sweet corn",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.maize.sweet-corn"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "popcorn",
+      "name": "Popcorn",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.maize.popcorn"
+      },
+      "notes": "type group"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-silage-maize",
+          "locator": "PDF page 1",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin.",
+          "page": 1,
+          "quote": "le cycle long a été semé début avril"
+        }
+      ],
+      "note": "National bulletin; irrigated; check your local calendar."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.maize.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.maize.TAD"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.maize.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.maize.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.maize.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "maize-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-silage-maize",
+          "locator": "PDF page 1",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": 1,
+          "quote": "le cycle long a été semé début avril"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Dates from Moroccan silage trials, not a recommendation; summer short-cycle sowing is not modelled.",
+      "metric": "planting_window",
+      "start": "04-01",
+      "end": "04-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "maize-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "150 days.",
+          "page": null,
+          "quote": "30 40 50 30 150 April Spain"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO Mediterranean-climate row; silage is cut earlier.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 150,
+      "maxDays": 150
+    },
+    {
+      "id": "maize-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values.",
+          "page": null,
+          "quote": "Maize, Field (grain) (field corn) 1.20 0.60-0.35"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group.",
+          "page": null,
+          "quote": "Cereals 0.3 1.15 0.4"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "30 40 50 30 150 April Spain"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.3,
+      "kcMid": 1.2,
+      "kcEnd": 0.6,
+      "stageLengths": [30, 40, 50, 30]
+    },
+    {
+      "id": "maize-heat",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 15",
+          "interpretation": "normalized",
+          "note": "No flowering timing used, so applied across the cycle.",
+          "page": 15,
+          "quote": "Maximum air temperature above which pollination starts to fail (heat stress) (°C) Conservative (1) 40"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop default; applied across the cycle.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    },
+    {
+      "id": "a-maize-cold-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-fao-frost-chapter4",
+          "locator": "Chapter 4, Table 4.5, germination column, Corn [maize] row",
+          "interpretation": "normalized",
+          "note": "Field-crop critical injury range reproduced by FAO, not the harvested-product freezing table. Preserve the published endpoints without selecting one. A daily-minimum air metric, stage dates and Moroccan cultivar validation are not supplied.",
+          "page": null,
+          "quote": "Corn [maize] -2, -3"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Damage limit (damage) at stage \"germination\". Quote re-found in the saved source text.",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "germination",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "c-maize-preferred-predecessor-preferred-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-inra-forage",
+          "locator": "PDF page 152 / printed page 143, Place dans l’assolement and Table 5",
+          "interpretation": "normalized",
+          "note": "The source describes the value of bersim preceding forage maize. A crop-specific benefit does not make the entire Fabaceae family a preferred predecessor. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 152
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-a-maize-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general horticulture/agronomy knowledge: above-ground tissue damaged below about -2 C once the growing point is above ground",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.maize.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"vegetative_growth\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-c-maize-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family Poaceae; maize tolerates repetition better than most crops, so this is weak",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.maize.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 2
+    },
+    {
+      "id": "t-c-maize-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family (shared stem borers and soil pests)",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.maize.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-fill-maize-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -2 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.maize.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "c11-maize-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.maize"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 5.8,
+      "max": 7.5
+    },
+    {
+      "id": "c11-maize-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.maize"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.7
+    },
+    {
+      "id": "c11-maize-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.maize"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-maize-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.maize"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "high",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-maize-break-fusarium-graminearum",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.maize.fusarium-graminearum"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Fusarium head blight.",
+      "metric": "crop_health_break",
+      "issueId": "fusarium-graminearum",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-maize-break-bipolaris-maydis",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.maize.bipolaris-maydis"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Southern leaf blight.",
+      "metric": "crop_health_break",
+      "issueId": "bipolaris-maydis",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-maize-break-fusarium-verticillioides",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.maize.fusarium-verticillioides"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Fusarium ear rot.",
+      "metric": "crop_health_break",
+      "issueId": "fusarium-verticillioides",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-maize-break-macrophomina-charcoal-rot",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.maize.macrophomina-charcoal-rot"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Charcoal rot.",
+      "metric": "crop_health_break",
+      "issueId": "macrophomina-charcoal-rot",
+      "minimumBreakDays": 1460
+    }
+  ],
+  "references": [
+    {
+      "id": "f-maize-observed-yield-yield-29",
+      "topic": "yield",
+      "summary": "Yield 24.5–24.5 t/ha (product forage; fresh/dry matter unspecified; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 24.5, "max": 24.5 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 67 / printed page 64, Table 37, Mais fourrager row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. Catalog maize is forage. Do not use the grain-maize row in Table 35. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "id": "f-maize-settat-2015-2016-yield-30",
+      "topic": "yield",
+      "summary": "Yield 56–56 t/ha (product forage; fresh/dry basis not specified; years 2015-2016; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 56, "max": 56 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 71, Production agricole, Mais fourragère row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "id": "k-maize-background-58",
+      "topic": "background",
+      "summary": "Warm-season cereal; this catalog product is forage maize. Young above-ground leaves can be frost-injured; protected growing points and mature plants respond differently. Heat and drought around tasselling and silking can impair pollination and kernel set. Rotational benefits depend on the pest and residue system; maize after maize can retain maize-specific inoculum. Forage harvest is based on whole-plant maturity and dry matter; grain yields and grain-harvest dates are different measures.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.maize"
+      }
+    },
+    {
+      "id": "c11-maize-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.maize"
+      }
+    },
+    {
+      "id": "c11-maize-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.maize"
+      }
+    },
+    {
+      "id": "c11-maize-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: high.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.maize"
+      }
+    },
+    {
+      "id": "c11-maize-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.maize"
+      }
+    },
+    {
+      "id": "c11-maize-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: high.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.maize"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "maize-faostat-pp-2020",
+          "kind": "prices",
+          "value": 3100,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2020",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5530\",\"Producer Price (LCU/tonne)\",\"2020\",\"2020\",\"7021\",\"Annual value\",\"LCU\",\"3100.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":763015,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2020.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2020.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-pp-2021",
+          "kind": "prices",
+          "value": 3800,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2021",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5530\",\"Producer Price (LCU/tonne)\",\"2021\",\"2021\",\"7021\",\"Annual value\",\"LCU\",\"3800.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":763016,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2021.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2021.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-pp-2022",
+          "kind": "prices",
+          "value": 5553,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2022",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5530\",\"Producer Price (LCU/tonne)\",\"2022\",\"2022\",\"7021\",\"Annual value\",\"LCU\",\"5553.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":763017,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2022.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2022.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-pp-2023",
+          "kind": "prices",
+          "value": 5251,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2023",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5530\",\"Producer Price (LCU/tonne)\",\"2023\",\"2023\",\"7021\",\"Annual value\",\"LCU\",\"5251.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":763018,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2023.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2023.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-pp-2024",
+          "kind": "prices",
+          "value": 6740,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2024",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5530\",\"Producer Price (LCU/tonne)\",\"2024\",\"2024\",\"7021\",\"Annual value\",\"LCU\",\"6740.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":763019,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2024.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:maize.prices.maize-faostat-pp-2024.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 420.4,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"420.400000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1904836,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:maize.yields.maize-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 530.6,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"530.600000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1904837,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:maize.yields.maize-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 311.3,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"311.300000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1904838,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:maize.yields.maize-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 129.5,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"129.500000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1904839,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:maize.yields.maize-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 722.4,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Maize (corn)",
+          "scenarioId": "maize-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"56\",\"'0112\",\"Maize (corn)\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"722.400000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1904840,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:maize.yields.maize-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-inra-forage-margin-1",
+          "kind": "margins",
+          "value": 4310,
+          "unit": "DH/ha",
+          "currency": "MAD",
+          "year": null,
+          "region": "Morocco; generic scenario: irrigated; main/catch crop",
+          "commodity": null,
+          "scenarioId": "maize-inra-forage-margin-1",
+          "definition": "Published illustrative gross margin, based on the feed-value assumptions of this chapter; not a guaranteed cash income.",
+          "citations": [
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "4 310",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure à l’auge\",\"scenario\":\"irrigated; main/catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-1.quote"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Maïs",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure à l’auge\",\"scenario\":\"irrigated; main/catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-1.quote.context.0"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "verdure à l’auge",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure à l’auge\",\"scenario\":\"irrigated; main/catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-1.quote.context.1"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Marge brute exprimée en DH/ha",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure à l’auge\",\"scenario\":\"irrigated; main/catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-1.quote.context.2"
+            }
+          ],
+          "research": {
+            "publicationYear": 1997,
+            "yearBasis": "Publication year 1997 is on PDF page 2; budget observation year not_found.",
+            "market": "on-farm feed valuation; not a cash-sales market",
+            "nominal": null,
+            "nominalBasis": "Unadjusted historical budget; explicit nominal/constant-price statement not_found.",
+            "marginDefinition": "Published illustrative gross margin, based on the feed-value assumptions of this chapter; not a guaranteed cash income.",
+            "statistic": "illustrative_feed_budget",
+            "limitations": [
+              "Historical book; year of underlying prices is not_found.",
+              "UF is a feed-energy unit, not kg or tonnes; no UF-to-mass conversion.",
+              "Species-specific cultivation status is not established solely by this model budget."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-inra-forage-margin-2",
+          "kind": "margins",
+          "value": 10616,
+          "unit": "DH/ha",
+          "currency": "MAD",
+          "year": null,
+          "region": "Morocco; generic scenario: irrigated; main crop",
+          "commodity": null,
+          "scenarioId": "maize-inra-forage-margin-2",
+          "definition": "Published illustrative gross margin, based on the feed-value assumptions of this chapter; not a guaranteed cash income.",
+          "citations": [
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "10 616",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure ensilée\",\"scenario\":\"irrigated; main crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-2.quote"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Maïs",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure ensilée\",\"scenario\":\"irrigated; main crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-2.quote.context.0"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "verdure ensilée",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure ensilée\",\"scenario\":\"irrigated; main crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-2.quote.context.1"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Marge brute exprimée en DH/ha",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure ensilée\",\"scenario\":\"irrigated; main crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-2.quote.context.2"
+            }
+          ],
+          "research": {
+            "publicationYear": 1997,
+            "yearBasis": "Publication year 1997 is on PDF page 2; budget observation year not_found.",
+            "market": "on-farm feed valuation; not a cash-sales market",
+            "nominal": null,
+            "nominalBasis": "Unadjusted historical budget; explicit nominal/constant-price statement not_found.",
+            "marginDefinition": "Published illustrative gross margin, based on the feed-value assumptions of this chapter; not a guaranteed cash income.",
+            "statistic": "illustrative_feed_budget",
+            "limitations": [
+              "Historical book; year of underlying prices is not_found.",
+              "UF is a feed-energy unit, not kg or tonnes; no UF-to-mass conversion.",
+              "Species-specific cultivation status is not established solely by this model budget."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "maize-inra-forage-margin-3",
+          "kind": "margins",
+          "value": 8233,
+          "unit": "DH/ha",
+          "currency": "MAD",
+          "year": null,
+          "region": "Morocco; generic scenario: irrigated; catch crop",
+          "commodity": null,
+          "scenarioId": "maize-inra-forage-margin-3",
+          "definition": "Published illustrative gross margin, based on the feed-value assumptions of this chapter; not a guaranteed cash income.",
+          "citations": [
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "8 233",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure ensilée\",\"scenario\":\"irrigated; catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-3.quote"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Maïs",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure ensilée\",\"scenario\":\"irrigated; catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-3.quote.context.0"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "verdure ensilée",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure ensilée\",\"scenario\":\"irrigated; catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-3.quote.context.1"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Marge brute exprimée en DH/ha",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure ensilée\",\"scenario\":\"irrigated; catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.margins.maize-inra-forage-margin-3.quote.context.2"
+            }
+          ],
+          "research": {
+            "publicationYear": 1997,
+            "yearBasis": "Publication year 1997 is on PDF page 2; budget observation year not_found.",
+            "market": "on-farm feed valuation; not a cash-sales market",
+            "nominal": null,
+            "nominalBasis": "Unadjusted historical budget; explicit nominal/constant-price statement not_found.",
+            "marginDefinition": "Published illustrative gross margin, based on the feed-value assumptions of this chapter; not a guaranteed cash income.",
+            "statistic": "illustrative_feed_budget",
+            "limitations": [
+              "Historical book; year of underlying prices is not_found.",
+              "UF is a feed-energy unit, not kg or tonnes; no UF-to-mass conversion.",
+              "Species-specific cultivation status is not established solely by this model budget."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        }
+      ],
+      "options": [
+        {
+          "research": {
+            "id": "maize-forage-use",
+            "option": "On-farm forage/feed use",
+            "sourceId": "inra-forages",
+            "quote": {
+              "language": "fr",
+              "original": "4 310",
+              "english": "4 310",
+              "locator": {
+                "pdfPage": 116,
+                "printedPage": "107",
+                "table": "13",
+                "rowCrop": "Maïs",
+                "rowMode": "verdure à l’auge",
+                "scenario": "irrigated; main/catch crop",
+                "column": "Mb (DH/ha)"
+              },
+              "context": [
+                { "original": "Maïs", "english": "Maize" },
+                {
+                  "original": "verdure à l’auge",
+                  "english": "green fodder fed at the trough"
+                },
+                {
+                  "original": "Marge brute exprimée en DH/ha",
+                  "english": "Gross margin expressed in DH/ha"
+                }
+              ],
+              "format": "Selected verbatim printed cells/fragments; spatial association retained in locator. No synthetic reconstructed quotation.",
+              "verificationMethod": "AI visual reading of the saved original image/PDF render; machine match to a separately saved transcription is supplementary. Human/expert review remains pending.",
+              "translationStatus": "AI translation; not reviewed by a human"
+            },
+            "linkedMarginIds": [
+              "maize-inra-forage-margin-1",
+              "maize-inra-forage-margin-2",
+              "maize-inra-forage-margin-3"
+            ],
+            "limitations": [
+              "Illustrative feed valuation; no livestock income or avoided-feed expenditure calculated."
+            ],
+            "eligibleForCalculation": false
+          },
+          "citations": [
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "4 310",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure à l’auge\",\"scenario\":\"irrigated; main/catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.option.maize-forage-use.quote"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Maïs",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure à l’auge\",\"scenario\":\"irrigated; main/catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.option.maize-forage-use.quote.context.0"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "verdure à l’auge",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure à l’auge\",\"scenario\":\"irrigated; main/catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.option.maize-forage-use.quote.context.1"
+            },
+            {
+              "sourceId": "research-income-inra-forages",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Marge brute exprimée en DH/ha",
+              "locator": "{\"pdfPage\":116,\"printedPage\":\"107\",\"table\":\"13\",\"rowCrop\":\"Maïs\",\"rowMode\":\"verdure à l’auge\",\"scenario\":\"irrigated; main/catch crop\",\"column\":\"Mb (DH/ha)\"}",
+              "quoteCheck": "income:maize.option.maize-forage-use.quote.context.2"
+            }
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "economicObservationYear",
+          "status": "not_found",
+          "scope": "At least one regional/illustrative budget has no explicitly attached observation year; no publication/upload/contract year substituted."
+        },
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [
+        {
+          "id": "maize.forage_residue_feed.01",
+          "category": "forage_residue_feed",
+          "effect": "Forage maize provides an energy-rich feed",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Forage maize harvest mode, not grain-maize stover or sweet corn."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-inra-forage",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Maïs fourrager : le maïs fourrager présente un grand intérêt surtout par son potentiel élevé de pro-. duction et sa haute valeur énergétique,",
+              "locator": "{\"pdfPage\":null,\"section\":\"Printed p.354; Maïs fourrager\"}",
+              "quoteCheck": "benefits:maize.maize.forage_residue_feed.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "maize",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "maize.pest_break.01",
+          "category": "pest_break",
+          "effect": "Maize and sorghum in the rotation reduce groundnut soil nematode infestation",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Groundnut-nematode context; no numerical tolerance threshold or percentage reduction stated.",
+            "Do not apply this to all Meloidogyne species, cereal pests or other host crops."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "maize/sorghum rotation preceding or separating groundnut crops",
+            "partners": [
+              { "cropId": "groundnut", "family": "Fabaceae" },
+              { "cropId": "maize", "family": "Poaceae" },
+              { "cropId": "sorghum", "family": "Poaceae" }
+            ]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-pntta-groundnut",
+              "sourceSha256": "d586627807f811aec3d601418bb8cffbfbe163e278cf81d0d4ac11e50872d711",
+              "quote": "La méthode de lutte la plus pratique contre les nématodes de l’arachide demeure la rotation des cultures. La présence de certaines cultures dans l’assolement, en particulier le maïs et le sorgho, réduisent les taux d’infestation des sols à des niveaux tolérables.",
+              "locator": "{\"pdfPage\":null,\"section\":\"Printed p.4; Les nématodes\"}",
+              "quoteCheck": "benefits:maize.maize.pest_break.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "maize",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ]
+    }
+  }
+}

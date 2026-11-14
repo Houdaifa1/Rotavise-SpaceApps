@@ -1,0 +1,452 @@
+{
+  "id": "courgette",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Courgette",
+    "localNames": [{ "language": "fr", "name": "Courgette" }],
+    "scientificName": "Cucurbita pepo L.",
+    "family": "Cucurbitaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-courgette",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Cucurbita pepo L.\""
+      },
+      {
+        "sourceId": "pntta-cucurbits",
+        "locator": "PDF page 2",
+        "interpretation": "direct",
+        "note": "French name as written.",
+        "page": 2,
+        "quote": "LES COURGES"
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "black-beauty",
+      "name": "Black Beauty",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.courgette.black-beauty"
+      },
+      "notes": "cultivar"
+    },
+    {
+      "id": "beirut-pale-green-middle-east-type",
+      "name": "Beirut / pale-green Middle East type",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.courgette.beirut---pale-green-middle-east-type"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "cocozelle",
+      "name": "Cocozelle",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.courgette.cocozelle"
+      },
+      "notes": "cultivar; Italian; striped"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-cucurbits",
+          "locator": "PDF page 2",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin.",
+          "page": 2,
+          "quote": "LES COURGES"
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "courgette-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-cucurbits",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine.",
+          "page": 2,
+          "quote": "Le semis direct peut être effectué en Juin-Juillet"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Late-season open-field sowing; the earlier sowing needs protection and is not modelled.",
+      "metric": "planting_window",
+      "start": "06-01",
+      "end": "07-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "courgette-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "100 days.",
+          "page": null,
+          "quote": "25 35 25 15 100 Apr; Dec. Medit.; Arid Reg."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "90 days.",
+          "page": null,
+          "quote": "20 30 25 15 90 May/June Medit.; Europe"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO rows.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 100
+    },
+    {
+      "id": "courgette-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values.",
+          "page": null,
+          "quote": "Squash, Zucchini 0.95 0.75"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group.",
+          "page": null,
+          "quote": "Cucumber Family (Cucurbitaceae) 0.5 1.00 0.80"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "20 30 25 15 90 May/June Medit.; Europe"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 0.95,
+      "kcEnd": 0.75,
+      "stageLengths": [20, 30, 25, 15]
+    },
+    {
+      "id": "t-a-courgette-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general horticulture/agronomy knowledge: frost-tender Cucurbita; leaves/plants killed at about 0 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.courgette.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-courgette-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture/agronomy knowledge: above about 35 C pollen viability and fruit set fall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.courgette.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-c-courgette-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation guidance for the botanical family Cucurbitaceae",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.courgette.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-c-courgette-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.courgette.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-courgette-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "high",
+        "basis": "general rotation guidance for the botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.courgette.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Cucurbitaceae"
+    },
+    {
+      "id": "t-fill-courgette-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 40 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.courgette.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    }
+  ],
+  "references": [
+    {
+      "id": "f-courgette-observed-yield-yield-18",
+      "topic": "yield",
+      "summary": "Yield 12–12 t/ha (product squash and courgette combined; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 12, "max": 12 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 67 / printed page 64, Table 37, Courge courgette row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. Combined crop category cannot establish a courgette-only average. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "id": "f-courgette-settat-2015-2016-yield-19",
+      "topic": "yield",
+      "summary": "Yield 20–20 t/ha (product courgette only; years 2015-2016; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 20, "max": 20 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 71, Production agricole, Courgettes row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "id": "a-courgette-heat-background-73",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 40 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Cucurbita pepo\"; field TMAX",
+          "interpretation": "normalized",
+          "note": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "f-courgette-settat-2015-2016-yield-254",
+      "topic": "yield",
+      "summary": "Yield 20–20 t/ha (product Courgettes; years 2015-2016; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 20, "max": 20 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 71, Production agricole, Courgettes row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Value converted as stated in proposed (quintal/ha ÷ 10 = t/ha); no averaging or area/production division.",
+          "page": 71,
+          "quote": "Courgettes 0 10 10 0 200 200 - 20,0 -"
+        }
+      ]
+    },
+    {
+      "id": "f-courgette-settat-2014-2015-yield-255",
+      "topic": "yield",
+      "summary": "Yield 15–15 t/ha (product Courgettes; years 2014-2015; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 15, "max": 15 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 72, Production agricole, Courgettes row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Value converted as stated in proposed (quintal/ha ÷ 10 = t/ha); no averaging or area/production division.",
+          "page": 72,
+          "quote": "Courgettes 0 9 9 0 135 135 - 15,0 15,0"
+        }
+      ]
+    },
+    {
+      "id": "k-courgette-background-49",
+      "topic": "background",
+      "summary": "Warm-season squash harvested as immature fruit. Frost damages plants; chilling can impair emergence and establishment. Heat and water stress can affect flowering, pollination and fruit development. Cucurbit breaks can reduce host-specific carryover, while viruses also depend on vectors and reservoir hosts. Pollination failure can produce aborted or misshapen fruit; blossom-end decay can be secondary to failed set.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.courgette"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

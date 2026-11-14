@@ -1,0 +1,446 @@
+{
+  "id": "sugar-beet",
+  "version": "0.8.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sugar beet",
+    "localNames": [{ "language": "fr", "name": "Betterave à sucre" }],
+    "scientificName": "Beta vulgaris L.",
+    "family": "Amaranthaceae",
+    "citations": [
+      {
+        "sourceId": "kew-beet",
+        "locator": "Accepted name and classification",
+        "interpretation": "context_only",
+        "note": "Accepted taxonomic identity; not cultivar evidence."
+      },
+      {
+        "sourceId": "onca-sugar-beet",
+        "locator": "PDF page 6, crop name",
+        "interpretation": "direct",
+        "note": "Local name as written in the source.",
+        "page": 6,
+        "quote": "Exigence édapho-climatiques de la betterave à sucre"
+      }
+    ]
+  },
+  "harvestProduct": "sugar_root",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "context_only",
+          "note": "Regional sheet for the Tadla zones.",
+          "page": 10,
+          "quote": "Beni Moussa (Souk Sebt) Début septembre -mi novembre"
+        }
+      ],
+      "note": "Regional sheet for Béni Moussa, Dir and Béni Amir; campaign dates come from the sugar company each year."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-oriental",
+          "page": 10,
+          "quote": "Oriental 3 Triffa Début septembre -mi novembre",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "context_only",
+          "note": "Regional sheet."
+        }
+      ],
+      "note": "Regional sheet; the sugar company sets each campaign."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-cs",
+          "page": 11,
+          "quote": "Zemamera Début septembre -mi novembre",
+          "locator": "PDF page 11, Table 3",
+          "interpretation": "context_only",
+          "note": "Regional sheet."
+        }
+      ],
+      "note": "Regional sheet; the sugar company sets each campaign."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-rsk",
+          "page": 11,
+          "quote": "Souk Larbâa - Allal Tazi Septembre - Octobre (précoce) ou novembre (tardif)",
+          "locator": "PDF page 11, Table 3",
+          "interpretation": "context_only",
+          "note": "Regional sheet."
+        }
+      ],
+      "note": "Regional sheet; the sugar company sets each campaign."
+    }
+  ],
+  "rules": [
+    {
+      "id": "beet-sowing-tadla",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "normalized",
+          "note": "Early September encoded as 1 September; mid-November as 15 November.",
+          "page": 10,
+          "quote": "Beni Moussa (Souk Sebt) Début septembre -mi novembre"
+        },
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 10,
+          "quote": "Dir (Kasbat Tadla) Début septembre -mi novembre"
+        },
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 10,
+          "quote": "Beni Amir (Fkih Ben Saleh) Début septembre -mi novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["beni-mellal-tadla"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated Tadla zones; the sugar company sets each campaign.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "beet-duration",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, 3.1.3",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 10,
+          "quote": "une betterave ayant un cycle de 250 jours, s'étalant de fin octobre à fin Juin"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Sugarbeet",
+          "interpretation": "normalized",
+          "note": "November Mediterranean: 230 days.",
+          "page": null,
+          "quote": "45 75 80 30 230 November Mediterranean"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Sugarbeet",
+          "interpretation": "normalized",
+          "note": "November arid regions: 205 days.",
+          "page": null,
+          "quote": "35 60 70 40 205 November Arid Regions"
+        },
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 30",
+          "interpretation": "context_only",
+          "note": "Harvest begins in May.",
+          "page": 30,
+          "quote": "L'opération de la récolte de la betterave commence au mois de mai"
+        }
+      ],
+      "scope": {
+        "regionIds": [
+          "beni-mellal-tadla",
+          "ma-oriental",
+          "ma-casablanca-settat",
+          "ma-rabat-sale-kenitra"
+        ],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Local 250-day cycle with FAO autumn-sowing rows as the shorter bound.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 205,
+      "maxDays": 250
+    },
+    {
+      "id": "beet-summer-heat",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 6, section 2",
+          "interpretation": "normalized",
+          "note": "The upper end of the favourable range (28 °C) is used as the heat limit.",
+          "page": 6,
+          "quote": "Les températures maximales les plus favorables à la croissance sont comprises entre 20°C et 28°C"
+        },
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 6, section 2",
+          "interpretation": "direct",
+          "note": "Heat is the documented harmful side; the sheet gives no low-temperature threshold.",
+          "page": 6,
+          "quote": "Au Maroc, les températures estivales élevées constituent le facteur le plus limitant du rendement de la betterave"
+        }
+      ],
+      "scope": {
+        "regionIds": [
+          "beni-mellal-tadla",
+          "ma-oriental",
+          "ma-casablanca-settat",
+          "ma-rabat-sale-kenitra"
+        ],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Days with a maximum above the favourable 28 °C over the cycle; summer heat is the main yield limit in Morocco. Cool days are not counted (no sourced threshold).",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 28
+    },
+    {
+      "id": "beet-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Sugar Beet 0.35 1.20 0.70",
+          "locator": "Table 12, Sugar Beet",
+          "interpretation": "normalized",
+          "note": "Kc ini 0.35, mid 1.20, end 0.70."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "45 75 80 30 230 November Mediterranean",
+          "locator": "Table 11, Sugarbeet",
+          "interpretation": "normalized",
+          "note": "Stage shares from the November Mediterranean row."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted for local wind and humidity or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.35,
+      "kcMid": 1.2,
+      "kcEnd": 0.7,
+      "stageLengths": [45, 75, 80, 30]
+    },
+    {
+      "id": "beet-soil-ph",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "page": 6,
+          "quote": "Le pH dépend du type de sol et doit être compris entre 6,5 et 7,5",
+          "locator": "PDF page 6",
+          "interpretation": "direct",
+          "note": "pH range as written; the guide does not state the measurement method."
+        }
+      ],
+      "scope": {
+        "regionIds": [
+          "morocco-general",
+          "ma-oriental",
+          "ma-casablanca-settat",
+          "ma-rabat-sale-kenitra"
+        ],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Regional sheet; sugar beet is very sensitive to soil pH.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6.5,
+      "max": 7.5
+    },
+    {
+      "id": "beet-soil-salinity",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "page": 80,
+          "quote": "Sugar beet 7.0 24.0 5.9",
+          "locator": "PDF page 80, Annex III Table III-1",
+          "interpretation": "normalized",
+          "note": "ECe 7 dS/m is the threshold where yield starts to fall; the following columns are the slope and rating."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Yield starts to fall above this saturated-paste salinity; checked only against a farmer's soil test.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 7
+    },
+    {
+      "id": "beet-sowing-oriental",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-oriental",
+          "page": 10,
+          "quote": "Oriental 3 Triffa Début septembre -mi novembre",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "normalized",
+          "note": "Regional sowing dates."
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-oriental"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated; the sugar company sets each campaign.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "beet-sowing-casablanca-settat",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-cs",
+          "page": 11,
+          "quote": "Zemamera Début septembre -mi novembre",
+          "locator": "PDF page 11, Table 3",
+          "interpretation": "normalized",
+          "note": "Regional sowing dates."
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-casablanca-settat"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated; the sugar company sets each campaign.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "beet-sowing-rabat-sale-kenitra",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-rsk",
+          "page": 11,
+          "quote": "Souk Larbâa - Allal Tazi Septembre - Octobre (précoce) ou novembre (tardif)",
+          "locator": "PDF page 11, Table 3",
+          "interpretation": "normalized",
+          "note": "Regional sowing dates."
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-rabat-sale-kenitra"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated; the sugar company sets each campaign.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-30",
+      "precision": "approximate"
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "temperature",
+      "reason": "Bolting after 30 days at 5 °C from the six-leaf stage and the effect of low temperatures on leaves (page 6) have no modelled stage timing or threshold."
+    },
+    {
+      "topic": "cultivar",
+      "reason": "The ONSSA register lists several hundred varieties, none bred by INRA Morocco; none is recorded until a Tadla source names the varieties grown."
+    },
+    {
+      "topic": "rotation",
+      "reason": "Rotation is listed against cercosporiosis (page 25) without a return interval."
+    }
+  ],
+  "limitations": [
+    "Regional official sheet and FAO defaults, not yet expert-reviewed."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "maize",
+  "version": "0.3.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Maize",
+    "localNames": [],
+    "scientificName": "Zea mays L.",
+    "family": "Poaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-maize",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Zea mays L.\""
+      }
+    ]
+  },
+  "harvestProduct": "forage",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "doukkalia",
+      "name": "Doukkalia",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "DOUKKALIA PRECOCE INRA MAROC 1990"
+        }
+      ]
+    },
+    {
+      "id": "el-abdia",
+      "name": "El Abdia",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "EL ABDIA PRECOCE INRA MAROC 1999"
+        }
+      ]
+    },
+    {
+      "id": "kamla",
+      "name": "Kamla",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-maize",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "KAMLA PRECOCE INRA MAROC 1990"
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Forage crops table",
+          "interpretation": "context_only",
+          "note": "Silage maize area in the Tadla perimeter.",
+          "page": null,
+          "quote": "Mais d’ensilage 754"
+        }
+      ],
+      "note": "Listed for Tadla; not schedulable in this release."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "No sourced Tadla sowing window collected yet."
+    },
+    {
+      "topic": "cycle_duration",
+      "reason": "No sourced duration collected yet."
+    }
+  ],
+  "limitations": ["Identity and local presence only."]
+}

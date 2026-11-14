@@ -1,0 +1,181 @@
+{
+  "id": "peach",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Peach and nectarine",
+    "localNames": [{ "language": "fr", "name": "Pêcher-Nectarinier" }],
+    "scientificName": "Prunus persica (L.) Stokes",
+    "family": "Rosaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-peach",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF.",
+        "page": null,
+        "quote": "\"scientificName\":\"Prunus persica (L.) Stokes\""
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter.",
+        "page": null,
+        "quote": "Pêcher-Nectarinier"
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "spring-crest",
+      "name": "Spring Crest",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section VI Le pêcher et la nectarine",
+          "interpretation": "normalized",
+          "note": "2003 student report citing IAV Hassan II; confirms Springcrest in use then, not today.",
+          "page": null,
+          "quote": "spring crest, starcrest, spring gold, mayrose, maycrest"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "maycrest",
+      "name": "Maycrest",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section VI",
+          "interpretation": "normalized",
+          "note": "2003 report.",
+          "page": null,
+          "quote": "spring crest, starcrest, spring gold, mayrose, maycrest"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "florida-very-early-group",
+      "name": "Florida very-early group",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section VI",
+          "interpretation": "normalized",
+          "note": "Report names no Florida cultivar; Flordastar and Flordaprince are NOT confirmed by name.",
+          "page": null,
+          "quote": "Des variétés floridiennes très précoces (maturité en avril) sont actuellement en production"
+        }
+      ],
+      "notes": "type_group"
+    },
+    {
+      "id": "nectarines-mayred-red-june-early-sungrand-summergrand-nectard-6-fantasia",
+      "name": "Nectarines (Mayred, Red June, Early Sungrand, Summergrand, Nectard 6, Fantasia)",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-memoireonline-peach",
+          "locator": "section VI",
+          "interpretation": "normalized",
+          "note": "2003 report.",
+          "page": null,
+          "quote": "mayred, red june, early sungrand, summergrand, nectard 6, fantasia"
+        }
+      ],
+      "notes": "cultivar_list"
+    },
+    {
+      "id": "flordastar",
+      "name": "Flordastar",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.peach.flordastar"
+      },
+      "notes": "cultivar; USA, low-chill"
+    },
+    {
+      "id": "flordaprince",
+      "name": "Flordaprince",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.peach.flordaprince"
+      },
+      "notes": "cultivar; USA, low-chill"
+    },
+    {
+      "id": "springcrest",
+      "name": "Springcrest",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.peach.springcrest"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "nectarine-types",
+      "name": "Nectarine types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.peach.nectarine-types"
+      },
+      "notes": "type group"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only.",
+          "page": null,
+          "quote": "Pêcher-Nectarinier"
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

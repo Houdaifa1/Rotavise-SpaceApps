@@ -1,0 +1,1805 @@
+[
+  {
+    "cropId": "fig",
+    "scientificName": "Ficus carica L.",
+    "researchOrder": 151,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "الكرموس",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "الكرموس",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Ficus carica",
+        "recalledNameWas": "الكرموس",
+        "entityId": "Q36146",
+        "languageEvidence": "Explicit language tag ary in Wikidata; language fallback was not requested.",
+        "locator": "Q36146 ary",
+        "identityReason": "P225 taxon name matches the catalog scientific name after author citation removal."
+      },
+      {
+        "name": "كرموس",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-figuier",
+        "quote": "كرموس",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Ficus carica L",
+        "recalledNameWas": "الكرموس",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "تين",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "تين",
+        "entityId": "Q36146",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Ficus carica",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "شجرة التين",
+        "sourceId": "AESVT-figuier",
+        "quote": "شجرة التين",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Ficus carica L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Ficus carica', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-16.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الكرموس",
+        "status": "confirmed",
+        "sourceIds": ["WD-SPARQL-OTHER"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [
+      {
+        "cultivarId": "ghoudan",
+        "catalogName": "Ghoudan",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [
+          {
+            "name": "غودان",
+            "sourceId": "ONCA-FIG",
+            "quote": "غودان",
+            "isMoroccanSource": true,
+            "languageEvidence": "Moroccan cultivar name in formal Arabic; the source does not label the spelling as Darija.",
+            "scientificNameLocator": "References, PDF p. 17",
+            "note": "Names explicitly listed as selected for cultivation in Morocco; source is a provisional NOVEC technical reference hosted by Ardna.",
+            "pdfPage": 4,
+            "scientificNameAsShown": "Ficus Carica L"
+          }
+        ],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "nabout",
+        "catalogName": "Nabout",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [
+          {
+            "name": "النبوت",
+            "sourceId": "ONCA-FIG",
+            "quote": "النبوت",
+            "isMoroccanSource": true,
+            "languageEvidence": "Moroccan cultivar name in formal Arabic; the source does not label the spelling as Darija.",
+            "scientificNameLocator": "References, PDF p. 17",
+            "note": "Names explicitly listed as selected for cultivation in Morocco; source is a provisional NOVEC technical reference hosted by Ardna.",
+            "pdfPage": 4,
+            "scientificNameAsShown": "Ficus Carica L"
+          }
+        ],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "el-quoti-lbied",
+        "catalogName": "El-Quoti Lbied",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [
+          {
+            "name": "القوتي لبيض",
+            "sourceId": "ONCA-FIG",
+            "quote": "القوتي \nلبيض",
+            "isMoroccanSource": true,
+            "languageEvidence": "Moroccan cultivar name in formal Arabic; the source does not label the spelling as Darija.",
+            "scientificNameLocator": "References, PDF p. 17",
+            "note": "Names explicitly listed as selected for cultivation in Morocco; source is a provisional NOVEC technical reference hosted by Ardna.",
+            "pdfPage": 4,
+            "scientificNameAsShown": "Ficus Carica L"
+          }
+        ],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "fassi",
+        "catalogName": "Fassi",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [
+          {
+            "name": "الفاسي",
+            "sourceId": "ONCA-FIG",
+            "quote": "الفاسي",
+            "isMoroccanSource": true,
+            "languageEvidence": "Moroccan cultivar name in formal Arabic; the source does not label the spelling as Darija.",
+            "scientificNameLocator": "References, PDF p. 17",
+            "note": "Names explicitly listed as selected for cultivation in Morocco; source is a provisional NOVEC technical reference hosted by Ardna.",
+            "pdfPage": 4,
+            "scientificNameAsShown": "Ficus Carica L"
+          }
+        ],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "noukali",
+        "catalogName": "Noukali",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "ghoudane",
+        "catalogName": "Ghoudane",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [
+          {
+            "name": "غودان",
+            "sourceId": "ONCA-FIG",
+            "quote": "غودان",
+            "isMoroccanSource": true,
+            "languageEvidence": "Moroccan cultivar name in formal Arabic; the source does not label the spelling as Darija.",
+            "scientificNameLocator": "References, PDF p. 17",
+            "note": "Names explicitly listed as selected for cultivation in Morocco; source is a provisional NOVEC technical reference hosted by Ardna.",
+            "pdfPage": 4,
+            "scientificNameAsShown": "Ficus Carica L"
+          }
+        ],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "beldi-local",
+        "catalogName": "Beldi (local)",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": "الكرموس البلدي"
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      }
+    ],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "flax",
+    "scientificName": "Linum usitatissimum L.",
+    "researchOrder": 152,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "زريعة الكتان",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-lin-cultive",
+        "quote": "زريعة الكتان",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Linum usitatissimum L",
+        "recalledNameWas": "الكتان",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "كتان",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "كتان",
+        "entityId": "Q45108",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Linum usitatissimum",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "الكتان",
+        "sourceId": "AESVT-lin-cultive",
+        "quote": "الكتان",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Linum usitatissimum L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Linum usitatissimum', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-17.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الكتان",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "garden-cress",
+    "scientificName": "Lepidium sativum L.",
+    "researchOrder": 153,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "حب الرشاد",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "SMAILI-2023",
+        "quote": "حب الرشاد",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lepidium sativum L.",
+        "recalledNameWas": "حب الرشاد",
+        "pdfPage": 65,
+        "languageEvidence": "Moroccan field-study vernacular; methods p. 5 specify Arabic letters for Arabic names and Tifinagh for Amazigh names; Annex 3 is Jerada.",
+        "identityReason": "The scientific name and Arabic vernacular are printed in the same botanical entry/table row.",
+        "verificationMethod": "visual transcription from rendered PDF",
+        "renderedPageFile": ".research-sources/2026-11-09/smaili-page-65.png",
+        "sourceTextLayerHasEncodingDamage": true
+      },
+      {
+        "name": "حبّ الرشاد",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-cresson-alenois",
+        "quote": "حبّ الرشاد",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lepidium sativum L.",
+        "recalledNameWas": "حب الرشاد",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "رشاد مزروع",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "رشاد مزروع",
+        "entityId": "Q27033",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Lepidium sativum",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "حبّ الرشاد",
+        "sourceId": "AESVT-cresson-alenois",
+        "quote": "حبّ الرشاد",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lepidium sativum L.",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Lepidium sativum', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-17.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "حب الرشاد",
+        "status": "confirmed",
+        "sourceIds": ["SMAILI-2023"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "garlic",
+    "scientificName": "Allium sativum L.",
+    "researchOrder": 154,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "الثومة",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-ail",
+        "quote": "الثومة",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Allium sativum L",
+        "recalledNameWas": "التوم",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "ثوم",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "ثوم",
+        "entityId": "Q23400",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Allium sativum",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "الثوم",
+        "sourceId": "AESVT-ail",
+        "quote": "الثوم",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Allium sativum L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Allium sativum', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-17.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "التوم",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "grapevine",
+    "scientificName": "Vitis vinifera L.",
+    "researchOrder": 155,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "العنب",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-vigne-vigne-a-raisin",
+        "quote": "العنب",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Vitis vinifera L",
+        "recalledNameWas": "الدالية",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "كرمة نبيذية",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "كرمة نبيذية",
+        "entityId": "Q30046",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Vitis vinifera",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "العنب",
+        "sourceId": "AESVT-vigne-vigne-a-raisin",
+        "quote": "العنب",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Vitis vinifera L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      },
+      {
+        "name": "كرمة العنب",
+        "sourceId": "AESVT-vigne-vigne-a-raisin",
+        "quote": "كرمة العنب",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Vitis vinifera L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Vitis vinifera', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-17.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الدالية",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "grass-pea",
+    "scientificName": "Lathyrus sativus L.",
+    "researchOrder": 156,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "جلبان",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "SMAILI-2023",
+        "quote": "جلبان",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lathyrus sativus L.",
+        "recalledNameWas": "الجلبان",
+        "pdfPage": 68,
+        "languageEvidence": "Moroccan field-study vernacular; methods p. 5 specify Arabic letters for Arabic names and Tifinagh for Amazigh names; Annex 3 is Jerada.",
+        "identityReason": "The scientific name and Arabic vernacular are printed in the same botanical entry/table row.",
+        "verificationMethod": "visual transcription from rendered PDF",
+        "renderedPageFile": ".research-sources/2026-11-09/smaili-page-68.png",
+        "sourceTextLayerHasEncodingDamage": true,
+        "note": "Shared row for six Lathyrus species. Attested for this species, not an exclusive species identifier."
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "جلبان مزروع",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "جلبان مزروع",
+        "entityId": "Q162093",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Lathyrus sativus",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Lathyrus sativus', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-18.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الجلبان",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "green-bean",
+    "scientificName": "Phaseolus vulgaris L.",
+    "researchOrder": 157,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "اللوبيا",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-haricot-commun-haricot-vert",
+        "quote": "اللوبيا",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Phaseolus vulgaris L",
+        "recalledNameWas": "اللوبيا الخضراء",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      },
+      {
+        "name": "الفاصوليا",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-haricot-commun-haricot-vert",
+        "quote": "الفاصوليا",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Phaseolus vulgaris L",
+        "recalledNameWas": "اللوبيا الخضراء",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "فاصولياء شائعة",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "فاصولياء شائعة",
+        "entityId": "Q42339",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Phaseolus vulgaris",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "الفاصوليا",
+        "sourceId": "AESVT-haricot-commun-haricot-vert",
+        "quote": "الفاصوليا",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Phaseolus vulgaris L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      },
+      {
+        "name": "الفاصوليا الخضراء",
+        "sourceId": "AESVT-haricot-commun-haricot-vert",
+        "quote": "الفاصوليا الخضراء",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Phaseolus vulgaris L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Phaseolus vulgaris', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-18.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "اللوبيا الخضراء",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "groundnut",
+    "scientificName": "Arachis hypogaea L.",
+    "researchOrder": 158,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "كاوكاو",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "كاوكاو",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Arachis hypogaea",
+        "recalledNameWas": "الكاوكاو",
+        "entityId": "Q37383",
+        "languageEvidence": "Explicit language tag ary in Wikidata; language fallback was not requested.",
+        "locator": "Q37383 ary",
+        "identityReason": "P225 taxon name matches the catalog scientific name after author citation removal."
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "فول سوداني",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "فول سوداني",
+        "entityId": "Q37383",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Arachis hypogaea",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Arachis hypogaea', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-18.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الكاوكاو",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "guava",
+    "scientificName": "Psidium guajava L.",
+    "researchOrder": 159,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "الجوافة",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-goyavier-arbre",
+        "quote": "الجوافة",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Psidium guajava",
+        "recalledNameWas": "الجوافة",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "جوافة",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "جوافة",
+        "entityId": "Q166843",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Psidium guajava",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "الجوافة",
+        "sourceId": "AESVT-goyavier-arbre",
+        "quote": "الجوافة",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Psidium guajava",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Psidium guajava', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-18.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الجوافة",
+        "status": "confirmed",
+        "sourceIds": ["AESVT-goyavier-arbre"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "hazelnut",
+    "scientificName": "Corylus avellana L.",
+    "researchOrder": 160,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "البندق",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-noisette",
+        "quote": "البندق",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Corylus avellana L",
+        "recalledNameWas": "البندق",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "بندق شائع",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "بندق شائع",
+        "entityId": "Q124969",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Corylus avellana",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "البندق",
+        "sourceId": "AESVT-noisette",
+        "quote": "البندق",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Corylus avellana L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Corylus avellana', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-19.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "البندق",
+        "status": "confirmed",
+        "sourceIds": ["AESVT-noisette"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "hemp",
+    "scientificName": "Cannabis sativa L.",
+    "researchOrder": 161,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "القنب",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-chanvre-industriel",
+        "quote": "القنب",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Cannabis sativa L.",
+        "recalledNameWas": "القنب",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "قنب مزروع",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "قنب مزروع",
+        "entityId": "Q26726",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Cannabis sativa",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "القنب الصناعي",
+        "sourceId": "AESVT-chanvre-industriel",
+        "quote": "القنب الصناعي",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Cannabis sativa L.",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Cannabis sativa', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-19.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "القنب",
+        "status": "confirmed",
+        "sourceIds": ["AESVT-chanvre-industriel"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "rejectedOrLimitedEvidence": [
+      {
+        "sourceId": "AESVT-cannabis",
+        "scientificNameAsShown": "Cannabis sativa L",
+        "reason": "This page is specific to another named crop form/use, or the dialect field is malformed. The general catalog mapping was not accepted without review."
+      }
+    ],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "henna",
+    "scientificName": "Lawsonia inermis L.",
+    "researchOrder": 162,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "حنّا",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "حنّا",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lawsonia inermis",
+        "recalledNameWas": "الحنة",
+        "entityId": "Q182448",
+        "languageEvidence": "Explicit language tag ary in Wikidata; language fallback was not requested.",
+        "locator": "Q182448 ary",
+        "identityReason": "P225 taxon name matches the catalog scientific name after author citation removal."
+      },
+      {
+        "name": "الحنّة",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-henne",
+        "quote": "الحنّة",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lawsonia inermis L.",
+        "recalledNameWas": "الحنة",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "حناء",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "حناء",
+        "entityId": "Q182448",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Lawsonia inermis",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "الحنّاء",
+        "sourceId": "AESVT-henne",
+        "quote": "الحنّاء",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lawsonia inermis L.",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Lawsonia inermis', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-19.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الحنة",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "holm-oak",
+    "scientificName": "Quercus ilex",
+    "researchOrder": 163,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "البلوط",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "SMAILI-2023",
+        "quote": "البلوط",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Quercus ilex L.",
+        "recalledNameWas": "البلوط",
+        "pdfPage": 69,
+        "languageEvidence": "Moroccan field-study vernacular; methods p. 5 specify Arabic letters for Arabic names and Tifinagh for Amazigh names; Annex 3 is Jerada.",
+        "identityReason": "The scientific name and Arabic vernacular are printed in the same botanical entry/table row.",
+        "verificationMethod": "visual transcription from rendered PDF",
+        "renderedPageFile": ".research-sources/2026-11-09/smaili-page-69.png",
+        "sourceTextLayerHasEncodingDamage": true,
+        "note": "Shared with Quercus rotundifolia in the row and with cork oak elsewhere. Not an exclusive species name."
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "سنديان أخضر",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "سنديان أخضر",
+        "entityId": "Q218155",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Quercus ilex",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Quercus ilex', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-19.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "البلوط",
+        "status": "confirmed",
+        "sourceIds": ["SMAILI-2023"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "hyssop",
+    "scientificName": "Hyssopus officinalis",
+    "researchOrder": 164,
+    "priority": "other",
+    "ary": [
+      {
+        "name": null,
+        "script": "arabic",
+        "status": "not_found",
+        "sourceId": null,
+        "quote": null,
+        "isMoroccanSource": null,
+        "recalledNameWas": "الزوفا"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "زوفا طبية",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "زوفا طبية",
+        "entityId": "Q137931",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Hyssopus officinalis",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Hyssopus officinalis', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-20.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الزوفا",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "not_found"
+  },
+  {
+    "cropId": "jojoba",
+    "scientificName": "Simmondsia chinensis (Link) C.K.Schneid.",
+    "researchOrder": 165,
+    "priority": "other",
+    "ary": [
+      {
+        "name": null,
+        "script": "arabic",
+        "status": "not_found",
+        "sourceId": null,
+        "quote": null,
+        "isMoroccanSource": null,
+        "recalledNameWas": "الجوجوبا"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "هوهوبا",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "هوهوبا",
+        "entityId": "Q267749",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Simmondsia chinensis",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Simmondsia chinensis', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-20.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الجوجوبا",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "not_found"
+  },
+  {
+    "cropId": "jujube",
+    "scientificName": "Ziziphus jujuba Mill.",
+    "researchOrder": 166,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "زفزوف",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "WIKT-026",
+        "quote": "زفزوف",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Ziziphus jujuba",
+        "recalledNameWas": "الزفزوف",
+        "scientificNameSourceId": "WD-SPARQL-OTHER",
+        "languageEvidence": "Explicit Moroccan Arabic section of Wiktionary.",
+        "locator": "Moroccan Arabic → Noun",
+        "identityReason": "Wiktionary supplies the Moroccan Arabic word and English crop gloss; scientific identity is supplied by a separate saved botanical source.",
+        "reviewRequired": true
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "عناب",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "عناب",
+        "entityId": "Q11181633",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Ziziphus jujuba",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Ziziphus jujuba', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-20.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الزفزوف",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [
+      {
+        "cultivarId": "ziziphus-lotus-wild-sedra",
+        "catalogName": "Ziziphus lotus (wild sedra)",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      }
+    ],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "juniper-cade",
+    "scientificName": "Juniperus oxycedrus L.",
+    "researchOrder": 167,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "طاجة",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "SMAILI-2023",
+        "quote": "طاجة",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Juniperus oxycedrus L.",
+        "recalledNameWas": "القطران",
+        "pdfPage": 67,
+        "languageEvidence": "Moroccan field-study vernacular; methods p. 5 specify Arabic letters for Arabic names and Tifinagh for Amazigh names; Annex 3 is Jerada.",
+        "identityReason": "The scientific name and Arabic vernacular are printed in the same botanical entry/table row.",
+        "verificationMethod": "visual transcription from rendered PDF",
+        "renderedPageFile": ".research-sources/2026-11-09/smaili-page-67.png",
+        "sourceTextLayerHasEncodingDamage": true
+      },
+      {
+        "name": "العرعار",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-genevrier-oxycedre-cade",
+        "quote": "العرعار",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Juniperus oxycedrus L",
+        "recalledNameWas": "القطران",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "عرعر كادي",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "عرعر كادي",
+        "entityId": "Q184300",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Juniperus oxycedrus",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "العرعار الأحمر",
+        "sourceId": "AESVT-genevrier-oxycedre-cade",
+        "quote": "العرعار الأحمر",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Juniperus oxycedrus L",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Juniperus oxycedrus', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-20.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "القطران",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "kiwi",
+    "scientificName": "Actinidia deliciosa (A.Chev.) C.F.Liang & A.R.Ferguson",
+    "researchOrder": 168,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "كيوي",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "WIKT-043",
+        "quote": "كيوي",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Actinidia deliciosa",
+        "recalledNameWas": "الكيوي",
+        "scientificNameSourceId": "WD-SPARQL-OTHER",
+        "languageEvidence": "Explicit Moroccan Arabic section of Wiktionary.",
+        "locator": "Moroccan Arabic → Noun",
+        "identityReason": "Wiktionary supplies the Moroccan Arabic word and English crop gloss; scientific identity is supplied by a separate saved botanical source.",
+        "reviewRequired": true
+      },
+      {
+        "name": "الكيوي",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-kiwi",
+        "quote": "الكيوي",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Actinidia deliciosa",
+        "recalledNameWas": "الكيوي",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "كيوي",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "كيوي",
+        "entityId": "Q343300",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Actinidia deliciosa",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "الكيوي",
+        "sourceId": "AESVT-kiwi",
+        "quote": "الكيوي",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Actinidia deliciosa",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Actinidia deliciosa', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-21.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الكيوي",
+        "status": "confirmed",
+        "sourceIds": ["AESVT-kiwi"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "lavender",
+    "scientificName": "Lavandula angustifolia Mill.",
+    "researchOrder": 169,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "الخزامة",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-lavande",
+        "quote": "الخزامة",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lavandula angustifolia",
+        "recalledNameWas": "الخزامة",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "خزامى ضيقة الأوراق",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "خزامى ضيقة الأوراق",
+        "entityId": "Q42081",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Lavandula angustifolia",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "الخزامى",
+        "sourceId": "AESVT-lavande",
+        "quote": "الخزامى",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lavandula angustifolia",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      },
+      {
+        "name": "اللافندر",
+        "sourceId": "AESVT-lavande",
+        "quote": "اللافندر",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lavandula angustifolia",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Lavandula angustifolia', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-21.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الخزامة",
+        "status": "confirmed",
+        "sourceIds": ["AESVT-lavande"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [
+      {
+        "cultivarId": "lavandula-dentata",
+        "catalogName": "Lavandula dentata",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "lavandula-stoechas-wild-moroccan",
+        "catalogName": "Lavandula stoechas (wild Moroccan)",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      }
+    ],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "leek",
+    "scientificName": "Allium porrum L.",
+    "researchOrder": 170,
+    "priority": "other",
+    "ary": [
+      {
+        "name": null,
+        "script": "arabic",
+        "status": "not_found",
+        "sourceId": null,
+        "quote": null,
+        "isMoroccanSource": null,
+        "recalledNameWas": "الكرات"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "الكرات",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "الكرات",
+        "entityId": "Q21870138",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Allium porrum",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Allium porrum', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-21.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الكرات",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "not_found"
+  },
+  {
+    "cropId": "lemon",
+    "scientificName": "Citrus limon",
+    "researchOrder": 171,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "حامض",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "WIKT-014",
+        "quote": "حامض",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Citrus limon (L.)",
+        "recalledNameWas": "الحامض",
+        "scientificNameSourceId": "AESVT-citronnier",
+        "languageEvidence": "Explicit Moroccan Arabic section of Wiktionary.",
+        "locator": "Moroccan Arabic → Noun",
+        "identityReason": "Wiktionary supplies the Moroccan Arabic word and English crop gloss; scientific identity is supplied by a separate saved botanical source.",
+        "reviewRequired": true
+      },
+      {
+        "name": "الحامض",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-citronnier",
+        "quote": "الحامض",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Citrus limon (L.)",
+        "recalledNameWas": "الحامض",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "شجرة الليمون",
+        "sourceId": "AESVT-citronnier",
+        "quote": "شجرة الليمون",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Citrus limon (L.)",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      },
+      {
+        "name": "الليمون الحامض",
+        "sourceId": "AESVT-citronnier",
+        "quote": "الليمون الحامض",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Citrus limon (L.)",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Citrus limon', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-21.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الحامض",
+        "status": "confirmed",
+        "sourceIds": ["AESVT-citronnier"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "lemon-balm",
+    "scientificName": "Melissa officinalis L.",
+    "researchOrder": 172,
+    "priority": "other",
+    "ary": [
+      {
+        "name": null,
+        "script": "arabic",
+        "status": "not_found",
+        "sourceId": null,
+        "quote": null,
+        "isMoroccanSource": null,
+        "recalledNameWas": "الترنجان"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "ترنجان مخزني",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "ترنجان مخزني",
+        "entityId": "Q148396",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Melissa officinalis",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Melissa officinalis', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-22.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الترنجان",
+        "status": "not_found",
+        "sourceIds": [],
+        "note": "Exact recalled form not verified in an ary-qualified source. Alternative spellings/names are not contradictions."
+      }
+    ],
+    "cultivars": [],
+    "status": "not_found"
+  },
+  {
+    "cropId": "lemon-verbena",
+    "scientificName": "Aloysia citrodora Paláu",
+    "researchOrder": 173,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "لويزة",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "لويزة",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Aloysia citrodora",
+        "recalledNameWas": "لويزة",
+        "entityId": "Q206532",
+        "languageEvidence": "Explicit language tag ary in Wikidata; language fallback was not requested.",
+        "locator": "Q206532 ary",
+        "identityReason": "P225 taxon name matches the catalog scientific name after author citation removal."
+      },
+      {
+        "name": "الرومية اللويزة",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-verveine",
+        "quote": "الرومية اللويزة",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Aloysia citrodora (synonyme: Aloysia triphylla)",
+        "recalledNameWas": "لويزة",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "لويزة ليمونية",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "لويزة ليمونية",
+        "entityId": "Q206532",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Aloysia citrodora",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "اللويزة الليمونية",
+        "sourceId": "AESVT-verveine",
+        "quote": "اللويزة الليمونية",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Aloysia citrodora (synonyme: Aloysia triphylla)",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      },
+      {
+        "name": "اللويزة العطرية",
+        "sourceId": "AESVT-verveine",
+        "quote": "اللويزة العطرية",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Aloysia citrodora (synonyme: Aloysia triphylla)",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Aloysia citrodora', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-22.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "لويزة",
+        "status": "confirmed",
+        "sourceIds": ["WD-SPARQL-OTHER"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "lentil",
+    "scientificName": "Lens culinaris Medik.",
+    "researchOrder": 174,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "العدس",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-lentille",
+        "quote": "العدس",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lens culinaris Medik",
+        "recalledNameWas": "العدس",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "عدس",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "عدس",
+        "entityId": "Q131226",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Lens culinaris",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "العدس",
+        "sourceId": "AESVT-lentille",
+        "quote": "العدس",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Lens culinaris Medik",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Lens culinaris', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-22.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "العدس",
+        "status": "confirmed",
+        "sourceIds": ["AESVT-lentille"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [
+      {
+        "cultivarId": "abda",
+        "catalogName": "Abda",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "bekria",
+        "catalogName": "Bekria",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "karam",
+        "catalogName": "Karam",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography.",
+        "nonArabicEvidence": [
+          {
+            "sourceId": "INRA-VARIETIES-2026",
+            "pdfPage": 42,
+            "quote": "KARAM",
+            "note": "Latin-script cultivar heading attested; not transliterated into Arabic."
+          }
+        ]
+      },
+      {
+        "cultivarId": "jemaat-shaim",
+        "catalogName": "Jemaat Shaim",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "bakria",
+        "catalogName": "Bakria",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [],
+        "searchLog": "Catalog candidate triage followed by local-variety searches in search-cultivar-01.txt through search-cultivar-09.txt and opened Moroccan sources; no Arabic spelling generated from the Latin cultivar name. Formal Arabic names are retained only in ar_only. This is a scoped search, not an exhaustive cultivar bibliography."
+      },
+      {
+        "cultivarId": "extra",
+        "catalogName": "Extra",
+        "ary": [
+          {
+            "name": null,
+            "script": "arabic",
+            "status": "not_found",
+            "sourceId": null,
+            "quote": null,
+            "isMoroccanSource": null,
+            "recalledNameWas": null
+          }
+        ],
+        "ar_only": [
+          {
+            "name": "إﻳﻜﺴﺘﺮا",
+            "sourceId": "INRA-VARIETIES-2026",
+            "quote": "إﻳﻜﺴﺘﺮا",
+            "isMoroccanSource": true,
+            "languageEvidence": "Moroccan cultivar name in formal Arabic; the source does not label the spelling as Darija.",
+            "scientificNameSourceId": "WD-SPARQL-OTHER",
+            "note": "Official bilingual cultivar heading. Exact Arabic presentation forms retained; this is formal Arabic, not proof of ary.",
+            "pdfPage": 40,
+            "scientificNameAsShown": "Lens culinaris"
+          }
+        ],
+        "searchLog": "INRA official cultivar catalogs opened and checked; Latin heading alone is not Arabic/Darija evidence. No transliteration supplied.",
+        "nonArabicEvidence": [
+          {
+            "sourceId": "INRA-VARIETIES-2026",
+            "pdfPage": 40,
+            "quote": "EXTRA",
+            "note": "Latin-script cultivar heading attested; not transliterated into Arabic."
+          }
+        ]
+      }
+    ],
+    "status": "confirmed"
+  },
+  {
+    "cropId": "lentisk",
+    "scientificName": "Pistacia lentiscus L.",
+    "researchOrder": 175,
+    "priority": "other",
+    "ary": [
+      {
+        "name": "الضرو",
+        "script": "arabic",
+        "status": "confirmed",
+        "sourceId": "AESVT-lentisque",
+        "quote": "الضرو",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Pistacia lentiscus",
+        "recalledNameWas": "الضرو",
+        "languageEvidence": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية.",
+        "locator": "Noms & Dénominations → Nom dialectal marocain",
+        "identityReason": "The same botanical sheet gives the scientific name and crop title.",
+        "reviewRequired": true,
+        "evidenceStrength": "Moroccan educational herbarium; no individual author or primary field record shown.",
+        "nameScope": "species or named crop form; see source crop title"
+      }
+    ],
+    "ar_only": [
+      {
+        "name": "بطم عدسي",
+        "sourceId": "WD-SPARQL-OTHER",
+        "quote": "بطم عدسي",
+        "entityId": "Q159812",
+        "isMoroccanSource": false,
+        "scientificNameAsShown": "Pistacia lentiscus",
+        "languageEvidence": "Wikidata label is tagged ar, not ary.",
+        "scope": "taxon label; may be broader than a cultivar or crop-use group"
+      },
+      {
+        "name": "الضَّرو",
+        "sourceId": "AESVT-lentisque",
+        "quote": "الضَّرو",
+        "isMoroccanSource": true,
+        "scientificNameAsShown": "Pistacia lentiscus",
+        "languageEvidence": "Explicit Arabe littéraire / العربية الفصحى field; not promoted to ary."
+      }
+    ],
+    "searchLog": "Wikidata exact P225 query: 'Pistacia lentiscus', explicit ary/ar labels and ary aliases; Wiktionary ary plant/food categories and opened entries; Moroccan INRA/field-study and educational-herbarium matches checked. Individual web discovery log: .research-sources/2026-11-09/search-other-22.txt. not_found means no accepted match in this documented search, not proof that a Darija name does not exist.",
+    "recalledNames": [
+      {
+        "name": "الضرو",
+        "status": "confirmed",
+        "sourceIds": ["AESVT-lentisque"],
+        "note": "Exact Arabic-script form found."
+      }
+    ],
+    "cultivars": [],
+    "status": "confirmed"
+  }
+]

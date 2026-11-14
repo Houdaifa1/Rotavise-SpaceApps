@@ -1,0 +1,183 @@
+{
+  "id": "pomegranate",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Pomegranate",
+    "localNames": [{ "language": "fr", "name": "Grenadier" }],
+    "scientificName": "Punica granatum L.",
+    "family": "Lythraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-pomegranate",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF.",
+        "page": null,
+        "quote": "\"scientificName\":\"Punica granatum L.\""
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter.",
+        "page": null,
+        "quote": "Grenadier"
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "sefri",
+      "name": "Sefri",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Local Moroccan cultivar in the study.",
+          "page": null,
+          "quote": "mainly ‘Sefri’, ‘Bzou’, ‘Chioukhi’ and ‘Djeibi’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "bzou",
+      "name": "Bzou",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Local Moroccan cultivar in the study.",
+          "page": null,
+          "quote": "mainly ‘Sefri’, ‘Bzou’, ‘Chioukhi’ and ‘Djeibi’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "chioukhi",
+      "name": "Chioukhi",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Local Moroccan cultivar in the study.",
+          "page": null,
+          "quote": "mainly ‘Sefri’, ‘Bzou’, ‘Chioukhi’ and ‘Djeibi’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "djeibi",
+      "name": "Djeibi",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Local Moroccan cultivar in the study.",
+          "page": null,
+          "quote": "mainly ‘Sefri’, ‘Bzou’, ‘Chioukhi’ and ‘Djeibi’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "zheri-precoce",
+      "name": "Zheri Precoce",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Table 1 cultivar list",
+          "interpretation": "normalized",
+          "note": "The table layout is interleaved; the origin shown next to this name appears to be Tunisia, so it is not shown here to be a Moroccan cultivar. The training entry \"Zehri\" is NOT confirmed as Moroccan.",
+          "page": null,
+          "quote": "Zheri Precoce Tunisia"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "zehri",
+      "name": "Zehri",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pomegranate.zehri"
+      },
+      "notes": "cultivar; local"
+    },
+    {
+      "id": "mollar-de-elche",
+      "name": "Mollar de Elche",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pomegranate.mollar-de-elche"
+      },
+      "notes": "cultivar; Spanish"
+    },
+    {
+      "id": "wonderful",
+      "name": "Wonderful",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pomegranate.wonderful"
+      },
+      "notes": "cultivar; USA"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only.",
+          "page": null,
+          "quote": "Grenadier"
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

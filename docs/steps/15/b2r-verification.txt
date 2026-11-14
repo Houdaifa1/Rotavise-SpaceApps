@@ -1,0 +1,206 @@
+B2r verification outputs — 2026-11-10
+All exit codes below were observed as 0 from completed processes.
+Earlier failed checks and the fixed causes are recorded in b2r-notes.md.
+
+$ pnpm lint
+exit_code=0
+$ eslint .
+
+
+$ pnpm format:check
+exit_code=0
+$ prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+
+
+$ pnpm typecheck
+exit_code=0
+$ pnpm build:server && pnpm -r typecheck
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+packages/database typecheck$ tsc -p tsconfig.json --noEmit
+packages/contracts typecheck$ tsc -p tsconfig.json --noEmit
+packages/database typecheck: Done
+packages/contracts typecheck: Done
+apps/web typecheck$ tsc --noEmit
+packages/catalog typecheck$ tsc -p tsconfig.json --noEmit
+packages/catalog typecheck: Done
+packages/domain typecheck$ tsc -p tsconfig.json --noEmit
+apps/web typecheck: Done
+packages/domain typecheck: Done
+apps/server typecheck$ tsc -p tsconfig.json --noEmit
+apps/server typecheck: Done
+
+
+$ pnpm openapi:generate
+exit_code=0
+$ pnpm build:server && node tooling/openapi/generate.mjs
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+Wrote /Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-b2r/docs/api/openapi.json
+
+
+$ pnpm test:backend
+exit_code=0
+$ pnpm build:server && node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects accounts planning rotation-integration scenarios-integration observations-integration backend-recovery --runInBand
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+Running 6 projects:
+- accounts
+- backend-recovery
+- observations-integration
+- planning
+- rotation-integration
+- scenarios-integration
+(node:33412) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Test Suites: 7 passed, 7 total
+Tests:       85 passed, 85 total
+Snapshots:   0 total
+Time:        89.031 s
+Ran all test suites in 6 projects.
+
+
+$ pnpm test:api-docs
+exit_code=0
+$ pnpm build:server && node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects glossary openapi openapi-integration --runInBand
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+Running 3 projects:
+- glossary
+- openapi
+- openapi-integration
+(node:33892) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Test Suites: 3 passed, 3 total
+Tests:       27 passed, 27 total
+Snapshots:   0 total
+Time:        2.77 s
+Ran all test suites in 3 projects.
+
+
+$ pnpm test:unit
+exit_code=0
+$ pnpm build:server && node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects unit
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+Running one project: unit
+(node:34036) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Test Suites: 2 passed, 2 total
+Tests:       35 passed, 35 total
+Snapshots:   0 total
+Time:        0.226 s, estimated 1 s
+Ran all test suites.
+
+
+$ Jest --selectProjects unit terrain-integration planning --runInBand
+exit_code=0
+Running 3 projects:
+- planning
+- terrain-integration
+- unit
+(node:33075) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Test Suites: 5 passed, 5 total
+Tests:       66 passed, 66 total
+Snapshots:   0 total
+Time:        14.402 s
+Ran all test suites in 3 projects.
+
+
+$ Jest --selectProjects planning --runInBand (actual CLI regression)
+exit_code=0
+Running one project: planning
+(node:34267) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Test Suites: 2 passed, 2 total
+Tests:       18 passed, 18 total
+Snapshots:   0 total
+Time:        12.336 s
+Ran all test suites.
+
+
+$ node tooling/field-boundaries/demo.mjs
+exit_code=0
+{
+  "disposableDatabase": true,
+  "realFixture": true,
+  "countryCoverage": false,
+  "import": {
+    "datasetSha256": "12c7605174deca5d0b5a654c1fc26124e25992123b94cba4164cc5ae89eaec6c",
+    "read": 29,
+    "retained": 12,
+    "dropped": 17,
+    "holesDropped": 4,
+    "simplified": 2,
+    "scope": "sample",
+    "policy": "outer-ring-dp-5m-2pct-1"
+  },
+  "capability": {
+    "available": true
+  },
+  "status": 200,
+  "field": {
+    "id": "ftw-2025:12c7605174deca5d0b5a654c1fc26124e25992123b94cba4164cc5ae89eaec6c:156319",
+    "areaHectares": 1.4743,
+    "source": "ftw-global-2025",
+    "confidence": 0.9605982971191406,
+    "datasetSha256": "12c7605174deca5d0b5a654c1fc26124e25992123b94cba4164cc5ae89eaec6c",
+    "holesDropped": 1,
+    "areaChangePercent": 1.1560693641518702
+  },
+  "positions": 43,
+  "attribution": "Fields of The World (Robinson et al., 2026), CC BY 4.0",
+  "limitations": [
+    "SUGGESTED_OUTLINE_CHECK_IT",
+    "FIELD_BOUNDARY_ACCURACY_UNMEASURED",
+    "FIELD_BOUNDARY_NOT_LEGAL_PARCEL",
+    "FIELD_BOUNDARY_MAY_MERGE_SPLIT_OR_MISS",
+    "FIELD_BOUNDARY_CONFIDENCE_IS_REGIONAL"
+  ]
+}
+
+
+$ Python export-ftw.py /tmp/b2r-live-tadla.ndjson --bbox -6.56 32.39 -6.54 32.41
+exit_code=0
+{"exported": 243, "format": "ftw-morocco-2025-1", "sourceUrl": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MA/Morocco.parquet", "sourceEtag": "\"a6598a351e198a7f9804b10f52d6d308-215\"", "license": "CC-BY-4.0", "attribution": "Fields of The World (Robinson et al., 2026), CC BY 4.0", "year": 2025, "sha256": "234001aa997b1c9ed71010b9baad561e7b6bb6e08085147caae406ccd9ed2174", "scope": "sample"}
+
+
+$ Final hash verification (upstream response bytes, indexed artifacts, summary hashes)
+exit_code=0
+Verified upstream response hashes, indexed artifact hashes, and sample summary hashes.
+
+$ git diff --check
+exit_code=0
+No whitespace errors.
+
+$ git status --short -- apps/web pnpm-lock.yaml
+exit_code=0
+No frontend or dependency-lock changes.

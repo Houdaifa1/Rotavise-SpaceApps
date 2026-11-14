@@ -1,0 +1,469 @@
+{
+  "id": "pomegranate",
+  "version": "0.11.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Pomegranate",
+    "localNames": [{ "language": "fr", "name": "Grenadier" }],
+    "scientificName": "Punica granatum L.",
+    "family": "Lythraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-pomegranate",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF.",
+        "page": null,
+        "quote": "\"scientificName\":\"Punica granatum L.\""
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter.",
+        "page": null,
+        "quote": "Grenadier"
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "sefri",
+      "name": "Sefri",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Local Moroccan cultivar in the study.",
+          "page": null,
+          "quote": "mainly ‘Sefri’, ‘Bzou’, ‘Chioukhi’ and ‘Djeibi’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "bzou",
+      "name": "Bzou",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Local Moroccan cultivar in the study.",
+          "page": null,
+          "quote": "mainly ‘Sefri’, ‘Bzou’, ‘Chioukhi’ and ‘Djeibi’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "chioukhi",
+      "name": "Chioukhi",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Local Moroccan cultivar in the study.",
+          "page": null,
+          "quote": "mainly ‘Sefri’, ‘Bzou’, ‘Chioukhi’ and ‘Djeibi’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "djeibi",
+      "name": "Djeibi",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Local Moroccan cultivar in the study.",
+          "page": null,
+          "quote": "mainly ‘Sefri’, ‘Bzou’, ‘Chioukhi’ and ‘Djeibi’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "zheri-precoce",
+      "name": "Zheri Precoce",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pomegranate-9065899",
+          "locator": "Table 1 cultivar list",
+          "interpretation": "normalized",
+          "note": "The table layout is interleaved; the origin shown next to this name appears to be Tunisia, so it is not shown here to be a Moroccan cultivar. The training entry \"Zehri\" is NOT confirmed as Moroccan.",
+          "page": null,
+          "quote": "Zheri Precoce Tunisia"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "zehri",
+      "name": "Zehri",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pomegranate.zehri"
+      },
+      "notes": "cultivar; local"
+    },
+    {
+      "id": "mollar-de-elche",
+      "name": "Mollar de Elche",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pomegranate.mollar-de-elche"
+      },
+      "notes": "cultivar; Spanish"
+    },
+    {
+      "id": "wonderful",
+      "name": "Wonderful",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.pomegranate.wonderful"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "acco",
+      "name": "Acco",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pomegranate.acco"
+      }
+    },
+    {
+      "id": "ganesh",
+      "name": "Ganesh",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pomegranate.ganesh"
+      }
+    },
+    {
+      "id": "hicaznar",
+      "name": "Hicaznar",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pomegranate.hicaznar"
+      }
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pomegranate.ruby"
+      }
+    },
+    {
+      "id": "parfianka",
+      "name": "Parfianka",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.pomegranate.parfianka"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only.",
+          "page": null,
+          "quote": "Grenadier"
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    },
+    {
+      "regionId": "ma-draa-tafilalet",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pomegranate.DRA"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pomegranate.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pomegranate.TAD"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pomegranate.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.pomegranate.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "c11-pomegranate-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.pomegranate"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 8
+    },
+    {
+      "id": "c11-pomegranate-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.pomegranate"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 2.5
+    },
+    {
+      "id": "c11-pomegranate-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.pomegranate"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "references": [
+    {
+      "id": "c11-pomegranate-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.pomegranate"
+      }
+    },
+    {
+      "id": "c11-pomegranate-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.pomegranate"
+      }
+    },
+    {
+      "id": "c11-pomegranate-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.pomegranate"
+      }
+    },
+    {
+      "id": "c11-pomegranate-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.pomegranate"
+      }
+    },
+    {
+      "id": "c11-pomegranate-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.pomegranate"
+      }
+    }
+  ]
+}

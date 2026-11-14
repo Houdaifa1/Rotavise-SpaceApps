@@ -1,0 +1,225 @@
+# Rotavise production stack for one Mac. Start it with `pnpm ops:up`; the
+# commands in tooling/operations supply ROTAVISE_TAG, ROTAVISE_ENV_FILE and the
+# secrets in .env.production. The only published port is the proxy, bound to
+# 127.0.0.1. Nothing here is reachable from the internet or the local network.
+name: ${COMPOSE_PROJECT_NAME:-rotavise-prod}
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+x-server: &server
+  image: rotavise-server:${ROTAVISE_TAG:?set ROTAVISE_TAG}
+  env_file:
+    - ${ROTAVISE_ENV_FILE:?set ROTAVISE_ENV_FILE}
+  read_only: true
+  tmpfs:
+    - /tmp
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+  pids_limit: 256
+  logging: *logging
+
+services:
+  postgres:
+    image: postgres:18.4-bookworm@sha256:882236b897e39051d2368c5ccc6cda944904723506b2dfc97f2a8f5bc9afa382
+    environment:
+      POSTGRES_USER: rotavise
+      POSTGRES_DB: rotavise
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?run pnpm ops:init}
+    command:
+      - postgres
+      - -c
+      - shared_buffers=256MB
+      - -c
+      - max_connections=100
+      - -c
+      - log_min_duration_statement=2000
+    volumes:
+      - pgdata:/var/lib/postgresql
+    networks: [internal]
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /var/run/postgresql
+    shm_size: 256m
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - DAC_OVERRIDE
+      - FOWNER
+      - SETGID
+      - SETUID
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 1g
+    cpus: 2
+    pids_limit: 256
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rotavise -d rotavise"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 20s
+    restart: unless-stopped
+    logging: *logging
+
+  migrate:
+    <<: *server
+    build:
+      context: ../..
+      dockerfile: infra/docker/server.Dockerfile
+    command: ["node", "dist/entrypoints/migrate.main.js"]
+    networks: [internal]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+    mem_limit: 512m
+
+  catalog-import:
+    <<: *server
+    command: ["node", "dist/entrypoints/catalog-import.main.js"]
+    networks: [internal]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    restart: "no"
+    mem_limit: 768m
+
+  science:
+    image: rotavise-science:${ROTAVISE_TAG:?set ROTAVISE_TAG}
+    build:
+      context: ../..
+      dockerfile: infra/docker/science.Dockerfile
+    environment:
+      HOME: /tmp
+      NUMBA_CACHE_DIR: /tmp
+    networks: [internal]
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 1g
+    cpus: 1
+    pids_limit: 128
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8090/health', timeout=3).status == 200 else 1)",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped
+    logging: *logging
+
+  api:
+    <<: *server
+    command: ["node", "dist/entrypoints/api.main.js"]
+    networks: [internal, egress]
+    depends_on:
+      catalog-import:
+        condition: service_completed_successfully
+      science:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/api/v1/health/ready').then(r=>process.exit(r.ok?0:1),()=>process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    mem_limit: 768m
+    cpus: 1.5
+    restart: unless-stopped
+
+  worker:
+    <<: *server
+    command: ["node", "dist/entrypoints/worker.main.js"]
+    networks: [internal, egress]
+    depends_on:
+      catalog-import:
+        condition: service_completed_successfully
+      science:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3001/health/ready').then(r=>process.exit(r.ok?0:1),()=>process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    mem_limit: 1536m
+    cpus: 2
+    restart: unless-stopped
+
+  proxy:
+    image: rotavise-web:${ROTAVISE_TAG:?set ROTAVISE_TAG}
+    build:
+      context: ../..
+      dockerfile: infra/production/web.Dockerfile
+    ports:
+      - "127.0.0.1:${PROXY_PORT:-8088}:8080"
+    networks: [internal, egress]
+    depends_on:
+      api:
+        condition: service_healthy
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 128m
+    cpus: 1
+    pids_limit: 128
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "-q",
+          "-O",
+          "/dev/null",
+          "http://127.0.0.1:8080/nginx-health",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+    logging: *logging
+
+networks:
+  # No route to the internet: the database, the science service and the
+  # one-shot jobs live only here.
+  internal:
+    internal: true
+  # Outbound access for the API and worker (NASA, and Claude once a key is set).
+  egress: {}
+
+volumes:
+  pgdata: {}

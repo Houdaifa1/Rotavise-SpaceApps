@@ -1,0 +1,154 @@
+{
+  "researchOnly": true,
+  "tables": [
+    {
+      "id": "fao-tunisia-table30",
+      "sourceId": "fao-erosion",
+      "title": "Table 30. Importance of plant cover (C) in Tunisia",
+      "model": "USLE / Wischmeier equation as identified by the source; historical context, not a Moroccan RUSLE calibration",
+      "unit": "dimensionless annual average C",
+      "regionApplicability": {
+        "countryCode": "TN",
+        "region": "Tunisia",
+        "nonLocal": true
+      },
+      "rows": [
+        {
+          "sourceLabel": "On bare soil bare fallow",
+          "value": 1
+        },
+        {
+          "sourceLabel": "Fruit trees",
+          "value": 0.9
+        },
+        {
+          "sourceLabel": "Winter wheat",
+          "value": 0.7
+        },
+        {
+          "sourceLabel": "Cereals in rotation",
+          "value": 0.4
+        },
+        {
+          "sourceLabel": "Forage crops",
+          "value": 0.2
+        },
+        {
+          "sourceLabel": "Cereals in rotation + forage crops",
+          "value": "0.1 to 0.01"
+        },
+        {
+          "sourceLabel": "Improved pasture",
+          "value": 0.01
+        }
+      ],
+      "quote": {
+        "sourceId": "fao-erosion",
+        "original": "TABLE 30 Importance of plant cover (C) in Tunisia Average annual C On bare soil bare fallow 1 Fruit trees 0.9 Winter wheat 0.7 Cereals in rotation 0.4 Forage crops 0.2 Cereals in rotation + forage crops 0.1 to 0.01 Improved pasture 0.01",
+        "english": "TABLE 30 Importance of plant cover (C) in Tunisia Average annual C On bare soil bare fallow 1 Fruit trees 0.9 Winter wheat 0.7 Cereals in rotation 0.4 Forage crops 0.2 Cereals in rotation + forage crops 0.1 to 0.01 Improved pasture 0.01",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/fao-erosion.txt",
+        "textSha256": "f5ff27b76ca2d9c77e28890a0b630cee3a6b0b8766f997dd014e83c851fccef7",
+        "locator": {
+          "section": "Table 30"
+        },
+        "matching": "NFKC and whitespace only"
+      },
+      "assignment": "No row assigned to an individual catalog crop: generic winter wheat does not distinguish bread/durum and group values cannot be copied to species.",
+      "conditionsQuote": {
+        "sourceId": "fao-erosion",
+        "original": "In Wischmeier's equation, the C factor is the relationship between erosion measured on a bare fallow reference plot under a given crop. It expresses the interaction between the crop and cropping techniques and how this affects the reaction of a soil type to rainfall. The C factor changes as the plants grow and the state of the soil surface alters, and can be calculated for each of the main periods of the cropping cycle and the region under consideration:",
+        "english": "In Wischmeier's equation, the C factor is the relationship between erosion measured on a bare fallow reference plot under a given crop. It expresses the interaction between the crop and cropping techniques and how this affects the reaction of a soil type to rainfall. The C factor changes as the plants grow and the state of the soil surface alters, and can be calculated for each of the main periods of the cropping cycle and the region under consideration:",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/fao-erosion.txt",
+        "textSha256": "f5ff27b76ca2d9c77e28890a0b630cee3a6b0b8766f997dd014e83c851fccef7",
+        "locator": {
+          "section": "C factor explanation"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    },
+    {
+      "id": "plos-olive-vineyard-table1",
+      "sourceId": "italy-olive-erosion",
+      "tableImageSourceId": "italy-olive-table1",
+      "title": "Table 1. Reported C factor values for olive orchards and vineyards, according to different Authors, and average C factor values",
+      "model": "RUSLE context; heterogeneous literature compilation",
+      "unit": "dimensionless C factor",
+      "regionApplicability": {
+        "countryCode": null,
+        "region": "Literature compiled in Italian Mediterranean study; underlying sites not individually rechecked",
+        "nonLocal": true
+      },
+      "rows": [
+        {
+          "crop": "Olive orchard",
+          "valuesText": "0.1-0.3",
+          "sourceReferenceNumber": 25,
+          "reportedAverage": 0.15
+        },
+        {
+          "crop": "Olive orchard",
+          "valuesText": "0.1",
+          "sourceReferenceNumber": 16
+        },
+        {
+          "crop": "Olive orchard",
+          "valuesText": "0.16; 0.25; 0.41*",
+          "sourceReferenceNumber": 26
+        },
+        {
+          "crop": "Olive orchard",
+          "valuesText": "0.005; 0.007; 0.02; 0.1; 0.11; 0.21; 0.29",
+          "sourceReferenceNumber": 27
+        },
+        {
+          "crop": "Vineyard",
+          "valuesText": "0.34",
+          "sourceReferenceNumber": 25,
+          "reportedAverage": 0.3
+        },
+        {
+          "crop": "Vineyard",
+          "valuesText": "0.35",
+          "sourceReferenceNumber": 28
+        },
+        {
+          "crop": "Vineyard",
+          "valuesText": "0.18; 0.3; 0.4",
+          "sourceReferenceNumber": 29
+        },
+        {
+          "crop": "Vineyard",
+          "valuesText": "0.3",
+          "sourceReferenceNumber": 30
+        },
+        {
+          "crop": "Vineyard",
+          "valuesText": "0.1; 0.12; 0.18; 0.22; 0.23",
+          "sourceReferenceNumber": 17
+        }
+      ],
+      "footnote": "*SHD olive orchard.",
+      "image": {
+        "savedFile": ".research-sources/2026-11-10/italy-olive-table1.png",
+        "sha256": "b502cb8d560549d133c2ac51eda3446294507d95bc90cb88f552aaafb5b10f51",
+        "transcriptionMethod": "manual transcription checked against saved table image",
+        "visuallyCheckedOn": "2026-11-10"
+      },
+      "quote": {
+        "sourceId": "italy-olive-erosion",
+        "original": "The reported values for vineyards range widely from as low as 0.1 to as high as 0.4, while the values for olive orchards range from very low (0.005) to relatively high (0.41), indicating strong differences exerted by different orchard systems.",
+        "english": "The reported values for vineyards range widely from as low as 0.1 to as high as 0.4, while the values for olive orchards range from very low (0.005) to relatively high (0.41), indicating strong differences exerted by different orchard systems.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/italy-olive-erosion.txt",
+        "textSha256": "9b4bbfe40f614a4de5bd9f790c5bb0eda32842e4742ba28dad851c893be62aff",
+        "locator": {
+          "section": "Results; Bibliographic C factors comparison"
+        },
+        "matching": "NFKC and whitespace only"
+      },
+      "assignment": "Only olive and grapevine linked, with management-context restrictions; table averages are source-reported, not recalculated or recommended Moroccan defaults."
+    }
+  ]
+}

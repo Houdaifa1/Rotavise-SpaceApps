@@ -1,0 +1,2758 @@
+[
+  {
+    "item": "T.A.courgette.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "courgette",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.courgette.cold",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: frost-tender Cucurbita; leaves/plants killed at about 0 C",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.eggplant.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "eggplant",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.eggplant.cold",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: frost-tender Solanaceae; chilling injury already below roughly 10 C but 0 C used as the kill level",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.green-bean.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "green-bean",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.green-bean.cold",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: common bean is frost-tender; killed at about 0 C",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.lentil.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lentil",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.lentil.cold",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": -6,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: hardened winter lentil survives roughly -6 C or somewhat lower; seedlings and flowers far less tolerant",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.lettuce.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lettuce",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.lettuce.cold",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: mature lettuce leaf tissue is injured around -1 to -3 C",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.lettuce.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lettuce",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.lettuce.heat",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: above about 30 C bolting, bitterness and tipburn risk rise (quality damage, not plant death)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.watermelon.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "watermelon",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.watermelon.cold",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: frost-tender Cucurbitaceae",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.B.garlic.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "garlic",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "B.garlic.cold",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": -10,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: established garlic tolerates roughly -10 C; emerged tops damaged earlier",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.B.garlic.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "garlic",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "B.garlic.heat",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "bulb_formation",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: heat above about 35 C during bulbing forces early maturity and smaller bulbs",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.groundnut.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "groundnut",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.groundnut.cold",
+      "originalStatus": "partial_codex"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: frost-tender; killed near 0 C",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.maize.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "maize",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.maize.cold",
+      "originalStatus": "partial_codex"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: above-ground tissue damaged below about -2 C once the growing point is above ground",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.melon.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "melon",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.melon.cold",
+      "originalStatus": "partial_codex"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: frost-tender; chilling injury also occurs near 10 C",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.A.cabbage.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "cabbage",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.cabbage.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: above about 28-30 C heading quality drops and tipburn increases",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.chickpea.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "chickpea",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.chickpea.cold",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": 5,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: chilling around 5 C or below at flowering impairs pollen and pod set; frost kills",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.chickpea.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "chickpea",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.chickpea.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: above about 35 C at flowering and podding reduces seed set",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.courgette.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "courgette",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.courgette.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: above about 35 C pollen viability and fruit set fall",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.eggplant.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "eggplant",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.eggplant.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: above about 35 C flower drop and poor fruit set",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.green-bean.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "green-bean",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.green-bean.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 32
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: above about 30-32 C flower and pod abortion",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.groundnut.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "groundnut",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.groundnut.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: very high temperatures at flowering/pegging reduce set; threshold uncertain",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.melon.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "melon",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.melon.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: above about 38 C fruit set and quality decline",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.onion.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "onion",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.onion.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "bulb_formation",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: heat above about 35 C stresses bulbing",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.rapeseed.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "rapeseed",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.rapeseed.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general horticulture/agronomy knowledge: above about 27-30 C at flowering reduces seed set",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.table-beet.cold",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "table-beet",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.table-beet.cold",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: beet roots tolerate light frost; foliage damaged near -2 C",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.table-beet.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "table-beet",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.table-beet.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 32
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: sustained heat above about 30-32 C reduces root quality",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.A.watermelon.heat",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "watermelon",
+    "metric": "temperature",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "A.watermelon.heat",
+      "originalStatus": "partial_ecocrop_only"
+    },
+    "proposed": {
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    "thresholdType": "damage",
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: above about 38 C fruit set declines",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false,
+    "note": "Web pass found only an FAO Ecocrop field that is not a daily max/min damage limit; this recalled value is a candidate to compare, not an upgrade."
+  },
+  {
+    "item": "T.B.chickpea.duration.spring",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "chickpea",
+    "metric": "cycle_duration",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "B.chickpea.duration.spring",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "sowing_to_harvest",
+      "minDays": 100,
+      "maxDays": 130
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: spring-sown chickpea in Mediterranean climates",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.B.faba-bean.duration",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "faba-bean",
+    "metric": "cycle_duration",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "B.faba-bean.duration",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "sowing_to_harvest",
+      "minDays": 160,
+      "maxDays": 200
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: autumn-sown faba bean in North Africa harvested dry in spring; green-pod harvest is shorter",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.B.garlic.duration",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "garlic",
+    "metric": "cycle_duration",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "B.garlic.duration",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "basis": "sowing_to_harvest",
+      "minDays": 150,
+      "maxDays": 200
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general horticulture/agronomy knowledge: autumn-planted garlic harvested in late spring",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.cabbage.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "cabbage",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.cabbage.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 4,
+      "family": "Brassicaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family Brassicaceae (clubroot, blackleg)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.cabbage.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "cabbage",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.cabbage.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family: legumes or cereals before brassicas",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.cabbage.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "cabbage",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.cabbage.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Brassicaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "high",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.carrot.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "carrot",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.carrot.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family: cereals leave a clean seedbed with few carrot pests",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.chickpea.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "chickpea",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.chickpea.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family (Ascochyta, Fusarium shared among grain legumes)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.courgette.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "courgette",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.courgette.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 3,
+      "family": "Cucurbitaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family Cucurbitaceae",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.courgette.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "courgette",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.courgette.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.courgette.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "courgette",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.courgette.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Cucurbitaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "high",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.eggplant.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "eggplant",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.eggplant.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.faba-bean.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "faba-bean",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.faba-bean.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.garlic.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "garlic",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.garlic.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.garlic.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "garlic",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.garlic.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Amaryllidaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "high",
+    "basis": "general rotation guidance for the botanical family (onion, leek, garlic share white rot and nematodes)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.green-bean.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "green-bean",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.green-bean.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 3,
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family Fabaceae",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.green-bean.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "green-bean",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.green-bean.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.groundnut.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "groundnut",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.groundnut.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.lentil.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lentil",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.lentil.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 3,
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family Fabaceae",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.lentil.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lentil",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.lentil.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.lettuce.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lettuce",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.lettuce.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 2,
+      "family": "Asteraceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family Asteraceae",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.lettuce.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lettuce",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.lettuce.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.lettuce.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lettuce",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.lettuce.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Asteraceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family (Sclerotinia, lettuce mosaic hosts)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.maize.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "maize",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.maize.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 2,
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family Poaceae; maize tolerates repetition better than most crops, so this is weak",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.maize.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "maize",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.maize.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family (shared stem borers and soil pests)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.melon.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "melon",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.melon.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 4,
+      "family": "Cucurbitaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family Cucurbitaceae (Fusarium wilt, nematodes)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.melon.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "melon",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.melon.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.melon.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "melon",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.melon.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Cucurbitaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "high",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.pea.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "pea",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.pea.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 5,
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family Fabaceae (Aphanomyces root rot persists in soil)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.pea.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "pea",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.pea.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.pea.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "pea",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.pea.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Fabaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "high",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.potato.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "potato",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.potato.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family: cereals or legumes before potato",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.potato.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "potato",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.potato.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Solanaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "high",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.sesame.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "sesame",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.sesame.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 3,
+      "family": "Pedaliaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family Pedaliaceae (Fusarium wilt, charcoal rot)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.sesame.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "sesame",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.sesame.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Pedaliaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.sugar-beet.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "sugar-beet",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.sugar-beet.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 4,
+      "family": "Amaranthaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family Amaranthaceae (beet cyst nematode, Cercospora)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.sugar-beet.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "sugar-beet",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.sugar-beet.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family: cereals before beet",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.table-beet.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "table-beet",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.table-beet.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 3,
+      "family": "Amaranthaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family Amaranthaceae",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.table-beet.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "table-beet",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.table-beet.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.table-beet.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "table-beet",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.table-beet.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Amaranthaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "high",
+    "basis": "general rotation guidance for the botanical family (beet, chard, spinach)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.watermelon.minimum_return_interval",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "watermelon",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.watermelon.minimum_return_interval",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 5,
+      "family": "Cucurbitaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general rotation guidance for the botanical family Cucurbitaceae (Fusarium wilt)",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.watermelon.preferred_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "watermelon",
+    "metric": "preferred_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.watermelon.preferred_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Poaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.C.watermelon.prohibited_predecessor",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "watermelon",
+    "metric": "prohibited_predecessor_family",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "C.watermelon.prohibited_predecessor",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "family": "Cucurbitaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "high",
+    "basis": "general rotation guidance for the botanical family",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.D.durum-wheat.ear_frost_timing",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "durum-wheat",
+    "metric": "stage_timing",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "D.durum-wheat.ear_frost_timing",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "stage": "ear_1_cm",
+      "stageWindow": {
+        "basis": "elapsed_days_from_sowing",
+        "startDay": 100,
+        "endDay": 130
+      },
+      "gddRange": null
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general knowledge of autumn-sown Mediterranean wheat: ear 1 cm usually falls in late winter; Moroccan sowing date and cultivar shift it by weeks",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.D.bread-wheat.ear_frost_timing",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "bread-wheat",
+    "metric": "stage_timing",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "D.bread-wheat.ear_frost_timing",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "stage": "ear_1_cm",
+      "stageWindow": {
+        "basis": "elapsed_days_from_sowing",
+        "startDay": 100,
+        "endDay": 130
+      },
+      "gddRange": null
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general knowledge of autumn-sown Mediterranean wheat: ear 1 cm usually falls in late winter; Moroccan sowing date and cultivar shift it by weeks",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.D.sugar-beet.cercosporiosis_return",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "sugar-beet",
+    "metric": "minimum_return_interval",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "D.sugar-beet.cercosporiosis_return",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "years": 3,
+      "family": "Amaranthaceae"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "general guidance: Cercospora inoculum survives on residues for about 2-3 years",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.F.cabbage.observed_yield",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "cabbage",
+    "metric": "observed_yield",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "F.cabbage.observed_yield",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "unit": "t/ha",
+      "min": 25,
+      "max": 40,
+      "farmingSystem": "irrigated"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "recalled world and North African production ranges for irrigated commercial fields; not a Moroccan statistic",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.F.lettuce.observed_yield",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "lettuce",
+    "metric": "observed_yield",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "F.lettuce.observed_yield",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "unit": "t/ha",
+      "min": 20,
+      "max": 30,
+      "farmingSystem": "irrigated"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "recalled world and North African production ranges for irrigated commercial fields; not a Moroccan statistic",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.F.table-beet.observed_yield",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "table-beet",
+    "metric": "observed_yield",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "F.table-beet.observed_yield",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "unit": "t/ha",
+      "min": 25,
+      "max": 35,
+      "farmingSystem": "irrigated"
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "low",
+    "basis": "recalled world and North African production ranges for irrigated commercial fields; not a Moroccan statistic",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.G.eggplant.diseases",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "eggplant",
+    "metric": "crop_issue",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "G.eggplant.diseases",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "issues": [
+        {
+          "kind": "disease",
+          "commonNameEn": "Verticillium wilt",
+          "commonNameFr": "Verticilliose",
+          "commonNameAr": null,
+          "scientificName": "Verticillium dahliae",
+          "hostCrops": [
+            "eggplant"
+          ],
+          "visibleSymptoms": "Lower leaves yellow and wilt, often on one side of the plant; stem cut shows brown vascular tissue.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "disease",
+          "commonNameEn": "Powdery mildew",
+          "commonNameFr": "Oidium",
+          "commonNameAr": null,
+          "scientificName": "Leveillula taurica",
+          "hostCrops": [
+            "eggplant"
+          ],
+          "visibleSymptoms": "Yellow patches on upper leaf surface with pale powdery growth beneath.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "disease",
+          "commonNameEn": "Grey mould",
+          "commonNameFr": "Pourriture grise",
+          "commonNameAr": null,
+          "scientificName": "Botrytis cinerea",
+          "hostCrops": [
+            "eggplant"
+          ],
+          "visibleSymptoms": "Grey fuzzy mould on fruit, flowers and stems in humid conditions.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        }
+      ]
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general plant-pathology and entomology knowledge; occurrence in Morocco not confirmed; no treatment included",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.G.green-bean.pests",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "green-bean",
+    "metric": "crop_issue",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "G.green-bean.pests",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "issues": [
+        {
+          "kind": "pest",
+          "commonNameEn": "Two-spotted spider mite",
+          "commonNameFr": "Tetranychus urticae",
+          "commonNameAr": null,
+          "scientificName": "Tetranychus urticae",
+          "hostCrops": [
+            "green-bean"
+          ],
+          "visibleSymptoms": "Fine stippling and bronzing of leaves with webbing underneath.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Black bean aphid",
+          "commonNameFr": "Puceron noir de la fève",
+          "commonNameAr": null,
+          "scientificName": "Aphis fabae",
+          "hostCrops": [
+            "green-bean"
+          ],
+          "visibleSymptoms": "Dense dark colonies on shoots and pods; curled leaves, sticky honeydew.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Cotton bollworm / pod borer",
+          "commonNameFr": "Noctuelle de la tomate",
+          "commonNameAr": null,
+          "scientificName": "Helicoverpa armigera",
+          "hostCrops": [
+            "green-bean"
+          ],
+          "visibleSymptoms": "Entry holes in pods and chewed seeds.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        }
+      ]
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general plant-pathology and entomology knowledge; occurrence in Morocco not confirmed; no treatment included",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.G.maize.diseases",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "maize",
+    "metric": "crop_issue",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "G.maize.diseases",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "issues": [
+        {
+          "kind": "disease",
+          "commonNameEn": "Northern leaf blight",
+          "commonNameFr": "Helminthosporiose",
+          "commonNameAr": null,
+          "scientificName": "Exserohilum turcicum",
+          "hostCrops": [
+            "maize"
+          ],
+          "visibleSymptoms": "Long grey-green to tan cigar-shaped lesions on leaves.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "disease",
+          "commonNameEn": "Common smut",
+          "commonNameFr": "Charbon commun",
+          "commonNameAr": null,
+          "scientificName": "Ustilago maydis",
+          "hostCrops": [
+            "maize"
+          ],
+          "visibleSymptoms": "Silver-grey galls on ears, stalks or tassels that turn black and powdery.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "disease",
+          "commonNameEn": "Common rust",
+          "commonNameFr": "Rouille commune",
+          "commonNameAr": null,
+          "scientificName": "Puccinia sorghi",
+          "hostCrops": [
+            "maize"
+          ],
+          "visibleSymptoms": "Small brown-orange raised pustules on both leaf surfaces.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        }
+      ]
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general plant-pathology and entomology knowledge; occurrence in Morocco not confirmed; no treatment included",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.G.sesame.diseases",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "sesame",
+    "metric": "crop_issue",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "G.sesame.diseases",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "issues": [
+        {
+          "kind": "disease",
+          "commonNameEn": "Fusarium wilt",
+          "commonNameFr": "Fusariose vasculaire",
+          "commonNameAr": null,
+          "scientificName": "Fusarium oxysporum f. sp. sesami",
+          "hostCrops": [
+            "sesame"
+          ],
+          "visibleSymptoms": "Yellowing and wilting of plants, often in patches, with brown stem vascular tissue.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "disease",
+          "commonNameEn": "Charcoal rot",
+          "commonNameFr": "Pourriture charbonneuse",
+          "commonNameAr": null,
+          "scientificName": "Macrophomina phaseolina",
+          "hostCrops": [
+            "sesame"
+          ],
+          "visibleSymptoms": "Premature wilting in heat; grey-black stem base with tiny black specks.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "disease",
+          "commonNameEn": "Cercospora leaf spot",
+          "commonNameFr": "Cercosporiose",
+          "commonNameAr": null,
+          "scientificName": "Cercospora sesami",
+          "hostCrops": [
+            "sesame"
+          ],
+          "visibleSymptoms": "Small brown leaf spots with darker margins.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        }
+      ]
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general plant-pathology and entomology knowledge; occurrence in Morocco not confirmed; no treatment included",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.G.sesame.pests",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "sesame",
+    "metric": "crop_issue",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "G.sesame.pests",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "issues": [
+        {
+          "kind": "pest",
+          "commonNameEn": "Sesame leaf webber and capsule borer",
+          "commonNameFr": "Pyrale du sésame",
+          "commonNameAr": null,
+          "scientificName": "Antigastra catalaunalis",
+          "hostCrops": [
+            "sesame"
+          ],
+          "visibleSymptoms": "Rolled, webbed leaves and bored capsules.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Cotton whitefly",
+          "commonNameFr": "Aleurode",
+          "commonNameAr": null,
+          "scientificName": "Bemisia tabaci",
+          "hostCrops": [
+            "sesame"
+          ],
+          "visibleSymptoms": "Small white insects under leaves, sticky honeydew, sooty mould.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Cotton aphid",
+          "commonNameFr": "Puceron du cotonnier",
+          "commonNameAr": null,
+          "scientificName": "Aphis gossypii",
+          "hostCrops": [
+            "sesame"
+          ],
+          "visibleSymptoms": "Colonies on shoot tips, curled leaves.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        }
+      ]
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general plant-pathology and entomology knowledge; occurrence in Morocco not confirmed; no treatment included",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.G.sunflower.pests",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "sunflower",
+    "metric": "crop_issue",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "G.sunflower.pests",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "issues": [
+        {
+          "kind": "parasitic_plant",
+          "commonNameEn": "Sunflower broomrape",
+          "commonNameFr": "Orobanche du tournesol",
+          "commonNameAr": null,
+          "scientificName": "Orobanche cumana",
+          "hostCrops": [
+            "sunflower"
+          ],
+          "visibleSymptoms": "Pale leafless flower spikes emerge from soil at the base of stunted, wilting plants.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Sunflower moth",
+          "commonNameFr": "Teigne du tournesol",
+          "commonNameAr": null,
+          "scientificName": "Homoeosoma nebulella",
+          "hostCrops": [
+            "sunflower"
+          ],
+          "visibleSymptoms": "Larvae feed on seeds inside the head, leaving webbing and frass.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Cotton bollworm",
+          "commonNameFr": "Noctuelle de la tomate",
+          "commonNameAr": null,
+          "scientificName": "Helicoverpa armigera",
+          "hostCrops": [
+            "sunflower"
+          ],
+          "visibleSymptoms": "Chewed holes in heads and developing seed.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Black bean aphid",
+          "commonNameFr": "Puceron noir",
+          "commonNameAr": null,
+          "scientificName": "Aphis fabae",
+          "hostCrops": [
+            "sunflower"
+          ],
+          "visibleSymptoms": "Dark colonies on stems and leaf undersides, sticky honeydew.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        }
+      ]
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general plant-pathology and entomology knowledge; occurrence in Morocco not confirmed; no treatment included",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.G.table-beet.diseases",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "table-beet",
+    "metric": "crop_issue",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "G.table-beet.diseases",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "issues": [
+        {
+          "kind": "disease",
+          "commonNameEn": "Cercospora leaf spot",
+          "commonNameFr": "Cercosporiose",
+          "commonNameAr": null,
+          "scientificName": "Cercospora beticola",
+          "hostCrops": [
+            "table-beet",
+            "sugar-beet"
+          ],
+          "visibleSymptoms": "Round grey-centred leaf spots with reddish-brown margins that merge.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "disease",
+          "commonNameEn": "Downy mildew",
+          "commonNameFr": "Mildiou de la betterave",
+          "commonNameAr": null,
+          "scientificName": "Peronospora farinosa f. sp. betae",
+          "hostCrops": [
+            "table-beet",
+            "sugar-beet"
+          ],
+          "visibleSymptoms": "Thickened, curled pale young leaves with grey-violet down underneath.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "disease",
+          "commonNameEn": "Beet yellows virus",
+          "commonNameFr": "Jaunisse de la betterave",
+          "commonNameAr": null,
+          "scientificName": "Beet yellows virus (aphid-borne)",
+          "hostCrops": [
+            "table-beet",
+            "sugar-beet"
+          ],
+          "visibleSymptoms": "Older leaves turn yellow and brittle, thickened.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        }
+      ]
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general plant-pathology and entomology knowledge; occurrence in Morocco not confirmed; no treatment included",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  },
+  {
+    "item": "T.G.table-beet.pests",
+    "status": "training_based",
+    "coverage": "training_based",
+    "crop": "table-beet",
+    "metric": "crop_issue",
+    "provenance": {
+      "kind": "model_training",
+      "addedOn": "2026-11-06",
+      "documentAttribution": null,
+      "originalItem": "G.table-beet.pests",
+      "originalStatus": "not_found"
+    },
+    "proposed": {
+      "issues": [
+        {
+          "kind": "pest",
+          "commonNameEn": "Black bean aphid",
+          "commonNameFr": "Puceron noir de la fève",
+          "commonNameAr": null,
+          "scientificName": "Aphis fabae",
+          "hostCrops": [
+            "table-beet",
+            "sugar-beet"
+          ],
+          "visibleSymptoms": "Dark colonies on leaves and shoots, curled foliage.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Beet leafminer",
+          "commonNameFr": "Mouche de la betterave",
+          "commonNameAr": null,
+          "scientificName": "Pegomya hyoscyami",
+          "hostCrops": [
+            "table-beet",
+            "sugar-beet"
+          ],
+          "visibleSymptoms": "Blister-like blotches where larvae mine inside leaves.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "medium"
+        },
+        {
+          "kind": "pest",
+          "commonNameEn": "Beet moth",
+          "commonNameFr": "Teigne de la betterave",
+          "commonNameAr": null,
+          "scientificName": "Scrobipalpa ocellatella",
+          "hostCrops": [
+            "table-beet",
+            "sugar-beet"
+          ],
+          "visibleSymptoms": "Larvae mine leaves and crown; blackened crowns.",
+          "moroccoOccurrence": null,
+          "minimumBreakYears": null,
+          "confidence": "low"
+        }
+      ]
+    },
+    "thresholdType": null,
+    "valueKind": "model_recall_unverified",
+    "confidence": "medium",
+    "basis": "general plant-pathology and entomology knowledge; occurrence in Morocco not confirmed; no treatment included",
+    "scope": {
+      "geography": "general crop knowledge; not a Moroccan field observation",
+      "cultivars": "varies"
+    },
+    "numericPlannerParameters": null,
+    "catalogReady": false
+  }
+]

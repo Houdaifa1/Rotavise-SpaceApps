@@ -1,0 +1,263 @@
+{
+  "id": "walnut",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Walnut",
+    "localNames": [
+      { "language": "fr", "name": "Noyer" },
+      { "language": "ar", "name": "الجوز" }
+    ],
+    "scientificName": "Juglans regia L.",
+    "family": "Juglandaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:walnut"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "franquette",
+      "name": "Franquette",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.franquette"
+      },
+      "notes": "cultivar; French"
+    },
+    {
+      "id": "hartley",
+      "name": "Hartley",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.hartley"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "serr",
+      "name": "Serr",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.serr"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "chandler",
+      "name": "Chandler",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.chandler"
+      },
+      "notes": "cultivar; USA"
+    },
+    {
+      "id": "local-seedling-populations",
+      "name": "Local seedling populations",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.walnut.local-seedling-populations"
+      },
+      "notes": "local population; Atlas valleys"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:walnut"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-walnut-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy/horticulture knowledge: spring frost kills new shoots and catkins near -2 C; dormant wood tolerates far lower",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.walnut.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"budburst\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-walnut-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: kernel and husk sunburn above about 38 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.walnut.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"fruit_development\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    }
+  ],
+  "references": [
+    {
+      "id": "f-walnut-yield-fruits-secs-yield-442",
+      "topic": "yield",
+      "summary": "Yield (system mostly seedling forest-style orchards; region national, Morocco)",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-le360-fruits-secs",
+          "locator": "article body",
+          "interpretation": "normalized",
+          "note": "Area (6,923 ha) and about 12,000 t are in the preceding sentences of the same article.",
+          "page": null,
+          "quote": "la productivité moyenne de cette filière est, elle, faible en se situant à 0,6 t/ha de noix en coque non-décortiquées"
+        }
+      ]
+    },
+    {
+      "id": "t-a-walnut-chilling-chill-requirement-579",
+      "topic": "chill_requirement",
+      "summary": "Chill requirement 700–1500 hours_below_7C. A dormancy requirement, not a damage limit.",
+      "value": { "unit": "hours_below_7C", "min": 700, "max": 1500 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: cultivar dependent",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.walnut.chilling"
+      }
+    },
+    {
+      "id": "t-b-walnut-planting-window-background-580",
+      "topic": "background",
+      "summary": "Planting: 12-01 to 02-28",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall: planting of dormant trees in winter",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.walnut.planting_window"
+      }
+    },
+    {
+      "id": "t-b-walnut-stand-lifetime-background-581",
+      "topic": "background",
+      "summary": "Stand lifetime 18250–36500 days.",
+      "value": { "unit": "days", "min": 18250, "max": 36500 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: 50 years or more; first useful crop about year 5 to 8; orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.walnut.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-c-walnut-rotation-background-582",
+      "topic": "background",
+      "summary": "Rotation: orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "perennial; not rotated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.walnut.rotation"
+      }
+    },
+    {
+      "id": "t-f-walnut-observed-yield-yield-583",
+      "topic": "yield",
+      "summary": "Yield 0.5–4 t/ha (system rainfed_to_irrigated). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 0.5, "max": 4 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall; irrigated modern orchards at the high end",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.walnut.observed_yield"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

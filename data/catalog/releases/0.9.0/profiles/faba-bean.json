@@ -1,0 +1,330 @@
+{
+  "id": "faba-bean",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Faba bean (dry grain)",
+    "localNames": [
+      { "language": "fr", "name": "Fève" },
+      { "language": "ar", "name": "الفول" }
+    ],
+    "scientificName": "Vicia faba L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "kew-faba",
+        "locator": "Accepted name and classification",
+        "interpretation": "context_only",
+        "note": "Accepted taxonomic identity; not cultivar evidence."
+      },
+      {
+        "sourceId": "onca-legumes-reference",
+        "locator": "PDF page 40, crop name",
+        "interpretation": "direct",
+        "note": "Local name as written in the source.",
+        "page": 40,
+        "quote": "Fève et féverole"
+      },
+      {
+        "sourceId": "inra-arabic-guides",
+        "locator": "Legume guide cover (scanned)",
+        "interpretation": "context_only",
+        "note": "Arabic name read from the scanned page image; not machine-checked."
+      }
+    ]
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "karabiga",
+      "name": "Karabiga (F213)",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-faba",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "KARABIGA (F213) I.N.R.A. MAROC 1985"
+        }
+      ]
+    },
+    {
+      "id": "lobab",
+      "name": "Lobab (F269)",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-faba",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "LOBAB (F269) I.N.R.A. 1985"
+        }
+      ]
+    },
+    {
+      "id": "hiba",
+      "name": "Hiba (Fv1031)",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-faba",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "HIBA (Fv1031) INRA MAROC 2018"
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Other market-garden crops",
+          "interpretation": "context_only",
+          "note": "Green faba is reported in Tadla; dry-grain faba is not separately reported."
+        }
+      ],
+      "note": "Dry-grain faba in Tadla needs local confirmation; green pods are a different product."
+    },
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 9",
+          "interpretation": "context_only",
+          "note": "Food legumes are grown across Morocco.",
+          "page": 9,
+          "quote": "La culture des légumineuses alimentaires se répartit sur l'ensemble du Maroc"
+        }
+      ],
+      "note": "National guidance. Rainfall is not yet checked against the crop, so a dry or desert location can still be listed; local suitability needs a specialist."
+    }
+  ],
+  "rules": [
+    {
+      "id": "faba-sowing",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 40, 5.4.3",
+          "interpretation": "normalized",
+          "note": "Mid-October encoded as 15 October; end of December as 31 December.",
+          "page": 40,
+          "quote": "Le semis de fève doit avoir lieu de mi-octobre à fin décembre selon les zones agroclimatiques"
+        },
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 40, 5.4.3",
+          "interpretation": "context_only",
+          "note": "Inland plains such as Tadla sow later in the window.",
+          "page": 40,
+          "quote": "Les semis précoces sont préconisés pour les zones côtières et les semis tardifs pour les plaines intérieures"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Inland plains sow later in the window.",
+      "metric": "planting_window",
+      "start": "10-15",
+      "end": "12-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "faba-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Faba bean, broad bean",
+          "interpretation": "normalized",
+          "note": "Dry faba sown in November in Europe: 235 days. No Mediterranean autumn row exists.",
+          "page": null,
+          "quote": "dry 90 45 40 60 235 Nov Europe"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "European autumn row; Moroccan harvests may be earlier (recorded as a gap).",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 235,
+      "maxDays": 235
+    },
+    {
+      "id": "faba-frost",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 28",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 28,
+          "quote": "les variétés utilisées sont relativement résistantes au froid (- 4 °C)"
+        },
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 28",
+          "interpretation": "context_only",
+          "note": "Late frost matters most at pod formation.",
+          "page": 28,
+          "quote": "La fève craint les gelées tardives au moment de la formation des gousses"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Days with a minimum below −4 °C over the cycle; late frost at pod formation matters most.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -4,
+      "upperDegC": null
+    },
+    {
+      "id": "faba-cereal-predecessor",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 35",
+          "interpretation": "normalized",
+          "note": "Cereal encoded as the family Poaceae.",
+          "page": 35,
+          "quote": "un assolement biennal se basant sur une légumineuse et une céréale est fort recommandé"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "A preference, not a requirement.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "faba-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "- Dry/Seed 0.5 1.15 2 0.30 0.8",
+          "locator": "Table 12, Fababean, Dry/Seed",
+          "interpretation": "normalized",
+          "note": "Kc ini 0.5, mid 1.15, end 0.30."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "dry 90 45 40 60 235 Nov Europe",
+          "locator": "Table 11, Faba bean",
+          "interpretation": "normalized",
+          "note": "Stage shares from the European autumn row, the only one."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted for local wind and humidity or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 1.15,
+      "kcEnd": 0.3,
+      "stageLengths": [90, 45, 40, 60]
+    },
+    {
+      "id": "faba-soil-ph",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "page": 28,
+          "quote": "un pH favorable allant de 5 à 8",
+          "locator": "PDF page 28",
+          "interpretation": "direct",
+          "note": "pH range as written; the guide does not state the measurement method."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National legume reference for faba bean and field bean.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 5,
+      "max": 8
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "cycle_duration",
+      "reason": "No Moroccan sowing-to-harvest range; the FAO European row may overstate the cycle."
+    },
+    {
+      "topic": "temperature",
+      "reason": "Stage temperature optima (ONCA, page 28) are not damage limits and have no sourced timing."
+    }
+  ],
+  "limitations": [
+    "Based on national official guides and FAO defaults, not yet expert-reviewed."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "observedAt": "2026-11-12T21:36:14.797872+00:00",
+  "runs": [
+    {
+      "command": "pnpm map:evidence",
+      "exitCode": 0,
+      "capturedViews": 90,
+      "loadedViews": 90,
+      "log": "after-capture.log"
+    },
+    {
+      "command": "pnpm map:providers",
+      "exitCode": 0,
+      "comparisons": 6,
+      "loadedMaps": 12,
+      "log": "providers.log"
+    },
+    {
+      "command": "pnpm exec playwright test --config tooling/web/playwright.config.mjs tests/e2e/field-detail.spec.mjs",
+      "exitCode": 0,
+      "passed": 7,
+      "log": "field-detail.log"
+    }
+  ]
+}

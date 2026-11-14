@@ -1,0 +1,96 @@
+{
+  "performedOn": "2026-11-10",
+  "scope": "Selected actual discovery queries from this run, plus complete per-profile source searches in the batches. This is not a claim of an exhaustive web search for all 246 profiles.",
+  "webQueries": [
+    {
+      "purpose": "Moroccan cereal economics",
+      "query": "site:ardna.org \"céréales\" \"Marge brute\""
+    },
+    {
+      "purpose": "Moroccan olive economics",
+      "query": "site:ardna.org \"olivier\" \"Marge brute\""
+    },
+    {
+      "purpose": "Moroccan legume economics",
+      "query": "site.inra.org.ma marge brute cultures Maroc lentille pois chiche"
+    },
+    {
+      "purpose": "Moroccan vegetable budgets",
+      "query": "ONCA \"fiche technique\" \"Marge Brute\" maraichères"
+    },
+    {
+      "purpose": "FAOSTAT access discovery",
+      "query": "FAOSTAT API PP area 143 producer prices LCU tonne Morocco download"
+    },
+    {
+      "purpose": "Forage budgets",
+      "query": "site:inra.org.ma \"luzerne\" \"marge\""
+    },
+    {
+      "purpose": "Oilseed budgets",
+      "query": "site:ardna.org \"oléagineuses\" \"prix\""
+    },
+    {
+      "purpose": "Almond budgets",
+      "query": "site:ardna.org \"amandier\" \"rentabilité\""
+    },
+    {
+      "purpose": "Provincial yields",
+      "query": "site:hcp.ma \"rendement\" \"2024\" \"légumes\""
+    },
+    {
+      "purpose": "Peer-reviewed berries",
+      "query": "site:agrimaroc.org \"fraisier\" \"économique\""
+    },
+    {
+      "purpose": "World Bank fallback",
+      "query": "site:worldbank.org Morocco crops \"gross margin\""
+    },
+    {
+      "purpose": "Minor-crop gaps",
+      "query": "site:inra.org.ma \"fenugrec\" \"rendement\""
+    }
+  ],
+  "savedSearchResponses": [
+    {
+      "savedFile": ".research-sources/2026-11-10/search10.json",
+      "sha256": "71fe6a1c76f72cc93b3d5d7355a86d96a496a1b1db9159585f2f2ff2e747837a"
+    },
+    {
+      "savedFile": ".research-sources/2026-11-10/search11.json",
+      "sha256": "66eb5081ab3165fc5d3455672e37c3c6c9f6db05d51b8c999ca09735b67b90e1"
+    },
+    {
+      "savedFile": ".research-sources/2026-11-10/search2.json",
+      "sha256": "d18044738cf79ffcf1ab30212f235da8d1005f8e178e7a67b341c7a1abafc7dc"
+    },
+    {
+      "savedFile": ".research-sources/2026-11-10/search3.json",
+      "sha256": "58dfc8276fb66a3a65ab577d1520d346611699f80cb28ea8be5f0b698a893342"
+    },
+    {
+      "savedFile": ".research-sources/2026-11-10/search7.json",
+      "sha256": "8163a6bb28be190df73cf78f4f0a9f0e6a6f578b3bd71fda9ea27ccdd34b967b"
+    },
+    {
+      "savedFile": ".research-sources/2026-11-10/search8.json",
+      "sha256": "04c420cb33533df2e7d502f6e7448285a628fe4ecd7cdb3a8d5bb7303c62853e"
+    },
+    {
+      "savedFile": ".research-sources/2026-11-10/search9.json",
+      "sha256": "42e70893e65579c3b441284e5c5adb12b9e36a9c13cca45913f63e92d54d7c7f"
+    },
+    {
+      "savedFile": ".research-sources/2026-11-10/parallel0.json",
+      "sha256": "752f4d165daa9300498360ef68d40e47c5b950035897dc52b22ced9094e8ea7a"
+    }
+  ],
+  "retrievalRecord": ".research-sources/2026-11-10/retrievals.json",
+  "limitations": [
+    "Some initial web results were not saved as complete search-response files; admitted facts rely exclusively on separately downloaded original source snapshots.",
+    "admin.ardna.org failed DNS; its original PDFs were downloaded successfully from ardna.org/admincockpit/files/contenus_files/.",
+    "World Bank discovery results returned irrelevant geography in the inspected results; no World Bank numeric value admitted.",
+    "Casa Prestations chart saved but excluded: no explicit currency/weight unit and a negative cucumber stack component.",
+    "No missing value was filled from model recall."
+  ]
+}

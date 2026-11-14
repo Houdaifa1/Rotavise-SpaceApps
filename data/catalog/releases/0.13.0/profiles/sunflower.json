@@ -1,0 +1,832 @@
+{
+  "id": "sunflower",
+  "version": "0.13.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sunflower",
+    "localNames": [
+      { "language": "fr", "name": "Tournesol" },
+      {
+        "language": "ar",
+        "name": "عباد الشمس",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.sunflower.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "دوار الشمس",
+        "recall": {
+          "confidence": "high",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.sunflower.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "نوار الشمش",
+        "citations": [
+          {
+            "sourceId": "darija-wikt-057",
+            "locator": "Moroccan Arabic → Noun",
+            "interpretation": "direct",
+            "note": "Explicit Moroccan Arabic section of Wiktionary. Wiktionary supplies the Moroccan Arabic word and English crop gloss; scientific identity is supplied by a separate saved botanical source. Botanical pairing: WD-SPARQL-OTHER, see research record. Research record: sunflower.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "نوار الشمش"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      },
+      {
+        "language": "ary",
+        "name": "عباد الشمس",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-tournesol-cultive",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: sunflower.ary.1. Native-speaker review pending.",
+            "page": null,
+            "quote": "عباد الشمس"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "language": "ary",
+        "name": "دوار الشمس",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-tournesol-cultive",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: sunflower.ary.2. Native-speaker review pending.",
+            "page": null,
+            "quote": "دوار الشمس"
+          }
+        ],
+        "confidence": "low"
+      }
+    ],
+    "scientificName": "Helianthus annuus L.",
+    "family": "Asteraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-sunflower",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Helianthus annuus L.\""
+      },
+      {
+        "sourceId": "ardna-oilseed-rsk",
+        "locator": "PDF page 6, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine.",
+        "page": 6,
+        "quote": "Techniques de production du tournesol"
+      }
+    ]
+  },
+  "harvestProduct": "oilseed",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "moroccan-oilseed-type-food-sunflower",
+      "name": "Moroccan oilseed-type food sunflower",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-agris-sunflower-confectionery",
+          "locator": "Abstract",
+          "interpretation": "normalized",
+          "note": "Type-level only; the abstract names no cultivars.",
+          "page": null,
+          "quote": "oilseed-type cultivars with black achenes and low hull proportion"
+        }
+      ],
+      "notes": "type_group"
+    },
+    {
+      "id": "open-pollinated-populations",
+      "name": "Open-pollinated populations",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.sunflower.open-pollinated-populations"
+      },
+      "notes": "type group; older population varieties grown before hybrid adoption"
+    },
+    {
+      "id": "oilseed-hybrids",
+      "name": "Oilseed hybrids",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.sunflower.oilseed-hybrids"
+      },
+      "notes": "type group; most grown area; seed imported"
+    },
+    {
+      "id": "high-oleic-hybrids",
+      "name": "High-oleic hybrids",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.sunflower.high-oleic-hybrids"
+      },
+      "notes": "type group; modern hybrid type"
+    },
+    {
+      "id": "linoleic-hybrids",
+      "name": "Linoleic hybrids",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.sunflower.linoleic-hybrids"
+      },
+      "notes": "type group; imported hybrids"
+    },
+    {
+      "id": "confectionery-large-seeded-types",
+      "name": "Confectionery (large-seeded) types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.sunflower.confectionery-(large-seeded)-types"
+      },
+      "notes": "type group"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-rsk",
+          "locator": "PDF page 7",
+          "interpretation": "context_only",
+          "note": "Regional sheet.",
+          "page": 7,
+          "quote": "Zone côtière et centre (Allal Tazi, Souk Larbâa et Belksiri ) Tournesol"
+        }
+      ],
+      "note": "Regional sheet for Rabat-Salé-Kénitra; other regions have no sowing date yet."
+    },
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.sunflower.TAD"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.sunflower.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.sunflower.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.sunflower.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.sunflower.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "sunflower-sowing-rsk",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-rsk",
+          "locator": "PDF page 7",
+          "interpretation": "normalized",
+          "note": "Mid-February encoded as 15 February.",
+          "page": 7,
+          "quote": "Semis au mi-Février pour Leila et Bosfora"
+        },
+        {
+          "sourceId": "ardna-oilseed-rsk",
+          "locator": "PDF page 7",
+          "interpretation": "normalized",
+          "note": "End of February encoded as 29 February, the window's last day.",
+          "page": 7,
+          "quote": "Tournesol Semis en fin Février pour Leila et Bosfora"
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-rabat-sale-kenitra"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Dates written for two varieties; the sheet's zones differ by two weeks.",
+      "metric": "planting_window",
+      "start": "02-15",
+      "end": "02-29",
+      "precision": "approximate"
+    },
+    {
+      "id": "sunflower-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Sunflower",
+          "interpretation": "normalized",
+          "note": "April/May row; a February sowing may run longer.",
+          "page": null,
+          "quote": "25 35 45 25 130 April/May Medit.; California"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO spring row; no Moroccan duration found.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 130,
+      "maxDays": 130
+    },
+    {
+      "id": "sunflower-flowering-heat",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 39, Sunflower 4.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 39,
+          "quote": "Maximum air temperature above which pollination starts to fail (heat stress) (°C) Conservative (1) 40"
+        },
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 37, Sunflower 1.3",
+          "interpretation": "normalized",
+          "note": "Window from 150+1000 to 200+1300+400 growing degree days.",
+          "page": 37,
+          "quote": "Time from sowing to flowering (growing degree day) Cultivar (4) Time to emergence + 1000 - 1300 Length of the flowering stage (growing degree day) Cultivar (4) 300 - 400"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop default; not calibrated for a Moroccan cultivar.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": {
+        "basis": "growing_degree_days_from_sowing",
+        "method": "aquacrop_method_3",
+        "startGdd": 1150,
+        "endGdd": 1900,
+        "baseDegC": 4,
+        "upperDegC": 30
+      },
+      "lowerDegC": null,
+      "upperDegC": 40
+    },
+    {
+      "id": "sunflower-flowering-cold",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 39, Sunflower 4.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 39,
+          "quote": "Minimum air temperature below which pollination starts to fail (cold stress) (°C) Conservative (1) 10"
+        },
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 37, Sunflower 1.3",
+          "interpretation": "normalized",
+          "note": "Window from 150+1000 to 200+1300+400 growing degree days.",
+          "page": 37,
+          "quote": "Time from sowing to flowering (growing degree day) Cultivar (4) Time to emergence + 1000 - 1300 Length of the flowering stage (growing degree day) Cultivar (4) 300 - 400"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop default; not calibrated for a Moroccan cultivar.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": {
+        "basis": "growing_degree_days_from_sowing",
+        "method": "aquacrop_method_3",
+        "startGdd": 1150,
+        "endGdd": 1900,
+        "baseDegC": 4,
+        "upperDegC": 30
+      },
+      "lowerDegC": 10,
+      "upperDegC": null
+    },
+    {
+      "id": "sunflower-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Sunflower",
+          "interpretation": "normalized",
+          "note": "Upper mid value 1.15 and end 0.35.",
+          "page": null,
+          "quote": "Sunflower 1.0-1.15 9 0.35 2.0"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Oil crops group",
+          "interpretation": "normalized",
+          "note": "Initial value 0.35 from the group.",
+          "page": null,
+          "quote": "Oil Crops 0.35 1.15 0.35"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Sunflower",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "25 35 45 25 130 April/May Medit.; California"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.35,
+      "kcMid": 1.15,
+      "kcEnd": 0.35,
+      "stageLengths": [25, 35, 45, 25]
+    },
+    {
+      "id": "t-fill-sunflower-pref-poaceae-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation logic",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sunflower.pref-Poaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-fill-sunflower-proh-asteraceae-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "high",
+        "basis": "general agronomy recall (no source consulted); same-family disease carry-over",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sunflower.proh-Asteraceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Asteraceae"
+    },
+    {
+      "id": "t-fill-sunflower-return-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation break",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sunflower.return"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 4
+    },
+    {
+      "id": "c11-sunflower-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.sunflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7.5
+    },
+    {
+      "id": "c11-sunflower-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.sunflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 4.8
+    },
+    {
+      "id": "c11-sunflower-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.sunflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-sunflower-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.sunflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-sunflower-break-sclerotinia-head-rot-sunflower",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sunflower.sclerotinia-head-rot-sunflower"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Sunflower head rot.",
+      "metric": "crop_health_break",
+      "issueId": "sclerotinia-head-rot-sunflower",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-sunflower-break-puccinia-helianthi",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sunflower.puccinia-helianthi"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Sunflower rust.",
+      "metric": "crop_health_break",
+      "issueId": "puccinia-helianthi",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-sunflower-break-alternaria-helianthi",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sunflower.alternaria-helianthi"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Alternaria leaf spot of sunflower.",
+      "metric": "crop_health_break",
+      "issueId": "alternaria-helianthi",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-sunflower-break-macrophomina-charcoal-rot",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sunflower.macrophomina-charcoal-rot"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Charcoal rot.",
+      "metric": "crop_health_break",
+      "issueId": "macrophomina-charcoal-rot",
+      "minimumBreakDays": 1460
+    }
+  ],
+  "references": [
+    {
+      "id": "k-sunflower-background-67",
+      "topic": "background",
+      "summary": "Annual oilseed with a deep root system where soil permits. Cold sensitivity varies by stage; seedling responses do not establish flowering tolerance. Heat and drought near flowering and seed filling can reduce seed set and oil yield. Sclerotinia has a broad host range; a different broadleaf crop may still maintain it. Water uptake can extend deep into the soil; rooting depth is constrained by compaction, available profile depth and moisture.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.sunflower"
+      }
+    },
+    {
+      "id": "c11-sunflower-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.sunflower"
+      }
+    },
+    {
+      "id": "c11-sunflower-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.sunflower"
+      }
+    },
+    {
+      "id": "c11-sunflower-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.sunflower"
+      }
+    },
+    {
+      "id": "c11-sunflower-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.sunflower"
+      }
+    },
+    {
+      "id": "c11-sunflower-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: low.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.sunflower"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Only the Rabat-Salé-Kénitra sheet gives dated sowing."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

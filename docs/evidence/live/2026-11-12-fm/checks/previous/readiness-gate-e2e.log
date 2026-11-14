@@ -1,0 +1,630 @@
+$ pnpm build:server && pnpm --filter @rotavise/web build && playwright test --config tooling/web/playwright.config.mjs
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ tsc --noEmit && vite build
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 901 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                      1.47 kB │ gzip:   0.59 kB
+dist/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2       13.34 kB
+dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2           14.70 kB
+dist/assets/ibm-plex-sans-latin-ext-400-normal-C5H60-Va.woff2       15.98 kB
+dist/assets/ibm-plex-sans-latin-ext-500-normal-DakdToA3.woff2       16.45 kB
+dist/assets/fraunces-latin-ext-500-normal-Z5DV8IzT.woff2            17.29 kB
+dist/assets/fraunces-latin-500-normal-DnGCNyPD.woff2                18.00 kB
+dist/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2           22.58 kB
+dist/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2           24.18 kB
+dist/.vite/manifest.json                                            24.97 kB │ gzip:   2.79 kB
+dist/assets/ibm-plex-sans-arabic-arabic-400-normal-CyU-ddYS.woff2   42.84 kB
+dist/assets/ibm-plex-sans-arabic-arabic-500-normal-C4MQITzh.woff2   45.29 kB
+dist/assets/mapbox-gl-rtl-text-DosxTATq.js                         147.94 kB
+dist/assets/geometry.worker-Cb3svn29.js                            401.68 kB
+dist/assets/maplibre-gl-csp-worker-BF1M-q9C.js                     457.88 kB
+dist/assets/creation-CFkMmG7Y.css                                    1.95 kB │ gzip:   0.81 kB
+dist/assets/CropPicker-Dav2K6Vb.css                                  2.32 kB │ gzip:   0.83 kB
+dist/assets/FieldDetail-B5CD7oka.css                                 2.72 kB │ gzip:   0.98 kB
+dist/assets/LegacyScreen-DICGL9cu.css                                8.91 kB │ gzip:   2.72 kB
+dist/assets/MapWorkspace-DfwHC-Zh.css                               11.78 kB │ gzip:   2.89 kB
+dist/assets/index-DfAGSRZu.css                                      37.81 kB │ gzip:   8.17 kB
+dist/assets/mapRenderer-B2k4QVOw.css                                69.80 kB │ gzip:  10.10 kB
+dist/assets/crops-DrVfJyJi.js                                        0.06 kB │ gzip:   0.07 kB
+dist/assets/glossaryText-zin1O2i_.js                                 0.08 kB │ gzip:   0.09 kB
+dist/assets/names-Cujx0mSV.js                                        0.29 kB │ gzip:   0.24 kB
+dist/assets/requestPool-Aafsa0ta.js                                  0.36 kB │ gzip:   0.25 kB
+dist/assets/cropNamePreference-M7eosTDT.js                           0.44 kB │ gzip:   0.31 kB
+dist/assets/errors-Dc38Glbv.js                                       0.50 kB │ gzip:   0.32 kB
+dist/assets/RetryButton-bVJ-bR_t.js                                  0.61 kB │ gzip:   0.41 kB
+dist/assets/field-requests.contract-CzBNW_56.js                      0.63 kB │ gzip:   0.33 kB
+dist/assets/rolldown-runtime-hePW80VL.js                             0.71 kB │ gzip:   0.42 kB
+dist/assets/ShortList-BBOu50cd.js                                    0.74 kB │ gzip:   0.44 kB
+dist/assets/creation-CMjKZAma.js                                     0.83 kB │ gzip:   0.44 kB
+dist/assets/format-07gHWEN3.js                                       1.09 kB │ gzip:   0.49 kB
+dist/assets/LastCrop-lIGackew.js                                     1.18 kB │ gzip:   0.60 kB
+dist/assets/preload-helper-BZ1Pz5am.js                               1.21 kB │ gzip:   0.69 kB
+dist/assets/orientation-pXMGtqLT.js                                  1.25 kB │ gzip:   0.61 kB
+dist/assets/GlossaryTerm-ChjnwhL6.js                                 1.35 kB │ gzip:   0.65 kB
+dist/assets/Welcome-BgOesKkN.js                                      1.67 kB │ gzip:   0.77 kB
+dist/assets/SoilEstimate-DXK3e8VJ.js                                 2.12 kB │ gzip:   1.07 kB
+dist/assets/FieldPlans-CAcEtna6.js                                   2.17 kB │ gzip:   1.13 kB
+dist/assets/InProgress-pEu9g_Tv.js                                   2.17 kB │ gzip:   0.89 kB
+dist/assets/NasaRegional-oIeixZAj.js                                 2.27 kB │ gzip:   1.08 kB
+dist/assets/crops-BilQuh4v.js                                        2.46 kB │ gzip:   1.20 kB
+dist/assets/FieldActions-CaJDJPHx.js                                 2.53 kB │ gzip:   1.24 kB
+dist/assets/GlossaryPage-Dp3F4CN8.js                                 2.61 kB │ gzip:   1.23 kB
+dist/assets/EditDialog-Dv86_DaO.js                                   2.75 kB │ gzip:   1.32 kB
+dist/assets/PhoneSheet-Di4UBUlx.js                                   3.16 kB │ gzip:   1.45 kB
+dist/assets/SeasonDialog-DnzqGXRz.js                                 3.38 kB │ gzip:   1.58 kB
+dist/assets/History-Db-LxliC.js                                      3.53 kB │ gzip:   1.66 kB
+dist/assets/Outline-B6B0vDtF.js                                      3.85 kB │ gzip:   1.73 kB
+dist/assets/CropPicker-DCz5Zxgz.js                                   4.01 kB │ gzip:   1.86 kB
+dist/assets/Inputs-DZrs_Jg-.js                                       5.35 kB │ gzip:   1.91 kB
+dist/assets/mapRenderer-ddRM6IIy.js                                  6.67 kB │ gzip:   2.83 kB
+dist/assets/Nasa-boZhkuSu.js                                         6.86 kB │ gzip:   2.58 kB
+dist/assets/CropsPage-CW03-lOs.js                                    7.94 kB │ gzip:   2.57 kB
+dist/assets/InputDialogs-_1MBcG9_.js                                 8.09 kB │ gzip:   2.91 kB
+dist/assets/analysis-DPMRiSWz.js                                     8.17 kB │ gzip:   2.58 kB
+dist/assets/togeojson.es-ajzc4w8F.js                                 8.71 kB │ gzip:   3.09 kB
+dist/assets/FieldDetail-9GLC8BXu.js                                  9.77 kB │ gzip:   3.59 kB
+dist/assets/FieldCreation-PIAkYlSg.js                               18.96 kB │ gzip:   6.71 kB
+dist/assets/MapWorkspace-DCxVEVr6.js                                37.67 kB │ gzip:  12.79 kB
+dist/assets/LegacyScreen-3nwLYFep.js                                44.85 kB │ gzip:  12.58 kB
+dist/assets/Runtime-9LFOPl9p.js                                     50.83 kB │ gzip:  16.37 kB
+dist/assets/plans-ClVTrUWP.js                                       53.02 kB │ gzip:  15.89 kB
+dist/assets/NasaAnalysis-CjgifazG.js                                55.04 kB │ gzip:  17.90 kB
+dist/assets/es-BU1UIXJi.js                                          71.27 kB │ gzip:  25.57 kB
+dist/assets/hooks-uKv1jKZE.js                                       74.38 kB │ gzip:  24.49 kB
+dist/assets/operations-lOn43tIi.js                                 137.46 kB │ gzip:  39.64 kB
+dist/assets/mapEditor-CO-aApAT.js                                  172.96 kB │ gzip:  57.36 kB
+dist/assets/feedback-BE2VxMMf.js                                   208.30 kB │ gzip:  68.11 kB
+dist/assets/index-C0aS9MYj.js                                      243.79 kB │ gzip:  77.14 kB
+dist/assets/maplibre-gl-csp-xbwY9f6n.js                            948.93 kB │ gzip: 246.79 kB
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/react-router@8.5.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@19.3.0_rea_04be4baf3ca8f38355e9404b20b0fac7/node_modules/react-router/dist/production/dom-export.js" may not be preserved when bundling.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/react-router@8.5.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@19.3.0_rea_04be4baf3ca8f38355e9404b20b0fac7/node_modules/react-router/dist/production/dom-export.js:11:1 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m11 │[0m "use client";
+ [38;5;240m   │[0m ──────┬──────  
+ [38;5;240m   │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m   │[0m 
+ [38;5;240m   │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m────╯[0m
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/react-router@8.5.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@19.3.0_rea_04be4baf3ca8f38355e9404b20b0fac7/node_modules/react-router/dist/production/index.js" may not be preserved when bundling.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/react-router@8.5.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@19.3.0_rea_04be4baf3ca8f38355e9404b20b0fac7/node_modules/react-router/dist/production/index.js:11:1 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m11 │[0m "use client";
+ [38;5;240m   │[0m ──────┬──────  
+ [38;5;240m   │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m   │[0m 
+ [38;5;240m   │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m────╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/HydrationBoundary.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/HydrationBoundary.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/IsRestoringProvider.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/IsRestoringProvider.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useQuery.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useQuery.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useIsFetching.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useIsFetching.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useQueries.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useQueries.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useMutationState.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useMutationState.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useInfiniteQuery.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useInfiniteQuery.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useMutation.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useMutation.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-tabs@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@19_6d065e221b7af2120aa9f3ff73729ae0/node_modules/@radix-ui/react-tabs/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-tabs@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@19_6d065e221b7af2120aa9f3ff73729ae0/node_modules/@radix-ui/react-tabs/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-toggle-group@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+_b9d8412748aa981c9914c568f0dd567f/node_modules/@radix-ui/react-toggle-group/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-toggle-group@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+_b9d8412748aa981c9914c568f0dd567f/node_modules/@radix-ui/react-toggle-group/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-tooltip@1.4.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react_6b024258fc950250eb2fe8f7b373fd06/node_modules/@radix-ui/react-tooltip/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-tooltip@1.4.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react_6b024258fc950250eb2fe8f7b373fd06/node_modules/@radix-ui/react-tooltip/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-dialog@1.3.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_a3b87985ed5587cda38fa4297542256b/node_modules/@radix-ui/react-dialog/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-dialog@1.3.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_a3b87985ed5587cda38fa4297542256b/node_modules/@radix-ui/react-dialog/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-popover@1.3.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react_e30c1a3361e595871e7a1c2e1a74b81d/node_modules/@radix-ui/react-popover/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-popover@1.3.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react_e30c1a3361e595871e7a1c2e1a74b81d/node_modules/@radix-ui/react-popover/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@tanstack+react-query@5.107.1_@types+react@19.3.0_react@19.3.0/node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-primitive@2.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+rea_c31f5d2e8dd1090b081609bcec07c67f/node_modules/@radix-ui/react-primitive/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-primitive@2.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+rea_c31f5d2e8dd1090b081609bcec07c67f/node_modules/@radix-ui/react-primitive/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-direction@1.2.0_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-direction/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-direction@1.2.0_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-direction/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-toggle@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_0e58fe07f563b3cead9895209c8dbf5a/node_modules/@radix-ui/react-toggle/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-toggle@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_0e58fe07f563b3cead9895209c8dbf5a/node_modules/@radix-ui/react-toggle/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-focus-guards@1.2.0_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-focus-guards/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-focus-guards@1.2.0_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-focus-guards/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-visually-hidden@1.2.13_@types+react-dom@19.3.0_@types+react@19.3.0__@ty_3e70f9ceb6ce834e3d5b3a4bc36ce3d4/node_modules/@radix-ui/react-visually-hidden/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-visually-hidden@1.2.13_@types+react-dom@19.3.0_@types+react@19.3.0__@ty_3e70f9ceb6ce834e3d5b3a4bc36ce3d4/node_modules/@radix-ui/react-visually-hidden/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-presence@1.1.11_@types+react-dom@19.3.0_@types+react@19.3.0__@types+rea_fea964e47d1f796c036ae060b7c5470f/node_modules/@radix-ui/react-presence/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-presence@1.1.11_@types+react-dom@19.3.0_@types+react@19.3.0__@types+rea_fea964e47d1f796c036ae060b7c5470f/node_modules/@radix-ui/react-presence/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-portal@1.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_8edac65ad48366ac38478b64ccb751ca/node_modules/@radix-ui/react-portal/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-portal@1.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_8edac65ad48366ac38478b64ccb751ca/node_modules/@radix-ui/react-portal/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@t_2656bb590de67d8af7daa53dbff259b7/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@t_2656bb590de67d8af7daa53dbff259b7/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-focus-scope@1.3.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+r_c545200fe192271ccc07b707063d52f1/node_modules/@radix-ui/react-focus-scope/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-focus-scope@1.3.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+r_c545200fe192271ccc07b707063d52f1/node_modules/@radix-ui/react-focus-scope/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-roving-focus@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+_aff1a8706ec7fd31d50401219eccf7bc/node_modules/@radix-ui/react-roving-focus/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-roving-focus@1.2.1_@types+react-dom@19.3.0_@types+react@19.3.0__@types+_aff1a8706ec7fd31d50401219eccf7bc/node_modules/@radix-ui/react-roving-focus/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-popper@1.4.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_25dd0b9b4aa60217c4c6d2973ec26adf/node_modules/@radix-ui/react-popper/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-popper@1.4.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_25dd0b9b4aa60217c4c6d2973ec26adf/node_modules/@radix-ui/react-popper/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-arrow@1.1.17_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_87b97c80112cadbf114ecf5fb3348e77/node_modules/@radix-ui/react-arrow/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-arrow@1.1.17_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_87b97c80112cadbf114ecf5fb3348e77/node_modules/@radix-ui/react-arrow/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "../../node_modules/.pnpm/@radix-ui+react-collection@1.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+re_ed1cf60c896980c87315abaf5b210e94/node_modules/@radix-ui/react-collection/dist/index.mjs" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../node_modules/.pnpm/@radix-ui+react-collection@1.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+re_ed1cf60c896980c87315abaf5b210e94/node_modules/@radix-ui/react-collection/dist/index.mjs:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client";
+ [38;5;240m  │[0m ──────┬──────  
+ [38;5;240m  │[0m       ╰──────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+✓ built in 535ms
+[WebServer] (node:70621) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:70622) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 83 tests using 1 worker
+
+(node:70623) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [design] › tests/e2e/design.spec.mjs:6:5 › F0 design fr at 390px (9.6s)
+  ✓   2 [design] › tests/e2e/design.spec.mjs:6:5 › F0 design en at 390px (9.4s)
+  ✓   3 [design] › tests/e2e/design.spec.mjs:6:5 › F0 design fr at 768px (6.7s)
+  ✓   4 [design] › tests/e2e/design.spec.mjs:6:5 › F0 design en at 768px (10.7s)
+  ✓   5 [design] › tests/e2e/design.spec.mjs:6:5 › F0 design fr at 1024px (7.1s)
+  ✓   6 [design] › tests/e2e/design.spec.mjs:6:5 › F0 design en at 1024px (10.2s)
+  ✓   7 [design] › tests/e2e/design.spec.mjs:6:5 › F0 design fr at 1440px (8.4s)
+  ✓   8 [design] › tests/e2e/design.spec.mjs:6:5 › F0 design en at 1440px (8.5s)
+  ✓   9 [design] › tests/e2e/design.spec.mjs:56:1 › F0 keyboard, menus, dialogs, chart gaps, upload, and sheet detents (40.8s)
+(node:71032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [app] › tests/e2e/farmer-workflow.spec.mjs:66:1 › guest reviews a real catalog request, resumes a durable insufficient-evidence result and keeps its token private (14.2s)
+  ✓  11 [app] › tests/e2e/farmer-workflow.spec.mjs:159:1 › email account verifies through real SMTP and saves a named field (13.6s)
+  ✓  12 [app] › tests/e2e/farmer-workflow.spec.mjs:207:1 › weather explorer charts persisted recorded NASA evidence and validates input (5.5s)
+  ✓  13 [app] › tests/e2e/field-creation.spec.mjs:244:5 › S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API fr 390 (54.1s)
+  ✓  14 [app] › tests/e2e/field-creation.spec.mjs:244:5 › S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API fr 768 (34.2s)
+  ✓  15 [app] › tests/e2e/field-creation.spec.mjs:244:5 › S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API fr 1024 (30.8s)
+  ✓  16 [app] › tests/e2e/field-creation.spec.mjs:244:5 › S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API fr 1440 (36.7s)
+  ✓  17 [app] › tests/e2e/field-creation.spec.mjs:244:5 › S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API en 390 (34.2s)
+  ✓  18 [app] › tests/e2e/field-creation.spec.mjs:244:5 › S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API en 768 (33.4s)
+  ✓  19 [app] › tests/e2e/field-creation.spec.mjs:244:5 › S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API en 1024 (32.7s)
+  ✓  20 [app] › tests/e2e/field-creation.spec.mjs:244:5 › S04 pin, draw, GeoJSON, KML, projected shapefile and paint save to real API en 1440 (36.6s)
+  ✓  21 [app] › tests/e2e/field-creation.spec.mjs:330:5 › S04 real FTW selection, missing suggestion and atomic history fr 390 (26.1s)
+  ✓  22 [app] › tests/e2e/field-creation.spec.mjs:330:5 › S04 real FTW selection, missing suggestion and atomic history fr 768 (29.7s)
+  ✓  23 [app] › tests/e2e/field-creation.spec.mjs:330:5 › S04 real FTW selection, missing suggestion and atomic history fr 1024 (35.7s)
+  ✓  24 [app] › tests/e2e/field-creation.spec.mjs:330:5 › S04 real FTW selection, missing suggestion and atomic history fr 1440 (35.2s)
+  ✓  25 [app] › tests/e2e/field-creation.spec.mjs:330:5 › S04 real FTW selection, missing suggestion and atomic history en 390 (31.5s)
+  ✓  26 [app] › tests/e2e/field-creation.spec.mjs:330:5 › S04 real FTW selection, missing suggestion and atomic history en 768 (31.8s)
+  ✓  27 [app] › tests/e2e/field-creation.spec.mjs:330:5 › S04 real FTW selection, missing suggestion and atomic history en 1024 (32.6s)
+  ✓  28 [app] › tests/e2e/field-creation.spec.mjs:330:5 › S04 real FTW selection, missing suggestion and atomic history en 1440 (33.6s)
+  ✓  29 [app] › tests/e2e/field-creation.spec.mjs:486:3 › S04 retained selections on offline, conflict, service failure and partial save fr (9.3s)
+  ✓  30 [app] › tests/e2e/field-creation.spec.mjs:486:3 › S04 retained selections on offline, conflict, service failure and partial save en (7.7s)
+  ✓  31 [app] › tests/e2e/field-creation.spec.mjs:570:1 › S04 keyboard paint and per-polygon upload validation (12.6s)
+F3_PAINT {"selectedCells":2000,"medianFrameMs":16.699999999999818,"worstFrameMs":83.30000000000018,"frames":50,"workerJobs":11,"maximumWorkerMs":67.30000001192093}
+  ✓  32 [app] › tests/e2e/field-creation.spec.mjs:602:1 › S04 paint frame pacing with 2,000 selected HLS cells and the real worker (4.5s)
+  ✓  33 [app] › tests/e2e/field-creation.spec.mjs:779:1 › S04 keeps the draft across language and layout changes and cancels without a write (7.2s)
+  ✓  34 [app] › tests/e2e/field-creation.spec.mjs:810:3 › S04 stops blind retries after a confirmed write with invalid-response (5.0s)
+  ✓  35 [app] › tests/e2e/field-creation.spec.mjs:810:3 › S04 stops blind retries after a confirmed write with lost-response (4.8s)
+  ✘  36 [app] › tests/e2e/field-detail.spec.mjs:99:1 › S05 keeps the map and list beside the field at desktop widths and opens every tab at four widths in French and English (0ms)
+  -  37 [app] › tests/e2e/field-detail.spec.mjs:144:1 › S05 renames on Enter, reapplies a real version conflict and confirms deletion
+  -  38 [app] › tests/e2e/field-detail.spec.mjs:190:1 › S06 adds and edits with the crop strip, rejects overlap, reloads a concurrent history version, and deletes
+  -  39 [app] › tests/e2e/field-detail.spec.mjs:252:1 › S07 saves exact soil, water, and health bodies on the real field API
+  -  40 [app] › tests/e2e/field-detail.spec.mjs:328:1 › S15 searches the real release in four languages, filters and virtualizes, persists name mode and renders all twelve returned effects
+  -  41 [app] › tests/e2e/field-detail.spec.mjs:451:1 › S05 starts all six NASA requests, checks persisted states, and shows completed HLS evidence
+  -  42 [app] › tests/e2e/field-detail.spec.mjs:530:1 › S05 edits the saved outline with the keyboard and keeps the field and map visible offline
+(node:72395) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  43 [app] › tests/e2e/fm.spec.mjs:47:5 › FM native raster, retina, wheel and keyboard 1440 DPR 1 (3.1s)
+  ✓  44 [app] › tests/e2e/fm.spec.mjs:47:5 › FM native raster, retina, wheel and keyboard 1440 DPR 2 (3.0s)
+  ✓  45 [app] › tests/e2e/fm.spec.mjs:47:5 › FM native raster, retina, wheel and keyboard 768 DPR 1 (2.7s)
+  ✓  46 [app] › tests/e2e/fm.spec.mjs:47:5 › FM native raster, retina, wheel and keyboard 768 DPR 2 (2.9s)
+  ✓  47 [app] › tests/e2e/fm.spec.mjs:47:5 › FM native raster, retina, wheel and keyboard 390 DPR 1 (3.3s)
+  ✓  48 [app] › tests/e2e/fm.spec.mjs:47:5 › FM native raster, retina, wheel and keyboard 390 DPR 2 (3.2s)
+[WebServer] 10:21:40 PM [vite] http proxy error: /api/v1/health/live
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:40 PM [vite] http proxy error: /api/v1/capabilities
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:40 PM [vite] http proxy error: /api/v1/catalog/options
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:40 PM [vite] http proxy error: /api/v1/glossary?lang=fr
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:40 PM [vite] http proxy error: /api/v1/health/ready
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:41 PM [vite] http proxy error: /api/v1/health/live
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:41 PM [vite] http proxy error: /api/v1/capabilities
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:41 PM [vite] http proxy error: /api/v1/catalog/options
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:41 PM [vite] http proxy error: /api/v1/glossary?lang=fr
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:42 PM [vite] http proxy error: /api/v1/health/ready
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:43 PM [vite] http proxy error: /api/v1/health/live
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:43 PM [vite] http proxy error: /api/v1/capabilities
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:43 PM [vite] http proxy error: /api/v1/catalog/options
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:43 PM [vite] http proxy error: /api/v1/glossary?lang=fr
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:43 PM [vite] http proxy error: /api/v1/health/ready
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+  ✓  49 [app] › tests/e2e/fm.spec.mjs:200:1 › FM compact status keeps the map usable during an actual API outage at three widths (5.6s)
+  ✓  50 [app] › tests/e2e/fm.spec.mjs:240:1 › FM clean map load has no console errors or missing resources (1.7s)
+  ✓  51 [app] › tests/e2e/fm.spec.mjs:259:1 › FM WebGL fallback explains the issue and retries without blocking the shell (1.4s)
+[WebServer] 10:21:52 PM [vite] http proxy error: /api/v1/health/live
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:52 PM [vite] http proxy error: /api/v1/capabilities
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:52 PM [vite] http proxy error: /api/v1/catalog/options
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+[WebServer] 10:21:52 PM [vite] http proxy error: /api/v1/glossary?lang=fr
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:50276
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1864:16)
+  ✓  52 [app] › tests/e2e/health.spec.mjs:39:1 › S00 real API delay, unavailable, retry and recovery preserve the shell (5.3s)
+  ✓  53 [app] › tests/e2e/health.spec.mjs:84:1 › S00 capabilities off is an honest state and creates no guest (4.5s)
+  ✓  54 [app] › tests/e2e/health.spec.mjs:109:1 › S00 catalog unavailable leaves glossary available and pauses planning (4.8s)
+  ✓  55 [app] › tests/e2e/health.spec.mjs:139:1 › S00 valid unavailable readiness is explained without blocking the shell (2.5s)
+  ✓  56 [app] › tests/e2e/health.spec.mjs:168:3 › S00 degraded capabilities is explained without an uncaught error (1.5s)
+  ✓  57 [app] › tests/e2e/health.spec.mjs:168:3 › S00 degraded account is explained without an uncaught error (1.4s)
+  ✓  58 [app] › tests/e2e/health.spec.mjs:168:3 › S00 degraded glossary?lang=fr is explained without an uncaught error (1.4s)
+  ✓  59 [app] › tests/e2e/health.spec.mjs:199:1 › S01 first run, live language switch, persistence, return visit, no load toast (4.2s)
+  ✓  60 [app] › tests/e2e/health.spec.mjs:220:1 › offline bar follows actual browser connectivity and recovers (2.2s)
+  ✓  61 [app] › tests/e2e/health.spec.mjs:240:5 › S16 real glossary fr at 390px (3.7s)
+  ✓  62 [app] › tests/e2e/health.spec.mjs:240:5 › S16 real glossary en at 390px (5.0s)
+  ✓  63 [app] › tests/e2e/health.spec.mjs:240:5 › S16 real glossary fr at 768px (3.4s)
+  ✓  64 [app] › tests/e2e/health.spec.mjs:240:5 › S16 real glossary en at 768px (4.5s)
+  ✓  65 [app] › tests/e2e/health.spec.mjs:240:5 › S16 real glossary fr at 1024px (4.0s)
+  ✓  66 [app] › tests/e2e/health.spec.mjs:240:5 › S16 real glossary en at 1024px (4.1s)
+  ✓  67 [app] › tests/e2e/health.spec.mjs:240:5 › S16 real glossary fr at 1440px (3.9s)
+  ✓  68 [app] › tests/e2e/health.spec.mjs:240:5 › S16 real glossary en at 1440px (4.2s)
+  ✓  69 [app] › tests/e2e/health.spec.mjs:279:1 › phone sheet has three detents and closes and reopens with keyboard (5.8s)
+  ✓  70 [app] › tests/e2e/health.spec.mjs:321:1 › language switch preserves glossary search and phone sheet height (3.0s)
+  ✓  71 [app] › tests/e2e/health.spec.mjs:337:1 › invalid route identifiers never request a private resource (1.2s)
+F1_PERFORMANCE fr {"lcp":2232,"inputs":[32,32,32],"element":"Votre terre a un plan."}
+F1_RESOURCES [{"name":"boot.js","duration":164,"bytes":1017},{"name":"rolldown-runtime-hePW80VL.js","duration":169,"bytes":716},{"name":"feedback-BE2VxMMf.js","duration":1574,"bytes":67658},{"name":"index-C0aS9MYj.js","duration":1625,"bytes":76331},{"name":"Runtime-9LFOPl9p.js","duration":800,"bytes":16245},{"name":"hooks-uKv1jKZE.js","duration":975,"bytes":24217},{"name":"operations-lOn43tIi.js","duration":1160,"bytes":39333},{"name":"preload-helper-BZ1Pz5am.js","duration":525,"bytes":688},{"name":"RetryButton-bVJ-bR_t.js","duration":719,"bytes":612},{"name":"index-DfAGSRZu.css","duration":328,"bytes":8166},{"name":"ibm-plex-sans-latin-400-normal-CDDApCn2.woff2","duration":1409,"bytes":22588},{"name":"fraunces-latin-500-normal-DnGCNyPD.woff2","duration":1057,"bytes":18000},{"name":"live","duration":203,"bytes":42},{"name":"capabilities","duration":254,"bytes":1753},{"name":"Welcome-BgOesKkN.js","duration":155,"bytes":778},{"name":"ibm-plex-sans-latin-500-normal-6ng42L7E.woff2","duration":288,"bytes":24184},{"name":"options","duration":200,"bytes":2588},{"name":"glossary?lang=fr","duration":199,"bytes":0}]
+  ✓  72 [app] › tests/e2e/health.spec.mjs:353:3 › F1 production boot performance fr on throttled phone (3.9s)
+F1_PERFORMANCE en {"lcp":2208,"inputs":[32,32,32],"element":"Your land has a plan."}
+F1_RESOURCES [{"name":"boot.js","duration":158,"bytes":1017},{"name":"rolldown-runtime-hePW80VL.js","duration":166,"bytes":716},{"name":"index-C0aS9MYj.js","duration":1620,"bytes":76331},{"name":"operations-lOn43tIi.js","duration":1156,"bytes":39333},{"name":"feedback-BE2VxMMf.js","duration":1568,"bytes":67658},{"name":"preload-helper-BZ1Pz5am.js","duration":520,"bytes":688},{"name":"Runtime-9LFOPl9p.js","duration":794,"bytes":16245},{"name":"hooks-uKv1jKZE.js","duration":982,"bytes":24217},{"name":"index-DfAGSRZu.css","duration":321,"bytes":8166},{"name":"RetryButton-bVJ-bR_t.js","duration":709,"bytes":612},{"name":"ibm-plex-sans-latin-400-normal-CDDApCn2.woff2","duration":1401,"bytes":22588},{"name":"fraunces-latin-500-normal-DnGCNyPD.woff2","duration":1056,"bytes":18000},{"name":"live","duration":200,"bytes":42},{"name":"capabilities","duration":254,"bytes":1753},{"name":"Welcome-BgOesKkN.js","duration":161,"bytes":778},{"name":"ibm-plex-sans-latin-500-normal-6ng42L7E.woff2","duration":284,"bytes":24184},{"name":"options","duration":199,"bytes":2588},{"name":"glossary?lang=en","duration":215,"bytes":0}]
+  ✓  73 [app] › tests/e2e/health.spec.mjs:353:3 › F1 production boot performance en on throttled phone (3.6s)
+  ✓  74 [app] › tests/e2e/map.spec.mjs:128:1 › S03 uses the live cloudless basemap with only approved provider hosts (2.5s)
+  ✓  75 [app] › tests/e2e/map.spec.mjs:159:1 › S03 empty state and creation menu pass across four widths in both languages (19.5s)
+  ✓  76 [app] › tests/e2e/map.spec.mjs:211:1 › S03 searches and sorts real saved fields, loads the next cursor and keeps the selected map interactive offline (14.0s)
+  ✓  77 [app] › tests/e2e/map.spec.mjs:310:1 › S03 checks real tile pixels, steps past transparent dates and compares with the keyboard (11.2s)
+  ✓  78 [app] › tests/e2e/map.spec.mjs:360:1 › S03 locates only after an explicit request (3.5s)
+F2_PHONE fr {"lcp":2220,"inputs":[24,24,24],"element":"Ouverture de votre espace"}
+  ✓  79 [app] › tests/e2e/map.spec.mjs:387:3 › S03 first paint and input on a throttled phone (fr) (5.0s)
+F2_PHONE en {"lcp":2180,"inputs":[24,24,24],"element":"Opening your workspace"}
+  ✓  80 [app] › tests/e2e/map.spec.mjs:387:3 › S03 first paint and input on a throttled phone (en) (5.0s)
+F2_FRAME_PACING {"start":10.02812565178732,"end":11,"fractionalSteps":14,"panned":true,"wheelDelta":0.24529266105180447,"zoomFrames":{"medianMs":16.699999999999818,"worstMs":33.40000000000009,"frames":13},"panFrames":{"medianMs":16.700000000000273,"worstMs":33.30000000000018,"frames":15}}
+  ✓  81 [app] › tests/e2e/map.spec.mjs:455:1 › S03 real renderer pans and moves through fractional zooms (4.0s)
+  ✓  82 [app] › tests/e2e/map.spec.mjs:541:1 › S03 reports a failed list request and retries the real endpoint (2.9s)
+  ✓  83 [app] › tests/e2e/map.spec.mjs:564:1 › S03 selected field and imagery popover remain usable across four widths and both languages (50.0s)
+
+
+  1) [app] › tests/e2e/field-detail.spec.mjs:99:1 › S05 keeps the map and list beside the field at desktop widths and opens every tab at four widths in French and English 
+
+    "beforeAll" hook timeout of 30000ms exceeded.
+
+      24 | );
+      25 | let db, api;
+    > 26 | test.beforeAll(async () => {
+         |      ^
+      27 |   db = await disposable();
+      28 |   await new CatalogStore(db.pool).import(
+      29 |     await loadCatalogRelease("data/catalog/releases/0.15.0"),
+        at /Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-fe-fm/tests/e2e/field-detail.spec.mjs:26:6
+
+    Error Context: .artifacts/playwright/test-results/field-detail-S05-keeps-the-b6d2a-idths-in-French-and-English-app/error-context.md
+
+    Error Context: .artifacts/playwright/test-results/field-detail-S05-keeps-the-b6d2a-idths-in-French-and-English-app/error-context.md
+
+  Slow test file: [app] › tests/e2e/field-creation.spec.mjs (10.0m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 failed
+    [app] › tests/e2e/field-detail.spec.mjs:99:1 › S05 keeps the map and list beside the field at desktop widths and opens every tab at four widths in French and English 
+  6 did not run
+  76 passed (17.0m)
+[ELIFECYCLE] Command failed with exit code 1.

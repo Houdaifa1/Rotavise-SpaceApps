@@ -1,0 +1,350 @@
+[
+  {
+    "id": "inra-barley",
+    "url": "https://www.inra.org.ma/sites/default/files/publications/ouvrages/guideorgefr.pdf",
+    "resolvedUrl": "https://www.inra.org.ma/sites/default/files/publications/ouvrages/guideorgefr.pdf",
+    "title": "Guide pratique pour le conseil agricole : blé dur, blé tendre, orge",
+    "publisher": "INRA Maroc",
+    "retrievedOn": "2026-11-10T11:11:09.080018+00:00",
+    "savedFile": ".research-sources/2026-11-11/inra-barley.pdf",
+    "textFile": ".research-sources/2026-11-11/inra-barley-visual.txt",
+    "sha256": "106fa80b3ed68805f08648cb3a74cc55e3f3dc2b81d12b3741a548c13d8d3f4d",
+    "textSha256": "36a674f97b733bebedfb64a4e1614aff54ad8092c532835fae4e87251a4727ad",
+    "bytes": 5473228,
+    "contentType": "application/pdf",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-barley.txt",
+        "sha256": "9f302cb4d1aa7a5de465bc8bffceb241d6baf11fbcf41ffff26498c73d83ee7e",
+        "method": "pdftotext -layout"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-barley-p07.png",
+        "sha256": "f5d619e739a4063be46a24f8305d66f9904e6226d22637adbe6d0ae6b9a1f3ea",
+        "method": "pdftoppm rendering"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-barley-p07.txt",
+        "sha256": "a2963172eb4b56b8e404190796a8c71a3ae1ba4502f500382eb98366a8933869",
+        "method": "tesseract -l fra (uncorrected OCR)"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-barley-visual.txt",
+        "sha256": "36a674f97b733bebedfb64a4e1614aff54ad8092c532835fae4e87251a4727ad",
+        "method": "Short visual transcription of cited lines after complete page inspection; OCR is separate"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-barley-cover.png",
+        "sha256": "13b15396a1d2b9e7b9d3695b09b33326202dfffb634916eda5462d54d34015af",
+        "method": "pdftoppm cover rendering; complete cover visually inspected for title"
+      }
+    ],
+    "visualReview": {
+      "reviewedOn": "2026-11-10",
+      "method": "AI visual review of complete rendered pages; short manual transcriptions; not expert review",
+      "note": "Glyph apostrophes in image transcriptions use typographic apostrophes; no underlying PDF text layer exists."
+    },
+    "titleVerification": "Title read from the complete rendered cover; no publication year inferred."
+  },
+  {
+    "id": "fao-water",
+    "url": "https://www.fao.org/4/s2022e/s2022e07.htm",
+    "resolvedUrl": "https://www.fao.org/4/s2022e/s2022e07.htm",
+    "title": "Irrigation water management: crop water needs, Chapter 3",
+    "publisher": "FAO",
+    "retrievedOn": "2026-11-10T11:11:04.164593+00:00",
+    "savedFile": ".research-sources/2026-11-11/fao-water.html",
+    "textFile": ".research-sources/2026-11-11/fao-water.txt",
+    "sha256": "86cecd0b1707e18116e6d68e986715e2d5f34d9b67c802fff029394b17cebc62",
+    "textSha256": "e5dc1c4c3bfa850a8f59fdc5d05f14760d0acc6d040d63224657c301911c7d3a",
+    "bytes": 127577,
+    "contentType": "text/html",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/fao-water.txt",
+        "sha256": "e5dc1c4c3bfa850a8f59fdc5d05f14760d0acc6d040d63224657c301911c7d3a",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  },
+  {
+    "id": "fao-roots",
+    "url": "https://www.fao.org/4/X0490E/x0490e0e.htm",
+    "resolvedUrl": "https://www.fao.org/4/X0490E/x0490e0e.htm",
+    "title": "FAO-56 Chapter 8, Table 22 maximum effective rooting depth",
+    "publisher": "FAO",
+    "retrievedOn": "2026-11-10T11:11:04.189854+00:00",
+    "savedFile": ".research-sources/2026-11-11/fao-roots.html",
+    "textFile": ".research-sources/2026-11-11/fao-roots.txt",
+    "sha256": "f7eabb739742734c411a8d31527b709fba004a943e373ed406587017b3be0e98",
+    "textSha256": "ce0a8f098cfae04dcff5f9e195c2517f48f6943a15dcfbadaf8f6e4601205e1c",
+    "bytes": 137909,
+    "contentType": "text/html",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/fao-roots.txt",
+        "sha256": "ce0a8f098cfae04dcff5f9e195c2517f48f6943a15dcfbadaf8f6e4601205e1c",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  },
+  {
+    "id": "fao-cover",
+    "url": "https://www.fao.org/conservation-agriculture/in-practice/soil-organic-cover/en/",
+    "resolvedUrl": "https://www.fao.org/conservation-agriculture/in-practice/soil-organic-cover/en/",
+    "title": "Soil organic cover — Conservation Agriculture",
+    "publisher": "FAO",
+    "retrievedOn": "2026-11-10T11:11:04.102813+00:00",
+    "savedFile": ".research-sources/2026-11-11/fao-cover.html",
+    "textFile": ".research-sources/2026-11-11/fao-cover.txt",
+    "sha256": "41b36a86c4acdce9b382f6db37610cf62ae6c7a8b9f941cf0044b35b60fe0d0b",
+    "textSha256": "35682f43706ea6944b223d709dc1c9488e89aab065b4282db2576c7f59ca07ab",
+    "bytes": 25261,
+    "contentType": "text/html; charset=utf-8",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/fao-cover.txt",
+        "sha256": "35682f43706ea6944b223d709dc1c9488e89aab065b4282db2576c7f59ca07ab",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  },
+  {
+    "id": "fao-diversity",
+    "url": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/",
+    "resolvedUrl": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/",
+    "title": "Species diversification — Conservation Agriculture",
+    "publisher": "FAO",
+    "retrievedOn": "2026-11-10T11:11:04.656267+00:00",
+    "savedFile": ".research-sources/2026-11-11/fao-diversity.html",
+    "textFile": ".research-sources/2026-11-11/fao-diversity.txt",
+    "sha256": "927d4c7b0059a6a1b401d0fcb5dac577b6d297ec3a87afb3dee9f0e63b978fb3",
+    "textSha256": "d7e09ef8424feec4e1e64ff261347fcc6b8c6eb660d7384e5f40b2e23c13561d",
+    "bytes": 24026,
+    "contentType": "text/html; charset=utf-8",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/fao-diversity.txt",
+        "sha256": "d7e09ef8424feec4e1e64ff261347fcc6b8c6eb660d7384e5f40b2e23c13561d",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  },
+  {
+    "id": "fao-dryland",
+    "url": "https://www.fao.org/4/y4690e/y4690e09.htm",
+    "resolvedUrl": "https://www.fao.org/4/y4690e/y4690e09.htm",
+    "title": "Optimizing soil moisture for plant production, Chapter 4",
+    "publisher": "FAO",
+    "retrievedOn": "2026-11-10T11:11:04.415850+00:00",
+    "savedFile": ".research-sources/2026-11-11/fao-dryland.html",
+    "textFile": ".research-sources/2026-11-11/fao-dryland.txt",
+    "sha256": "50000cf0ea0b479aa9fc6038708359777d5bdd6a336b84b5c97d0653b84b0cc1",
+    "textSha256": "5dfa6e7e3c299cbf561f918bff1564bea18491279c56efecc5246c0d2f3dfb01",
+    "bytes": 149318,
+    "contentType": "text/html",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/fao-dryland.txt",
+        "sha256": "5dfa6e7e3c299cbf561f918bff1564bea18491279c56efecc5246c0d2f3dfb01",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  },
+  {
+    "id": "fao-hay",
+    "url": "https://www.fao.org/4/x7660f/x7660f0c.htm",
+    "resolvedUrl": "https://www.fao.org/4/x7660f/x7660f0c.htm",
+    "title": "Conservation du foin et de la paille, Chapitre VIII",
+    "publisher": "FAO",
+    "retrievedOn": "2026-11-10T11:11:04.622430+00:00",
+    "savedFile": ".research-sources/2026-11-11/fao-hay.html",
+    "textFile": ".research-sources/2026-11-11/fao-hay.txt",
+    "sha256": "74f865e9f518433bdf2be4f8cfd154f699f2dcda6793991720e2ae73ca422672",
+    "textSha256": "1f0fee084c7c65bbce3e947a75beb7d4e5129b838badda7cc0be30f9f03c132d",
+    "bytes": 81366,
+    "contentType": "text/html",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/fao-hay.txt",
+        "sha256": "1f0fee084c7c65bbce3e947a75beb7d4e5129b838badda7cc0be30f9f03c132d",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  },
+  {
+    "id": "fao-tunisia-cover",
+    "url": "https://www.fao.org/4/t1765e/t1765e0j.htm",
+    "resolvedUrl": "https://www.fao.org/4/t1765e/t1765e0j.htm",
+    "title": "Influence of cropping techniques — plant cover in Tunisia",
+    "publisher": "FAO",
+    "retrievedOn": "2026-11-10T11:11:04.541013+00:00",
+    "savedFile": ".research-sources/2026-11-11/fao-tunisia-cover.html",
+    "textFile": ".research-sources/2026-11-11/fao-tunisia-cover.txt",
+    "sha256": "7b076fc957e9043b933b0f452e6aec27884cd9040abc838faf76bd8fc57b34de",
+    "textSha256": "d22b3ac97017d092a676c5bec486d1ffb3e563c95c45a130e61a0dcaa8026547",
+    "bytes": 83894,
+    "contentType": "text/html",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/fao-tunisia-cover.txt",
+        "sha256": "d22b3ac97017d092a676c5bec486d1ffb3e563c95c45a130e61a0dcaa8026547",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  },
+  {
+    "id": "inra-legume-guide",
+    "url": "https://www.inra.org.ma/sites/default/files/publications/ouvrages/leguminkafacifr15.pdf",
+    "resolvedUrl": "https://www.inra.org.ma/sites/default/files/publications/ouvrages/leguminkafacifr15.pdf",
+    "title": "Guide pratique pour le conseil agricole: lentille, pois chiche, fève",
+    "publisher": "INRA Maroc",
+    "retrievedOn": "2026-11-10T11:12:27.393425+00:00",
+    "savedFile": ".research-sources/2026-11-11/inra-legume-guide.pdf",
+    "textFile": ".research-sources/2026-11-11/inra-legume-guide-visual.txt",
+    "sha256": "850071c2da0458ff998b2a428e1cd536d0ebdedc04e553b4e5edcdebab3cf40e",
+    "textSha256": "5580fbf7b65de9d9033a4d86572979eeb187e5ae7cf9f40c7098718d8bfdc7fc",
+    "bytes": 7647536,
+    "contentType": "application/pdf",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-legume-guide.txt",
+        "sha256": "98c3689f37aa605365100f6c2597bfd2e83f4bd296667130b844228fd68bcfba",
+        "method": "pdftotext -layout"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-legume-review-11.png",
+        "sha256": "63bfe5e6665a18cdf958f5fdd19b1a7d34678aa1d7d7a24fb82bf34249a8d7cf",
+        "method": "pdftoppm rendering"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-legume-p14.png",
+        "sha256": "7bcc6c6913d7774b0ad7eb2c524e1125136615bfda89f6bf71755a28e6e34bbe",
+        "method": "pdftoppm rendering"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-legume-review-11.txt",
+        "sha256": "610c94351c9fd45377c6c58e5baf193abca857db552f7ab8e8e6e8e25c921a6c",
+        "method": "tesseract -l fra (uncorrected OCR)"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-legume-p14.txt",
+        "sha256": "0801bca0363a6f4cfdef2d81b6ba9529f166e079c4d36af8673c4e9d4ccd5d96",
+        "method": "tesseract -l fra (uncorrected OCR)"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-legume-guide-visual.txt",
+        "sha256": "5580fbf7b65de9d9033a4d86572979eeb187e5ae7cf9f40c7098718d8bfdc7fc",
+        "method": "Short visual transcription of cited lines after complete page inspection; OCR is separate"
+      },
+      {
+        "savedFile": ".research-sources/2026-11-11/inra-legume-cover.png",
+        "sha256": "afba9d890dbf4ff7be5e2224f15f595cbb8e1965bca5f53a7a7133e5d3850932",
+        "method": "pdftoppm cover rendering; complete cover visually inspected for title"
+      }
+    ],
+    "visualReview": {
+      "reviewedOn": "2026-11-10",
+      "method": "AI visual review of complete rendered pages; short manual transcriptions; not expert review",
+      "note": "Glyph apostrophes in image transcriptions use typographic apostrophes; no underlying PDF text layer exists."
+    },
+    "titleVerification": "Title read from the complete rendered cover; no publication year inferred."
+  },
+  {
+    "id": "cgiar-carbon",
+    "url": "https://www.cgiar.org/news-events/news/carbon-smart-farming-breakthroughs-for-drylands",
+    "resolvedUrl": "https://www.cgiar.org/news-events/news/carbon-smart-farming-breakthroughs-for-drylands",
+    "title": "Carbon-Smart Farming Breakthroughs for Drylands",
+    "publisher": "CGIAR / ICARDA",
+    "retrievedOn": "2026-11-10T11:12:27.070009+00:00",
+    "savedFile": ".research-sources/2026-11-11/cgiar-carbon.html",
+    "textFile": ".research-sources/2026-11-11/cgiar-carbon.txt",
+    "sha256": "6154ebe27bd0622cbda7f66503315b2367d6db401bb3f69ced5da9ccfbf98255",
+    "textSha256": "cba5546b471ac4870ece073110ffceb7a33a0c6e4a461fde5672649dab759a72",
+    "bytes": 160451,
+    "contentType": "text/html; charset=UTF-8",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/cgiar-carbon.txt",
+        "sha256": "cba5546b471ac4870ece073110ffceb7a33a0c6e4a461fde5672649dab759a72",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  },
+  {
+    "id": "icarda-ca",
+    "url": "https://icarda.org/media/blog/morocco-convert-1m-ha-conservation-agriculture-how-icardainra-fit",
+    "resolvedUrl": "https://icarda.org/media/blog/morocco-convert-1m-ha-conservation-agriculture-how-icardainra-fit",
+    "title": "Morocco to convert 1M Ha to conservation Agriculture — How ICARDA/INRA Fit in",
+    "publisher": "ICARDA",
+    "retrievedOn": "2026-11-10T11:12:26.059068+00:00",
+    "savedFile": ".research-sources/2026-11-11/icarda-ca.html",
+    "textFile": ".research-sources/2026-11-11/icarda-ca.txt",
+    "sha256": "9f5f3f958f78dbd306a5ade31525cc54219faf2f3f46bee6c3e551d79859f76e",
+    "textSha256": "e85af56283b794886058437fa0bb713a978a7ce432aedba4dc337e2d62354a8e",
+    "bytes": 75014,
+    "contentType": "text/html; charset=utf-8",
+    "licence": {
+      "status": "not_found",
+      "note": "Reuse licence not verified. Original bytes kept locally; short research quotes only."
+    },
+    "representation": "raw upstream bytes",
+    "derivedArtifacts": [
+      {
+        "savedFile": ".research-sources/2026-11-11/icarda-ca.txt",
+        "sha256": "e85af56283b794886058437fa0bb713a978a7ce432aedba4dc337e2d62354a8e",
+        "method": "HTMLParser visible text; whitespace normalized; table cell separators retained"
+      }
+    ]
+  }
+]

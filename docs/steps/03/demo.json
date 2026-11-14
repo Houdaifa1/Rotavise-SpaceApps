@@ -1,0 +1,84 @@
+{
+  "recordedAt": "2026-09-27T01:36:57.052Z",
+  "commands": [
+    "pnpm catalog:demo",
+    "node --env-file=.env apps/server/dist/entrypoints/catalog-import.main.js"
+  ],
+  "first": {
+    "outcome": "imported",
+    "snapshotId": "72a20078-c647-4338-9eff-d825f7fdfe64",
+    "catalogId": "rotavise-pilot",
+    "version": "0.1.0",
+    "sha256": "d951b9c07b03739a77d43d0518c68ebc13b80d805fa58dcd076ef9cd82ed3a55",
+    "importedAt": "2026-09-27T01:33:36.382Z"
+  },
+  "repeat": {
+    "outcome": "unchanged",
+    "snapshotId": "72a20078-c647-4338-9eff-d825f7fdfe64",
+    "sha256": "d951b9c07b03739a77d43d0518c68ebc13b80d805fa58dcd076ef9cd82ed3a55"
+  },
+  "profiles": [
+    {
+      "id": "durum-wheat",
+      "review": "pending",
+      "status": "insufficient_evidence",
+      "gapCodes": [
+        "APPLICABILITY_REVIEW_PENDING",
+        "SPECIALIST_REVIEW_PENDING",
+        "CULTIVAR_UNSPECIFIED",
+        "PRODUCTION_SYSTEM_UNSPECIFIED",
+        "RETURN_INTERVAL_UNESTABLISHED",
+        "RULE_REVIEW_PENDING",
+        "RULE_SCOPE_NOT_LOCAL",
+        "KNOWLEDGE_UNKNOWN",
+        "SOIL_METHOD_UNSPECIFIED",
+        "MEASUREMENT_BASIS_INCOMPLETE"
+      ]
+    },
+    {
+      "id": "faba-bean",
+      "review": "pending",
+      "status": "insufficient_evidence",
+      "gapCodes": [
+        "APPLICABILITY_REVIEW_PENDING",
+        "SPECIALIST_REVIEW_PENDING",
+        "CULTIVAR_UNSPECIFIED",
+        "PRODUCTION_SYSTEM_UNSPECIFIED",
+        "RULE_REVIEW_PENDING",
+        "RULE_SCOPE_NOT_LOCAL",
+        "CALENDAR_CONFIRMATION_NEEDED",
+        "KNOWLEDGE_UNKNOWN",
+        "SOIL_METHOD_UNSPECIFIED",
+        "MEASUREMENT_BASIS_INCOMPLETE"
+      ]
+    },
+    {
+      "id": "sugar-beet",
+      "review": "pending",
+      "status": "insufficient_evidence",
+      "gapCodes": [
+        "APPLICABILITY_REVIEW_PENDING",
+        "SPECIALIST_REVIEW_PENDING",
+        "CULTIVAR_UNSPECIFIED",
+        "PRODUCTION_SYSTEM_UNSPECIFIED",
+        "RULE_REVIEW_PENDING",
+        "CALENDAR_CONFIRMATION_NEEDED",
+        "KNOWLEDGE_UNKNOWN",
+        "SOIL_METHOD_UNSPECIFIED",
+        "MEASUREMENT_BASIS_INCOMPLETE"
+      ]
+    }
+  ],
+  "finalSequentialVerification": {
+    "recordedAt": "2026-09-27T01:44:11.989Z",
+    "commands": [
+      "pnpm db:up",
+      "pnpm db:migrate",
+      "pnpm catalog:demo",
+      "pnpm catalog:demo"
+    ],
+    "outcomes": ["unchanged", "unchanged"],
+    "snapshotId": "72a20078-c647-4338-9eff-d825f7fdfe64",
+    "sha256": "d951b9c07b03739a77d43d0518c68ebc13b80d805fa58dcd076ef9cd82ed3a55"
+  }
+}

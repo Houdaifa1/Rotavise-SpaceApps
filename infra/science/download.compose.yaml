@@ -1,0 +1,16 @@
+name: rotavise-download
+services:
+  download:
+    build:
+      context: ../..
+      dockerfile: infra/docker/server.Dockerfile
+    entrypoint: ["sh", "/prepare-morocco.sh"]
+    volumes:
+      - ../../tooling/climate-scenarios/prepare-morocco.sh:/prepare-morocco.sh:ro
+      - ../../tooling/climate-scenarios/morocco-tiles.txt:/tiles.txt:ro
+    environment:
+      DATABASE_URL: ${ROTAVISE_DOWNLOAD_DATABASE_URL:-postgresql://rotavise:rotavise_local_only@host.docker.internal:54329/rotavise}
+      SCENARIO_FETCH_CONCURRENCY: "8"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped

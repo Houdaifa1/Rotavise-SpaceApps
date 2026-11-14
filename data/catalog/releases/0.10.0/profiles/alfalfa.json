@@ -1,0 +1,359 @@
+{
+  "id": "alfalfa",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Alfalfa",
+    "localNames": [],
+    "scientificName": "Medicago sativa L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-alfalfa",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Medicago sativa L.\""
+      }
+    ]
+  },
+  "harvestProduct": "forage",
+  "modelType": "multi_year_stand",
+  "cultivars": [
+    {
+      "id": "africaine",
+      "name": "Africaine",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-alfalfa",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "AFRICAINE INRA-MAROC 1986"
+        }
+      ]
+    },
+    {
+      "id": "moapa",
+      "name": "Moapa",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-alfalfa",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "MOAPA INRA-MAROC 1986"
+        }
+      ]
+    },
+    {
+      "id": "sonora",
+      "name": "Sonora",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-alfalfa",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "SONORA INRA MAROC 1986"
+        }
+      ]
+    },
+    {
+      "id": "demnat-3",
+      "name": "Demnat 3",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.alfalfa.demnat-3"
+      },
+      "notes": "ecotype; Moroccan, Demnat region; oasis/irrigated fodder"
+    },
+    {
+      "id": "tafilalt",
+      "name": "Tafilalt",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.alfalfa.tafilalt"
+      },
+      "notes": "ecotype; Moroccan oasis ecotype; summer-active, heat-tolerant"
+    },
+    {
+      "id": "dormant-and-non-dormant-types",
+      "name": "Dormant and non-dormant types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.alfalfa.dormant-and-non-dormant-types"
+      },
+      "notes": "type group"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Forage crops table",
+          "interpretation": "context_only",
+          "note": "Irrigated alfalfa area in the Tadla perimeter.",
+          "page": null,
+          "quote": "Luzerne 30 452"
+        }
+      ],
+      "note": "Listed for Tadla; not schedulable in this release."
+    }
+  ],
+  "rules": [
+    {
+      "id": "b-alfalfa-planting-window-coastal-planting-window",
+      "citations": [
+        {
+          "sourceId": "rs-inra-forage",
+          "locator": "PDF page 139 / printed page 130, Semis",
+          "interpretation": "normalized",
+          "note": "Mild-winter coastal plains; irrigation or suitable rainfall is required.",
+          "page": 139,
+          "quote": "d’août à novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "08-01",
+      "end": "11-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "b-alfalfa-planting-window-cold-winter-planting-window",
+      "citations": [
+        {
+          "sourceId": "rs-inra-forage",
+          "locator": "PDF page 139 / printed page 130, Semis",
+          "interpretation": "normalized",
+          "note": "Cold-winter areas; sown under a cereal cover to protect young plants.",
+          "page": 139,
+          "quote": "septembre-octobre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "10-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "b-alfalfa-planting-window-spring-planting-window",
+      "citations": [
+        {
+          "sourceId": "rs-inra-forage",
+          "locator": "PDF page 139 / printed page 130, Semis",
+          "interpretation": "normalized",
+          "note": "Spring sowing is also described across Morocco.",
+          "page": 139,
+          "quote": "mars-avril"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "03-01",
+      "end": "04-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "b-alfalfa-stand-lifetime-cycle-duration",
+      "citations": [
+        {
+          "sourceId": "rs-inra-forage",
+          "locator": "PDF page 139 / printed page 130, Semis",
+          "interpretation": "normalized",
+          "note": "Years retained as stated. No fixed days-per-year conversion is imposed on a calendar-based stand.",
+          "page": 139,
+          "quote": "pendant 3 à 4 ans"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "stand_lifetime",
+      "minDays": 1095,
+      "maxDays": 1460
+    },
+    {
+      "id": "t-fill-alfalfa-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -15 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.alfalfa.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -15,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-alfalfa-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 45 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.alfalfa.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 45
+    }
+  ],
+  "references": [
+    {
+      "id": "f-alfalfa-observed-yield-yield-12",
+      "topic": "yield",
+      "summary": "Yield 11.1–11.1 t/ha (product forage; fresh/dry matter unspecified; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 11.1, "max": 11.1 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 67 / printed page 64, Table 37, Luzerne row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. No stated fresh/dry-matter basis or annual-cut accounting. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "id": "f-alfalfa-settat-2015-2016-yield-13",
+      "topic": "yield",
+      "summary": "Yield 60–60 t/ha (product forage; fresh/dry and cutting basis not specified; years 2015-2016; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 60, "max": 60 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 71, Production agricole, Luzerne row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "id": "k-alfalfa-background-43",
+      "topic": "background",
+      "summary": "Perennial forage legume harvested in successive cuts. Dormancy class and acclimation affect winter survival. Heat interacts with water availability and regrowth; a stand can survive while forage production falls. Re-establishment after alfalfa can be affected by autotoxicity and shared soil-borne problems. Stand lifetime, establishment time and time between cuts are different quantities; fresh and dry forage yields must be distinguished.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.alfalfa"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "No sourced Tadla sowing window collected yet."
+    },
+    {
+      "topic": "cycle_duration",
+      "reason": "No sourced duration collected yet."
+    }
+  ],
+  "limitations": [
+    "Identity and local presence only.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

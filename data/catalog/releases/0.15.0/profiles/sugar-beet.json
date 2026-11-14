@@ -1,0 +1,2151 @@
+{
+  "id": "sugar-beet",
+  "version": "0.15.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sugar beet",
+    "localNames": [
+      { "language": "fr", "name": "Betterave à sucre" },
+      {
+        "language": "ar",
+        "name": "الشمندر السكري",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.sugar-beet.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الشمندر السكري",
+        "recall": {
+          "confidence": "medium",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.sugar-beet.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الباربا",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-betterave-sucriere",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: sugar-beet.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "الباربا"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      },
+      {
+        "language": "ary",
+        "name": "الباربا السكرية",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-betterave-sucriere",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: sugar-beet.ary.1. Native-speaker review pending.",
+            "page": null,
+            "quote": "الباربا السكرية"
+          }
+        ],
+        "confidence": "low"
+      }
+    ],
+    "scientificName": "Beta vulgaris L.",
+    "family": "Amaranthaceae",
+    "citations": [
+      {
+        "sourceId": "kew-beet",
+        "locator": "Accepted name and classification",
+        "interpretation": "context_only",
+        "note": "Accepted taxonomic identity; not cultivar evidence."
+      },
+      {
+        "sourceId": "onca-sugar-beet",
+        "locator": "PDF page 6, crop name",
+        "interpretation": "direct",
+        "note": "Local name as written in the source.",
+        "page": 6,
+        "quote": "Exigence édapho-climatiques de la betterave à sucre"
+      }
+    ]
+  },
+  "harvestProduct": "sugar_root",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "monogerm-hybrids",
+      "name": "Monogerm hybrids",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.sugar-beet.monogerm-hybrids"
+      },
+      "notes": "type group; precision seeding, imported seed"
+    },
+    {
+      "id": "rhizomania-tolerant-hybrids",
+      "name": "Rhizomania-tolerant hybrids",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.sugar-beet.rhizomania-tolerant-hybrids"
+      },
+      "notes": "type group; used on infested Tadla/Doukkala fields; names not recalled with confidence"
+    },
+    {
+      "id": "rhizomania-tolerant-and-bolting-tolerant-types",
+      "name": "Rhizomania-tolerant and bolting-tolerant types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.sugar-beet.rhizomania-tolerant-and-bolting-tolerant-types"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "cercospora-tolerant-types",
+      "name": "Cercospora-tolerant types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.sugar-beet.cercospora-tolerant-types"
+      }
+    },
+    {
+      "id": "bolting-resistant-types",
+      "name": "Bolting-resistant types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.sugar-beet.bolting-resistant-types"
+      }
+    },
+    {
+      "id": "nematode-tolerant-types",
+      "name": "Nematode-tolerant types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.sugar-beet.nematode-tolerant-types"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "context_only",
+          "note": "Regional sheet for the Tadla zones.",
+          "page": 10,
+          "quote": "Beni Moussa (Souk Sebt) Début septembre -mi novembre"
+        }
+      ],
+      "note": "Regional sheet for Béni Moussa, Dir and Béni Amir; campaign dates come from the sugar company each year."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-oriental",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "context_only",
+          "note": "Regional sheet.",
+          "page": 10,
+          "quote": "Oriental 3 Triffa Début septembre -mi novembre"
+        }
+      ],
+      "note": "Regional sheet; the sugar company sets each campaign."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-cs",
+          "locator": "PDF page 11, Table 3",
+          "interpretation": "context_only",
+          "note": "Regional sheet.",
+          "page": 11,
+          "quote": "Zemamera Début septembre -mi novembre"
+        }
+      ],
+      "note": "Regional sheet; the sugar company sets each campaign."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-rsk",
+          "locator": "PDF page 11, Table 3",
+          "interpretation": "context_only",
+          "note": "Regional sheet.",
+          "page": 11,
+          "quote": "Souk Larbâa - Allal Tazi Septembre - Octobre (précoce) ou novembre (tardif)"
+        }
+      ],
+      "note": "Regional sheet; the sugar company sets each campaign."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.sugar-beet.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "beet-sowing-tadla",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "normalized",
+          "note": "Early September encoded as 1 September; mid-November as 15 November.",
+          "page": 10,
+          "quote": "Beni Moussa (Souk Sebt) Début septembre -mi novembre"
+        },
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 10,
+          "quote": "Dir (Kasbat Tadla) Début septembre -mi novembre"
+        },
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 10,
+          "quote": "Beni Amir (Fkih Ben Saleh) Début septembre -mi novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["beni-mellal-tadla"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated Tadla zones; the sugar company sets each campaign.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "beet-duration",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 10, 3.1.3",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 10,
+          "quote": "une betterave ayant un cycle de 250 jours, s'étalant de fin octobre à fin Juin"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Sugarbeet",
+          "interpretation": "normalized",
+          "note": "November Mediterranean: 230 days.",
+          "page": null,
+          "quote": "45 75 80 30 230 November Mediterranean"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Sugarbeet",
+          "interpretation": "normalized",
+          "note": "November arid regions: 205 days.",
+          "page": null,
+          "quote": "35 60 70 40 205 November Arid Regions"
+        },
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 30",
+          "interpretation": "context_only",
+          "note": "Harvest begins in May.",
+          "page": 30,
+          "quote": "L'opération de la récolte de la betterave commence au mois de mai"
+        }
+      ],
+      "scope": {
+        "regionIds": [
+          "beni-mellal-tadla",
+          "ma-oriental",
+          "ma-casablanca-settat",
+          "ma-rabat-sale-kenitra"
+        ],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Local 250-day cycle with FAO autumn-sowing rows as the shorter bound.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 205,
+      "maxDays": 250
+    },
+    {
+      "id": "beet-summer-heat",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 6, section 2",
+          "interpretation": "normalized",
+          "note": "The upper end of the favourable range (28 °C) is used as the heat limit.",
+          "page": 6,
+          "quote": "Les températures maximales les plus favorables à la croissance sont comprises entre 20°C et 28°C"
+        },
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 6, section 2",
+          "interpretation": "direct",
+          "note": "Heat is the documented harmful side; the sheet gives no low-temperature threshold.",
+          "page": 6,
+          "quote": "Au Maroc, les températures estivales élevées constituent le facteur le plus limitant du rendement de la betterave"
+        }
+      ],
+      "scope": {
+        "regionIds": [
+          "beni-mellal-tadla",
+          "ma-oriental",
+          "ma-casablanca-settat",
+          "ma-rabat-sale-kenitra"
+        ],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-10-18",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Days with a maximum above the favourable 28 °C over the cycle; summer heat is the main yield limit in Morocco. Cool days are not counted (no sourced threshold).",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 28
+    },
+    {
+      "id": "beet-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Sugar Beet",
+          "interpretation": "normalized",
+          "note": "Kc ini 0.35, mid 1.20, end 0.70.",
+          "page": null,
+          "quote": "Sugar Beet 0.35 1.20 0.70"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Sugarbeet",
+          "interpretation": "normalized",
+          "note": "Stage shares from the November Mediterranean row.",
+          "page": null,
+          "quote": "45 75 80 30 230 November Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted for local wind and humidity or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.35,
+      "kcMid": 1.2,
+      "kcEnd": 0.7,
+      "stageLengths": [45, 75, 80, 30]
+    },
+    {
+      "id": "beet-soil-ph",
+      "citations": [
+        {
+          "sourceId": "onca-sugar-beet",
+          "locator": "PDF page 6",
+          "interpretation": "direct",
+          "note": "pH range as written; the guide does not state the measurement method.",
+          "page": 6,
+          "quote": "Le pH dépend du type de sol et doit être compris entre 6,5 et 7,5"
+        }
+      ],
+      "scope": {
+        "regionIds": [
+          "morocco-general",
+          "ma-oriental",
+          "ma-casablanca-settat",
+          "ma-rabat-sale-kenitra"
+        ],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Regional sheet; sugar beet is very sensitive to soil pH.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6.5,
+      "max": 7.5
+    },
+    {
+      "id": "beet-soil-salinity",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 80, Annex III Table III-1",
+          "interpretation": "normalized",
+          "note": "ECe 7 dS/m is the threshold where yield starts to fall; the following columns are the slope and rating.",
+          "page": 80,
+          "quote": "Sugar beet 7.0 24.0 5.9"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Yield starts to fall above this saturated-paste salinity; checked only against a farmer's soil test.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 7
+    },
+    {
+      "id": "beet-sowing-oriental",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-oriental",
+          "locator": "PDF page 10, Table 3",
+          "interpretation": "normalized",
+          "note": "Regional sowing dates.",
+          "page": 10,
+          "quote": "Oriental 3 Triffa Début septembre -mi novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-oriental"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated; the sugar company sets each campaign.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "beet-sowing-casablanca-settat",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-cs",
+          "locator": "PDF page 11, Table 3",
+          "interpretation": "normalized",
+          "note": "Regional sowing dates.",
+          "page": 11,
+          "quote": "Zemamera Début septembre -mi novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-casablanca-settat"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated; the sugar company sets each campaign.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-15",
+      "precision": "approximate"
+    },
+    {
+      "id": "beet-sowing-rabat-sale-kenitra",
+      "citations": [
+        {
+          "sourceId": "ardna-sugar-rsk",
+          "locator": "PDF page 11, Table 3",
+          "interpretation": "normalized",
+          "note": "Regional sowing dates.",
+          "page": 11,
+          "quote": "Souk Larbâa - Allal Tazi Septembre - Octobre (précoce) ou novembre (tardif)"
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-rabat-sale-kenitra"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated; the sugar company sets each campaign.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "11-30",
+      "precision": "approximate"
+    },
+    {
+      "id": "a-sugar-beet-cold-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-fao-frost-chapter4",
+          "locator": "Chapter 4, Table 4.5, germination column, Sugar-beet row",
+          "interpretation": "normalized",
+          "note": "Field-crop critical injury range reproduced by FAO, not the harvested-product freezing table. Preserve the published endpoints without selecting one. A daily-minimum air metric, stage dates and Moroccan cultivar validation are not supplied.",
+          "page": null,
+          "quote": "Sugar-beet -6, -7"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Damage limit (damage) at stage \"germination\". Quote re-found in the saved source text.",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "germination",
+      "stageWindow": null,
+      "lowerDegC": -6,
+      "upperDegC": null
+    },
+    {
+      "id": "a-sugar-beet-cold-temperature-2",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Beta vulgaris\"; fields KTMP=0, KTMPR=-3",
+          "interpretation": "normalized",
+          "note": "KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "c-sugar-beet-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-onca-beet-counsellor",
+          "locator": "PDF/printed page 52, Pourriture blanche",
+          "interpretation": "normalized",
+          "note": "The disease passage advises avoiding the named susceptible crops. These crop-specific examples do not prohibit every member of their families.",
+          "page": 52,
+          "quote": "le tournesol, la carotte et la tomate"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. white rot risk Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Asteraceae"
+    },
+    {
+      "id": "c-sugar-beet-prohibited-predecessor-prohibited-predecessor-family-2",
+      "citations": [
+        {
+          "sourceId": "rs-onca-beet-counsellor",
+          "locator": "PDF/printed page 52, Pourriture blanche",
+          "interpretation": "normalized",
+          "note": "The disease passage advises avoiding the named susceptible crops. These crop-specific examples do not prohibit every member of their families.",
+          "page": 52,
+          "quote": "le tournesol, la carotte et la tomate"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. white rot risk Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Apiaceae"
+    },
+    {
+      "id": "c-sugar-beet-prohibited-predecessor-prohibited-predecessor-family-3",
+      "citations": [
+        {
+          "sourceId": "rs-onca-beet-counsellor",
+          "locator": "PDF/printed page 52, Pourriture blanche",
+          "interpretation": "normalized",
+          "note": "The disease passage advises avoiding the named susceptible crops. These crop-specific examples do not prohibit every member of their families.",
+          "page": 52,
+          "quote": "le tournesol, la carotte et la tomate"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. white rot risk Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Solanaceae"
+    },
+    {
+      "id": "t-c-sugar-beet-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation guidance for the botanical family Amaranthaceae (beet cyst nematode, Cercospora)",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.sugar-beet.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 4
+    },
+    {
+      "id": "t-c-sugar-beet-preferred-predecessor-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation guidance for the botanical family: cereals before beet",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.sugar-beet.preferred_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-fill-sugar-beet-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -6 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sugar-beet.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -6,
+      "upperDegC": null
+    },
+    {
+      "id": "c11-sugar-beet-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.sugar-beet"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-sugar-beet-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.sugar-beet"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-sugar-beet-break-ramularia-beticola",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sugar-beet.ramularia-beticola"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Ramularia leaf spot of beet.",
+      "metric": "crop_health_break",
+      "issueId": "ramularia-beticola",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-sugar-beet-break-uromyces-betae",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sugar-beet.uromyces-betae"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Rust of beet.",
+      "metric": "crop_health_break",
+      "issueId": "uromyces-betae",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-sugar-beet-break-aphanomyces-cochlioides",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sugar-beet.aphanomyces-cochlioides"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Black root of beet.",
+      "metric": "crop_health_break",
+      "issueId": "aphanomyces-cochlioides",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-sugar-beet-break-beet-necrotic-yellow-vein-virus",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sugar-beet.beet-necrotic-yellow-vein-virus"
+      },
+      "conditions": "Recalled by the AI model; unverified. 6 years without host crops after Rhizomania.",
+      "metric": "crop_health_break",
+      "issueId": "beet-necrotic-yellow-vein-virus",
+      "minimumBreakDays": 2190
+    },
+    {
+      "id": "c11-sugar-beet-break-heterodera-schachtii",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sugar-beet.heterodera-schachtii"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Beet cyst nematode.",
+      "metric": "crop_health_break",
+      "issueId": "heterodera-schachtii",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "c11-sugar-beet-break-atomaria-linearis",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sugar-beet.atomaria-linearis"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Pygmy mangold beetle.",
+      "metric": "crop_health_break",
+      "issueId": "atomaria-linearis",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-sugar-beet-break-helicobasidium-purpureum",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.sugar-beet.helicobasidium-purpureum"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Violet root rot.",
+      "metric": "crop_health_break",
+      "issueId": "helicobasidium-purpureum",
+      "minimumBreakDays": 1825
+    }
+  ],
+  "references": [
+    {
+      "id": "d-sugar-beet-bolting-background-11",
+      "topic": "background",
+      "summary": "cold exposure bolting: {\"temperatureDegC\":5,\"minimumExposureDays\":30,\"startStageAsStated\":\"6 feuilles\",\"stageWindow\":null,\"temperatureBasis\":null}",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-onca-sugar-beet",
+          "locator": "PDF/printed page 6, temperature and vernalisation",
+          "interpretation": "normalized",
+          "note": "The same paragraph specifies the six-leaf stage and 5 °C. This is a prolonged vernalisation exposure; no daily-minimum rule, consecutive-day policy, or days/GDD timing of six leaves is stated.",
+          "page": 6,
+          "quote": "stade 6 feuilles, l’action d’une basse température (5°C) pendant au moins 30 jours"
+        }
+      ]
+    },
+    {
+      "id": "f-sugar-beet-observed-yield-yield-39",
+      "topic": "yield",
+      "summary": "Yield 46.84–46.84 t/ha (years 2023-2024; Tanger-Tétouan-Al Hoceima region mean)",
+      "value": { "unit": "t/ha", "min": 46.84, "max": 46.84 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-tanger-region-2025",
+          "locator": "PDF/printed page 71, Figure 62, Région TTA — Rendement row, sugar-beet column",
+          "interpretation": "normalized",
+          "note": "Convert the printed yield directly using one quintal = 0.1 tonne. Do not recalculate yield from rounded area and production; the source explicitly warns that its yields precede rounding. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "id": "f-sugar-beet-ormvat-conflict-first-statement-yield-40",
+      "topic": "yield",
+      "summary": "Yield 70–70 t/ha (years 2019-2020; Tadla regional performance statement)",
+      "value": { "unit": "t/ha", "min": 70, "max": 70 },
+      "citations": [
+        {
+          "sourceId": "rs-ormvat-sugar-beet",
+          "locator": "Performance de la filière betteravière, two separate performance bullets",
+          "interpretation": "normalized",
+          "note": "The same page gives two different root yields for the same campaign. Record both without choosing a corrected value or averaging them.",
+          "page": null,
+          "quote": "70 T/Ha en 2019/20"
+        }
+      ]
+    },
+    {
+      "id": "f-sugar-beet-ormvat-conflict-later-statement-yield-41",
+      "topic": "yield",
+      "summary": "Yield 65–65 t/ha (years 2019-2020; Tadla regional performance statement)",
+      "value": { "unit": "t/ha", "min": 65, "max": 65 },
+      "citations": [
+        {
+          "sourceId": "rs-ormvat-sugar-beet",
+          "locator": "Performance de la filière betteravière, two separate performance bullets",
+          "interpretation": "normalized",
+          "note": "The same page gives two different root yields for the same campaign. Record both without choosing a corrected value or averaging them.",
+          "page": null,
+          "quote": "65 T /Ha réalisé en 2019/2020"
+        }
+      ]
+    },
+    {
+      "id": "k-sugar-beet-background-66",
+      "topic": "background",
+      "summary": "Root crop grown for sugar; distinct from vegetable table beet. Prolonged cold after a susceptible stage can induce bolting; a short frost episode is a different exposure. Hot conditions increase evaporative demand and can affect root growth and sugar accumulation. White rot and some root pathogens have broad host ranges; merely changing botanical family may not remove risk. Sugar concentration, root yield and recoverable sugar yield are separate outcomes; bolting reduces suitability for root production.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.sugar-beet"
+      }
+    },
+    {
+      "id": "c11-sugar-beet-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.sugar-beet"
+      }
+    },
+    {
+      "id": "c11-sugar-beet-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.sugar-beet"
+      }
+    },
+    {
+      "id": "c11-sugar-beet-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.sugar-beet"
+      }
+    },
+    {
+      "id": "c11-sugar-beet-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.sugar-beet"
+      }
+    },
+    {
+      "id": "c11-sugar-beet-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: high.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.sugar-beet"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "temperature",
+      "reason": "Bolting after 30 days at 5 °C from the six-leaf stage and the effect of low temperatures on leaves (page 6) have no modelled stage timing or threshold."
+    },
+    {
+      "topic": "cultivar",
+      "reason": "The ONSSA register lists several hundred varieties, none bred by INRA Morocco; none is recorded until a Tadla source names the varieties grown."
+    },
+    {
+      "topic": "rotation",
+      "reason": "Rotation is listed against cercosporiosis (page 25) without a return interval."
+    }
+  ],
+  "limitations": [
+    "Regional official sheet and FAO defaults, not yet expert-reviewed.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "sugar-beet-faostat-pp-2002",
+          "kind": "prices",
+          "value": 325,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2002,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2002",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5530\",\"Producer Price (LCU/tonne)\",\"2002\",\"2002\",\"7021\",\"Annual value\",\"LCU\",\"325.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767079,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2002.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2002.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-pp-2003",
+          "kind": "prices",
+          "value": 325,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2003,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2003",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5530\",\"Producer Price (LCU/tonne)\",\"2003\",\"2003\",\"7021\",\"Annual value\",\"LCU\",\"325.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767080,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2003.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2003.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-pp-2004",
+          "kind": "prices",
+          "value": 325,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2004,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2004",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5530\",\"Producer Price (LCU/tonne)\",\"2004\",\"2004\",\"7021\",\"Annual value\",\"LCU\",\"325.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767081,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2004.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2004.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-pp-2005",
+          "kind": "prices",
+          "value": 325,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2005,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2005",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5530\",\"Producer Price (LCU/tonne)\",\"2005\",\"2005\",\"7021\",\"Annual value\",\"LCU\",\"325.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767082,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2005.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2005.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-pp-2006",
+          "kind": "prices",
+          "value": 365,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2006,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2006",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5530\",\"Producer Price (LCU/tonne)\",\"2006\",\"2006\",\"7021\",\"Annual value\",\"LCU\",\"365.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767083,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2006.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-faostat-pp-2006.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-onca-sugar-rsk-prices-6",
+          "kind": "prices",
+          "value": 565,
+          "unit": "DH/T (tonne denominator inferred from budget)",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra, Gharb: Allal Tazi-Souk Larbaa; gravity irrigation, mechanical harvest",
+          "commodity": null,
+          "scenarioId": "sugar-beet-onca-rsk-annex",
+          "definition": "published_point",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-sugar-rsk",
+              "sourceSha256": "be9731e6976201d526649e2e08922bf4f9db637e53fed1e4764599e9367fc3c7",
+              "quote": "Engrais de fond 1 F 2000 2000 -Prix unitaire(DH) 565",
+              "locator": "{\"pdfPage\":60}",
+              "quoteCheck": "income:sugar-beet.prices.sugar-beet-onca-sugar-rsk-prices-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "Producer budget; sale-stage details not stated",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "unitBasis": "Price column says DH only; tonne denominator inferred from yield x price = gross product. Not an explicitly printed price denominator.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 63060.1,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"63060.100000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1916395,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:sugar-beet.yields.sugar-beet-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 56995,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"56995.000000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1916396,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:sugar-beet.yields.sugar-beet-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 48926.1,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"48926.100000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1916397,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:sugar-beet.yields.sugar-beet-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 46925.1,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"46925.100000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1916398,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:sugar-beet.yields.sugar-beet-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 52285.8,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Sugar beet",
+          "scenarioId": "sugar-beet-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"157\",\"'01801\",\"Sugar beet\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"52285.800000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1916399,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:sugar-beet.yields.sugar-beet-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-onca-sugar-rsk-yields-6",
+          "kind": "yields",
+          "value": 55,
+          "unit": "T/Ha",
+          "currency": null,
+          "year": null,
+          "region": "Rabat-Salé-Kénitra, Gharb: Allal Tazi-Souk Larbaa; gravity irrigation, mechanical harvest",
+          "commodity": null,
+          "scenarioId": "sugar-beet-onca-rsk-annex",
+          "definition": "published_point",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-sugar-rsk",
+              "sourceSha256": "be9731e6976201d526649e2e08922bf4f9db637e53fed1e4764599e9367fc3c7",
+              "quote": "Engrais(Unités) 1 0 -Rdt.prod. Ple T/Ha 55,0",
+              "locator": "{\"pdfPage\":60}",
+              "quoteCheck": "income:sugar-beet.yields.sugar-beet-onca-sugar-rsk-yields-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-onca-sugar-rsk-costs-1",
+          "kind": "costs",
+          "value": 23850,
+          "unit": "DH/ha",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra, Gharb: Allal Tazi-Souk Larbaa; gravity irrigation, mechanical harvest",
+          "commodity": null,
+          "scenarioId": "sugar-beet-onca-rsk-annex",
+          "definition": "Labour, mechanised operations, inputs and irrigation; rent/finance rows unvalued, amortisation zero or blank.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-sugar-rsk",
+              "sourceSha256": "be9731e6976201d526649e2e08922bf4f9db637e53fed1e4764599e9367fc3c7",
+              "quote": "T ota l pa rtie l 23850",
+              "locator": "{\"pdfPage\":60}",
+              "quoteCheck": "income:sugar-beet.costs.sugar-beet-onca-sugar-rsk-costs-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "costDefinition": "Labour, mechanised operations, inputs and irrigation; rent/finance rows unvalued, amortisation zero or blank.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "sugar-beet-onca-sugar-rsk-margins-1",
+          "kind": "margins",
+          "value": 7225,
+          "unit": "DH/Ha",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra, Gharb: Allal Tazi-Souk Larbaa; gravity irrigation, mechanical harvest",
+          "commodity": null,
+          "scenarioId": "sugar-beet-onca-rsk-annex",
+          "definition": "Published gross margin.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-sugar-rsk",
+              "sourceSha256": "be9731e6976201d526649e2e08922bf4f9db637e53fed1e4764599e9367fc3c7",
+              "quote": "Semences Sel. 1 U 1,4 1500 2100 -Marge brute (DH/Ha) 7225",
+              "locator": "{\"pdfPage\":60}",
+              "quoteCheck": "income:sugar-beet.margins.sugar-beet-onca-sugar-rsk-margins-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "marginDefinition": "Published gross margin.",
+            "provenanceType": "source_quote"
+          }
+        }
+      ],
+      "options": [],
+      "gaps": [
+        {
+          "field": "economicObservationYear",
+          "status": "not_found",
+          "scope": "At least one regional/illustrative budget has no explicitly attached observation year; no publication/upload/contract year substituted."
+        },
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ],
+      "version": "benefits-2",
+      "records": [
+        {
+          "id": "b4.sugar-beet.biological_nitrogen_fixation.recall",
+          "category": "biological_nitrogen_fixation",
+          "status": "not_found",
+          "effect": "Not applicable: no conventional symbiotic crop N-fixation trait; associated free-living microbes are not a crop nitrogen credit.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "not_applicable",
+            "value": "not applicable",
+            "unit": "kg N/ha per crop period"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "high",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for biological nitrogen fixation; Crop does not have the conventional legume root-nodule fixation system.. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.biological_nitrogen_fixation.recall"
+          },
+          "applicability": "not_applicable",
+          "reason": "Crop does not have the conventional legume root-nodule fixation system."
+        },
+        {
+          "id": "b4.sugar-beet.residual_nitrogen_credit.recall",
+          "category": "residual_nitrogen_credit",
+          "status": "model_recall",
+          "effect": "Residues may recycle N already taken from soil; no new fixed-N credit. High-carbon residues may temporarily immobilize N. Quantity to the next crop is not quantified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "recycling only; net credit unquantified",
+            "unit": "kg N/ha to following crop"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for residual nitrogen credit; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.residual_nitrogen_credit.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.forage_residue_feed.recall",
+          "category": "forage_residue_feed",
+          "status": "model_recall",
+          "effect": "Some clean crop residues may supplement feed; moisture, spoilage, contaminants and anti-nutritional compounds must be checked; not a complete ration.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional roughage or residue",
+            "unit": "qualitative feed value"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for forage residue feed; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.forage_residue_feed.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.disease_break.recall",
+          "category": "disease_break",
+          "status": "model_recall",
+          "effect": "A following crop outside Amaranthaceae may interrupt family-associated specialist cycles; shared and wide-host-range organisms can persist. Repeating Amaranthaceae can maintain family-associated disease inoculum. Crop family alone does not prove a disease-free interval.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional family break",
+            "unit": "qualitative next-crop disease effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for disease break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.disease_break.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.pest_break.recall",
+          "category": "pest_break",
+          "status": "model_recall",
+          "effect": "A following crop outside Amaranthaceae may interrupt family-associated specialist cycles; shared and wide-host-range organisms can persist. Host weeds, volunteers and broad-host-range pests can bridge the interval; verify the named pest and next crop.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional host interruption",
+            "unit": "qualitative next-crop pest effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for pest break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.pest_break.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.weed_break.recall",
+          "category": "weed_break",
+          "status": "model_recall",
+          "effect": "Changing sowing season and cultivation may change weed pressure. Volunteers or seed return can offset suppression; no herbicidal effect or numerical reduction is assumed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "management-dependent weed pressure",
+            "unit": "qualitative weed effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for weed break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.weed_break.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.rooting_soil_structure_infiltration.recall",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "model_recall",
+          "effect": "Roots and their decay add pores locally; depth is limited by soil, water table and compaction. Potential improvement is not a measured infiltration rate.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "root channels; depth not quantified",
+            "unit": "qualitative rooting/infiltration effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for rooting soil structure infiltration; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.rooting_soil_structure_infiltration.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.erosion_cover_residue.recall",
+          "category": "erosion_cover_residue",
+          "status": "model_recall",
+          "effect": "Living cover and retained surface residue can cushion rain and reduce exposed soil. No crop-specific management C factor is recalled; tillage, cover fraction and season must be specified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "protective cover potential; C unquantified",
+            "unit": "dimensionless RUSLE C (unquantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for erosion cover residue; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.erosion_cover_residue.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.bare_soil_period_shortening.recall",
+          "category": "bare_soil_period_shortening",
+          "status": "model_recall",
+          "effect": "The crop covers part of its growing season; an intercrop or retained residue is needed for gaps after harvest. No reduction in days is estimated without a comparison calendar.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "calendar-dependent cover duration",
+            "unit": "day (not quantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for bare soil period shortening; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.bare_soil_period_shortening.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.organic_matter_soil_carbon.recall",
+          "category": "organic_matter_soil_carbon",
+          "status": "model_recall",
+          "effect": "Retained roots and healthy residues return organic material; removal or burning reduces the input. Decomposition, tillage and water balance determine net soil C; no sequestration rate is claimed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional organic inputs; net C unquantified",
+            "unit": "soil C contribution (qualitative)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for organic matter soil carbon; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.organic_matter_soil_carbon.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.drought_tolerance.recall",
+          "category": "drought_tolerance",
+          "status": "model_recall",
+          "effect": "Moderate or variable drought response; establishment and reproductive stages may remain sensitive. Survival under drought does not establish low seasonal water demand.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative drought tolerance"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for drought tolerance; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.drought_tolerance.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.water_demand.recall",
+          "category": "water_demand",
+          "status": "model_recall",
+          "effect": "Moderate or management-dependent seasonal demand; climate, cycle length and crop coefficient determine ET. Rainfall and soil storage must be deducted to assess irrigation; drought survival is a separate trait.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established crop; residues retained where safe; timing, cultivar, soil and management affect the outcome."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative seasonal ET class"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Sugar beet (Amaranthaceae) agronomy for water demand; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.sugar-beet.water_demand.recall"
+          }
+        },
+        {
+          "id": "b4.sugar-beet.rooting_soil_structure_infiltration.fao-roots",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "sourced",
+          "effect": "FAO-56 maximum effective rooting depth for Sugar Beet; this is a reference rooting range, not measured infiltration or a guarantee of penetration through compacted soil.",
+          "nonLocal": true,
+          "region": "Global reference; not validated on this Moroccan field",
+          "conditions": [
+            "FAO-56 Table 22 generic conditions; use shallower roots for irrigation scheduling where soil restricts growth.",
+            "Source row: Sugar Beet; first listed management/season scenario retained. Other scenarios remain in the saved source."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "min": 0.7,
+            "max": 1.2,
+            "unit": "m maximum effective rooting depth"
+          },
+          "citations": [
+            {
+              "sourceId": "b4-fao-roots",
+              "quote": "Sugar Beet |\n0.7-1.2",
+              "locator": "{\"section\":\"FAO-56 Table 22\",\"lineStart\":198,\"textFile\":\".research-sources/2026-11-11/fao-roots.txt\"}",
+              "sourceSha256": "f7eabb739742734c411a8d31527b709fba004a943e373ed406587017b3be0e98",
+              "quoteCheck": "b4:b4.sugar-beet.rooting_soil_structure_infiltration.fao-roots"
+            }
+          ]
+        },
+        {
+          "id": "b4.sugar-beet.water_demand.fao-water",
+          "category": "water_demand",
+          "status": "sourced",
+          "effect": "Indicative crop water need 550–750 mm per total growing period; retain the range rather than assigning an unsupported low/high threshold.",
+          "nonLocal": true,
+          "region": "Global reference; not validated on this Moroccan field",
+          "conditions": [
+            "Rough FAO reference for the total growing period; duration and climate change the total. This is crop ET, not net irrigation or a Moroccan local measurement.",
+            "Source crop group: Sugarbeet; sensitivity describes water shortage, not seasonal water volume."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "min": 550,
+            "max": 750,
+            "unit": "mm/total growing period"
+          },
+          "citations": [
+            {
+              "sourceId": "b4-fao-water",
+              "quote": "Sugarbeet |\n550-750 |\nlow-medium",
+              "locator": "{\"section\":\"Table 14\",\"lineStart\":2246,\"textFile\":\".research-sources/2026-11-11/fao-water.txt\"}",
+              "sourceSha256": "86cecd0b1707e18116e6d68e986715e2d5f34d9b67c802fff029394b17cebc62",
+              "quoteCheck": "b4:b4.sugar-beet.water_demand.fao-water"
+            }
+          ]
+        },
+        {
+          "id": "b4.sugar-beet.drought_tolerance.fao-water",
+          "category": "drought_tolerance",
+          "status": "sourced",
+          "effect": "FAO drought sensitivity: low-medium. Sensitivity is the inverse of tolerance; establishment and crop stage still matter.",
+          "nonLocal": true,
+          "region": "Global reference; not validated on this Moroccan field",
+          "conditions": [
+            "Rough FAO reference for the total growing period; duration and climate change the total. This is crop ET, not net irrigation or a Moroccan local measurement.",
+            "Source crop group: Sugarbeet; sensitivity describes water shortage, not seasonal water volume."
+          ],
+          "magnitude": {
+            "status": "sourced",
+            "value": "low-medium",
+            "unit": "qualitative sensitivity to drought"
+          },
+          "citations": [
+            {
+              "sourceId": "b4-fao-water",
+              "quote": "Sugarbeet |\n550-750 |\nlow-medium",
+              "locator": "{\"section\":\"Table 14\",\"lineStart\":2246,\"textFile\":\".research-sources/2026-11-11/fao-water.txt\"}",
+              "sourceSha256": "86cecd0b1707e18116e6d68e986715e2d5f34d9b67c802fff029394b17cebc62",
+              "quoteCheck": "b4:b4.sugar-beet.drought_tolerance.fao-water"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-12T05:03:44.533Z",
+  "installed": false,
+  "command": {
+    "command": "pnpm ops:schedule install",
+    "start": "2026-11-12T05:01:16.329Z",
+    "end": "2026-11-12T05:01:16.393Z",
+    "exitCode": 1,
+    "log": "/tmp/b6-ops-schedule-install-1794459676328.log"
+  },
+  "launchctlExitCode": 5,
+  "error": "$ node tooling/operations/ops.mjs schedule install\nCommand failed: launchctl bootstrap gui/501 /Users/houdaifadrahm/projects/rotavise_project/.claude/worktrees/codex-b6/.artifacts/b6/LaunchAgents/local.rotavise-database.backup.plist\nBootstrap failed: 5: Input/output error\nTry re-running the command as root for richer errors.\n\n[ELIFECYCLE] Command failed with exit code 1.\n",
+  "plistValidation": {
+    "command": "plutil -lint .artifacts/b6/LaunchAgents/local.rotavise-database.backup.plist",
+    "exitCode": 0
+  },
+  "serviceLookup": {
+    "command": "launchctl print gui/501/local.rotavise-database.backup",
+    "exitCode": 113
+  }
+}

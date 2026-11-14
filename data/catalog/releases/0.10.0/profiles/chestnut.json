@@ -1,0 +1,193 @@
+{
+  "id": "chestnut",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Chestnut",
+    "localNames": [
+      { "language": "fr", "name": "Châtaignier" },
+      { "language": "ar", "name": "الكستناء" }
+    ],
+    "scientificName": "Castanea sativa Mill.",
+    "family": "Fagaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:chestnut"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "marigoule",
+      "name": "Marigoule",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.V.chestnut.marigoule"
+      },
+      "notes": "cultivar; French hybrid"
+    },
+    {
+      "id": "bouche-de-betizac",
+      "name": "Bouche de Bétizac",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.V.chestnut.bouche-de-bétizac"
+      },
+      "notes": "cultivar; French hybrid"
+    },
+    {
+      "id": "marsol",
+      "name": "Marsol",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.V.chestnut.marsol"
+      },
+      "notes": "cultivar; French hybrid"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:chestnut"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "r-a-chestnut-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.A.chestnut.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -25,
+      "upperDegC": null
+    }
+  ],
+  "references": [
+    {
+      "id": "r-p-chestnut-fit-planner-fit-706",
+      "topic": "planner_fit",
+      "summary": "Planner fit recalled as \"orchard_model\"; Small Rif plantings; use of these hybrids in Morocco unverified.. The release uses its own model type for this crop.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "judgement from crop habit and use; Moroccan scale unverified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.P.chestnut.fit"
+      }
+    },
+    {
+      "id": "r-b-chestnut-window-background-707",
+      "topic": "background",
+      "summary": "Planting: 11-15 to 02-28",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.B.chestnut.window"
+      }
+    },
+    {
+      "id": "r-b-chestnut-stand-lifetime-background-708",
+      "topic": "background",
+      "summary": "Stand lifetime 36500–73000 days.",
+      "value": { "unit": "days", "min": 36500, "max": 73000 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy and horticulture recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.B.chestnut.stand_lifetime"
+      }
+    },
+    {
+      "id": "r-c-chestnut-rotation-background-709",
+      "topic": "background",
+      "summary": "Rotation: perennial, orchard or wild crop: classic rotation does not apply",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "habit of the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.C.chestnut.rotation"
+      }
+    },
+    {
+      "id": "r-f-chestnut-yield-yield-710",
+      "topic": "yield",
+      "summary": "Yield 2–5 t/ha (system rainfed). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 2, "max": 5 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "typical international range recalled; not Moroccan statistics",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.F.chestnut.yield"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

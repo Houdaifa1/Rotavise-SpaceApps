@@ -1,0 +1,1983 @@
+{
+  "id": "tomato",
+  "version": "0.14.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Tomato (open field)",
+    "localNames": [
+      { "language": "fr", "name": "Tomate" },
+      {
+        "language": "ar",
+        "name": "الطماطم",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.tomato.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "ماطيشة",
+        "recall": {
+          "confidence": "high",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.tomato.ary"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "ماطيشة",
+        "citations": [
+          {
+            "sourceId": "darija-wikt-049",
+            "locator": "Moroccan Arabic → Noun",
+            "interpretation": "direct",
+            "note": "Explicit Moroccan Arabic section of Wiktionary. Wiktionary supplies the Moroccan Arabic word and English crop gloss; scientific identity is supplied by a separate saved botanical source. Botanical pairing: WD-SPARQL-OTHER, see research record. Research record: tomato.ary.0. Native-speaker review pending.",
+            "page": null,
+            "quote": "ماطيشة"
+          }
+        ],
+        "confidence": "low",
+        "preferred": true
+      },
+      {
+        "language": "ary",
+        "name": "مطيشة",
+        "citations": [
+          {
+            "sourceId": "darija-aesvt-tomate",
+            "locator": "Noms & Dénominations → Nom dialectal marocain",
+            "interpretation": "direct",
+            "note": "Page explicitly labels this field Nom dialectal marocain / الدارجة المغربية. The same botanical sheet gives the scientific name and crop title. Research record: tomato.ary.1. Native-speaker review pending.",
+            "page": null,
+            "quote": "مطيشة"
+          }
+        ],
+        "confidence": "low"
+      }
+    ],
+    "scientificName": "Solanum lycopersicum L.",
+    "family": "Solanaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-tomato",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Solanum lycopersicum L.\""
+      },
+      {
+        "sourceId": "ardna-vegetable-rsk",
+        "locator": "PDF page 31, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine.",
+        "page": 31,
+        "quote": "Culture de tomate"
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "marmande",
+      "name": "Marmande",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.marmande"
+      },
+      "notes": "cultivar; French; ribbed, open-field"
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.rio-grande"
+      },
+      "notes": "cultivar; USA; processing"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.roma"
+      },
+      "notes": "cultivar; USA; plum/processing"
+    },
+    {
+      "id": "moneymaker",
+      "name": "Moneymaker",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.moneymaker"
+      },
+      "notes": "cultivar; UK; greenhouse fresh"
+    },
+    {
+      "id": "daniela",
+      "name": "Daniela",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.daniela"
+      },
+      "notes": "cultivar; Israeli; long shelf-life, greenhouse export (Souss)"
+    },
+    {
+      "id": "ace-55",
+      "name": "Ace 55",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.ace-55"
+      },
+      "notes": "cultivar; USA; processing"
+    },
+    {
+      "id": "heinz-1370",
+      "name": "Heinz 1370",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.heinz-1370"
+      },
+      "notes": "cultivar; USA; processing"
+    },
+    {
+      "id": "cherry-cocktail-truss-and-beef-types",
+      "name": "Cherry/cocktail, truss and beef types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.cherry-cocktail,-truss-and-beef-types"
+      },
+      "notes": "type group; greenhouse export segments"
+    },
+    {
+      "id": "coeur-de-boeuf",
+      "name": "Coeur de Boeuf",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.coeur-de-boeuf"
+      }
+    },
+    {
+      "id": "san-marzano",
+      "name": "San Marzano",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.san-marzano"
+      }
+    },
+    {
+      "id": "alicante",
+      "name": "Alicante",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.alicante"
+      }
+    },
+    {
+      "id": "ailsa-craig",
+      "name": "Ailsa Craig",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.ailsa-craig"
+      }
+    },
+    {
+      "id": "beefsteak",
+      "name": "Beefsteak",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.beefsteak"
+      }
+    },
+    {
+      "id": "brandywine",
+      "name": "Brandywine",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.brandywine"
+      }
+    },
+    {
+      "id": "cherokee-purple",
+      "name": "Cherokee Purple",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.cherokee-purple"
+      }
+    },
+    {
+      "id": "black-krim",
+      "name": "Black Krim",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.black-krim"
+      }
+    },
+    {
+      "id": "gardener-s-delight",
+      "name": "Gardener's Delight",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.gardener-s-delight"
+      }
+    },
+    {
+      "id": "sungold",
+      "name": "Sungold",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.sungold"
+      }
+    },
+    {
+      "id": "campari",
+      "name": "Campari",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.campari"
+      }
+    },
+    {
+      "id": "raf",
+      "name": "Raf",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.raf"
+      }
+    },
+    {
+      "id": "kumato",
+      "name": "Kumato",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.kumato"
+      }
+    },
+    {
+      "id": "floradade",
+      "name": "Floradade",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.floradade"
+      }
+    },
+    {
+      "id": "saint-pierre",
+      "name": "Saint-Pierre",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.saint-pierre"
+      }
+    },
+    {
+      "id": "cherry-roma",
+      "name": "Cherry Roma",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.tomato.cherry-roma"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "locator": "PDF page 85",
+          "interpretation": "context_only",
+          "note": "National reference.",
+          "page": 85,
+          "quote": "la tomate de saison pratiquée en plein champs"
+        }
+      ],
+      "note": "Open-field season crop; greenhouse tomato is not modelled."
+    },
+    {
+      "regionId": "ma-souss-massa",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.tomato.SMA"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.tomato.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.tomato.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.tomato.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.tomato.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.tomato.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "tomato-sowing",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "locator": "PDF page 85",
+          "interpretation": "normalized",
+          "note": "Mid-February encoded as 15 February; March to its last day.",
+          "page": 85,
+          "quote": "les périodes de semis peuvent aller du mifévrier jusqu'au mois de mars"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Open field; greenhouse dates differ.",
+      "metric": "planting_window",
+      "start": "02-15",
+      "end": "03-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "tomato-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "135 days.",
+          "page": null,
+          "quote": "30 40 40 25 135 January Arid Region"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "145 days.",
+          "page": null,
+          "quote": "30 40 45 30 145 April/May Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO rows; no Moroccan open-field duration found.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 135,
+      "maxDays": 145
+    },
+    {
+      "id": "tomato-cold",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-souss",
+          "locator": "PDF page 20, 4.1.1",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 20,
+          "quote": "Les basses températures (<10°C) ralentissent la croissance"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "A growth limit, stricter than a damage limit.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 10,
+      "upperDegC": null
+    },
+    {
+      "id": "tomato-heat",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 43",
+          "interpretation": "normalized",
+          "note": "The annex gives no flowering timing for tomato, so it is applied across the cycle.",
+          "page": 43,
+          "quote": "Maximum air temperature above which pollination starts to fail (heat stress) (°C) Conservative (1) 40.0 (Estimated)"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop estimate; applied across the cycle.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    },
+    {
+      "id": "tomato-soil-ph",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-rsk",
+          "locator": "PDF page 31",
+          "interpretation": "normalized",
+          "note": "Range as written; the guide does not state the method.",
+          "page": 31,
+          "quote": "La culture de tomate préfère un sol légèrement acide (5,8 < pH< 6,8)"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Preference from the ONCA sheet; warns only.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 5.8,
+      "max": 6.8
+    },
+    {
+      "id": "tomato-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Tomato",
+          "interpretation": "normalized",
+          "note": "Mid 1.15; end 0.80, the middle of the range.",
+          "page": null,
+          "quote": "Tomato 1.15 2 0.70-0.90 0.6"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Solanum family group",
+          "interpretation": "normalized",
+          "note": "Initial 0.6 from the group.",
+          "page": null,
+          "quote": "Solanum Family (Solanaceae) 0.6 1.15 0.80"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "30 40 45 30 145 April/May Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.6,
+      "kcMid": 1.15,
+      "kcEnd": 0.8,
+      "stageLengths": [30, 40, 45, 30]
+    },
+    {
+      "id": "t-fill-tomato-pref-fabaceae-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation logic",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.tomato.pref-Fabaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-fill-tomato-pref-poaceae-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation logic",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.tomato.pref-Poaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-fill-tomato-proh-solanaceae-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "high",
+        "basis": "general agronomy recall (no source consulted); same-family disease carry-over",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.tomato.proh-Solanaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Solanaceae"
+    },
+    {
+      "id": "t-fill-tomato-return-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation break",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.tomato.return"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "c11-tomato-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.tomato"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 2.5
+    },
+    {
+      "id": "c11-tomato-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.tomato"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-tomato-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.tomato"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "high",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-tomato-break-ralstonia-solanacearum",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.ralstonia-solanacearum"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Bacterial wilt.",
+      "metric": "crop_health_break",
+      "issueId": "ralstonia-solanacearum",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-tomato-break-clavibacter-michiganensis",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.clavibacter-michiganensis"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Bacterial canker of tomato.",
+      "metric": "crop_health_break",
+      "issueId": "clavibacter-michiganensis",
+      "minimumBreakDays": 1095
+    },
+    {
+      "id": "c11-tomato-break-xanthomonas-vesicatoria",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.xanthomonas-vesicatoria"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Bacterial spot of tomato and pepper.",
+      "metric": "crop_health_break",
+      "issueId": "xanthomonas-vesicatoria",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-tomato-break-pseudomonas-syringae-tomato",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.pseudomonas-syringae-tomato"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Bacterial speck of tomato.",
+      "metric": "crop_health_break",
+      "issueId": "pseudomonas-syringae-tomato",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-tomato-break-fusarium-oxysporum-lycopersici",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.fusarium-oxysporum-lycopersici"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Fusarium wilt of tomato.",
+      "metric": "crop_health_break",
+      "issueId": "fusarium-oxysporum-lycopersici",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-tomato-break-pyrenochaeta-lycopersici",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.pyrenochaeta-lycopersici"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Corky root of tomato.",
+      "metric": "crop_health_break",
+      "issueId": "pyrenochaeta-lycopersici",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-tomato-break-spongospora-subterranea",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.spongospora-subterranea"
+      },
+      "conditions": "Recalled by the AI model; unverified. 4 years without host crops after Powdery scab of potato.",
+      "metric": "crop_health_break",
+      "issueId": "spongospora-subterranea",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "c11-tomato-break-globodera-rostochiensis",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.globodera-rostochiensis"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Potato cyst nematode.",
+      "metric": "crop_health_break",
+      "issueId": "globodera-rostochiensis",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "c11-tomato-break-meloidogyne-incognita",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.tomato.meloidogyne-incognita"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Southern root-knot nematode.",
+      "metric": "crop_health_break",
+      "issueId": "meloidogyne-incognita",
+      "minimumBreakDays": 1095
+    }
+  ],
+  "references": [
+    {
+      "id": "k-tomato-background-69",
+      "topic": "background",
+      "summary": "Warm-season fruiting crop with determinate and indeterminate habits. Chilling affects growth and reproduction; frost damages exposed tissues. Excessive heat can reduce pollen function and fruit set; night and day exposure have different effects. Other Solanaceae can share some pathogens; resistant cultivars or grafting do not automatically remove rotation risk. Protected and open-field calendars differ; first ripe fruit and final harvest are different cycle endpoints.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.tomato"
+      }
+    },
+    {
+      "id": "c11-tomato-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.tomato"
+      }
+    },
+    {
+      "id": "c11-tomato-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.tomato"
+      }
+    },
+    {
+      "id": "c11-tomato-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.tomato"
+      }
+    },
+    {
+      "id": "c11-tomato-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.tomato"
+      }
+    },
+    {
+      "id": "c11-tomato-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.tomato"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Greenhouse and industrial tomato are not modelled."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Moroccan soils are usually above the preferred pH.",
+    "Offered for irrigated fields only: the sources describe irrigated production.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "tomato-faostat-pp-2020",
+          "kind": "prices",
+          "value": 2400,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2020",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5530\",\"Producer Price (LCU/tonne)\",\"2020\",\"2020\",\"7021\",\"Annual value\",\"LCU\",\"2400.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767543,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2020.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2020.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-pp-2021",
+          "kind": "prices",
+          "value": 2247,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2021",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5530\",\"Producer Price (LCU/tonne)\",\"2021\",\"2021\",\"7021\",\"Annual value\",\"LCU\",\"2247.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767544,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2021.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2021.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-pp-2022",
+          "kind": "prices",
+          "value": 3734,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2022",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5530\",\"Producer Price (LCU/tonne)\",\"2022\",\"2022\",\"7021\",\"Annual value\",\"LCU\",\"3734.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767545,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2022.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2022.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-pp-2023",
+          "kind": "prices",
+          "value": 2600,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2023",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5530\",\"Producer Price (LCU/tonne)\",\"2023\",\"2023\",\"7021\",\"Annual value\",\"LCU\",\"2600.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767546,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2023.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2023.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-pp-2024",
+          "kind": "prices",
+          "value": 2046,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2024",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5530\",\"Producer Price (LCU/tonne)\",\"2024\",\"2024\",\"7021\",\"Annual value\",\"LCU\",\"2046.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":767547,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2024.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:tomato.prices.tomato-faostat-pp-2024.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-onca-vegetables-prices-6",
+          "kind": "prices",
+          "value": 120,
+          "unit": "Dh/qx",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: plain zone, open field",
+          "commodity": null,
+          "scenarioId": "tomato-onca-plain-open",
+          "definition": "published_point",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-vegetables",
+              "sourceSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+              "quote": "Plein champ 600 120 72000",
+              "locator": "{\"pdfPage\":109}",
+              "quoteCheck": "income:tomato.prices.tomato-onca-vegetables-prices-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "farm sale; exact transaction stage not stated",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Selling-price column in the per-hectare receipts table.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-onca-vegetables-prices-7",
+          "kind": "prices",
+          "value": 120,
+          "unit": "Dh/qx",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: coastal zone, open field",
+          "commodity": null,
+          "scenarioId": "tomato-onca-coastal-open",
+          "definition": "published_point",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-vegetables",
+              "sourceSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+              "quote": "Kenitra Plein champ 650 120 78000",
+              "locator": "{\"pdfPage\":109}",
+              "quoteCheck": "income:tomato.prices.tomato-onca-vegetables-prices-7.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "farm sale; exact transaction stage not stated",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Selling-price column in the per-hectare receipts table.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 94636.5,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"94636.500000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1917445,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:tomato.yields.tomato-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 88141.2,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"88141.200000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1917446,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:tomato.yields.tomato-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 92844.9,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"92844.900000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1917447,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:tomato.yields.tomato-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 98766.9,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"98766.900000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1917448,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:tomato.yields.tomato-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 103004.2,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Tomatoes",
+          "scenarioId": "tomato-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"388\",\"'01234\",\"Tomatoes\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"103004.200000\",\"A\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1917449,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:tomato.yields.tomato-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "A",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "FAOSTAT combines production systems; do not apply this national yield to the catalog open-field scenario."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-onca-vegetables-yields-6",
+          "kind": "yields",
+          "value": 600,
+          "unit": "qx/ha",
+          "currency": null,
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: plain zone, open field",
+          "commodity": null,
+          "scenarioId": "tomato-onca-plain-open",
+          "definition": "technical_budget_production_assumption",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-vegetables",
+              "sourceSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+              "quote": "Plein champ 600 120 72000",
+              "locator": "{\"pdfPage\":109}",
+              "quoteCheck": "income:tomato.yields.tomato-onca-vegetables-yields-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "statistic": "technical_budget_production_assumption",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Production column in the per-hectare receipts table.",
+            "unitBasis": "Original production column is qx; per-hectare budget scope is stated by section/table title.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-onca-vegetables-yields-7",
+          "kind": "yields",
+          "value": 650,
+          "unit": "qx/ha",
+          "currency": null,
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: coastal zone, open field",
+          "commodity": null,
+          "scenarioId": "tomato-onca-coastal-open",
+          "definition": "technical_budget_production_assumption",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-vegetables",
+              "sourceSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+              "quote": "Kenitra Plein champ 650 120 78000",
+              "locator": "{\"pdfPage\":109}",
+              "quoteCheck": "income:tomato.yields.tomato-onca-vegetables-yields-7.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "statistic": "technical_budget_production_assumption",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Production column in the per-hectare receipts table.",
+            "unitBasis": "Original production column is qx; per-hectare budget scope is stated by section/table title.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-hcp-larache-2023-2024",
+          "kind": "yields",
+          "value": 400,
+          "unit": "qx/ha",
+          "currency": null,
+          "year": "2023-2024",
+          "region": "Tanger-Tétouan-Al Hoceima: Larache",
+          "commodity": null,
+          "scenarioId": "tomato-hcp-larache-2023-2024",
+          "definition": "observed_provincial_average_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-hcp-tta-agriculture-2025",
+              "sourceSha256": "743c043fa4a3303d61504bcae9b02eff432fb4885bdaf66c01511de5dce39f59",
+              "quote": "Rdt 350,5 400,0 215,7 35,4 71,7 324,5 323,6 270,0",
+              "locator": "{\"pdfPage\":73,\"printedPage\":\"73\",\"table\":\"Figure 64\"}",
+              "quoteCheck": "income:tomato.yields.tomato-hcp-larache-2023-2024.quote"
+            },
+            {
+              "sourceId": "research-income-hcp-tta-agriculture-2025",
+              "sourceSha256": "743c043fa4a3303d61504bcae9b02eff432fb4885bdaf66c01511de5dce39f59",
+              "quote": "Rdt en qx/ha), campagne agricole 2023-2024",
+              "locator": "{\"pdfPage\":73,\"printedPage\":\"73\",\"table\":\"Figure 64\"}",
+              "quoteCheck": "income:tomato.yields.tomato-hcp-larache-2023-2024.quote.context.0"
+            }
+          ],
+          "research": {
+            "yearBasis": "Figure 64 explicitly identifies the agricultural campaign.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "columnInterpretation": "Larache yield row, crop column 2; order: potato, tomato, onion, green pea, green faba bean, melon, other vegetables, total.",
+            "statistic": "observed_provincial_average_yield",
+            "limitations": [
+              "Provincial mean; crop systems and varieties not disaggregated.",
+              "No pairing with Casablanca wholesale prices or undated ONCA costs."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-onca-vegetables-costs-1",
+          "kind": "costs",
+          "value": 17576,
+          "unit": "Dh/Ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: plain zone, open field",
+          "commodity": null,
+          "scenarioId": "tomato-onca-plain-open",
+          "definition": "Published variable cost includes valued family labour.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-vegetables",
+              "sourceSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+              "quote": "11656 3400 770 1750 17576",
+              "locator": "{\"pdfPage\":107}",
+              "quoteCheck": "income:tomato.costs.tomato-onca-vegetables-costs-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Last column: total variable costs.",
+            "costDefinition": "Published variable cost includes valued family labour.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-onca-vegetables-costs-2",
+          "kind": "costs",
+          "value": 18196,
+          "unit": "Dh/Ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: coastal zone, open field",
+          "commodity": null,
+          "scenarioId": "tomato-onca-coastal-open",
+          "definition": "Published variable cost includes valued family labour.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-vegetables",
+              "sourceSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+              "quote": "Zone côtière 12596 3150 800 1650 18196",
+              "locator": "{\"pdfPage\":107}",
+              "quoteCheck": "income:tomato.costs.tomato-onca-vegetables-costs-2.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Last column: total variable costs.",
+            "costDefinition": "Published variable cost includes valued family labour.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-onca-vegetables-margins-1",
+          "kind": "margins",
+          "value": 53894,
+          "unit": "Dh/Ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: plain zone, open field",
+          "commodity": null,
+          "scenarioId": "tomato-onca-plain-open",
+          "definition": "Source-labelled gross margin; conflicts with revenue minus variable costs in adjacent summary tables.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-vegetables",
+              "sourceSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+              "quote": "Plein champ 53894",
+              "locator": "{\"pdfPage\":110}",
+              "quoteCheck": "income:tomato.margins.tomato-onca-vegetables-margins-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Published gross-margin cell.",
+            "marginDefinition": "Source-labelled gross margin; conflicts with revenue minus variable costs in adjacent summary tables.",
+            "validationFlags": [
+              "source_arithmetic_conflict_do_not_use_for_profit"
+            ],
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "tomato-onca-vegetables-margins-2",
+          "kind": "margins",
+          "value": 59534,
+          "unit": "Dh/Ha/an",
+          "currency": "MAD",
+          "year": null,
+          "region": "Rabat-Salé-Kénitra: coastal zone, open field",
+          "commodity": null,
+          "scenarioId": "tomato-onca-coastal-open",
+          "definition": "Source-labelled gross margin; conflicts with revenue minus variable costs in adjacent summary tables.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-vegetables",
+              "sourceSha256": "ac6a36260ee0f3daca56f1b77cc3814aaa330d66571afc35204d4a90c2992e04",
+              "quote": "Plein champ 59534",
+              "locator": "{\"pdfPage\":110}",
+              "quoteCheck": "income:tomato.margins.tomato-onca-vegetables-margins-2.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Published gross-margin cell.",
+            "marginDefinition": "Source-labelled gross margin; conflicts with revenue minus variable costs in adjacent summary tables.",
+            "validationFlags": [
+              "source_arithmetic_conflict_do_not_use_for_profit"
+            ],
+            "provenanceType": "source_quote"
+          }
+        }
+      ],
+      "options": [],
+      "gaps": [
+        {
+          "field": "economicObservationYear",
+          "status": "not_found",
+          "scope": "At least one regional/illustrative budget has no explicitly attached observation year; no publication/upload/contract year substituted."
+        },
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ]
+    }
+  }
+}

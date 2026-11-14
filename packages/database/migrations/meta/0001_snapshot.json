@@ -1,0 +1,219 @@
+{
+  "id": "d8b51773-40f6-4418-b0dd-54a8b14ee8a5",
+  "prevId": "0bb3ab5f-d341-49cd-a5fa-21a605d07f80",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.job_run_results": {
+      "name": "job_run_results",
+      "schema": "",
+      "columns": {
+        "run_id": {
+          "name": "run_id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "result": {
+          "name": "result",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "completed_at": {
+          "name": "completed_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "job_run_results_run_id_job_runs_id_fk": {
+          "name": "job_run_results_run_id_job_runs_id_fk",
+          "tableFrom": "job_run_results",
+          "tableTo": "job_runs",
+          "columnsFrom": [
+            "run_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "job_results_fixture": {
+          "name": "job_results_fixture",
+          "value": "coalesce(\"job_run_results\".\"result\"->>'fixture' = 'infrastructure-only' AND \"job_run_results\".\"result\"->>'operation' = 'echo' AND jsonb_typeof(\"job_run_results\".\"result\"->'message') = 'string' AND length(\"job_run_results\".\"result\"->>'message') between 1 and 256 AND \"job_run_results\".\"result\" - 'fixture' - 'operation' - 'message' = '{}'::jsonb, false)"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.job_runs": {
+      "name": "job_runs",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "operation": {
+          "name": "operation",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "input": {
+          "name": "input",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "input_hash": {
+          "name": "input_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "idempotency_key": {
+          "name": "idempotency_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "queue_job_id": {
+          "name": "queue_job_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'queued'"
+        },
+        "attempts": {
+          "name": "attempts",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "started_at": {
+          "name": "started_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "completed_at": {
+          "name": "completed_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "error_code": {
+          "name": "error_code",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "error_details": {
+          "name": "error_details",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "job_runs_idempotency_key_unique": {
+          "name": "job_runs_idempotency_key_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "idempotency_key"
+          ]
+        },
+        "job_runs_queue_job_id_unique": {
+          "name": "job_runs_queue_job_id_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "queue_job_id"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {
+        "job_runs_status": {
+          "name": "job_runs_status",
+          "value": "\"job_runs\".\"status\" in ('queued','running','completed','failed')"
+        },
+        "job_runs_echo": {
+          "name": "job_runs_echo",
+          "value": "\"job_runs\".\"operation\" = 'echo'"
+        },
+        "job_runs_hash": {
+          "name": "job_runs_hash",
+          "value": "\"job_runs\".\"input_hash\" ~ '^[a-f0-9]{64}$'"
+        },
+        "job_runs_key": {
+          "name": "job_runs_key",
+          "value": "\"job_runs\".\"idempotency_key\" ~ '^[A-Za-z0-9_-]{8,80}$'"
+        },
+        "job_runs_attempts": {
+          "name": "job_runs_attempts",
+          "value": "\"job_runs\".\"attempts\" >= 0"
+        },
+        "job_runs_input": {
+          "name": "job_runs_input",
+          "value": "coalesce(jsonb_typeof(\"job_runs\".\"input\") = 'object' AND \"job_runs\".\"input\"->>'operation' = 'echo' AND jsonb_typeof(\"job_runs\".\"input\"->'message') = 'string' AND length(\"job_runs\".\"input\"->>'message') between 1 and 256 AND \"job_runs\".\"input\" - 'operation' - 'message' = '{}'::jsonb, false)"
+        },
+        "job_runs_terminal": {
+          "name": "job_runs_terminal",
+          "value": "(\"job_runs\".\"status\" in ('completed','failed')) = (\"job_runs\".\"completed_at\" is not null)"
+        },
+        "job_runs_error": {
+          "name": "job_runs_error",
+          "value": "(\"job_runs\".\"status\" = 'failed' AND \"job_runs\".\"error_code\" is not null AND \"job_runs\".\"error_details\" is not null) OR (\"job_runs\".\"status\" <> 'failed' AND \"job_runs\".\"error_code\" is null AND \"job_runs\".\"error_details\" is null)"
+        }
+      },
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

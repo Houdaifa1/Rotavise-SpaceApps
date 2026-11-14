@@ -1,0 +1,246 @@
+{
+  "id": "hazelnut",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Hazelnut",
+    "localNames": [
+      { "language": "fr", "name": "Noisetier" },
+      { "language": "ar", "name": "البندق" }
+    ],
+    "scientificName": "Corylus avellana L.",
+    "family": "Betulaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:hazelnut"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "tonda-gentile",
+      "name": "Tonda Gentile",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.hazelnut.tonda_gentile"
+      },
+      "notes": "cultivar or type"
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall of cultivars commonly planted around the Mediterranean; Moroccan use not verified",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.V.hazelnut.barcelona"
+      },
+      "notes": "cultivar or type"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:hazelnut"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-hazelnut-bloom-frost-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; open flowers and set fruitlets are the most frost-sensitive stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.hazelnut.bloom_frost"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": -5,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-hazelnut-cold-dormant-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; approximate killing or severe-injury temperature of established wood",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.hazelnut.cold_dormant"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy_or_mature_tree\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -20,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-hazelnut-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge: leaf scorch, sunburn or fruit set loss above about this temperature",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.hazelnut.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 32
+    }
+  ],
+  "references": [
+    {
+      "id": "a-hazelnut-ecocrop-temperature-background-454",
+      "topic": "background",
+      "summary": "Temperature (species_adaptability_bound_not_damage_limit; not a damage limit) from -3 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Corylus avellana\"; fields TOPMN, TOPMX, TMIN, TMAX, KTMP, KTMPR, GMIN, GMAX, LIFO",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA recorded as null. TOPMN/TOPMX are optima, TMIN/TMAX absolute adaptability bounds, KTMP/KTMPR killing-temperature fields as exported. None is a stage-specific daily damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-b-hazelnut-stand-lifetime-background-505",
+      "topic": "background",
+      "summary": "Stand lifetime 14600–25550 days (orchard or perennial).",
+      "value": { "unit": "days", "min": 14600, "max": 25550 },
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "general fruit-tree horticulture knowledge",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.hazelnut.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-a-hazelnut-chilling-requirement-chill-requirement-506",
+      "topic": "chill_requirement",
+      "summary": "Chill requirement 800–1500 hours below about 7 C. A dormancy requirement, not a damage limit.",
+      "value": { "unit": "hours below about 7 C", "min": 800, "max": 1500 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general horticulture knowledge of chill requirement ranges; varies strongly by cultivar",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.hazelnut.chilling_requirement"
+      }
+    },
+    {
+      "id": "t-f-hazelnut-mature-yield-yield-507",
+      "topic": "yield",
+      "summary": "Yield 1–3 t/ha (region not Moroccan statistics; nut in shell recall for European orchards). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 1, "max": 3 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general knowledge of mature orchard yields",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.hazelnut.mature_yield"
+      }
+    },
+    {
+      "id": "t-g-hazelnut-moroccan-status-presence-508",
+      "topic": "presence",
+      "summary": "marginal in Morocco; no Moroccan source found",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall; combined with sourced records where present",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.G.hazelnut.moroccan_status"
+      }
+    },
+    {
+      "id": "r-f-hazelnut-yield-yield-603",
+      "topic": "yield",
+      "summary": "Yield 1–2 t/ha (mature orchard, shelled or fresh as customary for the crop; wide range). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general orchard yield knowledge; not Moroccan statistics",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.F.hazelnut.yield"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

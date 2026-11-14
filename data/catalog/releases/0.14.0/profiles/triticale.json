@@ -1,0 +1,824 @@
+{
+  "id": "triticale",
+  "version": "0.14.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Triticale",
+    "localNames": [
+      { "language": "fr", "name": "Triticale" },
+      { "language": "ar", "name": "التريتيكال" }
+    ],
+    "scientificName": "× Triticosecale Wittm. ex A.Camus",
+    "family": "Poaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:triticale"
+    }
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "ain-nzagh",
+      "name": "Ain Nzagh",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "عين انزاغ",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.ain-nzagh.ar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "marwa",
+      "name": "Marwa",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar",
+      "localNames": [
+        {
+          "language": "ar",
+          "name": "مروى",
+          "recall": {
+            "confidence": "medium",
+            "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-09",
+            "researchItem": "C12.name.marwa.ar"
+          }
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:triticale"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.triticale.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.triticale.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.triticale.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "r-a-triticale-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "winter hardiness is between wheat and rye; cultivar dependent",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.A.triticale.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"vegetative_growth\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "vegetative_growth",
+      "stageWindow": null,
+      "lowerDegC": -15,
+      "upperDegC": null
+    },
+    {
+      "id": "r-a-triticale-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "anthesis heat sterility similar to wheat",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "R.A.triticale.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 32
+    },
+    {
+      "id": "t-fill-triticale-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -18 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.triticale.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -18,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-triticale-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 36 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.triticale.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 36
+    },
+    {
+      "id": "t-triticale-cycle-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.cycle_duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 160,
+      "maxDays": 190
+    },
+    {
+      "id": "t-triticale-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 2
+    },
+    {
+      "id": "t-triticale-planting-window-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.planting_window"
+      },
+      "conditions": "Recalled by the AI model; unverified. November-December. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "11-01",
+      "end": "12-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "c11-triticale-crop-water-coefficient",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO-56 Table 11 and 12 pattern recalled for the crop or its group; not checked against the tables.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop_water_coefficient.triticale"
+      },
+      "conditions": "Recalled by the AI model; unverified. FAO-56 style crop coefficients and stage lengths in days, recalled for this crop or its crop group.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.4,
+      "kcMid": 1.15,
+      "kcEnd": 0.25,
+      "stageLengths": [20, 60, 70, 30]
+    },
+    {
+      "id": "c11-triticale-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.triticale"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7.5
+    },
+    {
+      "id": "c11-triticale-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.triticale"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 6.1
+    },
+    {
+      "id": "c11-triticale-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.triticale"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-triticale-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.triticale"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "low",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-triticale-break-fusarium-graminearum",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.triticale.fusarium-graminearum"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Fusarium head blight.",
+      "metric": "crop_health_break",
+      "issueId": "fusarium-graminearum",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-triticale-break-gaeumannomyces-tritici",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.triticale.gaeumannomyces-tritici"
+      },
+      "conditions": "Recalled by the AI model; unverified. 2 years without host crops after Take-all.",
+      "metric": "crop_health_break",
+      "issueId": "gaeumannomyces-tritici",
+      "minimumBreakDays": 730
+    },
+    {
+      "id": "c11-triticale-break-heterodera-avenae",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.triticale.heterodera-avenae"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Cereal cyst nematode.",
+      "metric": "crop_health_break",
+      "issueId": "heterodera-avenae",
+      "minimumBreakDays": 1095
+    }
+  ],
+  "references": [
+    {
+      "id": "t-triticale-heat-background-124",
+      "topic": "background",
+      "summary": "Temperature (daily_maximum): Heat damage at flowering/grain fill above ~30-32 C daily max",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.heat"
+      }
+    },
+    {
+      "id": "t-triticale-cold-background-125",
+      "topic": "background",
+      "summary": "Temperature (daily_minimum): Hardy; frost damage at tillering near -10 C or below",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.cold"
+      }
+    },
+    {
+      "id": "t-triticale-preferred-predecessor-background-126",
+      "topic": "background",
+      "summary": "preferred predecessor: Legumes or fallow",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.preferred_predecessor"
+      }
+    },
+    {
+      "id": "t-triticale-prohibited-predecessor-background-127",
+      "topic": "background",
+      "summary": "prohibited predecessor: Cereals the previous year (shared root and leaf diseases)",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.prohibited_predecessor"
+      }
+    },
+    {
+      "id": "t-triticale-observed-yield-yield-128",
+      "topic": "yield",
+      "summary": "Yield (Grain ~2-4 t/ha rainfed; forage ~4-8 t DM/ha (not Moroccan statistics)). AI recall, not a Moroccan statistic.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General Mediterranean agronomy and crop-science recall; not Moroccan statistics unless stated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.observed_yield"
+      }
+    },
+    {
+      "id": "t-triticale-varieties-background-129",
+      "topic": "background",
+      "summary": "Types: Grain/forage types. A news article about an INRA 2022 demonstration says two triticale varieties were shown but gives no names; none recalled.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General recall; names omitted where not confident",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.triticale.varieties"
+      }
+    },
+    {
+      "id": "c11-triticale-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.triticale"
+      }
+    },
+    {
+      "id": "c11-triticale-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.triticale"
+      }
+    },
+    {
+      "id": "c11-triticale-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.triticale"
+      }
+    },
+    {
+      "id": "c11-triticale-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: high.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.triticale"
+      }
+    },
+    {
+      "id": "c11-triticale-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: high.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 3,
+        "max": 3
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.triticale"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "soil", "reason": "No soil pH, salinity or drainage rule." },
+    {
+      "topic": "water_demand",
+      "reason": "No FAO-56 water curve or demand class."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Moroccan sowing windows, damage limits and rotation rules for this crop need a source or an agronomist before they are relied on.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [],
+      "options": [],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [
+        {
+          "id": "triticale.forage_residue_feed.01",
+          "category": "forage_residue_feed",
+          "effect": "Forage nutritive value comparable to barley",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Qualitative comparison; no barley numerical value assigned."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-inra-forage",
+              "sourceSha256": "1c76dc9b12ec74e0fb26b282584b61ce289a5cd7820581cc3c0e79c34be16588",
+              "quote": "Triticale : le triticale, sous la forme de culture destinée à la production exclusive de fourrage, pré- sente une valeur nutritive semblable à celle de l’orge.",
+              "locator": "{\"pdfPage\":null,\"section\":\"Printed p.354; Triticale\"}",
+              "quoteCheck": "benefits:triticale.triticale.forage_residue_feed.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "triticale",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "triticale.weed_break.01",
+          "category": "weed_break",
+          "effect": "Cereal–pea or cereal–vetch mixtures have lower weed pressure",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Mixture-level evidence; not the independent effect of each component.",
+            "Unspecified vetch species is not mapped to a catalog vetch."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "cereal + pea or vetch mixture",
+            "partners": [
+              { "sourceName": "oat/barley/triticale", "family": "Poaceae" },
+              { "sourceName": "pea/vetch", "family": "Fabaceae" }
+            ]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-inra-weeds",
+              "sourceSha256": "af574682e121fb7b7482852cb425cd6f5505085ec4eac90e03115ded11ca25f5",
+              "quote": "Oat, barley or triticale in mixture with pea or vetch resulted in lower weed pressure (Tanji et al., 2017a).",
+              "locator": "{\"pdfPage\":175,\"section\":\"VII.1.1. Crop rotation; printed p.166\"}",
+              "quoteCheck": "benefits:triticale.triticale.weed_break.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "triticale",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ]
+    }
+  }
+}

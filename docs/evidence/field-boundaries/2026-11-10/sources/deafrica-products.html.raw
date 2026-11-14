@@ -1,0 +1,1048 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Digital Earth Africa Data and Products &#8212; Digital Earth Africa 2026 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/doc_css.css?v=9cacf62b" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../_static/documentation_options.js?v=fc6fd62b"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'data_specs/index';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="canonical" href="https://docs.digitalearthafrica.org/en/latest/data_specs/index.html" />
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Cropland Extent (2019)" href="Cropland_extent_specs.html" />
+    <link rel="prev" title="Digital Earth Africa User Guide" href="../index.html" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Open external websites in a new tab.
+      document.querySelectorAll("a[href^='http']").forEach(function (link) {
+        const url = new URL(link.href, window.location.href);
+
+        if (url.hostname !== window.location.hostname) {
+          link.setAttribute("target", "_blank");
+          link.setAttribute("rel", "noopener noreferrer");
+        }
+      });
+
+      // Add the language selector to the PyData article header.
+      const articleHeader = document.querySelector(
+        ".bd-header-article, .article-header"
+      );
+
+      if (articleHeader && !document.querySelector(".lang-picker")) {
+        const languagePicker = document.createElement("div");
+
+        languagePicker.className = "lang-picker";
+        languagePicker.innerHTML =
+          '<a href="/en/latest/">English</a>' +
+          '<span aria-hidden="true"> | </span>' +
+          '<a href="/fr/latest/">Français</a>';
+
+        articleHeader.prepend(languagePicker);
+      }
+    });
+  </script>
+
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="digital-earth-africa" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/data_specs/index.html" /><meta name="readthedocs-http-status" content="200" /></head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs"
+         aria-label="Search the docs"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Digital Earth Africa 2026 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Digital Earth Africa 2026 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Home
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Data
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../platform_tools/index_platform.html">
+    Platforms
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../platform_tools/index_direct_access.html">
+    Direct Access
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../service_status/index.html">
+    Tech Alert
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/digitalearthafrica" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Home
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Data
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../platform_tools/index_platform.html">
+    Platforms
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../platform_tools/index_direct_access.html">
+    Direct Access
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../service_status/index.html">
+    Tech Alert
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/digitalearthafrica" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Agriculture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Cropland_extent_specs.html">Cropland Extent (2019)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Coastal</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Coastlines_specs.html">Coastlines Monitoring</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geomedians</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="GeoMAD_specs.html">GeoMAD cloud-free composites</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Surface Water</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Landsat_WOfS_specs.html">Water Observations from Space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Waterbodies_specs.html">Waterbodies Monitoring (historical extent and surface area time series)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Water_Quality_specs.html">Water Quality Monitoring Service (WQMS)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vegetation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Fractional_Cover_specs.html">Fractional Cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NDVI_Anomaly_specs.html">Monthly Normalised Difference Vegetation Index (NDVI) Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NDVI_Climatology_specs.html">Normalised Difference Vegetation Index (NDVI) Climatology</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Elevation and Topography</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="SRTM_DEM_specs.html">Shuttle Radar Topography Mission (SRTM) 1 Arc-Second Global Digital Elevation Model and DEM Derivatives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Agriculture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="WaPOR_specs.html">WaPOR, remote sensing for water productivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DIWASA_Blue_and_Green_ET_specs.html">IWMI Evapotranspiration Products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESA_World_Cereal_specs.html">ESA - WorldCereal</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Elevation and Topography</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="COP_DEM_specs.html">Copernicus DEM (COP-DEM)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Land Cover</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CCI_Landcover_specs.html">ESA Climate Change Initiative Land Cover at 300m spatial resolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CGLS_LULC_specs.html">Copernicus Global Land Service Global Land Cover at 100m spatial resolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESA_WorldCover_specs.html">ESA WorldCover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IO_LULC_specs.html">ESRI Global Land Use Land Cover</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Africapolis_urban_specs.html">OECD/SWAC Africapolis with green space indicators</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Meteorology</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CHIRPS_specs.html">Rainfall estimates (CHIRPS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ERA5_Climate_Data_specs.html">ERA5 Climate Gridded Data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Satellite Images</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Landsat_C2_SR_specs.html">Landsat Collection 2 Level-2 Surface Reflectance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Landsat_C2_ST_specs.html">Landsat Collection 2 Level-2 Surface Temperature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-1_specs.html">Sentinel-1 Normalised Radar Backscatter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-2_Level-2A_specs.html">Sentinel-2 Level-2A Surface Reflectance Collection 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-3_Land_Surface_Temperature_specs.html">Sentinel-3 SLSTR Land Surface Temperature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-3_OLCI_L2_LAND_specs.html">Sentinel-3 OLCI L2 LAND</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-3_OLCI_L2_WATER_specs.html">Sentinel-3 OLCI L2 Water</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-5P_specs.html">Sentinel-5P TROPOMI</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Satellite Image Mosaics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ALOS_PALSAR_annual_mosaic_specs.html">ALOS PALSAR, ALOS-2 PALSAR-2 and JERS-1 SAR Annual Mosaic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel-1_Monthly_Mosaic_specs.html">Sentinel-1 Monthly Mosaic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Planet_NICFI_specs.html">Planet NICFI</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Soil</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iSDA_Soil_Data.html">iSDA Soil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GRAFS_specs.html">Global Root-zone moisture Analysis &amp; Forecasting System (GRAFS)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Surface Water</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="CGLM_Lake_Water_Quality_specs.html">Copernicus Global Land Service - Lake Water Quality</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Urban</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="World_Settlement_Footprint_specs.html">World Settlement Footprint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vegetation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Global_Mangrove_Watch_specs.html">Global Mangrove Watch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About the Data</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Landsat_tiers.html">Landsat Collection 2 tiers</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Digital Earth Africa Data and Products</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="digital-earth-africa-data-and-products">
+<span id="data-specs"></span><h1>Digital Earth Africa Data and Products<a class="headerlink" href="#digital-earth-africa-data-and-products" title="Link to this heading">#</a></h1>
+<p>Digital Earth Africa provides Earth observation datasets and decision-ready products covering continental Africa.
+These are organised into DE Africa Continental Services and external datasets made available through DE Africa.</p>
+<p><strong>Jump to:</strong> <a class="reference internal" href="#de-africa-continental-services">DE Africa Continental Services</a> | <a class="reference internal" href="#external-datasets">External Datasets</a></p>
+<section id="de-africa-continental-services">
+<h2>DE Africa Continental Services<a class="headerlink" href="#de-africa-continental-services" title="Link to this heading">#</a></h2>
+<p>These are datasets and products processed and maintained by Digital Earth Africa for consistent coverage across the African continent.</p>
+<section id="agriculture">
+<h3>Agriculture<a class="headerlink" href="#agriculture" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Cropland extent" loading="lazy" src="../_images/crop_thumbnail.png" />
+<p><a class="reference internal" href="Cropland_extent_specs.html"><span class="doc">Cropland Extent</span></a></p>
+<p>Estimated locations of croplands across Africa.</p>
+<p><a class="reference internal" href="Cropland_extent_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="coastal">
+<h3>Coastal<a class="headerlink" href="#coastal" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Digital Earth Africa Coastlines" loading="lazy" src="../_images/Coastlines_thumbnail.png" />
+<p><a class="reference internal" href="Coastlines_specs.html"><span class="doc">Digital Earth Africa Coastlines</span></a></p>
+<p>Annual shorelines and coastal-change rates across Africa at 30 m resolution from 2000 to the present.</p>
+<p><a class="reference internal" href="Coastlines_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="geomedians">
+<h3>Geomedians<a class="headerlink" href="#geomedians" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Geometric Median and Median Absolute Deviation products" loading="lazy" src="../_images/GeoMAD_thumbnail.png" />
+<p><a class="reference internal" href="GeoMAD_specs.html"><span class="doc">GeoMAD</span></a></p>
+<p>Cloud-free image composites generated from Landsat and Sentinel-2 observations.</p>
+<p><a class="reference internal" href="GeoMAD_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="surface-water">
+<h3>Surface Water<a class="headerlink" href="#surface-water" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Water Observations from Space" loading="lazy" src="../_images/wofs_thumbnail.png" />
+<p><a class="reference internal" href="Landsat_WOfS_specs.html"><span class="doc">Water Observations from Space</span></a></p>
+<p>Individual, annual, and historical observations of surface water.</p>
+<p><a class="reference internal" href="Landsat_WOfS_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Digital Earth Africa Waterbodies" loading="lazy" src="../_images/Waterbodies_thumbnail.png" />
+<p><a class="reference internal" href="Waterbodies_specs.html"><span class="doc">Waterbodies</span></a></p>
+<p>African waterbody locations and surface-area change at 30 m resolution from 1987 to the present.</p>
+<p><a class="reference internal" href="Waterbodies_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Digital Earth Africa Water Quality" loading="lazy" src="../_images/Water_quality_thumbnail.png" />
+<p><a class="reference internal" href="Water_Quality_specs.html"><span class="doc">Water Quality</span></a></p>
+<p>Annual water-quality maps for African waterbodies from 2000 onward.</p>
+<p><a class="reference internal" href="Water_Quality_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="vegetation">
+<h3>Vegetation<a class="headerlink" href="#vegetation" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Fractional Cover" loading="lazy" src="../_images/fc_thumbnail.png" />
+<p><a class="reference internal" href="Fractional_Cover_specs.html"><span class="doc">Fractional Cover</span></a></p>
+<p>Green vegetation, non-green vegetation, and bare-soil fractions derived from Landsat observations.</p>
+<p><a class="reference internal" href="Fractional_Cover_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="NDVI Anomaly" loading="lazy" src="../_images/NDVI_anom_thumbnail.png" />
+<p><a class="reference internal" href="NDVI_Anomaly_specs.html"><span class="doc">NDVI Anomaly</span></a></p>
+<p>Monthly vegetation-condition maps compared with the long-term baseline.</p>
+<p><a class="reference internal" href="NDVI_Anomaly_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="NDVI Climatology" loading="lazy" src="../_images/NDVI_clim_thumbnail.png" />
+<p><a class="reference internal" href="NDVI_Climatology_specs.html"><span class="doc">NDVI Climatology</span></a></p>
+<p>Long-term average vegetation condition for Landsat pixels across continental Africa.</p>
+<p><a class="reference internal" href="NDVI_Climatology_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="elevation-and-topography">
+<h3>Elevation and Topography<a class="headerlink" href="#elevation-and-topography" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="SRTM Digital Elevation Model" loading="lazy" src="../_images/SRTM_DEM_thumbnail.png" />
+<p><a class="reference internal" href="SRTM_DEM_specs.html"><span class="doc">SRTM Digital Elevation Model</span></a></p>
+<p>Elevation data from NASA’s Shuttle Radar Topography Mission, together with DE Africa-derived topographic products.</p>
+<p><a class="reference internal" href="SRTM_DEM_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+</section>
+<section id="external-datasets">
+<h2>External Datasets<a class="headerlink" href="#external-datasets" title="Link to this heading">#</a></h2>
+<p>Datasets available through Digital Earth Africa but produced and maintained by external organisations.</p>
+<section id="id1">
+<h3>Agriculture<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="WaPOR" loading="lazy" src="../_images/WaPOR_thumbnail.png" />
+<p><a class="reference internal" href="WaPOR_specs.html"><span class="doc">WaPOR</span></a></p>
+<p>FAO’s remotely sensed data service for monitoring agricultural water productivity across Africa and the Near East.</p>
+<p><a class="reference internal" href="WaPOR_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="DIWASA Blue and Green Evapotranspiration" loading="lazy" src="../_images/DIWASA_thumbnail.png" />
+<p><a class="reference internal" href="DIWASA_Blue_and_Green_ET_specs.html"><span class="doc">DIWASA Blue and Green Evapotranspiration</span></a></p>
+<p>Blue evapotranspiration represents irrigation-driven water use, while green evapotranspiration represents rainfall-driven water use.</p>
+<p><a class="reference internal" href="DIWASA_Blue_and_Green_ET_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="ESA WorldCereal" loading="lazy" src="../_images/WorldCereal_thumbnail.png" />
+<p><a class="reference internal" href="ESA_World_Cereal_specs.html"><span class="doc">ESA WorldCereal</span></a></p>
+<p>Seasonal cropland and crop-type maps derived from high-resolution satellite observations.</p>
+<p><a class="reference internal" href="ESA_World_Cereal_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="id2">
+<h3>Elevation and Topography<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Copernicus Digital Elevation Model" loading="lazy" src="../_images/COP-DEM_thumbnail.png" />
+<p><a class="reference internal" href="COP_DEM_specs.html"><span class="doc">Copernicus Digital Elevation Model</span></a></p>
+<p>Copernicus elevation data with 30 m coverage in selected areas and global coverage at 90 m resolution.</p>
+<p><a class="reference internal" href="COP_DEM_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="land-cover">
+<h3>Land Cover<a class="headerlink" href="#land-cover" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="ESA Climate Change Initiative Land Cover" loading="lazy" src="../_images/CCI_Landcover_thumbnail.png" />
+<p><a class="reference internal" href="CCI_Landcover_specs.html"><span class="doc">ESA CCI Land Cover</span></a></p>
+<p>ESA Climate Change Initiative land-cover data at 300 m resolution.</p>
+<p><a class="reference internal" href="CCI_Landcover_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Copernicus Global Land Service Land Cover" loading="lazy" src="../_images/CGLS_thumbnail.png" />
+<p><a class="reference internal" href="CGLS_LULC_specs.html"><span class="doc">Copernicus Global Land Service Land Cover</span></a></p>
+<p>Annual global land-cover layers at 100 m spatial resolution.</p>
+<p><a class="reference internal" href="CGLS_LULC_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="ESA WorldCover" loading="lazy" src="../_images/ESA_WorldCover_thumbnail.png" />
+<p><a class="reference internal" href="ESA_WorldCover_specs.html"><span class="doc">ESA WorldCover</span></a></p>
+<p>Global land-cover maps at 10 m resolution.</p>
+<p><a class="reference internal" href="ESA_WorldCover_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Esri Global Land Use and Land Cover" loading="lazy" src="../_images/IO_LULC_thumbnail.png" />
+<p><a class="reference internal" href="IO_LULC_specs.html"><span class="doc">Esri Global Land Use and Land Cover</span></a></p>
+<p>Global 10 m land-use and land-cover time series.</p>
+<p><a class="reference internal" href="IO_LULC_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Africapolis urbanisation database" loading="lazy" src="../_images/Africapolis_urban_specs.png" />
+<p><a class="reference internal" href="Africapolis_urban_specs.html"><span class="doc">Africapolis Urbanisation Database</span></a></p>
+<p>Standardised geospatial data for comparing urbanisation patterns across African countries and through time.</p>
+<p><a class="reference internal" href="Africapolis_urban_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="meteorology">
+<h3>Meteorology<a class="headerlink" href="#meteorology" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="CHIRPS rainfall data" loading="lazy" src="../_images/CHIRPS_thumbnail.png" />
+<p><a class="reference internal" href="CHIRPS_specs.html"><span class="doc">CHIRPS</span></a></p>
+<p>Daily and monthly rainfall estimates derived from satellite observations and rain-gauge measurements.</p>
+<p><a class="reference internal" href="CHIRPS_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="ERA5 climate reanalysis" loading="lazy" src="../_images/ERA5_thumbnail.png" />
+<p><a class="reference internal" href="ERA5_Climate_Data_specs.html"><span class="doc">ERA5 Climate Data</span></a></p>
+<p>Global climate reanalysis data from the Copernicus Climate Change Service at ECMWF.</p>
+<p><a class="reference internal" href="ERA5_Climate_Data_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="satellite-images">
+<h3>Satellite Images<a class="headerlink" href="#satellite-images" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Landsat Collection 2 Surface Reflectance" loading="lazy" src="../_images/Landsat_thumbnail.png" />
+<p><a class="reference internal" href="Landsat_C2_SR_specs.html"><span class="doc">Landsat Collection 2 Surface Reflectance</span></a></p>
+<p>Surface-reflectance imagery from Landsat 5, 7, 8, and 9.</p>
+<p><a class="reference internal" href="Landsat_C2_SR_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Landsat Collection 2 Surface Temperature" loading="lazy" src="../_images/ST_thumbnail.png" />
+<p><a class="reference internal" href="Landsat_C2_ST_specs.html"><span class="doc">Landsat Collection 2 Surface Temperature</span></a></p>
+<p>Surface-temperature observations from Landsat 5, 7, 8, and 9.</p>
+<p><a class="reference internal" href="Landsat_C2_ST_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Sentinel-1" loading="lazy" src="../_images/S1_thumbnail.png" />
+<p><a class="reference internal" href="Sentinel-1_specs.html"><span class="doc">Sentinel-1</span></a></p>
+<p>Synthetic Aperture Radar observations from Sentinel-1.</p>
+<p><a class="reference internal" href="Sentinel-1_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Sentinel-2 Level-2A" loading="lazy" src="../_images/S2_thumbnail.png" />
+<p><a class="reference internal" href="Sentinel-2_Level-2A_specs.html"><span class="doc">Sentinel-2 Level-2A</span></a></p>
+<p>Analysis-ready multispectral imagery from Sentinel-2.</p>
+<p><a class="reference internal" href="Sentinel-2_Level-2A_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Sentinel-3 SLSTR Land Surface Temperature" loading="lazy" src="../_images/lst_thumbnail.png" />
+<p><a class="reference internal" href="Sentinel-3_Land_Surface_Temperature_specs.html"><span class="doc">Sentinel-3 SLSTR Land Surface Temperature</span></a></p>
+<p>Daily land surface temperature observations over Africa at 1 km resolution.</p>
+<p><a class="reference internal" href="Sentinel-3_Land_Surface_Temperature_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Sentinel-3 OLCI Level-2 Land" loading="lazy" src="../_images/S3_LAND_thumbnail.png" />
+<p><a class="reference internal" href="Sentinel-3_OLCI_L2_LAND_specs.html"><span class="doc">Sentinel-3 OLCI Level-2 Land</span></a></p>
+<p>Land-monitoring products from Sentinel-3 OLCI at 300 m resolution.</p>
+<p><a class="reference internal" href="Sentinel-3_OLCI_L2_LAND_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Sentinel-3 OLCI Level-2 Water" loading="lazy" src="../_images/S3_WATER_thumbnail.png" />
+<p><a class="reference internal" href="Sentinel-3_OLCI_L2_WATER_specs.html"><span class="doc">Sentinel-3 OLCI Level-2 Water</span></a></p>
+<p>Inland and coastal water-monitoring products from Sentinel-3 OLCI at 300 m resolution.</p>
+<p><a class="reference internal" href="Sentinel-3_OLCI_L2_WATER_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Sentinel-5P atmospheric data" loading="lazy" src="../_images/Sentinel-5P_specs_thumbnail.png" />
+<p><a class="reference internal" href="Sentinel-5P_specs.html"><span class="doc">Sentinel-5P</span></a></p>
+<p>Atmospheric trace-gas and aerosol observations for air-quality and pollution analysis.</p>
+<p><a class="reference internal" href="Sentinel-5P_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="satellite-image-mosaics">
+<h3>Satellite Image Mosaics<a class="headerlink" href="#satellite-image-mosaics" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="ALOS PALSAR annual mosaics" loading="lazy" src="../_images/ALOS_thumbnail.png" />
+<p><a class="reference internal" href="ALOS_PALSAR_annual_mosaic_specs.html"><span class="doc">ALOS PALSAR Annual Mosaics</span></a></p>
+<p>Annual Synthetic Aperture Radar mosaics derived from JAXA ALOS PALSAR observations</p>
+<p><a class="reference internal" href="ALOS_PALSAR_annual_mosaic_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Sentinel-1 monthly mosaics" loading="lazy" src="../_images/Sentinel-1_Monthly_Mosaic_thumbnail.png" />
+<p><a class="reference internal" href="Sentinel-1_Monthly_Mosaic_specs.html"><span class="doc">Sentinel-1 Monthly Mosaics</span></a></p>
+<p>Monthly Sentinel-1 mosaics for time-series analysis and integration with other datasets.</p>
+<p><a class="reference internal" href="Sentinel-1_Monthly_Mosaic_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Planet NICFI visual mosaics" loading="lazy" src="../_images/PLANET_thumbnail.jpg" />
+<p><a class="reference internal" href="Planet_NICFI_specs.html"><span class="doc">Planet NICFI Visual Mosaics</span></a></p>
+<p>True-colour mosaics optimised for visual interpretation across tropical regions.</p>
+<p><a class="reference internal" href="Planet_NICFI_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="soil">
+<h3>Soil<a class="headerlink" href="#soil" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="iSDA soil data" loading="lazy" src="../_images/iSDA_Soil_Bedrock_Depth_thumbnail.png" />
+<p><a class="reference internal" href="iSDA_Soil_Data.html"><span class="doc">iSDA Soil Data</span></a></p>
+<p>Soil-property data for Africa at 30 m resolution.</p>
+<p><a class="reference internal" href="iSDA_Soil_Data.html"><span class="doc">View product details →</span></a></p>
+</div>
+<div class="product-item docutils container">
+<img alt="Global Root-zone Moisture Analysis and Forecasting System" loading="lazy" src="../_images/GRAFS_thumbnail.png" />
+<p><a class="reference internal" href="GRAFS_specs.html"><span class="doc">GRAFS</span></a></p>
+<p>Root-zone soil-moisture analysis and forecasting data developed by the Australian National University Centre for Water and Landscape Dynamics.</p>
+<p><a class="reference internal" href="GRAFS_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="id3">
+<h3>Surface Water<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Copernicus Global Land Monitoring lake water quality" loading="lazy" src="../_images/CGLM_Lake_Water_Quality_thumbnail.png" />
+<p><a class="reference internal" href="CGLM_Lake_Water_Quality_specs.html"><span class="doc">Lake Water Quality</span></a></p>
+<p>Semi-continuous water-quality observations for medium and large lakes across Africa.</p>
+<p><a class="reference internal" href="CGLM_Lake_Water_Quality_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="urban">
+<h3>Urban<a class="headerlink" href="#urban" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="World Settlement Footprint" loading="lazy" src="../_images/WSF_thumbnail.png" />
+<p><a class="reference internal" href="World_Settlement_Footprint_specs.html"><span class="doc">World Settlement Footprint</span></a></p>
+<p>Global settlement maps for 2015 and 2019 at 10 m resolution, with annual settlement-growth information at 30 m resolution.</p>
+<p><a class="reference internal" href="World_Settlement_Footprint_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+<section id="id4">
+<h3>Vegetation<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Global Mangrove Watch" loading="lazy" src="../_images/Global_Mangrove_Watch_thumbnail.png" />
+<p><a class="reference internal" href="Global_Mangrove_Watch_specs.html"><span class="doc">Global Mangrove Watch</span></a></p>
+<p>Global mangrove baseline and change maps for selected years from 1996 to 2020.</p>
+<p><a class="reference internal" href="Global_Mangrove_Watch_specs.html"><span class="doc">View product details →</span></a></p>
+</div>
+</div>
+</section>
+</section>
+<section id="about-the-data">
+<h2>About the Data<a class="headerlink" href="#about-the-data" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<div class="product-list docutils container">
+<div class="product-item docutils container">
+<img alt="Landsat Collection 2 data tiers" loading="lazy" src="../_images/tiers_thumbnail.png" />
+<p><a class="reference internal" href="Landsat_tiers.html"><span class="doc">Landsat Collection 2 Data Tiers</span></a></p>
+<p>Learn how Digital Earth Africa uses Landsat Collection 2 data tiers.</p>
+<p><a class="reference internal" href="Landsat_tiers.html"><span class="doc">Learn more →</span></a></p>
+</div>
+</div>
+</section>
+<section id="feedback">
+<h2>Feedback<a class="headerlink" href="#feedback" title="Link to this heading">#</a></h2>
+<p>For questions or feedback about Digital Earth Africa data and services, contact
+<a class="reference external" href="mailto:helpdesk&#37;&#52;&#48;digitalearthafrica&#46;org">helpdesk<span>&#64;</span>digitalearthafrica<span>&#46;</span>org</a>.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-africa-continental-services">DE Africa Continental Services</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agriculture">Agriculture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coastal">Coastal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geomedians">Geomedians</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-water">Surface Water</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vegetation">Vegetation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elevation-and-topography">Elevation and Topography</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#external-datasets">External Datasets</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Agriculture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Elevation and Topography</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#land-cover">Land Cover</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meteorology">Meteorology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-images">Satellite Images</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-image-mosaics">Satellite Image Mosaics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soil">Soil</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Surface Water</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#urban">Urban</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Vegetation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-data">About the Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback">Feedback</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div class="deafrica-footer">
+
+  <div class="deafrica-footer__column deafrica-footer__column--primary">
+    <div class="deafrica-footer__programme-block">
+      <strong>Digital Earth Africa is a programme of</strong>
+      <a href="https://www.icipe.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit icipe">
+        <img
+          src="../_static/icipe.png"
+          alt="icipe – International Centre of Insect Physiology and Ecology"
+          class="deafrica-footer__programme-logo"
+        >
+      </a>
+    </div>
+  </div>
+
+  <div class="deafrica-footer__bottom">
+    <div class="deafrica-footer__legal">
+      <span>© 2026 Digital Earth Africa. All Rights Reserved.</span>
+      <a href="https://digitalearthafrica.org/en_za/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+    </div>
+
+    <div class="deafrica-footer__social" aria-label="Digital Earth Africa social media">
+      
+      <a class="deafrica-footer__whatsapp" href="https://wa.me/27662839754" target="_blank" rel="noopener noreferrer" aria-label="Contact Digital Earth Africa on WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+      <a href="https://www.youtube.com/@digitalearthafrica" target="_blank" rel="noopener noreferrer" aria-label="Digital Earth Africa on YouTube" title="YouTube">
+        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.flickr.com/photos/184270351@N05/" target="_blank" rel="noopener noreferrer" aria-label="Digital Earth Africa on Flickr" title="Flickr">
+        <i class="fa-brands fa-flickr" aria-hidden="true"></i>
+      </a>
+      <a href="https://x.com/DEarthAfrica" target="_blank" rel="noopener noreferrer" aria-label="Digital Earth Africa on X" title="X">
+        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/digitalearthafrica/" target="_blank" rel="noopener noreferrer" aria-label="Digital Earth Africa on LinkedIn" title="LinkedIn">
+        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+</div></div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

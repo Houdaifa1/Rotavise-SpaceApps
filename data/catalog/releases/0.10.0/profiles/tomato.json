@@ -1,0 +1,482 @@
+{
+  "id": "tomato",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Tomato (open field)",
+    "localNames": [{ "language": "fr", "name": "Tomate" }],
+    "scientificName": "Solanum lycopersicum L.",
+    "family": "Solanaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-tomato",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Solanum lycopersicum L.\""
+      },
+      {
+        "sourceId": "ardna-vegetable-rsk",
+        "locator": "PDF page 31, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine.",
+        "page": 31,
+        "quote": "Culture de tomate"
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "marmande",
+      "name": "Marmande",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.marmande"
+      },
+      "notes": "cultivar; French; ribbed, open-field"
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.rio-grande"
+      },
+      "notes": "cultivar; USA; processing"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.roma"
+      },
+      "notes": "cultivar; USA; plum/processing"
+    },
+    {
+      "id": "moneymaker",
+      "name": "Moneymaker",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.moneymaker"
+      },
+      "notes": "cultivar; UK; greenhouse fresh"
+    },
+    {
+      "id": "daniela",
+      "name": "Daniela",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.daniela"
+      },
+      "notes": "cultivar; Israeli; long shelf-life, greenhouse export (Souss)"
+    },
+    {
+      "id": "ace-55",
+      "name": "Ace 55",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.ace-55"
+      },
+      "notes": "cultivar; USA; processing"
+    },
+    {
+      "id": "heinz-1370",
+      "name": "Heinz 1370",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.heinz-1370"
+      },
+      "notes": "cultivar; USA; processing"
+    },
+    {
+      "id": "cherry-cocktail-truss-and-beef-types",
+      "name": "Cherry/cocktail, truss and beef types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.tomato.cherry-cocktail,-truss-and-beef-types"
+      },
+      "notes": "type group; greenhouse export segments"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "locator": "PDF page 85",
+          "interpretation": "context_only",
+          "note": "National reference.",
+          "page": 85,
+          "quote": "la tomate de saison pratiquée en plein champs"
+        }
+      ],
+      "note": "Open-field season crop; greenhouse tomato is not modelled."
+    }
+  ],
+  "rules": [
+    {
+      "id": "tomato-sowing",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "locator": "PDF page 85",
+          "interpretation": "normalized",
+          "note": "Mid-February encoded as 15 February; March to its last day.",
+          "page": 85,
+          "quote": "les périodes de semis peuvent aller du mifévrier jusqu'au mois de mars"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Open field; greenhouse dates differ.",
+      "metric": "planting_window",
+      "start": "02-15",
+      "end": "03-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "tomato-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "135 days.",
+          "page": null,
+          "quote": "30 40 40 25 135 January Arid Region"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "145 days.",
+          "page": null,
+          "quote": "30 40 45 30 145 April/May Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO rows; no Moroccan open-field duration found.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 135,
+      "maxDays": 145
+    },
+    {
+      "id": "tomato-cold",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-souss",
+          "locator": "PDF page 20, 4.1.1",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 20,
+          "quote": "Les basses températures (<10°C) ralentissent la croissance"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "A growth limit, stricter than a damage limit.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 10,
+      "upperDegC": null
+    },
+    {
+      "id": "tomato-heat",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "locator": "PDF page 43",
+          "interpretation": "normalized",
+          "note": "The annex gives no flowering timing for tomato, so it is applied across the cycle.",
+          "page": 43,
+          "quote": "Maximum air temperature above which pollination starts to fail (heat stress) (°C) Conservative (1) 40.0 (Estimated)"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop estimate; applied across the cycle.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    },
+    {
+      "id": "tomato-soil-ph",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-rsk",
+          "locator": "PDF page 31",
+          "interpretation": "normalized",
+          "note": "Range as written; the guide does not state the method.",
+          "page": 31,
+          "quote": "La culture de tomate préfère un sol légèrement acide (5,8 < pH< 6,8)"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Preference from the ONCA sheet; warns only.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 5.8,
+      "max": 6.8
+    },
+    {
+      "id": "tomato-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Tomato",
+          "interpretation": "normalized",
+          "note": "Mid 1.15; end 0.80, the middle of the range.",
+          "page": null,
+          "quote": "Tomato 1.15 2 0.70-0.90 0.6"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Solanum family group",
+          "interpretation": "normalized",
+          "note": "Initial 0.6 from the group.",
+          "page": null,
+          "quote": "Solanum Family (Solanaceae) 0.6 1.15 0.80"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "30 40 45 30 145 April/May Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.6,
+      "kcMid": 1.15,
+      "kcEnd": 0.8,
+      "stageLengths": [30, 40, 45, 30]
+    },
+    {
+      "id": "t-fill-tomato-pref-fabaceae-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation logic",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.tomato.pref-Fabaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-fill-tomato-pref-poaceae-preferred-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation logic",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.tomato.pref-Poaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-fill-tomato-proh-solanaceae-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "high",
+        "basis": "general agronomy recall (no source consulted); same-family disease carry-over",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.tomato.proh-Solanaceae"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Solanaceae"
+    },
+    {
+      "id": "t-fill-tomato-return-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); family-level rotation break",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.tomato.return"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    }
+  ],
+  "references": [
+    {
+      "id": "k-tomato-background-69",
+      "topic": "background",
+      "summary": "Warm-season fruiting crop with determinate and indeterminate habits. Chilling affects growth and reproduction; frost damages exposed tissues. Excessive heat can reduce pollen function and fruit set; night and day exposure have different effects. Other Solanaceae can share some pathogens; resistant cultivars or grafting do not automatically remove rotation risk. Protected and open-field calendars differ; first ripe fruit and final harvest are different cycle endpoints.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.tomato"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Greenhouse and industrial tomato are not modelled."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Moroccan soils are usually above the preferred pH.",
+    "Offered for irrigated fields only: the sources describe irrigated production.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

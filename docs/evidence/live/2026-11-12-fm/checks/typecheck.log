@@ -1,0 +1,19 @@
+$ pnpm build:server && pnpm -r typecheck
+$ pnpm --filter @rotavise/contracts build && pnpm --filter @rotavise/catalog build && pnpm --filter @rotavise/domain build && pnpm --filter @rotavise/database build && pnpm --filter @rotavise/server build
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+$ node ../../tooling/verification/build-typescript.mjs
+packages/contracts typecheck$ tsc -p tsconfig.json --noEmit
+packages/database typecheck$ tsc -p tsconfig.json --noEmit
+packages/database typecheck: Done
+packages/contracts typecheck: Done
+apps/web typecheck$ tsc --noEmit
+packages/catalog typecheck$ tsc -p tsconfig.json --noEmit
+packages/catalog typecheck: Done
+packages/domain typecheck$ tsc -p tsconfig.json --noEmit
+packages/domain typecheck: Done
+apps/server typecheck$ tsc -p tsconfig.json --noEmit
+apps/web typecheck: Done
+apps/server typecheck: Done

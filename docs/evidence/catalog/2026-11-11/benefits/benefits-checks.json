@@ -1,0 +1,111 @@
+{
+  "verifiedAt": "2026-11-10T15:20:45.487929+00:00",
+  "checks": [
+    {
+      "command": "pnpm lint",
+      "startedAt": "2026-11-10T15:10:08.998Z",
+      "finishedAt": "2026-11-10T15:10:15.796Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/lint-resumed.log"
+    },
+    {
+      "command": "pnpm format:check",
+      "startedAt": "2026-11-10T15:10:15.797Z",
+      "finishedAt": "2026-11-10T15:10:26.551Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/format-check-resumed.log"
+    },
+    {
+      "command": "pnpm typecheck",
+      "startedAt": "2026-11-10T15:10:26.551Z",
+      "finishedAt": "2026-11-10T15:10:39.063Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/typecheck-resumed.log"
+    },
+    {
+      "command": "pnpm test:catalog",
+      "startedAt": "2026-11-10T15:10:39.063Z",
+      "finishedAt": "2026-11-10T15:12:07.701Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/test-catalog-resumed.log",
+      "passedTests": 110
+    },
+    {
+      "command": "pnpm test:plans",
+      "startedAt": "2026-11-10T15:12:07.702Z",
+      "finishedAt": "2026-11-10T15:12:50.394Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/test-plans-resumed.log",
+      "passedTests": 62
+    },
+    {
+      "command": "pnpm test:backend",
+      "startedAt": "2026-11-10T15:12:50.394Z",
+      "finishedAt": "2026-11-10T15:14:39.152Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/test-backend-resumed.log",
+      "passedTests": 89
+    },
+    {
+      "command": "pnpm test:engine",
+      "startedAt": "2026-11-10T15:14:39.154Z",
+      "finishedAt": "2026-11-10T15:18:31.647Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/test-engine-resumed.log",
+      "passedTests": 285
+    },
+    {
+      "command": "pnpm test:api-docs",
+      "startedAt": "2026-11-10T15:18:31.647Z",
+      "finishedAt": "2026-11-10T15:18:41.957Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/test-api-docs-resumed.log",
+      "passedTests": 29
+    },
+    {
+      "command": "pnpm test:unit",
+      "startedAt": "2026-11-10T15:18:41.958Z",
+      "finishedAt": "2026-11-10T15:18:49.431Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/test-unit-resumed.log",
+      "passedTests": 35
+    },
+    {
+      "command": "pnpm test:container",
+      "startedAt": "2026-11-10T15:18:49.432Z",
+      "finishedAt": "2026-11-10T15:19:53.505Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/test-container-resumed.log"
+    },
+    {
+      "command": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects terrain-integration --runInBand",
+      "startedAt": "2026-11-10T15:19:53.506Z",
+      "finishedAt": "2026-11-10T15:19:56.253Z",
+      "exitCode": 0,
+      "log": "/private/tmp/rotavise-b4-verification/terrain-integration-resumed.log",
+      "passedTests": 13
+    }
+  ],
+  "evidenceAudit": {
+    "sourceHashes": 11,
+    "derivativeHashes": 21,
+    "newCitationOccurrences": 192,
+    "crops": 246,
+    "effectsPerCrop": 12,
+    "records": {
+      "not_found": 223,
+      "model_recall": 2729,
+      "sourced": 184
+    },
+    "priorReleaseAndFrontendFilesUnchanged": 1370,
+    "outcome": "passed"
+  },
+  "reproducibility": {
+    "outcome": "passed",
+    "files": 250,
+    "release": "0.15.0",
+    "method": "Byte SHA-256 before/after full offline builder rerun"
+  },
+  "totalPassingJestTestsIncludingTerrain": 623,
+  "notes": "No commit, push, milestone approval, frontend work or income research. Original/registered derivative snapshots remain local."
+}

@@ -1,0 +1,2 @@
+ALTER TABLE "planning_runs" DROP CONSTRAINT "planning_versions";--> statement-breakpoint
+ALTER TABLE "planning_runs" ADD CONSTRAINT "planning_versions" CHECK (coalesce("planning_runs"."versions"->>'workflowVersion' in ('planning-workflow-1','planning-workflow-2','planning-workflow-3','planning-workflow-4','planning-workflow-5') AND octet_length("planning_runs"."versions"::text)<=2097152 AND "planning_runs"."versions_hash" ~ '^[a-f0-9]{64}$',false));

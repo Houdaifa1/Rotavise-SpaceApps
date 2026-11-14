@@ -1,0 +1,194 @@
+{
+  "id": "cabbage",
+  "version": "0.8.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Cabbage",
+    "localNames": [{ "language": "fr", "name": "Chou" }],
+    "scientificName": "Brassica oleracea L.",
+    "family": "Brassicaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-cabbage",
+        "page": null,
+        "quote": "\"scientificName\":\"Brassica oleracea L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-brassicas",
+        "page": 2,
+        "quote": "LES CHOUX",
+        "locator": "PDF page 2",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 2,
+          "quote": "LES CHOUX",
+          "locator": "PDF page 2",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "cabbage-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 2,
+          "quote": "La plantation a lieu de Septembre à Janvier",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Bulletin says September to January; encoded to December because the calendar model needs one year.",
+      "metric": "planting_window",
+      "start": "09-01",
+      "end": "12-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "cabbage-duration",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 2,
+          "quote": "pour des cycles de culture variant de 90 à 120 jours",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "From the bulletin.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 120
+    },
+    {
+      "id": "cabbage-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Cabbage 1.05 0.95",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Small Vegetables 0.7 1.05 0.95",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "25 35 25 10 95 February Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.7,
+      "kcMid": 1.05,
+      "kcEnd": 0.95,
+      "stageLengths": [25, 35, 25, 10]
+    },
+    {
+      "id": "cabbage-growth-range",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 2,
+          "quote": "la valeur de 24˚C est considérée comme un maximum alors que 4˚C est une valeur minimale de croissance",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Growth limits, not damage limits.",
+      "metric": "temperature",
+      "basis": "daily_mean",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 4,
+      "upperDegC": 24
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

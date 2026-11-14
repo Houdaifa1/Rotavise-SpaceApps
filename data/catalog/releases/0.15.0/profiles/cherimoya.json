@@ -1,0 +1,732 @@
+{
+  "id": "cherimoya",
+  "version": "0.15.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Cherimoya",
+    "localNames": [
+      { "language": "fr", "name": "Chérimolier" },
+      { "language": "ar", "name": "الشريمويا" }
+    ],
+    "scientificName": "Annona cherimola Mill.",
+    "family": "Annonaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:cherimoya"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:cherimoya"
+      },
+      "note": "Candidate only: not validated for any region."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.cherimoya.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-cherimoya-bloom-frost-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; open flowers and set fruitlets are the most frost-sensitive stage",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cherimoya.bloom_frost"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": -2,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-cherimoya-cold-dormant-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge of frost tolerance; approximate killing or severe-injury temperature of established wood",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cherimoya.cold_dormant"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"dormancy_or_mature_tree\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": -4,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-cherimoya-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture knowledge: leaf scorch, sunburn or fruit set loss above about this temperature",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cherimoya.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 36
+    },
+    {
+      "id": "c11-cherimoya-soil-ph",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of the usual pH range; not Moroccan guidance.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_ph.cherimoya"
+      },
+      "conditions": "Recalled by the AI model; unverified. Suitable soil pH range; the measurement method is unspecified.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 7
+    },
+    {
+      "id": "c11-cherimoya-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.cherimoya"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.5
+    },
+    {
+      "id": "c11-cherimoya-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.cherimoya"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    }
+  ],
+  "references": [
+    {
+      "id": "a-cherimoya-ecocrop-temperature-background-466",
+      "topic": "background",
+      "summary": "Temperature (species_adaptability_bound_not_damage_limit; not a damage limit) from 0 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row ScientificName=\"Annona cherimola\"; fields TOPMN, TOPMX, TMIN, TMAX, KTMP, KTMPR, GMIN, GMAX, LIFO",
+          "interpretation": "normalized",
+          "note": "Values copied from the CSV row; NA recorded as null. TOPMN/TOPMX are optima, TMIN/TMAX absolute adaptability bounds, KTMP/KTMPR killing-temperature fields as exported. None is a stage-specific daily damage limit. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "t-b-cherimoya-stand-lifetime-background-542",
+      "topic": "background",
+      "summary": "Stand lifetime 10950–18250 days (orchard or perennial).",
+      "value": { "unit": "days", "min": 10950, "max": 18250 },
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "general fruit-tree horticulture knowledge",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.cherimoya.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-a-cherimoya-chilling-requirement-chill-requirement-543",
+      "topic": "chill_requirement",
+      "summary": "Chill requirement 50–200 hours below about 7 C. A dormancy requirement, not a damage limit.",
+      "value": { "unit": "hours below about 7 C", "min": 50, "max": 200 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general horticulture knowledge of chill requirement ranges; varies strongly by cultivar",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.cherimoya.chilling_requirement"
+      }
+    },
+    {
+      "id": "t-f-cherimoya-mature-yield-yield-544",
+      "topic": "yield",
+      "summary": "Yield 5–15 t/ha (region not Moroccan statistics; recall). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 5, "max": 15 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general knowledge of mature orchard yields",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.cherimoya.mature_yield"
+      }
+    },
+    {
+      "id": "t-g-cherimoya-moroccan-status-presence-545",
+      "topic": "presence",
+      "summary": "tiny plantings at most; Moroccan presence unverified",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "training recall; combined with sourced records where present",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.G.cherimoya.moroccan_status"
+      }
+    },
+    {
+      "id": "c11-cherimoya-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.cherimoya"
+      }
+    },
+    {
+      "id": "c11-cherimoya-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class medium (about 0.5 to 1 m).",
+      "value": { "unit": "m (class range)", "min": 0.5, "max": 1 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.cherimoya"
+      }
+    },
+    {
+      "id": "c11-cherimoya-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.cherimoya"
+      }
+    },
+    {
+      "id": "c11-cherimoya-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.cherimoya"
+      }
+    },
+    {
+      "id": "c11-cherimoya-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.cherimoya"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [],
+      "options": [],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "disease_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "weed_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "pest_break",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "rooting_soil_structure_infiltration",
+          "reason": "No accepted crop-specific rooting/soil-structure/infiltration effect from the reviewed sources; no generic family trait copied to this crop."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ],
+      "version": "benefits-2",
+      "records": [
+        {
+          "id": "b4.cherimoya.biological_nitrogen_fixation.recall",
+          "category": "biological_nitrogen_fixation",
+          "status": "not_found",
+          "effect": "Not applicable: no conventional symbiotic crop N-fixation trait; associated free-living microbes are not a crop nitrogen credit.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "not_applicable",
+            "value": "not applicable",
+            "unit": "kg N/ha per crop period"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "high",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for biological nitrogen fixation; Crop does not have the conventional legume root-nodule fixation system.. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.biological_nitrogen_fixation.recall"
+          },
+          "applicability": "not_applicable",
+          "reason": "Crop does not have the conventional legume root-nodule fixation system."
+        },
+        {
+          "id": "b4.cherimoya.residual_nitrogen_credit.recall",
+          "category": "residual_nitrogen_credit",
+          "status": "model_recall",
+          "effect": "Residues may recycle N already taken from soil; no new fixed-N credit. High-carbon residues may temporarily immobilize N. Quantity to the next crop is not quantified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "recycling only; net credit unquantified",
+            "unit": "kg N/ha to following crop"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for residual nitrogen credit; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.residual_nitrogen_credit.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.forage_residue_feed.recall",
+          "category": "forage_residue_feed",
+          "status": "model_recall",
+          "effect": "Selected leaves, pods or processing residues may have feed uses; woody prunings are not routine forage and species-specific safety and ration checks are essential.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional roughage or residue",
+            "unit": "qualitative feed value"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for forage residue feed; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.forage_residue_feed.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.disease_break.recall",
+          "category": "disease_break",
+          "status": "model_recall",
+          "effect": "A standing perennial is not an annual rotation break; assess a separately managed orchard-floor crop and its hosts. Repeating Annonaceae can maintain family-associated disease inoculum. Crop family alone does not prove a disease-free interval.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional family break",
+            "unit": "qualitative next-crop disease effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for disease break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.disease_break.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.pest_break.recall",
+          "category": "pest_break",
+          "status": "model_recall",
+          "effect": "A standing perennial is not an annual rotation break; assess a separately managed orchard-floor crop and its hosts. Host weeds, volunteers and broad-host-range pests can bridge the interval; verify the named pest and next crop.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional host interruption",
+            "unit": "qualitative next-crop pest effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for pest break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.pest_break.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.weed_break.recall",
+          "category": "weed_break",
+          "status": "model_recall",
+          "effect": "Changing sowing season and cultivation may change weed pressure. Volunteers or seed return can offset suppression; no herbicidal effect or numerical reduction is assumed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "management-dependent weed pressure",
+            "unit": "qualitative weed effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for weed break; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.weed_break.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.rooting_soil_structure_infiltration.recall",
+          "category": "rooting_soil_structure_infiltration",
+          "status": "model_recall",
+          "effect": "Established perennial roots occupy soil over multiple years; rooting and orchard-floor infiltration depend on soil and management. Potential improvement is not a measured infiltration rate.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "root channels; depth not quantified",
+            "unit": "qualitative rooting/infiltration effect"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for rooting soil structure infiltration; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.rooting_soil_structure_infiltration.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.erosion_cover_residue.recall",
+          "category": "erosion_cover_residue",
+          "status": "model_recall",
+          "effect": "Litter and maintained orchard-floor vegetation can protect soil; tree canopy with bare interrows can still permit erosion. No crop-specific management C factor is recalled; tillage, cover fraction and season must be specified.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "protective cover potential; C unquantified",
+            "unit": "dimensionless RUSLE C (unquantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for erosion cover residue; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.erosion_cover_residue.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.bare_soil_period_shortening.recall",
+          "category": "bare_soil_period_shortening",
+          "status": "model_recall",
+          "effect": "A maintained perennial stand can extend living-root presence; canopy gaps and harvest disturbance may still expose soil. No reduction in days is estimated without a comparison calendar.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "calendar-dependent cover duration",
+            "unit": "day (not quantified)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for bare soil period shortening; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.bare_soil_period_shortening.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.organic_matter_soil_carbon.recall",
+          "category": "organic_matter_soil_carbon",
+          "status": "model_recall",
+          "effect": "Retained litter, safe chipped prunings and orchard-floor cover can return organic material. Decomposition, tillage and water balance determine net soil C; no sequestration rate is claimed.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "conditional organic inputs; net C unquantified",
+            "unit": "soil C contribution (qualitative)"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "medium",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for organic matter soil carbon; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.organic_matter_soil_carbon.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.drought_tolerance.recall",
+          "category": "drought_tolerance",
+          "status": "model_recall",
+          "effect": "Moderate or variable drought response; establishment and reproductive stages may remain sensitive. Survival under drought does not establish low seasonal water demand.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative drought tolerance"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for drought tolerance; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.drought_tolerance.recall"
+          }
+        },
+        {
+          "id": "b4.cherimoya.water_demand.recall",
+          "category": "water_demand",
+          "status": "model_recall",
+          "effect": "Moderate or management-dependent seasonal demand; climate, cycle length and crop coefficient determine ET. Rainfall and soil storage must be deducted to assess irrigation; drought survival is a separate trait.",
+          "nonLocal": true,
+          "region": "General agronomic knowledge; not a Moroccan field measurement",
+          "conditions": [
+            "Established perennial; ground-cover effects require protected orchard floor or retained litter, not tree canopy alone."
+          ],
+          "magnitude": {
+            "status": "model_recall",
+            "value": "moderate/variable",
+            "unit": "qualitative seasonal ET class"
+          },
+          "citations": [],
+          "recall": {
+            "confidence": "low",
+            "basis": "Model recalls Cherimoya (Annonaceae) agronomy for water demand; qualitative management-dependent potential, not a measured response or a fertilizer recommendation. No source was consulted for this record.",
+            "valueKind": "model_recall_unverified",
+            "recordedOn": "2026-11-11",
+            "researchItem": "b4.cherimoya.water_demand.recall"
+          }
+        }
+      ]
+    }
+  }
+}

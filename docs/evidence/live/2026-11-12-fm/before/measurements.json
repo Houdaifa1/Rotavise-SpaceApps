@@ -1,0 +1,6240 @@
+{
+  "scope": "isolated original renderer; shell blocked by real readiness 503",
+  "records": [
+    {
+      "file": "tadla-z10-1440x900-dpr1.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 943,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z12-1440x900-dpr1.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 616,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z14-1440x900-dpr1.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 561,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z15-1440x900-dpr1.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 565,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z16-1440x900-dpr1.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 561,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z10-1440x900-dpr1.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 333,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z12-1440x900-dpr1.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 602,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z14-1440x900-dpr1.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 598,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z15-1440x900-dpr1.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 601,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z16-1440x900-dpr1.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 579,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z10-1440x900-dpr1.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 966,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z12-1440x900-dpr1.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 581,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z14-1440x900-dpr1.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 583,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z15-1440x900-dpr1.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 583,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z16-1440x900-dpr1.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 583,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1376,
+        "height": 900,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z10-1440x900-dpr2.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 1134,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z12-1440x900-dpr2.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 627,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z14-1440x900-dpr2.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 500,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z15-1440x900-dpr2.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 515,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z16-1440x900-dpr2.png",
+      "place": "tadla",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 483,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z10-1440x900-dpr2.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 363,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z12-1440x900-dpr2.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 485,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z14-1440x900-dpr2.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 510,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z15-1440x900-dpr2.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 513,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z16-1440x900-dpr2.png",
+      "place": "beni-mellal",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 524,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z10-1440x900-dpr2.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 954,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z12-1440x900-dpr2.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 499,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z14-1440x900-dpr2.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 522,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z15-1440x900-dpr2.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 526,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z16-1440x900-dpr2.png",
+      "place": "gharb",
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 512,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 2752,
+        "height": 1800,
+        "cssWidth": 1376,
+        "cssHeight": 900,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z10-768x1024-dpr1.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 681,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z12-768x1024-dpr1.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 603,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z14-768x1024-dpr1.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 584,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z15-768x1024-dpr1.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 573,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z16-768x1024-dpr1.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 588,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z10-768x1024-dpr1.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 340,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z12-768x1024-dpr1.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 569,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z14-768x1024-dpr1.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 571,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z15-768x1024-dpr1.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 589,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z16-768x1024-dpr1.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 587,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z10-768x1024-dpr1.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 937,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z12-768x1024-dpr1.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 604,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z14-768x1024-dpr1.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 568,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z15-768x1024-dpr1.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 603,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z16-768x1024-dpr1.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 588,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 768,
+        "height": 912,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z10-768x1024-dpr2.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 875,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z12-768x1024-dpr2.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 636,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z14-768x1024-dpr2.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 535,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z15-768x1024-dpr2.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 562,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z16-768x1024-dpr2.png",
+      "place": "tadla",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 530,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z10-768x1024-dpr2.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 342,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z12-768x1024-dpr2.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 552,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z14-768x1024-dpr2.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 539,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z15-768x1024-dpr2.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 556,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z16-768x1024-dpr2.png",
+      "place": "beni-mellal",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 544,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z10-768x1024-dpr2.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 958,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z12-768x1024-dpr2.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 534,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z14-768x1024-dpr2.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 546,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z15-768x1024-dpr2.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 545,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z16-768x1024-dpr2.png",
+      "place": "gharb",
+      "width": 768,
+      "height": 1024,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 546,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 1536,
+        "height": 1824,
+        "cssWidth": 768,
+        "cssHeight": 912,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z10-390x844-dpr1.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 834,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z12-390x844-dpr1.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 327,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z14-390x844-dpr1.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 610,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z15-390x844-dpr1.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 593,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z16-390x844-dpr1.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 594,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z10-390x844-dpr1.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 643,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z12-390x844-dpr1.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 593,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z14-390x844-dpr1.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 591,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z15-390x844-dpr1.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 571,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z16-390x844-dpr1.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 592,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z10-390x844-dpr1.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 10,
+      "elapsedMs": 641,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z12-390x844-dpr1.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 12,
+      "elapsedMs": 606,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z14-390x844-dpr1.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 14,
+      "elapsedMs": 591,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z15-390x844-dpr1.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 15,
+      "elapsedMs": 591,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z16-390x844-dpr1.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "zoom": 16,
+      "elapsedMs": 594,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 390,
+        "height": 716,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 1
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z10-390x844-dpr2.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 825,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z12-390x844-dpr2.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 626,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z14-390x844-dpr2.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 565,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z15-390x844-dpr2.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 565,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "tadla-z16-390x844-dpr2.png",
+      "place": "tadla",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 560,
+      "camera": {
+        "center": [-6.55, 32.4],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z10-390x844-dpr2.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 984,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z12-390x844-dpr2.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 582,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z14-390x844-dpr2.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 565,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z15-390x844-dpr2.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 581,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "beni-mellal-z16-390x844-dpr2.png",
+      "place": "beni-mellal",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 546,
+      "camera": {
+        "center": [-6.34, 32.37],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z10-390x844-dpr2.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 10,
+      "elapsedMs": 962,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 10
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z12-390x844-dpr2.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 12,
+      "elapsedMs": 565,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 12
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z14-390x844-dpr2.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 14,
+      "elapsedMs": 565,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 14
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z15-390x844-dpr2.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 15,
+      "elapsedMs": 567,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 15
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    },
+    {
+      "file": "gharb-z16-390x844-dpr2.png",
+      "place": "gharb",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "zoom": 16,
+      "elapsedMs": 559,
+      "camera": {
+        "center": [-6.3, 34.3],
+        "zoom": 16
+      },
+      "sources": {
+        "modis": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg"
+          ],
+          "tileSize": 256,
+          "maxzoom": 9
+        },
+        "hls": {
+          "type": "raster",
+          "tiles": [
+            "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/HLS_S30_Nadir_BRDF_Adjusted_Reflectance/default/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.png"
+          ],
+          "tileSize": 256,
+          "maxzoom": 12
+        },
+        "saved-fields": {
+          "type": "geojson",
+          "promoteId": "fieldId",
+          "data": {
+            "type": "FeatureCollection",
+            "features": []
+          }
+        }
+      },
+      "layers": [
+        {
+          "id": "modis",
+          "type": "raster",
+          "source": "modis",
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        },
+        {
+          "id": "hls",
+          "type": "raster",
+          "source": "hls",
+          "minzoom": 9,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "raster-fade-duration": 220
+          }
+        }
+      ],
+      "canvas": {
+        "width": 780,
+        "height": 1432,
+        "cssWidth": 390,
+        "cssHeight": 716,
+        "dpr": 2
+      },
+      "tilesLoaded": true
+    }
+  ],
+  "errors": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:53487/api/v1/account",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:53487/api/v1/health/ready",
+      "status": 503
+    },
+    {
+      "url": "http://127.0.0.1:53487/api/v1/account",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:53487/api/v1/health/ready",
+      "status": 503
+    }
+  ],
+  "hosts": ["127.0.0.1:53487", "gibs.earthdata.nasa.gov"]
+}

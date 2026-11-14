@@ -1,0 +1,133 @@
+.f5-page {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+.f5-page h1 {
+  font-family: var(--font-ui);
+  font-size: var(--text-headline);
+}
+.f5-page h2,
+.f5-page h3 {
+  font-size: var(--text-title);
+  font-weight: 500;
+  margin: 0;
+}
+.f5-page p,
+.f5-page small {
+  margin: 0;
+}
+.f5-page small {
+  color: var(--ink-soft);
+  font-size: var(--text-caption);
+}
+.f5-page header,
+.f5-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.f5-stack > section,
+.f5-stack > details {
+  margin-top: 16px;
+}
+.f5-content {
+  padding: 32px 0;
+}
+.f5-page:has(> .f5-footer) {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.f5-page > header {
+  flex-shrink: 0;
+}
+.f5-page > header h1 {
+  margin: 0;
+}
+.f5-page:has(> .f5-footer) > .f5-content {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+.f5-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.f5-page .rv-step-progress {
+  padding: 0;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.f5-page .rv-step-progress li {
+  font-size: var(--text-caption);
+}
+.f5-page .rv-step-dot {
+  flex: 0 0 24px;
+}
+.f5-footer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 16px 0;
+  background: var(--surface);
+}
+.f5-page .f4-short-list,
+.f5-rotation-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+}
+.f5-page summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.f5-page details > .f5-stack {
+  padding: 16px 0;
+}
+.f5-review-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.f5-error-link {
+  color: var(--danger);
+  background: none;
+  border: 0;
+  text-align: start;
+  text-decoration: underline;
+  cursor: pointer;
+  min-height: 44px;
+}
+@media (max-width: 767px) {
+  .f5-page {
+    padding: 24px 16px;
+  }
+  .f5-page h1 {
+    font-size: 28px;
+  }
+  .f5-footer {
+    flex-wrap: wrap;
+  }
+}
+.f5-page summary::before {
+  content: "+";
+  margin-inline-end: 8px;
+}
+.f5-page details[open] > summary::before {
+  content: "−";
+}

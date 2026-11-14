@@ -1,0 +1,2497 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+  <html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--> <!--[if gt IE 8]><!-->
+  <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
+  <head>
+    
+  <meta charset="utf-8" />
+      <meta name="csrf_field_name" content="_csrf_token" />
+      <meta name="_csrf_token" content="IjhlMDg3NDZkOTQ3YzgxNjFlM2JjMWRhM2ZjYmU4YjJhNDdiMjY2NzEi.avLzyw.jzdu9fkvXruoDJc_d1DX3MQVB5Y" />
+
+      <meta name="generator" content="ckan 2.10.8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <meta property="og:title" content="Automatically Detected Field Boundaries in Canada, 2023 - Open Government Portal">
+  
+  
+    
+      
+        <meta property="dcterms:title" content="Automatically Detected Field Boundaries in Canada, 2023 - Open Government Portal" />
+      
+      <meta property="dcterms:language" content="eng" />
+      
+  <meta property="dcterms:creator" content="Agriculture and Agri-Food Canada" data-gc-analytics-owner="Agriculture and Agri-Food Canada|N/A|N/A|N/A"/>
+
+      <meta property="dcterms:service" content="OG-GO" />
+      <meta property="dcterms:accessRights" content="2" />
+    
+  
+
+    <title>Automatically Detected Field Boundaries in Canada, 2023 - Open Government Portal</title>
+
+    
+    
+  
+    
+  <script src="/data/static/js/alert_exit.js" nonce="atWjmH1S837k50xk0vWVd8"></script>
+  <link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/wet-boew/assets/favicon.ico" />
+    
+  
+    
+    
+    
+      <!-- Google tag (gtag.js) -->
+      
+      <script src="https://www.googletagmanager.com/gtag/js?id=G-S9JG8CZVYZ" crossorigin="anonymous" nonce="atWjmH1S837k50xk0vWVd8" async></script>
+      <script nonce="atWjmH1S837k50xk0vWVd8" async>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S9JG8CZVYZ');
+      </script>
+    
+  
+  
+  
+
+    
+        <link rel="alternate" type="text/n3" href="https://open.canada.ca/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad.n3"/>
+        <link rel="alternate" type="text/ttl" href="https://open.canada.ca/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad.ttl"/>
+        <link rel="alternate" type="application/rdf+xml" href="https://open.canada.ca/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad.xml"/>
+        <link rel="alternate" type="application/ld+json" href="https://open.canada.ca/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad.jsonld"/>
+    
+
+  
+    <script nonce="atWjmH1S837k50xk0vWVd8">
+    window.imConfigPath = "/invitation-manager/";
+    </script>
+  
+
+  
+  
+      
+      
+      
+    
+  
+
+  
+
+
+    
+      
+      
+    
+  
+  <meta property="og:title" content="Automatically Detected Field Boundaries in Canada, 2023 - Open Government Portal">
+  <meta property="og:description" content="OneSoil employs a proprietary machine learning (ML) model based on state-of-the-art instance segmentation to detect field boundaries. Utilizing raw Sentinel-2 data aggregated according to local...">
+
+
+    
+    <link href="/data/webassets/base/b44cc5bc_main.css" rel="stylesheet" nonce="atWjmH1S837k50xk0vWVd8"/>
+<link href="/data/webassets/ckanext-scheming/073d7cfa_scheming_css.css" rel="stylesheet" nonce="atWjmH1S837k50xk0vWVd8"/>
+<link href="/data/webassets/ckanext-activity/5ee4e4a8_activity.css" rel="stylesheet" nonce="atWjmH1S837k50xk0vWVd8"/>
+  
+  
+  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/soyutils.js" integrity="sha384-hfwnpowMIP7hDqCMoNULlqSq7k2nu8R7zl+zHfYpNc5iokyd+Gbk5NO5ZdJFCv0o" crossorigin="anonymous" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_5/cdts/compiled/wet-en.js" integrity="sha384-XbAqbWNWbJWYx+IQnyjPh+/kbGbXlHn05z831ogYTb+w7WP5omwATQjrLFHc2OHe" crossorigin="anonymous" nonce="atWjmH1S837k50xk0vWVd8"></script>
+
+
+<script nonce="atWjmH1S837k50xk0vWVd8">
+  const wetHeaderString = wet.builder.refTop({
+    
+      "isApplication": false,
+      
+        "webAnalytics": [
+          {
+            "custom": "be5dfd287373/0127575cd23a/launch-f7c3e6060667.min.js",
+          }
+        ],
+      
+    
+  });
+  let newWetHeaderString = '';
+  const wetHeaderParser = new DOMParser();
+  const wetHeaderDOC = wetHeaderParser.parseFromString(wetHeaderString, 'text/html');
+  const wetHeaderScripts = wetHeaderDOC.querySelectorAll('script');
+  wetHeaderScripts.forEach(function(_script){
+    _script.setAttribute('nonce', 'atWjmH1S837k50xk0vWVd8');
+    if( _script.id == 'cdts_AnalyticsId' ){
+      _script.async = true;
+      _script.setAttribute('data-nonce', 'atWjmH1S837k50xk0vWVd8');
+    }
+    newWetHeaderString += _script.outerHTML;
+  });
+  const wetHeaderStyles = wetHeaderDOC.querySelectorAll('style');
+  wetHeaderStyles.forEach(function(_style){
+    _style.setAttribute('nonce', 'atWjmH1S837k50xk0vWVd8');
+    newWetHeaderString += _style.outerHTML;
+  });
+  const wetHeaderObjLinks = wetHeaderDOC.querySelectorAll('link');
+  wetHeaderObjLinks.forEach(function(_link){
+    _link.setAttribute('nonce', 'atWjmH1S837k50xk0vWVd8');
+    newWetHeaderString += _link.outerHTML;
+  });
+  const wetHeaderMetaTags = wetHeaderDOC.querySelectorAll('meta');
+  wetHeaderMetaTags.forEach(function(_meta){
+    newWetHeaderString += _meta.outerHTML;
+  });
+  document.write(newWetHeaderString);
+</script>
+
+<style nonce="atWjmH1S837k50xk0vWVd8">
+  body .app-bar-mb nav#info-pnl{
+    display: none !important;
+  }
+  body .app-bar .row > section{
+    width: 0 !important;
+    display: none !important;
+  }
+  body .app-bar nav{
+    width: 100% !important;
+  }
+  body .app-bar nav ul.app-list-account{
+    margin-top: 9px !important;
+  }
+  body .app-bar nav ul.app-list-account > li:first-of-type{
+    margin-right: 4.15px !important;
+  }
+  body div[class^="app-bar"] nav .btn.btn-warning{
+    color: #000000;
+    background-color: #f2d40d;
+    border-color: #917f08;
+  }
+  body div[class^="app-bar"] nav .btn.btn-warning:hover,
+  body div[class^="app-bar"] nav .btn.btn-warning:active,
+  body div[class^="app-bar"] nav .btn.btn-warning:focus{
+    background-color: #c2aa0a;
+  }
+  body #cdts-signout-btn,
+  body #cdts-signout-btn-mobile,
+  body div[class^="app-bar"] nav .btn.btn-danger{
+    color: #ffffff;
+    background-color: #bc3331;
+    border-color: #6b1d1c;
+  }
+  body #cdts-signout-btn:hover,
+  body #cdts-signout-btn:active,
+  body #cdts-signout-btn:focus,
+  body #cdts-signout-btn-mobile:hover,
+  body #cdts-signout-btn-mobile:active,
+  body #cdts-signout-btn-mobile:focus,
+  body div[class^="app-bar"] nav .btn.btn-danger:hover,
+  body div[class^="app-bar"] nav .btn.btn-danger:active,
+  body div[class^="app-bar"] nav .btn.btn-danger:focus{
+    background-color: #942826;
+  }
+  .canada-sign-in-context{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+    background-color: #E1E4E7;
+  }
+</style>
+  
+  <style nonce="atWjmH1S837k50xk0vWVd8">
+    body .d-none{
+      display: none;
+    }
+  </style>
+  
+  
+  
+    
+  
+
+  </head>
+
+  
+  <body data-site-root="https://open.canada.ca/data/" data-locale-root="https://open.canada.ca/data/en/"  vocab="https://schema.org/" typeof="WebPage">
+
+    
+    
+    
+
+
+  <div id="app-top"></div>
+  
+
+
+
+
+
+
+
+<script nonce="atWjmH1S837k50xk0vWVd8">
+  let appTop = document.getElementById("app-top");
+  if( appTop ){
+    
+      appTop.outerHTML = wet.builder.top({
+        "search": true,
+        "lngLinks": [
+          {
+            "lang": "fr",
+            "href": "/data/fr/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad",
+            "text": "Français",
+          }
+        ],
+        "breadcrumbs": [{"href": "/en", "title": "Open Government"}, {"href": "https://search.open.canada.ca", "title": "Search"}],
+      });
+    
+  }
+</script>
+
+  
+  
+  
+    
+    <div class="container" id="canada-main-container">
+      <div class="row">
+        
+          <div class="col-md-12 canada-flash-messages">
+            <div class="flash-messages">
+              
+            </div>
+          </div>
+        
+        <main role="main" property="mainContentOfPage" class="container">
+          
+  <span>
+    
+
+
+<span class="lb-page-display">
+  
+    <span class="label label-default lb-open-data">Open Data</span>
+  
+</span>
+    <h1>Automatically Detected Field Boundaries in Canada, 2023
+      
+      
+    </h1>
+  </span>
+
+          
+            <div class="row">
+              <div class="col-md-12">
+                
+                
+                
+                  <div data-ajax-replace="/data/static/_site_messaging/header_od_ckan.en"></div>
+                
+              </div>
+            </div>
+          
+          <div class="row  wb-eqht ">
+            
+              
+            
+            
+              <div class=" col-md-9 col-md-push-3 ">
+                
+                  <article class="module">
+                    <div class="module-content mrgn-tp-lg canada-page-main-wrapper">
+                      
+                      
+  <div vocab="http://schema.org/" typeof="Dataset" class="canada-display-none">
+  <div property="includedInDataCatalog" typeof="DataCatalog">
+    <span property="name" value="Government of Canada Open Government Portal"><span property="spatialCoverage" typeof="Place">
+          <span property="geo" typeof="GeoShape">
+            <span property="name" value="Dataset Boundary"></span><span property="POLYGON" value="((-141.0029999999999859 41.6754999999999995, -139.9986181818181592 41.6754999999999995, -138.9942363636363325 41.6754999999999995, -137.9898545454545342 41.6754999999999995, -136.9854727272727075 41.6754999999999995, -135.9810909090908808 41.6754999999999995, -134.9767090909090825 41.6754999999999995, -133.9723272727272558 41.6754999999999995, -132.9679454545454291 41.6754999999999995, -131.9635636363636308 41.6754999999999995, -130.9591818181818041 41.6754999999999995, -129.9548000000000059 41.6754999999999995, -128.9504181818181507 41.6754999999999995, -127.9460363636363525 41.6754999999999995, -126.9416545454545400 41.6754999999999995, -125.9372727272727275 41.6754999999999995, -124.9328909090908866 41.6754999999999995, -123.9285090909090883 41.6754999999999995, -122.9241272727272616 41.6754999999999995, -121.9197454545454491 41.6754999999999995, -120.9153636363636366 41.6754999999999995, -119.9109818181817957 41.6754999999999995, -118.9065999999999832 41.6754999999999995, -117.9022181818181707 41.6754999999999995, -116.8978363636363582 41.6754999999999995, -115.8934545454545173 41.6754999999999995, -114.8890727272727332 41.6754999999999995, -113.8846909090908923 41.6754999999999995, -112.8803090909090798 41.6754999999999995, -111.8759272727272673 41.6754999999999995, -110.8715454545454548 41.6754999999999995, -109.8671636363636139 41.6754999999999995, -108.8627818181818299 41.6754999999999995, -107.8583999999999889 41.6754999999999995, -106.8540181818181765 41.6754999999999995, -105.8496363636363640 41.6754999999999995, -104.8452545454545231 41.6754999999999995, -103.8408727272727106 41.6754999999999995, -102.8364909090908981 41.6754999999999995, -101.8321090909090856 41.6754999999999995, -100.8277272727272731 41.6754999999999995, -99.8233454545454464 41.6754999999999995, -98.8189636363636197 41.6754999999999995, -97.8145818181818072 41.6754999999999995, -96.8101999999999947 41.6754999999999995, -95.8058181818181822 41.6754999999999995, -94.8014363636363555 41.6754999999999995, -93.7970545454545430 41.6754999999999995, -92.7926727272727163 41.6754999999999995, -91.7882909090909038 41.6754999999999995, -90.7839090909090913 41.6754999999999995, -89.7795272727272646 41.6754999999999995, -88.7751454545454521 41.6754999999999995, -87.7707636363636396 41.6754999999999995, -86.7663818181818129 41.6754999999999995, -85.7620000000000005 41.6754999999999995, -84.7576181818181880 41.6754999999999995, -83.7532363636363613 41.6754999999999995, -82.7488545454545488 41.6754999999999995, -81.7444727272727363 41.6754999999999995, -80.7400909090909096 41.6754999999999995, -79.7357090909090971 41.6754999999999995, -78.7313272727272704 41.6754999999999995, -77.7269454545454579 41.6754999999999995, -76.7225636363636454 41.6754999999999995, -75.7181818181818187 41.6754999999999995, -74.7138000000000062 41.6754999999999995, -73.7094181818181795 41.6754999999999995, -72.7050363636363670 41.6754999999999995, -71.7006545454545545 41.6754999999999995, -70.6962727272727278 41.6754999999999995, -69.6918909090909153 41.6754999999999995, -68.6875090909090886 41.6754999999999995, -67.6831272727272761 41.6754999999999995, -66.6787454545454636 41.6754999999999995, -65.6743636363636369 41.6754999999999995, -64.6699818181818245 41.6754999999999995, -63.6655999999999977 41.6754999999999995, -62.6612181818181853 41.6754999999999995, -61.6568363636363728 41.6754999999999995, -60.6524545454545390 41.6754999999999995, -59.6480727272727265 41.6754999999999995, -58.6436909090909069 41.6754999999999995, -57.6393090909090944 41.6754999999999995, -56.6349272727272748 41.6754999999999995, -55.6305454545454552 41.6754999999999995, -54.6261636363636427 41.6754999999999995, -53.6217818181818231 41.6754999999999995, -52.6174000000000035 41.6754999999999995, -52.6174000000000035 83.1139000000000010, -53.6217818181818231 83.1139000000000010, -54.6261636363636427 83.1139000000000010, -55.6305454545454552 83.1139000000000010, -56.6349272727272748 83.1139000000000010, -57.6393090909090944 83.1139000000000010, -58.6436909090909069 83.1139000000000010, -59.6480727272727265 83.1139000000000010, -60.6524545454545390 83.1139000000000010, -61.6568363636363728 83.1139000000000010, -62.6612181818181853 83.1139000000000010, -63.6655999999999977 83.1139000000000010, -64.6699818181818245 83.1139000000000010, -65.6743636363636369 83.1139000000000010, -66.6787454545454636 83.1139000000000010, -67.6831272727272761 83.1139000000000010, -68.6875090909090886 83.1139000000000010, -69.6918909090909153 83.1139000000000010, -70.6962727272727278 83.1139000000000010, -71.7006545454545545 83.1139000000000010, -72.7050363636363670 83.1139000000000010, -73.7094181818181795 83.1139000000000010, -74.7138000000000062 83.1139000000000010, -75.7181818181818187 83.1139000000000010, -76.7225636363636454 83.1139000000000010, -77.7269454545454579 83.1139000000000010, -78.7313272727272704 83.1139000000000010, -79.7357090909090971 83.1139000000000010, -80.7400909090909096 83.1139000000000010, -81.7444727272727363 83.1139000000000010, -82.7488545454545488 83.1139000000000010, -83.7532363636363613 83.1139000000000010, -84.7576181818181880 83.1139000000000010, -85.7620000000000005 83.1139000000000010, -86.7663818181818129 83.1139000000000010, -87.7707636363636396 83.1139000000000010, -88.7751454545454521 83.1139000000000010, -89.7795272727272646 83.1139000000000010, -90.7839090909090913 83.1139000000000010, -91.7882909090909038 83.1139000000000010, -92.7926727272727163 83.1139000000000010, -93.7970545454545430 83.1139000000000010, -94.8014363636363555 83.1139000000000010, -95.8058181818181822 83.1139000000000010, -96.8101999999999947 83.1139000000000010, -97.8145818181818072 83.1139000000000010, -98.8189636363636197 83.1139000000000010, -99.8233454545454464 83.1139000000000010, -100.8277272727272731 83.1139000000000010, -101.8321090909090856 83.1139000000000010, -102.8364909090908981 83.1139000000000010, -103.8408727272727106 83.1139000000000010, -104.8452545454545231 83.1139000000000010, -105.8496363636363640 83.1139000000000010, -106.8540181818181765 83.1139000000000010, -107.8583999999999889 83.1139000000000010, -108.8627818181818299 83.1139000000000010, -109.8671636363636139 83.1139000000000010, -110.8715454545454548 83.1139000000000010, -111.8759272727272673 83.1139000000000010, -112.8803090909090798 83.1139000000000010, -113.8846909090908923 83.1139000000000010, -114.8890727272727332 83.1139000000000010, -115.8934545454545173 83.1139000000000010, -116.8978363636363582 83.1139000000000010, -117.9022181818181707 83.1139000000000010, -118.9065999999999832 83.1139000000000010, -119.9109818181817957 83.1139000000000010, -120.9153636363636366 83.1139000000000010, -121.9197454545454491 83.1139000000000010, -122.9241272727272616 83.1139000000000010, -123.9285090909090883 83.1139000000000010, -124.9328909090908866 83.1139000000000010, -125.9372727272727275 83.1139000000000010, -126.9416545454545400 83.1139000000000010, -127.9460363636363525 83.1139000000000010, -128.9504181818181507 83.1139000000000010, -129.9548000000000059 83.1139000000000010, -130.9591818181818041 83.1139000000000010, -131.9635636363636308 83.1139000000000010, -132.9679454545454291 83.1139000000000010, -133.9723272727272558 83.1139000000000010, -134.9767090909090825 83.1139000000000010, -135.9810909090908808 83.1139000000000010, -136.9854727272727075 83.1139000000000010, -137.9898545454545342 83.1139000000000010, -138.9942363636363325 83.1139000000000010, -139.9986181818181592 83.1139000000000010, -141.0029999999999859 83.1139000000000010, -141.0029999999999859 41.6754999999999995))"></span></span>
+        </span></span>
+    <span property="description" value="This catalog contains metadata records describing open datasets available from the Government of Canada"></span>
+    <span property="datePublished" value="2013-06-19"></span>
+    <span property="dateModified" value=""></span>
+    <span property="inLanguage" value="en-CA"></span>
+    <span property="sameAs" value="http://open.canada.ca"></span>
+    <span property="publisher" typeof="Organization">
+      <span property="name" value="Government of Canada, Treasury Board of Canada Secretariat"></span>
+      <span property="email" value="&#080;&#111;&#114;&#116;&#097;&#108;&#083;&#117;&#112;&#112;&#111;&#114;&#116;&#045;&#083;&#111;&#117;&#116;&#105;&#101;&#110;&#112;&#111;&#114;&#116;&#097;&#105;&#108;&#064;&#116;&#098;&#115;&#045;&#115;&#099;&#116;&#046;&#103;&#099;&#046;&#099;&#097;"></span>
+    </span>
+    <span property="genre" value="Information and Communications Government and Politics"></span>
+    <span property="license" typeof="CreativeWork">
+      <span property="name" value="Open Government Licence - Canada"></span>
+      <span property="sameAs" value="https://open.canada.ca/en/open-government-licence-canada"></span>
+      <span property="text" value="Rights under which the catalog can be reused are outlined in the Open Government Licence - Canada"></span>
+    </span>
+  </div>
+  <span property="name">Automatically Detected Field Boundaries in Canada, 2023</span>
+  <span property="description">OneSoil employs a proprietary machine learning (ML) model based on state-of-the-art instance segmentation to detect field boundaries. Utilizing raw Sentinel-2 data aggregated according to local vegetation season maps and an additional upscaling module to enhance boundary accuracy, we ensure precise results. OneSoil’s data preprocessing involves the utilization of their cloud detector module and local season mapping.</span>
+  
+  <span property="dateModified">2026-01-07</span>
+  <span property="publisher" typeof="Organization">
+    <span property="name">Agriculture and Agri-Food Canada</span>
+    <span property="email">agri-geomatics-agrog@agr.gc.ca</span>
+  </span><span property="temporalCoverage" value="2023-01-01/2023-12-31"></span><span property="genre">Agriculture</span><span property="genre">Economics and Industry</span><span property="genre">Form Descriptors</span><span property="genre">Government and Politics</span><span property="genre">Nature and Environment</span><span property="keywords">Farmlands</span><span property="keywords">Remote sensing</span><span property="keywords">Boundaries</span>
+  <span property="sameAs" value="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad"></span>
+      <span property="distribution" typeof="DataDownload">
+        <span property="inLanguage" content="en,fr"> </span>
+        <span property="name" lang="en">Pre-packaged GPKG files</span><span property="fileFormat">GPKG</span>
+        <span property="url">https://agriculture.canada.ca/atlas/data_donnees/fieldBoundaries/data_donnees/gpkg/</span>
+      </span>
+      <span property="distribution" typeof="DataDownload">
+        <span property="inLanguage" content="en"> </span>
+        <span property="name" lang="en">Data Product Specification (English)</span><span property="fileFormat">PDF</span>
+        <span property="url">https://agriculture.canada.ca/atlas/data_donnees/fieldBoundaries/supportdocument_documentdesupport/en/ISO_19131_Field_Boundaries_in_Canada_2023.pdf</span>
+      </span>
+      <span property="distribution" typeof="DataDownload">
+        <span property="inLanguage" content="fr"> </span>
+        <span property="name" lang="en">Data Product Specification (French)</span><span property="fileFormat">PDF</span>
+        <span property="url">https://agriculture.canada.ca/atlas/data_donnees/fieldBoundaries/supportdocument_documentdesupport//fr/Limites_des_champs_détectées_automatiquement_au_Canada_2023_-_SPC.pdf</span>
+      </span>
+      <span property="distribution" typeof="DataDownload">
+        <span property="inLanguage" content="en,fr"> </span>
+        <span property="name" lang="en">Pre-packaged FGDB files</span><span property="fileFormat">FGDB/GDB</span>
+        <span property="url">https://agriculture.canada.ca/atlas/data_donnees/fieldBoundaries/data_donnees/fgdb/</span>
+      </span></div>
+  <div class="module">
+    
+      
+    
+    
+    
+      <section class="module-content indent-large">
+        <div id="resource-desc">
+          
+          
+          <p>OneSoil employs a proprietary machine learning (ML) model based on state-of-the-art instance segmentation to detect field boundaries. Utilizing raw Sentinel-2 data aggregated according to local vegetation season maps and an additional upscaling module to enhance boundary accuracy, we ensure precise results. OneSoil’s data preprocessing involves the utilization of their cloud detector module and local season mapping.</p>
+        </div>
+      </section>
+    
+    <section>
+      <ul class="list-group dataset-inline-details">
+        
+          
+          
+          
+          <li class="list-group-item">
+            <strong>Publisher - Current Organization Name:</strong>
+            Agriculture and Agri-Food Canada
+          </li>
+        
+        
+        
+        
+          
+          
+            
+            
+              
+            
+            
+              
+            
+          
+        
+          
+          
+            
+            
+              
+            
+            
+          
+        
+          
+          
+            
+            
+              
+            
+            
+          
+        
+          
+          
+            
+            
+            
+              
+                
+                <li class="list-group-item"><strong>Licence:</strong>
+                  
+
+  <a href="https://open.canada.ca/en/open-government-licence-canada">Open Government Licence - Canada</a>
+
+                </li>
+              
+            
+          
+        
+      </ul>
+    </section>
+    
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+
+<section id="dataset-resources" class="resources">
+  
+  <h2 id="resources">Data and Resources
+    
+    
+    
+  </h2>
+  <div class="canada-resource-search-wrapper">
+    <form id="dataset-resource-search" class="dataset-resource-search mrgn-bttm-md mrgn-tp-md" method="get" action="#resources" data-module="select-switch" role="search">
+      <input type="text" class="field form-control" id="resource_query" autocomplete="off" name="resource_query" value="" placeholder="Search resources...">
+      <span class="input-group-btn">
+        <button class="btn btn-primary btn-small" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i><span class="wb-inv">Search</span>
+        </button>
+      </span>
+    </form>
+  </div>
+
+  
+    
+      <ul class="resource-list">
+        
+  
+    
+    
+
+
+
+<li class="resource-item" data-id="fa016c2c-5b9c-4189-bbde-b6830a63d138">
+  
+  <div id="resource_title">
+    
+    <a class="heading resource-heading" href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad/resource/fa016c2c-5b9c-4189-bbde-b6830a63d138" title="Pre-packaged GPKG files">
+      <span class="resource-heading-text">Pre-packaged GPKG files</span><span class="format-label" property="dc:format" data-format="gpkg">GPKG</span>
+        
+
+      
+    </a>
+    
+    <div>
+    
+      
+        
+          
+        
+          
+            <span class="badge res-tag res-tag-lang">
+              English
+            </span>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+            <span class="badge res-tag res-tag-lang">
+              French
+            </span>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+    
+      <span class="badge res-tag">
+        Dataset
+      </span>
+    
+    
+      <span class="badge res-tag">
+        GeoPackage
+      </span>
+    
+    </div>
+  </div>
+
+  
+  
+
+  
+  
+    <div class="dropdown btn-group resource-action-links">
+      <a href="javascript:void(0);" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-share" aria-hidden="true"></i>&nbsp;Explore
+      </a>
+      <ul class="dropdown-menu canada-resource-dropdown-explore">
+        
+          <li>
+            <a href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad/resource/fa016c2c-5b9c-4189-bbde-b6830a63d138">
+              
+                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;More information
+              
+            </a>
+          </li>
+          
+            <li>
+              <a href="https://agriculture.canada.ca/atlas/data_donnees/fieldBoundaries/data_donnees/gpkg/" class="resource-url-analytics" target="_blank" rel='noopener noreferrer' data-pkg-id="b3dba669-6611-4cb1-b4be-6c317b9908ad" data-res-id="fa016c2c-5b9c-4189-bbde-b6830a63d138" data-org-id="2ABCCA59-6C57-4886-99E7-85EC6C719218">
+                
+                  <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Go to resource
+                
+              </a>
+            </li>
+          
+          
+          
+          
+        
+      </ul>
+    </div>
+  
+  
+
+</li>
+  
+    
+    
+
+
+
+<li class="resource-item" data-id="209e69e3-be79-432e-95d6-574e4312ad30">
+  
+  <div id="resource_title">
+    
+    <a class="heading resource-heading" href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad/resource/209e69e3-be79-432e-95d6-574e4312ad30" title="Data Product Specification (English)">
+      <span class="resource-heading-text">Data Product Specification (English)</span><span class="format-label" property="dc:format" data-format="pdf">PDF</span>
+        
+
+      
+    </a>
+    
+    <div>
+    
+      
+        
+          
+        
+          
+            <span class="badge res-tag res-tag-lang">
+              English
+            </span>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+    
+      <span class="badge res-tag">
+        Guide
+      </span>
+    
+    
+      <span class="badge res-tag">
+        PDF
+      </span>
+    
+    </div>
+  </div>
+
+  
+  
+
+  
+  
+    <div class="dropdown btn-group resource-action-links">
+      <a href="javascript:void(0);" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-share" aria-hidden="true"></i>&nbsp;Explore
+      </a>
+      <ul class="dropdown-menu canada-resource-dropdown-explore">
+        
+          <li>
+            <a href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad/resource/209e69e3-be79-432e-95d6-574e4312ad30">
+              
+                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;More information
+              
+            </a>
+          </li>
+          
+            <li>
+              <a href="https://agriculture.canada.ca/atlas/data_donnees/fieldBoundaries/supportdocument_documentdesupport/en/ISO_19131_Field_Boundaries_in_Canada_2023.pdf" class="resource-url-analytics" target="_blank" rel='noopener noreferrer' data-pkg-id="b3dba669-6611-4cb1-b4be-6c317b9908ad" data-res-id="209e69e3-be79-432e-95d6-574e4312ad30" data-org-id="2ABCCA59-6C57-4886-99E7-85EC6C719218">
+                
+                  <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Go to resource
+                
+              </a>
+            </li>
+          
+          
+          
+          
+        
+      </ul>
+    </div>
+  
+  
+
+</li>
+  
+    
+    
+
+
+
+<li class="resource-item" data-id="67bc95e5-4297-4017-9ad7-b0cacbad9f41">
+  
+  <div id="resource_title">
+    
+    <a class="heading resource-heading" href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad/resource/67bc95e5-4297-4017-9ad7-b0cacbad9f41" title="Data Product Specification (French)">
+      <span class="resource-heading-text">Data Product Specification (French)</span><span class="format-label" property="dc:format" data-format="pdf">PDF</span>
+        
+
+      
+    </a>
+    
+    <div>
+    
+      
+        
+          
+        
+          
+        
+          
+            <span class="badge res-tag res-tag-lang">
+              French
+            </span>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+    
+      <span class="badge res-tag">
+        Guide
+      </span>
+    
+    
+      <span class="badge res-tag">
+        PDF
+      </span>
+    
+    </div>
+  </div>
+
+  
+  
+
+  
+  
+    <div class="dropdown btn-group resource-action-links">
+      <a href="javascript:void(0);" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-share" aria-hidden="true"></i>&nbsp;Explore
+      </a>
+      <ul class="dropdown-menu canada-resource-dropdown-explore">
+        
+          <li>
+            <a href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad/resource/67bc95e5-4297-4017-9ad7-b0cacbad9f41">
+              
+                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;More information
+              
+            </a>
+          </li>
+          
+            <li>
+              <a href="https://agriculture.canada.ca/atlas/data_donnees/fieldBoundaries/supportdocument_documentdesupport//fr/Limites_des_champs_détectées_automatiquement_au_Canada_2023_-_SPC.pdf" class="resource-url-analytics" target="_blank" rel='noopener noreferrer' data-pkg-id="b3dba669-6611-4cb1-b4be-6c317b9908ad" data-res-id="67bc95e5-4297-4017-9ad7-b0cacbad9f41" data-org-id="2ABCCA59-6C57-4886-99E7-85EC6C719218">
+                
+                  <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Go to resource
+                
+              </a>
+            </li>
+          
+          
+          
+          
+        
+      </ul>
+    </div>
+  
+  
+
+</li>
+  
+    
+    
+
+
+
+<li class="resource-item" data-id="e26c8977-e62e-43d2-9a92-436a3de66473">
+  
+  <div id="resource_title">
+    
+    <a class="heading resource-heading" href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad/resource/e26c8977-e62e-43d2-9a92-436a3de66473" title="Pre-packaged FGDB files">
+      <span class="resource-heading-text">Pre-packaged FGDB files</span><span class="format-label" property="dc:format" data-format="fgdb/gdb">FGDB/GDB</span>
+        
+
+      
+    </a>
+    
+    <div>
+    
+      
+        
+          
+        
+          
+            <span class="badge res-tag res-tag-lang">
+              English
+            </span>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+            <span class="badge res-tag res-tag-lang">
+              French
+            </span>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+    
+      <span class="badge res-tag">
+        Dataset
+      </span>
+    
+    
+      <span class="badge res-tag">
+        FGDB/GDB
+      </span>
+    
+    </div>
+  </div>
+
+  
+  
+
+  
+  
+    <div class="dropdown btn-group resource-action-links">
+      <a href="javascript:void(0);" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-share" aria-hidden="true"></i>&nbsp;Explore
+      </a>
+      <ul class="dropdown-menu canada-resource-dropdown-explore">
+        
+          <li>
+            <a href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad/resource/e26c8977-e62e-43d2-9a92-436a3de66473">
+              
+                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;More information
+              
+            </a>
+          </li>
+          
+            <li>
+              <a href="https://agriculture.canada.ca/atlas/data_donnees/fieldBoundaries/data_donnees/fgdb/" class="resource-url-analytics" target="_blank" rel='noopener noreferrer' data-pkg-id="b3dba669-6611-4cb1-b4be-6c317b9908ad" data-res-id="e26c8977-e62e-43d2-9a92-436a3de66473" data-org-id="2ABCCA59-6C57-4886-99E7-85EC6C719218">
+                
+                  <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Go to resource
+                
+              </a>
+            </li>
+          
+          
+          
+          
+        
+      </ul>
+    </div>
+  
+  
+
+</li>
+  
+
+      </ul>
+    
+  
+</section>
+
+        
+      
+    
+    
+      
+    
+    
+      
+      
+        <div class="span-6 margin-top-medium clear-both">
+          <h4>Contact Information</h4>
+          
+          
+          
+          
+          
+          
+            <p>Electronic Mail Address:
+              <a href="mailto:agri-geomatics-agrog@agr.gc.ca">agri-geomatics-agrog@agr.gc.ca</a>
+            </p>
+          
+        </div>
+      
+    
+    
+      
+      
+    
+    
+      
+        
+          <section class="panel panel-primary">
+            <header class="panel-heading">
+              <div class="panel-title">Similar records</div>
+            </header>
+            <div data-ajax-replace="https://search.open.canada.ca/opendata/similar/b3dba669-6611-4cb1-b4be-6c317b9908ad" class="panel-body" id="related_pkgs"></div>
+          </section>
+        
+      
+    
+    
+      
+        <a id="rate"></a>
+        <div id="voting-wrapper" data-ajax-replace="/en/vote?uuid=b3dba669-6611-4cb1-b4be-6c317b9908ad"></div>
+      
+    
+    
+      
+        <a id="feedback"></a>
+        <section class="indent-large">
+          <div id="feedback-wrapper" data-ajax-replace="/en/feedback?uuid=b3dba669-6611-4cb1-b4be-6c317b9908ad"></div>
+        </section>
+      
+    
+  </div>
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+            
+              
+                <aside class="col-md-3 col-md-pull-9 mrgn-tp-lg canada-page-side-wrapper">
+                  
+  
+    
+  
+    <div class="panel panel-primary">
+      
+      <div class="panel-heading canada-panel-heading">Have your say</div>
+      <div class="panel-body">
+        <ul class="list-unstyled">
+          <div data-ajax-replace="/en/vote-result/vote/b3dba669-6611-4cb1-b4be-6c317b9908ad"></div>
+          <li><a href="#rate">Rate this dataset</a></li>
+          
+            <li><a href="#feedback">Provide feedback</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  
+  
+    <div class="panel panel-primary">
+      <div class="panel-heading canada-panel-heading">Additional Information</div>
+      <ul class="list-group">
+        
+        
+          
+          
+          
+            
+            
+            
+          
+        
+          
+          
+          
+            
+            
+            
+          
+        
+          
+          
+          
+            
+            
+              
+            
+            
+          
+        
+          
+          
+          
+            
+            
+            
+          
+        
+          
+          
+          
+            
+            
+              
+            
+            
+              <li class="list-group-item resource-tags">
+                <strong>Keywords:</strong>
+                <ul class='list-inline'><li class="label label-default mrgn-rght-sm resource-tags">Farmlands</li><li class="label label-default mrgn-rght-sm resource-tags">Remote sensing</li><li class="label label-default mrgn-rght-sm resource-tags">Boundaries</li></ul>
+              </li>
+            
+          
+        
+          
+          
+          
+            
+            
+            
+              <li class="list-group-item resource-tags">
+                <strong>Subject:</strong>
+                <ul class='list-inline'><li class="label label-default mrgn-rght-sm resource-tags"> Agriculture</li><li class="label label-default mrgn-rght-sm resource-tags"> Economics and Industry</li><li class="label label-default mrgn-rght-sm resource-tags"> Form Descriptors</li><li class="label label-default mrgn-rght-sm resource-tags"> Government and Politics</li><li class="label label-default mrgn-rght-sm resource-tags"> Nature and Environment</li></ul>
+              </li>
+            
+          
+        
+          
+          
+          
+            
+            
+            
+              <li class="list-group-item resource-tags">
+                <strong>Topic category:</strong>
+                <ul class='list-inline'><li class="label label-default mrgn-rght-sm resource-tags"> Farming</li><li class="label label-default mrgn-rght-sm resource-tags"> Boundaries</li><li class="label label-default mrgn-rght-sm resource-tags"> Location</li><li class="label label-default mrgn-rght-sm resource-tags"> Planning Cadastre</li></ul>
+              </li>
+            
+          
+        
+          
+          
+          
+            
+            
+            
+          
+        
+          
+          
+          
+            
+            
+            
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+            
+            
+              
+            
+            
+          
+        
+          
+          
+          
+            
+            
+              
+            
+            
+          
+        
+          
+          
+          
+            
+            
+              
+            
+            
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+            
+            
+            
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+            
+            
+            
+              <li class="list-group-item resource-tags">
+                <strong>Maintenance and Update Frequency:</strong>
+                Not Planned
+              </li>
+            
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+            
+            
+            
+              <li class="list-group-item resource-tags">
+                <strong>Spatial Representation Type:</strong>
+                Vector
+              </li>
+            
+          
+        
+          
+          
+          
+            
+            
+            
+              <li class="list-group-item resource-tags">
+                <strong>Status:</strong>
+                Completed
+              </li>
+            
+          
+        
+          
+          
+          
+            
+            
+            
+              <li class="list-group-item resource-tags">
+                <strong>Date Published:</strong>
+                
+  2024-09-12
+
+              </li>
+            
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+            
+            
+            
+          
+        
+          <li class="list-group-item"><b>Temporal Coverage:</b>
+            <small>
+              
+                2023-01-01 to 2023-12-31
+              
+            </small>
+          </li>
+        
+        
+          
+            <li class="list-group-item"><a
+              href="https://open.canada.ca/en/openness-rating"><b>Openness Rating</b></a>:&nbsp;<img src="/data/static/img/stars/star3.png" alt="three stars"
+                    class="image-actual margin-bottom-none openness-rating-stars" />
+            </li>
+          
+        
+      </ul>
+    </div>
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading canada-panel-heading">About this Record</div>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <strong>Record Released:</strong>
+        2024-09-12
+      </li>
+      <li class="list-group-item">
+        <strong>Record Modified:</strong>
+        2026-01-07
+      </li>
+      <li class="list-group-item">
+        <strong>Record ID:</strong>
+        b3dba669-6611-4cb1-b4be-6c317b9908ad
+      </li>
+      <li class="list-group-item">
+        <strong>Metadata:</strong>
+        <ul class="list-group canada-margin-bottom-0">
+          <li class="list-group-item">
+            <a href="https://open.canada.ca/data/api/action/package_show?id=b3dba669-6611-4cb1-b4be-6c317b9908ad" rel="nofollow">
+              Link to JSON format
+            </a>
+          </li><li class="list-group-item canada-border-none">
+              <a href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad.jsonld" rel="nofollow">DCAT (JSON-LD)</a>
+            </li><li class="list-group-item canada-border-none">
+              <a href="/data/en/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad.xml" rel="nofollow">DCAT (XML)</a>
+            </li></ul>
+      </li>
+      
+      
+        <li class="list-group-item">
+          <strong>FGP Metadata:</strong>
+          <a href="http://csw.open.canada.ca/geonetwork/srv/csw?service=CSW&version=2.0.2&request=GetRecordById&outputSchema=csw:IsoRecord&ElementSetName=full&id=b3dba669-6611-4cb1-b4be-6c317b9908ad">
+            HNAP ISO:19115 Metadata Record
+          </a>
+        </li>
+      
+      <li class="list-group-item">
+        <a href="/data/en/feeds/dataset/b3dba669-6611-4cb1-b4be-6c317b9908ad.atom" title="RSS">
+          <span class="fa fa-rss-square" aria-hidden="true"></span>&nbsp;Atom Feed
+        </a>
+      </li>
+      
+        
+        <li class="list-group-item"><b>Spatial Representation Type:</b>
+          Vector
+        </li>
+      
+    </ul>
+  </div>
+
+  
+  
+    
+      
+      <div class="panel panel-primary">
+        <div class="panel-heading canada-panel-heading">Data Contact</div>
+        <ul class="list-group">
+          
+          
+          
+            
+          
+            
+          
+            
+              <li class="list-group-item"><b>Email:</b><br />
+                <a href=mailto:&#097;&#103;&#114;&#105;&#045;&#103;&#101;&#111;&#109;&#097;&#116;&#105;&#099;&#115;&#045;&#097;&#103;&#114;&#111;&#103;&#064;&#097;&#103;&#114;&#046;&#103;&#099;&#046;&#099;&#097;>&#097;&#103;&#114;&#105;&#045;&#103;&#101;&#111;&#109;&#097;&#116;&#105;&#099;&#115;&#045;&#097;&#103;&#114;&#111;&#103;&#064;&#097;&#103;&#114;&#046;&#103;&#099;&#046;&#099;&#097;</a>
+              </li>
+            
+          
+            
+          
+            
+          
+            
+              <li class="list-group-item"><b>City:</b><br />
+                
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>Country:</b><br />
+                
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>Postal Code:</b><br />
+                
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>Administrative Area:</b><br />
+                
+              </li>
+            
+          
+            
+          
+        </ul>
+      </div>
+    
+  
+    
+      
+      <div class="panel panel-primary">
+        <div class="panel-heading canada-panel-heading">Distributor Contact</div>
+        <ul class="list-group">
+          
+          
+          
+            
+              <li class="list-group-item"><b>Organization Name:</b><br />
+                Government of Canada; Agriculture and Agri-Food Canada; Science and Technology Branch
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>Telephone Number:</b><br />
+                
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>Email:</b><br />
+                <a href=mailto:&#097;&#103;&#114;&#105;&#045;&#103;&#101;&#111;&#109;&#097;&#116;&#105;&#099;&#115;&#045;&#097;&#103;&#114;&#111;&#103;&#064;&#097;&#103;&#114;&#046;&#103;&#099;&#046;&#099;&#097;>&#097;&#103;&#114;&#105;&#045;&#103;&#101;&#111;&#109;&#097;&#116;&#105;&#099;&#115;&#045;&#097;&#103;&#114;&#111;&#103;&#064;&#097;&#103;&#114;&#046;&#103;&#099;&#046;&#099;&#097;</a>
+              </li>
+            
+          
+            
+          
+            
+              <li class="list-group-item"><b>Address:</b><br />
+                
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>City:</b><br />
+                
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>Country:</b><br />
+                
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>Postal Code:</b><br />
+                
+              </li>
+            
+          
+            
+              <li class="list-group-item"><b>Administrative Area:</b><br />
+                
+              </li>
+            
+          
+            
+          
+        </ul>
+      </div>
+    
+  
+
+                </aside>
+              
+            
+          </div>
+        </main>
+      </div>
+    </div>
+  
+    
+    <div id="ref-footer"></div>
+<script nonce="atWjmH1S837k50xk0vWVd8">
+  let refFooter = document.getElementById("ref-footer");
+  if( refFooter ){
+    refFooter.outerHTML = wet.builder.footer({});
+  }
+</script>
+
+
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  <style nonce="atWjmH1S837k50xk0vWVd8">
+    .canada-display-none{display: none;}
+  </style>
+  
+
+<script nonce="atWjmH1S837k50xk0vWVd8">
+  const wetFooterString = wet.builder.refFooter({
+    
+      "isApplication": false,
+    
+  });
+  let newWetFooterString = '';
+  const wetFooterParser = new DOMParser();
+  const wetFooterDOC = wetFooterParser.parseFromString(wetFooterString, 'text/html');
+  const wetFooterScripts = wetFooterDOC.querySelectorAll('script');
+  wetFooterScripts.forEach(function(_script){
+    _script.setAttribute('nonce', 'atWjmH1S837k50xk0vWVd8');
+    newWetFooterString += _script.outerHTML;
+  });
+  const wetFooterStyles = wetFooterDOC.querySelectorAll('style');
+  wetFooterStyles.forEach(function(_style){
+    _style.setAttribute('nonce', 'atWjmH1S837k50xk0vWVd8');
+    newWetFooterString += _style.outerHTML;
+  });
+  const wetFooterObjLinks = wetFooterDOC.querySelectorAll('link');
+  wetFooterObjLinks.forEach(function(_link){
+    _link.setAttribute('nonce', 'atWjmH1S837k50xk0vWVd8');
+    newWetFooterString += _link.outerHTML;
+  });
+  document.write(newWetFooterString);
+  
+    function canada_set_adobe_bottom(){
+      const maxTries = 20;
+      let currentTry = 0;
+      let interval = false;
+
+      function _set_adobe_bottom(){
+        if( currentTry > maxTries ){
+          clearInterval(interval);
+          interval = false;
+          return;
+        }
+
+        currentTry++;
+
+        if( typeof _satellite == 'undefined' || typeof _satellite.pageBottom == 'undefined' ){
+          return;
+        }
+
+        clearInterval(interval);
+        interval = false;
+        _satellite.pageBottom();
+      }
+
+      interval = setInterval(_set_adobe_bottom, 100);
+
+    }
+    canada_set_adobe_bottom();
+  
+</script>
+  
+  
+    
+  
+    
+  
+  
+  
+  
+    
+
+    
+        
+        
+        
+    
+
+
+  
+
+  
+
+  <script nonce="atWjmH1S837k50xk0vWVd8">
+    window.addEventListener('load', function(){
+      $(document).ready(function(){
+        const resourceQuery =null;
+        if( resourceQuery != null && resourceQuery.length > 0 ){
+          const regexMatch = new RegExp('(' + resourceQuery + ')', 'gi');
+          let resourceTitles = $('ul.resource-list').find('a.resource-heading').find('.resource-heading-text');
+          if( resourceTitles.length > 0 ){
+            $(resourceTitles).each(function(_index, _resourceTitle){
+              $(_resourceTitle).html($(_resourceTitle).text().trim().replace(regexMatch, '<mark class="highlight">$1</mark>'));
+            });
+          }
+        }
+      });
+    });
+  </script>
+
+  
+      
+  
+    
+
+      
+  
+
+
+    
+    
+    <link href="/data/webassets/canada_public/ec5a6250_canada_public.css" rel="stylesheet" nonce="atWjmH1S837k50xk0vWVd8"/>
+<link href="/data/webassets/invitation_manager/b0dc356d_invitation_manager.css" rel="stylesheet" nonce="atWjmH1S837k50xk0vWVd8"/>
+<link href="/data/webassets/vendor/f3b8236b_select2.css" rel="stylesheet" nonce="atWjmH1S837k50xk0vWVd8"/>
+<link href="/data/webassets/vendor/d05bf0e7_fontawesome.css" rel="stylesheet" nonce="atWjmH1S837k50xk0vWVd8"/>
+    <script src="/data/webassets/canada_public/1e1601b9_more_like_this.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/canada_public/8c2d9323_voting_fix.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/invitation_manager/ecf68db1_invitation_manager.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/canada_public/562e1564_canada_public_analytics.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/canada_public/32a7c986_adobe_analytics_fix.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/vendor/8c3c143a_jquery.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/vendor/9cf42cfd_vendor.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/vendor/6d1ad7e6_bootstrap.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/base/6fddaa3f_main.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/base/7435ee13_ckan.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/vendor/9c4cfd9c_fileupload.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/ckanext-cloudstorage/06b9ac90_main.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+<script src="/data/webassets/activity/0fdb5ee0_activity.js" type="text/javascript" nonce="atWjmH1S837k50xk0vWVd8"></script>
+  </body>
+</html>

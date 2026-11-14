@@ -1,0 +1,193 @@
+{
+  "id": "carrot",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Carrot",
+    "localNames": [{ "language": "fr", "name": "Carotte" }],
+    "scientificName": "Daucus carota L.",
+    "family": "Apiaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-carrot",
+        "page": null,
+        "quote": "\"scientificName\":\"Daucus carota L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-roots",
+        "page": 4,
+        "quote": "LA CAROTTE",
+        "locator": "PDF page 4",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "root_tuber",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "page": 4,
+          "quote": "LA CAROTTE",
+          "locator": "PDF page 4",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; irrigated; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "carrot-sowing",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 60 20 150 Feb/Mar Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO Mediterranean planting month; the Moroccan bulletin gives no date.",
+      "metric": "planting_window",
+      "start": "02-01",
+      "end": "03-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "carrot-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 60 20 150 Feb/Mar Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "150 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO Mediterranean row.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 150,
+      "maxDays": 150
+    },
+    {
+      "id": "carrot-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Carrots 1.05 0.95",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Small Vegetables 0.7 1.05 0.95",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 60 20 150 Feb/Mar Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.7,
+      "kcMid": 1.05,
+      "kcEnd": 0.95,
+      "stageLengths": [30, 40, 60, 20]
+    },
+    {
+      "id": "carrot-heat",
+      "citations": [
+        {
+          "sourceId": "pntta-roots",
+          "page": 4,
+          "quote": "A une température supérieure à 30˚C",
+          "locator": "PDF page 4",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Leaf growth slows and roots lose market value.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed."
+  ]
+}

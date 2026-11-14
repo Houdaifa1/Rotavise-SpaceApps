@@ -1,0 +1,193 @@
+{
+  "id": "durum-wheat",
+  "version": "0.1.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Durum wheat",
+    "scientificName": "Triticum turgidum subsp. durum (Desf.) Husn.",
+    "family": "Poaceae",
+    "citations": [
+      {
+        "sourceId": "kew-durum",
+        "locator": "Accepted name and classification",
+        "interpretation": "direct",
+        "note": "Accepted taxonomic identity; not cultivar evidence."
+      }
+    ]
+  },
+  "harvestProduct": "dry_grain",
+  "cultivar": {
+    "status": "unknown",
+    "reason": "No cultivar selected or locally reviewed. Maturity and tolerances depend on cultivar and management."
+  },
+  "productionSystems": ["unspecified"],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "inra-regional",
+          "locator": "Event body, 2024-05-06",
+          "interpretation": "context_only",
+          "note": "Durum is included in local demonstration crops, not certified suitable."
+        }
+      ],
+      "note": "Pilot research candidate only; requires specialist assessment for the actual farm and campaign."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "reason": "No Beni Mellal agronomist review has occurred. Research extraction is not agricultural validation."
+  },
+  "knowledge": {
+    "plantingWindows": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "durum-november",
+          "citations": [
+            {
+              "sourceId": "inra-wheat",
+              "locator": "PDF page 4 (printed page 2), installation",
+              "interpretation": "normalized",
+              "note": "Named preferred month encoded as full month; not a rigid deadline."
+            }
+          ],
+          "evidenceRegionIds": ["morocco-general"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Autumn sowing preferred in November; cultivar, rainfall onset and zone matter.",
+          "metric": "planting_window",
+          "unit": "month_day",
+          "timeBasis": "recurring_calendar",
+          "stage": "sowing",
+          "start": "11-01",
+          "end": "11-30",
+          "precision": "full_month"
+        }
+      ]
+    },
+    "duration": {
+      "status": "unknown",
+      "reason": "No sourced cultivar-specific sowing-to-harvest interval for the pilot. Calendar harvest examples cannot supply a duration range."
+    },
+    "soilRequirements": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "durum-ph",
+          "citations": [
+            {
+              "sourceId": "inra-wheat",
+              "locator": "PDF page 3, Table 1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["morocco-general"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source favorable pH range; laboratory method unspecified.",
+          "metric": "soil_ph",
+          "unit": "pH",
+          "timeBasis": "field_measurement",
+          "stage": "whole_cycle",
+          "method": "unspecified",
+          "min": 6.5,
+          "max": 7.5
+        },
+        {
+          "id": "durum-drainage",
+          "citations": [
+            {
+              "sourceId": "onca-cereals",
+              "locator": "PDF page 23, section 3.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["morocco-general"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Durum-specific qualitative drainage preference; depth and texture remain narrative context.",
+          "metric": "soil_drainage",
+          "unit": "category",
+          "timeBasis": "field_condition",
+          "stage": "whole_cycle",
+          "value": "well_drained"
+        }
+      ]
+    },
+    "temperatureRequirements": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "durum-germination",
+          "citations": [
+            {
+              "sourceId": "onca-cereals",
+              "locator": "PDF page 23, section 3.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["morocco-general"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source reference range, not an exclusion threshold; measurement medium/averaging unresolved.",
+          "metric": "temperature",
+          "unit": "degC",
+          "timeBasis": "unspecified",
+          "stage": "germination",
+          "medium": "unspecified",
+          "min": 12,
+          "max": 20
+        }
+      ]
+    },
+    "waterDemandClass": {
+      "status": "unknown",
+      "reason": "No shared sourced comparison method for low/moderate/high demand across these crops."
+    },
+    "waterReference": {
+      "status": "unknown",
+      "reason": "General wheat water ranges lack a defined cultivar/seasonal accounting basis; no irrigation adequacy or comparable water class is inferred."
+    },
+    "rotationRestrictions": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "durum-legume-predecessor",
+          "citations": [
+            {
+              "sourceId": "inra-wheat",
+              "locator": "PDF page 3, rotation",
+              "interpretation": "normalized",
+              "note": "Legume preference normalized to Fabaceae, consistent with Kew faba taxonomy."
+            }
+          ],
+          "evidenceRegionIds": ["morocco-general"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Preference for food or forage legumes. No numeric break interval or measured soil-health gain is provided.",
+          "metric": "preferred_predecessor_family",
+          "unit": "family",
+          "timeBasis": "previous_crop",
+          "stage": "whole_cycle",
+          "family": "Fabaceae"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "National references need local review; cultivar and production system unspecified.",
+    "The 500 mm figure in the adjacent ONCA bread-wheat subsection is not a durum rule.",
+    "No quantitative crop-specific return interval established."
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "id": "pea",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Pea",
+    "localNames": [{ "language": "fr", "name": "Petit pois" }],
+    "scientificName": "Pisum sativum L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-pea",
+        "page": null,
+        "quote": "\"scientificName\":\"Pisum sativum L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-brassicas",
+        "page": 3,
+        "quote": "LE PETIT POIS",
+        "locator": "PDF page 3",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 3,
+          "quote": "LE PETIT POIS",
+          "locator": "PDF page 3",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "pea-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 3,
+          "quote": "de Décembre à Février (culture de saison)",
+          "locator": "PDF page 3",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Season crop; one source window, split at the year's end.",
+      "metric": "planting_window",
+      "start": "12-01",
+      "end": "12-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "pea-sowing-late",
+      "citations": [
+        {
+          "sourceId": "pntta-brassicas",
+          "page": 3,
+          "quote": "de Décembre à Février (culture de saison)",
+          "locator": "PDF page 3",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Season crop; one source window, split at the year's end.",
+      "metric": "planting_window",
+      "start": "01-01",
+      "end": "02-29",
+      "precision": "full_month"
+    },
+    {
+      "id": "pea-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "20 30 35 15 100 Mar/Apr Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "100 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO row for a spring sowing.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 100,
+      "maxDays": 100
+    },
+    {
+      "id": "pea-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Peas - Fresh 0.5 1.15 2 1.10",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Legumes (Leguminosae) 0.4 1.15 0.55",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "20 30 35 15 100 Mar/Apr Mediterranean",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 1.15,
+      "kcEnd": 1.1,
+      "stageLengths": [20, 30, 35, 15]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

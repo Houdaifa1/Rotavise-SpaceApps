@@ -1,0 +1,544 @@
+{
+  "id": "onion",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Onion (dry)",
+    "localNames": [{ "language": "fr", "name": "Oignon" }],
+    "scientificName": "Allium cepa L.",
+    "family": "Amaryllidaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-onion",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Allium cepa L.\""
+      },
+      {
+        "sourceId": "ardna-vegetable-rsk",
+        "locator": "PDF page 21, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine.",
+        "page": 21,
+        "quote": "Culture d'oignon"
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "texas-grano",
+      "name": "Texas Grano",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.onion.texas-grano"
+      },
+      "notes": "cultivar; USA; short-day type"
+    },
+    {
+      "id": "granex",
+      "name": "Granex",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.onion.granex"
+      },
+      "notes": "cultivar; USA; short-day type"
+    },
+    {
+      "id": "red-creole",
+      "name": "Red Creole",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.onion.red-creole"
+      },
+      "notes": "cultivar; USA; red short-day type"
+    },
+    {
+      "id": "violet-de-galmi",
+      "name": "Violet de Galmi",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.onion.violet-de-galmi"
+      },
+      "notes": "cultivar; Niger origin; red, storage"
+    },
+    {
+      "id": "short-day-and-intermediate-day-types",
+      "name": "Short-day and intermediate-day types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.onion.short-day-and-intermediate-day-types"
+      },
+      "notes": "type group"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-tth",
+          "locator": "PDF page 22",
+          "interpretation": "context_only",
+          "note": "Tangier zone.",
+          "page": 22,
+          "quote": "Deux périodes de production de l'oignon dans la zone"
+        }
+      ],
+      "note": "Dated planting is sourced only for the Tangier zone."
+    }
+  ],
+  "rules": [
+    {
+      "id": "onion-planting-january",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-tth",
+          "locator": "PDF page 22, Table 7",
+          "interpretation": "normalized",
+          "note": "January, the whole month.",
+          "page": 22,
+          "quote": "Plantation de janvier et récolte en mai"
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-tangier-tetouan-al-hoceima"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Transplanted; the nursery starts in October.",
+      "metric": "planting_window",
+      "start": "01-01",
+      "end": "01-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "onion-planting-april",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-tth",
+          "locator": "PDF page 22, Table 7",
+          "interpretation": "normalized",
+          "note": "April, the whole month.",
+          "page": 22,
+          "quote": "Plantation d'avril et récolte en juillet"
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-tangier-tetouan-al-hoceima"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Transplanted.",
+      "metric": "planting_window",
+      "start": "04-01",
+      "end": "04-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "onion-duration",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-tth",
+          "locator": "PDF page 22",
+          "interpretation": "normalized",
+          "note": "About 100 days from planting.",
+          "page": 22,
+          "quote": "Plantation d'avril et récolte en juillet"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Onion (dry)",
+          "interpretation": "normalized",
+          "note": "150 days as the longer bound.",
+          "page": null,
+          "quote": "15 25 70 40 150 April Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Counted from transplanting; the nursery is extra.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 100,
+      "maxDays": 150
+    },
+    {
+      "id": "onion-frost",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-rsk",
+          "locator": "PDF page 21, 3.1",
+          "interpretation": "normalized",
+          "note": "Frost encoded as a minimum below 0 °C over the cycle.",
+          "page": 21,
+          "quote": "La plante est sensible au gel pendant la phase d'installation"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "The source names the establishment phase; applied across the cycle.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "onion-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Onions",
+          "interpretation": "normalized",
+          "note": "Mid 1.05, end 0.75.",
+          "page": null,
+          "quote": "Onions - dry 1.05 0.75"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Small vegetables group",
+          "interpretation": "normalized",
+          "note": "Initial 0.7 from the group.",
+          "page": null,
+          "quote": "Small Vegetables 0.7 1.05 0.95"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Onion (dry)",
+          "interpretation": "normalized",
+          "note": "Stage shares.",
+          "page": null,
+          "quote": "15 25 70 40 150 April Mediterranean"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.7,
+      "kcMid": 1.05,
+      "kcEnd": 0.75,
+      "stageLengths": [15, 25, 70, 40]
+    },
+    {
+      "id": "c-onion-minimum-return-interval-minimum-return-interval",
+      "citations": [
+        {
+          "sourceId": "rs-onca-vegetables",
+          "locator": "PDF/printed page 57, §3.1.4",
+          "interpretation": "normalized",
+          "note": "Retain the range instead of selecting an endpoint. The same page also gives a different disease-specific range, recorded separately in the report. Garlic is explicitly included among the other alliums.",
+          "page": 57,
+          "quote": "4 à 5 ans"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Source range 4–5 years; the larger is used. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 5
+    },
+    {
+      "id": "c-onion-preferred-predecessor-preferred-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-onca-vegetables",
+          "locator": "PDF/printed page 57, §3.1.4, Précédents favorables",
+          "interpretation": "normalized",
+          "note": "Map cereals to Poaceae. The other individually named predecessors do not justify making their entire botanical families favourable.",
+          "page": 57,
+          "quote": "céréales"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "c-onion-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-onca-vegetables",
+          "locator": "PDF/printed page 57, §3.1.4, Précédents défavorables",
+          "interpretation": "normalized",
+          "note": "The source says unfavourable, not an unconditional prohibition. Do not expand the restriction to every member of Amaryllidaceae.",
+          "page": 57,
+          "quote": "alliacées"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Amaryllidaceae"
+    },
+    {
+      "id": "g-onion-diseases-crop-health-break",
+      "citations": [
+        {
+          "sourceId": "rs-onca-vegetables",
+          "locator": "PDF printed pages 61-64, section 3.8.1 'Le mildiou de l'oignon', Symptômes, and Tableau 21 (rotation minimale de 4 ans recommandée)",
+          "interpretation": "normalized",
+          "note": "Direct quote of the disease's symptom description and the stated minimum rotation break, recorded as-is from the source. No treatment, pesticide or dose recorded.",
+          "page": null,
+          "quote": "Sur feuilles, des taches claires allongées avec une discrète zonation sont observées. En condition humide, elles se recouvrent d'un feutrage gris violacé. ... rotation au minimum de 4 ans recommandée"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "4 years without host crops after Downy mildew.",
+      "metric": "crop_health_break",
+      "issueId": "peronospora-destructor",
+      "minimumBreakDays": 1460
+    },
+    {
+      "id": "t-a-onion-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture/agronomy knowledge: heat above about 35 C stresses bulbing",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.onion.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"bulb_formation\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "other",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-fill-onion-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 35 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.onion.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    }
+  ],
+  "references": [
+    {
+      "id": "c-onion-minimum-return-interval-disease-specific-alternative-background-7",
+      "topic": "background",
+      "summary": "Return interval 5 years under condition: Ditylenchus dipsaci and listed fungi.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-onca-vegetables",
+          "locator": "PDF/printed page 57, §3.1.4, second interval paragraph",
+          "interpretation": "normalized",
+          "note": "The source gives this range alongside a general four-to-five-year allium interval on the same page. Both are retained; neither endpoint nor one range is silently selected.",
+          "page": 57,
+          "quote": "3 à 5 ans"
+        }
+      ]
+    },
+    {
+      "id": "f-onion-observed-yield-yield-32",
+      "topic": "yield",
+      "summary": "Yield 30.87–30.87 t/ha (product onion crop; bulb subtype not specified; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 30.87, "max": 30.87 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 67 / printed page 64, Table 37, Oignons row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. No farming-system breakdown. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "id": "f-onion-settat-2015-2016-yield-33",
+      "topic": "yield",
+      "summary": "Yield 30–30 t/ha (product bulbs; years 2015-2016; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 30, "max": 30 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 71, Production agricole, Oignons row, Rendement (T/Ha), irrigated column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The same row reports a rainfed crop failure; the observation here is the irrigated column, not a pooled mean. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "id": "a-onion-heat-background-78",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 30 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Allium cepa\"; field TMAX",
+          "interpretation": "normalized",
+          "note": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "k-onion-background-60",
+      "topic": "background",
+      "summary": "Bulb crop; green-onion harvest differs from mature dry bulbs. Cold can induce bolting after plants reach a susceptible physiological size. Excessive heat can impair establishment and growth; bulb storage temperatures describe a different process. Onion, garlic and other Allium crops can share white rot and stem/bulb nematode risks. Bulbing depends strongly on cultivar-specific daylength response; an imported cultivar may not bulb suitably at the local latitude.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.onion"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Other regions give nursery dates only."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

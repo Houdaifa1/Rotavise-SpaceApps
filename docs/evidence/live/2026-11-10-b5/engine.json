@@ -1,0 +1,34 @@
+{
+  "command": "node tooling/performance/backend-engine-benchmark.mjs",
+  "exitCode": 0,
+  "report": {
+    "date": "2026-11-10T18:54:52.310Z",
+    "machine": {
+      "model": "Apple M5",
+      "node": "v24.19.0",
+      "platform": "darwin",
+      "arch": "arm64",
+      "load": [2.671875, 2.376953125, 2.17431640625]
+    },
+    "catalog": "0.15.0",
+    "syntheticWeather": true,
+    "cases": [
+      {
+        "mode": "suggest",
+        "seconds": 4.980614042,
+        "sha256": "9bb8becab13d0a4a4b72859aa79a0b7091042fec37fafb47c7ced7d1ac13ce9e",
+        "bytes": 4761982,
+        "candidates": 4,
+        "schedulable": 168
+      },
+      {
+        "mode": "declared",
+        "seconds": 4.746210333,
+        "sha256": "c1114a23a427f0a467a87f53d43173def5f71fa997c0ca90afbdf6d08db935b6",
+        "bytes": 4937244,
+        "candidates": 5,
+        "schedulable": 168
+      }
+    ]
+  }
+}

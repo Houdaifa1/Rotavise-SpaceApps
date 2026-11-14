@@ -1,0 +1,27 @@
+{
+  "purpose": "inter-provider-differences-not-accuracy-or-ground-truth",
+  "days": 122,
+  "variables": {
+    "T2M_MIN": {
+      "meanAbsoluteDifference": 3.8395,
+      "maxAbsoluteDifference": 8.03
+    },
+    "T2M_MAX": {
+      "meanAbsoluteDifference": 2.075,
+      "maxAbsoluteDifference": 7.17
+    },
+    "T2M": {
+      "meanAbsoluteDifference": 2.2263,
+      "maxAbsoluteDifference": 4.7
+    },
+    "PRECTOTCORR": {
+      "meanAbsoluteDifference": 0.6316,
+      "maxAbsoluteDifference": 10.22
+    }
+  },
+  "precipitationTotal": {
+    "nasaPower": 182.22,
+    "openMeteoERA5": 223,
+    "unit": "mm"
+  }
+}

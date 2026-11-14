@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>A region-wide, multi-year set of crop field boundary labels for Africa - Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Dataset",
+      "name" : "A region-wide, multi-year set of crop field boundary labels for Africa",
+      "description" : "Crop field boundaries digitized in Planet imagery collected across Africa between 2017 and 2023, developed by \u003ca href=\"https://farmerline.co/\"\u003eFarmerline\u003c/a\u003e, \u003ca href=\"https://spatialcollective.com/\"\u003eSpatial Collective\u003c/a\u003e,  and the \u003ca href=\"https://agroimpacts.info/\"\u003eAgricultural Impacts Research Group\u003c/a\u003e at \u003ca href=\"https://www.clarku.edu/\"\u003eClark University\u003c/a\u003e, with support from the \u003ca href=\"https://lacunafund.org/\"\u003eLacuna Fund\u003c/a\u003e (\u003ca href=\"https://arxiv.org/abs/2412.18483\"\u003eEstes et al, 2024\u003c/a\u003e; \u003ca href=\"https://zenodo.org/records/11060871\"\u003eWussah et al. (2023)\u003c/a\u003e). This dataset has been  further supplemented by additional labels collected primarily for  for 2018 over a subset of countries, which provide an example of their application in training and validating a CNN-based cropland mapping model  \u003ca href=\"https://www.mdpi.com/2072-4292/17/3/474\"\u003e(Khallaghi et al. 2025)\u003c/a\u003e.",
+      "license" : "\u003ca href=\"https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf\"\u003ePlanet NICFI participant license agreement\u003c/a\u003e",
+      "sourceOrganization" : "\u003ca href=\"https://agroimpacts.info/\"\u003eThe Agricultural Impacts Research Group\u003c/a\u003e"
+    }
+    </script>
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <h1>A region-wide, multi-year set of crop field boundary labels for Africa</h1>
+    <p>
+      <span class="label label-info tag link-tag">agriculture</span>
+
+      <span class="label label-info tag link-tag">cog</span>
+
+      <span class="label label-info tag link-tag">labeled</span>
+
+      <span class="label label-info tag link-tag">land cover</span>
+
+      <span class="label label-info tag link-tag">machine learning</span>
+
+      <span class="label label-info tag link-tag">satellite imagery</span>
+    </p>
+    <div class="row">
+      <div class="col-md-6">
+      <h3>Description</h3>
+      <p>Crop field boundaries digitized in Planet imagery collected across Africa between 2017 and 2023, developed by <a href="https://farmerline.co/">Farmerline</a>, <a href="https://spatialcollective.com/">Spatial Collective</a>,  and the <a href="https://agroimpacts.info/">Agricultural Impacts Research Group</a> at <a href="https://www.clarku.edu/">Clark University</a>, with support from the <a href="https://lacunafund.org/">Lacuna Fund</a> (<a href="https://arxiv.org/abs/2412.18483">Estes et al, 2024</a>; <a href="https://zenodo.org/records/11060871">Wussah et al. (2023)</a>). This dataset has been  further supplemented by additional labels collected primarily for  for 2018 over a subset of countries, which provide an example of their application in training and validating a CNN-based cropland mapping model  <a href="https://www.mdpi.com/2072-4292/17/3/474">(Khallaghi et al. 2025)</a>.</p>
+
+      <h4>Update Frequency</h4>
+      <p>Updated versions of the dataset are added as they are developed</p>
+
+      <h4>License</h4>
+      <p><a href="https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf">Planet NICFI participant license agreement</a></p>
+
+      <h4>Documentation</h4>
+      <p>Information on the primary dataset can be found <a href="https://github.com/agroimpacts/lacunalabels/">here</a>. Documentation for added labels is available <a href="https://github.com/agroimpacts/cnn-generalization-enhancement">here</a>.</p>
+
+      <h4>Managed By</h4>
+      <p><a href="https://agroimpacts.info/">The Agricultural Impacts Research Group</a></p>
+      <p>See all datasets managed by <a href="https://registry.opendata.aws?search&#x3D;managedBy:the agricultural impacts research group">The Agricultural Impacts Research Group</a>.</p>
+
+      <h4>Contact</h4>
+      <p><a href="mailto:airg@clarku.edu">&#x61;&#x69;&#114;&#x67;&#64;&#x63;&#x6c;&#x61;&#114;&#107;&#117;&#46;&#x65;&#x64;&#117;</a></p>
+
+      <h4>How to Cite</h4>
+      <p>A region-wide, multi-year set of crop field boundary labels for Africa was accessed on <code>DATE</code> from https://registry.opendata.aws/africa-field-boundary-labels. Primary dataset: Estes et al. (2024). A region-wide, multi-year set of crop field boundary labels for Africa. arXiv:2412.18483. Additional labels: Khallaghi et al. (2025). Generalization enhancement strategies to enable cross-year cropland mapping with convolutional neural networks trained using historical samples. Remote Sensing, 17(3), 474.</p>
+
+      <h4 name="usageexamples">Usage Examples</h4>
+        <h5 class="dataatwork-category">Tutorials</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/agroimpacts/lacunalabels" class="" target="_none">Instructions on data access and label-making demonstration notebook</a> by <a href="https://github.com/ldemaz" target="_none">Lyndon Estes</a></a>
+            <br>
+            <a href="https://studiolab.sagemaker.aws/import/github/https://github.com/agroimpacts/lacunalabels/blob/main/notebooks/makelabels/label-chips.ipynb" rel="nofollow" target="_blank"><img src="https://studiolab.sagemaker.aws/studiolab.svg" alt="Open In SageMaker Studio Lab" data-canonical-src="https://studiolab.sagemaker.aws/studiolab.svg" style="max-width: 100%;"></a><br>
+            
+          </li>        </ul>
+        <h5 class="dataatwork-category">Publications</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="http://www.sciencedirect.com/science/article/pii/S136481521630010X" class="" target="_none">A platform for crowdsourcing the creation of representative, accurate landcover maps</a> by Estes et al. (2016)</a>
+            <br>
+            
+            
+          </li>          <li>
+            <a href="https://arxiv.org/abs/2412.18483" class="" target="_none">A region-wide, multi-year set of crop field boundary labels for Africa</a> by Estes et al. (2024)</a>
+            <br>
+            
+            
+          </li>          <li>
+            <a href="https://zenodo.org/records/11060871" class="" target="_none">A region-wide, multi-year set of crop field boundary labels for Africa</a> by Wussah et al. (2023)</a>
+            <br>
+            
+            
+          </li>          <li>
+            <a href="https://www.mdpi.com/2072-4292/17/3/474" class="" target="_none">Generalization enhancement strategies to enable cross-year cropland mapping with convolutional neural networks trained using historical samples</a> by Khallaghi et al. (2025)</a>
+            <br>
+            
+            
+          </li>          <li>
+            <a href="https://www.frontiersin.org/article/10.3389/frai.2021.744863" class="" target="_none">High resolution, annual maps of field boundaries for smallholder-dominated croplands at national scales</a> by Estes et al. (2022)</a>
+            <br>
+            
+            
+          </li>          <li>
+            <a href="https://github.com/agroimpacts/lacunalabels/blob/main/docs/report/technical-report.pdf" class="" target="_none">Technical report on label develop and processing</a> by Wussah et al. (2023)</a>
+            <br>
+            
+            
+          </li>        </ul>
+
+    </div>
+    <div class="col-md-5 col-md-offset-1">
+      <h3>Resources on AWS</h3>
+      <ul class="resource-list">
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description">Field boundaries and corresponding Planet images</dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type s3-bucket">S3 Bucket</dd>
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>arn:aws:s3:::africa-field-boundary-labels</code></dd>
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>us-west-2</code></dd>
+            <dt class="resource-region"><a href="https://aws.amazon.com/cli/">AWS CLI</a> Access (No AWS account required)</dt>
+            <dd><code>aws s3 ls --no-sign-request s3://africa-field-boundary-labels/</code></dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description"><a href="https://www.mdpi.com/2072-4292/17/3/474">Additional rasterized field labels and corresponding Planet images</a></dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type s3-bucket">S3 Bucket</dd>
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>arn:aws:s3:::africa-field-boundary-labels/extra</code></dd>
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>us-west-2</code></dd>
+            <dt class="resource-region"><a href="https://aws.amazon.com/cli/">AWS CLI</a> Access (No AWS account required)</dt>
+            <dd><code>aws s3 ls --no-sign-request s3://africa-field-boundary-labels/extra/</code></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <hr/>
+    <p><a href="https://github.com/awslabs/open-data-registry/blob/main/datasets/africa-field-boundary-labels.yaml">Edit this dataset entry on GitHub</a></p>
+    <p><a href="mailto:opendata@amazon.com">Tell us about your project</a></p>
+    <p><a href="/"><b>Home</b></a></p>
+  </div>
+  <script src="/js/tags.js"></script>

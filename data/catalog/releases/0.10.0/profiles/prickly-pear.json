@@ -1,0 +1,267 @@
+{
+  "id": "prickly-pear",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Prickly pear",
+    "localNames": [
+      { "language": "fr", "name": "Figuier de Barbarie" },
+      { "language": "ar", "name": "الهندية" }
+    ],
+    "scientificName": "Opuntia ficus-indica (L.) Mill.",
+    "family": "Cactaceae",
+    "citations": [],
+    "recall": {
+      "confidence": "medium",
+      "basis": "Names, scientific name and family recalled by the AI model; check against GBIF.",
+      "valueKind": "model_recall_unverified",
+      "recordedOn": "2026-11-07",
+      "researchItem": "identity:prickly-pear"
+    }
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "aakria",
+      "name": "Aakria",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pricklypear-6948328",
+          "locator": "Materials: plant material",
+          "interpretation": "normalized",
+          "note": "Aakria identified as Opuntia ficus-indica in the figure caption; Derbana is O. megacantha.",
+          "page": null,
+          "quote": "locally called Aakria, Derbana, and Mles"
+        }
+      ],
+      "notes": "local_variety"
+    },
+    {
+      "id": "derbana",
+      "name": "Derbana",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pricklypear-6948328",
+          "locator": "Materials: plant material",
+          "interpretation": "normalized",
+          "note": "Not in the training list. Training names Moussa, Aissa, Sefra and Dellahia were not found in the saved source and remain unconfirmed.",
+          "page": null,
+          "quote": "locally called Aakria, Derbana, and Mles"
+        }
+      ],
+      "notes": "local_variety"
+    },
+    {
+      "id": "mles",
+      "name": "Mles",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-pmc-pricklypear-6948328",
+          "locator": "Materials: plant material",
+          "interpretation": "normalized",
+          "note": "Not in the training list. Training names Moussa, Aissa, Sefra and Dellahia were not found in the saved source and remain unconfirmed.",
+          "page": null,
+          "quote": "locally called Aakria, Derbana, and Mles"
+        }
+      ],
+      "notes": "local_variety"
+    },
+    {
+      "id": "moussa",
+      "name": "Moussa",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.prickly-pear.moussa"
+      },
+      "notes": "clone; Moroccan"
+    },
+    {
+      "id": "aissa",
+      "name": "Aissa",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.prickly-pear.aissa"
+      },
+      "notes": "clone; Moroccan"
+    },
+    {
+      "id": "sefra",
+      "name": "Sefra",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.prickly-pear.sefra"
+      },
+      "notes": "clone; Moroccan"
+    },
+    {
+      "id": "dellahia",
+      "name": "Dellahia",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.prickly-pear.dellahia"
+      },
+      "notes": "clone; Moroccan; reported as less affected by cochineal"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Presence in Morocco recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "presence:prickly-pear"
+      },
+      "note": "Candidate only: not validated for any region."
+    }
+  ],
+  "rules": [
+    {
+      "id": "t-a-prickly-pear-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: cladodes are damaged by frost below about -5 C; hardiness depends on type",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.prickly-pear.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -5,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-prickly-pear-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge: tolerates very hot dry conditions; burn risk above about 45 C",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.prickly-pear.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 45
+    }
+  ],
+  "references": [
+    {
+      "id": "t-b-prickly-pear-planting-window-background-561",
+      "topic": "background",
+      "summary": "Planting: 03-01 to 04-30",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall: planting of cladode pads in spring or autumn",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.prickly-pear.planting_window"
+      }
+    },
+    {
+      "id": "t-b-prickly-pear-stand-lifetime-background-562",
+      "topic": "background",
+      "summary": "Stand lifetime 7300–10950 days.",
+      "value": { "unit": "days", "min": 7300, "max": 10950 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "general agronomy/horticulture knowledge; orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.prickly-pear.stand_lifetime"
+      }
+    },
+    {
+      "id": "t-c-prickly-pear-rotation-background-563",
+      "topic": "background",
+      "summary": "Rotation: orchard-type perennial; fits the catalog's orchard model better than the annual rotation engine",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "perennial; not rotated",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.prickly-pear.rotation"
+      }
+    },
+    {
+      "id": "t-f-prickly-pear-observed-yield-yield-564",
+      "topic": "yield",
+      "summary": "Yield 8–20 t/ha (system rainfed_or_light_irrigation). AI recall, not a Moroccan statistic.",
+      "value": { "unit": "t/ha", "min": 8, "max": 20 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "recall; fodder biomass would be a separate measure",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.F.prickly-pear.observed_yield"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Most facts about this crop are recalled by the AI model (marked model_recall); they are unverified and not expert-reviewed.",
+    "Listed as an orchard crop: it is not placed in a rotation."
+  ]
+}

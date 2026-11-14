@@ -1,0 +1,104 @@
+[
+  {
+    "provider": "nasa-power",
+    "sample": {
+      "name": "beni-mellal-leap",
+      "latitude": 32.3373,
+      "longitude": -6.3498,
+      "start": "2024-02-27",
+      "end": "2024-03-02"
+    },
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MIN%2CT2M_MAX%2CT2M%2CPRECTOTCORR&community=AG&format=JSON&time-standard=UTC&latitude=32.3373&longitude=-6.3498&start=20240227&end=20240302",
+    "retrievedAt": "2026-09-26T22:17:07.795Z",
+    "status": 200,
+    "elapsedMs": 876,
+    "bytes": 1044,
+    "sha256": "b10fac0fd71e738341aaf37fdcb7163961c7deafc3080431135920eae846eea1",
+    "file": "nasa-power-beni-mellal-leap.json"
+  },
+  {
+    "provider": "open-meteo-era5",
+    "sample": {
+      "name": "beni-mellal-leap",
+      "latitude": 32.3373,
+      "longitude": -6.3498,
+      "start": "2024-02-27",
+      "end": "2024-03-02"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?daily=temperature_2m_min%2Ctemperature_2m_max%2Ctemperature_2m_mean%2Cprecipitation_sum&models=era5&timezone=GMT&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=nearest&latitude=32.3373&longitude=-6.3498&start_date=2024-02-27&end_date=2024-03-02",
+    "retrievedAt": "2026-09-26T22:17:08.674Z",
+    "status": 200,
+    "elapsedMs": 678,
+    "bytes": 569,
+    "sha256": "08c634739998ffd044fd3fabbf07b13b25373fda6c2818af026156822e994e64",
+    "file": "open-meteo-era5-beni-mellal-leap.json"
+  },
+  {
+    "provider": "nasa-power",
+    "sample": {
+      "name": "sydney-year",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "start": "2023-12-30",
+      "end": "2024-01-03"
+    },
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MIN%2CT2M_MAX%2CT2M%2CPRECTOTCORR&community=AG&format=JSON&time-standard=UTC&latitude=-33.8688&longitude=151.2093&start=20231230&end=20240103",
+    "retrievedAt": "2026-09-26T22:17:09.353Z",
+    "status": 200,
+    "elapsedMs": 781,
+    "bytes": 1052,
+    "sha256": "bf94f7bf353a524037c40f83c92f98ea482202a0d72c90a0bbe6080da7a1f896",
+    "file": "nasa-power-sydney-year.json"
+  },
+  {
+    "provider": "open-meteo-era5",
+    "sample": {
+      "name": "sydney-year",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "start": "2023-12-30",
+      "end": "2024-01-03"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?daily=temperature_2m_min%2Ctemperature_2m_max%2Ctemperature_2m_mean%2Cprecipitation_sum&models=era5&timezone=GMT&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=nearest&latitude=-33.8688&longitude=151.2093&start_date=2023-12-30&end_date=2024-01-03",
+    "retrievedAt": "2026-09-26T22:17:10.138Z",
+    "status": 200,
+    "elapsedMs": 83,
+    "bytes": 580,
+    "sha256": "a8130c33fdc91580cf197c84c398439743abdee0f6ed6d12899ab9c838870c08",
+    "file": "open-meteo-era5-sydney-year.json"
+  },
+  {
+    "provider": "nasa-power",
+    "sample": {
+      "name": "beni-mellal-season",
+      "latitude": 32.3373,
+      "longitude": -6.3498,
+      "start": "2023-12-01",
+      "end": "2024-03-31"
+    },
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MIN%2CT2M_MAX%2CT2M%2CPRECTOTCORR&community=AG&format=JSON&time-standard=UTC&latitude=32.3373&longitude=-6.3498&start=20231201&end=20240331",
+    "retrievedAt": "2026-09-26T22:17:10.223Z",
+    "status": 200,
+    "elapsedMs": 589,
+    "bytes": 8664,
+    "sha256": "b7dc5f4a77c42a1a4d5e5d749698d09d741c60db8fb9f32c430ddeaa9efee2d9",
+    "file": "nasa-power-beni-mellal-season.json"
+  },
+  {
+    "provider": "open-meteo-era5",
+    "sample": {
+      "name": "beni-mellal-season",
+      "latitude": 32.3373,
+      "longitude": -6.3498,
+      "start": "2023-12-01",
+      "end": "2024-03-31"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?daily=temperature_2m_min%2Ctemperature_2m_max%2Ctemperature_2m_mean%2Cprecipitation_sum&models=era5&timezone=GMT&temperature_unit=celsius&precipitation_unit=mm&elevation=nan&cell_selection=nearest&latitude=32.3373&longitude=-6.3498&start_date=2023-12-01&end_date=2024-03-31",
+    "retrievedAt": "2026-09-26T22:17:10.813Z",
+    "status": 200,
+    "elapsedMs": 150,
+    "bytes": 4291,
+    "sha256": "af845341da7dec2c80cc4293bd22a48030d4936cd4cd952f7c407f0ef65ffe6e",
+    "file": "open-meteo-era5-beni-mellal-season.json"
+  }
+]

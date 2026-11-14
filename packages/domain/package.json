@@ -1,0 +1,22 @@
+{
+  "name": "@rotavise/domain",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "node ../../tooling/verification/build-typescript.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0",
+    "@js-temporal/polyfill": "0.5.1",
+    "@rotavise/catalog": "workspace:*",
+    "@rotavise/contracts": "workspace:*"
+  }
+}

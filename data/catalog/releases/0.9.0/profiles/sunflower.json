@@ -1,0 +1,267 @@
+{
+  "id": "sunflower",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sunflower",
+    "localNames": [{ "language": "fr", "name": "Tournesol" }],
+    "scientificName": "Helianthus annuus L.",
+    "family": "Asteraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-sunflower",
+        "page": null,
+        "quote": "\"scientificName\":\"Helianthus annuus L.\"",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "ardna-oilseed-rsk",
+        "page": 6,
+        "quote": "Techniques de production du tournesol",
+        "locator": "PDF page 6, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine."
+      }
+    ]
+  },
+  "harvestProduct": "oilseed",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-rsk",
+          "page": 7,
+          "quote": "Zone côtière et centre (Allal Tazi, Souk Larbâa et Belksiri ) Tournesol",
+          "locator": "PDF page 7",
+          "interpretation": "context_only",
+          "note": "Regional sheet."
+        }
+      ],
+      "note": "Regional sheet for Rabat-Salé-Kénitra; other regions have no sowing date yet."
+    }
+  ],
+  "rules": [
+    {
+      "id": "sunflower-sowing-rsk",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-rsk",
+          "page": 7,
+          "quote": "Semis au mi-Février pour Leila et Bosfora",
+          "locator": "PDF page 7",
+          "interpretation": "normalized",
+          "note": "Mid-February encoded as 15 February."
+        },
+        {
+          "sourceId": "ardna-oilseed-rsk",
+          "page": 7,
+          "quote": "Tournesol Semis en fin Février pour Leila et Bosfora",
+          "locator": "PDF page 7",
+          "interpretation": "normalized",
+          "note": "End of February encoded as 29 February, the window's last day."
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-rabat-sale-kenitra"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Dates written for two varieties; the sheet's zones differ by two weeks.",
+      "metric": "planting_window",
+      "start": "02-15",
+      "end": "02-29",
+      "precision": "approximate"
+    },
+    {
+      "id": "sunflower-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "25 35 45 25 130 April/May Medit.; California",
+          "locator": "Table 11, Sunflower",
+          "interpretation": "normalized",
+          "note": "April/May row; a February sowing may run longer."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO spring row; no Moroccan duration found.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 130,
+      "maxDays": 130
+    },
+    {
+      "id": "sunflower-flowering-heat",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "page": 39,
+          "quote": "Maximum air temperature above which pollination starts to fail (heat stress) (°C) Conservative (1) 40",
+          "locator": "PDF page 39, Sunflower 4.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine."
+        },
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "page": 37,
+          "quote": "Time from sowing to flowering (growing degree day) Cultivar (4) Time to emergence + 1000 - 1300 Length of the flowering stage (growing degree day) Cultivar (4) 300 - 400",
+          "locator": "PDF page 37, Sunflower 1.3",
+          "interpretation": "normalized",
+          "note": "Window from 150+1000 to 200+1300+400 growing degree days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop default; not calibrated for a Moroccan cultivar.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": {
+        "basis": "growing_degree_days_from_sowing",
+        "method": "aquacrop_method_3",
+        "startGdd": 1150,
+        "endGdd": 1900,
+        "baseDegC": 4,
+        "upperDegC": 30
+      },
+      "lowerDegC": null,
+      "upperDegC": 40
+    },
+    {
+      "id": "sunflower-flowering-cold",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "page": 39,
+          "quote": "Minimum air temperature below which pollination starts to fail (cold stress) (°C) Conservative (1) 10",
+          "locator": "PDF page 39, Sunflower 4.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine."
+        },
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "page": 37,
+          "quote": "Time from sowing to flowering (growing degree day) Cultivar (4) Time to emergence + 1000 - 1300 Length of the flowering stage (growing degree day) Cultivar (4) 300 - 400",
+          "locator": "PDF page 37, Sunflower 1.3",
+          "interpretation": "normalized",
+          "note": "Window from 150+1000 to 200+1300+400 growing degree days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop default; not calibrated for a Moroccan cultivar.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": {
+        "basis": "growing_degree_days_from_sowing",
+        "method": "aquacrop_method_3",
+        "startGdd": 1150,
+        "endGdd": 1900,
+        "baseDegC": 4,
+        "upperDegC": 30
+      },
+      "lowerDegC": 10,
+      "upperDegC": null
+    },
+    {
+      "id": "sunflower-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Sunflower 1.0-1.15 9 0.35 2.0",
+          "locator": "Table 12, Sunflower",
+          "interpretation": "normalized",
+          "note": "Upper mid value 1.15 and end 0.35."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Oil Crops 0.35 1.15 0.35",
+          "locator": "Table 12, Oil crops group",
+          "interpretation": "normalized",
+          "note": "Initial value 0.35 from the group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "25 35 45 25 130 April/May Medit.; California",
+          "locator": "Table 11, Sunflower",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.35,
+      "kcMid": 1.15,
+      "kcEnd": 0.35,
+      "stageLengths": [25, 35, 45, 25]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Only the Rabat-Salé-Kénitra sheet gives dated sowing."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed."
+  ]
+}

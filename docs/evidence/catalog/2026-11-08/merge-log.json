@@ -1,0 +1,158 @@
+{
+  "summary": {
+    "version": "0.11.0",
+    "before": {
+      "crops": 207,
+      "cultivars": 557,
+      "problems": 387,
+      "rules": 1366,
+      "references": 753,
+      "applicability": 219
+    },
+    "after": {
+      "crops": 246,
+      "cultivars": 1226,
+      "problems": 586,
+      "rules": 2646,
+      "references": 1983,
+      "applicability": 913
+    },
+    "added": {
+      "crops": 39,
+      "cultivars": 669,
+      "problems": 199,
+      "rules": 1280,
+      "references": 1230,
+      "applicability": 694
+    },
+    "qualityAdditions": {
+      "regions": 655,
+      "kc": 105,
+      "ph": 212,
+      "ece": 214,
+      "drainage": 212,
+      "water": 171,
+      "nfix": 246,
+      "rooting": 246,
+      "om": 246,
+      "erosion": 246,
+      "forage": 246
+    },
+    "cultivarsAdded": 669,
+    "healthBreakRules": 231,
+    "removedFromPrevious": 0,
+    "canonicalBytes": 4538231,
+    "sha256": "c5536dce6061c227ec1af2fe28fa861cbca965dbb9bd45b06163115cd290b8b3",
+    "deferred": "Licence cleanup (FAO Ecocrop-derived values, long quotes) is deferred by the user: kept exactly as in 0.10.0."
+  },
+  "addedCrops": [
+    "bottle-gourd",
+    "luffa",
+    "cape-gooseberry",
+    "radicchio",
+    "runner-bean",
+    "lima-bean",
+    "spelt",
+    "sainfoin",
+    "red-clover",
+    "white-clover",
+    "persian-clover",
+    "phalaris",
+    "tall-fescue",
+    "cocksfoot",
+    "perennial-ryegrass",
+    "hairy-vetch",
+    "phacelia",
+    "oilseed-radish",
+    "black-oat",
+    "oleaster",
+    "aleppo-pine",
+    "atlas-cedar",
+    "cork-oak",
+    "holm-oak",
+    "eucalyptus",
+    "ziziphus-lotus",
+    "strawberry-tree",
+    "dwarf-palm",
+    "moringa",
+    "acacia-raddiana",
+    "roselle",
+    "calendula",
+    "milk-thistle",
+    "borage",
+    "hyssop",
+    "sweet-orange",
+    "mandarin",
+    "lemon",
+    "grapefruit"
+  ],
+  "skipped": [
+    { "issue": "puccinia-coronata", "reason": "already in the catalog" },
+    { "issue": "zymoseptoria-tritici", "reason": "already in the catalog" },
+    { "issue": "pyrenophora-teres", "reason": "already in the catalog" },
+    { "issue": "rhopalosiphum-padi", "reason": "already in the catalog" },
+    { "issue": "spodoptera-littoralis", "reason": "already in the catalog" },
+    { "issue": "spodoptera-exigua", "reason": "already in the catalog" },
+    { "issue": "sesamia-nonagrioides", "reason": "already in the catalog" },
+    { "issue": "puccinia-sorghi", "reason": "already in the catalog" },
+    { "issue": "ustilago-maydis", "reason": "already in the catalog" },
+    { "issue": "sphacelotheca-reiliana", "reason": "already in the catalog" },
+    { "issue": "rhizoctonia-solani", "reason": "already in the catalog" },
+    { "issue": "sclerotinia-sclerotiorum", "reason": "already in the catalog" },
+    { "issue": "sclerotium-rolfsii", "reason": "already in the catalog" },
+    { "issue": "verticillium-dahliae", "reason": "already in the catalog" },
+    { "issue": "pythium-damping-off", "reason": "already in the catalog" },
+    {
+      "issue": "tomato-yellow-leaf-curl-virus",
+      "reason": "already in the catalog"
+    },
+    { "issue": "thrips-tabaci", "reason": "already in the catalog" },
+    { "issue": "tetranychus-urticae", "reason": "already in the catalog" },
+    {
+      "issue": "trialeurodes-vaporariorum",
+      "reason": "already in the catalog"
+    },
+    { "issue": "podosphaera-xanthii", "reason": "already in the catalog" },
+    {
+      "issue": "pseudoperonospora-cubensis",
+      "reason": "already in the catalog"
+    },
+    {
+      "issue": "zucchini-yellow-mosaic-virus",
+      "reason": "already in the catalog"
+    },
+    { "issue": "uromyces-fabae", "reason": "already in the catalog" },
+    { "issue": "sitona-lineatus", "reason": "already in the catalog" },
+    { "issue": "uromyces-appendiculatus", "reason": "already in the catalog" },
+    {
+      "issue": "xanthomonas-campestris-campestris",
+      "reason": "already in the catalog"
+    },
+    { "issue": "sclerotium-cepivorum", "reason": "already in the catalog" },
+    { "issue": "puccinia-allii", "reason": "already in the catalog" },
+    { "issue": "septoria-apiicola", "reason": "already in the catalog" },
+    { "issue": "scrobipalpa-ocellatella", "reason": "already in the catalog" },
+    { "issue": "spilocaea-oleaginea", "reason": "already in the catalog" },
+    { "issue": "pseudomonas-savastanoi", "reason": "already in the catalog" },
+    { "issue": "prays-oleae", "reason": "already in the catalog" },
+    { "issue": "saissetia-oleae", "reason": "already in the catalog" },
+    { "issue": "taphrina-deformans", "reason": "already in the catalog" },
+    { "issue": "wilsonomyces-carpophilus", "reason": "already in the catalog" },
+    { "issue": "podosphaera-pannosa", "reason": "already in the catalog" },
+    {
+      "issue": "pseudaulacaspis-pentagona",
+      "reason": "already in the catalog"
+    },
+    { "issue": "venturia-inaequalis", "reason": "already in the catalog" },
+    {
+      "issue": "rhynchophorus-ferrugineus",
+      "reason": "already in the catalog"
+    },
+    { "issue": "virachola-livia", "reason": "already in the catalog" },
+    { "issue": "uromyces-striatus", "reason": "already in the catalog" },
+    { "issue": "therioaphis-trifolii", "reason": "already in the catalog" },
+    { "issue": "puccinia-menthae", "reason": "already in the catalog" },
+    { "issue": "protomyces-macrosporus", "reason": "already in the catalog" }
+  ],
+  "notes": []
+}

@@ -1,0 +1,220 @@
+{
+  "command": "node tooling/verification/backend-e2e.mjs --benchmark",
+  "exitCode": 1,
+  "note": "Timing records from a disposable database. Before run reached all latency measurements but failed the final guest-field deletion assertion; the account transfer was then correctly asserted. After run passes all assertions. Not a production deployment or farm-data measurement.",
+  "report": {
+    "date": "2026-11-10T18:08:03.180Z",
+    "machine": {
+      "model": "Apple M5",
+      "platform": "darwin",
+      "arch": "arm64",
+      "node": "v24.19.0",
+      "load": [4.27490234375, 3.314453125, 3.04833984375]
+    },
+    "verified": [
+      "capabilities \u2192 guest session; real default catalog 0.15.0",
+      "catalog options, crop detail, ETag and four cited role explanations in fr/en (missing crop-name languages stay absent)",
+      "atomic pilot field + 0.4 ha boundary \u2192 history \u2192 saved soil/water/reported health (illustrative inputs labelled in fixture)",
+      "terrain: queued \u2192 worker submit/poll/download \u2192 real raw hashes \u2192 completed contract",
+      "ecostress: queued \u2192 worker submit/poll/download \u2192 real raw hashes \u2192 completed contract",
+      "modis: queued \u2192 worker submit/poll/download \u2192 real raw hashes \u2192 completed contract",
+      "GRACE + GEDI reads and vegetation/rain analyses; missing HLS/GPM remain explicit unavailable states",
+      "real plan: current + \u22652 alternatives, fr/en notes, evidence counts, futureClimate, vulnerabilitySeasons, 10 grids and terrain outputs",
+      "what-if parent, accepted changes and before/after fields \u2192 unchanged parent hash \u2192 plan summaries",
+      "intake throughput {\"plans\":45,\"seconds\":22.270350999999994,\"plansPerSecond\":2.0206237432000966}",
+      "verified account via disposable SMTP \u2192 guest plan claim \u2192 guest loses access, account reads unchanged result"
+    ],
+    "skipped": [
+      "Giovanni baseline: no stored real 2001\u20132020 pilot daily file; POWER rain fallback is asserted. NEX-GDDP tile not in repository: futureClimate unavailable is asserted. No remote multi-hour job or credentials used.",
+      "field-boundary tiles: disabled by default; no country dataset imported",
+      "Field claim / bulk claim: BG-7 is not implemented; only existing plan claim is exercised"
+    ],
+    "measurements": {
+      "plansList": {
+        "n": 40,
+        "p50Ms": 8.910082999995211,
+        "p95Ms": 10.913249999997788,
+        "maxMs": 14.92674999999872,
+        "bytes": 908
+      },
+      "largePlan": {
+        "n": 40,
+        "p50Ms": 158.0452079999959,
+        "p95Ms": 171.7744160000002,
+        "maxMs": 175.0148329999938,
+        "bytes": 4647010
+      },
+      "cropDetail": {
+        "n": 40,
+        "p50Ms": 3.0817499999975553,
+        "p95Ms": 4.242583999992348,
+        "maxMs": 4.509166000003461,
+        "bytes": 188345
+      },
+      "catalogOptions": {
+        "n": 40,
+        "p50Ms": 5.588166000001365,
+        "p95Ms": 7.389499999990221,
+        "maxMs": 7.636083999997936,
+        "bytes": 261158
+      },
+      "glossary": {
+        "n": 40,
+        "p50Ms": 1.9305420000018785,
+        "p95Ms": 2.0911659999983385,
+        "maxMs": 2.2013329999899724,
+        "bytes": 94524
+      },
+      "fieldList": {
+        "n": 40,
+        "p50Ms": 3.559916999991401,
+        "p95Ms": 4.657292000003508,
+        "maxMs": 4.772375000000466,
+        "bytes": 725
+      },
+      "boundary": {
+        "n": 40,
+        "p50Ms": 4.345874999999069,
+        "p95Ms": 5.976999999998952,
+        "maxMs": 9.601792000001296,
+        "bytes": 238
+      },
+      "vegetationHistory": {
+        "n": 40,
+        "p50Ms": 7.01600000000326,
+        "p95Ms": 8.719666999997571,
+        "maxMs": 14.873250000004191,
+        "bytes": 6557
+      },
+      "vegetation": {
+        "n": 40,
+        "p50Ms": 2.4199159999989206,
+        "p95Ms": 2.7543750000040745,
+        "maxMs": 4.790375000011409,
+        "bytes": 58
+      },
+      "rain": {
+        "n": 40,
+        "p50Ms": 2.356291999996756,
+        "p95Ms": 3.303165999997873,
+        "maxMs": 3.7940839999937452,
+        "bytes": 58
+      },
+      "grace": {
+        "n": 40,
+        "p50Ms": 2.985958000004757,
+        "p95Ms": 3.6578339999978198,
+        "maxMs": 6.978999999992084,
+        "bytes": 3210
+      },
+      "gedi": {
+        "n": 40,
+        "p50Ms": 3.361625000005006,
+        "p95Ms": 4.481625000000349,
+        "maxMs": 5.276207999995677,
+        "bytes": 2010
+      },
+      "intake": {
+        "plans": 45,
+        "seconds": 22.270350999999994,
+        "plansPerSecond": 2.0206237432000966
+      }
+    },
+    "catalog": {
+      "version": "0.15.0",
+      "sha256": "b1c18550fdb08feedba05a149fbe4e017380d2604d7260e30bc0ff55f0b5c44b",
+      "crops": 246,
+      "names": {
+        "en": 0,
+        "fr": 246,
+        "ar": 246,
+        "ary": 178
+      },
+      "issues": 25
+    },
+    "plan": {
+      "bytes": 4647010,
+      "resultHash": "5acc4bee637ab3299bc8a32249ea2d8a5bd2ae66ef1e3f7c7bdc9eb7db06feb5",
+      "strategies": 4,
+      "alternatives": 3,
+      "evidence": {
+        "weatherSnapshotIds": [
+          "172a1703-e7f9-43dc-abbb-6cab36bdca1a",
+          "1bbb9584-6aea-432a-9745-ae25d4b0daac",
+          "1ebf3e0b-b92f-4faf-aed2-065aadea9754",
+          "22ed6d74-b293-486c-9bb9-1f8b6ee6bd37",
+          "2534457b-e1ec-4565-ad7a-86bdbf713134",
+          "25e7a9ee-0b9b-476b-9c83-ae1f0c2a9177",
+          "34f5bff6-648a-4593-ab5d-7ac92cd447a7",
+          "393df8df-b41a-4c12-aa7d-731138449d53",
+          "4f7010d2-ac68-4bae-92eb-f86e28ca8dbd",
+          "4fdc2564-0706-480d-af44-ee6209a09563",
+          "500b7990-730b-4432-ad3c-de777061e248",
+          "5a2c4d9d-6599-4cc4-b248-c9fbaacd0446",
+          "5ac56c71-ac16-4d66-bd80-908f52b5321b",
+          "5e602ee1-a48f-441c-99bd-42039afe4b7f",
+          "691ffc0a-0557-40a1-b890-c0a55f4c2f0e",
+          "7258e9f7-6417-4659-9ef1-38a2705bdc7b",
+          "77617d29-f411-42c8-bd83-ff76a44789a8",
+          "8830d1a6-0ee4-4bdd-8734-c5c9155a64a1",
+          "90efada1-2a9a-439e-90cb-77c7653ab484",
+          "996caf67-dde5-48b6-ba5e-ed3af8499306",
+          "a193e937-8f62-40bf-89d4-9084e0786151",
+          "a529f91e-d465-4945-a7ca-07f2d3eb8e3a",
+          "ad89d74f-fda9-47d3-b9d6-04c9e9eea213",
+          "b684b4f0-7e77-4828-b9f3-8f4f5b46d28f",
+          "b96972bb-4429-4842-b26a-bf7713db0042",
+          "c398eabf-9e9f-449b-ae89-41e9e0327bdc",
+          "cbe3964a-a04f-4d56-b950-d47405a37812",
+          "d628533e-b580-444b-af01-32531ce4f02b",
+          "de657e73-d85e-426f-b039-58b046c83e62",
+          "edf89c28-3750-4a0e-9117-2bee86903828",
+          "edfd5d10-fc08-44a8-ac6f-0c305a2da4e7",
+          "ee05aec3-b5a1-40d9-8145-b87f6db6f157",
+          "f2c894f4-d26d-4a95-b50d-1c9962affc87",
+          "f5827e6f-cb01-4204-a1c1-a51d42e1a136",
+          "f741cb64-8ebe-45b0-9e29-f62947eac926",
+          "ff6e9a5b-d46e-4ad1-8d13-bfca3ff92c15"
+        ],
+        "rulesUsed": {
+          "double_checked": 152,
+          "expert_reviewed": 0,
+          "model_recall": 2092
+        },
+        "expertReviewed": false
+      },
+      "futureClimate": "unavailable",
+      "grids": [
+        "POWER",
+        "GPM",
+        "HLS",
+        "SMAP",
+        "NEX-GDDP",
+        "NASADEM",
+        "GRACE",
+        "ECOSTRESS",
+        "MODIS",
+        "GEDI"
+      ]
+    },
+    "whatIf": {
+      "kind": "what_if",
+      "notAForecast": true,
+      "label": "What-if test with your own assumptions. It is not a forecast.",
+      "rainfallChangePercent": -10,
+      "temperatureChangeC": 1,
+      "sowingShiftDays": 7,
+      "appliedTo": {
+        "historicalWeather": true,
+        "futureModelWorlds": "not_prepared"
+      },
+      "planning": {
+        "requestedEarliestStartDate": "2026-11-15",
+        "requestedLatestStartDate": "2027-05-01",
+        "effectiveEarliestStartDate": "2026-11-22",
+        "effectiveLatestStartDate": "2027-05-08"
+      }
+    },
+    "seconds": 115.47752625000001
+  }
+}

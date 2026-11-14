@@ -1,0 +1,185 @@
+{
+  "id": "fig",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Fig",
+    "localNames": [{ "language": "fr", "name": "Figuier" }],
+    "scientificName": "Ficus carica L.",
+    "family": "Moraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-fig",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF.",
+        "page": null,
+        "quote": "\"scientificName\":\"Ficus carica L.\""
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter.",
+        "page": null,
+        "quote": "Figuier 101,8 101,8"
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [
+    {
+      "id": "ghoudan",
+      "name": "Ghoudan",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction, p.1-2",
+          "interpretation": "normalized",
+          "note": "Spelling \"Ghoudan\"; training entry spelled \"Ghoudane\".",
+          "page": 1,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "nabout",
+      "name": "Nabout",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction and Table 1 (local cultivars)",
+          "interpretation": "normalized",
+          "note": "Local Moroccan fig cultivar, not in the training list.",
+          "page": null,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "el-quoti-lbied",
+      "name": "El-Quoti Lbied",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction and Table 1 (local cultivars)",
+          "interpretation": "normalized",
+          "note": "Local Moroccan fig cultivar, not in the training list.",
+          "page": null,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "fassi",
+      "name": "Fassi",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction and Table 1 (local cultivars)",
+          "interpretation": "normalized",
+          "note": "Local Moroccan fig cultivar, not in the training list.",
+          "page": null,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "noukali",
+      "name": "Noukali",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Introduction and Table 1 (local cultivars)",
+          "interpretation": "normalized",
+          "note": "Local Moroccan fig cultivar, not in the training list.",
+          "page": null,
+          "quote": "‘Nabout’, ‘Ghoudan’, ‘El-Quoti Lbied’, ‘Fassi’ and ‘Noukali’"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "kadota",
+      "name": "Kadota",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-uliege-fig",
+          "locator": "Table 1 (introduced cultivars, geographical origin Italy)",
+          "interpretation": "normalized",
+          "note": "Introduced cultivar, evaluated in Moroccan material; confirms Kadota exists in Moroccan collections (not that it is widely grown).",
+          "page": null,
+          "quote": "Kadota Italy"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "ghoudane",
+      "name": "Ghoudane",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.fig.ghoudane"
+      },
+      "notes": "cultivar; local Moroccan; northern Morocco"
+    },
+    {
+      "id": "bourjassot",
+      "name": "Bourjassot",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.fig.bourjassot"
+      },
+      "notes": "cultivar"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only.",
+          "page": null,
+          "quote": "Figuier 101,8 101,8"
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

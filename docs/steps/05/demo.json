@@ -1,0 +1,260 @@
+{
+  "recordedAt": "2026-09-27T13:49:13.146Z",
+  "commands": ["pnpm engine:demo", "pnpm engine:fixture-demo"],
+  "realCatalogGapDemo": {
+    "syntheticInput": true,
+    "purpose": "Local engine gap demonstration; not farmer advice",
+    "kind": "calendar_constraint_assessment",
+    "scope": "calendars_and_constraints_only",
+    "engineVersion": "sequence-engine-2",
+    "catalog": {
+      "id": "rotavise-pilot",
+      "version": "0.1.0",
+      "sha256": "d951b9c07b03739a77d43d0518c68ebc13b80d805fa58dcd076ef9cd82ed3a55"
+    },
+    "outcome": "insufficient_evidence",
+    "counts": {
+      "pairs": 12,
+      "schedules": 0,
+      "combinationsExamined": 0
+    },
+    "consideredChoices": [
+      {
+        "cropId": "durum-wheat",
+        "status": "insufficient_evidence",
+        "pairIds": [
+          "durum-wheat>durum-wheat",
+          "durum-wheat>faba-bean",
+          "durum-wheat>sugar-beet"
+        ]
+      },
+      {
+        "cropId": "faba-bean",
+        "status": "insufficient_evidence",
+        "pairIds": [
+          "faba-bean>durum-wheat",
+          "faba-bean>faba-bean",
+          "faba-bean>sugar-beet"
+        ]
+      },
+      {
+        "cropId": "unsupported-demo-crop",
+        "status": "insufficient_evidence",
+        "pairIds": [
+          "unsupported-demo-crop>durum-wheat",
+          "unsupported-demo-crop>faba-bean",
+          "unsupported-demo-crop>sugar-beet"
+        ]
+      }
+    ],
+    "exampleGaps": [
+      "CALENDAR_EVIDENCE_UNAVAILABLE",
+      "CROP_NOT_IN_CATALOG",
+      "CULTIVAR_UNRESOLVED",
+      "DURATION_EVIDENCE_UNAVAILABLE",
+      "HEALTH_KNOWLEDGE_UNAVAILABLE",
+      "PRODUCTION_SYSTEM_UNRESOLVED",
+      "PROFILE_REVIEW_PENDING",
+      "REGION_UNRESOLVED",
+      "RETURN_INTERVAL_UNESTABLISHED",
+      "ROTATION_KNOWLEDGE_UNAVAILABLE",
+      "RULE_CONDITIONS_UNRESOLVED",
+      "RULE_NOT_APPLICABLE",
+      "RULE_NOT_REVIEWED",
+      "RULE_REFERENCE_ONLY"
+    ],
+    "recommendations": null,
+    "deferredChecks": [
+      "weather",
+      "water_balance",
+      "ranking",
+      "agronomic_validation"
+    ]
+  },
+  "syntheticCalendarDemo": {
+    "synthetic": true,
+    "purpose": "Invented test crops and rules: engine demonstration only, never farmer advice",
+    "counts": {
+      "pairs": 4,
+      "schedules": 6,
+      "combinationsExamined": 10
+    },
+    "example": {
+      "id": "synthetic-alpha>synthetic-beta@2029-12-30/2030-01-04",
+      "first": {
+        "cropId": "synthetic-alpha",
+        "sownOn": "2029-12-30",
+        "harvestEarliest": "2029-12-31",
+        "harvestLatest": "2030-01-02",
+        "durationDays": {
+          "min": 1,
+          "max": 3
+        },
+        "plantingRuleIds": ["synthetic-alpha-window"],
+        "durationRuleIds": ["synthetic-alpha-duration"]
+      },
+      "second": {
+        "cropId": "synthetic-beta",
+        "sownOn": "2030-01-04",
+        "harvestEarliest": "2030-01-05",
+        "harvestLatest": "2030-01-06",
+        "durationDays": {
+          "min": 1,
+          "max": 2
+        },
+        "plantingRuleIds": ["synthetic-beta-window"],
+        "durationRuleIds": ["synthetic-beta-duration"]
+      },
+      "status": "conditional",
+      "reasons": [
+        {
+          "code": "DURATION_ENVELOPE",
+          "effect": "pass",
+          "cropId": "synthetic-alpha",
+          "cycle": 1,
+          "inputPaths": [],
+          "ruleIds": ["synthetic-alpha-duration"],
+          "citations": [
+            {
+              "sourceId": "synthetic-source",
+              "locator": "Synthetic engine fixture",
+              "interpretation": "direct",
+              "note": "Invented test rules; no agricultural evidence or real review."
+            }
+          ],
+          "facts": {
+            "minDays": 1,
+            "maxDays": 3,
+            "harvestEarliest": "2029-12-31",
+            "harvestLatest": "2030-01-02"
+          }
+        },
+        {
+          "code": "DURATION_ENVELOPE",
+          "effect": "pass",
+          "cropId": "synthetic-beta",
+          "cycle": 2,
+          "inputPaths": [],
+          "ruleIds": ["synthetic-beta-duration"],
+          "citations": [
+            {
+              "sourceId": "synthetic-source",
+              "locator": "Synthetic engine fixture",
+              "interpretation": "direct",
+              "note": "Invented test rules; no agricultural evidence or real review."
+            }
+          ],
+          "facts": {
+            "minDays": 1,
+            "maxDays": 2,
+            "harvestEarliest": "2030-01-05",
+            "harvestLatest": "2030-01-06"
+          }
+        },
+        {
+          "code": "HEALTH_HISTORY_UNKNOWN",
+          "effect": "condition",
+          "cropId": "synthetic-alpha",
+          "cycle": 1,
+          "inputPaths": ["input.crop_health"],
+          "ruleIds": [],
+          "citations": [],
+          "facts": {}
+        },
+        {
+          "code": "HEALTH_HISTORY_UNKNOWN",
+          "effect": "condition",
+          "cropId": "synthetic-beta",
+          "cycle": 2,
+          "inputPaths": ["input.crop_health"],
+          "ruleIds": [],
+          "citations": [],
+          "facts": {}
+        },
+        {
+          "code": "NON_OVERLAPPING_CYCLES",
+          "effect": "pass",
+          "cropId": "synthetic-beta",
+          "cycle": 2,
+          "inputPaths": ["first.harvestLatest", "second.sownOn"],
+          "ruleIds": [],
+          "citations": [],
+          "facts": {
+            "firstLatestHarvest": "2030-01-02",
+            "secondSowing": "2030-01-04"
+          }
+        },
+        {
+          "code": "RETURN_INTERVAL_SATISFIED",
+          "effect": "pass",
+          "cropId": "synthetic-beta",
+          "cycle": 2,
+          "inputPaths": ["input.history.entries"],
+          "ruleIds": ["synthetic-beta-return"],
+          "citations": [
+            {
+              "sourceId": "synthetic-source",
+              "locator": "Synthetic engine fixture",
+              "interpretation": "direct",
+              "note": "Invented test rules; no agricultural evidence or real review."
+            }
+          ],
+          "facts": {
+            "previousSowing": "2027-01-01",
+            "earliestReturn": "2028-01-01",
+            "proposedSowing": "2030-01-04",
+            "minimumYears": 1,
+            "unit": "calendar_year"
+          }
+        }
+      ]
+    },
+    "pairs": [
+      {
+        "id": "synthetic-alpha>synthetic-alpha",
+        "status": "excluded",
+        "schedules": 0,
+        "calendarRejections": {
+          "firstOutsideWindow": 0,
+          "firstBeyondHorizon": 0,
+          "secondOverlap": 4,
+          "secondBeyondHorizon": 0
+        }
+      },
+      {
+        "id": "synthetic-alpha>synthetic-beta",
+        "status": "conditional",
+        "schedules": 6,
+        "calendarRejections": {
+          "firstOutsideWindow": 0,
+          "firstBeyondHorizon": 0,
+          "secondOverlap": 0,
+          "secondBeyondHorizon": 0
+        }
+      },
+      {
+        "id": "synthetic-beta>synthetic-alpha",
+        "status": "excluded",
+        "schedules": 0,
+        "calendarRejections": {
+          "firstOutsideWindow": 2,
+          "firstBeyondHorizon": 0,
+          "secondOverlap": 0,
+          "secondBeyondHorizon": 0
+        }
+      },
+      {
+        "id": "synthetic-beta>synthetic-beta",
+        "status": "excluded",
+        "schedules": 0,
+        "calendarRejections": {
+          "firstOutsideWindow": 2,
+          "firstBeyondHorizon": 0,
+          "secondOverlap": 0,
+          "secondBeyondHorizon": 0
+        }
+      }
+    ],
+    "recommendations": null
+  }
+}

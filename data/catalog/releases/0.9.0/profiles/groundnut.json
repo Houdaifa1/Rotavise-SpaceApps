@@ -1,0 +1,189 @@
+{
+  "id": "groundnut",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Groundnut",
+    "localNames": [{ "language": "fr", "name": "Arachide" }],
+    "scientificName": "Arachis hypogaea L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-groundnut",
+        "page": null,
+        "quote": "\"scientificName\":\"Arachis hypogaea L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-groundnut",
+        "page": 1,
+        "quote": "Le semis a lieu en Avril- Mai et la récolte en Septembre-Octobre",
+        "locator": "PDF page 1",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "oilseed",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-groundnut",
+          "page": 1,
+          "quote": "Le semis a lieu en Avril- Mai et la récolte en Septembre-Octobre",
+          "locator": "PDF page 1",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "Coast from Kénitra to Larache."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-groundnut",
+          "page": 1,
+          "quote": "Le semis a lieu en Avril- Mai et la récolte en Septembre-Octobre",
+          "locator": "PDF page 1",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "Coast from Kénitra to Larache."
+    }
+  ],
+  "rules": [
+    {
+      "id": "groundnut-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-groundnut",
+          "page": 1,
+          "quote": "Le semis a lieu en Avril- Mai et la récolte en Septembre-Octobre",
+          "locator": "PDF page 1",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-rabat-sale-kenitra", "ma-tangier-tetouan-al-hoceima"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Irrigated sandy soils on the Atlantic coast from Kénitra to Larache.",
+      "metric": "planting_window",
+      "start": "04-01",
+      "end": "05-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "groundnut-duration",
+      "citations": [
+        {
+          "sourceId": "pntta-groundnut",
+          "page": 1,
+          "quote": "à cycle court (90 à 110 jours",
+          "locator": "PDF page 1",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        },
+        {
+          "sourceId": "pntta-groundnut",
+          "page": 1,
+          "quote": "à cycle long (120 à 140 jours",
+          "locator": "PDF page 1",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-rabat-sale-kenitra", "ma-tangier-tetouan-al-hoceima"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Valencia and Virginia types.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 140
+    },
+    {
+      "id": "groundnut-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Groundnut (Peanut) 1.15 0.60",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Legumes (Leguminosae) 0.4 1.15 0.55",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "35 45 35 25 140",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.4,
+      "kcMid": 1.15,
+      "kcEnd": 0.6,
+      "stageLengths": [35, 45, 35, 25]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "id": "courgette",
+  "version": "0.8.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Courgette",
+    "localNames": [{ "language": "fr", "name": "Courgette" }],
+    "scientificName": "Cucurbita pepo L.",
+    "family": "Cucurbitaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-courgette",
+        "page": null,
+        "quote": "\"scientificName\":\"Cucurbita pepo L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-cucurbits",
+        "page": 2,
+        "quote": "LES COURGES",
+        "locator": "PDF page 2",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-cucurbits",
+          "page": 2,
+          "quote": "LES COURGES",
+          "locator": "PDF page 2",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "courgette-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-cucurbits",
+          "page": 2,
+          "quote": "Le semis direct peut être effectué en Juin-Juillet",
+          "locator": "PDF page 2",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Late-season open-field sowing; the earlier sowing needs protection and is not modelled.",
+      "metric": "planting_window",
+      "start": "06-01",
+      "end": "07-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "courgette-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "25 35 25 15 100 Apr; Dec. Medit.; Arid Reg.",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "100 days."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "20 30 25 15 90 May/June Medit.; Europe",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "90 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO rows.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 100
+    },
+    {
+      "id": "courgette-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Squash, Zucchini 0.95 0.75",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Cucumber Family (Cucurbitaceae) 0.5 1.00 0.80",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "20 30 25 15 90 May/June Medit.; Europe",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 0.95,
+      "kcEnd": 0.75,
+      "stageLengths": [20, 30, 25, 15]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

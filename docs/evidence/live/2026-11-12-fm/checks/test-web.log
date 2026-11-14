@@ -1,0 +1,10 @@
+$ node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/web/jest.config.mjs --selectProjects web-unit --runInBand
+Running one project: web-unit
+(node:99082) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Test Suites: 10 passed, 10 total
+Tests:       388 passed, 388 total
+Snapshots:   0 total
+Time:        5.069 s, estimated 12 s
+Ran all test suites.

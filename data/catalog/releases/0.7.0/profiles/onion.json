@@ -1,0 +1,234 @@
+{
+  "id": "onion",
+  "version": "0.7.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Onion (dry)",
+    "localNames": [{ "language": "fr", "name": "Oignon" }],
+    "scientificName": "Allium cepa L.",
+    "family": "Amaryllidaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-onion",
+        "page": null,
+        "quote": "\"scientificName\":\"Allium cepa L.\"",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "ardna-vegetable-rsk",
+        "page": 21,
+        "quote": "Culture d'oignon",
+        "locator": "PDF page 21, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine."
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-tth",
+          "page": 22,
+          "quote": "Deux périodes de production de l'oignon dans la zone",
+          "locator": "PDF page 22",
+          "interpretation": "context_only",
+          "note": "Tangier zone."
+        }
+      ],
+      "note": "Dated planting is sourced only for the Tangier zone."
+    }
+  ],
+  "rules": [
+    {
+      "id": "onion-planting-january",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-tth",
+          "page": 22,
+          "quote": "Plantation de janvier et récolte en mai",
+          "locator": "PDF page 22, Table 7",
+          "interpretation": "normalized",
+          "note": "January, the whole month."
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-tangier-tetouan-al-hoceima"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Transplanted; the nursery starts in October.",
+      "metric": "planting_window",
+      "start": "01-01",
+      "end": "01-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "onion-planting-april",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-tth",
+          "page": 22,
+          "quote": "Plantation d'avril et récolte en juillet",
+          "locator": "PDF page 22, Table 7",
+          "interpretation": "normalized",
+          "note": "April, the whole month."
+        }
+      ],
+      "scope": {
+        "regionIds": ["ma-tangier-tetouan-al-hoceima"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Transplanted.",
+      "metric": "planting_window",
+      "start": "04-01",
+      "end": "04-30",
+      "precision": "full_month"
+    },
+    {
+      "id": "onion-duration",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-tth",
+          "page": 22,
+          "quote": "Plantation d'avril et récolte en juillet",
+          "locator": "PDF page 22",
+          "interpretation": "normalized",
+          "note": "About 100 days from planting."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "15 25 70 40 150 April Mediterranean",
+          "locator": "Table 11, Onion (dry)",
+          "interpretation": "normalized",
+          "note": "150 days as the longer bound."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Counted from transplanting; the nursery is extra.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 100,
+      "maxDays": 150
+    },
+    {
+      "id": "onion-frost",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-rsk",
+          "page": 21,
+          "quote": "La plante est sensible au gel pendant la phase d'installation",
+          "locator": "PDF page 21, 3.1",
+          "interpretation": "normalized",
+          "note": "Frost encoded as a minimum below 0 °C over the cycle."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "The source names the establishment phase; applied across the cycle.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "onion-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Onions - dry 1.05 0.75",
+          "locator": "Table 12, Onions",
+          "interpretation": "normalized",
+          "note": "Mid 1.05, end 0.75."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Small Vegetables 0.7 1.05 0.95",
+          "locator": "Table 12, Small vegetables group",
+          "interpretation": "normalized",
+          "note": "Initial 0.7 from the group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "15 25 70 40 150 April Mediterranean",
+          "locator": "Table 11, Onion (dry)",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.7,
+      "kcMid": 1.05,
+      "kcEnd": 0.75,
+      "stageLengths": [15, 25, 70, 40]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Other regions give nursery dates only."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed."
+  ]
+}

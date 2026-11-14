@@ -1,0 +1,1115 @@
+{
+  "recordedOn": "2026-11-11",
+  "catalogBase": "0.14.0",
+  "crops": 246,
+  "categories": [
+    "biological_nitrogen_fixation",
+    "residual_nitrogen_credit",
+    "forage_residue_feed",
+    "disease_break",
+    "weed_break",
+    "pest_break",
+    "rooting_soil_structure_infiltration",
+    "erosion_cover_residue",
+    "bare_soil_period_shortening",
+    "organic_matter_soil_carbon",
+    "drought_tolerance",
+    "water_demand"
+  ],
+  "batches": [
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-01.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-02.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-03.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-04.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-05.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-06.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-07.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-08.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-09.json",
+    "docs/evidence/catalog/2026-11-11/benefits/benefits-batch-10.json"
+  ],
+  "before": {
+    "biological_nitrogen_fixation": {
+      "sourced": 6,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 240
+    },
+    "residual_nitrogen_credit": {
+      "sourced": 2,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 244
+    },
+    "forage_residue_feed": {
+      "sourced": 40,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 206
+    },
+    "disease_break": {
+      "sourced": 4,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 242
+    },
+    "weed_break": {
+      "sourced": 10,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 236
+    },
+    "pest_break": {
+      "sourced": 7,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 239
+    },
+    "rooting_soil_structure_infiltration": {
+      "sourced": 3,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 243
+    },
+    "erosion_cover_residue": {
+      "sourced": 4,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 242
+    },
+    "bare_soil_period_shortening": {
+      "sourced": 2,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 244
+    },
+    "organic_matter_soil_carbon": {
+      "sourced": 0,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 246
+    },
+    "drought_tolerance": {
+      "sourced": 0,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 246
+    },
+    "water_demand": {
+      "sourced": 0,
+      "model_recall": 0,
+      "not_applicable": 0,
+      "uncovered": 246
+    }
+  },
+  "after": {
+    "biological_nitrogen_fixation": {
+      "sourced": 6,
+      "model_recall": 26,
+      "not_applicable": 214
+    },
+    "residual_nitrogen_credit": {
+      "sourced": 4,
+      "model_recall": 241,
+      "not_applicable": 1
+    },
+    "forage_residue_feed": {
+      "sourced": 40,
+      "model_recall": 201,
+      "not_applicable": 5
+    },
+    "disease_break": { "sourced": 5, "model_recall": 241, "not_applicable": 0 },
+    "weed_break": { "sourced": 12, "model_recall": 234, "not_applicable": 0 },
+    "pest_break": { "sourced": 8, "model_recall": 238, "not_applicable": 0 },
+    "rooting_soil_structure_infiltration": {
+      "sourced": 80,
+      "model_recall": 165,
+      "not_applicable": 1
+    },
+    "erosion_cover_residue": {
+      "sourced": 7,
+      "model_recall": 238,
+      "not_applicable": 1
+    },
+    "bare_soil_period_shortening": {
+      "sourced": 2,
+      "model_recall": 243,
+      "not_applicable": 1
+    },
+    "organic_matter_soil_carbon": {
+      "sourced": 3,
+      "model_recall": 243,
+      "not_applicable": 0
+    },
+    "drought_tolerance": {
+      "sourced": 29,
+      "model_recall": 217,
+      "not_applicable": 0
+    },
+    "water_demand": { "sourced": 26, "model_recall": 220, "not_applicable": 0 }
+  },
+  "groups": {
+    "orchard_perennial": {
+      "crops": 65,
+      "before": {
+        "sourced": 6,
+        "model_recall": 0,
+        "not_applicable": 0,
+        "uncovered": 774
+      },
+      "after": { "sourced": 28, "model_recall": 688, "not_applicable": 64 },
+      "effects": {
+        "biological_nitrogen_fixation": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 1, "not_applicable": 64 }
+        },
+        "residual_nitrogen_credit": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "forage_residue_feed": {
+          "before": {
+            "sourced": 4,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 61
+          },
+          "after": { "sourced": 4, "model_recall": 61, "not_applicable": 0 }
+        },
+        "disease_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "weed_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "pest_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "rooting_soil_structure_infiltration": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 17, "model_recall": 48, "not_applicable": 0 }
+        },
+        "erosion_cover_residue": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 63
+          },
+          "after": { "sourced": 2, "model_recall": 63, "not_applicable": 0 }
+        },
+        "bare_soil_period_shortening": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "organic_matter_soil_carbon": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "drought_tolerance": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 3, "model_recall": 62, "not_applicable": 0 }
+        },
+        "water_demand": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 2, "model_recall": 63, "not_applicable": 0 }
+        }
+      }
+    },
+    "forage_cover": {
+      "crops": 27,
+      "before": {
+        "sourced": 26,
+        "model_recall": 0,
+        "not_applicable": 0,
+        "uncovered": 298
+      },
+      "after": { "sourced": 36, "model_recall": 275, "not_applicable": 13 },
+      "effects": {
+        "biological_nitrogen_fixation": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 25
+          },
+          "after": { "sourced": 2, "model_recall": 12, "not_applicable": 13 }
+        },
+        "residual_nitrogen_credit": {
+          "before": {
+            "sourced": 1,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 26
+          },
+          "after": { "sourced": 1, "model_recall": 26, "not_applicable": 0 }
+        },
+        "forage_residue_feed": {
+          "before": {
+            "sourced": 19,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 8
+          },
+          "after": { "sourced": 19, "model_recall": 8, "not_applicable": 0 }
+        },
+        "disease_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 27
+          },
+          "after": { "sourced": 0, "model_recall": 27, "not_applicable": 0 }
+        },
+        "weed_break": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 25
+          },
+          "after": { "sourced": 2, "model_recall": 25, "not_applicable": 0 }
+        },
+        "pest_break": {
+          "before": {
+            "sourced": 1,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 26
+          },
+          "after": { "sourced": 1, "model_recall": 26, "not_applicable": 0 }
+        },
+        "rooting_soil_structure_infiltration": {
+          "before": {
+            "sourced": 1,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 26
+          },
+          "after": { "sourced": 7, "model_recall": 20, "not_applicable": 0 }
+        },
+        "erosion_cover_residue": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 27
+          },
+          "after": { "sourced": 0, "model_recall": 27, "not_applicable": 0 }
+        },
+        "bare_soil_period_shortening": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 27
+          },
+          "after": { "sourced": 0, "model_recall": 27, "not_applicable": 0 }
+        },
+        "organic_matter_soil_carbon": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 27
+          },
+          "after": { "sourced": 0, "model_recall": 27, "not_applicable": 0 }
+        },
+        "drought_tolerance": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 27
+          },
+          "after": { "sourced": 2, "model_recall": 25, "not_applicable": 0 }
+        },
+        "water_demand": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 27
+          },
+          "after": { "sourced": 2, "model_recall": 25, "not_applicable": 0 }
+        }
+      }
+    },
+    "aromatic_wild_other": {
+      "crops": 38,
+      "before": {
+        "sourced": 2,
+        "model_recall": 0,
+        "not_applicable": 0,
+        "uncovered": 454
+      },
+      "after": { "sourced": 5, "model_recall": 406, "not_applicable": 45 },
+      "effects": {
+        "biological_nitrogen_fixation": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 0, "not_applicable": 38 }
+        },
+        "residual_nitrogen_credit": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 37, "not_applicable": 1 }
+        },
+        "forage_residue_feed": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 36
+          },
+          "after": { "sourced": 2, "model_recall": 33, "not_applicable": 3 }
+        },
+        "disease_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 38, "not_applicable": 0 }
+        },
+        "weed_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 38, "not_applicable": 0 }
+        },
+        "pest_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 38, "not_applicable": 0 }
+        },
+        "rooting_soil_structure_infiltration": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 3, "model_recall": 34, "not_applicable": 1 }
+        },
+        "erosion_cover_residue": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 37, "not_applicable": 1 }
+        },
+        "bare_soil_period_shortening": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 37, "not_applicable": 1 }
+        },
+        "organic_matter_soil_carbon": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 38, "not_applicable": 0 }
+        },
+        "drought_tolerance": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 38, "not_applicable": 0 }
+        },
+        "water_demand": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 38
+          },
+          "after": { "sourced": 0, "model_recall": 38, "not_applicable": 0 }
+        }
+      }
+    },
+    "vegetables_other_annuals": {
+      "crops": 65,
+      "before": {
+        "sourced": 3,
+        "model_recall": 0,
+        "not_applicable": 0,
+        "uncovered": 777
+      },
+      "after": { "sourced": 36, "model_recall": 679, "not_applicable": 65 },
+      "effects": {
+        "biological_nitrogen_fixation": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 0, "not_applicable": 65 }
+        },
+        "residual_nitrogen_credit": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "forage_residue_feed": {
+          "before": {
+            "sourced": 3,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 62
+          },
+          "after": { "sourced": 3, "model_recall": 62, "not_applicable": 0 }
+        },
+        "disease_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "weed_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "pest_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "rooting_soil_structure_infiltration": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 23, "model_recall": 42, "not_applicable": 0 }
+        },
+        "erosion_cover_residue": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "bare_soil_period_shortening": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "organic_matter_soil_carbon": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 0, "model_recall": 65, "not_applicable": 0 }
+        },
+        "drought_tolerance": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 5, "model_recall": 60, "not_applicable": 0 }
+        },
+        "water_demand": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 65
+          },
+          "after": { "sourced": 5, "model_recall": 60, "not_applicable": 0 }
+        }
+      }
+    },
+    "cereals": {
+      "crops": 14,
+      "before": {
+        "sourced": 16,
+        "model_recall": 0,
+        "not_applicable": 0,
+        "uncovered": 152
+      },
+      "after": { "sourced": 46, "model_recall": 108, "not_applicable": 14 },
+      "effects": {
+        "biological_nitrogen_fixation": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 0, "model_recall": 0, "not_applicable": 14 }
+        },
+        "residual_nitrogen_credit": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 0, "model_recall": 14, "not_applicable": 0 }
+        },
+        "forage_residue_feed": {
+          "before": {
+            "sourced": 5,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 9
+          },
+          "after": { "sourced": 5, "model_recall": 9, "not_applicable": 0 }
+        },
+        "disease_break": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 3, "model_recall": 11, "not_applicable": 0 }
+        },
+        "weed_break": {
+          "before": {
+            "sourced": 5,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 9
+          },
+          "after": { "sourced": 5, "model_recall": 9, "not_applicable": 0 }
+        },
+        "pest_break": {
+          "before": {
+            "sourced": 4,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 5, "model_recall": 9, "not_applicable": 0 }
+        },
+        "rooting_soil_structure_infiltration": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 8, "model_recall": 6, "not_applicable": 0 }
+        },
+        "erosion_cover_residue": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 3, "model_recall": 11, "not_applicable": 0 }
+        },
+        "bare_soil_period_shortening": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 0, "model_recall": 14, "not_applicable": 0 }
+        },
+        "organic_matter_soil_carbon": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 3, "model_recall": 11, "not_applicable": 0 }
+        },
+        "drought_tolerance": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 7, "model_recall": 7, "not_applicable": 0 }
+        },
+        "water_demand": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 7, "model_recall": 7, "not_applicable": 0 }
+        }
+      }
+    },
+    "oilseeds": {
+      "crops": 10,
+      "before": {
+        "sourced": 6,
+        "model_recall": 0,
+        "not_applicable": 0,
+        "uncovered": 114
+      },
+      "after": { "sourced": 19, "model_recall": 92, "not_applicable": 9 },
+      "effects": {
+        "biological_nitrogen_fixation": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 0, "model_recall": 2, "not_applicable": 8 }
+        },
+        "residual_nitrogen_credit": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 0, "model_recall": 10, "not_applicable": 0 }
+        },
+        "forage_residue_feed": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 0, "model_recall": 9, "not_applicable": 1 }
+        },
+        "disease_break": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 8
+          },
+          "after": { "sourced": 2, "model_recall": 8, "not_applicable": 0 }
+        },
+        "weed_break": {
+          "before": {
+            "sourced": 1,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 9
+          },
+          "after": { "sourced": 1, "model_recall": 9, "not_applicable": 0 }
+        },
+        "pest_break": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 8
+          },
+          "after": { "sourced": 2, "model_recall": 8, "not_applicable": 0 }
+        },
+        "rooting_soil_structure_infiltration": {
+          "before": {
+            "sourced": 1,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 9
+          },
+          "after": { "sourced": 8, "model_recall": 2, "not_applicable": 0 }
+        },
+        "erosion_cover_residue": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 0, "model_recall": 10, "not_applicable": 0 }
+        },
+        "bare_soil_period_shortening": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 0, "model_recall": 10, "not_applicable": 0 }
+        },
+        "organic_matter_soil_carbon": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 0, "model_recall": 10, "not_applicable": 0 }
+        },
+        "drought_tolerance": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 3, "model_recall": 7, "not_applicable": 0 }
+        },
+        "water_demand": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 10
+          },
+          "after": { "sourced": 3, "model_recall": 7, "not_applicable": 0 }
+        }
+      }
+    },
+    "roots_industrial": {
+      "crops": 12,
+      "before": {
+        "sourced": 0,
+        "model_recall": 0,
+        "not_applicable": 0,
+        "uncovered": 144
+      },
+      "after": { "sourced": 14, "model_recall": 117, "not_applicable": 13 },
+      "effects": {
+        "biological_nitrogen_fixation": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 0, "not_applicable": 12 }
+        },
+        "residual_nitrogen_credit": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 12, "not_applicable": 0 }
+        },
+        "forage_residue_feed": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 11, "not_applicable": 1 }
+        },
+        "disease_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 12, "not_applicable": 0 }
+        },
+        "weed_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 12, "not_applicable": 0 }
+        },
+        "pest_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 12, "not_applicable": 0 }
+        },
+        "rooting_soil_structure_infiltration": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 5, "model_recall": 7, "not_applicable": 0 }
+        },
+        "erosion_cover_residue": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 12, "not_applicable": 0 }
+        },
+        "bare_soil_period_shortening": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 12, "not_applicable": 0 }
+        },
+        "organic_matter_soil_carbon": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 0, "model_recall": 12, "not_applicable": 0 }
+        },
+        "drought_tolerance": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 5, "model_recall": 7, "not_applicable": 0 }
+        },
+        "water_demand": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 12
+          },
+          "after": { "sourced": 4, "model_recall": 8, "not_applicable": 0 }
+        }
+      }
+    },
+    "grain_legumes": {
+      "crops": 15,
+      "before": {
+        "sourced": 19,
+        "model_recall": 0,
+        "not_applicable": 0,
+        "uncovered": 161
+      },
+      "after": { "sourced": 38, "model_recall": 142, "not_applicable": 0 },
+      "effects": {
+        "biological_nitrogen_fixation": {
+          "before": {
+            "sourced": 4,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 11
+          },
+          "after": { "sourced": 4, "model_recall": 11, "not_applicable": 0 }
+        },
+        "residual_nitrogen_credit": {
+          "before": {
+            "sourced": 1,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 3, "model_recall": 12, "not_applicable": 0 }
+        },
+        "forage_residue_feed": {
+          "before": {
+            "sourced": 7,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 8
+          },
+          "after": { "sourced": 7, "model_recall": 8, "not_applicable": 0 }
+        },
+        "disease_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 15
+          },
+          "after": { "sourced": 0, "model_recall": 15, "not_applicable": 0 }
+        },
+        "weed_break": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 13
+          },
+          "after": { "sourced": 4, "model_recall": 11, "not_applicable": 0 }
+        },
+        "pest_break": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 15
+          },
+          "after": { "sourced": 0, "model_recall": 15, "not_applicable": 0 }
+        },
+        "rooting_soil_structure_infiltration": {
+          "before": {
+            "sourced": 1,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 14
+          },
+          "after": { "sourced": 9, "model_recall": 6, "not_applicable": 0 }
+        },
+        "erosion_cover_residue": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 13
+          },
+          "after": { "sourced": 2, "model_recall": 13, "not_applicable": 0 }
+        },
+        "bare_soil_period_shortening": {
+          "before": {
+            "sourced": 2,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 13
+          },
+          "after": { "sourced": 2, "model_recall": 13, "not_applicable": 0 }
+        },
+        "organic_matter_soil_carbon": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 15
+          },
+          "after": { "sourced": 0, "model_recall": 15, "not_applicable": 0 }
+        },
+        "drought_tolerance": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 15
+          },
+          "after": { "sourced": 4, "model_recall": 11, "not_applicable": 0 }
+        },
+        "water_demand": {
+          "before": {
+            "sourced": 0,
+            "model_recall": 0,
+            "not_applicable": 0,
+            "uncovered": 15
+          },
+          "after": { "sourced": 3, "model_recall": 12, "not_applicable": 0 }
+        }
+      }
+    }
+  },
+  "records": { "model_recall": 2729, "not_found": 223, "sourced": 184 },
+  "note": "Coverage counts select sourced over recall over not-applicable per crop/effect. Record totals count all retained evidence. Historical gaps remain in 0.15.0 but are superseded for current coverage."
+}

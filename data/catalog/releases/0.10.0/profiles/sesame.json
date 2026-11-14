@@ -1,0 +1,345 @@
+{
+  "id": "sesame",
+  "version": "0.10.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sesame",
+    "localNames": [],
+    "scientificName": "Sesamum indicum L.",
+    "family": "Pedaliaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-sesame",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Sesamum indicum L.\""
+      }
+    ]
+  },
+  "harvestProduct": "oilseed",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "local-white-seeded-populations",
+      "name": "Local white-seeded populations",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.sesame.local-white-seeded-populations"
+      },
+      "notes": "landrace group; Beldi types in Tafilalet/Haouz; no registered names recalled"
+    },
+    {
+      "id": "local-brown-dark-seeded-populations",
+      "name": "Local brown/dark-seeded populations",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "RV.sesame.local-brown/dark-seeded-populations"
+      },
+      "notes": "landrace group; no names recalled"
+    },
+    {
+      "id": "white-seeded-types",
+      "name": "White-seeded types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.sesame.white-seeded-types"
+      },
+      "notes": "type group"
+    },
+    {
+      "id": "black-seeded-types",
+      "name": "Black-seeded types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.sesame.black-seeded-types"
+      },
+      "notes": "type group"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-sesame",
+          "locator": "Mode de culture",
+          "interpretation": "context_only",
+          "note": "Four-month cycle in Tadla; no dated window on the page.",
+          "page": null,
+          "quote": "Au périmètre du Tadla, la culture du sésame est à cycle productif court sur quatre mois"
+        }
+      ],
+      "note": "Listed for Tadla; not schedulable in this release."
+    }
+  ],
+  "rules": [
+    {
+      "id": "c-sesame-preferred-predecessor-preferred-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-ormvat-sesame",
+          "locator": "Mode de culture adopté pour le Sésame au périmètre du Tadla",
+          "interpretation": "normalized",
+          "note": "ORMVAT reports sesame as a secondary catch crop following autumn cereals or sugar beet. This is observed local succession, rather than a tested agronomic preference; do not promote it to a ranking rule.",
+          "page": null,
+          "quote": "céréales d’automne"
+        }
+      ],
+      "scope": {
+        "regionIds": ["beni-mellal-tadla"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-c-sesame-minimum-return-interval-minimum-return-interval",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family Pedaliaceae (Fusarium wilt, charcoal rot)",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.sesame.minimum_return_interval"
+      },
+      "conditions": "Recalled by the AI model; unverified. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 3
+    },
+    {
+      "id": "t-c-sesame-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general rotation guidance for the botanical family",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.sesame.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Pedaliaceae"
+    },
+    {
+      "id": "t-fill-sesame-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about 5 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sesame.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 5,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-sesame-duration-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical sowing-to-harvest length",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sesame.duration"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 90,
+      "maxDays": 130
+    },
+    {
+      "id": "t-fill-sesame-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 42 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sesame.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 42
+    },
+    {
+      "id": "t-fill-sesame-window0-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical Moroccan Mediterranean sowing/planting season, zone dependent",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.sesame.window0"
+      },
+      "conditions": "Recalled by the AI model; unverified. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "04-15",
+      "end": "06-30",
+      "precision": "approximate"
+    }
+  ],
+  "references": [
+    {
+      "id": "b-sesame-duration-background-1",
+      "topic": "background",
+      "summary": "Cycle: {\"basis\":\"sowing_to_harvest\",\"minDays\":null,\"maxDays\":null,\"sourceDurationMonths\":4}",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ormvat-sesame",
+          "locator": "Mode de culture adopté pour le Sésame au périmètre du Tadla",
+          "interpretation": "normalized",
+          "note": "Four calendar months are stated; do not silently encode this as a fixed number of days.",
+          "page": null,
+          "quote": "cycle productif court sur quatre mois"
+        }
+      ]
+    },
+    {
+      "id": "b-sesame-planting-window-background-2",
+      "topic": "background",
+      "summary": "Planting: not stated",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-sesame-cold-morocco-2026",
+          "locator": "Introduction, paragraph beginning Cold stress disrupts metabolic processes",
+          "interpretation": "normalized",
+          "note": "The primary study explicitly states the Moroccan sowing period. It does not state exact start and end days; no arbitrary first-ten-days window is generated.",
+          "page": null,
+          "quote": "sown in early June"
+        }
+      ]
+    },
+    {
+      "id": "f-sesame-observed-yield-yield-38",
+      "topic": "yield",
+      "summary": "Yield 0.754–0.754 t/ha (years 2018-2022; reported four-campaign mean)",
+      "value": { "unit": "t/ha", "min": 0.754, "max": 0.754 },
+      "citations": [
+        {
+          "sourceId": "rs-ormvat-sesame",
+          "locator": "Rendement de la culture de Sésame",
+          "interpretation": "normalized",
+          "note": "Convert directly by 0.1 tonne per quintal. Retain the site's campaign label as written; do not invent annual observations.",
+          "page": null,
+          "quote": "7,54 quintaux par hectare"
+        }
+      ]
+    },
+    {
+      "id": "k-sesame-background-65",
+      "topic": "background",
+      "summary": "Warm-season annual oilseed. Cold soil can limit germination and seedling establishment; germination tolerance differs among genotypes. Water stress and excessive heat during flowering and seed filling can reduce productivity. A cereal-following catch crop is an observed system, not proof of universal predecessor preference. Emergence needs a suitable seedbed; shattering and uneven maturity influence harvest timing and losses.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.sesame"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "No sourced Tadla sowing window collected yet."
+    },
+    {
+      "topic": "cycle_duration",
+      "reason": "No sourced duration collected yet."
+    }
+  ],
+  "limitations": [
+    "Identity and local presence only.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed."
+  ]
+}

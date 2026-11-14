@@ -1,0 +1,1677 @@
+{
+  "schemaVersion": "income-research-1",
+  "catalogVersion": "0.13.0",
+  "researchDate": "2026-11-10",
+  "batchNumber": 10,
+  "recordCount": 21,
+  "ordering": "catalog modelType: annual, orchard, multi_year_stand, wild_harvested; then cropId",
+  "records": [
+    {
+      "cropId": "cistus",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Rockrose", "Ciste", "Cistus ladanifer L."],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Rockrose", "Ciste", "Cistus ladanifer L."],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Rockrose",
+            "Ciste",
+            "Cistus ladanifer L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "cladanthus",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Moroccan chamomile",
+            "Camomille marocaine",
+            "Cladanthus mixtus (L.) Chevall."
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Moroccan chamomile",
+            "Camomille marocaine",
+            "Cladanthus mixtus (L.) Chevall."
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Moroccan chamomile",
+            "Camomille marocaine",
+            "Cladanthus mixtus (L.) Chevall."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "cork-oak",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Cork oak", "Chêne-liège", "Quercus suber"],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Cork oak", "Chêne-liège", "Quercus suber"],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Cork oak",
+            "Chêne-liège",
+            "Quercus suber"
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [
+            {
+              "sourceId": "hcp-tta-agriculture-2025",
+              "termMatches": {
+                "Chêne-liège": 1
+              }
+            }
+          ],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "desert-truffle",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Desert truffle",
+            "Truffe du désert",
+            "Terfezia arenaria (Moris) Trappe"
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Desert truffle",
+            "Truffe du désert",
+            "Terfezia arenaria (Moris) Trappe"
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Desert truffle",
+            "Truffe du désert",
+            "Terfezia arenaria (Moris) Trappe"
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "dwarf-palm",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Dwarf fan palm (doum)",
+            "Palmier nain (doum)",
+            "Chamaerops humilis"
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Dwarf fan palm (doum)",
+            "Palmier nain (doum)",
+            "Chamaerops humilis"
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Dwarf fan palm (doum)",
+            "Palmier nain (doum)",
+            "Chamaerops humilis"
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "esparto",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Esparto grass", "Alfa", "Stipa tenacissima L."],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Esparto grass", "Alfa", "Stipa tenacissima L."],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Esparto grass",
+            "Alfa",
+            "Stipa tenacissima L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [
+            {
+              "sourceId": "fao-morocco-currency",
+              "termMatches": {
+                "Esparto grass": 1
+              }
+            }
+          ],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "holm-oak",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Holm oak", "Chêne vert", "Quercus ilex"],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Holm oak", "Chêne vert", "Quercus ilex"],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": ["Holm oak", "Chêne vert", "Quercus ilex"],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [
+            {
+              "sourceId": "hcp-tta-agriculture-2025",
+              "termMatches": {
+                "Chêne vert": 1
+              }
+            }
+          ],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "juniper-cade",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Cade juniper",
+            "Genévrier cade",
+            "Juniperus oxycedrus L."
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Cade juniper",
+            "Genévrier cade",
+            "Juniperus oxycedrus L."
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Cade juniper",
+            "Genévrier cade",
+            "Juniperus oxycedrus L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "lentisk",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Mastic tree", "Lentisque", "Pistacia lentiscus L."],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Mastic tree", "Lentisque", "Pistacia lentiscus L."],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Mastic tree",
+            "Lentisque",
+            "Pistacia lentiscus L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "mallow",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Common mallow", "Mauve", "Malva sylvestris L."],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Common mallow", "Mauve", "Malva sylvestris L."],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Common mallow",
+            "Mauve",
+            "Malva sylvestris L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [
+            {
+              "sourceId": "onca-sugar-rsk",
+              "termMatches": {
+                "Mauve": 2
+              }
+            },
+            {
+              "sourceId": "onca-oilseeds",
+              "termMatches": {
+                "Mauve": 1
+              }
+            }
+          ],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "marrubium",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "White horehound",
+            "Marrube blanc",
+            "Marrubium vulgare L."
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "White horehound",
+            "Marrube blanc",
+            "Marrubium vulgare L."
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "White horehound",
+            "Marrube blanc",
+            "Marrubium vulgare L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "myrtle",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Myrtle", "Myrte", "Myrtus communis L."],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Myrtle", "Myrte", "Myrtus communis L."],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": ["Myrtle", "Myrte", "Myrtus communis L."],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "oleaster",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Wild olive (oleaster)",
+            "Olivier sauvage (oléastre)",
+            "Olea europaea var. sylvestris"
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Wild olive (oleaster)",
+            "Olivier sauvage (oléastre)",
+            "Olea europaea var. sylvestris"
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Wild olive (oleaster)",
+            "Olivier sauvage (oléastre)",
+            "Olea europaea var. sylvestris"
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "pennyroyal",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Pennyroyal",
+            "Menthe pouliot",
+            "Mentha pulegium L."
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Pennyroyal",
+            "Menthe pouliot",
+            "Mentha pulegium L."
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Pennyroyal",
+            "Menthe pouliot",
+            "Mentha pulegium L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [
+            {
+              "sourceId": "onca-sugar-rsk",
+              "termMatches": {
+                "Menthe pouliot": 3
+              }
+            }
+          ],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "rue",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Common rue",
+            "Rue officinale",
+            "Ruta chalepensis L."
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Common rue",
+            "Rue officinale",
+            "Ruta chalepensis L."
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Common rue",
+            "Rue officinale",
+            "Ruta chalepensis L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "stone-pine",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Stone pine", "Pin pignon", "Pinus pinea L."],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Stone pine", "Pin pignon", "Pinus pinea L."],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Stone pine",
+            "Pin pignon",
+            "Pinus pinea L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "strawberry-tree",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Strawberry tree", "Arbousier", "Arbutus unedo"],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Strawberry tree", "Arbousier", "Arbutus unedo"],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Strawberry tree",
+            "Arbousier",
+            "Arbutus unedo"
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "sumac",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Sumac", "Sumac", "Rhus pentaphylla (Jacq.) Desf."],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Sumac", "Sumac", "Rhus pentaphylla (Jacq.) Desf."],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Sumac",
+            "Sumac",
+            "Rhus pentaphylla (Jacq.) Desf."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "thuya",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Sandarac tree",
+            "Thuya de Berbérie",
+            "Tetraclinis articulata (Vahl) Mast."
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Sandarac tree",
+            "Thuya de Berbérie",
+            "Tetraclinis articulata (Vahl) Mast."
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Sandarac tree",
+            "Thuya de Berbérie",
+            "Tetraclinis articulata (Vahl) Mast."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "wild-thyme",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": ["Wild thyme", "Serpolet", "Thymus serpyllum L."],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": ["Wild thyme", "Serpolet", "Thymus serpyllum L."],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Wild thyme",
+            "Serpolet",
+            "Thymus serpyllum L."
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    },
+    {
+      "cropId": "ziziphus-lotus",
+      "catalogVersion": "0.13.0",
+      "catalogModelType": "wild_harvested",
+      "prices": [],
+      "yields": [],
+      "costs": [],
+      "margins": [],
+      "incomeOptions": [],
+      "relatedEvidence": [],
+      "status": "not_found",
+      "commercialCultivation": {
+        "status": "not_verified_by_this_research"
+      },
+      "searchLog": [
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-pp",
+          "catalogTerms": [
+            "Wild jujube (sedra)",
+            "Jujubier sauvage",
+            "Ziziphus lotus"
+          ],
+          "commodity": null,
+          "element": "Producer Price (LCU/tonne)",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 8942
+        },
+        {
+          "action": "exact_commodity_lookup_in_complete_Morocco_subset",
+          "sourceId": "faostat-qcl",
+          "catalogTerms": [
+            "Wild jujube (sedra)",
+            "Jujubier sauvage",
+            "Ziziphus lotus"
+          ],
+          "commodity": null,
+          "element": "Yield",
+          "result": "not_found_exact_disaggregated_crop_product",
+          "archiveScanRows": 27506
+        },
+        {
+          "action": "catalog-name keyword scan of saved source text",
+          "performedOn": "2026-11-10",
+          "termsCopiedFromCatalog": [
+            "Wild jujube (sedra)",
+            "Jujubier sauvage",
+            "Ziziphus lotus"
+          ],
+          "normalization": "NFKD, remove diacritics, casefold, whole-word/phrase boundaries",
+          "inspectedTextFiles": 42,
+          "matches": [],
+          "result": "Matches are navigation leads, not verified commercial presence or admitted numeric evidence. Scanned INRA volume searched only on saved OCR pages.",
+          "searchExtent": "Bounded research corpus; no claim of an exhaustive crop-by-crop web or literature review."
+        }
+      ],
+      "gaps": [
+        {
+          "field": "prices",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "yields",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "costs",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        },
+        {
+          "field": "margins",
+          "status": "not_found",
+          "scope": "No admissible crop/product-specific value extracted from the saved sources in this pass."
+        }
+      ],
+      "eligibleForProductionUse": false,
+      "pairedObservations": [],
+      "statusDefinition": "partial: at least one admitted numeric input or sourced rotation-linked option, with unresolved suitability/date/range gaps; not_found: no such input extracted in this bounded pass."
+    }
+  ]
+}

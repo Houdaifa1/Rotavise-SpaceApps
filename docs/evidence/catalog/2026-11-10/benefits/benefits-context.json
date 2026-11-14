@@ -1,0 +1,267 @@
+{
+  "catalogVersion": "0.13.0",
+  "researchOnly": true,
+  "contextEvidence": [
+    {
+      "id": "pooled-syria-residual-credit",
+      "cropIds": ["chickpea", "lentil"],
+      "status": "context_only",
+      "direction": "benefit",
+      "magnitude": {
+        "min": 10,
+        "max": 20,
+        "unit": "kg N/ha",
+        "scope": "pooled preceding-grain-legume or fallow treatments in 1993; NOT a separate range for either crop"
+      },
+      "conditions": [
+        "Other seasons contributed no N at harvest.",
+        "Do not turn this into a universal or independently estimated crop credit."
+      ],
+      "regionApplicability": {
+        "countryCode": "SY",
+        "region": "NW Syria",
+        "nonLocal": true
+      },
+      "quote": {
+        "sourceId": "cambridge-residual",
+        "original": "Only in the season where the residual effect of the rotation on wheat yields was greatest (1993) did the preceding grain legume crop or fallow appear to contribute between 10 and 20 kg N ha −1 to the wheat crop. Otherwise they contributed no N at harvest.",
+        "english": "Only in the season where the residual effect of the rotation on wheat yields was greatest (1993) did the preceding grain legume crop or fallow appear to contribute between 10 and 20 kg N ha −1 to the wheat crop. Otherwise they contributed no N at harvest.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/cambridge-residual.txt",
+        "textSha256": "abaf69d92ec74033dee453e49642c211f13c9dfc6f45184f6ca430db02d3a0c2",
+        "locator": {
+          "section": "Abstract"
+        },
+        "matching": "NFKC and whitespace only"
+      },
+      "notAssignedReason": "Numeric result is reported jointly for legumes/fallow, not separated by crop."
+    },
+    {
+      "id": "morocco-labelled-fertilizer-is-not-fixed-nitrogen",
+      "cropIds": ["faba-bean", "sunflower", "bread-wheat", "durum-wheat"],
+      "status": "context_only",
+      "direction": null,
+      "magnitude": {
+        "status": "not_found",
+        "unit": "kg N/ha residual biological credit",
+        "reason": "Paper abstract gives labelled fertilizer recovery across three cropping systems, not crop-specific biological nitrogen credit."
+      },
+      "quote": {
+        "sourceId": "morocco-isotope",
+        "original": "Our objective was to study the effects of crop residues on nutrient cycling and availability for a following wheat crop. The research program was conducted at three sites with differing climatic conditions: south Morocco (a wheat-wheat cropping system), central Morocco (sunflower-wheat), and the Atlas Mountains region (faba bean- wheat). Forty to 85 kg N ha-1 (9.764 at % excess 15N) were applied in three doses. The fertilizer-N recovery by the wheat in the first year was 37%, by sunflower 33%, and by faba bean 37%. At harvest, 22 to 43% of fertilizer N was residual in the 0- to 80-cm soil profile. Twenty-three to 42% of the applied N could not be accounted for. Recovery of the residual labelled fertilizer N by the subsequent wheat crop was 3.4 to 13% for the treatment with residue incorporation and 3.6 to 10% for the treatment without residue incorporation and for the treatment with residues only (T2) 9.6 to 15%.",
+        "english": "Our objective was to study the effects of crop residues on nutrient cycling and availability for a following wheat crop. The research program was conducted at three sites with differing climatic conditions: south Morocco (a wheat-wheat cropping system), central Morocco (sunflower-wheat), and the Atlas Mountains region (faba bean- wheat). Forty to 85 kg N ha-1 (9.764 at % excess 15N) were applied in three doses. The fertilizer-N recovery by the wheat in the first year was 37%, by sunflower 33%, and by faba bean 37%. At harvest, 22 to 43% of fertilizer N was residual in the 0- to 80-cm soil profile. Twenty-three to 42% of the applied N could not be accounted for. Recovery of the residual labelled fertilizer N by the subsequent wheat crop was 3.4 to 13% for the treatment with residue incorporation and 3.6 to 10% for the treatment without residue incorporation and for the treatment with residues only (T2) 9.6 to 15%.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/morocco-isotope.txt",
+        "textSha256": "944589d484735b96320501409c999d4ec01f8550231129380d8ae5415137c3a4",
+        "locator": {
+          "section": "Recovery of fertilizer and crop-residue 15N; PDF p.60"
+        },
+        "matching": "NFKC and whitespace only"
+      },
+      "regionApplicability": {
+        "countryCode": "MA",
+        "region": "South Morocco, central Morocco and Atlas Mountains; system-specific",
+        "nonLocal": false
+      }
+    },
+    {
+      "id": "nematode-break-trial-does-not-establish-following-crop-benefit",
+      "cropIds": [
+        "fennel",
+        "spinach",
+        "lambs-lettuce",
+        "onion",
+        "courgette",
+        "lettuce"
+      ],
+      "status": "inconclusive",
+      "direction": null,
+      "magnitude": {
+        "status": "not_found",
+        "unit": "percent infestation reduction",
+        "reason": "Final trial comparison was confounded and inconclusive."
+      },
+      "quote": {
+        "sourceId": "grab-nematodes",
+        "original": "Malgré les résultats encourageants obtenus pendant les premières années de cet essai, qui nous ont permis de confirmer la moindre sensibilité d’un certain nombre de cultures aux nématodes à galles (ou de la relativiser pour d’autres, comme le fenouil planté trop tôt à l’automne), et d’observer l’intérêt de la solarisation dans la maîtrise des populations de meloidogyne, les conclusions de la dernière année sont apparues très décevantes. Du fait d’une évolution des infestations très différente dans les 2 tunnels, et notamment sur la culture d’été 2011, il est difficile de trancher de façon nette sur l’intérêt des 2,5 années de coupure dans l’assainissement des sols.",
+        "english": "Despite encouraging earlier results confirming lower sensitivity of some crops (and qualifying it for others such as fennel planted too early in autumn), and the interest of solarization, the final year was disappointing. Infestations evolved very differently in the two tunnels, making it difficult to judge clearly the benefit of 2.5 years of break crops for soil sanitation.",
+        "englishIsTranslation": true,
+        "textFile": ".research-sources/2026-11-10/grab-nematodes.txt",
+        "textSha256": "bfd2cc45ca623ab6a15f6d4967bdfdfbf022da922520dc9d2672192524e21ba3",
+        "locator": {
+          "section": "4. Conclusion; PDF p.7"
+        },
+        "matching": "NFKC and whitespace only"
+      },
+      "regionApplicability": {
+        "countryCode": "FR",
+        "region": "Mediterranean protected vegetable research, GRAB; not Morocco",
+        "nonLocal": true
+      }
+    }
+  ],
+  "sourceScopeQuotes": {
+    "uk-syria-bnf": [
+      {
+        "sourceId": "uk-syria-bnf",
+        "original": "Biological nitrogen fixation (BNF) by legume crops was estimated in a Mediterranean environment at ICARDA in northern Syria for 3 consecutive seasons beginning in 1991-92.",
+        "english": "Biological nitrogen fixation (BNF) by legume crops was estimated in a Mediterranean environment at ICARDA in northern Syria for 3 consecutive seasons beginning in 1991-92.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/uk-syria-bnf.txt",
+        "textSha256": "84adaf0001a62d1d25eb92b882338732f77628252c4c8c8334f9ace5ab6beea0",
+        "locator": {
+          "section": "Abstract"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ],
+    "portugal-bnf": [
+      {
+        "sourceId": "portugal-bnf",
+        "original": "At two locations in Portugal on Haplic Luvisols, N_{2} fixation by fababean, pea and chickpea was evaluated over two consecutive years by the isotope dilution technique, using barley as the control crop.",
+        "english": "At two locations in Portugal on Haplic Luvisols, N_{2} fixation by fababean, pea and chickpea was evaluated over two consecutive years by the isotope dilution technique, using barley as the control crop.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/portugal-bnf.web.txt",
+        "textSha256": "1454c222541a66b1d64e7b6fa0a6d6699c2d1103f21afad2e0c9eced07149023",
+        "locator": {
+          "section": "Primary publisher abstract"
+        },
+        "matching": "NFKC and whitespace only"
+      },
+      {
+        "sourceId": "portugal-bnf",
+        "original": "Trials were established in 1990 and 1991 at two sites at Elvas and Casas Velhas in southern Portugal, both on Haplic Luvisols (Cardoso, 1974; FAO/UNESCO, 1989). In trials during 1990/91, fixation by fababean (Vicia faba L. cv. Favel) and pea (Pisum sativum L. cv. Ballet) was determined. In 1991/92, fababean, pea and chickpea (Cicer arietinum L. cv. 510) were investigated, with and without inoculation.",
+        "english": "Trials were established in 1990 and 1991 at two sites at Elvas and Casas Velhas in southern Portugal, both on Haplic Luvisols (Cardoso, 1974; FAO/UNESCO, 1989). In trials during 1990/91, fixation by fababean (Vicia faba L. cv. Favel) and pea (Pisum sativum L. cv. Ballet) was determined. In 1991/92, fababean, pea and chickpea (Cicer arietinum L. cv. 510) were investigated, with and without inoculation.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/portugal-bnf.web.txt",
+        "textSha256": "1454c222541a66b1d64e7b6fa0a6d6699c2d1103f21afad2e0c9eced07149023",
+        "locator": {
+          "section": "Materials and methods extracted by web service"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ],
+    "italy-fieldbean-n-web": [
+      {
+        "sourceId": "italy-fieldbean-n-web",
+        "original": "This study aimed to (i) quantify the field bean fixed N during 2 yr at two Italian locations under rainfed conditions, (ii) quantify the proportion of N and fixed N allocated by field bean to grain, straw, and recoverable roots, and (iii) estimate the potential contribution of field bean to the cropping system N balance.",
+        "english": "This study aimed to (i) quantify the field bean fixed N during 2 yr at two Italian locations under rainfed conditions, (ii) quantify the proportion of N and fixed N allocated by field bean to grain, straw, and recoverable roots, and (iii) estimate the potential contribution of field bean to the cropping system N balance.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/italy-fieldbean-n.web.txt",
+        "textSha256": "eeef7832712a95e730aa08824ad06f682c3329791ef0945fe946353259f285e5",
+        "locator": {
+          "section": "Abstract"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ],
+    "italy-sulla-paper": [
+      {
+        "sourceId": "italy-sulla-paper",
+        "original": "Parallel experiments were conducted over two biennial crop cycles at two Italian locations (Sassari and Ancona), characterized by sandy-loam to heavy clay-loam calcareous soils.",
+        "english": "Parallel experiments were conducted over two biennial crop cycles at two Italian locations (Sassari and Ancona), characterized by sandy-loam to heavy clay-loam calcareous soils.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/italy-sulla-paper.web.txt",
+        "textSha256": "1df940f104ad7a2b8120211b7865def9f31ca5a82170486802e0abee98a61561",
+        "locator": {
+          "section": "Abstract"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ],
+    "portugal-straws": [
+      {
+        "sourceId": "portugal-straws",
+        "original": "Legume and rape straws were producedfrom 1992 to 1995 either atTapada da Ajuda, in Lisbon, or at the National Plant Breeding Station (ENMP), in Elvas. Rice straws were produced in 1994 and 1995 in the Sado valley, near Setúbal.",
+        "english": "Legume and rape straws were producedfrom 1992 to 1995 either atTapada da Ajuda, in Lisbon, or at the National Plant Breeding Station (ENMP), in Elvas. Rice straws were produced in 1994 and 1995 in the Sado valley, near Setúbal.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/portugal-straws.txt",
+        "textSha256": "9a5dc8b2109d664df9bb0fcc0c01e427b4fe62a0508d9e8d586348913d32ef53",
+        "locator": {
+          "section": "Materials and methods; PDF p.3"
+        },
+        "matching": "NFKC and whitespace only"
+      },
+      {
+        "sourceId": "portugal-straws",
+        "original": "Every value described for legume, rape and rice straws (mineral values excepted) is the average of 4 observations (2 places X 2 times).",
+        "english": "Every value described for legume, rape and rice straws (mineral values excepted) is the average of 4 observations (2 places X 2 times).",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/portugal-straws.txt",
+        "textSha256": "9a5dc8b2109d664df9bb0fcc0c01e427b4fe62a0508d9e8d586348913d32ef53",
+        "locator": {
+          "section": "Materials and methods; PDF p.3"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ],
+    "icarda-relay": [
+      {
+        "sourceId": "icarda-relay",
+        "original": "In 2020-2022, ICARDA tested this Diversified Cropping System (DCS) on a trial field of half a hectare, in an area with average annual precipitation of 390 mm (based on 40 years of data).",
+        "english": "In 2020-2022, ICARDA tested this Diversified Cropping System (DCS) on a trial field of half a hectare, in an area with average annual precipitation of 390 mm (based on 40 years of data).",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/icarda-relay-reading.txt",
+        "textSha256": "5aa3f303ea798c8f0253056d8064aaaf3ad92edad521a5755e026e80f715d200",
+        "locator": {
+          "section": "Description; PDF p.1"
+        },
+        "matching": "NFKC and whitespace only"
+      },
+      {
+        "sourceId": "icarda-relay",
+        "original": "However, the technology has potential drawbacks as in years of extreme droughts, chickpeas require supplementary irrigation, especially during establishment. This is often unavailable to local farmers and may result in poor crop establishment and low yields.",
+        "english": "However, the technology has potential drawbacks as in years of extreme droughts, chickpeas require supplementary irrigation, especially during establishment. This is often unavailable to local farmers and may result in poor crop establishment and low yields.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/icarda-relay-reading.txt",
+        "textSha256": "5aa3f303ea798c8f0253056d8064aaaf3ad92edad521a5755e026e80f715d200",
+        "locator": {
+          "section": "Description; PDF p.1"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ],
+    "morocco-feed-2025": [
+      {
+        "sourceId": "morocco-feed-2025",
+        "original": "Aims of this study were to identify and to evaluate the nutritional value of local feed resources in the Chaouia-ourdigha region of Morocco and to examine the effect of adding Diplotaxis assurgens (DA) to the diet of lactating Sardi ewes on lamb growth performance.",
+        "english": "Aims of this study were to identify and to evaluate the nutritional value of local feed resources in the Chaouia-ourdigha region of Morocco and to examine the effect of adding Diplotaxis assurgens (DA) to the diet of lactating Sardi ewes on lamb growth performance.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/morocco-feed-2025.txt",
+        "textSha256": "d0cc1751b3a8acbd4a3cc5a4c303fcc9fe847862542b880b005fae32d4da0025",
+        "locator": {
+          "section": "Abstract"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ],
+    "italy-olive-erosion": [
+      {
+        "sourceId": "italy-olive-erosion",
+        "original": "This study was conducted in a single SHD orchard and over a specific topographic and management setting (semi-arid climate, ~ 15.6% slope, downslope operations). Therefore, the magnitude of erosion and the derived C factor should be interpreted as site-specific and not necessarily representative of all SHD orchards.",
+        "english": "This study was conducted in a single SHD orchard and over a specific topographic and management setting (semi-arid climate, ~ 15.6% slope, downslope operations). Therefore, the magnitude of erosion and the derived C factor should be interpreted as site-specific and not necessarily representative of all SHD orchards.",
+        "englishIsTranslation": false,
+        "textFile": ".research-sources/2026-11-10/italy-olive-erosion.txt",
+        "textSha256": "9b4bbfe40f614a4de5bd9f790c5bb0eda32842e4742ba28dad851c893be62aff",
+        "locator": {
+          "section": "Limitations"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ],
+    "inra-forage": [
+      {
+        "sourceId": "inra-forage",
+        "original": "Bien que le manuel soit largement fondé sur les conditions maro- caines, il peut également servir pour l'Algérie et la Tunisie.",
+        "english": "Although the manual is largely based on Moroccan conditions, it can also serve Algeria and Tunisia.",
+        "englishIsTranslation": true,
+        "textFile": ".research-sources/2026-11-10/inra-forage-p010.txt",
+        "textSha256": "1159f953935432690ce61c3542b8eda8a9411424ab8735608dba2395ce48dc40",
+        "locator": {
+          "section": "Avant-propos; PDF p.10"
+        },
+        "matching": "NFKC and whitespace only"
+      }
+    ]
+  }
+}

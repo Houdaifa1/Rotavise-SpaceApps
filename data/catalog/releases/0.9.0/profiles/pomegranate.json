@@ -1,0 +1,59 @@
+{
+  "id": "pomegranate",
+  "version": "0.9.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Pomegranate",
+    "localNames": [{ "language": "fr", "name": "Grenadier" }],
+    "scientificName": "Punica granatum L.",
+    "family": "Lythraceae",
+    "citations": [
+      {
+        "sourceId": "gbif-pomegranate",
+        "page": null,
+        "quote": "\"scientificName\":\"Punica granatum L.\"",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from GBIF."
+      },
+      {
+        "sourceId": "ormvat-other-crops",
+        "page": null,
+        "quote": "Grenadier",
+        "locator": "Tadla crop table",
+        "interpretation": "context_only",
+        "note": "Grown in the Tadla perimeter."
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "orchard",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-other-crops",
+          "page": null,
+          "quote": "Grenadier",
+          "locator": "Tadla crop table",
+          "interpretation": "context_only",
+          "note": "Presence only."
+        }
+      ],
+      "note": "A tree crop stays in place for years, so it is not part of a rotation plan."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "Tree crops are not planned as rotations."
+    }
+  ],
+  "limitations": [
+    "Listed so the farmer sees it is known; no rotation advice is given. ONCA references exist for later tree guidance."
+  ]
+}

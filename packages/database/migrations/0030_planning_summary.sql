@@ -1,0 +1,1 @@
+ALTER TABLE "planning_runs" ADD COLUMN "strategy_summary" jsonb GENERATED ALWAYS AS (result -> 'strategies') STORED;

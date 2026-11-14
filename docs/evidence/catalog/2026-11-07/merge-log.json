@@ -1,0 +1,2804 @@
+{
+  "summary": {
+    "version": "0.10.0",
+    "generatedFor": "research commit bdf538f",
+    "profiles": 207,
+    "newProfiles": 174,
+    "sources": 142,
+    "newSources": 68,
+    "issues": 387,
+    "newIssues": 383,
+    "rules": 1366,
+    "recallRules": 1106,
+    "doubleCheckedNewRules": 51,
+    "cultivars": 557,
+    "references": 753,
+    "canonicalBytes": 2571629,
+    "sha256": "282965554733f4687ab9e7284ec9e980e1cbd194ee83625c1cd88ee81b151377",
+    "issuesByGroup": {
+      "Cereals, oilseeds and industrial crops": {
+        "issues": 83,
+        "cropIssueLinks": 104
+      },
+      "Pulses": { "issues": 30, "cropIssueLinks": 38 },
+      "Vegetables and roots": { "issues": 135, "cropIssueLinks": 212 },
+      "Forage": { "issues": 28, "cropIssueLinks": 33 },
+      "Orchard and nut trees": { "issues": 99, "cropIssueLinks": 147 },
+      "Herbs, spices and medicinal plants": {
+        "issues": 53,
+        "cropIssueLinks": 78
+      },
+      "Berries and other fruit": { "issues": 22, "cropIssueLinks": 32 },
+      "Wild-harvested plants": { "issues": 9, "cropIssueLinks": 10 }
+    },
+    "cropsWithoutIssues": [
+      "atriplex",
+      "chia",
+      "cistus",
+      "cladanthus",
+      "desert-truffle",
+      "esparto",
+      "lentisk",
+      "marrubium",
+      "myrtle",
+      "rue",
+      "sumac",
+      "wild-thyme"
+    ],
+    "schedulableAnnuals": 147
+  },
+  "mapped": {
+    "rule:temperature:verified": 13,
+    "rule:temperature:evidence": 16,
+    "rule:planting_window:verified": 17,
+    "rule:cycle_duration:verified": 4,
+    "reference:background:sourced": 169,
+    "rule:planting_window:evidence": 1,
+    "rule:minimum_return_interval:evidence": 1,
+    "rule:prohibited_predecessor_family:evidence": 2,
+    "rule:preferred_predecessor_family:evidence": 5,
+    "rule:minimum_return_interval:verified": 5,
+    "rule:preferred_predecessor_family:verified": 5,
+    "rule:prohibited_predecessor_family:verified": 5,
+    "reference:yield:sourced": 61,
+    "issue:sourced": 105,
+    "reference:background:recall": 268,
+    "issue:recall": 544,
+    "cultivar:sourced": 134,
+    "rule:cycle_duration:evidence": 54,
+    "rule:planting_window:recall": 114,
+    "rule:cycle_duration:recall": 127,
+    "identity-hint:botanical_family": 19,
+    "rule:preferred_predecessor_family:recall": 160,
+    "rule:minimum_return_interval:recall": 119,
+    "reference:yield:recall": 149,
+    "rule:prohibited_predecessor_family:recall": 93,
+    "identity-hint:family-term": 9,
+    "identity-hint:ecocrop-family": 32,
+    "rule:temperature:recall": 534,
+    "cultivar:recall": 438,
+    "identity-hint:profile": 28,
+    "reference:chill_requirement:sourced": 1,
+    "reference:harvest_window:sourced": 1,
+    "reference:presence:sourced": 1,
+    "reference:chill_requirement:recall": 18,
+    "reference:presence:recall": 23,
+    "reference:harvest_window:recall": 1,
+    "reference:planner_fit:recall": 61,
+    "rule:crop_health_break:verified": 2,
+    "rule:crop_health_break:recall": 6
+  },
+  "notes": [],
+  "conflicts": [
+    {
+      "crop": "arugula",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-arugula-ecocrop-growing-cycle-eruca-sativa-cycle-duration",
+      "recalled": "t-b-arugula-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "basil",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-basil-ecocrop-growing-cycle-ocimum-basilicum-cycle-duration",
+      "recalled": "t-b-basil-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "basil",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-basil-ecocrop-growing-cycle-ocimum-basilicum-cycle-duration",
+      "recalled": "t-sweet-basil-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "basil",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sweet-basil-cycle-ecocrop-cycle-duration",
+      "recalled": "t-b-basil-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "basil",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sweet-basil-cycle-ecocrop-cycle-duration",
+      "recalled": "t-sweet-basil-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "berseem",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-berseem-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fill-berseem-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "bitter-vetch",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-bitter-vetch-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fill-bitter-vetch-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "broccoli",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-broccoli-ecocrop-growing-cycle-brassica-oleracea-var-italica-cycle-duration",
+      "recalled": "t-fill-broccoli-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "brussels-sprout",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-brussels-sprout-ecocrop-growing-cycle-brassica-oleracea-var-gemmif-d8b86583",
+      "recalled": "t-b-brussels-sprout-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cabbage",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-cabbage-cold-temperature-2",
+      "recalled": "t-fill-cabbage-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cannabis",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-cannabis-cycle-ecocrop-cycle-duration",
+      "recalled": "t-cannabis-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "caraway",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-caraway-cycle-ecocrop-cycle-duration",
+      "recalled": "t-caraway-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "carrot",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-carrot-cold-temperature-2",
+      "recalled": "t-fill-carrot-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cauliflower",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-cauliflower-ecocrop-growing-cycle-brassica-oleracea-var-botrytis-c-386e3581",
+      "recalled": "t-fill-cauliflower-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "celeriac",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-celeriac-ecocrop-growing-cycle-apium-graveolens-var-rapaceum-cycle-duration",
+      "recalled": "t-b-celeriac-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "celery",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-celery-ecocrop-growing-cycle-apium-graveolens-cycle-duration",
+      "recalled": "t-b-celery-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "celery",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-celery-ecocrop-growing-cycle-apium-graveolens-var-dulce-cycle-duration",
+      "recalled": "t-b-celery-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chamomile",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-chamomile-cold-ecocrop-temperature",
+      "recalled": "t-fill-chamomile-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chamomile",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-chamomile-cycle-ecocrop-cycle-duration",
+      "recalled": "t-chamomile-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chard",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-chard-ecocrop-growing-cycle-beta-vulgaris-var-cicla-cycle-duration",
+      "recalled": "t-b-chard-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chickpea",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-chickpea-cold-temperature",
+      "recalled": "t-fill-chickpea-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chilli",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-chilli-ecocrop-growing-cycle-capsicum-annuum-cycle-duration",
+      "recalled": "t-b-chilli-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "common-vetch",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-common-vetch-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-common-vetch-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-coriander-ecocrop-growing-cycle-coriandrum-sativum-cycle-duration",
+      "recalled": "t-b-coriander-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-coriander-ecocrop-growing-cycle-coriandrum-sativum-cycle-duration",
+      "recalled": "t-coriander-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-coriander-cycle-ecocrop-cycle-duration",
+      "recalled": "t-b-coriander-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-coriander-cycle-ecocrop-cycle-duration",
+      "recalled": "t-coriander-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-coriander-cold-ecocrop-temperature",
+      "recalled": "t-a-coriander-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cowpea",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-cowpea-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-cowpea-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cucumber",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-cucumber-ecocrop-growing-cycle-cucumis-sativus-cycle-duration",
+      "recalled": "t-b-cucumber-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "dill",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-dill-ecocrop-growing-cycle-anethum-graveolens-cycle-duration",
+      "recalled": "t-b-dill-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "dill",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-dill-ecocrop-growing-cycle-anethum-graveolens-cycle-duration",
+      "recalled": "t-dill-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "dry-bean",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-dry-bean-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-dry-bean-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "endive",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-endive-ecocrop-growing-cycle-cichorium-endivia-cycle-duration",
+      "recalled": "t-b-endive-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "endive",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-endive-ecocrop-growing-cycle-cichorium-intybus-cycle-duration",
+      "recalled": "t-b-endive-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "faba-bean",
+      "key": "duration|cycle|any",
+      "recalled": "t-b-faba-bean-duration-cycle-duration",
+      "kept": "0.9.0 rule faba-duration"
+    },
+    {
+      "crop": "fennel",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fennel-ecocrop-growing-cycle-foeniculum-vulgare-cycle-duration",
+      "recalled": "t-b-fennel-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fenugreek-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fenugreek-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fenugreek-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fenugreek-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fenugreek-cycle-ecocrop-cycle-duration",
+      "recalled": "t-fenugreek-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fenugreek-cycle-ecocrop-cycle-duration",
+      "recalled": "t-fenugreek-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-fenugreek-cold-ecocrop-temperature",
+      "recalled": "t-fill-fenugreek-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "flax",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-flax-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-flax-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "garden-cress",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-garden-cress-ecocrop-growing-cycle-lepidium-sativum-cycle-duration",
+      "recalled": "t-b-garden-cress-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "gherkin",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-gherkin-ecocrop-growing-cycle-cucumis-sativus-cycle-duration",
+      "recalled": "t-b-gherkin-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "grass-pea",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-grass-pea-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-grass-pea-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "hemp",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-hemp-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-hemp-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "italian-ryegrass",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-italian-ryegrass-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fill-italian-ryegrass-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "lavender",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-lavender-cold-ecocrop-temperature",
+      "recalled": "t-lavender-a-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "leek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-leek-ecocrop-growing-cycle-allium-ampeloprasum-cycle-duration",
+      "recalled": "t-b-leek-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "lemon-verbena",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-lemon-verbena-cold-ecocrop-temperature",
+      "recalled": "t-lemon-verbena-a-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "oat",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-oat-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-oat-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "okra",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-okra-ecocrop-growing-cycle-abelmoschus-esculentus-cycle-duration",
+      "recalled": "t-b-okra-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "oregano",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-oregano-cold-ecocrop-temperature",
+      "recalled": "t-oregano-a-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "parsley",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-parsley-ecocrop-growing-cycle-petroselinum-crispum-cycle-duration",
+      "recalled": "t-b-parsley-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "parsley",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-parsley-ecocrop-growing-cycle-petroselinum-crispum-cycle-duration",
+      "recalled": "t-parsley-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "pea",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-pea-cold-temperature-2",
+      "recalled": "t-fill-pea-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "pearl-millet",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-pearl-millet-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-pearl-millet-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "pumpkin",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-pumpkin-ecocrop-growing-cycle-cucurbita-maxima-cycle-duration",
+      "recalled": "t-b-pumpkin-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "pumpkin",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-pumpkin-ecocrop-growing-cycle-cucurbita-moschata-cycle-duration",
+      "recalled": "t-b-pumpkin-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "radish",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-radish-ecocrop-growing-cycle-raphanus-sativus-var-radicula-cycle-duration",
+      "recalled": "t-b-radish-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "rye",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-rye-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-rye-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "safflower",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-safflower-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-safflower-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "safflower",
+      "key": "window|any|",
+      "recalled": "t-safflower-planting-window-planting-window",
+      "kept": "sourced rule b-safflower-planting-window-planting-window"
+    },
+    {
+      "crop": "sorghum",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sorghum-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-sorghum-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "spinach",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-spinach-ecocrop-growing-cycle-spinacia-oleracea-cycle-duration",
+      "recalled": "t-b-spinach-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "spring-onion",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-spring-onion-ecocrop-growing-cycle-allium-cepa-cycle-duration",
+      "recalled": "t-b-spring-onion-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "strawberry",
+      "key": "temp|cold|flowering",
+      "recalled": "r-a-strawberry-flower-frost-temperature",
+      "kept": "sourced rule a-strawberry-cold-temperature"
+    },
+    {
+      "crop": "sugar-beet",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-sugar-beet-cold-temperature-2",
+      "recalled": "t-fill-sugar-beet-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "sweet-corn",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sweet-corn-ecocrop-growing-cycle-zea-mays-cycle-duration",
+      "recalled": "t-b-sweet-corn-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "sweet-potato",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sweet-potato-ecocrop-growing-cycle-ipomoea-batatas-cycle-duration",
+      "recalled": "t-b-sweet-potato-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "table-beet",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-table-beet-cold-temperature",
+      "recalled": "t-a-table-beet-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "tobacco",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-tobacco-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-tobacco-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "turnip",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-turnip-ecocrop-growing-cycle-brassica-rapa-var-rapifera-cycle-duration",
+      "recalled": "t-b-turnip-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "white-lupin",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-white-lupin-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-white-lupin-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "arugula",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-arugula-ecocrop-growing-cycle-eruca-sativa-cycle-duration",
+      "recalled": "t-b-arugula-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "basil",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-basil-ecocrop-growing-cycle-ocimum-basilicum-cycle-duration",
+      "recalled": "t-b-basil-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "basil",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-basil-ecocrop-growing-cycle-ocimum-basilicum-cycle-duration",
+      "recalled": "t-sweet-basil-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "basil",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sweet-basil-cycle-ecocrop-cycle-duration",
+      "recalled": "t-b-basil-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "basil",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sweet-basil-cycle-ecocrop-cycle-duration",
+      "recalled": "t-sweet-basil-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "berseem",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-berseem-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fill-berseem-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "bitter-vetch",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-bitter-vetch-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fill-bitter-vetch-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "broccoli",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-broccoli-ecocrop-growing-cycle-brassica-oleracea-var-italica-cycle-duration",
+      "recalled": "t-fill-broccoli-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "brussels-sprout",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-brussels-sprout-ecocrop-growing-cycle-brassica-oleracea-var-gemmif-d8b86583",
+      "recalled": "t-b-brussels-sprout-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cabbage",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-cabbage-cold-temperature-2",
+      "recalled": "t-fill-cabbage-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cannabis",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-cannabis-cycle-ecocrop-cycle-duration",
+      "recalled": "t-cannabis-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "caraway",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-caraway-cycle-ecocrop-cycle-duration",
+      "recalled": "t-caraway-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "carrot",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-carrot-cold-temperature-2",
+      "recalled": "t-fill-carrot-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cauliflower",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-cauliflower-ecocrop-growing-cycle-brassica-oleracea-var-botrytis-c-386e3581",
+      "recalled": "t-fill-cauliflower-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "celeriac",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-celeriac-ecocrop-growing-cycle-apium-graveolens-var-rapaceum-cycle-duration",
+      "recalled": "t-b-celeriac-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "celery",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-celery-ecocrop-growing-cycle-apium-graveolens-cycle-duration",
+      "recalled": "t-b-celery-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "celery",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-celery-ecocrop-growing-cycle-apium-graveolens-var-dulce-cycle-duration",
+      "recalled": "t-b-celery-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chamomile",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-chamomile-cold-ecocrop-temperature",
+      "recalled": "t-fill-chamomile-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chamomile",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-chamomile-cycle-ecocrop-cycle-duration",
+      "recalled": "t-chamomile-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chard",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-chard-ecocrop-growing-cycle-beta-vulgaris-var-cicla-cycle-duration",
+      "recalled": "t-b-chard-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chickpea",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-chickpea-cold-temperature",
+      "recalled": "t-fill-chickpea-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "chilli",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-chilli-ecocrop-growing-cycle-capsicum-annuum-cycle-duration",
+      "recalled": "t-b-chilli-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "common-vetch",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-common-vetch-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-common-vetch-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-coriander-ecocrop-growing-cycle-coriandrum-sativum-cycle-duration",
+      "recalled": "t-b-coriander-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-coriander-ecocrop-growing-cycle-coriandrum-sativum-cycle-duration",
+      "recalled": "t-coriander-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-coriander-cycle-ecocrop-cycle-duration",
+      "recalled": "t-b-coriander-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-coriander-cycle-ecocrop-cycle-duration",
+      "recalled": "t-coriander-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "coriander",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-coriander-cold-ecocrop-temperature",
+      "recalled": "t-a-coriander-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cowpea",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-cowpea-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-cowpea-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "cucumber",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-cucumber-ecocrop-growing-cycle-cucumis-sativus-cycle-duration",
+      "recalled": "t-b-cucumber-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "dill",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-dill-ecocrop-growing-cycle-anethum-graveolens-cycle-duration",
+      "recalled": "t-b-dill-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "dill",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-dill-ecocrop-growing-cycle-anethum-graveolens-cycle-duration",
+      "recalled": "t-dill-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "dry-bean",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-dry-bean-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-dry-bean-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "endive",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-endive-ecocrop-growing-cycle-cichorium-endivia-cycle-duration",
+      "recalled": "t-b-endive-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "endive",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-endive-ecocrop-growing-cycle-cichorium-intybus-cycle-duration",
+      "recalled": "t-b-endive-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "faba-bean",
+      "key": "duration|cycle|any",
+      "recalled": "t-b-faba-bean-duration-cycle-duration",
+      "kept": "0.9.0 rule faba-duration"
+    },
+    {
+      "crop": "fennel",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fennel-ecocrop-growing-cycle-foeniculum-vulgare-cycle-duration",
+      "recalled": "t-b-fennel-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fenugreek-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fenugreek-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fenugreek-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fenugreek-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fenugreek-cycle-ecocrop-cycle-duration",
+      "recalled": "t-fenugreek-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-fenugreek-cycle-ecocrop-cycle-duration",
+      "recalled": "t-fenugreek-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "fenugreek",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-fenugreek-cold-ecocrop-temperature",
+      "recalled": "t-fill-fenugreek-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "flax",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-flax-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-flax-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "garden-cress",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-garden-cress-ecocrop-growing-cycle-lepidium-sativum-cycle-duration",
+      "recalled": "t-b-garden-cress-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "gherkin",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-gherkin-ecocrop-growing-cycle-cucumis-sativus-cycle-duration",
+      "recalled": "t-b-gherkin-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "grass-pea",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-grass-pea-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-grass-pea-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "hemp",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-hemp-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-hemp-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "italian-ryegrass",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-italian-ryegrass-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-fill-italian-ryegrass-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "lavender",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-lavender-cold-ecocrop-temperature",
+      "recalled": "t-lavender-a-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "leek",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-leek-ecocrop-growing-cycle-allium-ampeloprasum-cycle-duration",
+      "recalled": "t-b-leek-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "lemon-verbena",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-lemon-verbena-cold-ecocrop-temperature",
+      "recalled": "t-lemon-verbena-a-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "oat",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-oat-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-oat-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "okra",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-okra-ecocrop-growing-cycle-abelmoschus-esculentus-cycle-duration",
+      "recalled": "t-b-okra-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "oregano",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-oregano-cold-ecocrop-temperature",
+      "recalled": "t-oregano-a-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "parsley",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-parsley-ecocrop-growing-cycle-petroselinum-crispum-cycle-duration",
+      "recalled": "t-b-parsley-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "parsley",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-parsley-ecocrop-growing-cycle-petroselinum-crispum-cycle-duration",
+      "recalled": "t-parsley-b-season-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "pea",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-pea-cold-temperature-2",
+      "recalled": "t-fill-pea-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "pearl-millet",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-pearl-millet-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-pearl-millet-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "pumpkin",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-pumpkin-ecocrop-growing-cycle-cucurbita-maxima-cycle-duration",
+      "recalled": "t-b-pumpkin-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "pumpkin",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-pumpkin-ecocrop-growing-cycle-cucurbita-moschata-cycle-duration",
+      "recalled": "t-b-pumpkin-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "radish",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-radish-ecocrop-growing-cycle-raphanus-sativus-var-radicula-cycle-duration",
+      "recalled": "t-b-radish-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "rye",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-rye-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-rye-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "safflower",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-safflower-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-safflower-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "safflower",
+      "key": "window|any|",
+      "recalled": "t-safflower-planting-window-planting-window",
+      "kept": "sourced rule b-safflower-planting-window-planting-window"
+    },
+    {
+      "crop": "sorghum",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sorghum-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-sorghum-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "spinach",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-spinach-ecocrop-growing-cycle-spinacia-oleracea-cycle-duration",
+      "recalled": "t-b-spinach-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "spring-onion",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-spring-onion-ecocrop-growing-cycle-allium-cepa-cycle-duration",
+      "recalled": "t-b-spring-onion-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "strawberry",
+      "key": "temp|cold|flowering",
+      "recalled": "r-a-strawberry-flower-frost-temperature",
+      "kept": "sourced rule a-strawberry-cold-temperature"
+    },
+    {
+      "crop": "sugar-beet",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-sugar-beet-cold-temperature-2",
+      "recalled": "t-fill-sugar-beet-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "sweet-corn",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sweet-corn-ecocrop-growing-cycle-zea-mays-cycle-duration",
+      "recalled": "t-b-sweet-corn-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "sweet-potato",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-sweet-potato-ecocrop-growing-cycle-ipomoea-batatas-cycle-duration",
+      "recalled": "t-b-sweet-potato-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "table-beet",
+      "key": "temp|cold|wc",
+      "sourcedEvidenceOnly": "a-table-beet-cold-temperature",
+      "recalled": "t-a-table-beet-cold-temperature",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "tobacco",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-tobacco-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-tobacco-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "turnip",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-turnip-ecocrop-growing-cycle-brassica-rapa-var-rapifera-cycle-duration",
+      "recalled": "t-b-turnip-cycle-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    },
+    {
+      "crop": "white-lupin",
+      "key": "duration|cycle|any",
+      "sourcedEvidenceOnly": "b-white-lupin-cycle-days-ecocrop-cycle-duration",
+      "recalled": "t-white-lupin-cycle-duration-cycle-duration",
+      "resolution": "both kept; the sourced rule is evidence only"
+    }
+  ],
+  "dropped": [
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-b-season-cycle-duration",
+      "kept": "t-b-basil-cycle-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-a-cold-temperature",
+      "kept": "t-a-basil-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-c-rotation-preferred-predecessor-family",
+      "kept": "t-c-basil-preferred-predecessor-preferred-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-c-rotation-preferred-predecessor-family-2",
+      "kept": "t-c-basil-preferred-predecessor-preferred-predecessor-family-2",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-c-rotation-prohibited-predecessor-family",
+      "kept": "t-c-basil-prohibited-predecessor-prohibited-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-c-rotation-minimum-return-interval",
+      "kept": "t-c-basil-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "caper",
+      "dropped": "t-a-caper-heat-temperature",
+      "kept": "t-caper-a-heat-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "carob",
+      "dropped": "t-a-carob-heat-temperature",
+      "kept": "t-carob-a-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "chives",
+      "dropped": "r-a-chives-temperature-temperature",
+      "kept": "t-a-chives-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-b-season-cycle-duration",
+      "kept": "t-b-coriander-cycle-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "r-a-coriander-bolting-heat-temperature",
+      "kept": "t-a-coriander-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-c-rotation-preferred-predecessor-family",
+      "kept": "t-c-coriander-preferred-predecessor-preferred-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-c-rotation-preferred-predecessor-family-2",
+      "kept": "t-c-coriander-preferred-predecessor-preferred-predecessor-family-2",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-c-rotation-prohibited-predecessor-family",
+      "kept": "t-c-coriander-prohibited-predecessor-prohibited-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-c-rotation-minimum-return-interval",
+      "kept": "t-c-coriander-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "r-a-coriander-seedling-cold-temperature",
+      "kept": "t-coriander-a-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "cumin",
+      "dropped": "r-a-cumin-terminal-heat-temperature",
+      "kept": "t-a-cumin-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-b-season-cycle-duration",
+      "kept": "t-b-dill-cycle-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-c-rotation-preferred-predecessor-family",
+      "kept": "t-c-dill-preferred-predecessor-preferred-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-c-rotation-preferred-predecessor-family-2",
+      "kept": "t-c-dill-preferred-predecessor-preferred-predecessor-family-2",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-c-rotation-prohibited-predecessor-family",
+      "kept": "t-c-dill-prohibited-predecessor-prohibited-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-c-rotation-minimum-return-interval",
+      "kept": "t-c-dill-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "faba-bean",
+      "dropped": "t-b-faba-bean-duration-cycle-duration",
+      "kept": "0.9.0 rule faba-duration",
+      "reason": "sourced beats recall",
+      "valuesDiffer": true
+    },
+    {
+      "crop": "fenugreek",
+      "dropped": "t-fenugreek-b-season-cycle-duration",
+      "kept": "t-fenugreek-cycle-duration-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "fenugreek",
+      "dropped": "t-fenugreek-c-rotation-minimum-return-interval",
+      "kept": "t-fenugreek-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "fenugreek",
+      "dropped": "r-a-fenugreek-heat-temperature",
+      "kept": "t-fenugreek-a-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "jerusalem-artichoke",
+      "dropped": "r-a-jerusalem-artichoke-temperature-temperature",
+      "kept": "t-a-jerusalem-artichoke-cold-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "kohlrabi",
+      "dropped": "r-a-kohlrabi-temperature-temperature",
+      "kept": "t-a-kohlrabi-cold-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "mint",
+      "dropped": "r-a-mint-frost-temperature",
+      "kept": "t-a-mint-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "mint",
+      "dropped": "r-b-mint-replant-cycle-duration",
+      "kept": "t-b-mint-stand-lifetime-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-b-season-cycle-duration",
+      "kept": "t-b-parsley-cycle-cycle-duration",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-a-heat-temperature",
+      "kept": "t-a-parsley-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-c-rotation-preferred-predecessor-family",
+      "kept": "t-c-parsley-preferred-predecessor-preferred-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-c-rotation-preferred-predecessor-family-2",
+      "kept": "t-c-parsley-preferred-predecessor-preferred-predecessor-family-2",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-c-rotation-prohibited-predecessor-family",
+      "kept": "t-c-parsley-prohibited-predecessor-prohibited-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-c-rotation-minimum-return-interval",
+      "kept": "t-c-parsley-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "pistachio",
+      "dropped": "t-a-pistachio-heat-temperature",
+      "kept": "t-pistachio-a-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "raspberry",
+      "dropped": "r-b-raspberry-planting-planting-window",
+      "kept": "t-b-raspberry-planting-window-planting-window",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "rosemary",
+      "dropped": "r-a-rosemary-frost-temperature",
+      "kept": "t-rosemary-a-cold-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "safflower",
+      "dropped": "t-safflower-planting-window-planting-window",
+      "kept": "sourced rule b-safflower-planting-window-planting-window",
+      "reason": "sourced beats recall",
+      "valuesDiffer": true
+    },
+    {
+      "crop": "strawberry",
+      "dropped": "r-a-strawberry-flower-frost-temperature",
+      "kept": "sourced rule a-strawberry-cold-temperature",
+      "reason": "sourced beats recall",
+      "valuesDiffer": true
+    },
+    {
+      "crop": "sugar-beet",
+      "dropped": "t-d-sugar-beet-cercosporiosis-return-minimum-return-interval",
+      "kept": "t-c-sugar-beet-minimum-return-interval-minimum-return-interval",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "sweet-potato",
+      "dropped": "r-a-sweet-potato-cold-temperature",
+      "kept": "t-a-sweet-potato-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "sweet-potato",
+      "dropped": "r-b-sweet-potato-season-planting-window",
+      "kept": "t-b-sweet-potato-sowing-window-planting-window",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "thyme",
+      "dropped": "r-a-thyme-frost-temperature",
+      "kept": "t-thyme-a-cold-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "triticale",
+      "dropped": "r-b-triticale-season-planting-window",
+      "kept": "t-triticale-planting-window-planting-window",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "triticale",
+      "dropped": "r-c-triticale-rotation-minimum-return-interval",
+      "kept": "t-triticale-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-b-season-cycle-duration",
+      "kept": "t-b-basil-cycle-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-a-cold-temperature",
+      "kept": "t-a-basil-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-c-rotation-preferred-predecessor-family",
+      "kept": "t-c-basil-preferred-predecessor-preferred-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-c-rotation-preferred-predecessor-family-2",
+      "kept": "t-c-basil-preferred-predecessor-preferred-predecessor-family-2",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-c-rotation-prohibited-predecessor-family",
+      "kept": "t-c-basil-prohibited-predecessor-prohibited-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "basil",
+      "dropped": "t-sweet-basil-c-rotation-minimum-return-interval",
+      "kept": "t-c-basil-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "caper",
+      "dropped": "t-a-caper-heat-temperature",
+      "kept": "t-caper-a-heat-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "carob",
+      "dropped": "t-a-carob-heat-temperature",
+      "kept": "t-carob-a-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "chives",
+      "dropped": "r-a-chives-temperature-temperature",
+      "kept": "t-a-chives-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-b-season-cycle-duration",
+      "kept": "t-b-coriander-cycle-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "r-a-coriander-bolting-heat-temperature",
+      "kept": "t-a-coriander-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-c-rotation-preferred-predecessor-family",
+      "kept": "t-c-coriander-preferred-predecessor-preferred-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-c-rotation-preferred-predecessor-family-2",
+      "kept": "t-c-coriander-preferred-predecessor-preferred-predecessor-family-2",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-c-rotation-prohibited-predecessor-family",
+      "kept": "t-c-coriander-prohibited-predecessor-prohibited-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "t-coriander-c-rotation-minimum-return-interval",
+      "kept": "t-c-coriander-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "coriander",
+      "dropped": "r-a-coriander-seedling-cold-temperature",
+      "kept": "t-coriander-a-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "cumin",
+      "dropped": "r-a-cumin-terminal-heat-temperature",
+      "kept": "t-a-cumin-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-b-season-cycle-duration",
+      "kept": "t-b-dill-cycle-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-c-rotation-preferred-predecessor-family",
+      "kept": "t-c-dill-preferred-predecessor-preferred-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-c-rotation-preferred-predecessor-family-2",
+      "kept": "t-c-dill-preferred-predecessor-preferred-predecessor-family-2",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-c-rotation-prohibited-predecessor-family",
+      "kept": "t-c-dill-prohibited-predecessor-prohibited-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "dill",
+      "dropped": "t-dill-c-rotation-minimum-return-interval",
+      "kept": "t-c-dill-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "faba-bean",
+      "dropped": "t-b-faba-bean-duration-cycle-duration",
+      "kept": "0.9.0 rule faba-duration",
+      "reason": "sourced beats recall",
+      "valuesDiffer": true
+    },
+    {
+      "crop": "fenugreek",
+      "dropped": "t-fenugreek-b-season-cycle-duration",
+      "kept": "t-fenugreek-cycle-duration-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "fenugreek",
+      "dropped": "t-fenugreek-c-rotation-minimum-return-interval",
+      "kept": "t-fenugreek-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "fenugreek",
+      "dropped": "r-a-fenugreek-heat-temperature",
+      "kept": "t-fenugreek-a-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "jerusalem-artichoke",
+      "dropped": "r-a-jerusalem-artichoke-temperature-temperature",
+      "kept": "t-a-jerusalem-artichoke-cold-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "kohlrabi",
+      "dropped": "r-a-kohlrabi-temperature-temperature",
+      "kept": "t-a-kohlrabi-cold-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "mint",
+      "dropped": "r-a-mint-frost-temperature",
+      "kept": "t-a-mint-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "mint",
+      "dropped": "r-b-mint-replant-cycle-duration",
+      "kept": "t-b-mint-stand-lifetime-cycle-duration",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-b-season-cycle-duration",
+      "kept": "t-b-parsley-cycle-cycle-duration",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-a-heat-temperature",
+      "kept": "t-a-parsley-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-c-rotation-preferred-predecessor-family",
+      "kept": "t-c-parsley-preferred-predecessor-preferred-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-c-rotation-preferred-predecessor-family-2",
+      "kept": "t-c-parsley-preferred-predecessor-preferred-predecessor-family-2",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-c-rotation-prohibited-predecessor-family",
+      "kept": "t-c-parsley-prohibited-predecessor-prohibited-predecessor-family",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "parsley",
+      "dropped": "t-parsley-c-rotation-minimum-return-interval",
+      "kept": "t-c-parsley-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "pistachio",
+      "dropped": "t-a-pistachio-heat-temperature",
+      "kept": "t-pistachio-a-heat-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "raspberry",
+      "dropped": "r-b-raspberry-planting-planting-window",
+      "kept": "t-b-raspberry-planting-window-planting-window",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "rosemary",
+      "dropped": "r-a-rosemary-frost-temperature",
+      "kept": "t-rosemary-a-cold-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "safflower",
+      "dropped": "t-safflower-planting-window-planting-window",
+      "kept": "sourced rule b-safflower-planting-window-planting-window",
+      "reason": "sourced beats recall",
+      "valuesDiffer": true
+    },
+    {
+      "crop": "strawberry",
+      "dropped": "r-a-strawberry-flower-frost-temperature",
+      "kept": "sourced rule a-strawberry-cold-temperature",
+      "reason": "sourced beats recall",
+      "valuesDiffer": true
+    },
+    {
+      "crop": "sugar-beet",
+      "dropped": "t-d-sugar-beet-cercosporiosis-return-minimum-return-interval",
+      "kept": "t-c-sugar-beet-minimum-return-interval-minimum-return-interval",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "sweet-potato",
+      "dropped": "r-a-sweet-potato-cold-temperature",
+      "kept": "t-a-sweet-potato-cold-temperature",
+      "reason": "lower-confidence recall for the same question"
+    },
+    {
+      "crop": "sweet-potato",
+      "dropped": "r-b-sweet-potato-season-planting-window",
+      "kept": "t-b-sweet-potato-sowing-window-planting-window",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "thyme",
+      "dropped": "r-a-thyme-frost-temperature",
+      "kept": "t-thyme-a-cold-temperature",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "triticale",
+      "dropped": "r-b-triticale-season-planting-window",
+      "kept": "t-triticale-planting-window-planting-window",
+      "reason": "duplicate recall"
+    },
+    {
+      "crop": "triticale",
+      "dropped": "r-c-triticale-rotation-minimum-return-interval",
+      "kept": "t-triticale-minimum-return-interval-minimum-return-interval",
+      "reason": "duplicate recall"
+    }
+  ],
+  "skipped": [
+    {
+      "item": "C.faba-bean.minimum_return_interval",
+      "crop": "faba-bean",
+      "reason": "no return interval value"
+    },
+    {
+      "item": "C.green-bean.preferred_predecessor",
+      "crop": "green-bean",
+      "reason": "source unusable (not https, no saved file, or no hash)"
+    },
+    {
+      "item": "F.cumin.observed_yield",
+      "crop": "cumin",
+      "reason": "no yield value"
+    },
+    {
+      "item": "F.mint.observed_yield",
+      "crop": "mint",
+      "reason": "no yield value"
+    },
+    {
+      "item": "F.blueberry.observed_yield",
+      "crop": "blueberry",
+      "reason": "no yield value"
+    },
+    {
+      "item": "G.berry-crops.diseases.survey",
+      "crop": "berry-crops (species not named in the abstract)",
+      "reason": "crop id not usable or generic"
+    },
+    {
+      "item": "VS.wheat.catalogue_size",
+      "crop": "wheat",
+      "reason": "crop id not usable or generic"
+    },
+    {
+      "item": "VS.inra.releases_since_2017",
+      "crop": "multi",
+      "reason": "crop id not usable or generic"
+    },
+    {
+      "item": "F.safflower.observed_yield",
+      "crop": "safflower",
+      "reason": "no yield value"
+    },
+    {
+      "item": "F.hemp.observed_yield",
+      "crop": "hemp",
+      "reason": "no yield value"
+    },
+    {
+      "item": "F.gherkin.yield_text",
+      "crop": "gherkin",
+      "reason": "no yield value"
+    },
+    {
+      "item": "G.cucumber.named_pests_diseases",
+      "crop": "cucumber",
+      "reason": "issue kind not usable: unknown"
+    },
+    {
+      "item": "G.gherkin.named_pests_diseases",
+      "crop": "gherkin",
+      "reason": "issue kind not usable: unknown"
+    },
+    { "item": "F.celery.yield", "crop": "celery", "reason": "no yield value" },
+    {
+      "item": "F.parsley.yield",
+      "crop": "parsley",
+      "reason": "no yield value"
+    },
+    {
+      "item": "F.asparagus.yield",
+      "crop": "asparagus",
+      "reason": "no yield value"
+    },
+    {
+      "item": "F.jerusalem-artichoke.yield",
+      "crop": "jerusalem-artichoke",
+      "reason": "no yield value"
+    },
+    {
+      "item": "T.C.cucumber.family",
+      "crop": "cucumber",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.gherkin.family",
+      "crop": "gherkin",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.pumpkin.family",
+      "crop": "pumpkin",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.cauliflower.family",
+      "crop": "cauliflower",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.broccoli.family",
+      "crop": "broccoli",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.brussels-sprout.family",
+      "crop": "brussels-sprout",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.kohlrabi.family",
+      "crop": "kohlrabi",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.turnip.family",
+      "crop": "turnip",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.radish.family",
+      "crop": "radish",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.chard.family",
+      "crop": "chard",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.celeriac.family",
+      "crop": "celeriac",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.leek.family",
+      "crop": "leek",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.spring-onion.family",
+      "crop": "spring-onion",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.cardoon.family",
+      "crop": "cardoon",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.sweet-potato.family",
+      "crop": "sweet-potato",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.chilli.family",
+      "crop": "chilli",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.arugula.family",
+      "crop": "arugula",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.asparagus.family",
+      "crop": "asparagus",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.dill.family",
+      "crop": "dill",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.basil.family",
+      "crop": "basil",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.chives.family",
+      "crop": "chives",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.sweet-corn.family",
+      "crop": "sweet-corn",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.garden-cress.family",
+      "crop": "garden-cress",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.coriander.V.local-landrace-populations-unnamed",
+      "crop": "coriander",
+      "reason": "variety name not usable: local landrace populations (unnamed)"
+    },
+    {
+      "item": "T.anise.V.local-populations-unnamed",
+      "crop": "anise",
+      "reason": "variety name not usable: local populations (unnamed)"
+    },
+    {
+      "item": "T.nigella.V.local-ecotypes-unnamed",
+      "crop": "nigella",
+      "reason": "variety name not usable: local ecotypes (unnamed)"
+    },
+    {
+      "item": "T.fenugreek.V.local-populations-unnamed",
+      "crop": "fenugreek",
+      "reason": "variety name not usable: local populations (unnamed)"
+    },
+    {
+      "item": "T.rosemary.C.rotation",
+      "crop": "rosemary",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.thyme.C.rotation",
+      "crop": "thyme",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.oregano.C.rotation",
+      "crop": "oregano",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.sage.C.rotation",
+      "crop": "sage",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.lavender.C.rotation",
+      "crop": "lavender",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.lemon-verbena.C.rotation",
+      "crop": "lemon-verbena",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.rose-geranium.C.rotation",
+      "crop": "rose-geranium",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.damask-rose.C.rotation",
+      "crop": "damask-rose",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.caper.C.rotation",
+      "crop": "caper",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.henna.C.rotation",
+      "crop": "henna",
+      "reason": "return interval 0 outside 1–20 years"
+    },
+    {
+      "item": "T.C.apple.family_and_replant",
+      "crop": "apple",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.pear.family_and_replant",
+      "crop": "pear",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.plum.family_and_replant",
+      "crop": "plum",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.cherry.family_and_replant",
+      "crop": "cherry",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.quince.family_and_replant",
+      "crop": "quince",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.V.quince.none",
+      "crop": "quince",
+      "reason": "variety without a name"
+    },
+    {
+      "item": "T.A.loquat.chilling_requirement",
+      "crop": "loquat",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.loquat.family_and_replant",
+      "crop": "loquat",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.kiwi.family_and_replant",
+      "crop": "kiwi",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.A.mango.chilling_requirement",
+      "crop": "mango",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.mango.family_and_replant",
+      "crop": "mango",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.A.papaya.chilling_requirement",
+      "crop": "papaya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.papaya.family_and_replant",
+      "crop": "papaya",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.pistachio.family_and_replant",
+      "crop": "pistachio",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.hazelnut.family_and_replant",
+      "crop": "hazelnut",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.pecan.family_and_replant",
+      "crop": "pecan",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.A.carob.chilling_requirement",
+      "crop": "carob",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.carob.family_and_replant",
+      "crop": "carob",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.jujube.family_and_replant",
+      "crop": "jujube",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.V.jujube.none",
+      "crop": "jujube",
+      "reason": "variety without a name"
+    },
+    {
+      "item": "T.C.persimmon.family_and_replant",
+      "crop": "persimmon",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.A.guava.chilling_requirement",
+      "crop": "guava",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.guava.family_and_replant",
+      "crop": "guava",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.V.guava.none",
+      "crop": "guava",
+      "reason": "variety without a name"
+    },
+    {
+      "item": "T.A.passion-fruit.chilling_requirement",
+      "crop": "passion-fruit",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.passion-fruit.family_and_replant",
+      "crop": "passion-fruit",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.A.lychee.chilling_requirement",
+      "crop": "lychee",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.lychee.family_and_replant",
+      "crop": "lychee",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.A.pineapple.chilling_requirement",
+      "crop": "pineapple",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.pineapple.family_and_replant",
+      "crop": "pineapple",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.C.mulberry.family_and_replant",
+      "crop": "mulberry",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.A.caper.chilling_requirement",
+      "crop": "caper",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.caper.family_and_replant",
+      "crop": "caper",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.V.caper.none",
+      "crop": "caper",
+      "reason": "variety without a name"
+    },
+    {
+      "item": "T.C.cherimoya.family_and_replant",
+      "crop": "cherimoya",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.V.cherimoya.none",
+      "crop": "cherimoya",
+      "reason": "variety without a name"
+    },
+    {
+      "item": "T.A.pitahaya.chilling_requirement",
+      "crop": "pitahaya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "T.C.pitahaya.family_and_replant",
+      "crop": "pitahaya",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "T.V.pitahaya.none",
+      "crop": "pitahaya",
+      "reason": "variety without a name"
+    },
+    {
+      "item": "T.C.cumin.prohibited_predecessor",
+      "crop": "cumin",
+      "reason": "rotation record shape not mapped"
+    },
+    {
+      "item": "R.F.sweet-potato.yield",
+      "crop": "sweet-potato",
+      "reason": "no yield value"
+    },
+    { "item": "R.F.apple.system", "crop": "apple", "reason": "no yield value" },
+    {
+      "item": "R.V.salsify.none",
+      "crop": "salsify",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.scorzonera.none",
+      "crop": "scorzonera",
+      "reason": "no value recorded"
+    },
+    { "item": "R.A.taro.heat", "crop": "taro", "reason": "no value recorded" },
+    { "item": "R.V.taro.none", "crop": "taro", "reason": "no value recorded" },
+    {
+      "item": "R.V.watercress.none",
+      "crop": "watercress",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.purslane.heat",
+      "crop": "purslane",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.mallow.heat",
+      "crop": "mallow",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.mallow.cold",
+      "crop": "mallow",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.mallow.window",
+      "crop": "mallow",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.mallow.duration",
+      "crop": "mallow",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.mallow.yield",
+      "crop": "mallow",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.mallow.none",
+      "crop": "mallow",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.amaranth.heat",
+      "crop": "amaranth",
+      "reason": "no value recorded"
+    },
+    { "item": "R.A.chia.heat", "crop": "chia", "reason": "no value recorded" },
+    {
+      "item": "R.G.chia.issues",
+      "crop": "chia",
+      "reason": "no value recorded"
+    },
+    { "item": "R.A.teff.heat", "crop": "teff", "reason": "no value recorded" },
+    {
+      "item": "R.A.finger-millet.heat",
+      "crop": "finger-millet",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.finger-millet.none",
+      "crop": "finger-millet",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.foxtail-millet.heat",
+      "crop": "foxtail-millet",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.foxtail-millet.none",
+      "crop": "foxtail-millet",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.yellow-lupin.none",
+      "crop": "yellow-lupin",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.mung-bean.none",
+      "crop": "mung-bean",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.camelina.none",
+      "crop": "camelina",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.castor.heat",
+      "crop": "castor",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.jojoba.heat",
+      "crop": "jojoba",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.jojoba.none",
+      "crop": "jojoba",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.stevia.heat",
+      "crop": "stevia",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.aloe-vera.heat",
+      "crop": "aloe-vera",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.sulla.none",
+      "crop": "sulla",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.subterranean-clover.heat",
+      "crop": "subterranean-clover",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.annual-medic.heat",
+      "crop": "annual-medic",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.annual-medic.issues",
+      "crop": "annual-medic",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.crimson-clover.heat",
+      "crop": "crimson-clover",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.sudan-grass.heat",
+      "crop": "sudan-grass",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.sudan-grass.none",
+      "crop": "sudan-grass",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.forage-rape.heat",
+      "crop": "forage-rape",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.atriplex.heat",
+      "crop": "atriplex",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.atriplex.issues",
+      "crop": "atriplex",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.acacia-saligna.heat",
+      "crop": "acacia-saligna",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.acacia-saligna.issues",
+      "crop": "acacia-saligna",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.acacia-saligna.none",
+      "crop": "acacia-saligna",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.azarole.heat",
+      "crop": "azarole",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.azarole.none",
+      "crop": "azarole",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.medlar.heat",
+      "crop": "medlar",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.chestnut.heat",
+      "crop": "chestnut",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.stone-pine.heat",
+      "crop": "stone-pine",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.stone-pine.window",
+      "crop": "stone-pine",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.stone-pine.yield",
+      "crop": "stone-pine",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.stone-pine.none",
+      "crop": "stone-pine",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.sumac.heat",
+      "crop": "sumac",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.sumac.window",
+      "crop": "sumac",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.sumac.duration",
+      "crop": "sumac",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.sumac.yield",
+      "crop": "sumac",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.sumac.issues",
+      "crop": "sumac",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.sumac.none",
+      "crop": "sumac",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.marrubium.heat",
+      "crop": "marrubium",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.marrubium.cold",
+      "crop": "marrubium",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.marrubium.window",
+      "crop": "marrubium",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.marrubium.duration",
+      "crop": "marrubium",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.marrubium.yield",
+      "crop": "marrubium",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.marrubium.issues",
+      "crop": "marrubium",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.marrubium.none",
+      "crop": "marrubium",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.juniper-cade.heat",
+      "crop": "juniper-cade",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.juniper-cade.cold",
+      "crop": "juniper-cade",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.juniper-cade.window",
+      "crop": "juniper-cade",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.juniper-cade.duration",
+      "crop": "juniper-cade",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.juniper-cade.yield",
+      "crop": "juniper-cade",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.juniper-cade.issues",
+      "crop": "juniper-cade",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.juniper-cade.none",
+      "crop": "juniper-cade",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.thuya.heat",
+      "crop": "thuya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.thuya.cold",
+      "crop": "thuya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.thuya.window",
+      "crop": "thuya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.thuya.duration",
+      "crop": "thuya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.thuya.yield",
+      "crop": "thuya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.thuya.issues",
+      "crop": "thuya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.thuya.none",
+      "crop": "thuya",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.wild-thyme.heat",
+      "crop": "wild-thyme",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.wild-thyme.cold",
+      "crop": "wild-thyme",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.wild-thyme.window",
+      "crop": "wild-thyme",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.wild-thyme.duration",
+      "crop": "wild-thyme",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.wild-thyme.yield",
+      "crop": "wild-thyme",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.wild-thyme.issues",
+      "crop": "wild-thyme",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.wild-thyme.none",
+      "crop": "wild-thyme",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.wormwood.heat",
+      "crop": "wormwood",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.wormwood.issues",
+      "crop": "wormwood",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.wormwood.none",
+      "crop": "wormwood",
+      "reason": "no value recorded"
+    },
+    { "item": "R.A.rue.heat", "crop": "rue", "reason": "no value recorded" },
+    { "item": "R.A.rue.cold", "crop": "rue", "reason": "no value recorded" },
+    { "item": "R.B.rue.window", "crop": "rue", "reason": "no value recorded" },
+    {
+      "item": "R.B.rue.duration",
+      "crop": "rue",
+      "reason": "no value recorded"
+    },
+    { "item": "R.F.rue.yield", "crop": "rue", "reason": "no value recorded" },
+    { "item": "R.G.rue.issues", "crop": "rue", "reason": "no value recorded" },
+    { "item": "R.V.rue.none", "crop": "rue", "reason": "no value recorded" },
+    {
+      "item": "R.A.lemon-balm.heat",
+      "crop": "lemon-balm",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.lemon-balm.none",
+      "crop": "lemon-balm",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.pennyroyal.heat",
+      "crop": "pennyroyal",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.pennyroyal.yield",
+      "crop": "pennyroyal",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.pennyroyal.none",
+      "crop": "pennyroyal",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.myrtle.heat",
+      "crop": "myrtle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.myrtle.window",
+      "crop": "myrtle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.myrtle.duration",
+      "crop": "myrtle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.myrtle.yield",
+      "crop": "myrtle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.myrtle.issues",
+      "crop": "myrtle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.myrtle.none",
+      "crop": "myrtle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.bay-laurel.heat",
+      "crop": "bay-laurel",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.bay-laurel.yield",
+      "crop": "bay-laurel",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.bay-laurel.none",
+      "crop": "bay-laurel",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.lentisk.heat",
+      "crop": "lentisk",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.lentisk.window",
+      "crop": "lentisk",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.lentisk.duration",
+      "crop": "lentisk",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.lentisk.yield",
+      "crop": "lentisk",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.lentisk.issues",
+      "crop": "lentisk",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.lentisk.none",
+      "crop": "lentisk",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.esparto.heat",
+      "crop": "esparto",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.esparto.window",
+      "crop": "esparto",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.esparto.duration",
+      "crop": "esparto",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.esparto.yield",
+      "crop": "esparto",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.esparto.issues",
+      "crop": "esparto",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.esparto.none",
+      "crop": "esparto",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.desert-truffle.heat",
+      "crop": "desert-truffle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.desert-truffle.cold",
+      "crop": "desert-truffle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.desert-truffle.window",
+      "crop": "desert-truffle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.B.desert-truffle.duration",
+      "crop": "desert-truffle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.F.desert-truffle.yield",
+      "crop": "desert-truffle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.desert-truffle.issues",
+      "crop": "desert-truffle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.V.desert-truffle.none",
+      "crop": "desert-truffle",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.tarragon.heat",
+      "crop": "tarragon",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.tarragon.issues",
+      "crop": "tarragon",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.A.savory.heat",
+      "crop": "savory",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "R.G.savory.issues",
+      "crop": "savory",
+      "reason": "no value recorded"
+    },
+    {
+      "item": "V.maize.local-landrace-populations",
+      "crop": "maize",
+      "reason": "variety name not usable: Local landrace populations"
+    },
+    {
+      "item": "V.cumin.local-landrace-populations",
+      "crop": "cumin",
+      "reason": "variety name not usable: Local landrace populations"
+    }
+  ]
+}

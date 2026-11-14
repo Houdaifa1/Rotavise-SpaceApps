@@ -1,0 +1,1540 @@
+{
+  "id": "rapeseed",
+  "version": "0.14.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Rapeseed",
+    "localNames": [
+      { "language": "fr", "name": "Colza" },
+      {
+        "language": "ar",
+        "name": "اللفت الزيتي",
+        "recall": {
+          "confidence": "high",
+          "basis": "Modern Standard Arabic name recalled by the AI model; no source consulted.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.rapeseed.ar"
+        }
+      },
+      {
+        "language": "ary",
+        "name": "الكولزا",
+        "recall": {
+          "confidence": "medium",
+          "basis": "Moroccan Arabic (Darija) name recalled by the AI model as Moroccans commonly say it; spelling is not standardised and no source was consulted. Needs a native speaker's review.",
+          "valueKind": "model_recall_unverified",
+          "recordedOn": "2026-11-09",
+          "researchItem": "C12.name.rapeseed.ary"
+        }
+      }
+    ],
+    "scientificName": "Brassica napus L.",
+    "family": "Brassicaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-rapeseed",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Brassica napus L.\""
+      },
+      {
+        "sourceId": "ardna-oilseed-reference",
+        "locator": "PDF page 62, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine.",
+        "page": 62,
+        "quote": "Semis du colza"
+      }
+    ]
+  },
+  "harvestProduct": "oilseed",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "moufida",
+      "name": "Moufida",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "alia",
+      "name": "Alia",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "lila",
+      "name": "Lila",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "double-low-canola-winter-spring-types",
+      "name": "Double-low (canola) winter/spring types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.rapeseed.double-low-(canola)-winter-spring-types"
+      },
+      "notes": "type group"
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "locator": "PDF page 22",
+          "interpretation": "context_only",
+          "note": "Favourable rainfed zones named by the sheet.",
+          "page": 22,
+          "quote": "Ces variétés sont destinées à des zones du Bour favorable, notamment le Saïs, le Gharb et le Loukkos"
+        }
+      ],
+      "note": "Zones the ONCA sheet names."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "locator": "PDF page 22",
+          "interpretation": "context_only",
+          "note": "Favourable rainfed zones named by the sheet.",
+          "page": 22,
+          "quote": "Ces variétés sont destinées à des zones du Bour favorable, notamment le Saïs, le Gharb et le Loukkos"
+        }
+      ],
+      "note": "Zones the ONCA sheet names."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "locator": "PDF page 22",
+          "interpretation": "context_only",
+          "note": "Favourable rainfed zones named by the sheet.",
+          "page": 22,
+          "quote": "Ces variétés sont destinées à des zones du Bour favorable, notamment le Saïs, le Gharb et le Loukkos"
+        }
+      ],
+      "note": "Zones the ONCA sheet names."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.rapeseed.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.rapeseed.TAD"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "rapeseed-sowing",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-reference",
+          "locator": "PDF page 62, 4.4.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 62,
+          "quote": "L'époque idéale de semis est comprise entre 15 octobre et 15 novembre"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "National reference.",
+      "metric": "planting_window",
+      "start": "10-15",
+      "end": "11-15",
+      "precision": "exact_day"
+    },
+    {
+      "id": "rapeseed-duration",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-reference",
+          "locator": "PDF page 64, 4.5",
+          "interpretation": "normalized",
+          "note": "One short-cycle variety, Narjisse.",
+          "page": 64,
+          "quote": "A 163 jours après semis, cette dernière accomplit déjà son cycle biologique"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "One short-cycle variety; others may take longer.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 163,
+      "maxDays": 163
+    },
+    {
+      "id": "rapeseed-frost",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "locator": "PDF page 21, 2.2",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 21,
+          "quote": "la température minimale descend en dessous de -4°C"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Foliage frost; the sheet refers to the winter phase.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -4,
+      "upperDegC": null
+    },
+    {
+      "id": "rapeseed-soil-ph",
+      "citations": [
+        {
+          "sourceId": "ardna-oilseed-fm",
+          "locator": "PDF page 21",
+          "interpretation": "normalized",
+          "note": "Range as written; the guide does not state the method.",
+          "page": 21,
+          "quote": "Le meilleur pH du sol se situe entre 6 et 8.5"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Preference from the ONCA sheet; warns only.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 8.5
+    },
+    {
+      "id": "rapeseed-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Rapeseed",
+          "interpretation": "normalized",
+          "note": "Upper mid value 1.15 and end 0.35.",
+          "page": null,
+          "quote": "Rapeseed, Canola 1.0-1.15 9 0.35 0.6"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 12, Oil crops group",
+          "interpretation": "normalized",
+          "note": "Initial value 0.35 from the group.",
+          "page": null,
+          "quote": "Oil Crops 0.35 1.15 0.35"
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "locator": "Table 11, Sunflower",
+          "interpretation": "normalized",
+          "note": "FAO has no rapeseed row; the sunflower oil crop's stage shares are used as a stated substitute.",
+          "page": null,
+          "quote": "25 35 45 25 130 April/May Medit.; California"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.35,
+      "kcMid": 1.15,
+      "kcEnd": 0.35,
+      "stageLengths": [25, 35, 45, 25]
+    },
+    {
+      "id": "c-rapeseed-minimum-return-interval-minimum-return-interval",
+      "citations": [
+        {
+          "sourceId": "rs-onca-oilseeds",
+          "locator": "PDF/printed page 82, §4.9.1, general preventive rotation",
+          "interpretation": "normalized",
+          "note": "General preventive spacing of rapeseed crops. The same guide gives a phoma-specific shorter interval; preserve both contexts.",
+          "page": 82,
+          "quote": "d’au moins 4 ans"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Minimum years before the same crop or family returns.",
+      "metric": "minimum_return_interval",
+      "years": 4
+    },
+    {
+      "id": "c-rapeseed-preferred-predecessor-preferred-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-onca-oilseeds",
+          "locator": "PDF page 59 (pdftotext page split, re-verified 2026-11-06)",
+          "interpretation": "normalized",
+          "note": "A straw cereal (durum/bread wheat, barley) is named as an easy, workable predecessor for rapeseed. This is phrased as tolerance, not an exclusive preference, so record it as the preferred family rather than the only acceptable one.",
+          "page": 59,
+          "quote": "le colza n'a pas d'exigence particulière, le colza valorise bien les précédents riches mais s'accommode facilement derrière une céréale à paille"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "c-rapeseed-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-onca-oilseeds",
+          "locator": "PDF/printed page 90, §4.9.2",
+          "interpretation": "normalized",
+          "note": "The guide advises avoiding a crop of the same family for pest management. Brassicaceae is the existing catalog identity of rapeseed; keep the pest-management condition.",
+          "page": 90,
+          "quote": "dans la même famille"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-07",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Quote re-found in the saved source text. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Brassicaceae"
+    },
+    {
+      "id": "t-a-rapeseed-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general horticulture/agronomy knowledge: above about 27-30 C at flowering reduces seed set",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.rapeseed.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 30
+    },
+    {
+      "id": "t-fill-rapeseed-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 35 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.rapeseed.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "c11-rapeseed-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.rapeseed"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 9.7
+    },
+    {
+      "id": "c11-rapeseed-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.rapeseed"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-rapeseed-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.rapeseed"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "moderate",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    }
+  ],
+  "references": [
+    {
+      "id": "c-rapeseed-minimum-return-interval-phoma-alternative-background-10",
+      "topic": "background",
+      "summary": "Return interval 3 years under condition: phoma / infected stubble management.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-onca-oilseeds",
+          "locator": "PDF/printed page 90, phoma measures before §4.9.2",
+          "interpretation": "normalized",
+          "note": "Phoma-specific guidance; the guide's general rotation paragraph on page 82 specifies a longer interval. Keep both conditions visible.",
+          "page": 90,
+          "quote": "d'au moins 3 ans"
+        }
+      ]
+    },
+    {
+      "id": "f-rapeseed-observed-yield-yield-37",
+      "topic": "yield",
+      "summary": "Yield 2.7–2.7 t/ha (years 2023-2024; Tanger-Tétouan-Al Hoceima region mean)",
+      "value": { "unit": "t/ha", "min": 2.7, "max": 2.7 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-tanger-region-2025",
+          "locator": "PDF/printed page 72, Figure 63, Région TTA — Rendement row, rapeseed column",
+          "interpretation": "normalized",
+          "note": "Convert the printed yield directly using one quintal = 0.1 tonne. Do not recalculate yield from rounded area and production; the source explicitly warns that its yields precede rounding. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 72
+        }
+      ]
+    },
+    {
+      "id": "a-rapeseed-heat-background-79",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 41 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Brassica napus\"; field TMAX",
+          "interpretation": "normalized",
+          "note": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "k-rapeseed-background-64",
+      "topic": "background",
+      "summary": "Oilseed crop with spring and winter growth habits. Cold tolerance depends on acclimation and stage; reproductive organs differ from a hardened rosette. Heat around flowering can reduce fertility and seed set. Brassica residues and volunteers can retain some Brassica diseases; broad-host pathogens require wider rotation planning. Growth habit, vernalisation and photoperiod influence flowering; oilseed results cannot supply a universal sowing-to-stage calendar.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.rapeseed"
+      }
+    },
+    {
+      "id": "c11-rapeseed-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Does not fix atmospheric nitrogen.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.rapeseed"
+      }
+    },
+    {
+      "id": "c11-rapeseed-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.rapeseed"
+      }
+    },
+    {
+      "id": "c11-rapeseed-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: low.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.rapeseed"
+      }
+    },
+    {
+      "id": "c11-rapeseed-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.rapeseed"
+      }
+    },
+    {
+      "id": "c11-rapeseed-forage-value",
+      "topic": "forage_value",
+      "summary": "No notable forage value.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 0,
+        "max": 0
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.rapeseed"
+      }
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "cycle_duration",
+      "reason": "Only one variety's cycle is sourced."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Water stage shares borrow the sunflower row.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ],
+  "research": {
+    "version": "income-benefits-1",
+    "income": {
+      "facts": [
+        {
+          "id": "rapeseed-faostat-pp-1996",
+          "kind": "prices",
+          "value": 3700,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 1996,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-1996",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5530\",\"Producer Price (LCU/tonne)\",\"1996\",\"1996\",\"7021\",\"Annual value\",\"LCU\",\"3700.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":766173,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-1996.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-1996.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-pp-1997",
+          "kind": "prices",
+          "value": 3700,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 1997,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-1997",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5530\",\"Producer Price (LCU/tonne)\",\"1997\",\"1997\",\"7021\",\"Annual value\",\"LCU\",\"3700.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":766174,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-1997.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-1997.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-pp-1998",
+          "kind": "prices",
+          "value": 3900,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 1998,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-1998",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5530\",\"Producer Price (LCU/tonne)\",\"1998\",\"1998\",\"7021\",\"Annual value\",\"LCU\",\"3900.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":766175,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-1998.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-1998.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-pp-1999",
+          "kind": "prices",
+          "value": 4000,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 1999,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-1999",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5530\",\"Producer Price (LCU/tonne)\",\"1999\",\"1999\",\"7021\",\"Annual value\",\"LCU\",\"4000.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":766176,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-1999.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-1999.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-pp-2000",
+          "kind": "prices",
+          "value": 4000,
+          "unit": "LCU/tonne",
+          "currency": "MAD",
+          "year": 2000,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-2000",
+          "definition": "annual_national_price",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-pp",
+              "sourceSha256": "327f70a2230032d3966d6e9583ec5caf0e9416aa9fd91b444e02f6b8665c984d",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5530\",\"Producer Price (LCU/tonne)\",\"2000\",\"2000\",\"7021\",\"Annual value\",\"LCU\",\"4000.000000\",\"A\"",
+              "locator": "{\"archiveMember\":\"Prices_E_All_Data_(Normalized).csv\",\"csvLineNumber\":766177,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Months Code,Months,Unit,Value,Flag\"}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-2000.quote"
+            },
+            {
+              "sourceId": "research-income-fao-morocco-currency",
+              "sourceSha256": "b5323a47eb514f14527e1dd8ab0c09bcbf0a9b4c849f8dfabcc16bff52b1fa5c",
+              "quote": "Dirham (symbol DH or MAD)",
+              "locator": "{}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-faostat-pp-2000.currencyEvidence"
+            }
+          ],
+          "research": {
+            "market": "farm gate / first point of sale; national annual average",
+            "nominal": null,
+            "nominalBasis": "Unadjusted source monetary observation; no inflation/deflation performed; price basis not explicitly stated in the row.",
+            "sourceFlag": "A",
+            "statistic": "annual_national_price",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Historical observation ending before 2020; does not establish present commercial cultivation or a current price."
+            ],
+            "currencyEvidence": {
+              "sourceId": "fao-morocco-currency",
+              "original": "Dirham (symbol DH or MAD)",
+              "english": "Dirham (symbol DH or MAD)",
+              "note": "LCU currency identification only; no exchange-rate calculation."
+            },
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-onca-oilseeds-prices-6",
+          "kind": "prices",
+          "value": 450,
+          "unit": "Dh/ql",
+          "currency": "MAD",
+          "year": null,
+          "region": "Fès-Meknès: mountain zone",
+          "commodity": null,
+          "scenarioId": "rapeseed-onca-annex",
+          "definition": "published_point",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-oilseeds",
+              "sourceSha256": "6da3ccb6ea1be49cbd121e436ea2c611cf446e1f2c143cbf13f849c62743595b",
+              "quote": "grain 25 450 11 250 Am. Ch.f. 0 Prd.Brut 11250",
+              "locator": "{\"pdfPage\":113}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-onca-oilseeds-prices-6.quote"
+            },
+            {
+              "sourceId": "research-income-onca-oilseeds",
+              "sourceSha256": "6da3ccb6ea1be49cbd121e436ea2c611cf446e1f2c143cbf13f849c62743595b",
+              "quote": "(Dh/ql)",
+              "locator": "{\"pdfPage\":113}",
+              "quoteCheck": "income:rapeseed.prices.rapeseed-onca-oilseeds-prices-6.quote.context.0"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": "farm sale; exact transaction stage not stated",
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "columnInterpretation": "Lower income table: grain quantity, Dh/ql price, gross receipts.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-qcl-2020",
+          "kind": "yields",
+          "value": 1500,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2020,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-2020",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5412\",\"Yield\",\"2020\",\"2020\",\"kg/ha\",\"1500.000000\",\"X\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1912290,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:rapeseed.yields.rapeseed-faostat-qcl-2020.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "X",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Source is not flagged A; preserve FAOSTAT flag and do not call this an observed official measurement."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-qcl-2021",
+          "kind": "yields",
+          "value": 1500,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2021,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-2021",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5412\",\"Yield\",\"2021\",\"2021\",\"kg/ha\",\"1500.000000\",\"X\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1912291,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:rapeseed.yields.rapeseed-faostat-qcl-2021.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "X",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Source is not flagged A; preserve FAOSTAT flag and do not call this an observed official measurement."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-qcl-2022",
+          "kind": "yields",
+          "value": 2000,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2022,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-2022",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5412\",\"Yield\",\"2022\",\"2022\",\"kg/ha\",\"2000.000000\",\"X\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1912292,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:rapeseed.yields.rapeseed-faostat-qcl-2022.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "X",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Source is not flagged A; preserve FAOSTAT flag and do not call this an observed official measurement."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-qcl-2023",
+          "kind": "yields",
+          "value": 2000,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2023,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-2023",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5412\",\"Yield\",\"2023\",\"2023\",\"kg/ha\",\"2000.000000\",\"X\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1912293,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:rapeseed.yields.rapeseed-faostat-qcl-2023.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "X",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Source is not flagged A; preserve FAOSTAT flag and do not call this an observed official measurement."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-faostat-qcl-2024",
+          "kind": "yields",
+          "value": 2000,
+          "unit": "kg/ha",
+          "currency": null,
+          "year": 2024,
+          "region": "Morocco (national aggregate)",
+          "commodity": "Rape or colza seed",
+          "scenarioId": "rapeseed-faostat-2024",
+          "definition": "annual_national_yield",
+          "citations": [
+            {
+              "sourceId": "research-income-faostat-qcl",
+              "sourceSha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+              "quote": "\"143\",\"'504\",\"Morocco\",\"270\",\"'01443\",\"Rape or colza seed\",\"5412\",\"Yield\",\"2024\",\"2024\",\"kg/ha\",\"2000.000000\",\"X\",",
+              "locator": "{\"archiveMember\":\"Production_Crops_Livestock_E_All_Data_(Normalized).csv\",\"csvLineNumber\":1912294,\"csvHeader\":\"Area Code,Area Code (M49),Area,Item Code,Item Code (CPC),Item,Element Code,Element,Year Code,Year,Unit,Value,Flag,Note\"}",
+              "quoteCheck": "income:rapeseed.yields.rapeseed-faostat-qcl-2024.quote"
+            }
+          ],
+          "research": {
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "sourceFlag": "X",
+            "statistic": "annual_national_yield",
+            "limitations": [
+              "National mean, not a farm-level attainable range or a current quote.",
+              "Not combined with undated ONCA costs or margins.",
+              "Source is not flagged A; preserve FAOSTAT flag and do not call this an observed official measurement."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-onca-oilseeds-yields-6",
+          "kind": "yields",
+          "value": 25,
+          "unit": "Qx/Ha",
+          "currency": null,
+          "year": null,
+          "region": "Fès-Meknès: mountain zone",
+          "commodity": null,
+          "scenarioId": "rapeseed-onca-annex",
+          "definition": "published_point",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-oilseeds",
+              "sourceSha256": "6da3ccb6ea1be49cbd121e436ea2c611cf446e1f2c143cbf13f849c62743595b",
+              "quote": "Engrais(Unités) 1 0 -Rdt.prod. Qx/Ha 25,0",
+              "locator": "{\"pdfPage\":113}",
+              "quoteCheck": "income:rapeseed.yields.rapeseed-onca-oilseeds-yields-6.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "not_applicable",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-onca-oilseeds-costs-1",
+          "kind": "costs",
+          "value": 5172,
+          "unit": "DH/ha",
+          "currency": "MAD",
+          "year": null,
+          "region": "Fès-Meknès: mountain zone",
+          "commodity": null,
+          "scenarioId": "rapeseed-onca-annex",
+          "definition": "Budget subtotal, with zero land-rent/finance rows; includes family labour and irrigation.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-oilseeds",
+              "sourceSha256": "6da3ccb6ea1be49cbd121e436ea2c611cf446e1f2c143cbf13f849c62743595b",
+              "quote": "T o ta l p a rtie l 5172",
+              "locator": "{\"pdfPage\":113}",
+              "quoteCheck": "income:rapeseed.costs.rapeseed-onca-oilseeds-costs-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "costDefinition": "Budget subtotal, with zero land-rent/finance rows; includes family labour and irrigation.",
+            "provenanceType": "source_quote"
+          }
+        },
+        {
+          "id": "rapeseed-onca-oilseeds-margins-1",
+          "kind": "margins",
+          "value": 6078,
+          "unit": "DH/Ha",
+          "currency": "MAD",
+          "year": null,
+          "region": "Fès-Meknès: mountain zone",
+          "commodity": null,
+          "scenarioId": "rapeseed-onca-annex",
+          "definition": "Published gross margin.",
+          "citations": [
+            {
+              "sourceId": "research-income-onca-oilseeds",
+              "sourceSha256": "6da3ccb6ea1be49cbd121e436ea2c611cf446e1f2c143cbf13f849c62743595b",
+              "quote": "Semences Sel. 1 Ql 3 170 Dh 510 -Marge brute (DH/Ha) 6078",
+              "locator": "{\"pdfPage\":113}",
+              "quoteCheck": "income:rapeseed.margins.rapeseed-onca-oilseeds-margins-1.quote"
+            }
+          ],
+          "research": {
+            "yearBasis": "not_found: economic observation year not explicitly attached to table; filename, contract and upload dates are not observation dates.",
+            "market": null,
+            "nominal": null,
+            "nominalBasis": "Monetary figure as reported; nominal/constant-price basis not explicitly stated; no adjustment.",
+            "statistic": "published_point",
+            "limitations": [
+              "Historical technical/economic reference; not a current quote or guaranteed farm outcome.",
+              "Observation year is not_found."
+            ],
+            "eligibleForCalculation": false,
+            "marginDefinition": "Published gross margin.",
+            "provenanceType": "source_quote"
+          }
+        }
+      ],
+      "options": [],
+      "gaps": [
+        {
+          "field": "economicObservationYear",
+          "status": "not_found",
+          "scope": "At least one regional/illustrative budget has no explicitly attached observation year; no publication/upload/contract year substituted."
+        },
+        {
+          "field": "representative_current_farm_price_yield_range",
+          "status": "not_found",
+          "scope": "National annual means, provincial means and technical-budget assumptions do not establish a current typical farm-level distribution."
+        }
+      ]
+    },
+    "benefits": {
+      "findings": [
+        {
+          "id": "rapeseed.disease_break.01",
+          "category": "disease_break",
+          "effect": "Rapeseed interrupts cereal sequences and helps control cereal diseases and weeds",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Cereal-based rotations; no named pathogen or soil-borne-specific measured effect, break duration or percent reduction."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "rapeseed as break in cereal sequences",
+            "partners": [{ "sourceName": "céréales", "family": "Poaceae" }]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-inra-colza",
+              "sourceSha256": "b0ad3c488a6378a2c3b17ca0ae6c39737ca7fed04f8d8c9a9f12e234d695e0e6",
+              "quote": "Le colza joue un rôle dans la rupture du cycle des pailles par l'exploration racinaire et dans la lutte contre les maladies des céréales et contre les mauvaises herbes.",
+              "locator": "{\"pdfPage\":null,\"section\":\"Introductory text\"}",
+              "quoteCheck": "benefits:rapeseed.rapeseed.disease_break.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "rapeseed",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "rapeseed.weed_break.01",
+          "category": "weed_break",
+          "effect": "Rapeseed interrupts cereal sequences and helps control cereal diseases and weeds",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Cereal-based rotations; no named pathogen or soil-borne-specific measured effect, break duration or percent reduction."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "rapeseed as break in cereal sequences",
+            "partners": [{ "sourceName": "céréales", "family": "Poaceae" }]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-inra-colza",
+              "sourceSha256": "b0ad3c488a6378a2c3b17ca0ae6c39737ca7fed04f8d8c9a9f12e234d695e0e6",
+              "quote": "Le colza joue un rôle dans la rupture du cycle des pailles par l'exploration racinaire et dans la lutte contre les maladies des céréales et contre les mauvaises herbes.",
+              "locator": "{\"pdfPage\":null,\"section\":\"Introductory text\"}",
+              "quoteCheck": "benefits:rapeseed.rapeseed.weed_break.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "rapeseed",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "rapeseed.weed_break.02",
+          "category": "weed_break",
+          "effect": "Named broadleaf breaks help reduce weeds in wheat rotations",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Wheat type not specified in this sentence; no quantitative weed effect assigned; canola means oilseed rapeseed, not forage rape."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "rotation with wheat",
+            "partners": [{ "sourceName": "wheat", "family": "Poaceae" }]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-inra-weeds",
+              "sourceSha256": "af574682e121fb7b7482852cb425cd6f5505085ec4eac90e03115ded11ca25f5",
+              "quote": "Rotating wheat with other crops like canola, chickpea, or barley + pea helps in reducing weed populations.",
+              "locator": "{\"pdfPage\":175,\"section\":\"VII.1.1. Crop rotation; printed p.166\"}",
+              "quoteCheck": "benefits:rapeseed.rapeseed.weed_break.02.quote"
+            }
+          ],
+          "research": {
+            "cropId": "rapeseed",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "rapeseed.pest_break.01",
+          "category": "pest_break",
+          "effect": "Avoid related-family replacements that retain pest hosts",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Rapeseed section; pest-specific host suitability still required; no break interval or efficacy assigned."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "same-family succession is an ineffective pest break",
+            "partners": [
+              {
+                "sourceName": "same family as rapeseed",
+                "family": "Brassicaceae"
+              }
+            ]
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-onca-oilseeds",
+              "sourceSha256": "6da3ccb6ea1be49cbd121e436ea2c611cf446e1f2c143cbf13f849c62743595b",
+              "quote": "Pour protéger une culture contre des ravageurs, la rotation des cultures vise spécifiquement à réduire la présence de la population des insectes nuisibles en supprimant la plante hôte de l'environnement. Il est toutefois important d'éviter de planter une culture dans la même famille parce que de nombreux ravageurs ont une large gamme d'hôtes et prospéreront sur des cultures connexes.",
+              "locator": "{\"pdfPage\":90,\"section\":\"4.9.2; Importance de la rotation dans la gestion des maladies\"}",
+              "quoteCheck": "benefits:rapeseed.rapeseed.pest_break.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "rapeseed",
+            "status": "sourced",
+            "direction": "penalty",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        },
+        {
+          "id": "rapeseed.rooting_soil_structure_infiltration.01",
+          "category": "rooting_soil_structure_infiltration",
+          "effect": "Taproot loosens soil; no measured infiltration effect",
+          "nonLocal": false,
+          "region": "Morocco; guidance scope, not a field-specific measurement",
+          "conditions": [
+            "Oilseed rapeseed; qualitative INRA synthesis; do not transfer to forage rape or other Brassica crops."
+          ],
+          "magnitude": {
+            "status": "not_found",
+            "value": null,
+            "unit": null,
+            "reason": "Quote supports a qualitative effect only; no crop-specific numerical effect extracted."
+          },
+          "rotationContext": {
+            "relationship": "crop product or intrinsic trait; no predecessor/successor comparison quantified",
+            "partners": []
+          },
+          "citations": [
+            {
+              "sourceId": "research-benefits-inra-colza",
+              "sourceSha256": "b0ad3c488a6378a2c3b17ca0ae6c39737ca7fed04f8d8c9a9f12e234d695e0e6",
+              "quote": "par l'ameublissement du sol grâce à son système racinaire pivotant",
+              "locator": "{\"pdfPage\":null,\"section\":\"Printed p.17; Généralités\"}",
+              "quoteCheck": "benefits:rapeseed.rapeseed.rooting_soil_structure_infiltration.01.quote"
+            }
+          ],
+          "research": {
+            "cropId": "rapeseed",
+            "status": "sourced",
+            "direction": "benefit",
+            "regionApplicability": {
+              "countryCode": "MA",
+              "region": "Morocco; guidance scope, not a field-specific measurement",
+              "nonLocal": false,
+              "transferToMorocco": "only_within_stated_source_conditions"
+            },
+            "reviewStatus": "extracted_quote_checked; not expert reviewed",
+            "plannerUse": "research_candidate_only"
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "category": "biological_nitrogen_fixation",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "residual_nitrogen_credit",
+          "reason": "No accepted crop-specific range for nitrogen actually credited to a following crop. Fixation, net crop N balance and pooled treatment results are not substituted."
+        },
+        {
+          "category": "forage_residue_feed",
+          "reason": "No crop-specific, quote-verified evidence accepted for this effect in the saved sources reviewed in this bounded pass. This is not proof that the effect is absent."
+        },
+        {
+          "category": "erosion_cover_residue",
+          "reason": "No accepted crop-specific RUSLE C factor or residue-management effect. Generic land-use/USLE table rows are not assigned to this crop."
+        },
+        {
+          "category": "bare_soil_period_shortening",
+          "reason": "No source-backed reduction in bare-soil days for this crop and a specified comparison calendar. Harvest duration alone does not establish ground cover."
+        }
+      ]
+    }
+  }
+}

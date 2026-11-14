@@ -1,0 +1,223 @@
+{
+  "id": "chickpea",
+  "version": "0.5.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Chickpea",
+    "localNames": [
+      { "language": "fr", "name": "Pois chiche" },
+      { "language": "ar", "name": "الحمص" }
+    ],
+    "scientificName": "Cicer arietinum L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-chickpea",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Cicer arietinum L.\""
+      },
+      {
+        "sourceId": "onca-legumes-reference",
+        "locator": "PDF page 41, crop name",
+        "interpretation": "direct",
+        "note": "Local name as written in the source.",
+        "page": 41,
+        "quote": "Bien que le pois-chiche soit une culture de printemps"
+      },
+      {
+        "sourceId": "inra-arabic-guides",
+        "locator": "Legume guide cover (scanned)",
+        "interpretation": "context_only",
+        "note": "Arabic name read from the scanned page image; not machine-checked."
+      }
+    ]
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "arifi",
+      "name": "Arifi",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ARIFI (FLIP98-50C) INRA MAROC 2009"
+        }
+      ]
+    },
+    {
+      "id": "bouchra",
+      "name": "Bouchra",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "BOUCHRA (FLIP97-114C) INRA MAROC 2015"
+        }
+      ]
+    },
+    {
+      "id": "douyet",
+      "name": "Douyet",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "DOUYET (F84-92C) INRA MAROC 1992"
+        }
+      ]
+    },
+    {
+      "id": "farihane",
+      "name": "Farihane",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "FARIHANE (F84-79C) INRA MAROC 1994"
+        }
+      ]
+    },
+    {
+      "id": "moubarak",
+      "name": "Moubarak",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "MOUBARAK(F84-182C) INRA MAROC 1994"
+        }
+      ]
+    },
+    {
+      "id": "zahor",
+      "name": "Zahor",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ZAHOR (F84-145C) INRA MAROC 1994"
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 41",
+          "interpretation": "context_only",
+          "note": "National guidance only."
+        }
+      ],
+      "note": "Not schedulable in this release."
+    },
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 9",
+          "interpretation": "context_only",
+          "note": "Food legumes are grown across Morocco.",
+          "page": 9,
+          "quote": "La culture des légumineuses alimentaires se répartit sur l'ensemble du Maroc"
+        }
+      ],
+      "note": "National guidance. Rainfall is not yet checked against the crop, so a dry or desert location can still be listed; local suitability needs a specialist."
+    }
+  ],
+  "rules": [
+    {
+      "id": "chickpea-spring-sowing",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 41",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 41,
+          "quote": "Bien que le pois-chiche soit une culture de printemps (semis effectué durant le mois de Février)"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Recorded as reference: not scheduled until a sourced temperature limit allows the same climate comparison as the other crops.",
+      "metric": "planting_window",
+      "start": "02-01",
+      "end": "02-29",
+      "precision": "full_month"
+    },
+    {
+      "id": "chickpea-anthracnose-break",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 75, anthracnose",
+          "interpretation": "normalized",
+          "note": "Five years encoded as 1,825 days.",
+          "page": 75,
+          "quote": "Rotation de 5 ans entre deux légumineuses"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Applies when anthracnose is confirmed.",
+      "metric": "crop_health_break",
+      "issueId": "legume-anthracnose",
+      "minimumBreakDays": 1825
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "cycle_duration",
+      "reason": "FAO-56 Table 11 has no chickpea row; no sourced duration."
+    },
+    { "topic": "temperature", "reason": "No sourced temperature limit." }
+  ],
+  "limitations": [
+    "Recorded as reference: not scheduled until a sourced temperature limit allows the same climate comparison as the other crops."
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "id": "faba-bean",
+  "version": "0.1.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Faba bean (dry grain)",
+    "scientificName": "Vicia faba L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "kew-faba",
+        "locator": "Accepted name and classification",
+        "interpretation": "direct",
+        "note": "Accepted taxonomic identity; not cultivar evidence."
+      }
+    ]
+  },
+  "harvestProduct": "dry_grain",
+  "cultivar": {
+    "status": "unknown",
+    "reason": "No cultivar selected or locally reviewed. Maturity and tolerances depend on cultivar and management."
+  },
+  "productionSystems": ["unspecified"],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "inra-regional",
+          "locator": "Event body, 2024-05-06",
+          "interpretation": "context_only",
+          "note": "Faba/féverole appear among local demonstration crops; no local rule validation."
+        }
+      ],
+      "note": "Pilot research candidate only; requires specialist assessment for the actual farm and campaign."
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "reason": "No Beni Mellal agronomist review has occurred. Research extraction is not agricultural validation."
+  },
+  "knowledge": {
+    "plantingWindows": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "faba-autumn",
+          "citations": [
+            {
+              "sourceId": "onca-legumes",
+              "locator": "PDF page 11, section 3.2.2, faba subsection",
+              "interpretation": "normalized",
+              "note": "Mid-October to end-December converted approximately; no local deadline inferred."
+            }
+          ],
+          "evidenceRegionIds": ["rabat-sale-kenitra"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Zone-dependent autumn sowing: earlier coasts, later interior/mountains; dry-grain maturity not green-pod harvest.",
+          "metric": "planting_window",
+          "unit": "month_day",
+          "timeBasis": "recurring_calendar",
+          "stage": "sowing",
+          "start": "10-15",
+          "end": "12-31",
+          "precision": "approximate"
+        }
+      ]
+    },
+    "duration": {
+      "status": "unknown",
+      "reason": "No sourced cultivar-specific sowing-to-harvest interval for the pilot. Calendar harvest examples cannot supply a duration range."
+    },
+    "soilRequirements": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "faba-ph",
+          "citations": [
+            {
+              "sourceId": "onca-legumes",
+              "locator": "PDF page 8, section 2.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["rabat-sale-kenitra"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source favorable pH range; laboratory method unspecified.",
+          "metric": "soil_ph",
+          "unit": "pH",
+          "timeBasis": "field_measurement",
+          "stage": "whole_cycle",
+          "method": "unspecified",
+          "min": 5,
+          "max": 8
+        },
+        {
+          "id": "faba-drainage",
+          "citations": [
+            {
+              "sourceId": "onca-legumes",
+              "locator": "PDF page 8, section 2.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["rabat-sale-kenitra"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Avoid waterlogged/asphyxiating soil; depth and water retention not reduced to a fabricated threshold.",
+          "metric": "soil_drainage",
+          "unit": "category",
+          "timeBasis": "field_condition",
+          "stage": "whole_cycle",
+          "value": "avoid_waterlogging"
+        }
+      ]
+    },
+    "temperatureRequirements": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "faba-emergence",
+          "citations": [
+            {
+              "sourceId": "onca-legumes",
+              "locator": "PDF page 8, section 2.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["rabat-sale-kenitra"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source reference range, not an exclusion threshold; measurement medium/averaging unresolved.",
+          "metric": "temperature",
+          "unit": "degC",
+          "timeBasis": "stage_mean",
+          "stage": "emergence",
+          "medium": "unspecified",
+          "min": 9,
+          "max": 12
+        },
+        {
+          "id": "faba-vegetative",
+          "citations": [
+            {
+              "sourceId": "onca-legumes",
+              "locator": "PDF page 8, section 2.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["rabat-sale-kenitra"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source reference range, not an exclusion threshold; measurement medium/averaging unresolved.",
+          "metric": "temperature",
+          "unit": "degC",
+          "timeBasis": "stage_mean",
+          "stage": "vegetative_growth",
+          "medium": "unspecified",
+          "min": 14,
+          "max": 16
+        },
+        {
+          "id": "faba-flowering",
+          "citations": [
+            {
+              "sourceId": "onca-legumes",
+              "locator": "PDF page 8, section 2.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["rabat-sale-kenitra"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source reference range, not an exclusion threshold; measurement medium/averaging unresolved.",
+          "metric": "temperature",
+          "unit": "degC",
+          "timeBasis": "stage_mean",
+          "stage": "flowering",
+          "medium": "unspecified",
+          "min": 16,
+          "max": 20
+        },
+        {
+          "id": "faba-pods",
+          "citations": [
+            {
+              "sourceId": "onca-legumes",
+              "locator": "PDF page 8, section 2.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["rabat-sale-kenitra"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Source reference range, not an exclusion threshold; measurement medium/averaging unresolved.",
+          "metric": "temperature",
+          "unit": "degC",
+          "timeBasis": "stage_mean",
+          "stage": "pod_formation",
+          "medium": "unspecified",
+          "min": 16,
+          "max": 22
+        }
+      ]
+    },
+    "waterDemandClass": {
+      "status": "unknown",
+      "reason": "No shared sourced comparison method for low/moderate/high demand across these crops."
+    },
+    "waterReference": {
+      "status": "sourced",
+      "rules": [
+        {
+          "id": "faba-annual-water",
+          "citations": [
+            {
+              "sourceId": "onca-legumes",
+              "locator": "PDF page 8, section 2.1",
+              "interpretation": "direct",
+              "note": "Research reference; not an approved constraint."
+            }
+          ],
+          "evidenceRegionIds": ["rabat-sale-kenitra"],
+          "productionSystems": ["unspecified"],
+          "severity": "reference",
+          "reviewStatus": "research",
+          "conditions": "Annual regular water-supply reference, not growing-cycle ET, rainfall sufficiency or irrigation requirement.",
+          "metric": "annual_water_reference",
+          "unit": "mm/year",
+          "timeBasis": "calendar_year",
+          "stage": "unspecified",
+          "lowerBound": 350,
+          "inclusive": false
+        }
+      ]
+    },
+    "rotationRestrictions": {
+      "status": "unknown",
+      "reason": "No locally reviewed crop-specific return interval extracted; generic family diversity is not an adequate pest break rule."
+    }
+  },
+  "limitations": [
+    "Rule evidence is from another region; local demonstration only establishes research relevance.",
+    "Mean temperatures have no defined averaging interval or medium; not daily NASA air limits.",
+    "Ambiguous source fertility sentence above 20 degC is excluded pending clarification."
+  ]
+}

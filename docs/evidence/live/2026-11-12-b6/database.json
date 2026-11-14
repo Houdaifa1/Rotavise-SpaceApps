@@ -1,0 +1,364 @@
+{
+  "at": "2026-11-12T01:02:38.808Z",
+  "database": "rotavise",
+  "tables": [
+    {
+      "table": "drizzle.__drizzle_migrations",
+      "rows": 31
+    },
+    {
+      "table": "pgboss.bam",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.job",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.job_common",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.job_dependency",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.queue",
+      "rows": 6
+    },
+    {
+      "table": "pgboss.queue_stats",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.queue_stats_20261111",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.queue_stats_20261112",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.schedule",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.subscription",
+      "rows": 0
+    },
+    {
+      "table": "pgboss.version",
+      "rows": 1
+    },
+    {
+      "table": "pgboss.warning",
+      "rows": 0
+    },
+    {
+      "table": "public.auth_accounts",
+      "rows": 0
+    },
+    {
+      "table": "public.auth_mail",
+      "rows": 0
+    },
+    {
+      "table": "public.auth_rate_limits",
+      "rows": 0
+    },
+    {
+      "table": "public.auth_sessions",
+      "rows": 0
+    },
+    {
+      "table": "public.auth_users",
+      "rows": 0
+    },
+    {
+      "table": "public.auth_verifications",
+      "rows": 0
+    },
+    {
+      "table": "public.boundary_candidates",
+      "rows": 0
+    },
+    {
+      "table": "public.boundary_datasets",
+      "rows": 0
+    },
+    {
+      "table": "public.catalog_versions",
+      "rows": 15
+    },
+    {
+      "table": "public.climate_scenario_tiles",
+      "rows": 180
+    },
+    {
+      "table": "public.climate_scenario_units",
+      "rows": 186900
+    },
+    {
+      "table": "public.field_boundaries",
+      "rows": 1
+    },
+    {
+      "table": "public.field_crop_history",
+      "rows": 0
+    },
+    {
+      "table": "public.field_extraction_files",
+      "rows": 4
+    },
+    {
+      "table": "public.field_extractions",
+      "rows": 3
+    },
+    {
+      "table": "public.field_observation_files",
+      "rows": 0
+    },
+    {
+      "table": "public.field_observations",
+      "rows": 0
+    },
+    {
+      "table": "public.fields",
+      "rows": 1
+    },
+    {
+      "table": "public.job_run_results",
+      "rows": 0
+    },
+    {
+      "table": "public.job_runs",
+      "rows": 0
+    },
+    {
+      "table": "public.plan_claims",
+      "rows": 0
+    },
+    {
+      "table": "public.plan_intake_results",
+      "rows": 0
+    },
+    {
+      "table": "public.plan_owners",
+      "rows": 1
+    },
+    {
+      "table": "public.plan_quotas",
+      "rows": 0
+    },
+    {
+      "table": "public.plan_requests",
+      "rows": 0
+    },
+    {
+      "table": "public.planning_runs",
+      "rows": 0
+    },
+    {
+      "table": "public.planning_scenario_units",
+      "rows": 0
+    },
+    {
+      "table": "public.planning_weather",
+      "rows": 0
+    },
+    {
+      "table": "public.rain_references",
+      "rows": 0
+    },
+    {
+      "table": "public.regional_gedi_biomass",
+      "rows": 2072354
+    },
+    {
+      "table": "public.regional_water_storage",
+      "rows": 313344
+    },
+    {
+      "table": "public.soil_estimates",
+      "rows": 0
+    },
+    {
+      "table": "public.weather_cache",
+      "rows": 0
+    },
+    {
+      "table": "public.weather_snapshots",
+      "rows": 0
+    }
+  ],
+  "catalogs": [
+    {
+      "version": "0.1.0",
+      "sha256": "d951b9c07b03739a77d43d0518c68ebc13b80d805fa58dcd076ef9cd82ed3a55",
+      "crops": 3
+    },
+    {
+      "version": "0.2.0",
+      "sha256": "b4cd69bcfbbbe7df42792a96356871a9934ddaf8d334e7e62b7d9f40543b34b9",
+      "crops": 3
+    },
+    {
+      "version": "0.3.0",
+      "sha256": "64e5ec11e3b855bae19ff4e6b2e9840e82af464f6016cd4a5e3cb1dbd06e37ce",
+      "crops": 10
+    },
+    {
+      "version": "0.4.0",
+      "sha256": "bfc2edbe3bb08c89579779ee3cf2a3a69aa615f7171193d3024b8921a8f1ffdc",
+      "crops": 10
+    },
+    {
+      "version": "0.5.0",
+      "sha256": "b19e498d42eb96be0b66cd1dc6ecfb8071cffa1bfe4e04e0a50da796804f6cf8",
+      "crops": 10
+    },
+    {
+      "version": "0.6.0",
+      "sha256": "1a4939d7e119cd86920984f1aa8cadda4a0f17075617aeb8ea87f51f6ac4dc06",
+      "crops": 10
+    },
+    {
+      "version": "0.7.0",
+      "sha256": "846f884b3698b9246eb0c16ff0082ee93dc5b9674a5e2e8bcfb8d521c0bef181",
+      "crops": 15
+    },
+    {
+      "version": "0.8.0",
+      "sha256": "3cd283295412b1e1aba862a079e287435119b8be99e8b44e7e17b321c16bb343",
+      "crops": 24
+    },
+    {
+      "version": "0.9.0",
+      "sha256": "bb526087af9bc8e24b44ab409d0840b3e01dc0316079582f2f9c22f99ab223eb",
+      "crops": 33
+    },
+    {
+      "version": "0.10.0",
+      "sha256": "282965554733f4687ab9e7284ec9e980e1cbd194ee83625c1cd88ee81b151377",
+      "crops": 207
+    },
+    {
+      "version": "0.11.0",
+      "sha256": "c5536dce6061c227ec1af2fe28fa861cbca965dbb9bd45b06163115cd290b8b3",
+      "crops": 246
+    },
+    {
+      "version": "0.12.0",
+      "sha256": "6c3df38643235a563c7b04470ce364bcbacd30127e0285749fb2fe0699ee5f9a",
+      "crops": 246
+    },
+    {
+      "version": "0.13.0",
+      "sha256": "52e191350dba6f02aadcc1fee57d97b4071a950882ce2c9df7b0ae136141cc63",
+      "crops": 246
+    },
+    {
+      "version": "0.14.0",
+      "sha256": "8a59fc79f0320a3033278a308e26507b090a06fe370008be64f42045abb8a43a",
+      "crops": 246
+    },
+    {
+      "version": "0.15.0",
+      "sha256": "b1c18550fdb08feedba05a149fbe4e017380d2604d7260e30bc0ff55f0b5c44b",
+      "crops": 246
+    }
+  ],
+  "climate": [
+    {
+      "experiment": "historical",
+      "first_year": 1985,
+      "last_year": 2009,
+      "units": 44500,
+      "positions": 89
+    },
+    {
+      "experiment": "ssp245",
+      "first_year": 2026,
+      "last_year": 2065,
+      "units": 71200,
+      "positions": 89
+    },
+    {
+      "experiment": "ssp585",
+      "first_year": 2026,
+      "last_year": 2065,
+      "units": 71200,
+      "positions": 89
+    }
+  ],
+  "nearTermGaps": [],
+  "remainingPrivateRoles": 0,
+  "names": {
+    "en": 0,
+    "fr": 246,
+    "ar": 246,
+    "ary": 178
+  },
+  "completeness": {
+    "ok": true,
+    "checkedAt": "2026-11-12T01:02:38.804Z",
+    "incomplete": [],
+    "datasets": [
+      {
+        "dataset": "migrations",
+        "ok": true,
+        "detail": "31 migration hashes match"
+      },
+      {
+        "dataset": "catalogs",
+        "ok": true,
+        "detail": "15 releases, exact canonical checksums and crop counts"
+      },
+      {
+        "dataset": "triggers",
+        "ok": true,
+        "detail": "17 enabled protection triggers"
+      },
+      {
+        "dataset": "indexes",
+        "ok": true,
+        "detail": "38 required indexes valid and ready"
+      },
+      {
+        "dataset": "constraints",
+        "ok": true,
+        "detail": "153 required constraints validated"
+      },
+      {
+        "dataset": "autovacuum",
+        "ok": true,
+        "detail": "Reference/plan analyze scale 0.02; automatic vacuum enabled"
+      },
+      {
+        "dataset": "climateMidCentury",
+        "ok": true,
+        "detail": "89/89 positions ready, 1500 units per position"
+      },
+      {
+        "dataset": "climateNearTerm",
+        "ok": true,
+        "detail": "89/89 positions ready, 2100 units per position"
+      },
+      {
+        "dataset": "climateUnits",
+        "ok": true,
+        "detail": "186,900 units: 20 model/variable identities per experiment/year/position; near-term 600 per position"
+      },
+      {
+        "dataset": "grace",
+        "ok": true,
+        "detail": "313344 raw-source-matched rows; complete valid-cell grid in 20–37 N, 18 W–0 E (source no-data remains unavailable)"
+      },
+      {
+        "dataset": "gedi",
+        "ok": true,
+        "detail": "2072354 raw-source-matched rows; complete valid-cell grid in 20–37 N, 18 W–0 E (source no-data remains unavailable)"
+      }
+    ]
+  }
+}

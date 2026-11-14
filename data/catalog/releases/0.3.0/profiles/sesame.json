@@ -1,0 +1,53 @@
+{
+  "id": "sesame",
+  "version": "0.3.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Sesame",
+    "localNames": [],
+    "scientificName": "Sesamum indicum L.",
+    "family": "Pedaliaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-sesame",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Sesamum indicum L.\""
+      }
+    ]
+  },
+  "harvestProduct": "oilseed",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ormvat-sesame",
+          "locator": "Mode de culture",
+          "interpretation": "context_only",
+          "note": "Four-month cycle in Tadla; no dated window on the page.",
+          "page": null,
+          "quote": "Au périmètre du Tadla, la culture du sésame est à cycle productif court sur quatre mois"
+        }
+      ],
+      "note": "Listed for Tadla; not schedulable in this release."
+    }
+  ],
+  "rules": [],
+  "gaps": [
+    {
+      "topic": "planting_window",
+      "reason": "No sourced Tadla sowing window collected yet."
+    },
+    {
+      "topic": "cycle_duration",
+      "reason": "No sourced duration collected yet."
+    }
+  ],
+  "limitations": ["Identity and local presence only."]
+}

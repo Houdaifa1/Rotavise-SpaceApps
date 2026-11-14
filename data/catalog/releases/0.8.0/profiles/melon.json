@@ -1,0 +1,174 @@
+{
+  "id": "melon",
+  "version": "0.8.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Melon",
+    "localNames": [{ "language": "fr", "name": "Melon" }],
+    "scientificName": "Cucumis melo L.",
+    "family": "Cucurbitaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-melon",
+        "page": null,
+        "quote": "\"scientificName\":\"Cucumis melo L.\"",
+        "locator": "Table",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "pntta-cucurbits",
+        "page": 1,
+        "quote": "La culture est très populaire au Maroc",
+        "locator": "PDF page 1",
+        "interpretation": "direct",
+        "note": "French name as written."
+      }
+    ]
+  },
+  "harvestProduct": "fruit",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "pntta-cucurbits",
+          "page": 1,
+          "quote": "La culture est très populaire au Maroc",
+          "locator": "PDF page 1",
+          "interpretation": "context_only",
+          "note": "Grown in Morocco per this bulletin."
+        }
+      ],
+      "note": "National bulletin; check your local calendar."
+    }
+  ],
+  "rules": [
+    {
+      "id": "melon-sowing",
+      "citations": [
+        {
+          "sourceId": "pntta-cucurbits",
+          "page": 1,
+          "quote": "Février-Mars (pour la culture de saison)",
+          "locator": "PDF page 1",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Season crop, sown in a nursery.",
+      "metric": "planting_window",
+      "start": "02-01",
+      "end": "03-31",
+      "precision": "full_month"
+    },
+    {
+      "id": "melon-duration",
+      "citations": [
+        {
+          "sourceId": "pntta-cucurbits",
+          "page": 1,
+          "quote": "à partir du 120 ème jour après semis",
+          "locator": "PDF page 1",
+          "interpretation": "normalized",
+          "note": "Quote checked by machine."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 45 35 10 120 Jan Calif., USA",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "120 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "First harvest; picking lasts 15–20 days more.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 120,
+      "maxDays": 120
+    },
+    {
+      "id": "melon-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Cantaloupe 0.5 0.85 0.60",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Mid and end values."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Cucumber Family (Cucurbitaceae) 0.5 1.00 0.80",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Initial value from the crop group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 45 35 10 120 Jan Calif., USA",
+          "locator": "Table",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.5,
+      "kcMid": 0.85,
+      "kcEnd": 0.6,
+      "stageLengths": [30, 45, 35, 10]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "temperature",
+      "reason": "No sourced damage temperature; climate is not checked for this crop."
+    }
+  ],
+  "limitations": [
+    "From a general Moroccan bulletin and FAO tables, not yet expert-reviewed.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

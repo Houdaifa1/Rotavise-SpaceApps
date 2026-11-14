@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-10",
+  "required": [
+    {
+      "command": "pnpm lint",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:21:36.378Z",
+      "ended": "2026-11-10T18:21:43.035Z",
+      "logfile": "/tmp/b5-required-0-lint.log"
+    },
+    {
+      "command": "pnpm format:check",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:21:43.038Z",
+      "ended": "2026-11-10T18:21:53.824Z",
+      "logfile": "/tmp/b5-required-1-format-check.log"
+    },
+    {
+      "command": "pnpm typecheck",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:21:53.824Z",
+      "ended": "2026-11-10T18:22:07.368Z",
+      "logfile": "/tmp/b5-required-2-typecheck.log"
+    },
+    {
+      "command": "pnpm test:backend",
+      "exitCode": 1,
+      "signal": null,
+      "began": "2026-11-10T18:22:07.368Z",
+      "ended": "2026-11-10T18:24:05.441Z",
+      "logfile": "/tmp/b5-required-3-test-backend.log"
+    },
+    {
+      "command": "pnpm test:backend",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:24:16.564Z",
+      "ended": "2026-11-10T18:26:10.772Z",
+      "logfile": "/tmp/b5-required-3-test-backend.log"
+    },
+    {
+      "command": "pnpm test:plans",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:26:10.772Z",
+      "ended": "2026-11-10T18:26:52.107Z",
+      "logfile": "/tmp/b5-required-4-test-plans.log"
+    },
+    {
+      "command": "pnpm test:catalog",
+      "exitCode": 1,
+      "signal": null,
+      "began": "2026-11-10T18:26:52.109Z",
+      "ended": "2026-11-10T18:28:10.245Z",
+      "logfile": "/tmp/b5-required-5-test-catalog.log"
+    },
+    {
+      "command": "pnpm test:catalog",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:32:20.538Z",
+      "ended": "2026-11-10T18:34:01.944Z",
+      "logfile": "/tmp/b5-required-5-test-catalog.log"
+    },
+    {
+      "command": "pnpm test:engine",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:34:01.944Z",
+      "ended": "2026-11-10T18:38:40.757Z",
+      "logfile": "/tmp/b5-required-6-test-engine.log"
+    },
+    {
+      "command": "pnpm test:api-docs",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:38:40.760Z",
+      "ended": "2026-11-10T18:38:51.475Z",
+      "logfile": "/tmp/b5-required-7-test-api-docs.log"
+    },
+    {
+      "command": "pnpm test:unit",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:38:51.477Z",
+      "ended": "2026-11-10T18:38:59.066Z",
+      "logfile": "/tmp/b5-required-8-test-unit.log"
+    },
+    {
+      "command": "pnpm test:container",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:38:59.067Z",
+      "ended": "2026-11-10T18:39:58.209Z",
+      "logfile": "/tmp/b5-required-9-test-container.log"
+    },
+    {
+      "command": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config tooling/verification/jest.config.mjs --selectProjects terrain-integration",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:39:58.210Z",
+      "ended": "2026-11-10T18:40:00.912Z",
+      "logfile": "/tmp/b5-required-10---experimental-vm-modules.log"
+    }
+  ],
+  "postReview": [
+    {
+      "command": "pnpm test:backend",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:48:37.545Z",
+      "ended": "2026-11-10T18:50:32.578Z",
+      "logfile": "/tmp/b5-post-test-backend.log"
+    },
+    {
+      "command": "pnpm test:backend-e2e --benchmark",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:50:32.582Z",
+      "ended": "2026-11-10T18:52:09.405Z",
+      "logfile": "/tmp/b5-post-test-backend-e2e.log"
+    },
+    {
+      "command": "pnpm test:container",
+      "exitCode": 0,
+      "signal": null,
+      "began": "2026-11-10T18:52:09.405Z",
+      "ended": "2026-11-10T18:53:18.572Z",
+      "logfile": "/tmp/b5-post-test-container.log"
+    }
+  ],
+  "additional": [
+    {
+      "command": "pnpm openapi:generate",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm typecheck (after cache accounting fix)",
+      "exitCode": 0
+    },
+    {
+      "command": "Jest rotation-integration, result/policy cases with controlled overlapping PG loads (before fix)",
+      "exitCode": 1
+    },
+    {
+      "command": "Jest rotation-integration, same focused cases (after fix)",
+      "exitCode": 0
+    },
+    {
+      "command": "node tooling/performance/backend-engine-benchmark.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "NODE_ENV=test node --input-type=module (missing-file replay probe)",
+      "exitCode": 0
+    }
+  ],
+  "finalReadOnlyChecks": [
+    {
+      "command": "pnpm lint",
+      "exitCode": 0,
+      "recordedAt": "2026-11-10T19:00:53.976719+00:00"
+    },
+    {
+      "command": "pnpm format:check",
+      "exitCode": 0,
+      "recordedAt": "2026-11-10T19:00:53.976924+00:00"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "recordedAt": "2026-11-10T19:00:53.976925+00:00"
+    },
+    {
+      "command": "git diff --exit-code HEAD -- apps/web packages/domain packages/database data/catalog/releases pnpm-lock.yaml",
+      "exitCode": 0,
+      "recordedAt": "2026-11-10T19:00:53.976926+00:00"
+    }
+  ]
+}

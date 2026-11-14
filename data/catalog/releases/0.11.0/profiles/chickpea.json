@@ -1,0 +1,1019 @@
+{
+  "id": "chickpea",
+  "version": "0.11.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Chickpea",
+    "localNames": [
+      { "language": "fr", "name": "Pois chiche" },
+      { "language": "ar", "name": "الحمص" }
+    ],
+    "scientificName": "Cicer arietinum L.",
+    "family": "Fabaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-chickpea",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy.",
+        "page": null,
+        "quote": "\"scientificName\":\"Cicer arietinum L.\""
+      },
+      {
+        "sourceId": "onca-legumes-reference",
+        "locator": "PDF page 41, crop name",
+        "interpretation": "direct",
+        "note": "Local name as written in the source.",
+        "page": 41,
+        "quote": "Bien que le pois-chiche soit une culture de printemps"
+      },
+      {
+        "sourceId": "inra-arabic-guides",
+        "locator": "Legume guide cover (scanned)",
+        "interpretation": "context_only",
+        "note": "Arabic name read from the scanned page image; not machine-checked."
+      }
+    ]
+  },
+  "harvestProduct": "dry_grain",
+  "modelType": "annual",
+  "cultivars": [
+    {
+      "id": "arifi",
+      "name": "Arifi",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ARIFI (FLIP98-50C) INRA MAROC 2009"
+        }
+      ]
+    },
+    {
+      "id": "bouchra",
+      "name": "Bouchra",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "BOUCHRA (FLIP97-114C) INRA MAROC 2015"
+        }
+      ]
+    },
+    {
+      "id": "douyet",
+      "name": "Douyet",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "DOUYET (F84-92C) INRA MAROC 1992"
+        }
+      ]
+    },
+    {
+      "id": "farihane",
+      "name": "Farihane",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "FARIHANE (F84-79C) INRA MAROC 1994"
+        }
+      ]
+    },
+    {
+      "id": "moubarak",
+      "name": "Moubarak",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "MOUBARAK(F84-182C) INRA MAROC 1994"
+        }
+      ]
+    },
+    {
+      "id": "zahor",
+      "name": "Zahor",
+      "registration": "registered",
+      "citations": [
+        {
+          "sourceId": "onssa-chickpea",
+          "locator": "Official catalogue listing",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": null,
+          "quote": "ZAHOR (F84-145C) INRA MAROC 1994"
+        }
+      ]
+    },
+    {
+      "id": "taounate",
+      "name": "Taounate",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "bochra",
+      "name": "Bochra",
+      "registration": "unknown",
+      "citations": [
+        {
+          "sourceId": "rs-aujourdhui-inra-nouvelles-varietes",
+          "locator": "paragraph listing the new INRA varieties (34 varieties)",
+          "interpretation": "normalized",
+          "note": "INRA variety created and listed in INRA document reported by the press on 2023-06-16; \"Hiba, Yasmine\" is counted as one faba bean in the source text (the count is internally inconsistent).",
+          "page": null,
+          "quote": "Il s’agit de 6 variétés de blé dur (Faraj, Louiza, Itri, Hammadi, Nachit, Jawahir) , 6 blé tendre (Kharouba, Khadija, Malika, Snina, Lina, Ibtissam), 4 orge (Assiya, Chifaa, Khnata, Ksaiba), 5 avoine (Seddik, Al Fawze, Hamdali, Niema, Nezha), 2 triticale (Ain Nzagh, Marwa), 2 lentille (Extra, Jemaat Shaim), 3 pois chiche (Taounate, Arifi, Bochra), 1 fève ( Hiba, Yasmine), 1 fèverole (Zina) et 3 colza (Moufida, Alia, Lila)"
+        }
+      ],
+      "notes": "cultivar"
+    },
+    {
+      "id": "kabuli-and-desi-types",
+      "name": "Kabuli and desi types",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "medium",
+        "basis": "AI model recall; no source consulted",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "V.chickpea.kabuli-and-desi-types"
+      },
+      "notes": "type group; kabuli dominant in Morocco"
+    },
+    {
+      "id": "ilc-482",
+      "name": "ILC 482",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.chickpea.ilc-482"
+      }
+    },
+    {
+      "id": "ilc-3279",
+      "name": "ILC 3279",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.chickpea.ilc-3279"
+      }
+    },
+    {
+      "id": "flip-84-48",
+      "name": "FLIP 84-48",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.chickpea.flip-84-48"
+      }
+    },
+    {
+      "id": "ghab-1",
+      "name": "Ghab 1",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.chickpea.ghab-1"
+      }
+    },
+    {
+      "id": "ghab-2",
+      "name": "Ghab 2",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.chickpea.ghab-2"
+      }
+    },
+    {
+      "id": "ghab-3",
+      "name": "Ghab 3",
+      "registration": "unknown",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Cultivar or type name recalled by the AI model; existence and use in Morocco not checked.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.cultivar.chickpea.ghab-3"
+      }
+    }
+  ],
+  "applicability": [
+    {
+      "regionId": "beni-mellal-tadla",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 41",
+          "interpretation": "context_only",
+          "note": "National guidance only."
+        }
+      ],
+      "note": "Not schedulable in this release."
+    },
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 9",
+          "interpretation": "context_only",
+          "note": "Food legumes are grown across Morocco.",
+          "page": 9,
+          "quote": "La culture des légumineuses alimentaires se répartit sur l'ensemble du Maroc"
+        }
+      ],
+      "note": "National guidance. Rainfall is not yet checked against the crop, so a dry or desert location can still be listed; local suitability needs a specialist."
+    },
+    {
+      "regionId": "ma-beni-mellal-khenifra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chickpea.BMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-casablanca-settat",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chickpea.CAS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-rabat-sale-kenitra",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chickpea.RSK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-fez-meknes",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chickpea.FMK"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-oriental",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chickpea.ORI"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-tangier-tetouan-al-hoceima",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chickpea.TTH"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    },
+    {
+      "regionId": "ma-marrakech-safi",
+      "status": "candidate",
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Regional presence recalled by the AI model; no source consulted.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.region.chickpea.MRS"
+      },
+      "note": "Candidate only: grown here according to recall; not validated."
+    }
+  ],
+  "rules": [
+    {
+      "id": "chickpea-spring-sowing",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 41",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine.",
+          "page": 41,
+          "quote": "Bien que le pois-chiche soit une culture de printemps (semis effectué durant le mois de Février)"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Recorded as reference: not scheduled until a sourced temperature limit allows the same climate comparison as the other crops.",
+      "metric": "planting_window",
+      "start": "02-01",
+      "end": "02-29",
+      "precision": "full_month"
+    },
+    {
+      "id": "chickpea-anthracnose-break",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 75, anthracnose",
+          "interpretation": "normalized",
+          "note": "Five years encoded as 1,825 days.",
+          "page": 75,
+          "quote": "Rotation de 5 ans entre deux légumineuses"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Applies when anthracnose is confirmed.",
+      "metric": "crop_health_break",
+      "issueId": "legume-anthracnose",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "chickpea-soil-ph",
+      "citations": [
+        {
+          "sourceId": "onca-legumes-reference",
+          "locator": "PDF page 29",
+          "interpretation": "direct",
+          "note": "pH range as written; the guide does not state the measurement method.",
+          "page": 29,
+          "quote": "la culture tolère des pH allant de 6 à 9"
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Recorded as reference; chickpea is not schedulable yet.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 6,
+      "max": 9
+    },
+    {
+      "id": "a-chickpea-cold-temperature",
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Cicer arietinum\"; field KTMP",
+          "interpretation": "normalized",
+          "note": "KTMP is ECOCROP's 'Killing Temperature' field. KTMP is ECOCROP's 'Killing Temperature' field (named as such in the Notes section of the official tutorial, .research-sources/2026-11-06/ecocrop-tutorial.pdf, p.4: 'Killing Temperature' is one of the described Notes headings). It is the single value closest in meaning to a damage limit (the crop is reported killed, not merely sub-optimal), but the tutorial does not state whether it is a daily-minimum air-temperature reading, an instantaneous low, or a multi-day exposure, nor the growth stage it applies to. KTMPR gives ECOCROP's stated reliability/tolerance range around KTMP, not a second stage. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Damage limit (damage) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "unspecified",
+      "medium": "unspecified",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 0,
+      "upperDegC": null
+    },
+    {
+      "id": "c-chickpea-preferred-predecessor-preferred-predecessor-family",
+      "citations": [
+        {
+          "sourceId": "rs-onca-legumes",
+          "locator": "PDF/printed page 35, §5.3.1, no-till weed-control rotation",
+          "interpretation": "normalized",
+          "note": "A biennial legume/cereal alternation is recommended specifically for managing volunteers in no-till. Poaceae maps the source's cereal group; retain the no-till condition. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 35
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "reference",
+      "verification": { "status": "extracted" },
+      "conditions": "Evidence only; not enough to bind a plan. Preferred previous-crop family.",
+      "metric": "preferred_predecessor_family",
+      "family": "Poaceae"
+    },
+    {
+      "id": "t-a-chickpea-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture/agronomy knowledge: chilling around 5 C or below at flowering impairs pollen and pod set; frost kills",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.chickpea.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": 5,
+      "upperDegC": null
+    },
+    {
+      "id": "t-a-chickpea-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general horticulture/agronomy knowledge: above about 35 C at flowering and podding reduces seed set",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.A.chickpea.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage) at stage \"flowering\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "flowering",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 35
+    },
+    {
+      "id": "t-b-chickpea-duration-spring-cycle-duration",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general horticulture/agronomy knowledge: spring-sown chickpea in Mediterranean climates",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.B.chickpea.duration.spring"
+      },
+      "conditions": "Recalled by the AI model; unverified. Cycle length as stated or recalled.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 100,
+      "maxDays": 130
+    },
+    {
+      "id": "t-c-chickpea-prohibited-predecessor-prohibited-predecessor-family",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general rotation guidance for the botanical family (Ascochyta, Fusarium shared among grain legumes)",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.C.chickpea.prohibited_predecessor"
+      },
+      "conditions": "Recalled by the AI model; unverified. Avoided previous-crop family.",
+      "metric": "prohibited_predecessor_family",
+      "family": "Fabaceae"
+    },
+    {
+      "id": "t-fill-chickpea-cold-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "medium",
+        "basis": "general agronomy recall (no source consulted); daily minimum below about -6 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.chickpea.cold"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": -6,
+      "upperDegC": null
+    },
+    {
+      "id": "t-fill-chickpea-heat-temperature",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); daily maximum above about 38 C damages the crop",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.chickpea.heat"
+      },
+      "conditions": "Recalled by the AI model; unverified. Damage limit (damage_approximate) at stage \"whole_cycle\".",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 38
+    },
+    {
+      "id": "t-fill-chickpea-window0-planting-window",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "general agronomy recall (no source consulted); typical Moroccan Mediterranean sowing/planting season, zone dependent",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "T.fill.chickpea.window0"
+      },
+      "conditions": "Recalled by the AI model; unverified. Planting window as stated or recalled.",
+      "metric": "planting_window",
+      "start": "11-15",
+      "end": "01-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "c11-chickpea-crop-water-coefficient",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO-56 Table 11 and 12 pattern recalled for the crop or its group; not checked against the tables.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.crop_water_coefficient.chickpea"
+      },
+      "conditions": "Recalled by the AI model; unverified. FAO-56 style crop coefficients and stage lengths in days, recalled for this crop or its crop group.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.4,
+      "kcMid": 1,
+      "kcEnd": 0.35,
+      "stageLengths": [20, 40, 40, 20]
+    },
+    {
+      "id": "c11-chickpea-soil-salinity",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "FAO Irrigation and Drainage Paper 29 salt-tolerance pattern recalled; not checked against the table.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_salinity.chickpea"
+      },
+      "conditions": "Recalled by the AI model; unverified. Saturated-paste ECe at which yield loss begins.",
+      "metric": "soil_salinity",
+      "method": "saturated_paste_ece",
+      "maxDsPerM": 1.5
+    },
+    {
+      "id": "c11-chickpea-soil-drainage",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General agronomy recall of drainage needs.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.soil_drainage.chickpea"
+      },
+      "conditions": "Recalled by the AI model; unverified. Prefers well drained soil.",
+      "metric": "soil_drainage",
+      "value": "well_drained"
+    },
+    {
+      "id": "c11-chickpea-water-demand-class",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "Relative seasonal water use recalled from FAO-56 crop coefficients and cycle length.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.water_demand_class.chickpea"
+      },
+      "conditions": "Recalled by the AI model; unverified. Relative water demand class.",
+      "metric": "water_demand_class",
+      "value": "low",
+      "comparisonMethod": "Relative seasonal water demand class recalled from FAO-56 crop coefficients and cycle length; compared only between crops with this same method."
+    },
+    {
+      "id": "c11-chickpea-break-pratylenchus-thornei",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.chickpea.pratylenchus-thornei"
+      },
+      "conditions": "Recalled by the AI model; unverified. 3 years without host crops after Root lesion nematode.",
+      "metric": "crop_health_break",
+      "issueId": "pratylenchus-thornei",
+      "minimumBreakDays": 1095
+    },
+    {
+      "id": "c11-chickpea-break-orobanche-crenata",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.chickpea.orobanche-crenata"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Broomrape of legumes.",
+      "metric": "crop_health_break",
+      "issueId": "orobanche-crenata",
+      "minimumBreakDays": 1825
+    },
+    {
+      "id": "c11-chickpea-break-orobanche-foetida",
+      "citations": [],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": "unspecified",
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "model_recall",
+        "confidence": "low",
+        "basis": "General plant pathology recall of the usual break without host crops.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.break.chickpea.orobanche-foetida"
+      },
+      "conditions": "Recalled by the AI model; unverified. 5 years without host crops after Broomrape (foetid) of legumes.",
+      "metric": "crop_health_break",
+      "issueId": "orobanche-foetida",
+      "minimumBreakDays": 1825
+    }
+  ],
+  "references": [
+    {
+      "id": "b-chickpea-duration-winter-background-0",
+      "topic": "background",
+      "summary": "Cycle: {\"basis\":\"sowing_to_harvest\",\"minDays\":null,\"maxDays\":null,\"sourceDurationMonths\":5.5}",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-inra-offre-pmv",
+          "locator": "PDF/printed page 9, Caractéristiques des variétés de pois chiche d’hiver",
+          "interpretation": "normalized",
+          "note": "INRA gives a winter-chickpea cycle in months. No fixed day count is supplied, and a fractional calendar month is not silently converted into days.",
+          "page": 9,
+          "quote": "durée du cycle : 5,5 mois"
+        }
+      ]
+    },
+    {
+      "id": "c-chickpea-minimum-return-interval-background-3",
+      "topic": "background",
+      "summary": "Return interval 5 years under condition: Ascochyta rabiei disease guidance.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-onca-legumes",
+          "locator": "PDF/printed page 75, Anthracnoses — Moyens de lutte",
+          "interpretation": "normalized",
+          "note": "Disease-specific chickpea guidance; do not generalise this to every Fabaceae crop or every disease-free field.",
+          "page": 75,
+          "quote": "Rotation de 5 ans entre deux légumineuses"
+        }
+      ]
+    },
+    {
+      "id": "f-chickpea-observed-yield-yield-16",
+      "topic": "yield",
+      "summary": "Yield 0.6–0.6 t/ha (product dry grain; years 2023-2024; province mean)",
+      "value": { "unit": "t/ha", "min": 0.6, "max": 0.6 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-alhoceima-2025",
+          "locator": "PDF page 66 / printed page 63, Table 36, Pois chiche row, Productivité (qx/ha)",
+          "interpretation": "normalized",
+          "note": "One metric quintal is 0.1 tonne; divide the printed productivity by 10. Field-legume row. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 66
+        }
+      ]
+    },
+    {
+      "id": "f-chickpea-settat-2014-2015-yield-17",
+      "topic": "yield",
+      "summary": "Yield 0.8–0.8 t/ha (product dry grain; years 2014-2015; published provincial system-specific yield)",
+      "value": { "unit": "t/ha", "min": 0.8, "max": 0.8 },
+      "citations": [
+        {
+          "sourceId": "rs-hcp-settat-2021",
+          "locator": "PDF/printed page 72, Production agricole, Pois chiche row, Rendement (T/Ha), rainfed column",
+          "interpretation": "normalized",
+          "note": "Read the published yield column directly, with no conversion, averaging or production/area division. A dash in the other system is not zero. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": 72
+        }
+      ]
+    },
+    {
+      "id": "a-chickpea-heat-background-72",
+      "topic": "background",
+      "summary": "Temperature (unconfirmed_adaptability_limit; not a damage limit) to 35 °C at whole_cycle.",
+      "value": null,
+      "citations": [
+        {
+          "sourceId": "rs-ecocrop-db",
+          "locator": "EcoCrop_DB.csv row for ScientificName=\"Cicer arietinum\"; field TMAX",
+          "interpretation": "normalized",
+          "note": "TMAX is ECOCROP's stated absolute upper bound of 'the full range of temperatures under which the plant will grow' (full adaptability range), not a stated daily-maximum air-temperature damage onset. The ECOCROP tutorial (.research-sources/2026-11-06/ecocrop-tutorial.pdf, p.2) defines TOPMN/TOPMX as 'the optimal growing temperature adaptability range (the range of temperatures under which the plant will grow optimally)' and TMIN/TMAX as part of 'the full growing temperature adaptability range (the full range of temperatures under which the plant will grow)... All entries are absolute values.' Neither definition states a daily-maximum or daily-minimum air-temperature basis, a duration, or a growth stage; ECOCROP's underlying climate matching (Hijmans et al.) compares these to long-run mean monthly temperatures, not single-day extremes. TMIN/TMAX are therefore NOT used here as whole-cycle damage limits outright; they are recorded as the closest FAO-tier evidence with this basis gap explicit in missingFields. The builder could not re-find the quote in the saved text, so it is not reproduced.",
+          "page": null
+        }
+      ]
+    },
+    {
+      "id": "k-chickpea-background-48",
+      "topic": "background",
+      "summary": "Annual dry-grain legume with winter- and spring-sown systems. Vegetative cold tolerance does not imply equally tolerant flowers or developing pods. High temperatures during flowering can impair reproductive success; combined drought increases stress. Non-host breaks help manage some soil- and residue-borne diseases; Ascochyta and Fusarium have different persistence and host considerations. Winter sowing generally gives a longer calendar cycle than spring sowing; this does not supply a fixed number of days.",
+      "value": null,
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "AI model recall; no source consulted Background note from the first research pass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-07",
+        "researchItem": "K.chickpea"
+      }
+    },
+    {
+      "id": "c11-chickpea-nitrogen-fixation",
+      "topic": "nitrogen_fixation",
+      "summary": "Fixes atmospheric nitrogen through root symbiosis, which can reduce nitrogen needs of the next crop.",
+      "value": {
+        "unit": "flag (1 fixes nitrogen, 0 does not)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "Botany recall: symbiotic nitrogen fixation of the plant family or crop.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.nitrogen_fixation.chickpea"
+      }
+    },
+    {
+      "id": "c11-chickpea-rooting-depth",
+      "topic": "rooting_depth",
+      "summary": "Rooting depth class deep (about 1 to 2 m).",
+      "value": { "unit": "m (class range)", "min": 1, "max": 2 },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of the maximum effective rooting depth class.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.rooting_depth.chickpea"
+      }
+    },
+    {
+      "id": "c11-chickpea-organic-matter-contribution",
+      "topic": "organic_matter_contribution",
+      "summary": "Contribution of roots and residues to soil organic matter: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of residue and root biomass.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.organic_matter_contribution.chickpea"
+      }
+    },
+    {
+      "id": "c11-chickpea-erosion-protection",
+      "topic": "erosion_protection",
+      "summary": "Soil cover and erosion protection: medium.",
+      "value": {
+        "unit": "class (1 low, 2 medium, 3 high)",
+        "min": 2,
+        "max": 2
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of canopy cover and root holding of the soil.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.erosion_protection.chickpea"
+      }
+    },
+    {
+      "id": "c11-chickpea-forage-value",
+      "topic": "forage_value",
+      "summary": "Forage value of the crop or its residues: low.",
+      "value": {
+        "unit": "class (0 none, 1 low, 2 medium, 3 high)",
+        "min": 1,
+        "max": 1
+      },
+      "citations": [],
+      "recall": {
+        "confidence": "low",
+        "basis": "General agronomy recall of grazing, hay or residue use.",
+        "valueKind": "model_recall_unverified",
+        "recordedOn": "2026-11-08",
+        "researchItem": "C11.forage_value.chickpea"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "cycle_duration",
+      "reason": "FAO-56 Table 11 has no chickpea row; no sourced duration."
+    },
+    { "topic": "temperature", "reason": "No sourced temperature limit." }
+  ],
+  "limitations": [
+    "Recorded as reference: not scheduled until a sourced temperature limit allows the same climate comparison as the other crops.",
+    "Release 0.10.0 adds rules recalled by the AI model (marked model_recall), references and cultivars; they are unverified and not expert-reviewed.",
+    "0.11.0 adds regional presence, water, soil and benefit classes recalled by the AI model; unverified and not expert reviewed."
+  ]
+}

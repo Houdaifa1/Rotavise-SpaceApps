@@ -1,0 +1,268 @@
+{
+  "id": "tomato",
+  "version": "0.8.0",
+  "synthetic": false,
+  "identity": {
+    "name": "Tomato (open field)",
+    "localNames": [{ "language": "fr", "name": "Tomate" }],
+    "scientificName": "Solanum lycopersicum L.",
+    "family": "Solanaceae",
+    "citations": [
+      {
+        "sourceId": "gbif-tomato",
+        "page": null,
+        "quote": "\"scientificName\":\"Solanum lycopersicum L.\"",
+        "locator": "GBIF name match response",
+        "interpretation": "direct",
+        "note": "Name and family from the GBIF Backbone Taxonomy."
+      },
+      {
+        "sourceId": "ardna-vegetable-rsk",
+        "page": 31,
+        "quote": "Culture de tomate",
+        "locator": "PDF page 31, crop name",
+        "interpretation": "direct",
+        "note": "Read on the cited page; quote checked by machine."
+      }
+    ]
+  },
+  "harvestProduct": "vegetable",
+  "modelType": "annual",
+  "cultivars": [],
+  "applicability": [
+    {
+      "regionId": "morocco-general",
+      "status": "candidate",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "page": 85,
+          "quote": "la tomate de saison pratiquée en plein champs",
+          "locator": "PDF page 85",
+          "interpretation": "context_only",
+          "note": "National reference."
+        }
+      ],
+      "note": "Open-field season crop; greenhouse tomato is not modelled."
+    }
+  ],
+  "rules": [
+    {
+      "id": "tomato-sowing",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-reference",
+          "page": 85,
+          "quote": "les périodes de semis peuvent aller du mifévrier jusqu'au mois de mars",
+          "locator": "PDF page 85",
+          "interpretation": "normalized",
+          "note": "Mid-February encoded as 15 February; March to its last day."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Open field; greenhouse dates differ.",
+      "metric": "planting_window",
+      "start": "02-15",
+      "end": "03-31",
+      "precision": "approximate"
+    },
+    {
+      "id": "tomato-duration",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 40 25 135 January Arid Region",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "135 days."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 45 30 145 April/May Mediterranean",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "145 days."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "FAO rows; no Moroccan open-field duration found.",
+      "metric": "cycle_duration",
+      "basis": "sowing_to_harvest",
+      "minDays": 135,
+      "maxDays": 145
+    },
+    {
+      "id": "tomato-cold",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-souss",
+          "page": 20,
+          "quote": "Les basses températures (<10°C) ralentissent la croissance",
+          "locator": "PDF page 20, 4.1.1",
+          "interpretation": "direct",
+          "note": "Read on the cited page; quote checked by machine."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "A growth limit, stricter than a damage limit.",
+      "metric": "temperature",
+      "basis": "daily_minimum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": 10,
+      "upperDegC": null
+    },
+    {
+      "id": "tomato-heat",
+      "citations": [
+        {
+          "sourceId": "fao-aquacrop-annex-i",
+          "page": 43,
+          "quote": "Maximum air temperature above which pollination starts to fail (heat stress) (°C) Conservative (1) 40.0 (Estimated)",
+          "locator": "PDF page 43",
+          "interpretation": "normalized",
+          "note": "The annex gives no flowering timing for tomato, so it is applied across the cycle."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "AquaCrop estimate; applied across the cycle.",
+      "metric": "temperature",
+      "basis": "daily_maximum",
+      "medium": "air",
+      "stage": "whole_cycle",
+      "stageWindow": null,
+      "lowerDegC": null,
+      "upperDegC": 40
+    },
+    {
+      "id": "tomato-soil-ph",
+      "citations": [
+        {
+          "sourceId": "ardna-vegetable-rsk",
+          "page": 31,
+          "quote": "La culture de tomate préfère un sol légèrement acide (5,8 < pH< 6,8)",
+          "locator": "PDF page 31",
+          "interpretation": "normalized",
+          "note": "Range as written; the guide does not state the method."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "Preference from the ONCA sheet; warns only.",
+      "metric": "soil_ph",
+      "method": "unspecified",
+      "min": 5.8,
+      "max": 6.8
+    },
+    {
+      "id": "tomato-water-curve",
+      "citations": [
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Tomato 1.15 2 0.70-0.90 0.6",
+          "locator": "Table 12, Tomato",
+          "interpretation": "normalized",
+          "note": "Mid 1.15; end 0.80, the middle of the range."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "Solanum Family (Solanaceae) 0.6 1.15 0.80",
+          "locator": "Table 12, Solanum family group",
+          "interpretation": "normalized",
+          "note": "Initial 0.6 from the group."
+        },
+        {
+          "sourceId": "fao-56-chapter-6",
+          "page": null,
+          "quote": "30 40 45 30 145 April/May Mediterranean",
+          "locator": "Table 11, Tomato",
+          "interpretation": "normalized",
+          "note": "Stage shares."
+        }
+      ],
+      "scope": {
+        "regionIds": ["morocco-general"],
+        "farmingSystems": ["irrigated"],
+        "cultivarIds": "unspecified"
+      },
+      "severity": "soft",
+      "verification": {
+        "status": "double_checked",
+        "checkedOn": "2026-11-01",
+        "method": "quote_match_and_second_reading"
+      },
+      "conditions": "General FAO values for subhumid climates, not adjusted locally or calibrated in Morocco.",
+      "metric": "crop_water_coefficient",
+      "kcIni": 0.6,
+      "kcMid": 1.15,
+      "kcEnd": 0.8,
+      "stageLengths": [30, 40, 45, 30]
+    }
+  ],
+  "gaps": [
+    { "topic": "cultivar", "reason": "Rules are not cultivar-specific." },
+    {
+      "topic": "planting_window",
+      "reason": "Greenhouse and industrial tomato are not modelled."
+    }
+  ],
+  "limitations": [
+    "From ONCA references and FAO tables, not yet expert-reviewed.",
+    "Moroccan soils are usually above the preferred pH.",
+    "Offered for irrigated fields only: the sources describe irrigated production."
+  ]
+}

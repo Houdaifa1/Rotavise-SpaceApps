@@ -1,0 +1,243 @@
+{
+  "synthetic": true,
+  "purpose": "Invented crops, review actors and weather: infrastructure only, never farmer advice",
+  "agricultureWarning": "No real crops, reviewed crop thresholds or historical observations; infrastructure demonstration only",
+  "results": [
+    {
+      "priority": "soil_health",
+      "weights": {
+        "climate": 0.3,
+        "water": 0.2,
+        "rotation": 0.5
+      },
+      "counts": {
+        "pairs": 9,
+        "schedules": 54,
+        "combinationsExamined": 90
+      },
+      "candidateAssessments": 54,
+      "unranked": 18,
+      "sharedAnchorYears": [2010, 2011, 2012, 2013, 2014, 2015],
+      "top": [
+        {
+          "scheduleId": "synthetic-alpha>synthetic-beta@2029-12-30/2030-01-04",
+          "weightedLoss": 0.1,
+          "components": {
+            "climate": 0,
+            "water": 0.5,
+            "rotation": 0
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-beta@2029-12-30/2030-01-05",
+          "weightedLoss": 0.1,
+          "components": {
+            "climate": 0,
+            "water": 0.5,
+            "rotation": 0
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-beta@2029-12-30/2030-01-06",
+          "weightedLoss": 0.1,
+          "components": {
+            "climate": 0,
+            "water": 0.5,
+            "rotation": 0
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-beta@2029-12-31/2030-01-04",
+          "weightedLoss": 0.1,
+          "components": {
+            "climate": 0,
+            "water": 0.5,
+            "rotation": 0
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-beta@2029-12-31/2030-01-05",
+          "weightedLoss": 0.1,
+          "components": {
+            "climate": 0,
+            "water": 0.5,
+            "rotation": 0
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-beta@2029-12-31/2030-01-06",
+          "weightedLoss": 0.1,
+          "components": {
+            "climate": 0,
+            "water": 0.5,
+            "rotation": 0
+          }
+        }
+      ],
+      "sensitive": false,
+      "samplePeriodDifference": {
+        "earlierAnchorYears": [2010, 2011, 2012],
+        "laterAnchorYears": [2013, 2014, 2015],
+        "status": "available",
+        "laterMinusEarlier": [
+          {
+            "temperatureMeanDegC": 3,
+            "rainfallMmPerDay": 0,
+            "longestDrySpellDays": 0
+          },
+          {
+            "temperatureMeanDegC": 3,
+            "rainfallMmPerDay": 0,
+            "longestDrySpellDays": 0
+          }
+        ]
+      },
+      "recommendations": null
+    },
+    {
+      "priority": "lower_water_demand",
+      "weights": {
+        "climate": 0.4,
+        "water": 0.5,
+        "rotation": 0.1
+      },
+      "counts": {
+        "pairs": 9,
+        "schedules": 54,
+        "combinationsExamined": 90
+      },
+      "candidateAssessments": 54,
+      "unranked": 18,
+      "sharedAnchorYears": [2010, 2011, 2012, 2013, 2014, 2015],
+      "top": [
+        {
+          "scheduleId": "synthetic-alpha>synthetic-gamma@2029-12-30/2030-01-04",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-gamma@2029-12-30/2030-01-05",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-gamma@2029-12-30/2030-01-06",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-gamma@2029-12-31/2030-01-04",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-gamma@2029-12-31/2030-01-05",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-alpha>synthetic-gamma@2029-12-31/2030-01-06",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-gamma>synthetic-alpha@2029-12-30/2030-01-04",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-gamma>synthetic-alpha@2029-12-30/2030-01-05",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-gamma>synthetic-alpha@2029-12-30/2030-01-06",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-gamma>synthetic-alpha@2029-12-31/2030-01-04",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-gamma>synthetic-alpha@2029-12-31/2030-01-05",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        },
+        {
+          "scheduleId": "synthetic-gamma>synthetic-alpha@2029-12-31/2030-01-06",
+          "weightedLoss": 0.175,
+          "components": {
+            "climate": 0,
+            "water": 0.25,
+            "rotation": 0.5
+          }
+        }
+      ],
+      "sensitive": true,
+      "samplePeriodDifference": {
+        "earlierAnchorYears": [2010, 2011, 2012],
+        "laterAnchorYears": [2013, 2014, 2015],
+        "status": "available",
+        "laterMinusEarlier": [
+          {
+            "temperatureMeanDegC": 3,
+            "rainfallMmPerDay": 0,
+            "longestDrySpellDays": 0
+          },
+          {
+            "temperatureMeanDegC": 3,
+            "rainfallMmPerDay": 0,
+            "longestDrySpellDays": 0
+          }
+        ]
+      },
+      "recommendations": null
+    }
+  ]
+}
