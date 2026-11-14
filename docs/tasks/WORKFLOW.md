@@ -11,8 +11,7 @@ name (`git config user.name`).
    Otherwise stop and tell the user.
 3. Set the row to `in progress` and "Who" to your name. Commit only that file:
    `git commit -m "<name><mon d> : <id> is taken by <name>" docs/tasks/BOARD.md`
-   and `git push`. Changes that touch only `docs/tasks/` do not start the
-   GitHub check, so this takes seconds.
+   and `git push`.
 
 ## 2. Build it (on a branch)
 

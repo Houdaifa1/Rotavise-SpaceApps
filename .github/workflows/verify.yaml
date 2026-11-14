@@ -1,10 +1,8 @@
 name: Rotavise verified backend
+# Manual only during the hackathon (14-15 Nov 2026): checks run locally.
+# Task B01 restores automatic runs on push and pull request afterwards.
 on:
-  push:
-    branches: [main]
-    paths-ignore: ["docs/tasks/**"]
-  pull_request:
-    paths-ignore: ["docs/tasks/**"]
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:

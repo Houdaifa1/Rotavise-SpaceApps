@@ -25,7 +25,8 @@ are built; the team is finishing the web app during the hackathon
 - Checks: `pnpm lint`, `pnpm format:check`, `pnpm typecheck`, `pnpm test:web`,
   `pnpm test:unit`, `pnpm build`; browser tests `pnpm test:e2e` (about 15 min;
   run single files while working, e.g. `pnpm test:e2e plan-builder.spec.mjs`).
-- Full gate: `pnpm verify` (also runs on GitHub for every code push).
+- Full gate: `pnpm verify`. During the hackathon the GitHub check is manual
+  only, so every task runs its checks locally before its pull request.
 - Database: `rotavise` on 127.0.0.1:54329 (Docker). Migrations only
   (`pnpm --filter @rotavise/database exec drizzle-kit generate`, review the SQL,
   `pnpm db:migrate`). Never push schema, never drop data.
